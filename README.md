@@ -4,7 +4,6 @@ Se você procura eletricista em Barueri ou Alphaville, atendimento rápido e pro
 
 https://www.mestredosreparos.app.br
 
- https://www.mestredosreparos.app.br
 
 ## Serviços
 - Instalação elétrica
