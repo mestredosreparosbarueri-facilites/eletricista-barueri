@@ -1,5 +1,6 @@
 # Análise SEO & GEO — Nicho Eletricista em Barueri (SP)
 **Data:** Junho 2026 | **Mercado:** Barueri, Alphaville, Tamboré, Carapicuíba, Santana de Parnaíba
+**Site analisado:** mestredosreparos.app.br (Blogger + domínio .app.br customizado)
 
 ---
 
@@ -388,10 +389,10 @@ Os concorrentes principais **não cobrem** os seguintes temas:
 
 ### Fase 2 — SEO de Conteúdo (30-90 dias)
 1. 📝 Publicar 2 artigos/semana no blog (foco em keywords informacionais)
-2. 📝 Criar página de FAQ central com Schema
-3. 📝 Criar páginas de serviço individuais com preços e FAQ
-4. 📝 Obter primeiras 20 avaliações no Google Maps
-5. 📝 Criar conteúdo específico para Alphaville (segmento premium)
+2. 📝 Obter primeiras 20 avaliações no Google Maps
+3. 📝 Criar conteúdo específico para Alphaville (segmento premium)
+
+**NOTA:** FAQ Schema, tabela de preços pública e calculadora interativa já estão implementados no site — vantagem competitiva real sobre todos os concorrentes mapeados.
 
 ### Fase 3 — Autoridade e GEO (90-180 dias)
 1. 🔗 Link building: portais de notícias de Barueri, blogs de reforma/construção
@@ -402,7 +403,70 @@ Os concorrentes principais **não cobrem** os seguintes temas:
 
 ---
 
-## 9. FONTES E REFERÊNCIAS
+## 9. CORREÇÕES TÉCNICAS DE INDEXAÇÃO (URGENTE)
+
+### Contexto — Google Search Console (09/04/2026 → 04/06/2026)
+
+| Status | Páginas |
+|--------|---------|
+| Indexadas | 79 |
+| Não indexadas | 67 |
+| Maior problema | 40 páginas "Detectadas, não indexadas" |
+
+**Causa raiz:** Blogger gera URLs duplicadas com parâmetro `?m=1` (versão mobile).
+O Google detecta essas URLs, considera conteúdo duplicado e recusa indexar.
+
+---
+
+### CORREÇÃO 1 — robots.txt
+**Onde aplicar:** Blogger → Configurações → Preferências de pesquisa → Robôs personalizados
+
+```
+User-agent: *
+Disallow: /search
+Disallow: /*?m=1
+Allow: /
+
+Sitemap: https://www.mestredosreparos.app.br/sitemap.xml
+```
+
+---
+
+### CORREÇÃO 2 — Tag Canônica no Template do Blogger
+**Onde aplicar:** Blogger → Tema → Editar HTML → dentro do `<head>`, antes de `</head>`
+
+```html
+<b:if cond='data:blog.isMobile'>
+  <link expr:href='data:blog.canonicalUrl' rel='canonical'/>
+</b:if>
+```
+
+**Efeito:** Toda URL `?m=1` passa a declarar a versão sem parâmetro como canônica.
+O Google consolida o PageRank nas URLs corretas.
+
+---
+
+### CORREÇÃO 3 — Validar no Search Console após aplicar
+1. Aguardar 24–48h após aplicar as correções acima
+2. Acessar: Indexação → Páginas → "Detectada, mas não indexada"
+3. Clicar em **"Validar correção"**
+4. Prazo para resolução: **1–2 semanas**
+
+---
+
+### Demais Problemas Críticos (após resolver o ?m=1)
+
+| Problema | Páginas | Ação |
+|----------|---------|------|
+| Erro de redirecionamento | 9 | Exportar lista e corrigir redirecionamentos quebrados |
+| Canônica adequada (falha) | 5 | Revisar tags canônicas nas páginas afetadas |
+| 404 — Não encontrado | 5 | Redirecionar 301 para URLs corretas ou remover do sitemap |
+| Página com redirecionamento | 3 | Verificar cadeia de redirecionamentos (max 1 hop) |
+| Bloqueada pelo robots.txt | 1 | Identificar qual URL e decidir se deve liberar |
+
+---
+
+## 10. FONTES E REFERÊNCIAS
 
 - [GetNinjas — Eletricistas Barueri](https://www.getninjas.com.br/reformas-e-reparos/eletricista/sp/barueri)
 - [oHub — Empresas Eletricista Barueri SP 2026](https://www.ohub.com.br/empresas/eletricista/sp/barueri)
