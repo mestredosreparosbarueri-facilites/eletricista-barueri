@@ -1,0 +1,242 @@
+<style>
+h3.post-title.entry-title,.post-title.entry-title,.post-title{display:none!important}
+.mp{max-width:900px;margin:auto;padding:12px 18px 40px;font-family:Georgia,"Times New Roman",serif;color:#1d2733;line-height:1.75;font-size:19px}
+.mp *{box-sizing:border-box}
+.mp h1,.mp h2,.mp h3,.mp .mp-sans{font-family:Arial,Helvetica,sans-serif}
+.mp-topo{border-top:8px solid #ffb300;padding-top:22px;margin-bottom:8px}
+.mp-categoria{display:inline-block;font-family:Arial,sans-serif;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0b2a4a;background:#fff5e0;padding:6px 12px;border-radius:6px}
+.mp h1{font-size:44px;line-height:1.15;color:#0b2a4a;margin:16px 0 12px;font-weight:900}
+.mp-linha-fina{font-size:21px;color:#4a5866;margin:0 0 14px}
+.mp-autor{font-family:Arial,sans-serif;font-size:14px;color:#6b7a8d;border-bottom:1px solid #e3e8ef;padding-bottom:16px;margin-bottom:26px}
+.mp-resumo{background:#0b2a4a;color:#fff;border-radius:14px;padding:26px 28px;margin:0 0 30px}
+.mp-resumo h2{font-size:15px!important;letter-spacing:.1em;text-transform:uppercase;color:#ffb300!important;margin:0 0 10px!important;border:0!important;padding:0!important}
+.mp-resumo p{margin:0;font-size:19px;color:#fff}
+.mp-fatos{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:0 0 34px;font-family:Arial,sans-serif}
+.mp-fato{border:2px solid #e3e8ef;border-radius:12px;padding:16px}
+.mp-fato b{display:block;font-size:22px;color:#0b2a4a;line-height:1.2;margin-bottom:4px}
+.mp-fato span{font-size:14px;color:#4a5866;line-height:1.45;display:block}
+.mp-sumario{background:#f6f8fb;border-radius:12px;padding:20px 24px;margin:0 0 36px;font-family:Arial,sans-serif}
+.mp-sumario strong{display:block;color:#0b2a4a;font-size:16px;margin-bottom:8px}
+.mp-sumario ol{margin:0;padding-left:20px;font-size:16px;line-height:1.9}
+.mp-sumario a{color:#163d66;text-decoration:none;font-weight:700}
+.mp h2{font-size:30px;line-height:1.25;color:#0b2a4a;margin:46px 0 14px;padding-top:6px;border-top:3px solid #0b2a4a}
+.mp h3{font-size:21px;color:#163d66;margin:26px 0 8px}
+.mp p{margin:0 0 18px}
+.mp-direta{font-size:20px;font-weight:bold;color:#0b2a4a;border-left:5px solid #ffb300;padding:4px 0 4px 16px;margin:0 0 18px}
+.mp ul,.mp ol{padding-left:24px;margin:0 0 20px}
+.mp li{margin-bottom:8px}
+.mp-tabela{overflow-x:auto;margin:10px 0 24px;font-family:Arial,sans-serif}
+.mp-tabela table{width:100%;border-collapse:collapse;font-size:16px;min-width:560px}
+.mp-tabela th{background:#0b2a4a;color:#fff;text-align:left;padding:12px}
+.mp-tabela td{padding:12px;border-bottom:1px solid #e3e8ef;vertical-align:top}
+.mp-tabela tr:nth-child(even) td{background:#f6f8fb}
+.mp-sindico{background:#fff5e0;border-radius:14px;padding:22px 24px;margin:24px 0}
+.mp-sindico strong.mp-sans{display:block;color:#0b2a4a;font-size:17px;margin-bottom:6px}
+.mp-sindico p{margin:0}
+.mp-check{list-style:none;padding-left:0!important}
+.mp-check li{padding-left:34px;position:relative}
+.mp-check li::before{content:"✓";position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;background:#25D366;color:#fff;font:bold 14px/24px Arial,sans-serif;text-align:center}
+.mp-etapas{counter-reset:e;list-style:none;padding-left:0!important}
+.mp-etapas li{counter-increment:e;padding-left:52px;position:relative;margin-bottom:16px}
+.mp-etapas li::before{content:counter(e);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:8px;background:#ffb300;color:#0b2a4a;font:900 18px/36px Arial,sans-serif;text-align:center}
+.mp-faq{margin:0}
+.mp-faq dt{font-family:Arial,sans-serif;font-weight:800;color:#0b2a4a;font-size:20px;margin:24px 0 6px}
+.mp-faq dd{margin:0;padding-bottom:18px;border-bottom:1px solid #e3e8ef}
+.mp-cta{background:linear-gradient(135deg,#0b2a4a,#163d66);color:#fff;border-radius:16px;padding:30px 28px;margin:44px 0 26px;font-family:Arial,sans-serif}
+.mp-cta h2{color:#fff!important;border:0!important;margin:0 0 10px!important;padding:0!important;font-size:28px}
+.mp-cta p{color:#fff;font-size:18px}
+.mp-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.mp-btn{display:inline-block;padding:15px 22px;border-radius:10px;font-weight:800;font-size:17px;text-decoration:none!important}
+.mp-btn-whats{background:#25D366;color:#fff!important}
+.mp-btn-agenda{background:#ffb300;color:#0b2a4a!important}
+.mp-links{font-family:Arial,sans-serif;font-size:16px;margin:0 0 24px}
+.mp-links a{color:#163d66;font-weight:700}
+.mp-empresa{font-family:Arial,sans-serif;font-size:15px;color:#4a5866;border-top:1px solid #e3e8ef;padding-top:18px}
+.mp-empresa a{color:#163d66}
+@media(max-width:700px){.mp{font-size:17px;padding:8px 14px 30px}.mp h1{font-size:32px}.mp-linha-fina{font-size:18px}.mp h2{font-size:24px}.mp-direta{font-size:18px}.mp-resumo{padding:20px}.mp-resumo p{font-size:17px}.mp-faq dt{font-size:18px}.mp-btn{display:block;text-align:center;width:100%}}
+</style>
+
+<article class="mp">
+
+  <header class="mp-topo">
+    <span class="mp-categoria">Guia para síndicos e administradoras</span>
+    <h1>Eletricista Predial em Barueri: guia de manutenção elétrica para condomínios</h1>
+    <p class="mp-linha-fina">O que o eletricista predial faz, com que frequência revisar cada sistema do prédio, quais normas o condomínio precisa seguir e quanto custa manter a parte elétrica em dia.</p>
+    <p class="mp-autor">Por <strong>Mestre dos Reparos Manutenção e Limpeza</strong> · Barueri/SP · Atualizado em <time datetime="2026-10-15">15 de outubro de 2026</time></p>
+  </header>
+
+  <section class="mp-resumo" aria-label="Resumo">
+    <h2>Resposta direta</h2>
+    <p>Um eletricista predial em Barueri cuida das instalações elétricas de uso coletivo de condomínios e prédios comerciais: quadros de força, iluminação de áreas comuns, iluminação de emergência, bombas de água, portões, interfones, alimentação de elevadores e proteção contra surtos. O Mestre dos Reparos presta esse serviço em Barueri, Alphaville e região com manutenção preventiva programada, atendimento emergencial 24 horas, relatório técnico e nota fiscal.</p>
+  </section>
+
+  <div class="mp-fatos" aria-label="Fatos rápidos">
+    <div class="mp-fato"><b>24 horas</b><span>Plantão para emergências elétricas, inclusive à noite e nos fins de semana</span></div>
+    <div class="mp-fato"><b>NBR 5410</b><span>Norma seguida em toda instalação e manutenção de baixa tensão</span></div>
+    <div class="mp-fato"><b>Relatório técnico</b><span>Registro de cada intervenção para o controle do síndico</span></div>
+    <div class="mp-fato"><b>90 dias</b><span>Garantia na mão de obra, com nota fiscal e CNPJ</span></div>
+  </div>
+
+  <nav class="mp-sumario" aria-label="Sumário">
+    <strong>Neste guia</strong>
+    <ol>
+      <li><a href="#o-que-faz">O que faz um eletricista predial?</a></li>
+      <li><a href="#quando-chamar">Quando o condomínio deve chamar um eletricista?</a></li>
+      <li><a href="#periodicidade">Com que frequência revisar cada sistema?</a></li>
+      <li><a href="#normas">Quais normas o condomínio precisa seguir?</a></li>
+      <li><a href="#incluido">O que está incluído na manutenção</a></li>
+      <li><a href="#como-funciona">Como funciona o atendimento</a></li>
+      <li><a href="#valor">Quanto custa e o que influencia o valor</a></li>
+      <li><a href="#faq">Perguntas frequentes</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="o-que-faz">O que faz um eletricista predial?</h2>
+  <p class="mp-direta">O eletricista predial mantém funcionando a parte elétrica que é de todos: tudo o que fica depois do medidor geral do condomínio e antes do quadro de cada apartamento.</p>
+  <p>Contratar um <strong>eletricista predial em Barueri</strong> exige profissionais preparados para infraestruturas complexas e sistemas de alta demanda. Diferente do eletricista residencial, que trabalha dentro de uma unidade, o predial lida com quadros de força de grande porte, circuitos que alimentam dezenas de apartamentos e sistemas que não podem parar, como bombas de recalque, iluminação de emergência e portões de garagem.</p>
+  <p>A segurança coletiva dos moradores e usuários é a prioridade. Uma falha no quadro geral deixa o prédio inteiro sem energia; uma luz de emergência que não acende pode transformar uma queda de energia em acidente na escada.</p>
+  <div class="mp-tabela">
+    <table>
+      <thead><tr><th>Eletricista residencial</th><th>Eletricista predial</th></tr></thead>
+      <tbody>
+        <tr><td>Trabalha dentro de uma casa ou apartamento</td><td>Trabalha nas áreas comuns e na infraestrutura do prédio</td></tr>
+        <tr><td>Quadro de distribuição de uma unidade</td><td>Quadros de força principais, barramentos e disjuntores de grande porte</td></tr>
+        <tr><td>Chuveiro, tomadas e iluminação da casa</td><td>Bombas, portões, interfones, iluminação de emergência e alimentação de elevadores</td></tr>
+        <tr><td>Atendimento pontual</td><td>Manutenção preventiva programada, com cronograma e relatório</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="quando-chamar">Quando o condomínio deve chamar um eletricista predial?</h2>
+  <p class="mp-direta">Chame sempre que um sistema coletivo falhar de forma repetida ou quando a última revisão preventiva dos quadros tiver mais de um ano.</p>
+  <ul class="mp-check">
+    <li>Falhas na iluminação de áreas comuns, corredores, escadas e garagem</li>
+    <li>Problemas recorrentes no interfone ou no portão automático</li>
+    <li>Instabilidade na alimentação elétrica dos elevadores</li>
+    <li>Oscilações frequentes ou desarmes nas bombas de água</li>
+    <li>Necessidade de adequação às normas técnicas, inclusive para o AVCB</li>
+    <li>Manutenção preventiva dos quadros de força principais</li>
+    <li>Disjuntores aquecendo, cheiro de queimado ou ruídos no quadro geral</li>
+  </ul>
+  <div class="mp-sindico">
+    <strong class="mp-sans">Atenção, síndico</strong>
+    <p>A manutenção do elevador em si é feita pela empresa conservadora contratada. O eletricista predial cuida da alimentação elétrica que chega até o quadro do elevador: disjuntores, cabos e estabilidade da tensão. Quando o elevador para por falta de energia, os dois trabalham juntos.</p>
+  </div>
+
+  <h2 id="periodicidade">Com que frequência revisar cada sistema elétrico do condomínio?</h2>
+  <p class="mp-direta">Quadros e sistemas de segurança pedem inspeção periódica; a frequência exata depende do porte do prédio, mas a tabela abaixo é a referência que usamos nos planos de manutenção.</p>
+  <div class="mp-tabela">
+    <table>
+      <thead><tr><th>Sistema</th><th>O que é verificado</th><th>Frequência recomendada</th></tr></thead>
+      <tbody>
+        <tr><td>Iluminação de emergência</td><td>Acendimento, autonomia das baterias e blocos autônomos</td><td>Teste mensal e revisão completa anual</td></tr>
+        <tr><td>Quadros de força principais</td><td>Reaperto, aquecimento, disjuntores e barramentos</td><td>Semestral, com termografia anual</td></tr>
+        <tr><td>Bombas de recalque e pressurização</td><td>Corrente do motor, contatores, boias e automação</td><td>Mensal</td></tr>
+        <tr><td>Portões e interfones</td><td>Motores, placas, fiação e fontes</td><td>Trimestral</td></tr>
+        <tr><td>Iluminação de áreas comuns e jardins</td><td>Lâmpadas, sensores, reatores e circuitos externos</td><td>Mensal</td></tr>
+        <tr><td>Proteção contra surtos (DPS) e aterramento</td><td>Estado dos DPS e medição da resistência de aterramento</td><td>Anual e após tempestades fortes</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>A ABNT NBR 5674 determina que toda edificação tenha um programa de manutenção com registro das atividades. O cronograma acima entra nesse programa e fica documentado no relatório técnico entregue ao síndico.</p>
+
+  <h2 id="normas">Quais normas a parte elétrica do condomínio precisa seguir?</h2>
+  <p class="mp-direta">As principais são a NBR 5410 (instalações de baixa tensão), a NBR 5674 (manutenção de edificações), a NBR 10898 (iluminação de emergência), a NBR 5419 (proteção contra descargas atmosféricas) e a NR-10 (segurança em serviços com eletricidade).</p>
+  <ul>
+    <li><strong>ABNT NBR 5410:</strong> define como a instalação elétrica de baixa tensão deve ser projetada, executada e mantida, incluindo dimensionamento de cabos, disjuntores, DR e DPS.</li>
+    <li><strong>ABNT NBR 5674:</strong> exige um programa de manutenção da edificação, com planejamento e registro, sob responsabilidade do síndico.</li>
+    <li><strong>ABNT NBR 10898:</strong> trata do sistema de iluminação de emergência, cobrado na vistoria do Corpo de Bombeiros.</li>
+    <li><strong>ABNT NBR 5419:</strong> trata do SPDA, o para-raios do prédio, e das inspeções periódicas.</li>
+    <li><strong>NR-10:</strong> norma do Ministério do Trabalho sobre segurança de quem trabalha com eletricidade.</li>
+  </ul>
+  <p>Manter esses itens em ordem facilita a renovação do <strong>AVCB</strong> e protege o síndico, que responde civilmente pela manutenção das áreas comuns.</p>
+
+  <h2 id="incluido">O que está incluído na manutenção elétrica predial</h2>
+  <ul class="mp-check">
+    <li>Revisão periódica dos quadros de distribuição e de força</li>
+    <li>Manutenção do sistema de iluminação de emergência</li>
+    <li>Substituição de disjuntores de grande porte</li>
+    <li>Verificação dos dispositivos de proteção contra surtos (DPS)</li>
+    <li>Reparo de circuitos de iluminação externa e de jardins</li>
+    <li>Instalação de sensores de presença e automação de iluminação</li>
+    <li>Testes de continuidade e de isolação</li>
+    <li>Balanceamento de cargas entre as fases</li>
+    <li>Relatório técnico de cada intervenção, com fotos</li>
+  </ul>
+
+  <h2 id="como-funciona">Como funciona o atendimento para condomínios</h2>
+  <ol class="mp-etapas">
+    <li><strong>Solicitação:</strong> o síndico ou a administradora envia a demanda de manutenção ou vistoria pelo WhatsApp.</li>
+    <li><strong>Agendamento:</strong> a visita é marcada conforme o cronograma do condomínio, com aviso prévio aos moradores quando houver desligamento.</li>
+    <li><strong>Vistoria técnica:</strong> verificação no local seguindo as normas vigentes, com medições e inspeção dos quadros.</li>
+    <li><strong>Proposta:</strong> o condomínio recebe o orçamento por escrito para aprovação, item a item.</li>
+    <li><strong>Execução e testes:</strong> o serviço é entregue com teste de carga e de funcionamento de cada sistema.</li>
+    <li><strong>Relatório:</strong> registro das intervenções para o controle administrativo, com nota fiscal e garantia de 90 dias.</li>
+  </ol>
+
+  <h2 id="valor">Quanto custa um eletricista predial em Barueri?</h2>
+  <p class="mp-direta">O valor depende do porte do prédio, do tipo de contrato (avulso ou mensal), da urgência e das peças necessárias; o orçamento é sempre fechado antes do serviço.</p>
+  <p>A escala do empreendimento é o principal fator: prédios com mais unidades têm quadros de distribuição maiores e mais circuitos para revisar. Também pesam a urgência da situação, a necessidade de peças de alta performance, como disjuntores de grande porte, e a dificuldade de acesso a componentes escondidos em forros, shafts ou estruturas prediais.</p>
+  <p>Para a maioria dos condomínios, um <strong>contrato de manutenção mensal</strong> sai mais barato do que chamados avulsos, porque reduz emergências e evita paradas de bombas e portões, que costumam ser os reparos mais caros.</p>
+
+  <h2 id="faq">Perguntas frequentes sobre eletricista predial em Barueri</h2>
+  <dl class="mp-faq">
+    <dt>Quais os benefícios da manutenção preventiva no condomínio?</dt>
+    <dd>A manutenção preventiva reduz os custos com reparos emergenciais e evita paradas inesperadas de bombas, portões, interfones e iluminação. Ela também encontra pontos de aquecimento no quadro antes que virem curto-circuito ou incêndio, prolonga a vida útil dos equipamentos e mantém a documentação em dia para o AVCB e para a prestação de contas do síndico.</dd>
+
+    <dt>Vocês fazem manutenção noturna?</dt>
+    <dd>Sim. Emergências são atendidas 24 horas, inclusive à noite. Serviços que exigem desligar o quadro geral ou circuitos de áreas comuns podem ser programados para horários de menor movimento, à noite ou no fim de semana, combinados com o síndico para causar o mínimo de transtorno aos moradores.</dd>
+
+    <dt>A empresa emite relatório técnico?</dt>
+    <dd>Sim. Cada intervenção é registrada em relatório técnico com o que foi encontrado, o que foi feito, as peças trocadas e as recomendações, com fotos. O documento serve para o controle administrativo do condomínio, para a prestação de contas em assembleia e como parte do programa de manutenção exigido pela NBR 5674.</dd>
+
+    <dt>Vocês atendem urgências aos fins de semana?</dt>
+    <dd>Sim. O Mestre dos Reparos tem plantão 24 horas, todos os dias, para demandas que não podem esperar o próximo dia útil, como queda de energia nas áreas comuns, bomba de água parada, portão de garagem travado ou cheiro de queimado no quadro.</dd>
+
+    <dt>Qual a diferença entre eletricista predial e residencial?</dt>
+    <dd>O eletricista residencial trabalha dentro de uma casa ou apartamento. O predial cuida da infraestrutura coletiva do prédio: quadros de força principais, iluminação de áreas comuns e de emergência, bombas, portões, interfones e alimentação dos elevadores, normalmente com manutenção preventiva programada e relatório técnico.</dd>
+
+    <dt>O eletricista predial faz a manutenção do elevador?</dt>
+    <dd>Não. A manutenção do elevador é feita pela empresa conservadora contratada pelo condomínio. O eletricista predial cuida da alimentação elétrica do elevador, ou seja, cabos, disjuntores e estabilidade da tensão até o quadro de comando, e atua em conjunto com a conservadora quando há falha de energia.</dd>
+
+    <dt>A manutenção elétrica ajuda na renovação do AVCB?</dt>
+    <dd>Sim. A vistoria do Corpo de Bombeiros verifica, entre outros itens, a iluminação de emergência, a sinalização e as condições das instalações elétricas. Fazemos a adequação elétrica necessária e entregamos a documentação técnica que o condomínio apresenta no processo.</dd>
+
+    <dt>Vocês fazem contrato mensal com condomínios?</dt>
+    <dd>Sim. O contrato de manutenção elétrica mensal inclui visitas programadas, checklist por sistema, atendimento prioritário em emergências, relatório técnico e nota fiscal. O escopo é montado conforme o porte do prédio e os sistemas existentes.</dd>
+
+    <dt>Quais regiões vocês atendem?</dt>
+    <dd>Atendemos condomínios e prédios comerciais em todos os bairros de Barueri, incluindo Alphaville, Tamboré, Centro, Jardim Belval e Jardim Silveira, além de Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Osasco e Aldeia da Serra.</dd>
+  </dl>
+
+  <section class="mp-cta">
+    <h2>Fale com o Mestre dos Reparos</h2>
+    <p>A gestão de energia em um prédio exige conhecimento técnico e foco em normas de segurança. Em Barueri, o Mestre dos Reparos atende condomínios com equipe própria, responsável técnico com formação em engenharia e orçamento sem compromisso. Chame no WhatsApp e conte o que o seu condomínio precisa.</p>
+    <div class="mp-btns">
+      <a class="mp-btn mp-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista%20predial%20em%20Barueri.">💬 Falar no WhatsApp</a>
+      <a class="mp-btn mp-btn-agenda" href="https://mestre-reparos.base44.app/Agendamento">📅 Agendar vistoria</a>
+    </div>
+  </section>
+
+  <p class="mp-links">Veja também:
+    <a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html">Eletricista em Barueri</a> ·
+    <a href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html">Eletricista 24 horas</a> ·
+    <a href="https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html">Eletricista em Alphaville</a> ·
+    <a href="https://www.mestredosreparos.app.br/p/eletricista-em-santana-de-parnaiba.html">Eletricista em Santana de Parnaíba</a> ·
+    <a href="https://mestre-reparos.base44.app/Calculadora">Calculadora de preços</a>
+  </p>
+
+  <footer class="mp-empresa">
+    <strong>Mestre dos Reparos Manutenção &amp; Limpeza</strong> · CNPJ 64.521.657/0001-87<br>
+    Av. Henrique Gonçalves Baptista, 2245, Jardim Belval, Barueri/SP, CEP 06420-130<br>
+    WhatsApp <a href="https://wa.me/5511918390430">(11) 91839-0430</a> · <a href="mailto:mestredosreparosbarueri@gmail.com">mestredosreparosbarueri@gmail.com</a> · <a href="https://www.mestredosreparos.app.br">mestredosreparos.app.br</a> · <a href="https://www.instagram.com/mestredosreparosfacilites">Instagram</a> · ⭐ 4,9 no Google (<a href="https://g.page/r/CTZBTDtx4V-QEBM/review">avaliar</a>)
+  </footer>
+
+</article>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Electrician","HomeAndConstructionBusiness"],"@id":"https://www.mestredosreparos.app.br/#empresa","name":"Mestre dos Reparos Manutenção e Limpeza","description":"Eletricista predial em Barueri: manutenção elétrica preventiva e corretiva de condomínios e prédios comerciais, quadros de força, iluminação de emergência, bombas, portões, relatório técnico e plantão 24 horas.","url":"https://www.mestredosreparos.app.br","telephone":"+55 11 91839-0430","email":"mestredosreparosbarueri@gmail.com","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","logo":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","priceRange":"$$","taxID":"64.521.657/0001-87","address":{"@type":"PostalAddress","streetAddress":"Av. Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"areaServed":[{"@type":"City","name":"Barueri"},{"@type":"Place","name":"Alphaville"},{"@type":"Place","name":"Tamboré"},{"@type":"City","name":"Santana de Parnaíba"},{"@type":"City","name":"Carapicuíba"},{"@type":"City","name":"Jandira"},{"@type":"City","name":"Itapevi"},{"@type":"City","name":"Osasco"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":31,"bestRating":5,"worstRating":1},"sameAs":["https://www.instagram.com/mestredosreparosfacilites","https://www.facebook.com/mestredosreparos.oficial/","https://www.tiktok.com/@mestre.dos.reparo1","https://youtube.com/@mestredosreparos-i9d"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Eletricista predial em Barueri","serviceType":"Manutenção elétrica predial e de condomínios","provider":{"@id":"https://www.mestredosreparos.app.br/#empresa"},"areaServed":{"@type":"City","name":"Barueri"},"audience":{"@type":"BusinessAudience","audienceType":"Síndicos, administradoras de condomínio e prédios comerciais"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Manutenção elétrica predial","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Revisão de quadros de distribuição e de força"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Manutenção de iluminação de emergência"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Substituição de disjuntores de grande porte"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Verificação de DPS e aterramento"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Iluminação externa e de jardins"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sensores de presença e automação"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Testes de continuidade e isolação"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Contrato de manutenção elétrica mensal para condomínios"}}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Eletricista Predial em Barueri: guia de manutenção elétrica para condomínios","description":"O que faz o eletricista predial, frequência de manutenção de cada sistema do condomínio, normas NBR 5410, NBR 5674, NBR 10898, NBR 5419 e NR-10, e o que influencia o valor.","inLanguage":"pt-BR","datePublished":"2026-10-15","dateModified":"2026-10-15","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","author":{"@type":"Organization","name":"Mestre dos Reparos Manutenção e Limpeza","url":"https://www.mestredosreparos.app.br"},"publisher":{"@type":"Organization","name":"Mestre dos Reparos Manutenção e Limpeza","logo":{"@type":"ImageObject","url":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png"}},"about":[{"@type":"Thing","name":"Eletricista predial"},{"@type":"Thing","name":"Manutenção elétrica de condomínios"}],"mentions":[{"@type":"CreativeWork","name":"ABNT NBR 5410"},{"@type":"CreativeWork","name":"ABNT NBR 5674"},{"@type":"CreativeWork","name":"ABNT NBR 10898"},{"@type":"CreativeWork","name":"ABNT NBR 5419"},{"@type":"CreativeWork","name":"NR-10"},{"@type":"Place","name":"Barueri"}],"keywords":"eletricista predial Barueri, manutenção elétrica condomínio Barueri, eletricista para condomínio Alphaville, iluminação de emergência condomínio, manutenção preventiva quadro de força, AVCB elétrica","speakable":{"@type":"SpeakableSpecification","cssSelector":[".mp-resumo",".mp-direta",".mp-faq dt"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Como funciona a manutenção elétrica predial para condomínios em Barueri","step":[{"@type":"HowToStep","position":1,"name":"Solicitação","text":"O síndico ou a administradora envia a demanda de manutenção ou vistoria pelo WhatsApp."},{"@type":"HowToStep","position":2,"name":"Agendamento","text":"A visita é marcada conforme o cronograma do condomínio, com aviso prévio aos moradores quando houver desligamento."},{"@type":"HowToStep","position":3,"name":"Vistoria técnica","text":"Verificação no local seguindo as normas vigentes, com medições e inspeção dos quadros."},{"@type":"HowToStep","position":4,"name":"Proposta","text":"O condomínio recebe o orçamento por escrito para aprovação, item a item."},{"@type":"HowToStep","position":5,"name":"Execução e testes","text":"O serviço é entregue com teste de carga e de funcionamento de cada sistema."},{"@type":"HowToStep","position":6,"name":"Relatório","text":"Registro das intervenções para o controle administrativo, com nota fiscal e garantia de 90 dias."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quais os benefícios da manutenção preventiva no condomínio?","acceptedAnswer":{"@type":"Answer","text":"A manutenção preventiva reduz os custos com reparos emergenciais e evita paradas inesperadas de bombas, portões, interfones e iluminação. Ela também encontra pontos de aquecimento no quadro antes que virem curto-circuito ou incêndio, prolonga a vida útil dos equipamentos e mantém a documentação em dia para o AVCB e para a prestação de contas do síndico."}},{"@type":"Question","name":"Vocês fazem manutenção noturna?","acceptedAnswer":{"@type":"Answer","text":"Sim. Emergências são atendidas 24 horas, inclusive à noite. Serviços que exigem desligar o quadro geral ou circuitos de áreas comuns podem ser programados para horários de menor movimento, à noite ou no fim de semana, combinados com o síndico para causar o mínimo de transtorno aos moradores."}},{"@type":"Question","name":"A empresa emite relatório técnico?","acceptedAnswer":{"@type":"Answer","text":"Sim. Cada intervenção é registrada em relatório técnico com o que foi encontrado, o que foi feito, as peças trocadas e as recomendações, com fotos. O documento serve para o controle administrativo do condomínio, para a prestação de contas em assembleia e como parte do programa de manutenção exigido pela NBR 5674."}},{"@type":"Question","name":"Vocês atendem urgências aos fins de semana?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Mestre dos Reparos tem plantão 24 horas, todos os dias, para demandas que não podem esperar o próximo dia útil, como queda de energia nas áreas comuns, bomba de água parada, portão de garagem travado ou cheiro de queimado no quadro."}},{"@type":"Question","name":"Qual a diferença entre eletricista predial e residencial?","acceptedAnswer":{"@type":"Answer","text":"O eletricista residencial trabalha dentro de uma casa ou apartamento. O predial cuida da infraestrutura coletiva do prédio: quadros de força principais, iluminação de áreas comuns e de emergência, bombas, portões, interfones e alimentação dos elevadores, normalmente com manutenção preventiva programada e relatório técnico."}},{"@type":"Question","name":"O eletricista predial faz a manutenção do elevador?","acceptedAnswer":{"@type":"Answer","text":"Não. A manutenção do elevador é feita pela empresa conservadora contratada pelo condomínio. O eletricista predial cuida da alimentação elétrica do elevador, ou seja, cabos, disjuntores e estabilidade da tensão até o quadro de comando, e atua em conjunto com a conservadora quando há falha de energia."}},{"@type":"Question","name":"A manutenção elétrica ajuda na renovação do AVCB?","acceptedAnswer":{"@type":"Answer","text":"Sim. A vistoria do Corpo de Bombeiros verifica, entre outros itens, a iluminação de emergência, a sinalização e as condições das instalações elétricas. Fazemos a adequação elétrica necessária e entregamos a documentação técnica que o condomínio apresenta no processo."}},{"@type":"Question","name":"Vocês fazem contrato mensal com condomínios?","acceptedAnswer":{"@type":"Answer","text":"Sim. O contrato de manutenção elétrica mensal inclui visitas programadas, checklist por sistema, atendimento prioritário em emergências, relatório técnico e nota fiscal. O escopo é montado conforme o porte do prédio e os sistemas existentes."}},{"@type":"Question","name":"Quais regiões vocês atendem?","acceptedAnswer":{"@type":"Answer","text":"Atendemos condomínios e prédios comerciais em todos os bairros de Barueri, incluindo Alphaville, Tamboré, Centro, Jardim Belval e Jardim Silveira, além de Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Osasco e Aldeia da Serra."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br"},{"@type":"ListItem","position":2,"name":"Eletricista Predial em Barueri"}]}</script>
