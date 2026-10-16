@@ -1,0 +1,609 @@
+<meta charset="utf-8">
+<style>
+h3.post-title.entry-title,.post-title.entry-title,.post-title{display:none!important}
+.mestre-container{max-width:1100px;margin:auto;padding:20px;font-family:Arial,sans-serif;color:#222;line-height:1.7}
+.mestre-hero{background:linear-gradient(135deg,#0b2a4a,#163d66);padding:45px 25px;border-radius:18px;color:#fff;margin-bottom:35px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.mestre-hero h1{font-size:42px;line-height:1.2;margin:0 0 20px;font-weight:900;color:#fff}
+.mestre-hero p{font-size:20px;max-width:900px;color:#fff;margin:0 0 14px}
+.mestre-btns{display:flex;gap:15px;flex-wrap:wrap;margin-top:28px}
+.mestre-btn{display:inline-block;padding:16px 24px;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none!important}
+.mestre-btn-whats{background:#25D366;color:#fff!important}
+.mestre-btn-agendar{background:#ffb300;color:#0b2a4a!important}
+.mestre-atalhos{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.mestre-atalhos a{background:rgba(255,255,255,.14);color:#fff!important;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+.mestre-box{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-box h2{font-size:34px;color:#0b2a4a;margin:0 0 18px}
+.mestre-box h3{font-size:26px;color:#163d66;margin:28px 0 12px}
+.mestre-box p{font-size:20px;margin:0 0 18px}
+.mestre-box ul,.mestre-box ol{padding-left:24px;font-size:19px;line-height:1.8;margin:0 0 18px}
+.mestre-box li{margin-bottom:8px}
+.mestre-alerta{background:#fff5e0;border-left:6px solid #ffb300;padding:22px;border-radius:10px;margin:25px 0;font-size:19px}
+.mestre-alerta p{margin:0;font-size:19px}
+.mestre-servicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:25px}
+.mestre-card{background:#0b2a4a;color:#fff;padding:22px;border-radius:14px}
+.mestre-card h3{margin:0 0 10px;color:#ffb300;font-size:22px}
+.mestre-card p{color:#fff;font-size:17px;margin:0}
+.mestre-faq{margin-top:25px}
+.mestre-faq details{background:#f4f6f9;padding:18px;border-radius:12px;margin-bottom:14px}
+.mestre-faq summary{font-size:20px;font-weight:700;cursor:pointer;color:#0b2a4a}
+.mestre-faq p{margin:12px 0 0;font-size:18px}
+.mestre-cluster{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-cluster h3{color:#0b2a4a;font-size:24px;margin:0 0 14px}
+.mestre-cluster ul{padding-left:24px;font-size:18px;line-height:1.8;margin:0 0 12px}
+.mestre-cluster a{color:#0b2a4a;font-weight:700}
+.mestre-footer{background:#0b2a4a;color:#fff;padding:40px 25px;border-radius:18px;margin-top:40px}
+.mestre-footer h3{color:#ffb300;font-size:28px;margin:0 0 15px}
+.mestre-footer p,.mestre-footer a{font-size:17px;color:#fff!important;margin:0 0 12px}
+.mestre-btn-avaliar{display:inline-block;background:#ffb300;color:#0b2a4a!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:17px;text-decoration:none!important;margin-top:16px}
+.mestre-links{display:grid;gap:10px;margin:20px 0}
+.mestre-links a{color:#fff!important;text-decoration:none;font-weight:700}
+@media(max-width:768px){
+.mestre-hero{padding:32px 20px}
+.mestre-hero h1{font-size:34px}
+.mestre-hero p{font-size:18px}
+.mestre-box{padding:22px}
+.mestre-box h2{font-size:28px}
+.mestre-box p{font-size:18px}
+.mestre-box ul,.mestre-box ol{font-size:17px}
+}
+</style>
+<style>
+.cat-destaques{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+.cat-destaque{background:#fff5e0;border:2px solid #ffb300;border-radius:14px;padding:18px}
+.cat-destaque h3{margin:0 0 8px;font-size:19px;color:#0b2a4a}
+.cat-destaque p{margin:0;font-size:16px;line-height:1.6}
+.cat-grupos{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:24px}
+.cat-grupo{background:#f4f6f9;border-radius:14px;padding:20px}
+.cat-grupo h3{margin:0 0 12px;font-size:21px;color:#0b2a4a;border-bottom:3px solid #ffb300;padding-bottom:8px}
+.cat-grupo ul{padding-left:20px;margin:0;font-size:16px;line-height:1.65}
+.cat-grupo li{margin-bottom:5px}
+.cat-total{display:inline-block;background:#0b2a4a;color:#ffb300;font-weight:800;padding:10px 18px;border-radius:999px;font-size:17px;margin-top:20px}
+@media(max-width:768px){.cat-grupo ul{font-size:15px}.cat-grupo h3{font-size:19px}}
+</style>
+<style>
+.home-selos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:-10px 0 30px}
+.home-selo{background:#fff;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:16px;box-shadow:0 4px 18px rgba(11,42,74,.10);text-align:center}
+.home-selo strong{display:block;font-size:22px;color:#0b2a4a;line-height:1.2}
+.home-selo span{font-size:14px;color:#4a5b73}
+.home-google{background:linear-gradient(135deg,#0b2a4a,#163d66);color:#fff;border-radius:18px;padding:26px;margin-bottom:30px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.home-google-nota{font-size:20px;margin:0;color:#fff}
+.home-google-nota b{font-size:40px;color:#ffb300;display:block;line-height:1}
+.home-google-estrelas{color:#ffb300;font-size:22px;letter-spacing:2px}
+.home-btn-avaliar{display:inline-block;background:#fff;color:#0b2a4a!important;padding:16px 26px;border-radius:12px;font-weight:800;font-size:17px;text-decoration:none!important}
+.home-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:25px}
+.home-servico{display:block;background:#0b2a4a;border:2px solid #0b2a4a;border-radius:16px;padding:22px;text-decoration:none!important;transition:border-color .2s,background .2s}
+.home-servico:hover{border-color:#ffb300;background:#163d66}
+.home-servico-ico{font-size:30px;display:block;margin-bottom:10px}
+.home-servico h3{margin:0 0 8px;color:#ffb300;font-size:21px}
+.home-servico p{margin:0;font-size:16px;color:#e3ecf7;line-height:1.6}
+.home-servico-cta{display:inline-block;margin-top:12px;color:#ffb300;font-weight:800;font-size:15px}
+.home-mapa{border-radius:16px;overflow:hidden;margin-top:20px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.home-mapa iframe{width:100%;height:320px;border:0;display:block}
+.home-legal{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.home-legal a{background:rgba(255,255,255,.14);color:#fff!important;padding:11px 16px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+.mestre-redes{display:grid;gap:10px;margin:18px 0}
+.home-legal a,.mestre-footer a{color:#fff!important}
+.mestre-faq details{background:#eef3f9;border-left:5px solid #ffb300;border-radius:12px;padding:18px;margin-bottom:14px}
+.mestre-cluster{border-top:5px solid #ffb300}
+@media(max-width:768px){
+.home-google{padding:22px}
+.home-google-nota b{font-size:34px}
+.home-servico{padding:18px}
+.home-mapa iframe{height:260px}
+}
+</style>
+<section class="mestre-container">
+
+  <div class="mestre-hero">
+    <h1>Manutenção, Reparos, Reformas e Limpeza em Barueri e Região</h1>
+    <p>O Mestre dos Reparos resolve o seu imóvel por inteiro com <strong>uma única equipe</strong>: eletricista, encanador, pedreiro, pintor, azulejista, montador e limpeza. Atendimento residencial, comercial, condomínios, indústrias e galpões em Barueri, Alphaville, Tamboré, Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Osasco e Cotia.</p>
+    <p>Empresa formalizada com CNPJ ativo, sede no Jardim Belval, nota fiscal em todos os serviços e <strong>garantia técnica de 90 dias</strong> na mão de obra. Plantão para emergências elétricas e hidráulicas todos os dias, inclusive fins de semana e feriados.</p>
+    <div class="mestre-btns">
+      <a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento.">💬 Pedir orçamento no WhatsApp</a>
+      <a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento">📅 Agendar visita técnica</a>
+    </div>
+    <div class="mestre-atalhos">
+      <a href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html">⚡ Eletricista 24h</a>
+      <a href="https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html">🚿 Encanador</a>
+      <a href="https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html">🏗️ Reformas</a>
+      <a href="https://www.mestredosreparos.app.br/p/diarista-com-agendamento-em-barueri-e.html">🏠 Diarista</a>
+      <a href="https://mestre-reparos.base44.app/Calculadora">🧮 Calculadora de preços</a>
+    </div>
+  </div>
+
+  <div class="home-selos">
+    <div class="home-selo"><strong>+20 anos</strong><span>de experiência em manutenção</span></div>
+    <div class="home-selo"><strong>24 horas</strong><span>plantão para emergências</span></div>
+    <div class="home-selo"><strong>90 dias</strong><span>de garantia na mão de obra</span></div>
+    <div class="home-selo"><strong>CNPJ ativo</strong><span>nota fiscal em todo serviço</span></div>
+    <div class="home-selo"><strong>Equipe própria</strong><span>sem intermediários</span></div>
+  </div>
+
+  <div class="home-google">
+    <p class="home-google-nota">
+      <b>4,9</b>
+      <span class="home-google-estrelas">★★★★★</span><br>
+      32 avaliações de clientes no Google
+    </p>
+    <div>
+      <a class="home-btn-avaliar" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+      <p style="margin:12px 0 0;font-size:15px;color:#cfe0f2">Sua avaliação ajuda outras pessoas de Barueri a encontrar um profissional de confiança.</p>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>O que o Mestre dos Reparos faz</h2>
+    <p>Somos uma empresa de <strong>facilities e manutenção residencial e predial</strong>. Isso significa que você não precisa contratar um profissional diferente para cada problema do imóvel: reunimos as especialidades em um só time, com orçamento único, um responsável pela obra e um só telefone para chamar. Escolha o serviço que você precisa abaixo.</p>
+    <div class="home-hub">
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html">
+      <span class="home-servico-ico">⚡</span>
+      <h3>Eletricista 24 horas</h3>
+      <p>Emergência elétrica, quadro de distribuição, disjuntores, tomadas, iluminação e aterramento, com plantão todos os dias.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html">
+      <span class="home-servico-ico">🚿</span>
+      <h3>Encanador e Hidráulica</h3>
+      <p>Vazamento, tubulação, pontos de água e esgoto, registro, caixa d’água e desentupimento, com detecção de vazamento oculto.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html">
+      <span class="home-servico-ico">🏗️</span>
+      <h3>Reformas Residenciais e Comerciais</h3>
+      <p>Obra completa com uma única equipe: pedreiro, alvenaria, elétrica, hidráulica, revestimento, forro e acabamento.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/pintura-forro-e-paredes-de-drywall-em.html">
+      <span class="home-servico-ico">🎨</span>
+      <h3>Pintura, Forro e Drywall</h3>
+      <p>Pintura interna e externa, massa corrida, textura, grafiato, forro rebaixado, sanca e divisórias de drywall.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/pisos-porcelanato-ceramica-ardosia.html">
+      <span class="home-servico-ico">🧱</span>
+      <h3>Pisos e Revestimentos</h3>
+      <p>Porcelanato, cerâmica, ardósia, laminado e piso vinílico, com contrapiso, nivelamento, rejunte, soleira e rodapé.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/marido-de-aluguel.html">
+      <span class="home-servico-ico">🔧</span>
+      <h3>Marido de Aluguel</h3>
+      <p>Pequenos reparos do dia a dia, montagem de móveis, prateleiras, suportes de TV, cortinas e ajustes em geral.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/limpeza-pos-obra-em-barueri-e-regiao.html">
+      <span class="home-servico-ico">🧽</span>
+      <h3>Limpeza Pós Obra</h3>
+      <p>Limpeza pesada e limpeza fina para entrega de obra, com remoção de resíduo de cimento, rejunte e poeira fina.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/limpeza-pos-mudanca-em-barueri-e-regiao.html">
+      <span class="home-servico-ico">📦</span>
+      <h3>Limpeza Pós Mudança</h3>
+      <p>Limpeza completa antes de mudar ou na entrega da chave, com tratamento de mancha, gordura e odor.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/diarista-com-agendamento-em-barueri-e.html">
+      <span class="home-servico-ico">🏠</span>
+      <h3>Diarista com Agendamento</h3>
+      <p>Faxina residencial por diária, semanal, quinzenal ou mensal, com agendamento direto pelo WhatsApp.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/contrato-de-limpeza-para-empresas.html">
+      <span class="home-servico-ico">🏢</span>
+      <h3>Contrato de Limpeza para Empresas</h3>
+      <p>Limpeza recorrente para empresas, condomínios e galpões, com equipe dimensionada, cronograma e nota fiscal.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html">
+      <span class="home-servico-ico">🛠️</span>
+      <h3>Contrato de Manutenção Predial</h3>
+      <p>Manutenção preventiva e corretiva de elétrica, hidráulica e civil, com chamado prioritário e relatório de visitas.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    <a class="home-servico" href="https://www.mestredosreparos.app.br/p/contratos-corporativos-b2b.html">
+      <span class="home-servico-ico">🏬</span>
+      <h3>Facilities: Limpeza e Manutenção</h3>
+      <p>Solução única para escritórios, clínicas, lojas, indústrias e condomínios, com um só fornecedor e um só contrato.</p>
+      <span class="home-servico-cta">Ver detalhes e valores →</span>
+    </a>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Quem é o Mestre dos Reparos</h2>
+    <p>O Mestre dos Reparos Manutenção e Limpeza nasceu em Barueri, no Jardim Belval, da experiência de mais de 20 anos de um profissional formado em engenharia que passou a vida dentro de obras e manutenção predial. A ideia sempre foi simples e continua a mesma: resolver o problema do cliente por inteiro, com técnica, transparência e preço justo, em vez de empurrar serviço e sumir depois.</p>
+    <p>Hoje somos uma empresa formalizada, com CNPJ ativo, sede física na Av. Henrique Gonçalves Baptista, em Barueri, razão social Maria Eduarda Hengles Valadão e emissão de nota fiscal em todos os serviços. Mantemos <strong>equipes próprias por especialidade</strong>: eletricista, encanador, pedreiro, azulejista, pintor, montador de móveis e equipe de limpeza. Ninguém é terceirizado no meio do caminho, o que garante padrão de execução e responsabilidade sobre o que foi entregue.</p>
+    <p>Nossa atuação é dividida em três frentes. Na <strong>manutenção residencial</strong>, atendemos casas, apartamentos, sobrados e coberturas com reparos do dia a dia, emergências elétricas e hidráulicas, instalação de chuveiro, torneira, tomada, iluminação, montagem de móveis e pequenos ajustes. Na <strong>reforma e obra</strong>, assumimos banheiros, cozinhas, fachadas e imóveis completos, cuidando de alvenaria, elétrica, hidráulica, impermeabilização, revestimento, forro de drywall e pintura na ordem técnica correta, para não haver retrabalho. Na frente <strong>corporativa</strong>, mantemos contratos de limpeza e de manutenção predial para empresas, clínicas, lojas, escolas, indústrias, galpões, centros de distribuição e condomínios.</p>
+    <p>Trabalhamos com <strong>diagnóstico antes do orçamento</strong>. Em vez de chutar um valor por telefone, avaliamos a instalação, medimos, testamos e explicamos em linguagem simples o que está errado, por que aconteceu e o que precisa ser feito. O valor é apresentado por escrito antes de qualquer serviço começar, com materiais e etapas separados. Nada é cobrado sem aprovação do cliente.</p>
+    <p>Executamos conforme as normas técnicas brasileiras, em especial a <strong>NBR 5410</strong> para instalações elétricas de baixa tensão, com desligamento de circuito, uso de equipamento de proteção, aterramento verificado e testes de funcionamento na presença do cliente ao final. Emitimos <strong>nota fiscal</strong> e entregamos a <strong>garantia técnica de 90 dias por escrito</strong> na mão de obra, conforme o Código de Defesa do Consumidor.</p>
+    <p>Já atendemos organizações de grande porte e empresas de médio porte, entre elas Bradesco, Itaú, PJ Bank, Armazena Armazéns, MFA Transportes, Bureau Veritas, além de centenas de famílias e condomínios da região. Essa experiência corporativa nos trouxe disciplina de cronograma, documentação em ordem, equipe identificada e comunicação formal, padrão que levamos também para o atendimento residencial.</p>
+    <p>Se você precisa de alguém que apareça, resolva e responda pelo serviço depois, fale com a gente pelo WhatsApp. Enviamos orientação inicial na hora e, se for necessário, agendamos visita técnica gratuita para medir e orçar.</p>
+  </div>
+
+  <style>
+.tp-topico{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.tp-topico h2{font-size:32px;line-height:1.25;color:#0b2a4a;margin:0 0 20px}
+.tp-foto{display:block;width:100%;max-width:420px;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:50%;margin:0 auto 24px;background:#eef2f7}
+.tp-topico p{font-size:19px;line-height:1.75;margin:0 0 16px;color:#222}
+.tp-topico p:last-child{margin-bottom:0}
+.tp-topico a{color:#0b2a4a;font-weight:700}
+@media(max-width:768px){.tp-topico{padding:22px}.tp-topico h2{font-size:26px}.tp-topico p{font-size:17px}.tp-foto{max-width:320px}}
+</style>
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista 24 horas em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/eletricista-quadro-eletrico-barueri.jpg" alt="Eletricista 24 horas do Mestre dos Reparos em Barueri" width="420" height="420" loading="lazy">
+    <p>O <strong>eletricista 24 horas</strong> do Mestre dos Reparos atende emergências elétricas em Barueri e região todos os dias, inclusive fins de semana e feriados: falta de energia, curto-circuito, disjuntor caindo e cheiro de queimado.</p>
+    <p>Também fazemos troca de fiação, quadro de distribuição, IDR e DPS, tomadas, chuveiro e iluminação, com serviço conforme a NBR 5410 e garantia de 90 dias.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html">Saiba mais sobre eletricista 24 horas</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Encanador em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/encanador-torneira-barueri.jpg" alt="Encanador identificando vazamento oculto em Barueri" width="420" height="420" loading="lazy">
+    <p>O <strong>encanador</strong> resolve vazamento, torneira pingando, registro com defeito, descarga correndo, ralo com retorno e baixa pressão de água.</p>
+    <p>Fazemos detecção de vazamento oculto com equipamento, sem quebrar paredes à toa, e entregamos o serviço com teste de estanqueidade.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html">Saiba mais sobre encanador</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Desentupimento em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/vazamento-oculto-parede.jpg" alt="Desentupimento de pia e esgoto em Barueri" width="420" height="420" loading="lazy">
+    <p><strong>Desentupimento</strong> de pia, ralo, vaso, tanque, esgoto e caixa de gordura, com máquina rotativa e sem produto agressivo à tubulação.</p>
+    <p>Quando o entupimento volta, investigamos a causa, como caimento errado do cano ou caixa de gordura saturada.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html">Saiba mais sobre desentupimento</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Reformas residenciais e comerciais em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/reforma-de-apartamento-barueri.jpg" alt="Equipe de reforma do Mestre dos Reparos em Barueri" width="420" height="420" loading="lazy">
+    <p>Fazemos a <strong>reforma completa</strong> com uma única equipe: pedreiro, eletricista, encanador, gesseiro, azulejista e pintor, na ordem técnica correta para não haver retrabalho.</p>
+    <p>Atendemos casas, apartamentos, condomínios, lojas, escritórios e clínicas, com visita técnica gratuita e orçamento por etapa.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html">Saiba mais sobre reformas residenciais e comerciais</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Reforma de banheiro em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/instalacao-chuveiro-eletrico.jpg" alt="Reforma de banheiro em Barueri" width="420" height="420" loading="lazy">
+    <p>A <strong>reforma de banheiro</strong> inclui retirada do revestimento antigo, revisão de hidráulica e elétrica, impermeabilização, piso, azulejo, louças e metais.</p>
+    <p>Uma reforma de banheiro costuma levar de 7 a 15 dias, conforme o tamanho e o acabamento escolhido.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html">Saiba mais sobre reforma de banheiro</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Reforma de cozinha em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/eletricista-residencial-apartamento-barueri.jpg" alt="Reforma de cozinha em Barueri" width="420" height="420" loading="lazy">
+    <p>Na <strong>reforma de cozinha</strong>, planejamos pontos de água, esgoto, gás e tomadas antes do revestimento, para receber os eletrodomésticos e os móveis planejados.</p>
+    <p>Circuitos dedicados para forno, cooktop e micro-ondas evitam disjuntor caindo depois da obra.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html">Saiba mais sobre reforma de cozinha</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Pintura residencial e comercial em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/pintura-parede-barueri.jpg" alt="Pintura residencial em Barueri" width="420" height="420" loading="lazy">
+    <p><strong>Pintura</strong> interna e externa, massa corrida, textura e grafiato, com correção de trincas, tratamento de mofo e proteção completa de piso e móveis.</p>
+    <p>Atendemos apartamentos, casas, fachadas, condomínios e salas comerciais.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/pintura-forro-e-paredes-de-drywall-em.html">Saiba mais sobre pintura residencial e comercial</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Gesso e drywall em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/trinca-parede-drywall.jpg" alt="Forro e parede de drywall em Barueri" width="420" height="420" loading="lazy">
+    <p>Forro rebaixado, sanca, cortineiro e paredes de <strong>drywall</strong> para dividir ambientes sem obra pesada.</p>
+    <p>A iluminação embutida é planejada junto com o forro, com eletricista da própria equipe.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/pintura-forro-e-paredes-de-drywall-em.html">Saiba mais sobre gesso e drywall</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Pisos e revestimentos em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/instalacao-de-piso-barueri.jpg" alt="Assentamento de porcelanato em Barueri" width="420" height="420" loading="lazy">
+    <p>Assentamento de <strong>porcelanato</strong>, cerâmica, ardósia, laminado e piso vinílico, com contrapiso, nivelamento, rejunte, soleira e rodapé.</p>
+    <p>O nivelamento correto é o que garante piso sem peça oca e sem desnível.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/pisos-porcelanato-ceramica-ardosia.html">Saiba mais sobre pisos e revestimentos</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Pedreiro e alvenaria em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/pedreiro-alvenaria-barueri.jpg" alt="Pedreiro e alvenaria em Barueri" width="420" height="420" loading="lazy">
+    <p><strong>Pedreiro</strong> para paredes, abertura de vãos, contrapiso, reboco, muros e pequenas obras, do projeto à entrega.</p>
+    <p>Toda obra é acompanhada por responsável técnico com formação em engenharia.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html">Saiba mais sobre pedreiro e alvenaria</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Impermeabilização em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/infiltracao-impermeabilizacao.jpg" alt="Impermeabilização de laje em Barueri" width="420" height="420" loading="lazy">
+    <p>A <strong>impermeabilização</strong> é a obra invisível que evita infiltração, mofo e estrago no forro do vizinho de baixo.</p>
+    <p>Fazemos impermeabilização de laje, box, área molhada e floreira, com teste antes do revestimento.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html">Saiba mais sobre impermeabilização</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Marido de aluguel em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/eletricista-perto-de-mim-barueri.jpg" alt="Marido de aluguel fazendo pequenos reparos em Barueri" width="420" height="420" loading="lazy">
+    <p>O <strong>marido de aluguel</strong> resolve os pequenos reparos do dia a dia: prateleiras, suportes de TV, cortinas, fechaduras, torneiras e ajustes em geral.</p>
+    <p>Você junta a lista de pendências e resolvemos tudo em uma só visita.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/marido-de-aluguel.html">Saiba mais sobre marido de aluguel</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Montagem de móveis em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/reforma-de-apartamento-barueri.jpg" alt="Montagem de móveis em Barueri" width="420" height="420" loading="lazy">
+    <p><strong>Montagem de móveis</strong> com cuidado para não danificar peças nem paredes, incluindo fixação de armários e painéis.</p>
+    <p>Ganhe tempo na mudança ou na compra de móveis novos.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/marido-de-aluguel.html">Saiba mais sobre montagem de móveis</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Limpeza pós-obra em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/limpeza-pos-obra-barueri.jpg" alt="Limpeza pós-obra em Barueri" width="420" height="420" loading="lazy">
+    <p>A <strong>limpeza pós-obra</strong> remove resíduo de cimento, rejunte, tinta e poeira fina, deixando o imóvel pronto para morar ou entregar.</p>
+    <p>Fazemos limpeza pesada e limpeza fina, com produtos adequados a cada tipo de piso e revestimento.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/limpeza-pos-obra-em-barueri-e-regiao.html">Saiba mais sobre limpeza pós-obra</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Manutenção de condomínios em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/eletricista-predial-barueri.jpg" alt="Manutenção preventiva de condomínio em Barueri" width="420" height="420" loading="lazy">
+    <p>A <strong>manutenção preventiva de condomínio</strong> cuida de elétrica, hidráulica, iluminação, bombas, portões e áreas comuns com cronograma e relatório.</p>
+    <p>Prevenir sai mais barato que o conserto de emergência e valoriza o imóvel.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html">Saiba mais sobre manutenção de condomínios</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Contrato de manutenção para empresas em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/eletricista-industrial-barueri.jpg" alt="Contrato de manutenção predial para empresas em Barueri" width="420" height="420" loading="lazy">
+    <p>O <strong>contrato de manutenção</strong> dá previsibilidade de custo: visitas programadas, chamado prioritário, relatório e nota fiscal.</p>
+    <p>Atendemos escritórios, clínicas, lojas, escolas, indústrias, galpões e condomínios.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html">Saiba mais sobre contrato de manutenção para empresas</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Manutenção de galpões em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/eletricista-industrial-barueri.jpg" alt="Manutenção de galpão industrial em Barueri" width="420" height="420" loading="lazy">
+    <p>Em galpões e centros de distribuição, a <strong>manutenção</strong> evita paradas: elétrica industrial, iluminação, pisos, sinalização e estrutura.</p>
+    <p>Montamos o plano de manutenção conforme a operação, com execução fora do horário de pico quando necessário.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/contratos-corporativos-b2b.html">Saiba mais sobre manutenção de galpões</a></p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Caixa d’água em Barueri</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/658e3d636553e5f4c2502c1335578dc07b5be603/fotos/encanador-torneira-barueri.jpg" alt="Limpeza e instalação de caixa d’água em Barueri" width="420" height="420" loading="lazy">
+    <p>Instalação, troca e <strong>limpeza de caixa d’água</strong> e cisterna, com desinfecção e laudo da limpeza.</p>
+    <p>A limpeza periódica é obrigatória em condomínios e recomendada em casas.</p>
+    <p><a href="https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html">Saiba mais sobre caixa d’água</a></p>
+  </div>
+
+  <style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+
+  <div class="mestre-box">
+    <h2>Serviços de reforma e manutenção por bairro e cidade</h2>
+    <p>Atendemos Barueri bairro por bairro e as cidades vizinhas, com equipe que conhece a região e chega rápido. Veja abaixo as páginas de cada localidade.</p>
+  </div>
+
+  
+  <div class="mestre-cluster">
+    <h3>Eletricista por bairro e cidade</h3>
+    <ul>
+      <li><a href="https://www.mestredosreparos.app.br/p/blog-page_2.html">Eletricista no Centro de Barueri, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html">Eletricista no Jardim Belval, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/blog-page_3.html">Eletricista na Aldeia de Barueri, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/blog-page_29.html">Eletricista no Jardim Silveira, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/blog-page_87.html">Eletricista no Tamboré, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/blog-page_43.html">Eletricista no Jardim Tupanci, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html">Eletricista em Alphaville, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/blog-page_83.html">Eletricista no Bethaville, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/blog-page_8.html">Eletricista no Parque Viana, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-cruz-preta.html">Eletricista na Cruz Preta, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-boa-vista.html">Eletricista na Vila Boa Vista, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-jardim-paulista.html">Eletricista no Jardim Paulista, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-18-do-forte.html">Eletricista no 18 do Forte, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-engenho-novo.html">Eletricista no Engenho Novo, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-parque-imperial-barueri.html">Eletricista no Parque Imperial, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-na-vila-sao-francisco.html">Eletricista na Vila São Francisco, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-helena.html">Eletricista no Jardim Maria Helena, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-california.html">Eletricista no Jardim Califórnia, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-na-regina-alice-barueri-24.html">Eletricista na Regina Alice, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-nas-chacaras-marco-barueri.html">Eletricista nas Chácaras Marco, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-na-fazenda-militar-barueri.html">Eletricista na Fazenda Militar, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-audir-barueri.html">Eletricista no Jardim Audir, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-barueri.html">Eletricista no Jardim Barueri, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-na-nossa-senhora-da-escada.html">Eletricista na Nossa Senhora da Escada, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-na-votupoca-barueri.html">Eletricista na Votupoca, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-camargos.html">Eletricista no Jardim dos Camargos, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-esperanca-barueri.html">Eletricista no Jardim Esperança, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-graziela-barueri.html">Eletricista no Jardim Graziela, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-iracema-barueri.html">Eletricista no Jardim Iracema, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-itaquiti-barueri.html">Eletricista no Jardim Itaquiti, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-julio-barueri.html">Eletricista no Jardim Júlio, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-libano-barueri-24.html">Eletricista no Jardim Líbano, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-cristina.html">Eletricista no Jardim Maria Cristina, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-mutinga-barueri.html">Eletricista no Jardim Mutinga, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-paraiso-barueri.html">Eletricista no Jardim Paraíso, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-reginalice.html">Eletricista no Jardim Reginalice, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-pedro-barueri.html">Eletricista no Jardim São Pedro, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-silvestre.html">Eletricista no Jardim São Silvestre, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-altos-barueri.html">Eletricista no Jardim dos Altos, Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html">Eletricista em Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html">Eletricista em Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-carapicuiba-atendimento.html">Eletricista em Carapicuíba</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-itapevi.html">Eletricista em Itapevi</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-jandira.html">Eletricista em Jandira</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-santana-de-parnaiba.html">Eletricista em Santana de Parnaíba</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-aldeia-da-serra.html">Eletricista na Aldeia da Serra</a></li>
+    </ul>
+  </div>
+  
+  
+
+  <style>
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.dep-card{background:#fff;border:2px solid #e6ebf2;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.dep-top{display:flex;align-items:center;gap:12px}
+.dep-avatar{width:46px;height:46px;border-radius:50%;background:#0b2a4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 46px}
+.dep-nome{font-weight:800;color:#0b2a4a;font-size:16px;line-height:1.25}
+.dep-quando{font-size:13px;color:#6b7a8d}
+.dep-estrelas{color:#ffb300;font-size:17px;letter-spacing:2px}
+.mestre-box .dep-texto{margin:0;font-size:17px;color:#33445c;line-height:1.65}
+.dep-rodape{margin-top:auto;font-size:13px;color:#6b7a8d;font-weight:700}
+.dep-resumo{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#f4f6f9;border-radius:16px;padding:22px;margin-top:20px}
+.mestre-box .dep-nota{margin:0;font-size:16px;color:#33445c}
+.mestre-box .dep-nota b{font-size:34px;color:#0b2a4a;display:block;line-height:1;margin-bottom:4px}
+.dep-btn{display:inline-block;background:#0b2a4a;color:#fff!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none!important}
+@media(max-width:768px){.dep-card{padding:18px}.dep-resumo{padding:18px}.dep-btn{display:block;text-align:center}}
+</style>
+<div class="mestre-box" id="depoimentos">
+    <h2>Depoimentos de clientes no Google</h2>
+    <p>Quem contrata o Mestre dos Reparos avalia o serviço no Google depois do atendimento. Abaixo estão depoimentos reais de clientes atendidos em Barueri e região.</p>
+    <div class="dep-grid">
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">KC</div>
+        <div>
+          <div class="dep-nome">Kelly Carvalho</div>
+          <div class="dep-quando">Limpeza residencial · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente serviço de limpeza! Fiquei muito satisfeita com o resultado, tudo foi feito com muito cuidado e atenção aos detalhes. A equipe é pontual, organizada e deixou o lugar impecável. Recomendo demais!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">MF</div>
+        <div>
+          <div class="dep-nome">Marcelo Fernandes</div>
+          <div class="dep-quando">Manutenção e reparos · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Gostei muito do trabalho, foram super atenciosos e dá para ver o conhecimento e o domínio do que fazem. Sem contar a educação: gosto de entender as coisas e eles responderam todas as minhas perguntas.</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">LF</div>
+        <div>
+          <div class="dep-nome">Lais Tafnes Ferrari</div>
+          <div class="dep-quando">Atendimento · há 8 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente profissional, com atendimento excepcional!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+    </div>
+    <div class="dep-resumo">
+      <p class="dep-nota">
+        <b>4,9</b>
+        <span class="dep-estrelas">★★★★★</span><br>
+        Média de 31 avaliações de clientes no Google Meu Negócio
+      </p>
+      <a class="dep-btn" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+    </div>
+    <p style="margin-top:14px"><a href="https://www.google.com/maps/search/?api=1&query=Mestre%20dos%20Reparos%20Manuten%C3%A7%C3%A3o%20e%20Limpeza%2C%20Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Perguntas frequentes</h2>
+    <div class="mestre-faq">
+      <details><summary>Quem é o Mestre dos Reparos?</summary><p>O Mestre dos Reparos é uma empresa de manutenção, reparos, reformas e limpeza com sede em Barueri, no Jardim Belval. Atuamos com equipes próprias de eletricista, encanador, pedreiro, pintor, azulejista e limpeza, sob responsabilidade técnica de profissional com formação em engenharia e mais de 20 anos de experiência. Atendemos pessoas físicas, empresas, condomínios, indústrias e galpões em Barueri e em toda a região oeste da Grande São Paulo.</p></details>
+      <details><summary>Quais cidades e bairros vocês atendem?</summary><p>Atendemos Barueri em todos os bairros, incluindo Alphaville, Tamboré, Bethaville, Aldeia de Barueri, Jardim Belval, Jardim Silveira, Engenho Novo, Parque Imperial, Jardim Tupanci, Regina Alice, Chácaras Marco e Vila São Francisco. Também atendemos Santana de Parnaíba, Aldeia da Serra, Carapicuíba, Jandira, Itapevi, Osasco e Cotia, com deslocamento incluído no orçamento.</p></details>
+      <details><summary>Vocês atendem emergência fora do horário comercial?</summary><p>Sim. Temos plantão para emergências elétricas e hidráulicas todos os dias, incluindo fins de semana e feriados. Em caso de cheiro de queimado, faísca, choque ou vazamento com risco de curto-circuito, desligue o disjuntor geral e chame pelo WhatsApp antes de tentar religar qualquer coisa.</p></details>
+      <details><summary>O orçamento é gratuito e sem compromisso?</summary><p>Sim. Você pode enviar fotos e medidas pelo WhatsApp e receber uma estimativa, ou agendar visita técnica gratuita para medição no local. A proposta é entregue por escrito, com etapas, prazos, materiais e valores separados, e nada é cobrado sem a sua aprovação.</p></details>
+      <details><summary>A empresa emite nota fiscal e dá garantia?</summary><p>Sim. Somos empresa formalizada, com CNPJ 64.521.657/0001-87 e razão social Maria Eduarda Hengles Valadão, emitimos nota fiscal em todos os serviços e oferecemos garantia técnica de 90 dias na mão de obra, por escrito, conforme o Código de Defesa do Consumidor.</p></details>
+      <details><summary>Vocês fazem contrato para empresas e condomínios?</summary><p>Sim. Montamos contratos de limpeza e de manutenção predial para empresas, clínicas, lojas, escolas, indústrias, galpões e condomínios, com escopo definido, dimensionamento de equipe, cronograma de visitas, relatório de execução e nota fiscal mensal. Já atendemos organizações como Bradesco, Itaú, PJ Bank, Armazena Armazéns, MFA Transportes e Bureau Veritas.</p></details>
+      <details><summary>Quais são as formas de pagamento?</summary><p>Aceitamos Pix, dinheiro, cartão de débito e crédito e transferência bancária. Para contratos corporativos, o faturamento é mensal, com boleto e nota fiscal, conforme o prazo acordado em contrato.</p></details>
+      <details><summary>Quanto tempo leva para o atendimento começar?</summary><p>Chamados de emergência elétrica e hidráulica são priorizados e costumam ser atendidos no mesmo dia. Reparos e pequenos serviços são agendados conforme a sua disponibilidade, normalmente em poucos dias. Obras de reforma começam depois da aprovação do orçamento e da confirmação do cronograma de materiais.</p></details>
+      <details><summary>Vocês trabalham em apartamento com regras de condomínio?</summary><p>Sim. Trabalhamos com horário de obra controlado, proteção de elevador, corredor e áreas comuns, sinalização, descarte correto de entulho e envio da documentação da equipe quando o condomínio exige autorização prévia.</p></details>
+      <details><summary>Como pedir um orçamento?</summary><p>Chame no WhatsApp (11) 91839-0430, conte o que precisa e envie fotos se puder. Em poucos minutos você recebe as orientações iniciais e, se for o caso, agendamos a visita técnica gratuita. Também é possível usar a calculadora de preços do nosso aplicativo para ter uma referência antes de falar com a equipe.</p></details>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Onde estamos e onde atendemos</h2>
+    <p><strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval – Barueri/SP – CEP 06420-130<br>
+    <strong>WhatsApp e telefone:</strong> (11) 91839-0430<br>
+    <strong>E-mail:</strong> mestredosreparosbarueri@gmail.com<br>
+    <strong>Horário:</strong> atendimento comercial de segunda a sábado, com plantão 24 horas para emergências elétricas e hidráulicas, todos os dias, inclusive feriados.<br>
+    <strong>Área de atendimento:</strong> Barueri (todos os bairros), Alphaville, Tamboré, Bethaville, Aldeia de Barueri, Santana de Parnaíba, Aldeia da Serra, Carapicuíba, Jandira, Itapevi, Osasco e Cotia.</p>
+    <div class="home-mapa">
+      <iframe src="https://www.google.com/maps?q=Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP%2C%2006420-130&output=embed" title="Localização do Mestre dos Reparos em Barueri" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <footer class="mestre-footer">
+    <h3>Mestre dos Reparos Manutenção &amp; Limpeza</h3>
+    <p>Manutenção, reparos, reformas e limpeza em Barueri e região. Empresa com CNPJ ativo, nota fiscal e garantia técnica de 90 dias.</p>
+    <p><strong>Razão Social:</strong> Maria Eduarda Hengles Valadão<br>
+    <strong>CNPJ:</strong> 64.521.657/0001-87<br>
+    <strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval – Barueri/SP – CEP 06420-130<br>
+    <strong>WhatsApp:</strong> <a href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento.">(11) 91839-0430</a><br>
+    <strong>E-mail:</strong> <a href="mailto:mestredosreparosbarueri@gmail.com">mestredosreparosbarueri@gmail.com</a></p>
+    <div class="mestre-links mestre-redes">
+    <a href="https://www.instagram.com/mestredosreparosfacilites" target="_blank" rel="noopener">📸 Instagram: @mestredosreparosfacilites</a>
+    <a href="https://www.facebook.com/mestredosreparos.oficial/" target="_blank" rel="noopener">👍 Facebook: /mestredosreparos.oficial</a>
+    <a href="https://www.tiktok.com/@mestre.dos.reparo1" target="_blank" rel="noopener">🎵 TikTok: @mestre.dos.reparo1</a>
+    <a href="https://youtube.com/@mestredosreparos-i9d" target="_blank" rel="noopener">▶️ YouTube: @mestredosreparos-i9d</a>
+  </div>
+    <div class="mestre-links">
+      <a href="https://www.google.com/maps/search/?api=1&query=Mestre%20dos%20Reparos%20Manuten%C3%A7%C3%A3o%20e%20Limpeza%2C%20Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP%2C%2006420-130" target="_blank" rel="noopener">Perfil no Google Meu Negócio</a>
+      <a href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">Avaliar no Google</a>
+      <a href="https://www.mestredosreparos.app.br">Site oficial: mestredosreparos.app.br</a>
+    </div>
+    <div class="home-legal">
+      <a href="https://www.mestredosreparos.app.br/p/lgpd-lei-geral-de-protecao-de-dados.html">LGPD</a>
+      <a href="https://www.mestredosreparos.app.br/p/politica-de-privacidade.html">Política de Privacidade</a>
+      <a href="https://www.mestredosreparos.app.br/p/temos-de-uso.html">Termos de Uso</a>
+      <a href="https://www.mestredosreparos.app.br/p/quem-somos-mestre-dos-reparos.html">Quem Somos</a>
+    </div>
+  </footer>
+</section>
+
+<link rel="canonical" href="https://www.mestredosreparos.app.br/p/mestre-dos-reparos-manutencao-reparos.html"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","@id":"https://www.mestredosreparos.app.br/#empresa","name":"Mestre dos Reparos Manutenção e Limpeza","alternateName":"Mestre dos Reparos","description":"Empresa de manutenção, reparos, reformas e limpeza em Barueri e região: eletricista 24 horas, encanador, pedreiro, pintura, drywall, pisos, marido de aluguel, diarista, limpeza pós obra e contratos para empresas.","url":"https://www.mestredosreparos.app.br","logo":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","telephone":"+55 11 91839-0430","email":"mestredosreparosbarueri@gmail.com","priceRange":"$$","currenciesAccepted":"BRL","paymentAccepted":"Dinheiro, Pix, Cartão de crédito, Cartão de débito, Transferência bancária, Boleto","foundingDate":"2015","knowsLanguage":"pt-BR","sameAs":["https://www.instagram.com/mestredosreparosfacilites","https://www.facebook.com/mestredosreparos.oficial/","https://www.tiktok.com/@mestre.dos.reparo1","https://youtube.com/@mestredosreparos-i9d","https://www.google.com/maps/search/?api=1&query=Mestre%20dos%20Reparos%20Manuten%C3%A7%C3%A3o%20e%20Limpeza%2C%20Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP%2C%2006420-130"],"address":{"@type":"PostalAddress","streetAddress":"Av. Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-23.5224,"longitude":-46.8557},"areaServed":[{"@type":"City","name":"Barueri"},{"@type":"City","name":"Alphaville"},{"@type":"City","name":"Tamboré"},{"@type":"City","name":"Santana de Parnaíba"},{"@type":"City","name":"Aldeia da Serra"},{"@type":"City","name":"Carapicuíba"},{"@type":"City","name":"Jandira"},{"@type":"City","name":"Itapevi"},{"@type":"City","name":"Osasco"},{"@type":"City","name":"Cotia"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":32,"bestRating":5,"worstRating":1},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Eletricista 24 horas","description":"Emergência elétrica, quadro de distribuição, disjuntores, tomadas, iluminação e aterramento, com plantão todos os dias.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Encanador e Hidráulica","description":"Vazamento, tubulação, pontos de água e esgoto, registro, caixa d’água e desentupimento, com detecção de vazamento oculto.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Reformas Residenciais e Comerciais","description":"Obra completa com uma única equipe: pedreiro, alvenaria, elétrica, hidráulica, revestimento, forro e acabamento.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pintura, Forro e Drywall","description":"Pintura interna e externa, massa corrida, textura, grafiato, forro rebaixado, sanca e divisórias de drywall.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pisos e Revestimentos","description":"Porcelanato, cerâmica, ardósia, laminado e piso vinílico, com contrapiso, nivelamento, rejunte, soleira e rodapé.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Marido de Aluguel","description":"Pequenos reparos do dia a dia, montagem de móveis, prateleiras, suportes de TV, cortinas e ajustes em geral.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Limpeza Pós Obra","description":"Limpeza pesada e limpeza fina para entrega de obra, com remoção de resíduo de cimento, rejunte e poeira fina.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Limpeza Pós Mudança","description":"Limpeza completa antes de mudar ou na entrega da chave, com tratamento de mancha, gordura e odor.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Diarista com Agendamento","description":"Faxina residencial por diária, semanal, quinzenal ou mensal, com agendamento direto pelo WhatsApp.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Contrato de Limpeza para Empresas","description":"Limpeza recorrente para empresas, condomínios e galpões, com equipe dimensionada, cronograma e nota fiscal.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Contrato de Manutenção Predial","description":"Manutenção preventiva e corretiva de elétrica, hidráulica e civil, com chamado prioritário e relatório de visitas.","areaServed":"Barueri e região"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Facilities: Limpeza e Manutenção","description":"Solução única para escritórios, clínicas, lojas, indústrias e condomínios, com um só fornecedor e um só contrato.","areaServed":"Barueri e região"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.mestredosreparos.app.br/#organizacao","name":"Mestre dos Reparos Manutenção e Limpeza","legalName":"Maria Eduarda Hengles Valadão","taxID":"64.521.657/0001-87","url":"https://www.mestredosreparos.app.br","logo":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","email":"mestredosreparosbarueri@gmail.com","telephone":"+55 11 91839-0430","address":{"@type":"PostalAddress","streetAddress":"Av. Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"sameAs":["https://www.instagram.com/mestredosreparosfacilites","https://www.facebook.com/mestredosreparos.oficial/","https://www.tiktok.com/@mestre.dos.reparo1","https://youtube.com/@mestredosreparos-i9d","https://www.google.com/maps/search/?api=1&query=Mestre%20dos%20Reparos%20Manuten%C3%A7%C3%A3o%20e%20Limpeza%2C%20Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP%2C%2006420-130"],"contactPoint":[{"@type":"ContactPoint","telephone":"+55 11 91839-0430","contactType":"customer service","areaServed":"BR","availableLanguage":"Portuguese"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.mestredosreparos.app.br/#site","url":"https://www.mestredosreparos.app.br","name":"Mestre dos Reparos Manutenção e Limpeza","inLanguage":"pt-BR","publisher":{"@id":"https://www.mestredosreparos.app.br/#organizacao"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quem é o Mestre dos Reparos?","acceptedAnswer":{"@type":"Answer","text":"O Mestre dos Reparos é uma empresa de manutenção, reparos, reformas e limpeza com sede em Barueri, no Jardim Belval. Atuamos com equipes próprias de eletricista, encanador, pedreiro, pintor, azulejista e limpeza, sob responsabilidade técnica de profissional com formação em engenharia e mais de 20 anos de experiência. Atendemos pessoas físicas, empresas, condomínios, indústrias e galpões em Barueri e em toda a região oeste da Grande São Paulo."}},{"@type":"Question","name":"Quais cidades e bairros vocês atendem?","acceptedAnswer":{"@type":"Answer","text":"Atendemos Barueri em todos os bairros, incluindo Alphaville, Tamboré, Bethaville, Aldeia de Barueri, Jardim Belval, Jardim Silveira, Engenho Novo, Parque Imperial, Jardim Tupanci, Regina Alice, Chácaras Marco e Vila São Francisco. Também atendemos Santana de Parnaíba, Aldeia da Serra, Carapicuíba, Jandira, Itapevi, Osasco e Cotia, com deslocamento incluído no orçamento."}},{"@type":"Question","name":"Vocês atendem emergência fora do horário comercial?","acceptedAnswer":{"@type":"Answer","text":"Sim. Temos plantão para emergências elétricas e hidráulicas todos os dias, incluindo fins de semana e feriados. Em caso de cheiro de queimado, faísca, choque ou vazamento com risco de curto-circuito, desligue o disjuntor geral e chame pelo WhatsApp antes de tentar religar qualquer coisa."}},{"@type":"Question","name":"O orçamento é gratuito e sem compromisso?","acceptedAnswer":{"@type":"Answer","text":"Sim. Você pode enviar fotos e medidas pelo WhatsApp e receber uma estimativa, ou agendar visita técnica gratuita para medição no local. A proposta é entregue por escrito, com etapas, prazos, materiais e valores separados, e nada é cobrado sem a sua aprovação."}},{"@type":"Question","name":"A empresa emite nota fiscal e dá garantia?","acceptedAnswer":{"@type":"Answer","text":"Sim. Somos empresa formalizada, com CNPJ 64.521.657/0001-87 e razão social Maria Eduarda Hengles Valadão, emitimos nota fiscal em todos os serviços e oferecemos garantia técnica de 90 dias na mão de obra, por escrito, conforme o Código de Defesa do Consumidor."}},{"@type":"Question","name":"Vocês fazem contrato para empresas e condomínios?","acceptedAnswer":{"@type":"Answer","text":"Sim. Montamos contratos de limpeza e de manutenção predial para empresas, clínicas, lojas, escolas, indústrias, galpões e condomínios, com escopo definido, dimensionamento de equipe, cronograma de visitas, relatório de execução e nota fiscal mensal. Já atendemos organizações como Bradesco, Itaú, PJ Bank, Armazena Armazéns, MFA Transportes e Bureau Veritas."}},{"@type":"Question","name":"Quais são as formas de pagamento?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, dinheiro, cartão de débito e crédito e transferência bancária. Para contratos corporativos, o faturamento é mensal, com boleto e nota fiscal, conforme o prazo acordado em contrato."}},{"@type":"Question","name":"Quanto tempo leva para o atendimento começar?","acceptedAnswer":{"@type":"Answer","text":"Chamados de emergência elétrica e hidráulica são priorizados e costumam ser atendidos no mesmo dia. Reparos e pequenos serviços são agendados conforme a sua disponibilidade, normalmente em poucos dias. Obras de reforma começam depois da aprovação do orçamento e da confirmação do cronograma de materiais."}},{"@type":"Question","name":"Vocês trabalham em apartamento com regras de condomínio?","acceptedAnswer":{"@type":"Answer","text":"Sim. Trabalhamos com horário de obra controlado, proteção de elevador, corredor e áreas comuns, sinalização, descarte correto de entulho e envio da documentação da equipe quando o condomínio exige autorização prévia."}},{"@type":"Question","name":"Como pedir um orçamento?","acceptedAnswer":{"@type":"Answer","text":"Chame no WhatsApp (11) 91839-0430, conte o que precisa e envie fotos se puder. Em poucos minutos você recebe as orientações iniciais e, se for o caso, agendamos a visita técnica gratuita. Também é possível usar a calculadora de preços do nosso aplicativo para ter uma referência antes de falar com a equipe."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Mestre dos Reparos Manutenção e Limpeza","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","url":"https://www.mestredosreparos.app.br","telephone":"+55 11 91839-0430","aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":31,"bestRating":5,"worstRating":1},"review":[{"@type":"Review","author":{"@type":"Person","name":"Kelly Carvalho"},"datePublished":"2026-01-01","reviewBody":"Excelente serviço de limpeza! Fiquei muito satisfeita com o resultado, tudo foi feito com muito cuidado e atenção aos detalhes. A equipe é pontual, organizada e deixou o lugar impecável. Recomendo demais!","reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1}},{"@type":"Review","author":{"@type":"Person","name":"Marcelo Fernandes"},"datePublished":"2026-01-01","reviewBody":"Gostei muito do trabalho, foram super atenciosos e dá para ver o conhecimento e o domínio do que fazem. Sem contar a educação: gosto de entender as coisas e eles responderam todas as minhas perguntas.","reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1}},{"@type":"Review","author":{"@type":"Person","name":"Lais Tafnes Ferrari"},"datePublished":"2026-01-01","reviewBody":"Excelente profissional, com atendimento excepcional!","reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br"}]}</script>
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
