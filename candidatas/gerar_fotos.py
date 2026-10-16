@@ -10,6 +10,10 @@ for l,n,i,c,a in m: jobs[n]=(i,c)
 def run(item):
     n,(i,c)=item
     im=Image.open(io.BytesIO(urllib.request.urlopen(f'https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/{ids[i]}_generated_image.png',timeout=90).read())).convert('RGB')
+    g=im.convert('L'); W,H=g.size; px=g.load()
+    cols=[x for x in range(W) if sum(px[x,y] for y in range(0,H,8))/len(range(0,H,8))<238]
+    rows=[y for y in range(H) if sum(px[x,y] for x in range(0,W,8))/len(range(0,W,8))<238]
+    if cols and rows: im=im.crop((cols[0]+4,rows[0]+4,cols[-1]-3,rows[-1]-3))
     w,h=im.size; s=min(w,h); x=(w-s)//2; y=(h-s)//2
     if c: x+=int(c[0]*s); y+=int(c[1]*s); s=int(c[2]*s)
     im.crop((x,y,x+s,y+s)).resize((480,480),Image.LANCZOS).save(f'{out}/{n}.jpg',quality=80,optimize=True,progressive=True)
