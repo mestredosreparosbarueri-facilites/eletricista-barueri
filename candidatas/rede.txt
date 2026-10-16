@@ -1,0 +1,8 @@
+api.openverse.org 000
+upload.wikimedia.org 000
+commons.wikimedia.org 000
+live.staticflickr.com 000
+images.unsplash.com 000
+images.pexels.com 000
+
+# Todos bloqueados pela política de rede do ambiente (proxy respondeu 403 ao CONNECT).
