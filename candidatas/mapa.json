@@ -1,87 +1,625 @@
 [
-[36,"eletricista-atendimento-rapido-barueri",770,null,"Equipe de eletricistas chegando de van para atendimento"],
-[39,"eletricista-24-horas-barueri",796,null,"Eletricista 24 horas atendendo à noite"],
-[42,"eletricista-perto-de-mim-barueri",514,null,"Eletricista perto de você com caixa de ferramentas"],
-[45,"eletricista-residencial-barueri",530,null,"Eletricista residencial ao lado do quadro de uma casa"],
-[48,"eletricista-predial-barueri",761,null,"Eletricista predial no quadro do corredor de condomínio"],
-[51,"eletricista-comercial-barueri",763,null,"Eletricista comercial no quadro elétrico de uma loja"],
-[54,"eletricista-industrial-barueri-galpao",762,null,"Eletricista industrial em painel de galpão"],
-[57,"eletricista-de-emergencia-barueri",406,null,"Eletricista de emergência com lanterna em fiação danificada"],
-[60,"eletricista-de-plantao-barueri-rua",724,null,"Eletricista de plantão consertando fiação na fachada"],
-[63,"eletricista-urgente-barueri",776,null,"Eletricista urgente trabalhando à noite em escritório"],
-[66,"instalador-eletrico-fiacao-embutida",805,null,"Instalador elétrico passando fiação embutida na parede"],
-[69,"eletricista-instalador-interruptor",529,null,"Eletricista instalador montando interruptor"],
-[72,"eletricista-de-manutencao-multimetro",824,null,"Eletricista de manutenção medindo quadro com multímetro"],
-[75,"eletricista-profissional-epi",768,null,"Eletricista profissional uniformizado com capacete e EPI"],
-[78,"eletricista-responsavel-tecnico-vistoria",811,null,"Responsável técnico fazendo vistoria elétrica com prancheta"],
-[81,"troca-de-fiacao-barueri",826,null,"Eletricista fazendo troca de fiação na parede"],
-[84,"disjuntor-caindo-barueri",799,null,"Eletricista verificando disjuntor que cai no quadro"],
-[87,"troca-de-quadro-de-distribuicao-barueri",338,null,"Quadro de distribuição novo instalado com eletrodutos"],
-[90,"instalacao-idr-dps-barueri",53,[0.15,0,0.65],"Eletricista instalando DPS no quadro elétrico"],
-[93,"aterramento-eletrico-barueri",806,null,"Eletricista instalando haste de aterramento"],
-[96,"tomada-queimada-derretida-barueri",801,null,"Tomada queimada por superaquecimento"],
-[99,"instalacao-de-chuveiro-eletrico-barueri",757,null,"Eletricista instalando chuveiro elétrico no banheiro"],
-[102,"ponto-eletrico-ar-condicionado-barueri",759,null,"Eletricista fazendo ponto elétrico para ar-condicionado"],
-[105,"iluminacao-de-led-barueri",803,null,"Sala com iluminação de LED instalada"],
-[108,"instalacao-de-lustre-pe-direito-alto-barueri",804,null,"Eletricista instalando lustre em pé-direito alto"],
-[111,"padrao-de-entrada-de-energia-barueri",807,null,"Eletricista no padrão de entrada de energia"],
-[114,"carregador-carro-eletrico-wallbox-barueri",766,null,"Eletricista instalando carregador de carro elétrico"],
-[117,"energia-solar-instalacao-barueri",765,null,"Instalação de painéis de energia solar no telhado"],
-[120,"automacao-interruptor-inteligente-barueri",298,null,"Eletricista mostrando automação controlada pelo celular"],
-[123,"sensor-de-presenca-barueri",60,[0.15,0,0.6],"Sensor de presença instalado no teto"],
-[126,"iluminacao-de-emergencia-condominio-barueri",760,null,"Vistoria de iluminação de emergência em corredor"],
-[129,"portao-eletronico-interfone-barueri",756,null,"Técnico consertando motor de portão eletrônico"],
-[132,"cameras-de-seguranca-barueri",754,null,"Técnico instalando câmera de segurança na casa"],
-[135,"termografia-laudo-eletrico-barueri",767,null,"Termografia de quadro elétrico com câmera térmica"],
-[138,"gerador-e-nobreak-barueri",809,null,"Técnico fazendo manutenção de gerador"],
-[179,"eletricista-24-horas-barueri",796,null,"Eletricista 24 horas atendendo à noite em Barueri"],
-[182,"troca-de-quadro-de-disjuntores-barueri",314,null,"Eletricista trocando quadro de disjuntores em Barueri"],
-[185,"instalacao-de-chuveiro-eletrico-barueri",757,null,"Eletricista instalando chuveiro elétrico em Barueri"],
-[188,"eletricista-predial-barueri",761,null,"Eletricista predial em corredor de condomínio em Barueri"],
-[191,"termografia-laudo-eletrico-barueri",767,null,"Termografia de quadro elétrico para laudo em Barueri"],
-[196,"encanador-barueri-pia",772,null,"Encanador consertando encanamento da pia em Barueri"],
-[199,"deteccao-vazamento-oculto-barueri",752,[0,0.15,0.85],"Detecção de umidade e vazamento oculto na parede em Barueri"],
-[202,"loucas-metais-tubulacao-barueri",545,null,"Encanador instalando tubulação de pia em Barueri"],
-[205,"caixa-dagua-barueri",658,null,"Caixa d’água instalada no telhado em Barueri"],
-[210,"reformas-residenciais-equipe-barueri",846,null,"Equipe de reforma residencial em Barueri"],
-[213,"reforma-de-apartamento-em-andamento-barueri",817,null,"Reforma de apartamento em andamento em Barueri"],
-[216,"reforma-de-banheiro-barueri",793,null,"Banheiro reformado com box de vidro em Barueri"],
-[219,"reforma-de-cozinha-barueri",821,null,"Cozinha reformada em Barueri"],
-[222,"reforma-comercial-escritorio-barueri",577,null,"Reparo de parede em reforma de escritório em Barueri"],
-[225,"reforma-de-fachada-barueri",795,null,"Reforma de fachada de prédio em Barueri"],
-[228,"reforma-para-alugar-vender-barueri",753,null,"Apartamento reformado pronto para alugar em Barueri"],
-[231,"derrubada-de-parede-barueri",823,null,"Parede derrubada para integrar ambientes em Barueri"],
-[239,"assentamento-de-porcelanato-barueri",780,null,"Assentamento de porcelanato com argamassa em Barueri"],
-[242,"piso-ceramico-barueri",843,null,"Assentamento de piso cerâmico com nível em Barueri"],
-[245,"piso-laminado-barueri",816,null,"Instalação de piso laminado em Barueri"],
-[248,"piso-vinilico-barueri",849,null,"Piso vinílico amadeirado instalado em sala em Barueri"],
-[251,"piso-area-externa-barueri",625,null,"Preparação de piso de área externa em Barueri"],
-[254,"contrapiso-nivelamento-barueri",838,null,"Execução de contrapiso e nivelamento em Barueri"],
-[257,"azulejista-revestimento-parede-barueri",818,null,"Azulejista assentando revestimento de parede em Barueri"],
-[260,"rejunte-piso-barueri",848,null,"Aplicação de rejunte em piso em Barueri"],
-[265,"pintura-residencial-barueri",775,null,"Pintora aplicando tinta em parede de sala em Barueri"],
-[268,"pintura-externa-fachada-barueri",725,null,"Fachada de casa pintada em Barueri"],
-[277,"massa-corrida-acabamento-barueri",841,null,"Aplicação de massa corrida em parede em Barueri"],
-[280,"tratamento-de-mofo-umidade-barueri",706,null,"Pintor tratando parede com mofo e umidade em Barueri"],
-[283,"pintura-epoxi-piso-galpao-barueri",792,null,"Pintura de piso de galpão em Barueri"],
-[291,"forro-de-drywall-barueri",839,null,"Instalação de forro de drywall em Barueri"],
-[294,"sanca-de-gesso-led-barueri",605,[0.05,0.08,0.88],"Sanca de gesso com iluminação de LED em sala em Barueri"],
-[297,"nicho-de-gesso-iluminado-barueri",819,null,"Nicho de gesso iluminado em parede de sala em Barueri"],
-[300,"painel-para-tv-barueri",253,[0.3,0,0.65],"Painel para TV com prateleiras e LED em Barueri"],
-[303,"divisoria-de-drywall-barueri",825,null,"Estrutura de divisória de drywall em Barueri"],
-[306,"molduras-de-gesso-barueri",829,null,"Moldura de gesso com luz indireta no teto em Barueri"],
-[311,"pedreiro-barueri",787,null,"Pedreiro assentando tijolos em Barueri"],
-[314,"impermeabilizacao-laje-barueri",782,null,"Impermeabilização de laje em Barueri"],
-[317,"correcao-de-trincas-barueri",730,null,"Correção de trinca em parede em Barueri"],
-[322,"marido-de-aluguel-barueri",673,null,"Marido de aluguel furando parede com parafusadeira em Barueri"],
-[325,"montagem-de-moveis-barueri",830,null,"Montagem de móveis em quarto em Barueri"],
-[328,"instalacao-de-prateleiras-barueri",828,null,"Instalação de prateleira com nível em Barueri"],
-[331,"troca-de-fechadura-barueri",783,null,"Troca de fechadura de porta em Barueri"],
-[336,"limpeza-pos-obra-barueri-enceradeira",778,null,"Limpeza pós-obra com enceradeira em Barueri"],
-[339,"limpeza-pos-mudanca-barueri",554,null,"Apartamento vazio limpo após mudança em Barueri"],
-[342,"diarista-barueri",593,null,"Diarista limpando piso de casa em Barueri"],
-[345,"limpeza-profissional-empresas-barueri",852,null,"Limpeza profissional com EPI em Barueri"],
-[350,"contrato-manutencao-predial-barueri",790,null,"Vistoria de manutenção predial em Barueri"],
-[353,"manutencao-de-condominios-barueri",814,null,"Equipe de manutenção em condomínio em Barueri"],
-[356,"facilities-galpoes-barueri",771,null,"Manutenção em galpão industrial em Barueri"]
+[
+36,
+"eletricista-atendimento-rapido-barueri",
+770,
+null,
+"Equipe de eletricistas chegando de van para atendimento"
+],
+[
+39,
+"eletricista-24-horas-barueri",
+796,
+null,
+"Eletricista 24 horas atendendo à noite"
+],
+[
+42,
+"eletricista-perto-de-mim-barueri",
+514,
+null,
+"Eletricista perto de você com caixa de ferramentas"
+],
+[
+45,
+"eletricista-residencial-barueri",
+530,
+null,
+"Eletricista residencial ao lado do quadro de uma casa"
+],
+[
+48,
+"eletricista-predial-barueri",
+761,
+null,
+"Eletricista predial no quadro do corredor de condomínio"
+],
+[
+51,
+"eletricista-comercial-barueri",
+506,
+null,
+"Eletricista comercial no quadro elétrico de uma loja"
+],
+[
+54,
+"eletricista-industrial-barueri-galpao",
+762,
+null,
+"Eletricista industrial em painel de galpão"
+],
+[
+57,
+"eletricista-de-emergencia-barueri",
+406,
+null,
+"Eletricista de emergência com lanterna em fiação danificada"
+],
+[
+60,
+"eletricista-de-plantao-barueri-rua",
+724,
+null,
+"Eletricista de plantão consertando fiação na fachada"
+],
+[
+63,
+"eletricista-urgente-barueri",
+776,
+null,
+"Eletricista urgente trabalhando à noite em escritório"
+],
+[
+66,
+"instalador-eletrico-fiacao-embutida",
+805,
+null,
+"Instalador elétrico passando fiação embutida na parede"
+],
+[
+69,
+"eletricista-instalador-interruptor",
+529,
+null,
+"Eletricista instalador montando interruptor"
+],
+[
+72,
+"eletricista-de-manutencao-multimetro",
+824,
+null,
+"Eletricista de manutenção medindo quadro com multímetro"
+],
+[
+75,
+"eletricista-profissional-epi",
+768,
+null,
+"Eletricista profissional uniformizado com capacete e EPI"
+],
+[
+78,
+"eletricista-responsavel-tecnico-vistoria",
+811,
+null,
+"Responsável técnico fazendo vistoria elétrica com prancheta"
+],
+[
+81,
+"troca-de-fiacao-barueri",
+826,
+null,
+"Eletricista fazendo troca de fiação na parede"
+],
+[
+84,
+"disjuntor-caindo-barueri",
+799,
+null,
+"Eletricista verificando disjuntor que cai no quadro"
+],
+[
+87,
+"troca-de-quadro-de-distribuicao-barueri",
+338,
+null,
+"Quadro de distribuição novo instalado com eletrodutos"
+],
+[
+90,
+"instalacao-idr-dps-barueri",
+53,
+[
+0.15,
+0,
+0.65
+],
+"Eletricista instalando DPS no quadro elétrico"
+],
+[
+93,
+"aterramento-eletrico-barueri",
+806,
+null,
+"Eletricista instalando haste de aterramento"
+],
+[
+96,
+"tomada-queimada-derretida-barueri",
+801,
+null,
+"Tomada queimada por superaquecimento"
+],
+[
+99,
+"instalacao-de-chuveiro-eletrico-barueri",
+757,
+null,
+"Eletricista instalando chuveiro elétrico no banheiro"
+],
+[
+102,
+"ponto-eletrico-ar-condicionado-barueri",
+759,
+null,
+"Eletricista fazendo ponto elétrico para ar-condicionado"
+],
+[
+105,
+"iluminacao-de-led-barueri",
+803,
+null,
+"Sala com iluminação de LED instalada"
+],
+[
+108,
+"instalacao-de-lustre-pe-direito-alto-barueri",
+804,
+null,
+"Eletricista instalando lustre em pé-direito alto"
+],
+[
+111,
+"padrao-de-entrada-de-energia-barueri",
+807,
+null,
+"Eletricista no padrão de entrada de energia"
+],
+[
+114,
+"carregador-carro-eletrico-wallbox-barueri",
+766,
+null,
+"Eletricista instalando carregador de carro elétrico"
+],
+[
+117,
+"energia-solar-instalacao-barueri",
+765,
+null,
+"Instalação de painéis de energia solar no telhado"
+],
+[
+120,
+"automacao-interruptor-inteligente-barueri",
+298,
+null,
+"Eletricista mostrando automação controlada pelo celular"
+],
+[
+123,
+"sensor-de-presenca-barueri",
+60,
+[
+0.15,
+0,
+0.6
+],
+"Sensor de presença instalado no teto"
+],
+[
+126,
+"iluminacao-de-emergencia-condominio-barueri",
+760,
+null,
+"Vistoria de iluminação de emergência em corredor"
+],
+[
+129,
+"portao-eletronico-interfone-barueri",
+756,
+null,
+"Técnico consertando motor de portão eletrônico"
+],
+[
+132,
+"cameras-de-seguranca-barueri",
+754,
+null,
+"Técnico instalando câmera de segurança na casa"
+],
+[
+135,
+"termografia-laudo-eletrico-barueri",
+767,
+null,
+"Termografia de quadro elétrico com câmera térmica"
+],
+[
+138,
+"gerador-e-nobreak-barueri",
+809,
+null,
+"Técnico fazendo manutenção de gerador"
+],
+[
+179,
+"eletricista-24-horas-barueri",
+796,
+null,
+"Eletricista 24 horas atendendo à noite em Barueri"
+],
+[
+182,
+"troca-de-quadro-de-disjuntores-barueri",
+314,
+null,
+"Eletricista trocando quadro de disjuntores em Barueri"
+],
+[
+185,
+"instalacao-de-chuveiro-eletrico-barueri",
+757,
+null,
+"Eletricista instalando chuveiro elétrico em Barueri"
+],
+[
+188,
+"eletricista-predial-barueri",
+761,
+null,
+"Eletricista predial em corredor de condomínio em Barueri"
+],
+[
+191,
+"termografia-laudo-eletrico-barueri",
+767,
+null,
+"Termografia de quadro elétrico para laudo em Barueri"
+],
+[
+196,
+"encanador-barueri-pia",
+772,
+null,
+"Encanador consertando encanamento da pia em Barueri"
+],
+[
+199,
+"deteccao-vazamento-oculto-barueri",
+752,
+[
+0,
+0.15,
+0.85
+],
+"Detecção de umidade e vazamento oculto na parede em Barueri"
+],
+[
+202,
+"loucas-metais-tubulacao-barueri",
+545,
+null,
+"Encanador instalando tubulação de pia em Barueri"
+],
+[
+205,
+"caixa-dagua-barueri",
+658,
+null,
+"Caixa d’água instalada no telhado em Barueri"
+],
+[
+210,
+"reformas-residenciais-equipe-barueri",
+846,
+null,
+"Equipe de reforma residencial em Barueri"
+],
+[
+213,
+"reforma-de-apartamento-em-andamento-barueri",
+817,
+null,
+"Reforma de apartamento em andamento em Barueri"
+],
+[
+216,
+"reforma-de-banheiro-barueri",
+793,
+null,
+"Banheiro reformado com box de vidro em Barueri"
+],
+[
+219,
+"reforma-de-cozinha-barueri",
+821,
+null,
+"Cozinha reformada em Barueri"
+],
+[
+222,
+"reforma-comercial-escritorio-barueri",
+577,
+null,
+"Reparo de parede em reforma de escritório em Barueri"
+],
+[
+225,
+"reforma-de-fachada-barueri",
+795,
+[
+0.12,
+0.04,
+0.88
+],
+"Reforma de fachada de prédio em Barueri"
+],
+[
+228,
+"reforma-para-alugar-vender-barueri",
+753,
+null,
+"Apartamento reformado pronto para alugar em Barueri"
+],
+[
+231,
+"derrubada-de-parede-barueri",
+823,
+null,
+"Parede derrubada para integrar ambientes em Barueri"
+],
+[
+239,
+"assentamento-de-porcelanato-barueri",
+780,
+null,
+"Assentamento de porcelanato com argamassa em Barueri"
+],
+[
+242,
+"piso-ceramico-barueri",
+843,
+null,
+"Assentamento de piso cerâmico com nível em Barueri"
+],
+[
+245,
+"piso-laminado-barueri",
+816,
+null,
+"Instalação de piso laminado em Barueri"
+],
+[
+248,
+"piso-vinilico-barueri",
+849,
+null,
+"Piso vinílico amadeirado instalado em sala em Barueri"
+],
+[
+251,
+"piso-area-externa-barueri",
+625,
+null,
+"Preparação de piso de área externa em Barueri"
+],
+[
+254,
+"contrapiso-nivelamento-barueri",
+838,
+null,
+"Execução de contrapiso e nivelamento em Barueri"
+],
+[
+257,
+"azulejista-revestimento-parede-barueri",
+818,
+null,
+"Azulejista assentando revestimento de parede em Barueri"
+],
+[
+260,
+"rejunte-piso-barueri",
+848,
+null,
+"Aplicação de rejunte em piso em Barueri"
+],
+[
+265,
+"pintura-residencial-barueri",
+775,
+null,
+"Pintora aplicando tinta em parede de sala em Barueri"
+],
+[
+268,
+"pintura-externa-fachada-barueri",
+725,
+null,
+"Fachada de casa pintada em Barueri"
+],
+[
+277,
+"massa-corrida-acabamento-barueri",
+841,
+null,
+"Aplicação de massa corrida em parede em Barueri"
+],
+[
+280,
+"tratamento-de-mofo-umidade-barueri",
+706,
+null,
+"Pintor tratando parede com mofo e umidade em Barueri"
+],
+[
+283,
+"pintura-epoxi-piso-galpao-barueri",
+792,
+null,
+"Pintura de piso de galpão em Barueri"
+],
+[
+291,
+"forro-de-drywall-barueri",
+839,
+null,
+"Instalação de forro de drywall em Barueri"
+],
+[
+294,
+"sanca-de-gesso-led-barueri",
+605,
+[
+0.05,
+0.08,
+0.88
+],
+"Sanca de gesso com iluminação de LED em sala em Barueri"
+],
+[
+297,
+"nicho-de-gesso-iluminado-barueri",
+819,
+null,
+"Nicho de gesso iluminado em parede de sala em Barueri"
+],
+[
+300,
+"painel-para-tv-barueri",
+253,
+[
+0.3,
+0,
+0.65
+],
+"Painel para TV com prateleiras e LED em Barueri"
+],
+[
+303,
+"divisoria-de-drywall-barueri",
+825,
+null,
+"Estrutura de divisória de drywall em Barueri"
+],
+[
+306,
+"molduras-de-gesso-barueri",
+829,
+null,
+"Moldura de gesso com luz indireta no teto em Barueri"
+],
+[
+311,
+"pedreiro-barueri",
+787,
+null,
+"Pedreiro assentando tijolos em Barueri"
+],
+[
+314,
+"impermeabilizacao-laje-barueri",
+782,
+null,
+"Impermeabilização de laje em Barueri"
+],
+[
+317,
+"correcao-de-trincas-barueri",
+730,
+null,
+"Correção de trinca em parede em Barueri"
+],
+[
+322,
+"marido-de-aluguel-barueri",
+673,
+null,
+"Marido de aluguel furando parede com parafusadeira em Barueri"
+],
+[
+325,
+"montagem-de-moveis-barueri",
+830,
+null,
+"Montagem de móveis em quarto em Barueri"
+],
+[
+328,
+"instalacao-de-prateleiras-barueri",
+828,
+null,
+"Instalação de prateleira com nível em Barueri"
+],
+[
+331,
+"troca-de-fechadura-barueri",
+783,
+null,
+"Troca de fechadura de porta em Barueri"
+],
+[
+336,
+"limpeza-pos-obra-barueri-enceradeira",
+778,
+null,
+"Limpeza pós-obra com enceradeira em Barueri"
+],
+[
+339,
+"limpeza-pos-mudanca-barueri",
+554,
+null,
+"Apartamento vazio limpo após mudança em Barueri"
+],
+[
+342,
+"diarista-barueri",
+593,
+null,
+"Diarista limpando piso de casa em Barueri"
+],
+[
+345,
+"limpeza-profissional-empresas-barueri",
+852,
+null,
+"Limpeza profissional com EPI em Barueri"
+],
+[
+350,
+"contrato-manutencao-predial-barueri",
+790,
+[
+0.1,
+0,
+0.9
+],
+"Vistoria de manutenção predial em Barueri"
+],
+[
+353,
+"manutencao-de-condominios-barueri",
+814,
+null,
+"Equipe de manutenção em condomínio em Barueri"
+],
+[
+356,
+"facilities-galpoes-barueri",
+771,
+null,
+"Manutenção em galpão industrial em Barueri"
+]
 ]
