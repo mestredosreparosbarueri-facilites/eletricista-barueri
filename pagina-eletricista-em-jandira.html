@@ -1,0 +1,534 @@
+<meta charset="utf-8">
+<style>
+h3.post-title.entry-title,.post-title.entry-title,.post-title{display:none!important}
+.mestre-container{max-width:1100px;margin:auto;padding:20px;font-family:Arial,sans-serif;line-height:1.7;color:#222}
+.mestre-hero{background:linear-gradient(135deg,#0b2a4a,#163d66);padding:45px 25px;border-radius:18px;color:#fff;margin-bottom:35px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.mestre-hero h1{font-size:42px;line-height:1.2;margin:0 0 20px;font-weight:900;color:#fff}
+.mestre-hero p{font-size:20px;color:#fff;margin:0 0 14px;max-width:900px}
+.mestre-btns{display:flex;gap:15px;flex-wrap:wrap;margin-top:28px}
+.mestre-btn{display:inline-block;padding:16px 24px;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none!important}
+.mestre-btn-whats{background:#25D366;color:#fff!important}
+.mestre-btn-agendar{background:#ffb300;color:#0b2a4a!important}
+.mestre-box{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-box h2{font-size:34px;color:#0b2a4a;margin:0 0 18px}
+.mestre-box h3{font-size:26px;color:#163d66;margin:28px 0 12px}
+.mestre-box p{font-size:20px;margin:0 0 18px}
+.mestre-box ul{padding-left:24px;font-size:19px;line-height:1.8;margin:0 0 18px}
+.mestre-box li{margin-bottom:8px}
+.mestre-servicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:25px}
+.mestre-card{background:#0b2a4a;color:#fff;padding:22px;border-radius:14px}
+.mestre-card h3{margin:0 0 10px;color:#ffb300;font-size:22px}
+.mestre-card p{color:#fff;font-size:17px;margin:0}
+.mestre-alerta{background:#fff5e0;border-left:6px solid #ffb300;padding:22px;border-radius:10px;margin:25px 0;font-size:19px}
+.mestre-passos{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+.mestre-passo{background:#f4f6f9;padding:20px;border-radius:14px}
+.mestre-passo-num{font-size:34px;font-weight:900;color:#ffb300;line-height:1;margin-bottom:8px}
+.mestre-passo h3{font-size:20px;color:#0b2a4a;margin:0 0 8px}
+.mestre-passo p{font-size:17px;margin:0}
+.mestre-faq{margin-top:25px}
+.mestre-faq details{background:#f4f6f9;padding:18px;border-radius:12px;margin-bottom:14px}
+.mestre-faq summary{font-size:20px;font-weight:700;cursor:pointer;color:#0b2a4a}
+.mestre-faq p{margin:12px 0 0;font-size:18px}
+.mestre-cluster{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-cluster h3{color:#0b2a4a;font-size:24px;margin:0 0 14px}
+.mestre-cluster ul{padding-left:24px;font-size:18px;line-height:1.8;margin:0 0 12px}
+.mestre-cluster a{color:#0b2a4a;font-weight:700}
+.mestre-footer{background:#0b2a4a;color:#fff;padding:40px 25px;border-radius:18px;margin-top:40px}
+.mestre-footer h3{color:#ffb300;font-size:28px;margin:0 0 15px}
+.mestre-footer p,.mestre-footer a{font-size:17px;color:#fff!important;margin:0 0 12px}
+.mestre-btn-avaliar{display:inline-block;background:#ffb300;color:#0b2a4a!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:17px;text-decoration:none!important;margin-top:16px}
+.mestre-links{display:grid;gap:10px;margin:20px 0}
+.mestre-links a{color:#fff!important;text-decoration:none;font-weight:700}
+@media(min-width:700px){.mestre-passos{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:768px){.mestre-hero{padding:32px 20px}.mestre-hero h1{font-size:34px}.mestre-hero p{font-size:18px}.mestre-box{padding:22px}.mestre-box h2{font-size:28px}.mestre-box p{font-size:18px}.mestre-box ul{font-size:17px}}
+</style>
+<style>
+.el-destaques{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+.el-destaque{background:#fff5e0;border:2px solid #ffb300;border-radius:14px;padding:18px}
+.el-destaque h3{margin:0 0 8px;font-size:19px;color:#0b2a4a}
+.el-destaque p{margin:0;font-size:16px;line-height:1.6}
+.el-disciplinas{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:24px}
+.el-disciplina{background:#f4f6f9;border-radius:14px;padding:20px}
+.el-disciplina h3{margin:0 0 12px;font-size:21px;color:#0b2a4a;border-bottom:3px solid #ffb300;padding-bottom:8px}
+.el-disciplina ul{padding-left:20px;margin:0;font-size:16px;line-height:1.65}
+.el-disciplina li{margin-bottom:5px}
+.el-total{display:inline-block;background:#0b2a4a;color:#ffb300;font-weight:800;padding:10px 18px;border-radius:999px;font-size:17px;margin-top:20px}
+@media(max-width:768px){.el-disciplina ul{font-size:15px}.el-disciplina h3{font-size:19px}}
+</style>
+<section class="mestre-container">
+  <div class="mestre-hero">
+    <h1>Eletricista em Jandira</h1>
+    <p>A Mestre dos Reparos é referência em serviços de eletricista e manutenção em toda a cidade de Jandira. Contamos com um time de profissionais experientes prontos para atender qualquer demanda técnica com excelência.</p><p>Trabalhamos sob as normas da NBR 5410 para oferecer soluções seguras a residências e comércios locais. Com nota fiscal e garantia de 90 dias, somos a escolha ideal para o cuidado com a sua rede elétrica.</p>
+    <div class="mestre-btns">
+    <a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista.">⚡ Pedir socorro elétrico agora</a>
+    <a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento">📅 Marcar visita técnica</a>
+  </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Serviços elétricos que o Mestre dos Reparos executa</h2>
+    <p>Somos eletricistas com atuação em <strong>quatro frentes</strong>: residencial, instalações, predial e comercial, e industrial. Isso significa que o mesmo eletricista que resolve uma tomada queimada na sua casa também atende o quadro de uma loja, o painel de um condomínio e o comando de um motor trifásico. Abaixo estão as atividades que executamos no dia a dia — e, se o seu caso não estiver na lista, mande uma foto pelo WhatsApp que a gente avalia.</p>
+    <div class="el-destaques">
+      <div class="el-destaque"><h3>Disjuntor caindo</h3><p>Diagnóstico da causa real — sobrecarga, curto-circuito ou disjuntor subdimensionado — com troca do disjuntor e balanceamento das cargas entre as fases.</p></div>
+      <div class="el-destaque"><h3>Troca de fiação</h3><p>Substituição de fiação antiga, derretida ou com bitola errada, instalando cabo novo conforme a NBR 5410 e identificando cada circuito.</p></div>
+      <div class="el-destaque"><h3>Troca de tomadas e interruptores</h3><p>Substituição de tomadas queimadas, frouxas ou com mau contato e de interruptores simples, duplos, paralelos e com tomada embutida.</p></div>
+      <div class="el-destaque"><h3>Troca de disjuntores</h3><p>Troca de disjuntores e do barramento, com dimensionamento correto para cada circuito e teste de atuação depois do serviço.</p></div>
+      <div class="el-destaque"><h3>Troca de IDRs</h3><p>Instalação e troca de IDR (interruptor diferencial residual) e de DPS contra surtos, protegendo as pessoas de choque e os equipamentos da casa.</p></div>
+      <div class="el-destaque"><h3>Diagnósticos, laudos e ART</h3><p>Laudo técnico de instalação elétrica, termografia de quadros, medição de aterramento e emissão de ART com responsável técnico habilitado.</p></div>
+    </div>
+    <p>Os serviços mais pedidos estão destacados acima: <strong>disjuntor caindo</strong>, <strong>troca de fiação</strong>, <strong>troca de tomadas e interruptores</strong>, <strong>troca de disjuntores</strong>, <strong>troca de IDRs</strong> e <strong>diagnósticos, laudos e ART</strong>. Em todos eles o serviço é executado conforme a ABNT NBR 5410, com teste na sua frente, nota fiscal e garantia técnica de 90 dias na mão de obra.</p>
+    <h3>As atividades, separadas por disciplina</h3>
+    <div class="el-disciplinas">
+    <div class="el-disciplina">
+      <h3>🏠 Eletricista residencial</h3>
+      <ul><li>Troca de fiação antiga ou danificada</li><li>Correção de disjuntor que fica caindo</li><li>Troca de disjuntores e barramento</li><li>Instalação e troca de IDR (diferencial residual)</li><li>Instalação de DPS contra surtos e raios</li><li>Troca de tomadas queimadas ou frouxas</li><li>Troca de interruptores simples, duplos e paralelos</li><li>Instalação de tomada 220V para chuveiro</li><li>Instalação de tomada para ar-condicionado</li><li>Instalação de tomada para máquina de lavar e secadora</li><li>Instalação de tomada com entrada USB</li><li>Troca de tomada e plugue do padrão antigo</li><li>Instalação de chuveiro elétrico e troca de resistência</li><li>Troca de torneira elétrica e resistência</li><li>Instalação de ventilador de teto com controle</li><li>Instalação de luminária, plafon e lustre</li><li>Instalação de spots e iluminação de LED embutida</li><li>Instalação de fita de LED e perfil de alumínio</li><li>Instalação de sensor de presença</li><li>Instalação de campainha, interfone e eletrônico de portão</li><li>Automação de portão de garagem</li><li>Instalação de ponto para cerca elétrica</li><li>Instalação de refletor e luminária externa</li><li>Troca de fio de chuveiro derretido</li><li>Localização de curto-circuito em tomadas e iluminação</li><li>Correção de choque no chuveiro e na torneira</li><li>Correção de queda de energia constante</li><li>Reparo e modernização de quadro de distribuição antigo</li><li>Instalação de quadro elétrico novo com circuitos separados</li><li>Aterramento residencial e ligação do fio terra</li></ul>
+    </div>
+    <div class="el-disciplina">
+      <h3>🔌 Instalador e instalações</h3>
+      <ul><li>Instalação elétrica completa de imóvel novo</li><li>Instalação de ponto de luz, tomada e interruptor</li><li>Passagem de fiação em parede, forro e contrapiso</li><li>Instalação de eletroduto, conduíte e canaleta</li><li>Instalação de caixa de passagem e de derivação</li><li>Ampliação de circuitos e aumento de carga</li><li>Criação de circuitos independentes por ambiente</li><li>Instalação de padrão de entrada e caixa de medição</li><li>Ligação de medidor e entrada de energia</li><li>Instalação de quadro de distribuição com circuitos identificados</li><li>Instalação de poste e mastro de entrada</li><li>Instalação de bomba d’água e pressurizador</li><li>Instalação de motor de piscina e hidromassagem</li><li>Instalação de aquecedor e boiler elétrico</li><li>Instalação da parte elétrica de painel solar e string box</li><li>Instalação de gerador e chave de transferência automática</li><li>Instalação de nobreak e estabilizador</li><li>Instalação de sistema de som e rede de dados</li><li>Cabeamento estruturado e tomadas de rede RJ45</li><li>Instalação de câmeras de segurança e CFTV</li><li>Instalação de antena, TV e interfone coletivo</li><li>Organização e identificação de quadros e fiação</li></ul>
+    </div>
+    <div class="el-disciplina">
+      <h3>🏢 Eletricista predial</h3>
+      <ul><li>Manutenção elétrica preventiva de condomínio</li><li>Manutenção corretiva de áreas comuns</li><li>Troca de luminárias de garagem, corredor e escada</li><li>Instalação de iluminação de emergência e blocos autônomos</li><li>Instalação e manutenção de portão eletrônico de garagem</li><li>Manutenção de bombas de recalque e elevatórias</li><li>Manutenção de portaria e interfone coletivo</li><li>Manutenção de grupo gerador de emergência</li><li>Manutenção de sistema de pressurização de escada</li><li>Manutenção de quadros elétricos e acompanhamento de subestação</li><li>Balanceamento de cargas entre fases</li><li>Medição de corrente, tensão e fator de potência</li><li>Correção de sobrecarga em alimentador de torres</li><li>Instalação de tomada para carro elétrico em garagem</li><li>Manutenção de iluminação de fachada e jardim</li><li>Adequação elétrica para o Corpo de Bombeiros (AVCB)</li><li>Adequação das instalações conforme a NBR 5410</li><li>Adequação conforme a NR-10 em instalações prediais</li><li>Emissão de relatório técnico de manutenção predial</li><li>Plano de manutenção elétrica com cronograma e checklist</li></ul>
+    </div>
+    <div class="el-disciplina">
+      <h3>🏬 Eletricista comercial</h3>
+      <ul><li>Instalação elétrica de loja e vitrine</li><li>Instalação de trilho e spot de LED para loja</li><li>Instalação de letreiro luminoso e painel de fachada</li><li>Adequação elétrica para balcão refrigerado e ilha de congelados</li><li>Instalação de ponto para máquina de cartão e PDV</li><li>Instalação de rede e infraestrutura de TI para escritório</li><li>Manutenção elétrica de restaurante, cozinha e exaustor</li><li>Instalação de ponto para forno, fogão industrial e chapa</li><li>Instalação de tomada para equipamento de alto consumo</li><li>Instalação de ar-condicionado e infraestrutura de dreno</li><li>Manutenção elétrica de clínica e consultório</li><li>Manutenção elétrica de salão de beleza e barbearia</li><li>Manutenção elétrica de academia e estúdio</li><li>Instalação de quadro elétrico comercial com identificação</li><li>Adequação de carga e aumento de demanda contratada</li><li>Correção de disjuntor caindo em operação comercial</li><li>Manutenção de sistema de som, alarme e CFTV</li><li>Contrato de manutenção elétrica mensal para empresa</li></ul>
+    </div>
+    <div class="el-disciplina">
+      <h3>🏭 Eletricista industrial</h3>
+      <ul><li>Instalação e manutenção de quadro de comando e painel elétrico</li><li>Montagem de painel com contator, relé e CLP</li><li>Instalação de motor trifásico com partida direta ou soft-starter</li><li>Instalação de inversor de frequência</li><li>Instalação de botoeira, sinaleiro e chave de emergência</li><li>Manutenção de esteira transportadora e linha de produção</li><li>Instalação de sensor de fim de curso e fotocélula</li><li>Manutenção de compressores e bombas industriais</li><li>Manutenção de iluminação de galpão e refletores de alto rendimento</li><li>Instalação de tomadas industriais trifásicas</li><li>Correção de desequilíbrio de fases e queda de tensão</li><li>Manutenção de banco de capacitores e correção de fator de potência</li><li>Instalação de aterramento industrial e malha de terra</li><li>Adequação elétrica conforme a NR-10 e a NR-12</li><li>Manutenção de subestação e transformador (acompanhamento)</li><li>Termografia de quadros e painéis elétricos</li><li>Manutenção de sistema de exaustão e ventilação industrial</li><li>Relatório técnico de manutenção industrial</li></ul>
+    </div>
+    </div>
+    <span class="el-total">⚡ 108 atividades elétricas mapeadas</span>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Problemas que resolvemos com frequência</h2>
+    <p>Comércio de rua e estabelecimentos comerciais exigem sistemas elétricos robustos para sustentar equipamentos de alto fluxo. O uso prolongado de maquinário e iluminação intensa exige vistorias periódicas para evitar paradas inesperadas nas operações. Nossa equipe identifica riscos de incêndio e ineficiência energética no layout comercial. Trabalhamos para que sua empresa funcione sem interrupções por falhas na fiação elétrica.</p>
+    <ul><li>Disjuntor principal aquecendo ao toque</li><li>Cheiro característico de ozônio ou plástico queimado</li><li>Oscilação de iluminação ao ligar motores ou máquinas</li><li>Fiação exposta em áreas de circulação comum</li></ul>
+    <div class="mestre-alerta"><strong>Não arrisque:</strong> fio exposto, tomada escurecida ou choque ao encostar em torneira são sinais de falha grave. Desligue o circuito e peça avaliação de um eletricista.</div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Serviços de elétrica disponíveis</h2>
+    <div class="mestre-servicos">
+      <div class="mestre-card"><h3>Quadro de distribuição</h3><p>Reformamos ou organizamos seu painel elétrico principal.</p></div><div class="mestre-card"><h3>Curto-circuito</h3><p>Resolvemos problemas críticos de falhas elétricas no seu local.</p></div><div class="mestre-card"><h3>Chuveiro elétrico</h3><p>Instalamos equipamentos com segurança e vedação correta.</p></div><div class="mestre-card"><h3>Tomadas e interruptores</h3><p>Realizamos a troca preventiva e corretiva desses componentes.</p></div><div class="mestre-card"><h3>Manutenção predial</h3><p>Oferecemos soluções completas de conservação elétrica para imóveis.</p></div>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Como funciona o atendimento em Jandira</h2>
+    <div class="mestre-passos">
+      <div class="mestre-passo"><div class="mestre-passo-num">1</div><h3>Primeiro contato</h3><p>Um eletricista responde sua mensagem e faz as perguntas certas para entender o tamanho do problema.</p></div><div class="mestre-passo"><div class="mestre-passo-num">2</div><h3>Agendamento</h3><p>Marcamos a visita técnica no melhor horário, inclusive à noite e nos fins de semana nos casos urgentes.</p></div><div class="mestre-passo"><div class="mestre-passo-num">3</div><h3>Vistoria técnica</h3><p>Analisamos a instalação com instrumentos de medição, identificando desde sobrecarga até falha de aterramento.</p></div><div class="mestre-passo"><div class="mestre-passo-num">4</div><h3>Proposta clara</h3><p>Você recebe a relação do que será feito e o valor antes do início, para decidir com calma.</p></div><div class="mestre-passo"><div class="mestre-passo-num">5</div><h3>Mão na massa</h3><p>A execução segue a sequência correta de segurança, com desligamento do circuito e uso de equipamento de proteção.</p></div><div class="mestre-passo"><div class="mestre-passo-num">6</div><h3>Entrega</h3><p>Ao final, revisamos o serviço junto com você, limpamos o local e emitimos nota fiscal com garantia de 90 dias.</p></div>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Por que contratar o Mestre dos Reparos</h2>
+    <ul><li><strong>Responsável técnico:</strong> Atendimento conduzido por responsável com formação em engenharia e mais de 20 anos de experiência em instalações elétricas.</li><li><strong>Empresa formalizada:</strong> CNPJ 64.521.657/0001-87 registrado em Barueri, com emissão de nota fiscal em todos os serviços.</li><li><strong>Norma NBR 5410:</strong> Instalações executadas conforme a norma brasileira de instalações elétricas de baixa tensão.</li><li><strong>Garantia de 90 dias:</strong> Garantia técnica por escrito na mão de obra, conforme o Código de Defesa do Consumidor.</li><li><strong>Atendimento 24 horas:</strong> Plantão para emergências elétricas todos os dias, incluindo fins de semana e feriados.</li><li><strong>Avaliações verificadas:</strong> Perfil com avaliações reais de clientes atendidos em Jandira e nas cidades vizinhas.</li></ul>
+  </div>
+
+  <style>
+.tp-topico{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.tp-topico h2{font-size:32px;line-height:1.25;color:#0b2a4a;margin:0 0 20px}
+.tp-foto{display:block;width:100%;max-width:420px;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:50%;margin:0 auto 24px;background:#eef2f7}
+.tp-topico p{font-size:19px;line-height:1.75;margin:0 0 16px;color:#222}
+.tp-topico p:last-child{margin-bottom:0}
+.tp-topico a{color:#0b2a4a;font-weight:700}
+
+.tp-atalhos{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.tp-atalhos a{display:inline-block;background:#0b2a4a;color:#fff!important;padding:10px 16px;border-radius:999px;font-size:16px;font-weight:700;text-decoration:none!important}
+.tp-grupo{margin:44px 0 18px;text-align:center}
+.tp-grupo span{display:inline-block;background:#ffb300;color:#0b2a4a;font-weight:900;font-size:20px;letter-spacing:.04em;text-transform:uppercase;padding:10px 22px;border-radius:999px}
+@media(max-width:768px){.tp-atalhos a{font-size:15px;padding:9px 14px}.tp-topico{padding:22px}.tp-topico h2{font-size:26px}.tp-topico p{font-size:17px}.tp-foto{max-width:320px}}
+</style>
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista em Jandira: atendimento rápido</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-atendimento-rapido-barueri.jpg" alt="Equipe de eletricistas chegando de van para atendimento em Jandira" width="420" height="420" loading="eager" fetchpriority="high">
+    <p>Procurar um <strong>eletricista em Jandira</strong> é procurar alguém que chegue, encontre a causa do problema e deixe a instalação segura. O Mestre dos Reparos atende residências, apartamentos, condomínios e comércios com equipe própria, responsável técnico com formação em engenharia e serviço conforme a NBR 5410.</p>
+    <p>O orçamento é passado antes de qualquer serviço começar, com nota fiscal e garantia de 90 dias na mão de obra. Você chama pelo WhatsApp, manda fotos do problema e recebe orientação na hora.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista 24 horas em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-24-horas-barueri.jpg" alt="Eletricista 24 horas atendendo à noite em Jandira" width="420" height="420" loading="eager">
+    <p>Falta de energia, cheiro de queimado e disjuntor que não arma não escolhem horário. Por isso o <strong>eletricista 24 horas</strong> do Mestre dos Reparos atende em Jandira todos os dias, inclusive fins de semana e feriados.</p>
+    <p>No plantão, a prioridade é deixar o imóvel seguro: isolar o circuito com defeito, restabelecer a energia do restante da casa e, quando possível, resolver a causa na mesma visita.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista perto de mim em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-perto-de-mim-barueri.jpg" alt="Eletricista perto de você com caixa de ferramentas em Jandira" width="420" height="420" loading="eager">
+    <p>Quem pesquisa <strong>eletricista perto de mim</strong> quer um profissional da região, que conheça os imóveis do bairro e chegue sem demora. Nossa sede fica no Jardim Belval, em Barueri, cidade vizinha de Jandira, e atendemos todos os bairros de Jandira, como Centro, Jardim Alvorada, Jardim Gabriela, Jardim Sagrado Coração, Vila Eunice, Jardim Ouro Verde, Jardim São Luiz, Parque Santa Tereza, Jardim Stella Maris e Jardim Brotinho.</p>
+    <p>Estar perto também facilita depois do serviço: se algo precisar de ajuste dentro da garantia, o retorno é rápido e sem burocracia.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista residencial em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-residencial-barueri.jpg" alt="Eletricista residencial ao lado do quadro de uma casa em Jandira" width="420" height="420" loading="lazy">
+    <p>O <strong>eletricista residencial</strong> cuida da parte elétrica da casa ou do apartamento: troca de fiação, tomadas e interruptores, chuveiro, iluminação, ventilador de teto e quadro de disjuntores.</p>
+    <p>Muitas casas foram construídas antes do ar-condicionado e do cooktop de indução. Revisar os circuitos evita fio aquecendo, disjuntor caindo e aparelho queimado.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista predial em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-predial-barueri.jpg" alt="Eletricista predial no quadro do corredor de condomínio em Jandira" width="420" height="420" loading="lazy">
+    <p>O <strong>eletricista predial</strong> mantém a parte elétrica de uso coletivo: quadros de força, iluminação de áreas comuns e de emergência, bombas, portões e interfones.</p>
+    <p>Para condomínios, trabalhamos com manutenção preventiva programada, relatório técnico de cada visita e atendimento emergencial 24 horas.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista comercial em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-comercial-barueri.jpg" alt="Eletricista comercial no quadro elétrico de uma loja em Jandira" width="420" height="420" loading="lazy">
+    <p>Lojas, escritórios, clínicas, salões e restaurantes não podem parar. O <strong>eletricista comercial</strong> instala quadros identificados, tomadas para equipamentos de alto consumo e iluminação de loja.</p>
+    <p>Quando necessário, o serviço é feito fora do horário de funcionamento, com nota fiscal e contrato de manutenção mensal para empresas.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista industrial em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-industrial-barueri-galpao.jpg" alt="Eletricista industrial em painel de galpão em Jandira" width="420" height="420" loading="lazy">
+    <p>Em galpões e indústrias, a segurança elétrica protege pessoas e máquinas. O <strong>eletricista industrial</strong> faz manutenção de quadros de comando, motores trifásicos, iluminação de galpão e tomadas industriais.</p>
+    <p>Os serviços seguem a NR-10, com correção de desequilíbrio de fases, termografia de painéis e relatório técnico de manutenção.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista de emergência em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-emergencia-barueri.jpg" alt="Eletricista de emergência com lanterna em fiação danificada em Jandira" width="420" height="420" loading="lazy">
+    <p>Curto-circuito, faísca na tomada e choque ao encostar na torneira são situações de <strong>emergência elétrica</strong>. Desligue o disjuntor geral e chame um eletricista antes de religar.</p>
+    <p>O eletricista de emergência localiza o ponto do curto, isola o circuito e refaz a ligação com material novo, testando tudo antes de devolver a energia.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista de plantão em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-plantao-barueri-rua.jpg" alt="Eletricista de plantão consertando fiação na fachada em Jandira" width="420" height="420" loading="lazy">
+    <p>Ter um <strong>eletricista de plantão</strong> é saber que, à noite ou no feriado, alguém atende. Nosso plantão funciona todos os dias para casas, condomínios e comércios.</p>
+    <p>A equipe trabalha com equipamento de proteção individual, circuito desligado e procedimento de segurança, mesmo no atendimento de urgência.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista urgente em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-urgente-barueri.jpg" alt="Eletricista urgente trabalhando à noite em escritório em Jandira" width="420" height="420" loading="lazy">
+    <p>Disjuntor que desarma toda hora pede um <strong>eletricista urgente</strong>: religar várias vezes aquece o fio e pode danificar a instalação.</p>
+    <p>As causas mais comuns são sobrecarga, curto-circuito, disjuntor desgastado ou fuga de corrente. O eletricista mede cada circuito e corrige a causa, não só o sintoma.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Instalador elétrico em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalador-eletrico-fiacao-embutida.jpg" alt="Instalador elétrico passando fiação embutida na parede em Jandira" width="420" height="420" loading="lazy">
+    <p>O <strong>instalador elétrico</strong> faz a instalação nova ou a ampliação: passagem de fiação em parede e forro, eletrodutos, caixas, pontos de luz e tomadas.</p>
+    <p>Em obra ou reforma, a instalação é feita na ordem correta, antes do reboco e do acabamento, para não haver quebra depois.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista instalador em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-instalador-interruptor.jpg" alt="Eletricista instalador montando interruptor em Jandira" width="420" height="420" loading="lazy">
+    <p>Um <strong>eletricista instalador</strong> qualificado monta o quadro de distribuição com circuitos separados por ambiente, disjuntores dimensionados para cada fio e identificação de cada circuito.</p>
+    <p>Isso facilita a manutenção futura e evita que um defeito em um cômodo derrube a energia da casa inteira.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista de manutenção em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-manutencao-multimetro.jpg" alt="Eletricista de manutenção medindo quadro com multímetro em Jandira" width="420" height="420" loading="lazy">
+    <p>O <strong>eletricista de manutenção</strong> revisa a instalação antes que ela falhe: reaperto de conexões, troca de disjuntores desgastados, verificação de aterramento e testes de tensão e corrente.</p>
+    <p>A manutenção preventiva custa menos que o conserto de emergência e evita parada de bombas, portões e equipamentos.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista profissional em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-profissional-epi.jpg" alt="Eletricista profissional uniformizado com capacete e EPI em Jandira" width="420" height="420" loading="lazy">
+    <p>Um <strong>eletricista profissional</strong> se reconhece pelo resultado: quadro organizado, fios identificados, emendas feitas corretamente e testes na frente do cliente.</p>
+    <p>É esse padrão que entregamos em cada serviço, com nota fiscal, CNPJ ativo em Barueri e garantia por escrito.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Eletricista com responsável técnico em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-responsavel-tecnico-vistoria.jpg" alt="Responsável técnico fazendo vistoria elétrica com prancheta em Jandira" width="420" height="420" loading="lazy">
+    <p>Para laudo de instalação elétrica, adequação de condomínio ou exigência de seguradora, é preciso um <strong>responsável técnico</strong>. Nosso atendimento é conduzido por profissional com formação em engenharia e mais de 20 anos na área.</p>
+    <p>Emitimos laudo técnico, termografia de quadros e ART quando o serviço exige.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Troca de fiação em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/troca-de-fiacao-barueri.jpg" alt="Eletricista fazendo troca de fiação na parede em Jandira" width="420" height="420" loading="lazy">
+    <p>Fiação antiga, ressecada ou com bitola menor que a carga atual esquenta e pode causar incêndio. A <strong>troca de fiação</strong> substitui os cabos por material novo, na bitola certa para cada circuito.</p>
+    <p>Nem sempre é preciso trocar a casa inteira: muitas vezes basta refazer os circuitos mais exigidos, como chuveiro, cozinha e ar-condicionado.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Disjuntor caindo em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/disjuntor-caindo-barueri.jpg" alt="Eletricista verificando disjuntor que cai no quadro em Jandira" width="420" height="420" loading="lazy">
+    <p><strong>Disjuntor caindo</strong> é o sinal mais comum de sobrecarga: muitos aparelhos ligados no mesmo circuito ou um equipamento potente em fio fino.</p>
+    <p>A solução pode ser redistribuir as cargas, criar um circuito dedicado ou trocar o disjuntor e o cabo. O diagnóstico vem antes do orçamento.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Troca de quadro de distribuição em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/troca-de-quadro-de-distribuicao-barueri.jpg" alt="Quadro de distribuição novo instalado com eletrodutos em Jandira" width="420" height="420" loading="lazy">
+    <p>Quadros com fusível ou disjuntores antigos não protegem bem a instalação. A <strong>troca do quadro de distribuição</strong> instala disjuntores novos, IDR e DPS, com circuitos identificados.</p>
+    <p>É uma das melhorias que mais aumentam a segurança da casa, principalmente em imóveis com mais de 20 anos.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Instalação de IDR e DPS em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-idr-dps-barueri.jpg" alt="Eletricista instalando DPS no quadro elétrico em Jandira" width="420" height="420" loading="lazy">
+    <p>O <strong>IDR</strong> desliga o circuito quando detecta fuga de corrente, protegendo contra choque. O <strong>DPS</strong> protege os aparelhos contra surtos e descargas atmosféricas.</p>
+    <p>A NBR 5410 exige proteção diferencial nas áreas molhadas, como banheiro, cozinha e lavanderia.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Aterramento elétrico em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/aterramento-eletrico-barueri.jpg" alt="Eletricista instalando haste de aterramento em Jandira" width="420" height="420" loading="lazy">
+    <p>Sem <strong>aterramento</strong>, o choque ao encostar na geladeira ou na máquina de lavar passa pelo corpo de quem toca. O fio terra leva essa corrente para o solo.</p>
+    <p>Fazemos a instalação da haste, a ligação do fio terra nos circuitos e a medição da resistência de aterramento.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Tomada quente ou derretida em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/tomada-queimada-derretida-barueri.jpg" alt="Tomada queimada por superaquecimento em Jandira" width="420" height="420" loading="lazy">
+    <p><strong>Tomada quente</strong>, escurecida ou derretida indica mau contato ou fio fino demais para a carga. Pare de usar a tomada e desligue o disjuntor do circuito.</p>
+    <p>O eletricista troca a tomada, refaz a conexão e verifica se o cabo e o disjuntor suportam o aparelho ligado ali.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Instalação de chuveiro elétrico em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-de-chuveiro-eletrico-barueri.jpg" alt="Eletricista instalando chuveiro elétrico no banheiro em Jandira" width="420" height="420" loading="lazy">
+    <p>A <strong>instalação de chuveiro elétrico</strong> exige circuito exclusivo, cabo na bitola correta e disjuntor compatível com a potência do aparelho.</p>
+    <p>Ligar um chuveiro novo em fio antigo é uma das principais causas de fio derretido e resistência queimando. Também trocamos resistência e corrigimos choque no chuveiro.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Ponto elétrico para ar-condicionado em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/ponto-eletrico-ar-condicionado-barueri.jpg" alt="Eletricista fazendo ponto elétrico para ar-condicionado em Jandira" width="420" height="420" loading="lazy">
+    <p>O ar-condicionado precisa de um <strong>ponto elétrico dedicado</strong>, com circuito próprio saindo do quadro e disjuntor dimensionado para o aparelho.</p>
+    <p>Ligar o ar em tomada comum sobrecarrega o circuito e faz o disjuntor desarmar.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Iluminação de LED em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/iluminacao-de-led-barueri.jpg" alt="Sala com iluminação de LED instalada em Jandira" width="420" height="420" loading="lazy">
+    <p>A <strong>iluminação de LED</strong> reduz o consumo e valoriza o ambiente. Instalamos spots, plafons, perfis e fitas de LED, com driver adequado e circuitos separados por cena.</p>
+    <p>Em forro de gesso, a instalação é planejada junto com o gesseiro para o acabamento ficar limpo.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Instalação de lustre em pé-direito alto em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-de-lustre-pe-direito-alto-barueri.jpg" alt="Eletricista instalando lustre em pé-direito alto em Jandira" width="420" height="420" loading="lazy">
+    <p>Lustres pesados e pés-direitos altos exigem fixação reforçada, equipamento de altura e cuidado com o acabamento do teto.</p>
+    <p>Fazemos a <strong>instalação de lustres</strong>, pendentes e ventiladores de teto com segurança, testando a fixação e o funcionamento.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Padrão de entrada de energia em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/padrao-de-entrada-de-energia-barueri.jpg" alt="Eletricista no padrão de entrada de energia em Jandira" width="420" height="420" loading="lazy">
+    <p>O <strong>padrão de entrada</strong> é onde a energia da concessionária chega ao imóvel. Aumento de carga, troca de medidor ou imóvel novo exigem padrão dentro das regras da concessionária.</p>
+    <p>Fazemos a instalação e a adequação do padrão, da caixa de medição e do aterramento.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Carregador de carro elétrico em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/carregador-carro-eletrico-wallbox-barueri.jpg" alt="Eletricista instalando carregador de carro elétrico em Jandira" width="420" height="420" loading="lazy">
+    <p>O <strong>carregador de carro elétrico</strong> é uma carga alta e contínua. Ele precisa de circuito dedicado, proteção com IDR e verificação da capacidade do padrão de entrada.</p>
+    <p>Em condomínio, a instalação também depende da aprovação da administração e da medição individual.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Parte elétrica de energia solar em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/energia-solar-instalacao-barueri.jpg" alt="Instalação de painéis de energia solar no telhado em Jandira" width="420" height="420" loading="lazy">
+    <p>Para quem vai instalar <strong>energia solar</strong>, preparamos a parte elétrica: quadro, string box, aterramento e proteção, deixando a instalação pronta para o sistema.</p>
+    <p>Uma instalação elétrica bem dimensionada evita perdas e problemas na homologação.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Automação e interruptor inteligente em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/automacao-interruptor-inteligente-barueri.jpg" alt="Eletricista mostrando automação controlada pelo celular em Jandira" width="420" height="420" loading="lazy">
+    <p>Com <strong>interruptores inteligentes</strong>, a iluminação liga e desliga pelo celular ou por comando de voz, com cenas separadas para spot e plafon.</p>
+    <p>Instalamos automação em apartamentos e casas, inclusive em reforma de imóvel habitado.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Sensor de presença em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/sensor-de-presenca-barueri.jpg" alt="Sensor de presença instalado no teto em Jandira" width="420" height="420" loading="lazy">
+    <p>O <strong>sensor de presença</strong> acende a luz só quando alguém passa, economizando energia em corredores, garagens, escadas e áreas externas.</p>
+    <p>É uma das melhorias mais simples e com retorno mais rápido para casas e condomínios.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Iluminação de emergência em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/iluminacao-de-emergencia-condominio-barueri.jpg" alt="Vistoria de iluminação de emergência em corredor em Jandira" width="420" height="420" loading="lazy">
+    <p>A <strong>iluminação de emergência</strong> acende quando falta energia e garante a saída segura pelas escadas e corredores. É cobrada na vistoria do Corpo de Bombeiros.</p>
+    <p>Instalamos e fazemos a manutenção de blocos autônomos e centrais, com teste de autonomia das baterias.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Portão eletrônico e interfone em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/portao-eletronico-interfone-barueri.jpg" alt="Técnico consertando motor de portão eletrônico em Jandira" width="420" height="420" loading="lazy">
+    <p><strong>Portão eletrônico</strong> travado e interfone mudo são chamados comuns em casas e condomínios. Fazemos a parte elétrica, a instalação e a manutenção de motores, placas e fontes.</p>
+    <p>Em condomínio, o atendimento pode entrar no contrato de manutenção mensal.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Câmeras de segurança em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/cameras-de-seguranca-barueri.jpg" alt="Técnico instalando câmera de segurança na casa em Jandira" width="420" height="420" loading="lazy">
+    <p>Instalamos <strong>câmeras de segurança</strong> e CFTV com cabeamento organizado, fonte protegida e ponto elétrico adequado para o gravador.</p>
+    <p>A infraestrutura bem feita evita câmera desligando por mau contato ou queda de energia.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Termografia e laudo elétrico em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/termografia-laudo-eletrico-barueri.jpg" alt="Termografia de quadro elétrico com câmera térmica em Jandira" width="420" height="420" loading="lazy">
+    <p>A <strong>termografia</strong> mostra, com câmera térmica, os pontos quentes do quadro antes que virem curto-circuito ou incêndio.</p>
+    <p>É a base do laudo elétrico para condomínios, comércios, indústrias e seguradoras.</p>
+  </div>
+
+  <div class="mestre-box tp-topico">
+    <h2>Gerador e nobreak em Jandira</h2>
+    <img class="tp-foto" src="https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/gerador-e-nobreak-barueri.jpg" alt="Técnico fazendo manutenção de gerador em Jandira" width="420" height="420" loading="lazy">
+    <p>Para quem não pode ficar sem energia, instalamos a parte elétrica de <strong>geradores</strong>, chave de transferência e nobreaks.</p>
+    <p>É comum em clínicas, comércios, escritórios com servidores e condomínios com bombas e portões.</p>
+  </div>
+
+  <style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+
+  <style>
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.dep-card{background:#fff;border:2px solid #e6ebf2;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.dep-top{display:flex;align-items:center;gap:12px}
+.dep-avatar{width:46px;height:46px;border-radius:50%;background:#0b2a4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 46px}
+.dep-nome{font-weight:800;color:#0b2a4a;font-size:16px;line-height:1.25}
+.dep-quando{font-size:13px;color:#6b7a8d}
+.dep-estrelas{color:#ffb300;font-size:17px;letter-spacing:2px}
+.mestre-box .dep-texto{margin:0;font-size:17px;color:#33445c;line-height:1.65}
+.dep-rodape{margin-top:auto;font-size:13px;color:#6b7a8d;font-weight:700}
+.dep-resumo{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#f4f6f9;border-radius:16px;padding:22px;margin-top:20px}
+.mestre-box .dep-nota{margin:0;font-size:16px;color:#33445c}
+.mestre-box .dep-nota b{font-size:34px;color:#0b2a4a;display:block;line-height:1;margin-bottom:4px}
+.dep-btn{display:inline-block;background:#0b2a4a;color:#fff!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none!important}
+@media(max-width:768px){.dep-card{padding:18px}.dep-resumo{padding:18px}.dep-btn{display:block;text-align:center}}
+</style>
+<div class="mestre-box" id="depoimentos">
+    <h2>Depoimentos de clientes no Google</h2>
+    <p>Quem contrata o Mestre dos Reparos avalia o serviço no Google depois do atendimento. Abaixo estão depoimentos reais de clientes atendidos em Jandira e região.</p>
+    <div class="dep-grid">
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">KC</div>
+        <div>
+          <div class="dep-nome">Kelly Carvalho</div>
+          <div class="dep-quando">Limpeza residencial · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente serviço de limpeza! Fiquei muito satisfeita com o resultado, tudo foi feito com muito cuidado e atenção aos detalhes. A equipe é pontual, organizada e deixou o lugar impecável. Recomendo demais!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">MF</div>
+        <div>
+          <div class="dep-nome">Marcelo Fernandes</div>
+          <div class="dep-quando">Manutenção e reparos · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Gostei muito do trabalho, foram super atenciosos e dá para ver o conhecimento e o domínio do que fazem. Sem contar a educação: gosto de entender as coisas e eles responderam todas as minhas perguntas.</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">LF</div>
+        <div>
+          <div class="dep-nome">Lais Tafnes Ferrari</div>
+          <div class="dep-quando">Atendimento · há 8 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente profissional, com atendimento excepcional!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+    </div>
+    <div class="dep-resumo">
+      <p class="dep-nota">
+        <b>4,9</b>
+        <span class="dep-estrelas">★★★★★</span><br>
+        Média de 31 avaliações de clientes no Google Meu Negócio
+      </p>
+      <a class="dep-btn" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+    </div>
+    <p style="margin-top:14px"><a href="https://www.google.com/maps/search/?api=1&query=Mestre%20dos%20Reparos%20Manuten%C3%A7%C3%A3o%20e%20Limpeza%2C%20Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Perguntas frequentes sobre eletricista em Jandira</h2>
+    <div class="mestre-faq">
+      <details><summary>Qual a qualificação da equipe?</summary><p>A Mestre dos Reparos conta com responsável técnico formado em engenharia. Garantimos conhecimento profundo para resolver problemas elétricos de qualquer complexidade.</p></details><details><summary>Como solicitar um orçamento?</summary><p>Você pode entrar em contato através dos nossos canais de atendimento. Analisamos sua necessidade para propor a solução técnica mais adequada.</p></details><details><summary>Vocês possuem CNPJ?</summary><p>Sim, somos uma empresa formalizada, com sede em Barueri, e atendemos Jandira com nota fiscal. Nossa atuação é pautada pela transparência e legalidade com o fornecimento de nota fiscal.</p></details><details><summary>A NBR 5410 é obrigatória?</summary><p>Ela é a norma técnica que rege instalações elétricas de baixa tensão no Brasil. Segui-la garante segurança, eficiência e evita acidentes em seu imóvel.</p></details><details><summary>Atendem grandes comércios?</summary><p>Com certeza, nossa experiência abrange desde residências até prédios comerciais. Ajustamos nossas técnicas às necessidades específicas de cada tipo de construção.</p></details>
+    </div>
+  </div>
+
+  <div class="mestre-cluster">
+    <h3>Bairros e cidades atendidos na sequência</h3>
+    <p style="font-size:18px;line-height:1.7;margin:0 0 12px">Bairros de Jandira que atendemos: Centro, Jardim Alvorada, Jardim Gabriela, Jardim Sagrado Coração, Vila Eunice, Jardim Ouro Verde, Jardim São Luiz, Parque Santa Tereza, Jardim Stella Maris e Jardim Brotinho.</p>
+    <ul><li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html">Eletricista em Barueri</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-carapicuiba-atendimento.html">Eletricista em Carapicuíba</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-itapevi.html">Eletricista em Itapevi</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-santana-de-parnaiba.html">Eletricista em Santana de Parnaíba</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-aldeia-da-serra.html">Eletricista na Aldeia da Serra</a></li></ul>
+    <ul><li><a href="https://www.mestredosreparos.app.br">Mestre dos Reparos Manutenção e Limpeza</a></li><li><a href="https://mestre-reparos.base44.app/Calculadora">Calculadora de preços</a></li></ul>
+  </div>
+  <footer class="mestre-footer">
+  <h3>Mestre dos Reparos Manutenção &amp; Limpeza</h3>
+  <p>Serviços elétricos residenciais, comerciais e prediais, além de reformas, hidráulica, pintura e limpeza, em Barueri e região.</p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista.">(11) 91839-0430</a> · <strong>E-mail:</strong> <a href="mailto:mestredosreparosbarueri@gmail.com">mestredosreparosbarueri@gmail.com</a><br>
+  <strong>Site:</strong> <a href="https://www.mestredosreparos.app.br">mestredosreparos.app.br</a></p>
+  <p><strong>Razão Social:</strong> Maria Eduarda Hengles Valadão · <strong>CNPJ:</strong> 64.521.657/0001-87<br>
+  <strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245, Jardim Belval, Barueri/SP, CEP 06420-130</p>
+  <div class="mestre-links mestre-redes">
+    <a href="https://www.instagram.com/mestredosreparosfacilites" target="_blank" rel="noopener">📸 Instagram: @mestredosreparosfacilites</a>
+    <a href="https://www.facebook.com/mestredosreparos.oficial/" target="_blank" rel="noopener">👍 Facebook: /mestredosreparos.oficial</a>
+    <a href="https://www.tiktok.com/@mestre.dos.reparo1" target="_blank" rel="noopener">🎵 TikTok: @mestre.dos.reparo1</a>
+    <a href="https://youtube.com/@mestredosreparos-i9d" target="_blank" rel="noopener">▶️ YouTube: @mestredosreparos-i9d</a>
+  </div>
+  <a class="mestre-btn-avaliar" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+</footer>
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+</section>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Mestre dos Reparos Manutenção e Limpeza","description":"Serviços de eletricista em Jandira e região: quadro elétrico, disjuntores, tomadas, iluminação e emergências 24 horas.","url":"https://www.mestredosreparos.app.br/p/eletricista-em-jandira.html","telephone":"+55 11 91839-0430","email":"mestredosreparosbarueri@gmail.com","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","priceRange":"$$","currenciesAccepted":"BRL","address":{"@type":"PostalAddress","streetAddress":"Av. Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"areaServed":[{"@type":"City","name":"Jandira","containedInPlace":{"@type":"State","name":"São Paulo"}},{"@type":"Place","name":"Centro, Jandira"},{"@type":"Place","name":"Jardim Alvorada, Jandira"},{"@type":"Place","name":"Jardim Gabriela, Jandira"},{"@type":"Place","name":"Jardim Sagrado Coração, Jandira"},{"@type":"Place","name":"Vila Eunice, Jandira"},{"@type":"Place","name":"Jardim Ouro Verde, Jandira"},{"@type":"Place","name":"Jardim São Luiz, Jandira"},{"@type":"Place","name":"Parque Santa Tereza, Jandira"},{"@type":"Place","name":"Jardim Stella Maris, Jandira"},{"@type":"Place","name":"Jardim Brotinho, Jandira"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual a qualificação da equipe?","acceptedAnswer":{"@type":"Answer","text":"A Mestre dos Reparos conta com responsável técnico formado em engenharia. Garantimos conhecimento profundo para resolver problemas elétricos de qualquer complexidade."}},{"@type":"Question","name":"Como solicitar um orçamento?","acceptedAnswer":{"@type":"Answer","text":"Você pode entrar em contato através dos nossos canais de atendimento. Analisamos sua necessidade para propor a solução técnica mais adequada."}},{"@type":"Question","name":"Vocês possuem CNPJ?","acceptedAnswer":{"@type":"Answer","text":"Sim, somos uma empresa formalizada, com sede em Barueri, e atendemos Jandira com nota fiscal. Nossa atuação é pautada pela transparência e legalidade com o fornecimento de nota fiscal."}},{"@type":"Question","name":"A NBR 5410 é obrigatória?","acceptedAnswer":{"@type":"Answer","text":"Ela é a norma técnica que rege instalações elétricas de baixa tensão no Brasil. Segui-la garante segurança, eficiência e evita acidentes em seu imóvel."}},{"@type":"Question","name":"Atendem grandes comércios?","acceptedAnswer":{"@type":"Answer","text":"Com certeza, nossa experiência abrange desde residências até prédios comerciais. Ajustamos nossas técnicas às necessidades específicas de cada tipo de construção."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br"},{"@type":"ListItem","position":2,"name":"Eletricista em Jandira","item":"https://www.mestredosreparos.app.br/p/eletricista-em-jandira.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageGallery","name":"Fotos: Eletricista em Jandira","associatedMedia":[{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-atendimento-rapido-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-atendimento-rapido-barueri.jpg","name":"Equipe de eletricistas chegando de van para atendimento em Jandira","caption":"Equipe de eletricistas chegando de van para atendimento em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-24-horas-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-24-horas-barueri.jpg","name":"Eletricista 24 horas atendendo à noite em Jandira","caption":"Eletricista 24 horas atendendo à noite em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-perto-de-mim-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-perto-de-mim-barueri.jpg","name":"Eletricista perto de você com caixa de ferramentas em Jandira","caption":"Eletricista perto de você com caixa de ferramentas em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-residencial-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-residencial-barueri.jpg","name":"Eletricista residencial ao lado do quadro de uma casa em Jandira","caption":"Eletricista residencial ao lado do quadro de uma casa em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-predial-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-predial-barueri.jpg","name":"Eletricista predial no quadro do corredor de condomínio em Jandira","caption":"Eletricista predial no quadro do corredor de condomínio em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-comercial-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-comercial-barueri.jpg","name":"Eletricista comercial no quadro elétrico de uma loja em Jandira","caption":"Eletricista comercial no quadro elétrico de uma loja em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-industrial-barueri-galpao.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-industrial-barueri-galpao.jpg","name":"Eletricista industrial em painel de galpão em Jandira","caption":"Eletricista industrial em painel de galpão em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-emergencia-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-emergencia-barueri.jpg","name":"Eletricista de emergência com lanterna em fiação danificada em Jandira","caption":"Eletricista de emergência com lanterna em fiação danificada em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-plantao-barueri-rua.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-plantao-barueri-rua.jpg","name":"Eletricista de plantão consertando fiação na fachada em Jandira","caption":"Eletricista de plantão consertando fiação na fachada em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-urgente-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-urgente-barueri.jpg","name":"Eletricista urgente trabalhando à noite em escritório em Jandira","caption":"Eletricista urgente trabalhando à noite em escritório em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalador-eletrico-fiacao-embutida.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalador-eletrico-fiacao-embutida.jpg","name":"Instalador elétrico passando fiação embutida na parede em Jandira","caption":"Instalador elétrico passando fiação embutida na parede em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-instalador-interruptor.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-instalador-interruptor.jpg","name":"Eletricista instalador montando interruptor em Jandira","caption":"Eletricista instalador montando interruptor em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-manutencao-multimetro.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-de-manutencao-multimetro.jpg","name":"Eletricista de manutenção medindo quadro com multímetro em Jandira","caption":"Eletricista de manutenção medindo quadro com multímetro em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-profissional-epi.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-profissional-epi.jpg","name":"Eletricista profissional uniformizado com capacete e EPI em Jandira","caption":"Eletricista profissional uniformizado com capacete e EPI em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-responsavel-tecnico-vistoria.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/eletricista-responsavel-tecnico-vistoria.jpg","name":"Responsável técnico fazendo vistoria elétrica com prancheta em Jandira","caption":"Responsável técnico fazendo vistoria elétrica com prancheta em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/troca-de-fiacao-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/troca-de-fiacao-barueri.jpg","name":"Eletricista fazendo troca de fiação na parede em Jandira","caption":"Eletricista fazendo troca de fiação na parede em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/disjuntor-caindo-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/disjuntor-caindo-barueri.jpg","name":"Eletricista verificando disjuntor que cai no quadro em Jandira","caption":"Eletricista verificando disjuntor que cai no quadro em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/troca-de-quadro-de-distribuicao-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/troca-de-quadro-de-distribuicao-barueri.jpg","name":"Quadro de distribuição novo instalado com eletrodutos em Jandira","caption":"Quadro de distribuição novo instalado com eletrodutos em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-idr-dps-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-idr-dps-barueri.jpg","name":"Eletricista instalando DPS no quadro elétrico em Jandira","caption":"Eletricista instalando DPS no quadro elétrico em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/aterramento-eletrico-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/aterramento-eletrico-barueri.jpg","name":"Eletricista instalando haste de aterramento em Jandira","caption":"Eletricista instalando haste de aterramento em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/tomada-queimada-derretida-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/tomada-queimada-derretida-barueri.jpg","name":"Tomada queimada por superaquecimento em Jandira","caption":"Tomada queimada por superaquecimento em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-de-chuveiro-eletrico-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-de-chuveiro-eletrico-barueri.jpg","name":"Eletricista instalando chuveiro elétrico no banheiro em Jandira","caption":"Eletricista instalando chuveiro elétrico no banheiro em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/ponto-eletrico-ar-condicionado-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/ponto-eletrico-ar-condicionado-barueri.jpg","name":"Eletricista fazendo ponto elétrico para ar-condicionado em Jandira","caption":"Eletricista fazendo ponto elétrico para ar-condicionado em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/iluminacao-de-led-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/iluminacao-de-led-barueri.jpg","name":"Sala com iluminação de LED instalada em Jandira","caption":"Sala com iluminação de LED instalada em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-de-lustre-pe-direito-alto-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/instalacao-de-lustre-pe-direito-alto-barueri.jpg","name":"Eletricista instalando lustre em pé-direito alto em Jandira","caption":"Eletricista instalando lustre em pé-direito alto em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/padrao-de-entrada-de-energia-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/padrao-de-entrada-de-energia-barueri.jpg","name":"Eletricista no padrão de entrada de energia em Jandira","caption":"Eletricista no padrão de entrada de energia em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/carregador-carro-eletrico-wallbox-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/carregador-carro-eletrico-wallbox-barueri.jpg","name":"Eletricista instalando carregador de carro elétrico em Jandira","caption":"Eletricista instalando carregador de carro elétrico em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/energia-solar-instalacao-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/energia-solar-instalacao-barueri.jpg","name":"Instalação de painéis de energia solar no telhado em Jandira","caption":"Instalação de painéis de energia solar no telhado em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/automacao-interruptor-inteligente-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/automacao-interruptor-inteligente-barueri.jpg","name":"Eletricista mostrando automação controlada pelo celular em Jandira","caption":"Eletricista mostrando automação controlada pelo celular em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/sensor-de-presenca-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/sensor-de-presenca-barueri.jpg","name":"Sensor de presença instalado no teto em Jandira","caption":"Sensor de presença instalado no teto em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/iluminacao-de-emergencia-condominio-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/iluminacao-de-emergencia-condominio-barueri.jpg","name":"Vistoria de iluminação de emergência em corredor em Jandira","caption":"Vistoria de iluminação de emergência em corredor em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/portao-eletronico-interfone-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/portao-eletronico-interfone-barueri.jpg","name":"Técnico consertando motor de portão eletrônico em Jandira","caption":"Técnico consertando motor de portão eletrônico em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/cameras-de-seguranca-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/cameras-de-seguranca-barueri.jpg","name":"Técnico instalando câmera de segurança na casa em Jandira","caption":"Técnico instalando câmera de segurança na casa em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/termografia-laudo-eletrico-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/termografia-laudo-eletrico-barueri.jpg","name":"Termografia de quadro elétrico com câmera térmica em Jandira","caption":"Termografia de quadro elétrico com câmera térmica em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"},{"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/gerador-e-nobreak-barueri.jpg","url":"https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8844d4a06aa6da03197ebc7c1452f85ee05566d5/fotos/gerador-e-nobreak-barueri.jpg","name":"Técnico fazendo manutenção de gerador em Jandira","caption":"Técnico fazendo manutenção de gerador em Jandira","width":480,"height":480,"creditText":"Mestre dos Reparos"}]}</script>
