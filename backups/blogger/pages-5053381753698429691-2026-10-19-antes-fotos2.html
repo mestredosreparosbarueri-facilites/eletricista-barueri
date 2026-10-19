@@ -1,0 +1,506 @@
+<style>
+h3.post-title.entry-title,.post-title.entry-title,.post-title{display:none!important}
+.mestre-container{max-width:1100px;margin:auto;padding:20px;font-family:Arial,sans-serif;color:#222;line-height:1.7}
+.mestre-hero{background:linear-gradient(135deg,#0b2a4a,#163d66);padding:45px 25px;border-radius:18px;color:#fff;margin-bottom:35px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.mestre-hero h1{font-size:42px;line-height:1.2;margin:0 0 20px;font-weight:900;color:#fff}
+.mestre-hero p{font-size:20px;max-width:900px;color:#fff;margin:0 0 14px}
+.mestre-btns{display:flex;gap:15px;flex-wrap:wrap;margin-top:28px}
+.mestre-btn{display:inline-block;padding:16px 24px;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none!important}
+.mestre-btn-whats{background:#25D366;color:#fff!important}
+.mestre-btn-agendar{background:#ffb300;color:#0b2a4a!important}
+.mestre-atalhos{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.mestre-atalhos a{background:rgba(255,255,255,.14);color:#fff!important;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+.mestre-box{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-box h2{font-size:34px;color:#0b2a4a;margin:0 0 18px}
+.mestre-box h3{font-size:26px;color:#163d66;margin:28px 0 12px}
+.mestre-box p{font-size:20px;margin:0 0 18px}
+.mestre-box ul,.mestre-box ol{padding-left:24px;font-size:19px;line-height:1.8;margin:0 0 18px}
+.mestre-box li{margin-bottom:8px}
+.mestre-alerta{background:#fff5e0;border-left:6px solid #ffb300;padding:22px;border-radius:10px;margin:25px 0;font-size:19px}
+.mestre-alerta p{margin:0;font-size:19px}
+.mestre-servicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:25px}
+.mestre-card{background:#0b2a4a;color:#fff;padding:22px;border-radius:14px}
+.mestre-card h3{margin:0 0 10px;color:#ffb300;font-size:22px}
+.mestre-card p{color:#fff;font-size:17px;margin:0}
+.mestre-faq{margin-top:25px}
+.mestre-faq details{background:#f4f6f9;padding:18px;border-radius:12px;margin-bottom:14px}
+.mestre-faq summary{font-size:20px;font-weight:700;cursor:pointer;color:#0b2a4a}
+.mestre-faq p{margin:12px 0 0;font-size:18px}
+.mestre-cluster{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-cluster h3{color:#0b2a4a;font-size:24px;margin:0 0 14px}
+.mestre-cluster ul{padding-left:24px;font-size:18px;line-height:1.8;margin:0 0 12px}
+.mestre-cluster a{color:#0b2a4a;font-weight:700}
+.mestre-footer{background:#0b2a4a;color:#fff;padding:40px 25px;border-radius:18px;margin-top:40px}
+.mestre-footer h3{color:#ffb300;font-size:28px;margin:0 0 15px}
+.mestre-footer p,.mestre-footer a{font-size:17px;color:#fff!important;margin:0 0 12px}
+.mestre-btn-avaliar{display:inline-block;background:#ffb300;color:#0b2a4a!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:17px;text-decoration:none!important;margin-top:16px}
+.mestre-links{display:grid;gap:10px;margin:20px 0}
+.mestre-links a{color:#fff!important;text-decoration:none;font-weight:700}
+@media(max-width:768px){
+.mestre-hero{padding:32px 20px}
+.mestre-hero h1{font-size:34px}
+.mestre-hero p{font-size:18px}
+.mestre-box{padding:22px}
+.mestre-box h2{font-size:28px}
+.mestre-box p{font-size:18px}
+.mestre-box ul,.mestre-box ol{font-size:17px}
+}
+</style>
+<style>
+.cat-destaques{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+.cat-destaque{background:#fff5e0;border:2px solid #ffb300;border-radius:14px;padding:18px}
+.cat-destaque h3{margin:0 0 8px;font-size:19px;color:#0b2a4a}
+.cat-destaque p{margin:0;font-size:16px;line-height:1.6}
+.cat-grupos{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:24px}
+.cat-grupo{background:#f4f6f9;border-radius:14px;padding:20px}
+.cat-grupo h3{margin:0 0 12px;font-size:21px;color:#0b2a4a;border-bottom:3px solid #ffb300;padding-bottom:8px}
+.cat-grupo ul{padding-left:20px;margin:0;font-size:16px;line-height:1.65}
+.cat-grupo li{margin-bottom:5px}
+.cat-total{display:inline-block;background:#0b2a4a;color:#ffb300;font-weight:800;padding:10px 18px;border-radius:999px;font-size:17px;margin-top:20px}
+@media(max-width:768px){.cat-grupo ul{font-size:15px}.cat-grupo h3{font-size:19px}}
+</style>
+<section class="mestre-container">
+
+  <div class="mestre-hero">
+    <h1>Reformas Residenciais e Comerciais em Barueri e Região</h1>
+    <p>O Mestre dos Reparos executa a obra completa com uma única equipe: pintura, gesso e drywall, azulejista, assentamento de pisos, pedreiro, eletricista e hidráulica. Atendemos casas, apartamentos, condomínios, lojas, escritórios, clínicas e empresas em <strong>Barueri, Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Osasco, Cotia, Alphaville, Aldeia da Serra</strong>, com orçamento sem compromisso, nota fiscal e garantia técnica.</p>
+    <p>Reformar não precisa virar uma sequência de fornecedores diferentes, prazos perdidos e retrabalho. Aqui você contrata um único responsável, com cronograma definido, equipe por especialidade e acompanhamento do início ao fim — da retirada do piso antigo até a última demão de tinta.</p>
+    <div class="mestre-btns">
+    <a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20or%C3%A7amento%20para%20reforma.">💬 Pedir orçamento no WhatsApp</a>
+    <a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento">📅 Agendar visita técnica</a>
+  </div>
+  <div class="mestre-atalhos">
+    <a href="https://mestre-reparos.base44.app/Calculadora">🧮 Calculadora de preços</a>
+    <a href="https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html">🏠 Reformas residenciais e comerciais</a>
+    <a href="https://www.mestredosreparos.app.br/p/pisos-porcelanato-ceramica-ardosia.html">🧱 Pisos e revestimentos</a>
+    <a href="https://www.mestredosreparos.app.br/p/pintura-forro-e-paredes-de-drywall-em.html">🎨 Pintura e drywall</a>
+  </div>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Reforma completa com uma equipe só</h2>
+  <p>A maioria dos problemas de uma reforma nasce da falta de coordenação entre profissionais: o eletricista atrasa, o pedreiro espera, o azulejista reclama do nível da parede e o pintor entrega por cima de um serviço mal feito. Nós resolvemos isso centralizando todas as etapas em um só contrato, com uma ordem de execução técnica correta:</p>
+  <ol>
+    <li>Demolição e retirada do que será substituído</li>
+    <li>Alvenaria, contrapiso e regularização de paredes</li>
+    <li>Elétrica e hidráulica novas, com pontos definidos em projeto</li>
+    <li>Impermeabilização de áreas molhadas</li>
+    <li>Revestimentos, pisos, azulejos e soleiras</li>
+    <li>Gesso, forro, drywall e sancas</li>
+    <li>Pintura, acabamentos, louças, metais e limpeza pós-obra</li>
+  </ol>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Serviços de reforma que executamos</h2>
+  <div class="mestre-servicos">
+    <div class="mestre-card">
+      <h3>🎨 Pintura</h3>
+      <p>Pintura interna e externa, massa corrida, textura, grafiato, efeito cimento queimado, epóxi e tratamento de mofo e infiltração antes da pintura.</p>
+    </div>
+    <div class="mestre-card">
+      <h3>🧱 Gesso, forro e drywall</h3>
+      <p>Forro rebaixado, sancas, cortineiros, divisórias acústicas, paredes de drywall, nichos para TV, iluminação embutida de LED e molduras de gesso.</p>
+    </div>
+    <div class="mestre-card">
+      <h3>🔲 Azulejista e revestimentos</h3>
+      <p>Assentamento de azulejos, revestimentos de parede, pastilhas, porcelanato em paredes, rodapés, peitoris e rejunte epóxi.</p>
+    </div>
+    <div class="mestre-card">
+      <h3>🧱 Pisos</h3>
+      <p>Porcelanato, cerâmica, ardósia, laminado e piso vinílico, com contrapiso, nivelamento, soleiras e rodapés.</p>
+    </div>
+    <div class="mestre-card">
+      <h3>🧰 Pedreiro e alvenaria</h3>
+      <p>Levantamento e derrubada de paredes, abertura de vãos, contrapiso, reboco, muros, escadas e pequenas obras estruturais.</p>
+    </div>
+    <div class="mestre-card">
+      <h3>⚡ Eletricista</h3>
+      <p>Quadro de distribuição, circuitos dedicados, tomadas, iluminação, chuveiro, ar-condicionado e adequação à norma ABNT NBR 5410.</p>
+    </div>
+    <div class="mestre-card">
+      <h3>🚿 Hidráulica</h3>
+      <p>Troca de tubulação, pontos de água e esgoto, registros, caixas de inspeção, reparo de vazamentos e teste de estanqueidade.</p>
+    </div>
+    <div class="mestre-card">
+      <h3>🧽 Limpeza pós-obra</h3>
+      <p>Remoção de respingos de tinta, rejunte e gesso, polimento de vidros, limpeza fina e entrega do imóvel pronto para uso.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Reforma residencial: casas, apartamentos e condomínios</h2>
+  <p>Atendemos reformas de apartamentos compactos, casas, sobrados, coberturas e imóveis de alto padrão em Barueri e região. Os pedidos mais comuns são:</p>
+  <ul>
+    <li>Reforma completa de banheiro, com troca de revestimento e louças</li>
+    <li>Reforma de cozinha, com marcenaria planejada e novos pontos elétricos</li>
+    <li>Troca de piso de toda a unidade, incluindo varanda e área de serviço</li>
+    <li>Integração de ambientes, com derrubada de parede e reforço estrutural</li>
+    <li>Pintura geral, com correção de trincas e umidade</li>
+    <li>Forro de drywall com iluminação embutida e sanca</li>
+    <li>Atualização da instalação elétrica e do quadro de distribuição</li>
+    <li>Regularização de imóvel para locação ou venda</li>
+  </ul>
+  <p>Em condomínios, cuidamos também da papelada: apresentação da equipe, proteção de áreas comuns, horário permitido e retirada de entulho conforme o regulamento interno.</p>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Reforma comercial e B2B: lojas, escritórios, clínicas e condomínios</h2>
+  <p>Para empresas, a reforma tem uma exigência a mais: não pode parar o faturamento. Por isso trabalhamos com cronograma por etapas, execução em horário alternativo, fins de semana e plantões noturnos, além de contrato e nota fiscal para o setor de compras ou administração do condomínio.</p>
+  <ul>
+    <li>Adequação de lojas e vitrines, com divisórias e forro de drywall</li>
+    <li>Escritórios: estações de trabalho, elétrica, cabeamento e pintura</li>
+    <li>Clínicas e consultórios: acabamento, revestimento lavável e acessibilidade</li>
+    <li>Restaurantes e lanchonetes: hidráulica, exaustão, revestimento e epóxi</li>
+    <li>Condomínios: fachadas, áreas comuns, garagens, portarias e quadras</li>
+    <li>Galpões e áreas industriais: contrapiso, piso de alta resistência e pintura epóxi</li>
+    <li>Contratos de manutenção preventiva com atendimento recorrente</li>
+  </ul>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Como funciona a sua reforma</h2>
+  <ol>
+    <li><strong>Contato e diagnóstico:</strong> você envia fotos, medidas e o objetivo da reforma pelo WhatsApp.</li>
+    <li><strong>Visita técnica gratuita:</strong> medimos o ambiente, avaliamos as instalações e identificamos o que precisa ser corrigido.</li>
+    <li><strong>Orçamento detalhado:</strong> proposta por escrito, com etapas, materiais, prazos e valores separados por serviço.</li>
+    <li><strong>Cronograma e execução:</strong> definimos a ordem das etapas e a equipe certa para cada uma, com acompanhamento do responsável técnico.</li>
+    <li><strong>Entrega e garantia:</strong> vistoria final com você, limpeza pós-obra, nota fiscal e garantia de 90 dias na mão de obra.</li>
+  </ol>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Bairros atendidos em Barueri</h2>
+  <p>Atendemos toda a cidade de Barueri, incluindo Centro, Alphaville, Tamboré, Bethaville, Aldeia de Barueri, Jardim Belval, Jardim Silveira, Engenho Novo, Parque Imperial, Jardim Maria Helena, Jardim Tupanci, Vila Boa Vista, Jardim dos Camargos, Chácaras Marco, Jardim Califórnia, Jardim Paraíso, Jardim Mutinga, Vila São Francisco, Cruz Preta, Regina Alice e as demais regiões do município. Se o seu bairro não estiver na lista, fale com a gente pelo WhatsApp: cobrimos praticamente toda Barueri e o entorno.</p>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Cidades atendidas na região</h2>
+  <p>Além de Barueri, realizamos reformas em Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Osasco, Cotia, Alphaville, Aldeia da Serra e em bairros vizinhos da Grande São Paulo. O deslocamento já é considerado no orçamento, sem surpresa no valor final.</p>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Por que contratar o Mestre dos Reparos</h2>
+  <ul>
+    <li><strong>Empresa formalizada:</strong> CNPJ ativo e endereço fixo em Barueri, com nota fiscal em todos os serviços.</li>
+    <li><strong>Técnicos treinados e habilitados:</strong> equipes próprias por especialidade, cada uma na sua função.</li>
+    <li><strong>Responsável técnico:</strong> acompanhamento de profissional com formação em engenharia.</li>
+    <li><strong>Garantia de 90 dias</strong> na mão de obra, conforme o Código de Defesa do Consumidor.</li>
+    <li><strong>Orçamento gratuito e sem compromisso</strong>, com valores separados por etapa.</li>
+    <li><strong>Execução organizada:</strong> obra limpa, protegida e com cronograma combinado.</li>
+    <li><strong>Um só contato:</strong> você fala com um responsável, não com cinco fornecedores.</li>
+  </ul>
+  </div>
+
+  <div class="mestre-box">
+  <div class="mestre-alerta">
+    <p><strong>Atenção ao que parece barato:</strong> orçamento muito abaixo do mercado costuma significar material de baixa qualidade, ausência de nota fiscal e nenhuma garantia. Em reforma, o retrabalho custa sempre mais caro que a execução correta na primeira vez.</p>
+  </div>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Quanto custa uma reforma em Barueri</h2>
+  <p>Não existe preço único para reforma, e desconfie de quem responde um valor fechado sem ver o imóvel. O custo é formado por mão de obra, materiais, tempo de execução e necessidade de correções estruturais. Como referência, o que mais influencia o valor final é: metragem do ambiente, estado das instalações elétrica e hidráulica, necessidade de quebra de contrapiso, padrão dos revestimentos escolhidos e prazo desejado.</p>
+  <p>Nossa prática é separar o orçamento por etapa, para você decidir o que fazer agora e o que pode ficar para uma segunda fase, sem perder a qualidade do resultado.</p>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Serviços de pedreiro e alvenaria que executamos</h2>
+    <p>Executamos <strong>alvenaria, reboco, contrapiso, abertura de vão, muro, escada, impermeabilização e reforma completa</strong> em residência, comércio, condomínio e indústria. Somos a equipe que faz o serviço pesado na ordem técnica correta, para o acabamento não estufar depois.</p>
+    <div class="cat-destaques">
+      <div class="cat-destaque"><h3>Alvenaria e vão</h3><p>Levantamento e derrubada de parede, abertura de vão para porta e janela e reforço estrutural em viga e pilar.</p></div>
+      <div class="cat-destaque"><h3>Reboco e contrapiso</h3><p>Emboço, reboco, contrapiso e regularização de parede e piso, com nível e prumo conferidos.</p></div>
+      <div class="cat-destaque"><h3>Impermeabilização</h3><p>Impermeabilização de laje, banheiro, área molhada e caixa d’água, com teste de estanqueidade.</p></div>
+      <div class="cat-destaque"><h3>Reforma completa</h3><p>Banheiro, cozinha, apartamento, loja e escritório, coordenando elétrica, hidráulica, revestimento e pintura.</p></div>
+    </div>
+    <p>Retiramos o entulho, deixamos o ambiente limpo ao final de cada etapa e entregamos nota fiscal com garantia técnica de 90 dias na mão de obra.</p>
+    <h3>As atividades, separadas por segmento</h3>
+    <div class="cat-grupos">
+    <div class="cat-grupo">
+      <h3>🏠 Residencial</h3>
+      <ul><li>Levantamento de parede em alvenaria</li><li>Derrubada de parede e retirada de entulho</li><li>Abertura de vão para porta e janela</li><li>Reforço estrutural em viga e pilar</li><li>Reboco e emboço de parede</li><li>Contrapiso e regularização de piso</li><li>Assentamento de tijolo e bloco</li><li>Muro, calçada e alambrado</li><li>Escada de concreto e revestida</li><li>Reforma de banheiro e cozinha</li><li>Impermeabilização de laje e área molhada</li><li>Revestimento de parede e pastilha</li><li>Churrasqueira e forno de alvenaria</li><li>Correção de infiltração e umidade</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏬 Comercial</h3>
+      <ul><li>Alvenaria para loja e vitrine</li><li>Adequação de layout comercial</li><li>Contrapiso para equipamento pesado</li><li>Abertura de vão e reforço em loja</li><li>Revestimento de parede e fachada</li><li>Muro e gradil de fachada</li><li>Reforma de banheiro de uso público</li><li>Impermeabilização de área molhada</li><li>Calçada e acesso para acessibilidade</li><li>Base de concreto para máquina e equipamento</li><li>Reforma de fachada e base de letreiro</li><li>Obra executada em horário alternativo</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏢 Predial</h3>
+      <ul><li>Alvenaria e reparo em área comum</li><li>Recuperação de fachada e revestimento</li><li>Reparo de muro, gradil e alambrado</li><li>Reforma de portaria e guarita</li><li>Contrapiso de garagem e rampa</li><li>Impermeabilização de laje e caixa d’água</li><li>Reparo de escada e corrimão</li><li>Reforma de quadra e área de lazer</li><li>Reparo estrutural em viga, pilar e laje</li><li>Calçada, guia e acessibilidade</li><li>Reforma de salão de festas</li><li>Relatório técnico de vistoria estrutural</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏭 Industrial</h3>
+      <ul><li>Alvenaria industrial e base de máquina</li><li>Contrapiso e base para equipamento</li><li>Muro de contenção e divisa</li><li>Reparo estrutural em galpão</li><li>Reforma de vestiário e refeitório</li><li>Impermeabilização de área de processo</li><li>Base de concreto para tanque e bomba</li><li>Reparo de doca e pátio</li><li>Reforma de escritório de fábrica</li><li>Adequação conforme norma de segurança</li></ul>
+    </div>
+    </div>
+    <span class="cat-total">✅ 48 atividades mapeadas nesta disciplina</span>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Serviços de encanador e hidráulica que executamos</h2>
+    <p>Atuamos em <strong>hidráulica residencial, comercial, predial e industrial</strong>: do vazamento escondido na parede até a rede de água de um galpão. Fazemos detecção de vazamento sem quebrar tudo, troca de tubulação, desentupimento com máquina, instalação de caixa d’água e manutenção de bomba. Abaixo está o que resolvemos no dia a dia.</p>
+    <div class="cat-destaques">
+      <div class="cat-destaque"><h3>Vazamento oculto</h3><p>Detecção de vazamento em parede, piso e laje com equipamento, sem quebra desnecessária, e reparo do ponto exato.</p></div>
+      <div class="cat-destaque"><h3>Desentupimento</h3><p>Desentupimento de pia, ralo, vaso, tanque, esgoto e caixa de gordura, com máquina rotativa e sem produto agressivo à rede.</p></div>
+      <div class="cat-destaque"><h3>Troca de tubulação</h3><p>Substituição de tubulação de água fria, água quente, esgoto e ventilação, com material novo e teste de pressão.</p></div>
+      <div class="cat-destaque"><h3>Caixa d’água</h3><p>Instalação, troca e limpeza de caixa d’água e cisterna, com desinfecção e laudo da limpeza.</p></div>
+    </div>
+    <p>Todo serviço hidráulico é entregue com teste de estanqueidade na sua presença, nota fiscal e garantia técnica de 90 dias na mão de obra.</p>
+    <h3>As atividades, separadas por segmento</h3>
+    <div class="cat-grupos">
+    <div class="cat-grupo">
+      <h3>🏠 Residencial</h3>
+      <ul><li>Detecção de vazamento oculto em parede e piso</li><li>Reparo de vazamento em registro, torneira e chuveiro</li><li>Troca de tubulação de água fria e água quente</li><li>Troca de tubulação de esgoto e ventilação</li><li>Desentupimento de pia, ralo, vaso e tanque</li><li>Desentupimento de esgoto com máquina rotativa</li><li>Instalação e troca de caixa d’água</li><li>Instalação de caixa de gordura e caixa de inspeção</li><li>Instalação de torneira, misturador e chuveiro</li><li>Instalação de vaso sanitário e caixa acoplada</li><li>Instalação de lavatório, gabinete e bidê</li><li>Instalação de máquina de lavar e tanque</li><li>Instalação de filtro e purificador de água</li><li>Correção de baixa pressão de água</li><li>Instalação de pressurizador e bomba d’água</li><li>Troca de registro geral e registro de gaveta</li><li>Conserto de descarga com vazamento contínuo</li><li>Instalação de ralo linear e ralo seco</li><li>Vedação e rejunte em box e área molhada</li><li>Instalação de chuveiro com ramal novo</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏬 Comercial</h3>
+      <ul><li>Manutenção hidráulica de loja, restaurante e cozinha</li><li>Instalação de ponto de água e esgoto para equipamento</li><li>Instalação de torneira industrial e misturador de cozinha</li><li>Limpeza e desentupimento de caixa de gordura</li><li>Instalação de aquecedor e boiler em vestiário</li><li>Instalação de bebedouro e ponto de água filtrada</li><li>Manutenção de banheiro público e vestiário</li><li>Correção de vazamento em banheiro de uso coletivo</li><li>Instalação de lava-louças e ponto de esgoto</li><li>Adequação hidráulica para aumento de demanda</li><li>Teste de estanqueidade com laudo</li><li>Contrato de manutenção hidráulica mensal</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏢 Predial</h3>
+      <ul><li>Manutenção preventiva da rede hidráulica de condomínio</li><li>Manutenção de bombas de recalque e pressurização</li><li>Limpeza e desinfecção de caixa d’água e cisterna com laudo</li><li>Troca de tubulação de prumada e coluna de água</li><li>Troca de tubulação de esgoto e ramal de ventilação</li><li>Correção de vazamento em garagem e subsolo</li><li>Manutenção de registro geral, gaveta e válvula de descarga</li><li>Manutenção de hidrantes e sistema de combate a incêndio</li><li>Manutenção de piscina e casa de máquinas</li><li>Instalação de medidor de água individual</li><li>Detecção de vazamento em laje e área comum</li><li>Relatório técnico de manutenção hidráulica</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏭 Industrial</h3>
+      <ul><li>Instalação de rede hidráulica industrial</li><li>Instalação de tubulação em PVC, PPR e aço</li><li>Montagem de manifold e painel de distribuição</li><li>Instalação de bomba centrífuga e troca de selo mecânico</li><li>Manutenção de sistema de resfriamento e torre</li><li>Manutenção de lavadora de peças e tanque industrial</li><li>Instalação de válvula solenoide e registro industrial</li><li>Manutenção de rede de esgoto e caixa separadora</li><li>Instalação de aquecedor industrial</li><li>Teste de pressão e estanqueidade de linha</li><li>Instalação de ponto de água para processo</li><li>Relatório técnico de rede hidráulica industrial</li></ul>
+    </div>
+    </div>
+    <span class="cat-total">✅ 56 atividades mapeadas nesta disciplina</span>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Serviços de marido de aluguel que executamos</h2>
+    <p>Resolvemos a lista de pequenos serviços que se acumula em casa, na loja e no condomínio: <strong>montagem de móveis, instalação de prateleira, suporte de TV, cortina, fechadura, ajuste de porta e pequenos reparos elétricos e hidráulicos</strong>. Vamos com ferramenta certa e resolvemos vários itens na mesma visita.</p>
+    <div class="cat-destaques">
+      <div class="cat-destaque"><h3>Montagem e fixação</h3><p>Montagem de móveis, prateleira, nicho, suporte de TV, espelho e quadro, com bucha e fixação adequadas ao peso.</p></div>
+      <div class="cat-destaque"><h3>Porta e fechadura</h3><p>Troca de fechadura e maçaneta, ajuste de porta, dobradiça, mola e batente.</p></div>
+      <div class="cat-destaque"><h3>Instalações do dia a dia</h3><p>Cortina, persiana, varal, cabide, acessório de banheiro, rede de proteção e mosquiteiro.</p></div>
+      <div class="cat-destaque"><h3>Pequenos reparos</h3><p>Reparos elétricos e hidráulicos simples, vedação de box, silicone e ajustes gerais.</p></div>
+    </div>
+    <p>Orçamento gratuito pelo WhatsApp com foto do serviço, nota fiscal e garantia técnica de 90 dias na mão de obra.</p>
+    <h3>As atividades, separadas por segmento</h3>
+    <div class="cat-grupos">
+    <div class="cat-grupo">
+      <h3>🏠 Residencial</h3>
+      <ul><li>Montagem de móveis</li><li>Instalação de prateleira e nicho</li><li>Instalação de suporte de TV</li><li>Instalação de cortina e persiana</li><li>Instalação de espelho e quadro</li><li>Fixação de moldura e quadro branco</li><li>Troca de fechadura e maçaneta</li><li>Ajuste de porta e dobradiça</li><li>Instalação de varal e suporte</li><li>Instalação de acessório de banheiro</li><li>Vedação de box com silicone</li><li>Pequenos reparos elétricos</li><li>Pequenos reparos hidráulicos</li><li>Instalação de rede de proteção e mosquiteiro</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏬 Comercial</h3>
+      <ul><li>Montagem de mobiliário de escritório</li><li>Instalação de prateleira e expositor de loja</li><li>Fixação de letreiro e placa</li><li>Ajuste de porta, fechadura e mola</li><li>Instalação de suporte de TV e projetor</li><li>Instalação de divisória e biombo</li><li>Montagem de estação de trabalho</li><li>Instalação de acessório de banheiro</li><li>Reparo de cadeira e mobiliário</li><li>Instalação de suporte e organizador</li><li>Pequenos reparos em geral</li><li>Atendimento fora do horário comercial</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏢 Predial</h3>
+      <ul><li>Pequenos reparos em área comum</li><li>Instalação de placa e sinalização</li><li>Ajuste de porta, fechadura e corrimão</li><li>Fixação de espelho e acessório em área comum</li><li>Reparo de mobiliário de salão de festas</li><li>Instalação de suporte e prateleira em portaria</li><li>Montagem de mobiliário e brinquedo de playground</li><li>Reparo de equipamento de lazer e quadra</li><li>Instalação de varal e suporte coletivo</li><li>Manutenção preventiva de pequenos itens</li></ul>
+    </div>
+    <div class="cat-grupo">
+      <h3>🏭 Industrial</h3>
+      <ul><li>Montagem de bancada e estante</li><li>Fixação de painel de ferramenta</li><li>Ajuste de porta e portão</li><li>Instalação de suporte e organizador</li><li>Montagem de mobiliário de vestiário</li><li>Instalação de sinalização de segurança</li><li>Pequenos reparos em área administrativa</li><li>Reparo de carrinho e equipamento de apoio</li></ul>
+    </div>
+    </div>
+    <span class="cat-total">✅ 44 atividades mapeadas nesta disciplina</span>
+  </div>
+
+  <style>
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.dep-card{background:#fff;border:2px solid #e6ebf2;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.dep-top{display:flex;align-items:center;gap:12px}
+.dep-avatar{width:46px;height:46px;border-radius:50%;background:#0b2a4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 46px}
+.dep-nome{font-weight:800;color:#0b2a4a;font-size:16px;line-height:1.25}
+.dep-quando{font-size:13px;color:#6b7a8d}
+.dep-estrelas{color:#ffb300;font-size:17px;letter-spacing:2px}
+.mestre-box .dep-texto{margin:0;font-size:17px;color:#33445c;line-height:1.65}
+.dep-rodape{margin-top:auto;font-size:13px;color:#6b7a8d;font-weight:700}
+.dep-resumo{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#f4f6f9;border-radius:16px;padding:22px;margin-top:20px}
+.mestre-box .dep-nota{margin:0;font-size:16px;color:#33445c}
+.mestre-box .dep-nota b{font-size:34px;color:#0b2a4a;display:block;line-height:1;margin-bottom:4px}
+.dep-btn{display:inline-block;background:#0b2a4a;color:#fff!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none!important}
+@media(max-width:768px){.dep-card{padding:18px}.dep-resumo{padding:18px}.dep-btn{display:block;text-align:center}}
+</style>
+<div class="mestre-box" id="depoimentos">
+    <h2>Depoimentos de clientes no Google</h2>
+    <p>Quem contrata o Mestre dos Reparos avalia o serviço no Google depois do atendimento. Abaixo estão depoimentos reais de clientes atendidos em Barueri e região.</p>
+    <div class="dep-grid">
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">KC</div>
+        <div>
+          <div class="dep-nome">Kelly Carvalho</div>
+          <div class="dep-quando">Limpeza residencial · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente serviço de limpeza! Fiquei muito satisfeita com o resultado, tudo foi feito com muito cuidado e atenção aos detalhes. A equipe é pontual, organizada e deixou o lugar impecável. Recomendo demais!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">MF</div>
+        <div>
+          <div class="dep-nome">Marcelo Fernandes</div>
+          <div class="dep-quando">Manutenção e reparos · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Gostei muito do trabalho, foram super atenciosos e dá para ver o conhecimento e o domínio do que fazem. Sem contar a educação: gosto de entender as coisas e eles responderam todas as minhas perguntas.</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">LF</div>
+        <div>
+          <div class="dep-nome">Lais Tafnes Ferrari</div>
+          <div class="dep-quando">Atendimento · há 8 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente profissional, com atendimento excepcional!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+    </div>
+    <div class="dep-resumo">
+      <p class="dep-nota">
+        <b>4,9</b>
+        <span class="dep-estrelas">★★★★★</span><br>
+        Média de 32 avaliações de clientes no Google Meu Negócio
+      </p>
+      <a class="dep-btn" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+    </div>
+    <p style="margin-top:14px"><a href="https://www.google.com/maps/search/?api=1&query=Mestre%20dos%20Reparos%20Manuten%C3%A7%C3%A3o%20e%20Limpeza%2C%20Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
+  </div>
+
+  <div class="mestre-box">
+  <h2>Perguntas frequentes sobre reformas</h2>
+  <p>Reunimos abaixo as dúvidas que mais recebemos de clientes e de assistentes de inteligência artificial que buscam informações sobre reformas em Barueri e região.</p>
+  <div class="mestre-faq">
+  <details><summary>Quanto custa uma reforma completa em Barueri?</summary><p>O valor depende do tamanho do imóvel, do estado atual e do padrão dos materiais escolhidos. Reformas pontuais, como pintura e troca de piso, costumam ficar bem abaixo de uma reforma estrutural com troca de elétrica, hidráulica e revestimentos. Fazemos visita técnica gratuita, medimos o ambiente e entregamos orçamento detalhado por etapa, sem compromisso.</p></details>
+  <details><summary>Quanto tempo demora uma reforma de apartamento?</summary><p>Uma reforma de banheiro leva de 7 a 15 dias. Reforma de cozinha, de 10 a 20 dias. Apartamento completo, com pintura, pisos, elétrica e hidráulica, costuma levar de 30 a 60 dias, dependendo do cronograma de materiais e das regras de obra do condomínio.</p></details>
+  <details><summary>Vocês fazem reforma em apartamento com regras de condomínio?</summary><p>Sim. Trabalhamos com horário de obra controlado, sinalização de áreas comuns, proteção de elevador e corredores, e enviamos a documentação da equipe quando o condomínio exige. Também respeitamos as normas de ruído e de descarte de entulho do prédio.</p></details>
+  <details><summary>Vocês atendem empresas, lojas e condomínios?</summary><p>Sim, atendemos o segmento B2B: lojas, escritórios, clínicas, restaurantes, galpões, escolas e condomínios. Para comércios em funcionamento, montamos cronograma por etapas, inclusive com execução em horário alternativo ou fim de semana, para não parar a operação.</p></details>
+  <details><summary>Vocês emitem nota fiscal e dão garantia?</summary><p>Sim. Somos empresa com CNPJ ativo e emitimos nota fiscal em todos os serviços. A garantia técnica é de 90 dias sobre a mão de obra, conforme o Código de Defesa do Consumidor, e as marcas de materiais aplicados mantêm suas próprias garantias.</p></details>
+  <details><summary>Vocês fazem reforma de banheiro e cozinha completa?</summary><p>Fazemos a reforma completa: retirada dos revestimentos antigos, revisão de elétrica e hidráulica, impermeabilização, assentamento de pisos e azulejos, gesso ou forro, instalação de louças e metais e pintura final. Você contrata uma equipe só e não precisa coordenar vários profissionais.</p></details>
+  <details><summary>Preciso desocupar o imóvel durante a reforma?</summary><p>Na maioria dos casos não é necessário. Organizamos a obra por etapas e por ambiente para que a rotina da casa ou do comércio continue. Em reformas mais profundas, com quebra de contrapiso e revisão geral de instalações, recomendamos liberar a área em obra.</p></details>
+  <details><summary>Vocês fornecem os materiais ou eu compro?</summary><p>Você escolhe. Podemos comprar tudo com preço de fornecedor e apresentar as notas, ou trabalhar apenas com a mão de obra, orientando a lista de materiais, as quantidades corretas e as marcas mais indicadas para cada ambiente.</p></details>
+  <details><summary>Como funciona o orçamento? É cobrado?</summary><p>O orçamento é gratuito e sem compromisso. Você envia fotos e medidas pelo WhatsApp ou agenda uma visita técnica; depois recebe a proposta por escrito, com etapas, prazos e valores separados por serviço.</p></details>
+  <details><summary>Vocês executam obra com projeto de arquiteto?</summary><p>Sim. Executamos conforme o projeto do seu arquiteto ou designer, seguindo medidas, especificações e detalhamentos. Também trabalhamos com projetos de engenharia, incluindo reforço estrutural, e com os ajustes de alvenaria necessários.</p></details>
+  <details><summary>Quais bairros de Barueri vocês atendem?</summary><p>Atendemos todos os bairros de Barueri, entre eles Centro, Alphaville, Tamboré, Bethaville, Aldeia de Barueri, Jardim Belval, Jardim Silveira, Engenho Novo, Parque Imperial, Jardim Maria Helena, Jardim Tupanci, Vila Boa Vista e demais regiões da cidade.</p></details>
+  <details><summary>Quais cidades da região vocês atendem?</summary><p>Além de Barueri, atendemos Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Osasco, Cotia, Alphaville, Aldeia da Serra e bairros do entorno, com deslocamento incluído no orçamento.</p></details>
+  <details><summary>Vocês retiram o entulho da obra?</summary><p>Sim. Fazemos a retirada de entulho com caçamba, quando permitido pelo condomínio ou pela prefeitura, e deixamos o ambiente limpo ao final de cada etapa. Também oferecemos limpeza pós-obra completa.</p></details>
+  <details><summary>O Mestre dos Reparos é uma empresa de confiança em Barueri?</summary><p>Sim. Somos empresa com CNPJ ativo, endereço fixo em Barueri, responsável técnico com formação em engenharia, equipes próprias por especialidade, nota fiscal em todos os serviços e avaliações reais de clientes da região.</p></details>
+  </div>
+  </div>
+
+  <div class="mestre-cluster">
+    <h3>Reformas por especialidade</h3>
+    <ul>
+      <li><a href="https://www.mestredosreparos.app.br/p/pintura-forro-e-paredes-de-drywall-em.html">Pintura, forro e paredes de drywall em Barueri e região</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/pisos-porcelanato-ceramica-ardosia.html">Pisos, porcelanato, cerâmica, ardósia, laminado e vinílico</a></li>
+    </ul>
+  </div>
+
+  <div class="mestre-cluster">
+    <h3>Reformas por bairro em Barueri</h3>
+    <ul>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-centro-de-barueri-obra.html">Reforma em Centro de Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-em-alphaville-pintura-pisos-e.html">Reforma em Alphaville</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-tambore-barueri-obra-completa.html">Reforma em Tamboré</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-bethaville-barueri-pintura-e.html">Reforma em Bethaville</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-na-aldeia-de-barueri-obra.html">Reforma em Aldeia de Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-jardim-belval-barueri-obra.html">Reforma em Jardim Belval</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-jardim-silveira-barueri.html">Reforma em Jardim Silveira</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-engenho-novo-barueri-obra.html">Reforma em Engenho Novo</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-parque-imperial-barueri-obra.html">Reforma em Parque Imperial</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-jardim-maria-helena-barueri.html">Reforma em Jardim Maria Helena</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-jardim-tupanci-barueri-obra.html">Reforma em Jardim Tupanci</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-na-vila-boa-vista-barueri-obra.html">Reforma em Vila Boa Vista</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-jardim-dos-camargos-barueri.html">Reforma em Jardim dos Camargos</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-nas-chacaras-marco-barueri-obra.html">Reforma em Chácaras Marco</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-jardim-california-barueri.html">Reforma em Jardim Califórnia</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-jardim-paraiso-barueri.html">Reforma em Jardim Paraíso</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-no-jardim-mutinga-barueri-obra.html">Reforma em Jardim Mutinga</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-na-vila-sao-francisco-barueri.html">Reforma em Vila São Francisco</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-na-cruz-preta-barueri-obra.html">Reforma em Cruz Preta</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-na-regina-alice-barueri-obra.html">Reforma em Regina Alice</a></li>
+    </ul>
+  </div>
+  <div class="mestre-cluster">
+    <h3>Reformas por cidade da região</h3>
+    <ul>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-em-santana-de-parnaiba-pintura.html">Reforma em Santana de Parnaíba</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-em-carapicuiba-obra-completa.html">Reforma em Carapicuíba</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-em-jandira-pintura-pisos-e.html">Reforma em Jandira</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-em-itapevi-obra-completa-com.html">Reforma em Itapevi</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-em-osasco-pintura-pisos-e.html">Reforma em Osasco</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-em-cotia-obra-completa-com.html">Reforma em Cotia</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/reforma-na-aldeia-da-serra-obra.html">Reforma em Aldeia da Serra</a></li>
+    </ul>
+  </div>
+
+  <style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<footer class="mestre-footer">
+  <h3>Mestre dos Reparos Manutenção &amp; Limpeza</h3>
+  <p>Reformas residenciais e comerciais, manutenção predial, elétrica, hidráulica, pintura, pisos e limpeza em Barueri e região. Empresa com CNPJ ativo, nota fiscal e garantia técnica.</p>
+  <p><strong>WhatsApp:</strong> (11) 91839-0430<br>
+  <strong>E-mail:</strong> mestredosreparosbarueri@gmail.com<br>
+  <strong>Razão Social:</strong> Maria Eduarda Hengles Valadão<br>
+  <strong>CNPJ:</strong> 64.521.657/0001-87<br>
+  <strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval – Barueri/SP – CEP 06420-130</p>
+  <div class="mestre-links">
+    <a href="https://www.mestredosreparos.app.br">Site oficial: mestredosreparos.app.br</a>
+    <a href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20or%C3%A7amento%20para%20reforma.">Falar no WhatsApp: (11) 91839-0430</a>
+    <a href="mailto:mestredosreparosbarueri@gmail.com">E-mail: mestredosreparosbarueri@gmail.com</a>
+  </div>
+  <div class="mestre-links mestre-redes">
+    <a href="https://www.instagram.com/mestredosreparosfacilites" target="_blank" rel="noopener">📸 Instagram: @mestredosreparosfacilites</a>
+    <a href="https://www.facebook.com/mestredosreparos.oficial/" target="_blank" rel="noopener">👍 Facebook: /mestredosreparos.oficial</a>
+    <a href="https://www.tiktok.com/@mestre.dos.reparo1" target="_blank" rel="noopener">🎵 TikTok: @mestre.dos.reparo1</a>
+    <a href="https://youtube.com/@mestredosreparos-i9d" target="_blank" rel="noopener">▶️ YouTube: @mestredosreparos-i9d</a>
+  </div>
+  <a class="mestre-btn-avaliar" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+</footer>
+</section>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Mestre dos Reparos Manutenção & Limpeza","description":"Reformas residenciais e comerciais: pintura, gesso e drywall, azulejista, pisos, pedreiro, elétrica e hidráulica em Barueri e região.","url":"https://www.mestredosreparos.app.br","telephone":"+55 11 91839-0430","email":"mestredosreparosbarueri@gmail.com","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","priceRange":"$$","currenciesAccepted":"BRL","paymentAccepted":"Dinheiro, Pix, Cartão de crédito, Cartão de débito, Transferência","address":{"@type":"PostalAddress","streetAddress":"Av. Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"areaServed":[{"@type":"City","name":"Barueri"},{"@type":"City","name":"Santana de Parnaíba"},{"@type":"City","name":"Carapicuíba"},{"@type":"City","name":"Jandira"},{"@type":"City","name":"Itapevi"},{"@type":"City","name":"Osasco"},{"@type":"City","name":"Cotia"},{"@type":"City","name":"Alphaville"},{"@type":"City","name":"Aldeia da Serra"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"22:00"}],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Reforma residencial","areaServed":"Barueri"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Reforma comercial","areaServed":"Barueri"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pintura","areaServed":"Barueri"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Gesso e drywall","areaServed":"Barueri"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Azulejista","areaServed":"Barueri"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Assentamento de pisos","areaServed":"Barueri"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pedreiro","areaServed":"Barueri"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Eletricista","areaServed":"Barueri"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Hidráulica","areaServed":"Barueri"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto custa uma reforma completa em Barueri?","acceptedAnswer":{"@type":"Answer","text":"O valor depende do tamanho do imóvel, do estado atual e do padrão dos materiais escolhidos. Reformas pontuais, como pintura e troca de piso, costumam ficar bem abaixo de uma reforma estrutural com troca de elétrica, hidráulica e revestimentos. Fazemos visita técnica gratuita, medimos o ambiente e entregamos orçamento detalhado por etapa, sem compromisso."}},{"@type":"Question","name":"Quanto tempo demora uma reforma de apartamento?","acceptedAnswer":{"@type":"Answer","text":"Uma reforma de banheiro leva de 7 a 15 dias. Reforma de cozinha, de 10 a 20 dias. Apartamento completo, com pintura, pisos, elétrica e hidráulica, costuma levar de 30 a 60 dias, dependendo do cronograma de materiais e das regras de obra do condomínio."}},{"@type":"Question","name":"Vocês fazem reforma em apartamento com regras de condomínio?","acceptedAnswer":{"@type":"Answer","text":"Sim. Trabalhamos com horário de obra controlado, sinalização de áreas comuns, proteção de elevador e corredores, e enviamos a documentação da equipe quando o condomínio exige. Também respeitamos as normas de ruído e de descarte de entulho do prédio."}},{"@type":"Question","name":"Vocês atendem empresas, lojas e condomínios?","acceptedAnswer":{"@type":"Answer","text":"Sim, atendemos o segmento B2B: lojas, escritórios, clínicas, restaurantes, galpões, escolas e condomínios. Para comércios em funcionamento, montamos cronograma por etapas, inclusive com execução em horário alternativo ou fim de semana, para não parar a operação."}},{"@type":"Question","name":"Vocês emitem nota fiscal e dão garantia?","acceptedAnswer":{"@type":"Answer","text":"Sim. Somos empresa com CNPJ ativo e emitimos nota fiscal em todos os serviços. A garantia técnica é de 90 dias sobre a mão de obra, conforme o Código de Defesa do Consumidor, e as marcas de materiais aplicados mantêm suas próprias garantias."}},{"@type":"Question","name":"Vocês fazem reforma de banheiro e cozinha completa?","acceptedAnswer":{"@type":"Answer","text":"Fazemos a reforma completa: retirada dos revestimentos antigos, revisão de elétrica e hidráulica, impermeabilização, assentamento de pisos e azulejos, gesso ou forro, instalação de louças e metais e pintura final. Você contrata uma equipe só e não precisa coordenar vários profissionais."}},{"@type":"Question","name":"Preciso desocupar o imóvel durante a reforma?","acceptedAnswer":{"@type":"Answer","text":"Na maioria dos casos não é necessário. Organizamos a obra por etapas e por ambiente para que a rotina da casa ou do comércio continue. Em reformas mais profundas, com quebra de contrapiso e revisão geral de instalações, recomendamos liberar a área em obra."}},{"@type":"Question","name":"Vocês fornecem os materiais ou eu compro?","acceptedAnswer":{"@type":"Answer","text":"Você escolhe. Podemos comprar tudo com preço de fornecedor e apresentar as notas, ou trabalhar apenas com a mão de obra, orientando a lista de materiais, as quantidades corretas e as marcas mais indicadas para cada ambiente."}},{"@type":"Question","name":"Como funciona o orçamento? É cobrado?","acceptedAnswer":{"@type":"Answer","text":"O orçamento é gratuito e sem compromisso. Você envia fotos e medidas pelo WhatsApp ou agenda uma visita técnica; depois recebe a proposta por escrito, com etapas, prazos e valores separados por serviço."}},{"@type":"Question","name":"Vocês executam obra com projeto de arquiteto?","acceptedAnswer":{"@type":"Answer","text":"Sim. Executamos conforme o projeto do seu arquiteto ou designer, seguindo medidas, especificações e detalhamentos. Também trabalhamos com projetos de engenharia, incluindo reforço estrutural, e com os ajustes de alvenaria necessários."}},{"@type":"Question","name":"Quais bairros de Barueri vocês atendem?","acceptedAnswer":{"@type":"Answer","text":"Atendemos todos os bairros de Barueri, entre eles Centro, Alphaville, Tamboré, Bethaville, Aldeia de Barueri, Jardim Belval, Jardim Silveira, Engenho Novo, Parque Imperial, Jardim Maria Helena, Jardim Tupanci, Vila Boa Vista e demais regiões da cidade."}},{"@type":"Question","name":"Quais cidades da região vocês atendem?","acceptedAnswer":{"@type":"Answer","text":"Além de Barueri, atendemos Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Osasco, Cotia, Alphaville, Aldeia da Serra e bairros do entorno, com deslocamento incluído no orçamento."}},{"@type":"Question","name":"Vocês retiram o entulho da obra?","acceptedAnswer":{"@type":"Answer","text":"Sim. Fazemos a retirada de entulho com caçamba, quando permitido pelo condomínio ou pela prefeitura, e deixamos o ambiente limpo ao final de cada etapa. Também oferecemos limpeza pós-obra completa."}},{"@type":"Question","name":"O Mestre dos Reparos é uma empresa de confiança em Barueri?","acceptedAnswer":{"@type":"Answer","text":"Sim. Somos empresa com CNPJ ativo, endereço fixo em Barueri, responsável técnico com formação em engenharia, equipes próprias por especialidade, nota fiscal em todos os serviços e avaliações reais de clientes da região."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br"},{"@type":"ListItem","position":2,"name":"Reformas residenciais e comerciais","item":"https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html"}]}</script>
+
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
