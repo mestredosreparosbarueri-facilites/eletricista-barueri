@@ -1,0 +1,215 @@
+<style>
+h3.post-title.entry-title,.post-title.entry-title,.post-title{display:none!important}
+.bz{max-width:1080px;margin:auto;padding:16px 18px 50px;font-family:Arial,Helvetica,sans-serif;color:#1d2733;line-height:1.7;font-size:18px}
+.bz *{box-sizing:border-box}
+.bz-hero{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center;background:#0b2a4a;color:#fff;border-radius:20px;padding:36px 30px;margin-bottom:28px}
+.bz-selo{display:inline-block;background:#ffb300;color:#0b2a4a;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.bz-hero h1{font-size:40px;line-height:1.15;margin:14px 0 12px;color:#fff;font-weight:900}
+.bz-hero p{color:#dbe6f3;margin:0 0 16px}
+.bz-contadores{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bz-contador{background:#163d66;border-radius:14px;padding:18px;text-align:center}
+.bz-contador b{display:block;font-size:34px;color:#ffb300;line-height:1.1}
+.bz-contador span{font-size:14px;color:#dbe6f3}
+.bz-btns{display:flex;flex-wrap:wrap;gap:12px}
+.bz-btn{display:inline-block;padding:14px 20px;border-radius:10px;font-weight:800;font-size:17px;text-decoration:none!important}
+.bz-btn-whats{background:#25D366;color:#fff!important}
+.bz-btn-agenda{background:#ffb300;color:#0b2a4a!important}
+.bz-resposta{border:3px solid #ffb300;border-radius:16px;padding:22px 24px;margin:0 0 34px;background:#fffdf7}
+.bz-resposta strong.bz-tit{display:block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#b07a00;margin-bottom:6px}
+.bz-resposta p{margin:0}
+.bz h2{font-size:30px;line-height:1.25;color:#0b2a4a;margin:44px 0 12px}
+.bz h3{font-size:21px;color:#163d66;margin:0 0 6px}
+.bz p{margin:0 0 16px}
+.bz-direta{font-size:19px;font-weight:700;color:#0b2a4a;background:#f3f6fa;border-radius:12px;padding:14px 18px}
+.bz-busca{width:100%;font-size:18px;padding:16px 18px;border:2px solid #c9d4e2;border-radius:12px;margin:6px 0 18px;font-family:inherit}
+.bz-busca:focus{outline:none;border-color:#ffb300}
+.bz-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;list-style:none;padding:0;margin:0 0 10px}
+.bz-item a{display:block;background:#fff;border:2px solid #e3e8ef;border-left:6px solid #ffb300;border-radius:10px;padding:12px 14px;text-decoration:none!important;color:#0b2a4a!important;font-weight:700;font-size:16px;line-height:1.35}
+.bz-item a span{display:block;font-weight:400;font-size:13px;color:#6b7a8d}
+.bz-item a:hover{border-color:#0b2a4a}
+.bz-cidades .bz-item a{border-left-color:#25D366}
+.bz-perfis{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.bz-perfil{background:#f3f6fa;border-radius:14px;padding:20px}
+.bz-perfil p{margin:0;font-size:16px}
+.bz-tabela{overflow-x:auto;margin:10px 0 20px}
+.bz-tabela table{width:100%;border-collapse:collapse;font-size:16px}
+.bz-tabela th{background:#0b2a4a;color:#fff;text-align:left;padding:12px}
+.bz-tabela td{padding:12px;border-bottom:1px solid #e3e8ef;vertical-align:top}
+.bz-faq h3{font-size:20px;color:#0b2a4a;margin:22px 0 6px}
+.bz-faq p{margin:0;padding-bottom:16px;border-bottom:1px solid #e3e8ef}
+.bz-cta{background:#ffb300;border-radius:18px;padding:28px;margin:44px 0 24px;color:#0b2a4a}
+.bz-cta h2{margin:0 0 8px;color:#0b2a4a}
+.bz-cta .bz-btn-agenda{background:#0b2a4a;color:#fff!important}
+.bz-empresa{font-size:15px;color:#4a5866;border-top:1px solid #e3e8ef;padding-top:18px}
+.bz-empresa a{color:#163d66}
+.bz-whats{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important}
+.bz-whats svg{width:34px;height:34px;fill:#fff}
+@media(max-width:760px){.bz{font-size:17px;padding:8px 14px 40px}.bz-hero{grid-template-columns:1fr;padding:26px 20px}.bz-hero h1{font-size:30px}.bz h2{font-size:24px}.bz-btn{display:block;text-align:center;width:100%}.bz-grade{grid-template-columns:1fr 1fr}.bz-item a{font-size:15px;padding:10px}.bz-whats{right:14px;bottom:14px;width:58px;height:58px}.bz-whats svg{width:30px;height:30px}.bz-tabela table{font-size:14px}}
+</style>
+
+<article class="bz">
+
+  <header class="bz-hero">
+    <div>
+      <span class="bz-selo">Bairros atendidos</span>
+      <h1>Eletricista em Barueri: bairros atendidos</h1>
+      <p>O Mestre dos Reparos atende <strong>todos os bairros de Barueri</strong>, de Alphaville ao Jardim Belval, com eletricista residencial, predial e comercial e plantão 24 horas. Encontre o seu bairro abaixo e veja a página com os serviços e o contato.</p>
+      <div class="bz-btns">
+        <a class="bz-btn bz-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista%20em%20Barueri.%20Meu%20bairro%20%C3%A9%3A%20">💬 Chamar eletricista</a>
+        <a class="bz-btn bz-btn-agenda" href="https://mestre-reparos.base44.app/Agendamento">📅 Agendar visita</a>
+      </div>
+    </div>
+    <div class="bz-contadores">
+      <div class="bz-contador"><b>39</b><span>bairros de Barueri com página própria</span></div>
+      <div class="bz-contador"><b>24h</b><span>plantão para emergências</span></div>
+      <div class="bz-contador"><b>4,9</b><span>nota no Google</span></div>
+      <div class="bz-contador"><b>90 dias</b><span>de garantia na mão de obra</span></div>
+    </div>
+  </header>
+
+  <section class="bz-resposta" aria-label="Resposta rápida">
+    <strong class="bz-tit">Resposta rápida</strong>
+    <p>Sim, existe eletricista que atende todos os bairros de Barueri: o Mestre dos Reparos, empresa com sede no Jardim Belval (Av. Henrique Gonçalves Baptista, 2245), atende Alphaville, Tamboré, Centro, Jardim Silveira, Aldeia de Barueri, Bethaville, Engenho Novo, Parque Imperial e os demais bairros da cidade, com plantão 24 horas, nota fiscal e garantia de 90 dias. Contato pelo WhatsApp (11) 91839-0430.</p>
+  </section>
+
+  <h2 id="bairros">Encontre o seu bairro em Barueri</h2>
+  <p class="bz-direta">Digite o nome do bairro para filtrar a lista. Cada bairro tem uma página com os serviços elétricos e o contato direto.</p>
+  <input id="bz-busca" class="bz-busca" type="search" placeholder="Digite seu bairro, por exemplo: Jardim Silveira" aria-label="Buscar bairro">
+  <ul class="bz-grade">
+    <li class="bz-item" data-nome="18 do forte"><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-18-do-forte.html">18 do Forte<span>Eletricista no 18 do Forte</span></a></li>
+    <li class="bz-item" data-nome="aldeia de barueri"><a href="https://www.mestredosreparos.app.br/p/blog-page_3.html">Aldeia de Barueri<span>Eletricista na Aldeia de Barueri</span></a></li>
+    <li class="bz-item" data-nome="alphaville"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html">Alphaville<span>Eletricista em Alphaville</span></a></li>
+    <li class="bz-item" data-nome="bethaville"><a href="https://www.mestredosreparos.app.br/p/blog-page_83.html">Bethaville<span>Eletricista no Bethaville</span></a></li>
+    <li class="bz-item" data-nome="centro de barueri"><a href="https://www.mestredosreparos.app.br/p/blog-page_2.html">Centro de Barueri<span>Eletricista no Centro de Barueri</span></a></li>
+    <li class="bz-item" data-nome="chacaras marco"><a href="https://www.mestredosreparos.app.br/p/eletricista-nas-chacaras-marco-barueri.html">Chácaras Marco<span>Eletricista nas Chácaras Marco</span></a></li>
+    <li class="bz-item" data-nome="cruz preta"><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-cruz-preta.html">Cruz Preta<span>Eletricista na Cruz Preta</span></a></li>
+    <li class="bz-item" data-nome="engenho novo"><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-engenho-novo.html">Engenho Novo<span>Eletricista no Engenho Novo</span></a></li>
+    <li class="bz-item" data-nome="fazenda militar"><a href="https://www.mestredosreparos.app.br/p/eletricista-na-fazenda-militar-barueri.html">Fazenda Militar<span>Eletricista na Fazenda Militar</span></a></li>
+    <li class="bz-item" data-nome="jardim audir"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-audir-barueri.html">Jardim Audir<span>Eletricista no Jardim Audir</span></a></li>
+    <li class="bz-item" data-nome="jardim barueri"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-barueri.html">Jardim Barueri<span>Eletricista no Jardim Barueri</span></a></li>
+    <li class="bz-item" data-nome="jardim belval"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html">Jardim Belval<span>Eletricista no Jardim Belval</span></a></li>
+    <li class="bz-item" data-nome="jardim california"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-california.html">Jardim Califórnia<span>Eletricista no Jardim Califórnia</span></a></li>
+    <li class="bz-item" data-nome="jardim dos altos"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-altos-barueri.html">Jardim dos Altos<span>Eletricista no Jardim dos Altos</span></a></li>
+    <li class="bz-item" data-nome="jardim dos camargos"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-camargos.html">Jardim dos Camargos<span>Eletricista no Jardim dos Camargos</span></a></li>
+    <li class="bz-item" data-nome="jardim esperanca"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-esperanca-barueri.html">Jardim Esperança<span>Eletricista no Jardim Esperança</span></a></li>
+    <li class="bz-item" data-nome="jardim graziela"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-graziela-barueri.html">Jardim Graziela<span>Eletricista no Jardim Graziela</span></a></li>
+    <li class="bz-item" data-nome="jardim iracema"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-iracema-barueri.html">Jardim Iracema<span>Eletricista no Jardim Iracema</span></a></li>
+    <li class="bz-item" data-nome="jardim itaquiti"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-itaquiti-barueri.html">Jardim Itaquiti<span>Eletricista no Jardim Itaquiti</span></a></li>
+    <li class="bz-item" data-nome="jardim julio"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-julio-barueri.html">Jardim Júlio<span>Eletricista no Jardim Júlio</span></a></li>
+    <li class="bz-item" data-nome="jardim libano"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-libano-barueri-24.html">Jardim Líbano<span>Eletricista no Jardim Líbano</span></a></li>
+    <li class="bz-item" data-nome="jardim maria cristina"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-cristina.html">Jardim Maria Cristina<span>Eletricista no Jardim Maria Cristina</span></a></li>
+    <li class="bz-item" data-nome="jardim maria helena"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-helena.html">Jardim Maria Helena<span>Eletricista no Jardim Maria Helena</span></a></li>
+    <li class="bz-item" data-nome="jardim mutinga"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-mutinga-barueri.html">Jardim Mutinga<span>Eletricista no Jardim Mutinga</span></a></li>
+    <li class="bz-item" data-nome="jardim paraiso"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-paraiso-barueri.html">Jardim Paraíso<span>Eletricista no Jardim Paraíso</span></a></li>
+    <li class="bz-item" data-nome="jardim paulista"><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-jardim-paulista.html">Jardim Paulista<span>Eletricista no Jardim Paulista</span></a></li>
+    <li class="bz-item" data-nome="jardim reginalice"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-reginalice.html">Jardim Reginalice<span>Eletricista no Jardim Reginalice</span></a></li>
+    <li class="bz-item" data-nome="jardim sao pedro"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-pedro-barueri.html">Jardim São Pedro<span>Eletricista no Jardim São Pedro</span></a></li>
+    <li class="bz-item" data-nome="jardim sao silvestre"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-silvestre.html">Jardim São Silvestre<span>Eletricista no Jardim São Silvestre</span></a></li>
+    <li class="bz-item" data-nome="jardim silveira"><a href="https://www.mestredosreparos.app.br/p/blog-page_29.html">Jardim Silveira<span>Eletricista no Jardim Silveira</span></a></li>
+    <li class="bz-item" data-nome="jardim tupanci"><a href="https://www.mestredosreparos.app.br/p/blog-page_43.html">Jardim Tupanci<span>Eletricista no Jardim Tupanci</span></a></li>
+    <li class="bz-item" data-nome="nossa senhora da escada"><a href="https://www.mestredosreparos.app.br/p/eletricista-na-nossa-senhora-da-escada.html">Nossa Senhora da Escada<span>Eletricista na Nossa Senhora da Escada</span></a></li>
+    <li class="bz-item" data-nome="parque imperial"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-parque-imperial-barueri.html">Parque Imperial<span>Eletricista no Parque Imperial</span></a></li>
+    <li class="bz-item" data-nome="parque viana"><a href="https://www.mestredosreparos.app.br/p/blog-page_8.html">Parque Viana<span>Eletricista no Parque Viana</span></a></li>
+    <li class="bz-item" data-nome="regina alice"><a href="https://www.mestredosreparos.app.br/p/eletricista-na-regina-alice-barueri-24.html">Regina Alice<span>Eletricista na Regina Alice</span></a></li>
+    <li class="bz-item" data-nome="tambore"><a href="https://www.mestredosreparos.app.br/p/blog-page_87.html">Tamboré<span>Eletricista no Tamboré</span></a></li>
+    <li class="bz-item" data-nome="vila boa vista"><a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-boa-vista.html">Vila Boa Vista<span>Eletricista na Vila Boa Vista</span></a></li>
+    <li class="bz-item" data-nome="vila sao francisco"><a href="https://www.mestredosreparos.app.br/p/eletricista-na-vila-sao-francisco.html">Vila São Francisco<span>Eletricista na Vila São Francisco</span></a></li>
+    <li class="bz-item" data-nome="votupoca"><a href="https://www.mestredosreparos.app.br/p/eletricista-na-votupoca-barueri.html">Votupoca<span>Eletricista na Votupoca</span></a></li>
+  </ul>
+
+  <h2 id="cidades">Eletricista nas cidades vizinhas a Barueri</h2>
+  <p class="bz-direta">Além de Barueri, atendemos Santana de Parnaíba, Aldeia da Serra, Carapicuíba, Jandira, Itapevi, Osasco e Cotia.</p>
+  <ul class="bz-grade bz-cidades">
+    <li class="bz-item" data-nome="barueri (pagina principal)"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html">Barueri (página principal)<span>Eletricista em Barueri</span></a></li>
+    <li class="bz-item" data-nome="eletricista 24 horas"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html">Eletricista 24 horas<span>Emergência elétrica 24h em Barueri</span></a></li>
+    <li class="bz-item" data-nome="santana de parnaiba"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-santana-de-parnaiba.html">Santana de Parnaíba<span>Eletricista em Santana de Parnaíba</span></a></li>
+    <li class="bz-item" data-nome="aldeia da serra"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-aldeia-da-serra.html">Aldeia da Serra<span>Eletricista na Aldeia da Serra</span></a></li>
+    <li class="bz-item" data-nome="carapicuiba"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-carapicuiba-atendimento.html">Carapicuíba<span>Eletricista em Carapicuíba</span></a></li>
+    <li class="bz-item" data-nome="jandira"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-jandira.html">Jandira<span>Eletricista em Jandira</span></a></li>
+    <li class="bz-item" data-nome="itapevi"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-itapevi.html">Itapevi<span>Eletricista em Itapevi</span></a></li>
+  </ul>
+
+  <h2 id="perfis">Como é o atendimento elétrico nos principais bairros</h2>
+  <p>Cada bairro de Barueri tem um perfil de imóvel diferente, e isso muda o tipo de problema elétrico mais comum. Estes são os bairros com mais chamados:</p>
+  <div class="bz-perfis">
+    <div class="bz-perfil"><h3>Eletricista em Alphaville</h3><p>Condomínios horizontais e verticais de alto padrão, com regras de horário para obras. Pedidos mais comuns: automação, iluminação de LED, quadros com IDR e DPS e tomadas para ar-condicionado e carro elétrico.</p></div>
+    <div class="bz-perfil"><h3>Eletricista em Tamboré</h3><p>Mistura de condomínios, casas de rua e prédios. Muita demanda por forro com iluminação embutida, circuitos dedicados e modernização de quadros.</p></div>
+    <div class="bz-perfil"><h3>Eletricista em Jardim Belval</h3><p>Bairro da nossa sede, na Av. Henrique Gonçalves Baptista. Casas antigas com fiação original, onde é comum trocar fiação e quadro com fusível por disjuntores.</p></div>
+    <div class="bz-perfil"><h3>Eletricista em Centro de Barueri</h3><p>Casas de rua, salas comerciais e imóveis antigos, muitos com instalação elétrica defasada. Atendemos também comércios fora do horário de funcionamento.</p></div>
+    <div class="bz-perfil"><h3>Eletricista em Jardim Silveira</h3><p>Casas, sobrados e prédios residenciais com bom comércio. Reforma elétrica antes de alugar ou vender o imóvel é um pedido frequente.</p></div>
+    <div class="bz-perfil"><h3>Eletricista em Aldeia de Barueri</h3><p>Perfil residencial, com casas, sobrados e pequenos comércios. Chuveiro, tomadas aquecendo e disjuntor caindo estão entre os chamados mais comuns.</p></div>
+  </div>
+
+  <h2 id="servicos">Serviços elétricos disponíveis em todos os bairros</h2>
+  <div class="bz-tabela">
+    <table>
+      <thead><tr><th>Tipo de imóvel</th><th>Serviços mais pedidos</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Casas e apartamentos</strong></td><td>Troca de fiação, disjuntor caindo, quadro com IDR e DPS, tomadas, chuveiro, iluminação de LED e ventilador de teto</td></tr>
+        <tr><td><strong>Condomínios</strong></td><td>Iluminação de áreas comuns e de emergência, bombas, portões, interfones e manutenção preventiva de quadros</td></tr>
+        <tr><td><strong>Comércios e escritórios</strong></td><td>Quadro comercial, tomadas para equipamentos de alto consumo, iluminação de loja e contrato de manutenção</td></tr>
+        <tr><td><strong>Emergências 24h</strong></td><td>Falta de energia, curto-circuito, cheiro de queimado, choque elétrico e disjuntor que não arma</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="faq">Perguntas frequentes sobre eletricista nos bairros de Barueri</h2>
+  <div class="bz-faq">
+    <h3>Quais bairros de Barueri vocês atendem?</h3>
+    <p>Atendemos todos os bairros de Barueri. Entre eles: 18 do Forte, Aldeia de Barueri, Alphaville, Bethaville, Centro de Barueri, Chácaras Marco, Cruz Preta, Engenho Novo, Fazenda Militar, Jardim Audir, Jardim Barueri, Jardim Belval, Jardim Califórnia, Jardim dos Altos, Jardim dos Camargos, Jardim Esperança, Jardim Graziela, Jardim Iracema, Jardim Itaquiti, Jardim Júlio, Jardim Líbano, Jardim Maria Cristina, Jardim Maria Helena, Jardim Mutinga, Jardim Paraíso, Jardim Paulista, Jardim Reginalice, Jardim São Pedro, Jardim São Silvestre, Jardim Silveira, Jardim Tupanci, Nossa Senhora da Escada, Parque Imperial, Parque Viana, Regina Alice, Tamboré, Vila Boa Vista, Vila São Francisco, Votupoca. Cada bairro tem uma página própria com serviços e contato.</p>
+    <h3>Tem eletricista 24 horas em Barueri?</h3>
+    <p>Sim. O Mestre dos Reparos tem plantão 24 horas, todos os dias, incluindo fins de semana e feriados, para emergências como falta de energia, cheiro de queimado, curto-circuito, disjuntor que não arma e choque elétrico, em qualquer bairro de Barueri.</p>
+    <h3>Quanto tempo o eletricista leva para chegar no meu bairro?</h3>
+    <p>Nossa base fica no Jardim Belval, na Av. Henrique Gonçalves Baptista, e o deslocamento dentro de Barueri é curto. O tempo exato depende do bairro, do horário e do trânsito, e é informado no momento do contato pelo WhatsApp. Em emergências, o chamado tem prioridade.</p>
+    <h3>Vocês atendem condomínios em Alphaville e Tamboré?</h3>
+    <p>Sim. Atendemos condomínios horizontais e verticais em Alphaville e no Tamboré, respeitando o horário de obra definido pela administração, com equipe identificada e documentação apresentada na portaria quando o condomínio exige.</p>
+    <h3>Cobram taxa de deslocamento por bairro?</h3>
+    <p>O deslocamento já é considerado no orçamento, que é passado antes do serviço. Não há surpresa: você recebe o valor fechado pelo WhatsApp e só aprova se concordar.</p>
+    <h3>Atendem cidades vizinhas a Barueri?</h3>
+    <p>Sim. Além de todos os bairros de Barueri, atendemos Santana de Parnaíba, Aldeia da Serra, Carapicuíba, Jandira, Itapevi, Osasco e Cotia.</p>
+    <h3>Quais serviços elétricos fazem nos bairros?</h3>
+    <p>Troca de fiação, disjuntor caindo, troca de disjuntores e quadro, instalação de IDR e DPS, tomadas e interruptores, chuveiro elétrico, iluminação de LED, ventilador de teto, aterramento, laudo e ART, além de manutenção predial e comercial.</p>
+    <h3>Vocês emitem nota fiscal e dão garantia?</h3>
+    <p>Sim. Somos empresa com CNPJ 64.521.657/0001-87, emitimos nota fiscal em todos os serviços e damos garantia técnica de 90 dias na mão de obra, em qualquer bairro atendido.</p>
+  </div>
+
+  <section class="bz-cta">
+    <h2>Não achou o seu bairro?</h2>
+    <p>Atendemos toda Barueri e a região, mesmo bairros que ainda não têm página própria. Mande o nome do seu bairro pelo WhatsApp e receba o atendimento.</p>
+    <div class="bz-btns">
+      <a class="bz-btn bz-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista.%20Meu%20bairro%20%C3%A9%3A%20">💬 Falar no WhatsApp</a>
+      <a class="bz-btn bz-btn-agenda" href="https://mestre-reparos.base44.app/Agendamento">📅 Agendar visita</a>
+    </div>
+  </section>
+
+  <footer class="bz-empresa">
+    <strong>Mestre dos Reparos Manutenção &amp; Limpeza</strong> · CNPJ 64.521.657/0001-87<br>
+    Av. Henrique Gonçalves Baptista, 2245, Jardim Belval, Barueri/SP, CEP 06420-130<br>
+    WhatsApp <a href="https://wa.me/5511918390430">(11) 91839-0430</a> · <a href="mailto:mestredosreparosbarueri@gmail.com">mestredosreparosbarueri@gmail.com</a> · <a href="https://www.instagram.com/mestredosreparosfacilites">Instagram</a> · <a href="https://www.facebook.com/mestredosreparos.oficial/">Facebook</a> · ⭐ 4,9 no Google (<a href="https://g.page/r/CTZBTDtx4V-QEBM/review">avaliar</a>)
+  </footer>
+
+  <a class="bz-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista%20em%20Barueri." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+</article>
+
+<script>
+(function(){
+  var campo=document.getElementById('bz-busca');
+  if(!campo){return;}
+  campo.addEventListener('input',function(){
+    var t=campo.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+    var itens=document.querySelectorAll('.bz-item');
+    for(var i=0;i!==itens.length;i++){
+      var n=itens[i].getAttribute('data-nome');
+      itens[i].style.display=(n.indexOf(t)!==-1)?'':'none';
+    }
+  });
+})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Electrician","HomeAndConstructionBusiness"],"@id":"https://www.mestredosreparos.app.br/#empresa","name":"Mestre dos Reparos Manutenção & Limpeza","url":"https://www.mestredosreparos.app.br","telephone":"+55 11 91839-0430","email":"mestredosreparosbarueri@gmail.com","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","logo":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","priceRange":"$$","taxID":"64.521.657/0001-87","address":{"@type":"PostalAddress","streetAddress":"Av. Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"32","bestRating":5,"worstRating":1},"sameAs":["https://www.instagram.com/mestredosreparosfacilites","https://www.facebook.com/mestredosreparos.oficial/","https://www.tiktok.com/@mestre.dos.reparo1","https://youtube.com/@mestredosreparos-i9d"],"description":"Eletricista em todos os bairros de Barueri e cidades vizinhas: residencial, predial, comercial e emergência 24 horas.","areaServed":[{"@type":"City","name":"Barueri"},{"@type":"Place","name":"18 do Forte","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Aldeia de Barueri","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Alphaville","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Bethaville","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Centro de Barueri","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Chácaras Marco","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Cruz Preta","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Engenho Novo","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Fazenda Militar","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Audir","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Barueri","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Belval","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Califórnia","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim dos Altos","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim dos Camargos","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Esperança","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Graziela","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Iracema","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Itaquiti","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Júlio","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Líbano","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Maria Cristina","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Maria Helena","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Mutinga","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Paraíso","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Paulista","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Reginalice","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim São Pedro","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim São Silvestre","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Silveira","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Jardim Tupanci","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Nossa Senhora da Escada","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Parque Imperial","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Parque Viana","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Regina Alice","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Tamboré","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Vila Boa Vista","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Vila São Francisco","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"Place","name":"Votupoca","containedInPlace":{"@type":"City","name":"Barueri"}},{"@type":"City","name":"Santana de Parnaíba"},{"@type":"City","name":"Carapicuíba"},{"@type":"City","name":"Jandira"},{"@type":"City","name":"Itapevi"},{"@type":"City","name":"Osasco"},{"@type":"City","name":"Cotia"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Eletricista nos bairros de Barueri","numberOfItems":39,"itemListElement":[{"@type":"ListItem","position":1,"name":"Eletricista no 18 do Forte","url":"https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-18-do-forte.html"},{"@type":"ListItem","position":2,"name":"Eletricista na Aldeia de Barueri","url":"https://www.mestredosreparos.app.br/p/blog-page_3.html"},{"@type":"ListItem","position":3,"name":"Eletricista em Alphaville","url":"https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html"},{"@type":"ListItem","position":4,"name":"Eletricista no Bethaville","url":"https://www.mestredosreparos.app.br/p/blog-page_83.html"},{"@type":"ListItem","position":5,"name":"Eletricista no Centro de Barueri","url":"https://www.mestredosreparos.app.br/p/blog-page_2.html"},{"@type":"ListItem","position":6,"name":"Eletricista nas Chácaras Marco","url":"https://www.mestredosreparos.app.br/p/eletricista-nas-chacaras-marco-barueri.html"},{"@type":"ListItem","position":7,"name":"Eletricista na Cruz Preta","url":"https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-cruz-preta.html"},{"@type":"ListItem","position":8,"name":"Eletricista no Engenho Novo","url":"https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-engenho-novo.html"},{"@type":"ListItem","position":9,"name":"Eletricista na Fazenda Militar","url":"https://www.mestredosreparos.app.br/p/eletricista-na-fazenda-militar-barueri.html"},{"@type":"ListItem","position":10,"name":"Eletricista no Jardim Audir","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-audir-barueri.html"},{"@type":"ListItem","position":11,"name":"Eletricista no Jardim Barueri","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-barueri.html"},{"@type":"ListItem","position":12,"name":"Eletricista no Jardim Belval","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html"},{"@type":"ListItem","position":13,"name":"Eletricista no Jardim Califórnia","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-california.html"},{"@type":"ListItem","position":14,"name":"Eletricista no Jardim dos Altos","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-altos-barueri.html"},{"@type":"ListItem","position":15,"name":"Eletricista no Jardim dos Camargos","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-camargos.html"},{"@type":"ListItem","position":16,"name":"Eletricista no Jardim Esperança","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-esperanca-barueri.html"},{"@type":"ListItem","position":17,"name":"Eletricista no Jardim Graziela","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-graziela-barueri.html"},{"@type":"ListItem","position":18,"name":"Eletricista no Jardim Iracema","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-iracema-barueri.html"},{"@type":"ListItem","position":19,"name":"Eletricista no Jardim Itaquiti","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-itaquiti-barueri.html"},{"@type":"ListItem","position":20,"name":"Eletricista no Jardim Júlio","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-julio-barueri.html"},{"@type":"ListItem","position":21,"name":"Eletricista no Jardim Líbano","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-libano-barueri-24.html"},{"@type":"ListItem","position":22,"name":"Eletricista no Jardim Maria Cristina","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-cristina.html"},{"@type":"ListItem","position":23,"name":"Eletricista no Jardim Maria Helena","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-helena.html"},{"@type":"ListItem","position":24,"name":"Eletricista no Jardim Mutinga","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-mutinga-barueri.html"},{"@type":"ListItem","position":25,"name":"Eletricista no Jardim Paraíso","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-paraiso-barueri.html"},{"@type":"ListItem","position":26,"name":"Eletricista no Jardim Paulista","url":"https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-jardim-paulista.html"},{"@type":"ListItem","position":27,"name":"Eletricista no Jardim Reginalice","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-reginalice.html"},{"@type":"ListItem","position":28,"name":"Eletricista no Jardim São Pedro","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-pedro-barueri.html"},{"@type":"ListItem","position":29,"name":"Eletricista no Jardim São Silvestre","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-silvestre.html"},{"@type":"ListItem","position":30,"name":"Eletricista no Jardim Silveira","url":"https://www.mestredosreparos.app.br/p/blog-page_29.html"},{"@type":"ListItem","position":31,"name":"Eletricista no Jardim Tupanci","url":"https://www.mestredosreparos.app.br/p/blog-page_43.html"},{"@type":"ListItem","position":32,"name":"Eletricista na Nossa Senhora da Escada","url":"https://www.mestredosreparos.app.br/p/eletricista-na-nossa-senhora-da-escada.html"},{"@type":"ListItem","position":33,"name":"Eletricista no Parque Imperial","url":"https://www.mestredosreparos.app.br/p/eletricista-no-parque-imperial-barueri.html"},{"@type":"ListItem","position":34,"name":"Eletricista no Parque Viana","url":"https://www.mestredosreparos.app.br/p/blog-page_8.html"},{"@type":"ListItem","position":35,"name":"Eletricista na Regina Alice","url":"https://www.mestredosreparos.app.br/p/eletricista-na-regina-alice-barueri-24.html"},{"@type":"ListItem","position":36,"name":"Eletricista no Tamboré","url":"https://www.mestredosreparos.app.br/p/blog-page_87.html"},{"@type":"ListItem","position":37,"name":"Eletricista na Vila Boa Vista","url":"https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-boa-vista.html"},{"@type":"ListItem","position":38,"name":"Eletricista na Vila São Francisco","url":"https://www.mestredosreparos.app.br/p/eletricista-na-vila-sao-francisco.html"},{"@type":"ListItem","position":39,"name":"Eletricista na Votupoca","url":"https://www.mestredosreparos.app.br/p/eletricista-na-votupoca-barueri.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Eletricista em Barueri: bairros atendidos","description":"Lista de todos os bairros de Barueri e cidades vizinhas atendidos pelo eletricista do Mestre dos Reparos, com plantão 24 horas.","inLanguage":"pt-BR","dateModified":"2026-10-16","about":{"@type":"Service","name":"Eletricista em Barueri","provider":{"@id":"https://www.mestredosreparos.app.br/#empresa"}},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".bz-resposta",".bz-direta",".bz-faq h3"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quais bairros de Barueri vocês atendem?","acceptedAnswer":{"@type":"Answer","text":"Atendemos todos os bairros de Barueri. Entre eles: 18 do Forte, Aldeia de Barueri, Alphaville, Bethaville, Centro de Barueri, Chácaras Marco, Cruz Preta, Engenho Novo, Fazenda Militar, Jardim Audir, Jardim Barueri, Jardim Belval, Jardim Califórnia, Jardim dos Altos, Jardim dos Camargos, Jardim Esperança, Jardim Graziela, Jardim Iracema, Jardim Itaquiti, Jardim Júlio, Jardim Líbano, Jardim Maria Cristina, Jardim Maria Helena, Jardim Mutinga, Jardim Paraíso, Jardim Paulista, Jardim Reginalice, Jardim São Pedro, Jardim São Silvestre, Jardim Silveira, Jardim Tupanci, Nossa Senhora da Escada, Parque Imperial, Parque Viana, Regina Alice, Tamboré, Vila Boa Vista, Vila São Francisco, Votupoca. Cada bairro tem uma página própria com serviços e contato."}},{"@type":"Question","name":"Tem eletricista 24 horas em Barueri?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Mestre dos Reparos tem plantão 24 horas, todos os dias, incluindo fins de semana e feriados, para emergências como falta de energia, cheiro de queimado, curto-circuito, disjuntor que não arma e choque elétrico, em qualquer bairro de Barueri."}},{"@type":"Question","name":"Quanto tempo o eletricista leva para chegar no meu bairro?","acceptedAnswer":{"@type":"Answer","text":"Nossa base fica no Jardim Belval, na Av. Henrique Gonçalves Baptista, e o deslocamento dentro de Barueri é curto. O tempo exato depende do bairro, do horário e do trânsito, e é informado no momento do contato pelo WhatsApp. Em emergências, o chamado tem prioridade."}},{"@type":"Question","name":"Vocês atendem condomínios em Alphaville e Tamboré?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos condomínios horizontais e verticais em Alphaville e no Tamboré, respeitando o horário de obra definido pela administração, com equipe identificada e documentação apresentada na portaria quando o condomínio exige."}},{"@type":"Question","name":"Cobram taxa de deslocamento por bairro?","acceptedAnswer":{"@type":"Answer","text":"O deslocamento já é considerado no orçamento, que é passado antes do serviço. Não há surpresa: você recebe o valor fechado pelo WhatsApp e só aprova se concordar."}},{"@type":"Question","name":"Atendem cidades vizinhas a Barueri?","acceptedAnswer":{"@type":"Answer","text":"Sim. Além de todos os bairros de Barueri, atendemos Santana de Parnaíba, Aldeia da Serra, Carapicuíba, Jandira, Itapevi, Osasco e Cotia."}},{"@type":"Question","name":"Quais serviços elétricos fazem nos bairros?","acceptedAnswer":{"@type":"Answer","text":"Troca de fiação, disjuntor caindo, troca de disjuntores e quadro, instalação de IDR e DPS, tomadas e interruptores, chuveiro elétrico, iluminação de LED, ventilador de teto, aterramento, laudo e ART, além de manutenção predial e comercial."}},{"@type":"Question","name":"Vocês emitem nota fiscal e dão garantia?","acceptedAnswer":{"@type":"Answer","text":"Sim. Somos empresa com CNPJ 64.521.657/0001-87, emitimos nota fiscal em todos os serviços e damos garantia técnica de 90 dias na mão de obra, em qualquer bairro atendido."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br"},{"@type":"ListItem","position":2,"name":"Eletricista em Barueri","item":"https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html"},{"@type":"ListItem","position":3,"name":"Bairros atendidos"}]}</script>

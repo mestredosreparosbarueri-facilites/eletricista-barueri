@@ -1,0 +1,1840 @@
+<style>
+  @media screen and (min-width: 1025px) {
+    .mestre-home-wrap {
+      max-width: 1100px !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      display: block !important;
+    }
+  }
+
+  .mestre-home-wrap {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f7f8fb;
+    color: #23395b;
+    line-height: 1.6;
+  }
+
+  .mestre-home-wrap * {
+    box-sizing: border-box;
+  }
+
+  .mestre-container {
+    padding: 0 18px;
+  }
+
+  .mestre-section {
+    padding: 28px 0;
+  }
+
+  .mestre-center {
+    text-align: center;
+  }
+
+  .mestre-light {
+    background: #f7f8fb;
+  }
+
+  .mestre-white {
+    background: #ffffff;
+  }
+
+  .mestre-title-tag {
+    display: inline-block;
+    background: #fff4de;
+    color: #d89b1d;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .mestre-home-wrap h1 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 0 0 14px;
+    color: #223d67;
+    font-weight: 900;
+  }
+
+  .mestre-home-wrap h2 {
+    font-size: 22px;
+    line-height: 1.25;
+    margin: 0 0 14px;
+    color: #223d67;
+    font-weight: 800;
+  }
+
+  .mestre-home-wrap h3 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+    color: #223d67;
+    font-weight: 700;
+  }
+
+  .mestre-home-wrap p {
+    margin: 0 0 14px;
+    font-size: 17px;
+    color: #5d6b82;
+  }
+
+  .mestre-blue {
+    background: linear-gradient(180deg, #264a78 0%, #223f67 100%);
+    color: #fff;
+  }
+
+  .mestre-blue h2,
+  .mestre-blue h3,
+  .mestre-blue p,
+  .mestre-blue li,
+  .mestre-blue a,
+  .mestre-blue span {
+    color: #fff;
+  }
+
+  .mestre-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 26px;
+    box-shadow: 0 14px 35px rgba(24,42,72,0.12);
+  }
+
+  .mestre-btn-gold,
+  .mestre-btn-blue,
+  .mestre-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 18px;
+    font-weight: 800;
+    min-height: 58px;
+    padding: 16px 24px;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+
+  .mestre-btn-gold {
+    background: #f4aa1c;
+    color: #223d67 !important;
+    box-shadow: 0 10px 22px rgba(244,170,28,0.28);
+  }
+
+  .mestre-btn-blue {
+    background: #223d67;
+    color: #fff !important;
+    box-shadow: 0 10px 22px rgba(34,61,103,0.22);
+  }
+
+  .mestre-btn-outline {
+    background: #eef2f7;
+    color: #223d67 !important;
+    border: 1px solid #e2e7ef;
+  }
+
+  .mestre-btn-block {
+    width: 100%;
+  }
+
+  .mestre-hero {
+    background: linear-gradient(180deg, #254a78 0%, #26456f 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 34px 0 24px;
+  }
+
+  .mestre-hero:after {
+    content: "";
+    display: block;
+    width: 140%;
+    height: 110px;
+    background: #f7f8fb;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    left: -20%;
+    bottom: -68px;
+  }
+
+  .mestre-hero-content {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 40px;
+  }
+
+  .mestre-hero h1,
+  .mestre-hero h2,
+  .mestre-hero p {
+    color: #fff;
+  }
+
+  .mestre-hero h1 {
+    color: #ffffff !important;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+
+  .mestre-hero h2 {
+    color: #ffffff !important;
+    text-align: left;
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 800;
+    margin: 0 0 18px;
+  }
+
+  .mestre-hero p {
+    color: #dce6f5 !important;
+    text-align: left;
+    max-width: 920px;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .mestre-chegada-badge {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #a5d6a7;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.55;
+  text-align: center;
+  max-width: 100%;
+
+  }
+
+  .mestre-toc {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px 26px;
+    margin: 0 18px 28px;
+    box-shadow: 0 6px 20px rgba(24,42,72,0.09);
+    border-left: 5px solid #f4aa1c;
+  }
+
+  .mestre-toc h3 {
+    font-size: 16px;
+    color: #223d67;
+    margin: 0 0 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .mestre-toc ol {
+    margin: 0;
+    padding-left: 20px;
+    display: grid;
+    gap: 8px;
+  }
+
+  .mestre-toc ol li {
+    font-size: 15px;
+  }
+
+  .mestre-toc ol li a {
+    color: #264a78;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .mestre-preco-box {
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+
+  .mestre-preco-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #5d4037;
+  }
+
+  .mestre-preco-box strong {
+    color: #e65100;
+  }
+
+  .mestre-chip-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 18px 0 24px;
+  }
+
+  .mestre-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f7;
+    color: #69768c;
+    border: 1px solid #ececf1;
+    border-radius: 999px;
+    padding: 12px 16px;
+    font-size: 16px;
+    min-height: 46px;
+  }
+
+  .mestre-services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .mestre-service-card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #ecf0f6;
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 0 10px 28px rgba(26,42,71,0.06);
+  }
+
+  .mestre-service-card h3 {
+    margin-bottom: 8px;
+  }
+
+  .mestre-service-card p {
+    margin: 0;
+  }
+
+  .mestre-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 14px 18px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #e9f0fb;
+    font-size: 16px;
+  }
+
+  .mestre-counter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 18px;
+    margin-top: 20px;
+  }
+
+  .mestre-counter-item {
+    text-align: center;
+    padding: 10px 6px;
+  }
+
+  .mestre-counter-icon {
+    width: 74px;
+    height: 74px;
+    border-radius: 22px;
+    margin: 0 auto 14px;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+  }
+
+  .mestre-counter-number {
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .mestre-counter-label {
+    font-size: 15px;
+    color: #dce6f5;
+  }
+
+  .mestre-review-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mestre-review-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 22px;
+    box-shadow: 0 12px 30px rgba(24,42,72,0.10);
+  }
+
+  .mestre-review-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .mestre-avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #31c46a;
+    background: #e9edf3;
+  }
+
+  .mestre-review-name {
+    font-size: 16px;
+    font-weight: 800;
+    color: #223d67;
+  }
+
+  .mestre-review-meta {
+    font-size: 14px;
+    color: #7e8aa0;
+  }
+
+  .mestre-review-body {
+    background: #edf8f1;
+    color: #5e6d84;
+    border-radius: 22px;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .mestre-stars {
+    color: #f4aa1c;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-top: 14px;
+  }
+
+  .mestre-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .mestre-faq-item {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+  }
+
+  .mestre-faq-q {
+    width: 100%;
+    border: none;
+    background: #fff;
+    color: #0b2a4a;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding: 24px;
+    cursor: pointer;
+  }
+
+  .mestre-faq-a {
+    display: none;
+    padding: 0 24px 24px;
+    color: #5f6b7a;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .mestre-city-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .mestre-city-card {
+    background: #fff;
+    border: 1px solid #ecf0f6;
+    border-radius: 20px;
+    padding: 16px 18px;
+    text-decoration: none;
+    color: #223d67 !important;
+    font-weight: 700;
+    display: block;
+  }
+
+  .mestre-cta-box {
+    background: #264a78;
+    color: #fff;
+    border-radius: 28px;
+    padding: 34px 24px;
+    text-align: center;
+  }
+
+  .mestre-cta-box h2,
+  .mestre-cta-box p {
+    color: #fff;
+    text-align: center;
+  }
+
+  .mestre-google-box {
+    background: linear-gradient(180deg, #294e7d 0%, #244267 100%);
+    color: #fff;
+    padding: 34px 22px;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .mestre-google-stars {
+    font-size: 54px;
+    color: #f4aa1c;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+
+  .mestre-google-box h2,
+  .mestre-google-box p {
+    color: #fff;
+    text-align: center;
+  }
+
+  .mestre-google-box p {
+    color: #dce6f5;
+  }
+
+  .mestre-footer {
+    background: #203f67;
+    color: #ffffff !important;
+    padding: 38px 22px;
+  }
+
+  .mestre-footer * {
+    box-sizing: border-box;
+  }
+
+  .mestre-footer p,
+  .mestre-footer span,
+  .mestre-footer li,
+  .mestre-footer strong,
+  .mestre-footer h3,
+  .mestre-footer a {
+    color: #ffffff !important;
+  }
+
+  .mestre-footer-brand {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .mestre-footer-logo {
+    width: 58px;
+    height: 58px;
+    background: #f4aa1c;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #203f67 !important;
+    flex: 0 0 58px;
+  }
+
+  .mestre-footer-title {
+    font-size: 21px;
+    font-weight: 900;
+    margin: 0;
+    color: #ffffff !important;
+  }
+
+  .mestre-footer-sub {
+    font-size: 16px;
+    margin: 4px 0 0;
+    color: #ffffff !important;
+  }
+
+  .mestre-footer-desc {
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 18px 0 24px;
+    color: #ffffff !important;
+  }
+
+  .mestre-legal-box {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 28px;
+  }
+
+  .mestre-legal-box p {
+    color: #ffffff !important;
+    margin: 0 0 12px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .mestre-footer h3 {
+    color: #ffffff !important;
+    margin: 26px 0 16px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .mestre-footer-links {
+    display: grid;
+    gap: 12px;
+  }
+
+  .mestre-footer-links a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .mestre-contact-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .mestre-contact-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #ffffff !important;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .mestre-socials {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+
+  .mestre-socials a {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #f4aa1c;
+    color: #203f67 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .mestre-policy-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .mestre-policy-links a {
+    background: rgba(255,255,255,0.12);
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .mestre-footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.18);
+    margin-top: 28px;
+    padding-top: 18px;
+    color: #ffffff !important;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .mestre-whatsapp-float {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.22);
+    z-index: 9999;
+    text-decoration: none;
+  }
+
+  .mestre-servicos-home {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .mestre-servicos-home h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .mestre-servicos-home .sub {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+  }
+
+  .grid-servicos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card-servico {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+
+  .card-servico h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card-servico p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    background: #f1f3f5;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+  }
+
+  .destaque {
+    background: #ffe066;
+  }
+
+  .urgencia {
+    border: 2px solid #2f5bea;
+  }
+
+  .btn-cta {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    background: #25d366;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .bairros-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .coluna span {
+    display: block;
+    padding: 7px 0;
+    font-size: 14px;
+    color: #1f3556;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+
+  .mestre-hub-section {
+    margin-bottom: 36px;
+  }
+
+  .mestre-hub-section h2 {
+    font-size: 22px;
+    color: #0b2a4a;
+    font-weight: 800;
+    margin-bottom: 6px;
+    border-left: 5px solid #ffb300;
+    padding-left: 14px;
+  }
+
+  .mestre-hub-section p.mestre-hub-desc {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 16px;
+    padding-left: 18px;
+  }
+
+  .mestre-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+
+  a.mestre-card {
+    background: #0b2a4a;
+    padding: 20px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none !important;
+    display: block;
+    transition: transform .2s, box-shadow .2s;
+  }
+
+  a.mestre-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  }
+
+  a.mestre-card h3 {
+    margin: 0 0 10px;
+    font-size: 17px;
+    color: #ffb300;
+    line-height: 1.3;
+  }
+
+  a.mestre-card p {
+    margin: 0;
+    font-size: 15px;
+    color: #cdd8e8;
+    line-height: 1.5;
+  }
+
+  .mestre-hub-wrapper {
+    background: #f4f6f9;
+    border-radius: 20px;
+    padding: 28px;
+  }
+
+  /* CSS DOS BLOCOS MRT */
+  .mrt-section {
+    padding: 28px 18px;
+    background: #f7f8fb;
+  }
+
+  .mrt-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .mrt-grid {
+    display: grid;
+    gap: 16px;
+  }
+
+  .mrt-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .mrt-cert,
+  .mrt-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 10px 28px rgba(24, 42, 72, 0.08);
+    border: 1px solid #e8edf5;
+  }
+
+  .mrt-accent {
+    border-left: 5px solid #f4aa1c;
+  }
+
+  .mrt-section h2 {
+    color: #223d67;
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 0 0 18px;
+    font-weight: 800;
+  }
+
+  .mrt-cert h3 {
+    color: #223d67;
+    font-size: 18px;
+    margin: 0 0 10px;
+    font-weight: 800;
+  }
+
+  .mrt-cert p,
+  .mrt-card p {
+    color: #5d6b82;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .mestre-services-grid,
+    .mestre-city-grid,
+    .mestre-review-list {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .mestre-counter-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .mestre-toc ol {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-servicos {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .mrt-grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .mestre-servicos {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .bairros-colunas {
+      gap: 18px;
+    }
+
+    .coluna span {
+      font-size: 13px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+  .mestre-chegada-badge {
+    display: block;
+    border-radius: 22px;
+  }
+}
+</style>
+ 
+
+<section style="padding: 60px 0px;">
+<div class="mestre-home-wrap">
+
+  <!--HERO-->
+  <section class="mestre-hero">
+    <div class="mestre-container mestre-hero-content">
+
+      <h1 style="color: white; font-size: 42px; line-height: 1.2; text-align: left;">
+        Eletricista em Barueri
+      </h1>
+      <h2 style="color: white; font-size: 30px; line-height: 1.2; text-align: left;">
+        Eletricista 24 horas perto de mim </h2>
+      
+
+      <!--BADGE + BOTÃO WHATSAPP-->
+      <div style="margin: 12px 0px 16px; text-align: left;">
+        <span class="mestre-chegada-badge">🚗 Chegamos em 30 a 50 minutos em Barueri. Ligue (11) 91839-0430 ou chame no WhatsApp.</span>
+      </div>
+
+   
+<a href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20eletricista%20em%20Barueri." onclick="gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});" style="background: rgb(37, 211, 102); border-radius: 12px; color: white; display: inline-block; font-size: 18px; font-weight: 700; margin-bottom: 16px; padding: 16px 28px; text-decoration: none;" target="_blank">
+
+⚡ Chamar Eletricista agora em Barueri
+
+</a>
+      <p style="color: white; font-weight: normal; line-height: 1.7; margin-top: 20px; text-align: left;">
+        Atendimento imediato e Emergencial.
+        Curto circuito, disjuntor desarmando, tomadas aquecendo, falta de energia, troca de chuveiros, instalação de luminárias, ventiladores de teto e manutenção elétrica residencial e comercial em Barueri conforme a NBR 5410.
+   
+      </p>
+
+    </div>
+  </section>
+
+  <!--SERVIÇOS ELÉTRICOS-->
+<section id="servicos" class="mrt-section">
+  <div class="mrt-container">
+
+    <h2>Serviços de Eletricista Residencial e Comercial em Barueri</h2>
+
+    <div class="mrt-grid mrt-grid-2">
+
+      <div class="mrt-cert">
+        <h3>Instalação de Tomadas, Interruptores e Iluminação</h3>
+        <p>
+          Serviço de eletricista em Barueri para instalação de tomadas, interruptores, luminárias, spots de LED, plafons, lustres e circuitos de iluminação residencial e comercial.
+        </p>
+      </div>
+
+      <div class="mrt-cert">
+        <h3>Troca de Disjuntores e Quadros Elétricos</h3>
+        <p>
+          Correção de quadros elétricos antigos, troca de disjuntores desarmando, reorganização de circuitos e adequação elétrica conforme NBR 5410.
+        </p>
+      </div>
+
+      <div class="mrt-cert">
+        <h3>Infraestrutura Elétrica para Ar-Condicionado</h3>
+        <p>
+          Instalação de circuitos dedicados para ar-condicionado split, dimensionamento de carga elétrica e proteção correta para equipamentos de climatização.
+        </p>
+      </div>
+
+      <div class="mrt-cert">
+        <h3>Diagnóstico de Curto-Circuito e Sobrecarga</h3>
+        <p>
+          Identificação técnica de curto-circuito, fios aquecendo, cheiro de queimado, oscilação elétrica e quedas frequentes de energia.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--BLOCO SEO TÉCNICO COMERCIAL-->
+<section id="perto-de-mim" class="mrt-section">
+  <div class="mrt-container">
+
+    <h2>Eletricista perto de mim em Barueri</h2>
+
+    <div class="mrt-card mrt-accent">
+      <p>O Mestre dos Reparos atende clientes que procuram <strong>eletricista em Barueri</strong>, 
+<strong>eletricista residencial Barueri</strong>, <strong>eletricista para empresas Barueri</strong>, 
+<strong>eletricista plantão 24 em Barueri</strong> e <strong>eletricista perto de mim em Barueri</strong>.
+      </p>
+      <p style="margin-bottom: 0px;">
+        Executamos reparos, instalações, revisão de quadros elétricos, troca de disjuntores, correção de curto-circuito,
+        tomadas aquecendo, circuitos dedicados e manutenção elétrica para residências, comércios e empresas.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!--BLOCO EMERGÊNCIA-->
+<section class="mrt-section">
+  <div class="mrt-container">
+
+    <h2>Atendimento Elétrico de Emergência 24 Horas</h2>
+
+    <div class="mrt-card">
+      <p>
+        Atendimento para situações críticas como <strong>disjuntor desarmando</strong>, falta de energia parcial,
+        cheiro de queimado, tomada derretendo, curto-circuito, sobrecarga elétrica e falhas que colocam o imóvel em risco.
+      </p>
+      <p style="margin-bottom: 0px;">
+        O objetivo é identificar a causa real do problema, corrigir a falha com segurança e evitar improvisos que possam
+        gerar novos riscos elétricos.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!--BLOCO AUTORIDADE TÉCNICA-->
+<section class="mrt-section">
+  <div class="mrt-container">
+
+    <h2>Por que a Mestre dos Reparos é Referência na Região?</h2>
+
+    <div class="mrt-card mrt-accent">
+      <p>
+        Trabalhamos com critério técnico, seguindo a <strong>norma <a href="https://share.google/0pADlQEOjTaurgA4B" target="_blank">ABNT NBR 5410</a></strong>, boas práticas de <strong><a href="https://share.google/9scbKqVr6ZITmUCPw" target="_blank">NR10</a></strong>
+        e padrões exigidos pela <a href="https://www.enel.com.br/pt-saopaulo.html" rel="noopener" target="_blank">Enel Distribuição São Paulo</a>.
+      </p>
+      <p style="margin-bottom: 0px;">
+        Utilizamos e especificamos componentes reconhecidos no mercado, como 
+        <a href="https://www.siemens.com/br/pt.html" rel="noopener" target="_blank">Siemens</a>, 
+        <a href="https://www.se.com/br/pt/" rel="noopener" target="_blank">Schneider Electric</a>, 
+        <a href="https://new.abb.com/br" rel="noopener" target="_blank">ABB</a>, 
+        <a href="https://www.steckgroup.com/" rel="noopener" target="_blank">Steck</a>, 
+        <a href="https://www.soprano.com.br/" rel="noopener" target="_blank">Soprano</a>, 
+        <a href="https://www.legrand.com.br/" rel="noopener" target="_blank">Pial Legrand</a>, 
+        <a href="https://www.weg.net/" rel="noopener" target="_blank">WEG</a>, 
+        cabos Sil, <a href="https://share.google/Y26ORmGDyQHWeGelc" target="_blank">conectores</a> <a href="https://share.google/Y26ORmGDyQHWeGelc" target="_blank">Wago</a>, <strong>disjuntor DR</strong> e <strong>DPS</strong>.
+      </p>
+    </div>
+
+  </div>
+</section>
+  
+  <section style="padding: 20px 0px;">
+  
+  <!--TOC-->
+  <nav aria-label="Índice da página" class="mestre-toc">
+    <h3>📋 Nesta página</h3>
+    <ol>
+      <li><a href="#servicos">Serviços elétricos em Barueri</a></li>
+      <li><a href="#casos-reais">Casos reais atendidos</a></li>
+      <li><a href="#o-que-faz">O que faz um eletricista em Barueri</a></li>
+      <li><a href="#calcular">Calculadora de preços</a></li>
+      <li><a href="#hub">Guias e conteúdo por tema</a></li>
+      <li><a href="#bairros">Bairros atendidos em Barueri</a></li>
+      <li><a href="#cidades">Cidades da região</a></li>
+      <li><a href="#avaliacoes">Avaliações de clientes</a></li>
+      <li><a href="#faq">Perguntas frequentes</a></li>
+      <li><a href="#mapa">Localização e mapa</a></li>
+    </ol>
+  </nav>
+
+  <!--CALCULADORA-->
+  <section class="mestre-section mestre-container" id="calcular">
+    <div class="mestre-card" style="background: rgb(255, 255, 255);">
+      <span class="mestre-title-tag">✨ ESTIMATIVAS ONLINE</span>
+      <h2>Calcule o preço do seu serviço na hora</h2>
+      <p>Use nossa calculadora interativa e descubra o valor estimado antes mesmo de falar com a gente. Sem surpresas.</p>
+      <div class="mestre-preco-box">
+        <p>💡 Referência de mercado em Barueri: <strong>troca de tomada a partir de R$ 50</strong> · <strong>troca de disjuntor a partir de R$ 100</strong> · <strong>instalação de chuveiro a partir de R$ 80</strong> · <strong>revisão de quadro elétrico sob consulta</strong>. Use a calculadora para o valor exato do seu serviço.</p>
+      </div>
+      <div class="mestre-chip-wrap">
+        <span class="mestre-chip">Marido de Aluguel</span>
+        <span class="mestre-chip">⚡ Elétrica</span>
+      </div>
+      <a class="mestre-btn-gold mestre-btn-block" href="https://mestre-reparos.base44.app/Calculadora">🧮 Calcular Agora — É Grátis</a>
+    </div>
+  </section>
+
+  <div style="height: 50px;"></div>
+
+  <section class="seo-bloco">
+    <h2>Eletricista em Barueri! Os mais bem avaliados. Para Reparos, Instalações e Emergências 24 Horas</h2>
+    <p>O Mestre dos Reparos realiza serviços elétricos residenciais e comerciais em Barueri com atendimento rápido e suporte técnico especializado. Atuamos com instalação de tomadas, troca de disjuntores, diagnóstico de curto-circuito, manutenção elétrica preventiva, instalação de luminárias, ventiladores de teto e atendimento emergencial 24 horas — conforme a <strong>NBR 5410</strong>.</p>
+    <p>Atendemos apartamentos, casas, condomínios, empresas e comércios em Alphaville, Tamboré, Bethaville, Jardim Belval, Centro de Barueri, Aldeia da Serra e região. <strong>Chegamos em 30 a 50 minutos</strong> após confirmação pelo WhatsApp.</p>
+  </section>
+
+  <!--CONTADOR-->
+  <section class="mestre-section mestre-blue" style="padding-top: 0px;">
+    <div class="mestre-container">
+      <div class="mestre-counter-grid">
+        <div class="mestre-counter-item">
+          <div class="mestre-counter-icon">👥</div>
+          <div class="mestre-counter-number">1500+</div>
+          <div class="mestre-counter-label">Clientes Atendidos</div>
+        </div>
+        <div class="mestre-counter-item">
+          <div class="mestre-counter-icon">📄</div>
+          <div class="mestre-counter-number">13</div>
+          <div class="mestre-counter-label">Contratos Ativos</div>
+        </div>
+        <div class="mestre-counter-item">
+          <div class="mestre-counter-icon">🏅</div>
+          <div class="mestre-counter-number">15</div>
+          <div class="mestre-counter-label">Anos de Experiência</div>
+        </div>
+        <div class="mestre-counter-item">
+          <div class="mestre-counter-icon">📈</div>
+          <div class="mestre-counter-number">98%</div>
+          <div class="mestre-counter-label">Taxa de Satisfação</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--BLOCO DE SERVIÇOS-->
+  <section class="mestre-section mestre-container" id="servicos">
+    <span class="mestre-title-tag">NOSSOS SERVIÇOS</span>
+    <h2>Soluções completas para sua casa e sua empresa. Eletricista em Barueri, Marido de aluguel. Abertos agora! Atendimento imediato, Chame no whatsapp, ou agende on-line</h2>
+    <p>Oferecemos serviços de eletricista em Barueri e região, marido de aluguel, com atendimento rápido e organizado em Barueri e cidades vizinhas.</p>
+    <div class="mestre-services-grid" style="display: grid; gap: 18px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); margin: 35px 0px;">
+      <a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html" style="background: rgb(11, 42, 74); border-radius: 16px; border: 3px solid rgb(255, 180, 0); box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px; color: white; display: block; padding: 24px 20px; text-decoration: none;">
+        <h3 style="color: #ffb400; font-size: 24px; margin: 0px 0px 12px;">⚡ Eletricista em Barueri</h3>
+        <p style="color: white; font-size: 16px; line-height: 1.7; margin: 0px;">Chamar Eletricista Agora!</p>
+      </a>
+      <a href="https://www.mestredosreparos.app.br/p/marido-de-aluguel.html" style="background: rgb(11, 42, 74); border-radius: 16px; border: 3px solid rgb(255, 180, 0); box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px; color: white; display: block; padding: 24px 20px; text-decoration: none;">
+        <h3 style="color: #ffb400; font-size: 24px; margin: 0px 0px 12px;">🛠️ Marido de Aluguel em Barueri</h3>
+        <p style="color: white; font-size: 16px; line-height: 1.7; margin: 0px;">Chamar Marido de Aluguel Agora!</p>
+      </a>
+    </div>
+  </section>
+
+  <!--CASOS REAIS-->
+  <section id="casos-reais" style="background: rgb(245, 247, 250); border-radius: 22px; margin: 50px 0px; padding: 60px 20px;">
+    <div style="margin: auto; max-width: 1200px;">
+      <span style="background: rgb(255, 106, 0); border-radius: 30px; color: white; font-size: 14px; font-weight: bold; padding: 8px 16px;">CASOS REAIS ATENDIDOS</span>
+      <h2 style="color: #0b2a4a; font-size: 38px; line-height: 1.3; margin-top: 20px;">Serviços Executados em Barueri e Região</h2>
+      <p style="color: #4b5563; font-size: 19px; line-height: 1.9; max-width: 950px;">O Mestre dos Reparos realiza atendimentos reais em apartamentos, casas, condomínios e empresas em Barueri. As imagens abaixo são de serviços executados pela nossa equipe em instalações elétricas, reparos emergenciais, montagem e manutenção residencial.</p>
+      <div style="display: grid; gap: 28px; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); margin-top: 40px;">
+        <div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHG_wwUTlcnUjSTMNkrzOkjJRzaAinjZ6gMnWMJb4RA_zkSjh4tULkRPIp99o1IK7gbnBdwYPyDuCvPY3YYrpgCiEsGgv8jhSoKoAmv0xVZcyb3fd9WyfZ3GZeE7cAPAP5S-D5Vp-g_ziw4D4OcNZOd4BzfO5UjyXqtXM_KV0rESEqrfnoLltxEOtgKzu/s1600/1000439067.jpg" style="height: 280px; object-fit: cover; width: 100%;" />
+          <div style="padding: 24px;"><h3 style="color: #0b2a4a; font-size: 22px;">Tomada Aquecendo</h3><p style="color: #5f6b7a; line-height: 1.8;">Diagnóstico de aquecimento por mau contato em tomada residencial com risco de carbonização e curto-circuito.</p></div>
+        </div>
+        <div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogz6RJwEyTHlrf0_h6kvIgvzj4Ssm7zY9hw_mkMT4UxoTutEp-THq2cDJGspls-mLaKp3-dxqbTfNvC7G4nz20wvC8wxNNoteeP9-ojhR9R_c4G0we22rfyUeYlxSZvwsxLDFjHzOfmOQmBRfXM1Cg2H4UKIBrIee4twE3qRCb52Sm4d1M30Ts4JtM06j/s1600/1000439057.jpg" style="height: 280px; object-fit: cover; width: 100%;" />
+          <div style="padding: 24px;"><h3 style="color: #0b2a4a; font-size: 22px;">Quadro Elétrico</h3><p style="color: #5f6b7a; line-height: 1.8;">Correção e revisão de quadro elétrico residencial após falha de aquecimento em circuito.</p></div>
+        </div>
+        <div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEneL_V0eNZVdSffmuiyD5-ihSu8TokMZS2p80Ud_RKfjzRXXupCI4d7_u8Z8_NNedkGXfWPtpjOFVpLq-rqHszpEt4xxxHYNkLA57z-UYAfeNtbxYVlRnSkGacY9NlJ-fPVoyeEPVIrC2V2Vhw8d_GJ0WXaq4dvQDry5Mgcdjkg66OVD_CmBpOc1rfqe5/s4080/1000401900.jpg" style="height: 280px; object-fit: cover; width: 100%;" />
+          <div style="padding: 24px;"><h3 style="color: #0b2a4a; font-size: 22px;">Montagem Residencial</h3><p style="color: #5f6b7a; line-height: 1.8;">Serviços de montagem e instalação executados em apartamentos e residências em Barueri.</p></div>
+        </div>
+        <div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2eW-zw-DBFaHxUjhr9YnM7gVgzzQdnxh8Q2oTcteMkrW8zG7P1gdTSWcp0VJhNI7jMof-nEJ1asXr0Edd0tb-gX9ouDJF-W2NgwBbS8iIUODVB3bk5R-Zlpc3Vt7ittyn5zE9h1XPyTmkXkimh0Y_m0iW6eQSwDaiShRKta4sH95Nd7qt9yYLMFKA_dJ1/s1600/1000385655.jpg" style="height: 280px; object-fit: cover; width: 100%;" />
+          <div style="padding: 24px;"><h3 style="color: #0b2a4a; font-size: 22px;">Instalação e Acabamento</h3><p style="color: #5f6b7a; line-height: 1.8;">Atendimento residencial com foco em acabamento, organização e execução profissional.</p></div>
+        </div>
+        <div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYg96CYWymvFCvg67gRxmlvnJPeTr6wOeU_u3_nqqPVervRMHftjQJeboAPNEunHxx0CFWBE0Ngt_O0KtQsM7AAoYmcp-n_3zJA1ZXsEcpdjcZoPFPuTce0nKnSvORi7g1n6HP3Vbav5_beyLpXGbMsMyfnXOl0rQtQW7jadp8DNCT1ekM6iMH7ujKYcYx/s478/1000256887.jpg" style="height: 280px; object-fit: cover; width: 100%;" />
+          <div style="padding: 24px;"><h3 style="color: #0b2a4a; font-size: 22px;">Atendimento Técnico</h3><p style="color: #5f6b7a; line-height: 1.8;">Equipe atuando em manutenção e suporte técnico residencial com atendimento profissional.</p></div>
+        </div>
+      </div>
+      <div style="margin-top: 50px; text-align: center;">
+        <a href="https://wa.me/5511918390430" style="background: rgb(255, 106, 0); border-radius: 12px; color: white; display: inline-block; font-size: 18px; font-weight: bold; padding: 18px 32px; text-decoration: none;">Solicitar Atendimento Agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!--SERVIÇOS DETALHADOS-->
+  <section class="mestre-servicos-home">
+    <h2>Eletricista em Barueri e Marido de Aluguel em Barueri</h2>
+    <p class="sub">Atendimento rápido em Barueri e região. Serviço profissional, organizado e com garantia.</p>
+    <div class="grid-servicos">
+      <div class="card-servico">
+        <h3>Procurando um eletricista em Barueri com atendimento rápido, suporte emergencial 24 horas e serviço profissional para residências, comércios e condomínios? O Mestre dos Reparos atende Barueri e região com agilidade, experiência e diagnóstico técnico especializado.</h3>
+        <p>Instalações e manutenções elétricas conforme a NBR 5410. Troca de disjuntores, tomadas, chuveiros e resistências. Atendimento emergencial com plantão 24 horas. Instalação de ventiladores de teto, automação residencial, circuitos de iluminação e tomadas. Diagnóstico e reparo de curto-circuito, além de análise e correção de disjuntores desarmando. Dimensionamento e montagem de quadros elétricos e condutores. Laudo de instalação elétrica. Instalação de portões eletrônicos, sistemas de CFTV, fechaduras eletrônicas, interruptores inteligentes, lustres, pendentes e arandelas.</p>
+        <span class="tag">⚡ Perto de você</span>
+        <span class="tag destaque">⚡ 24 horas</span>
+        <span class="tag">🚗 30-50 min</span>
+      </div>
+      <div class="card-servico">
+        <h3>Marido de aluguel em Barueri, Marido de aluguel perto de mim.</h3>
+        <p>Fixação e pequenos reparos em geral. Instalação de suportes, prateleiras, persianas, cortinas, barras de acessibilidade e piso tátil. Ajustes e reparos residenciais diversos. Instalação de ar-condicionado split. Troca de torneiras, sifões e registros. Instalação de espelhos e quadros. Instalação de filtros e purificadores de água. Montagem de móveis em geral. Pequenas pinturas, impermeabilização e tratamento de paredes com umidade.</p>
+        <span class="tag">🔧 Serviço completo</span>
+      </div>
+      <div class="card-servico urgencia">
+        <h3>Emergência elétrica 24h</h3>
+        <p>Falta de energia, curto-circuito, disjuntor desarmando. Chegamos em 30 a 50 minutos em Barueri.</p>
+        <a class="btn-cta" href="https://wa.me/5511918390430">⚡ Chamar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!--O QUE FAZ-->
+  <section class="seo-servicos" id="o-que-faz">
+    <h2>O que faz um Eletricista em Barueri</h2>
+    <ul>
+      <li>Troca de disjuntores desarmando</li>
+      <li>Reparo de curto-circuito</li>
+      <li>Tomadas aquecendo ou queimando</li>
+      <li>Instalação de ventilador de teto</li>
+      <li>Troca de resistência de chuveiro</li>
+      <li>Instalação de luminárias e plafons</li>
+      <li>Correção de queda de energia parcial</li>
+      <li>Instalação de tomadas 110v e 220v — padrão NBR 14136</li>
+      <li>Montagem e adequação de quadro elétrico</li>
+      <li>Instalação elétrica residencial conforme NBR 5410</li>
+      <li>Manutenção elétrica comercial</li>
+      <li>Eletricista emergencial 24 horas</li>
+      <li>Troca de fiação elétrica antiga</li>
+      <li>Instalação de circuitos dedicados</li>
+      <li>Diagnóstico de sobrecarga elétrica</li>
+      <li>Instalação e verificação de aterramento elétrico</li>
+      <li>Instalação de dispositivo DR e DPS</li>
+      <li>Laudo de instalação elétrica</li>
+    </ul>
+  </section>
+
+  <!--AGENDAMENTO-->
+  <section class="mestre-section mestre-container">
+    <div class="mestre-card">
+      <span class="mestre-title-tag">📅 AGENDAMENTO ONLINE</span>
+      <h2>Agende seu atendimento sem complicação</h2>
+      <p>Escolha o melhor dia e horário para elétrica e serviços de manutenção em Barueri e região.</p>
+      <a class="mestre-btn-blue mestre-btn-block" href="https://mestre-reparos.base44.app/Agendamento">Agendar Atendimento</a>
+    </div>
+  </section>
+
+  <!--HUB-->
+  <div class="mestre-hub-wrapper" id="hub">
+
+    <nav aria-label="Serviços elétricos em Barueri" class="mestre-hub-section">
+      <h2>⚡ Serviços Elétricos em Barueri</h2>
+      <p class="mestre-hub-desc">Atendimento residencial e emergencial para apartamentos, condomínios, casas e comércios em Barueri e região.</p>
+      <div class="mestre-servicos">
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletricistaembarueri.html">
+          <h3>⚡ Eletricista em Barueri — agendamento e estimativas online</h3>
+          <p>Atendimento residencial e emergencial para apartamentos, condomínios, casas e comércios.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-antendimento.html">
+          <h3>🚨 Eletricista em Barueri — Atendimento Imediato 24 horas</h3>
+          <p>Atendimento rápido para falta de energia, curto-circuito e problemas elétricos urgentes.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletricista-perto-de-mim-em-barueri.html">
+          <h3>📍 Eletricista Perto de Mim em Barueri</h3>
+          <p>Serviços elétricos próximos com atendimento em bairros e condomínios de Barueri.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-servicos.html">
+          <h3>🔌 Serviços Elétricos em Barueri — chegada em 30 a 40 minutos</h3>
+          <p>Troca de tomadas, disjuntores, ventiladores, luminárias e manutenção elétrica.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-condominos.html">
+          <h3>🏢 Eletricista em Condomínios de Barueri</h3>
+          <p>Atendimento em condomínios como Viva Mais, Inspire, Spazio e Vitalle.</p>
+        </a>
+      </div>
+    </nav>
+
+    <nav aria-label="Guias sobre problemas elétricos em Barueri" class="mestre-hub-section">
+      <h2>📖 Guias — Como Funciona e Quando Chamar</h2>
+      <p class="mestre-hub-desc">Entenda como funciona o atendimento elétrico em Barueri e reconheça os sinais de risco antes que virem emergência.</p>
+      <div class="mestre-servicos">
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/como-funciona-o-atendimento-de.html">
+          <h3>🔍 Como Funciona o Atendimento Emergencial em Barueri</h3>
+          <p>Passo a passo do atendimento de urgência elétrica — do chamado até a garantia do serviço.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/7sinais-para-chamar-eletricista-em-barueri.html">
+          <h3>⚠️ 7 Sinais de que Você Precisa de Eletricista em Barueri Agora</h3>
+          <p>Reconheça os sinais de risco elétrico antes que virem curto-circuito, incêndio ou choque.</p>
+ 
+          </a><a class="mestre-card" href="   https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html?m=1"> 
+         <h3>👨‍🔧Eletricista em Barueri | Mestre dos Reparos com Responsabilidade técnica</h3>
+          <p>Mestre dos Reparos, segurança elétrica não é um argumento comercial</p>                 
+          
+   </a><a class="mestre-card" href=" https://www.mestredosreparos.app.br/2026/05/eletrica-130-%20perguntas-e-respostas.html?m=1">
+          <h3>⚡ Problemas com Elétrica? Veja agora 130 perguntas e respostas e tire todas as dúvidas</h3>
+          <p>Saiba o que fazer usando o conteúdo de perguntas e respostas Mestre dos Reparos.</p>       
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-quando-chamar.html">
+          <h3>📋 Guia Completo: Eletricista 24 Horas em Barueri</h3>
+          <p>Quando chamar, quanto custa, o que exigir do profissional e como garantir segurança elétrica em Barueri.</p>
+        </a>
+      </div>
+    </nav>
+
+    <nav aria-label="Problemas elétricos mais comuns em Barueri" class="mestre-hub-section">
+      <h2>⚠️ Problemas Elétricos Mais Comuns em Barueri</h2>
+      <p class="mestre-hub-desc">Disjuntores desarmando, tomadas aquecendo e DR desligando exigem avaliação rápida para evitar riscos e danos.</p>
+      <div class="mestre-servicos">
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/disjuntor-desarmando-causas-riscos-e.html">
+          <h3>⚡ Disjuntor Desarmando em Barueri</h3>
+          <p>Causas, riscos e como resolver disjuntor desarmando com frequência.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/drdesarmandoeletrecistaembarueri.html">
+          <h3>⚠️ DR Desarmando em Barueri</h3>
+          <p>O DR desarmando pode indicar fuga de corrente ou falha elétrica na instalação.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/tomada-ou-cabos-aquecendo-causas-riscos.html">
+          <h3>🔥 Tomadas ou Cabos Aquecendo em Barueri</h3>
+          <p>Cabos aquecendo e cheiro de queimado são sinais de risco elétrico imediato.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/disjuntorgeraleletricistaembarueri.html">
+          <h3>🔌 Disjuntor Geral em Barueri</h3>
+          <p>Problemas no disjuntor geral podem causar desligamentos e falhas elétricas.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/trocadetomadaseinteruptores.html">
+          <h3>💡 Troca de Tomadas e Interruptores em Barueri</h3>
+          <p>Substituição de tomadas antigas, interruptores queimados e instalação elétrica residencial.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00_7.html">
+          <h3>🚿 Chuveiro Desligando a Energia em Barueri</h3>
+          <p>Chuveiro derrubando a energia indica circuito subdimensionado ou resistência com defeito.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00.html">
+          <h3>💡 Luz Piscando ou Oscilando em Barueri</h3>
+          <p>Lâmpadas piscando podem indicar variação de tensão, conexão frouxa ou falha no circuito.</p>
+        </a>
+      </div>
+    </nav>
+
+    <!--HUB BAIRROS + CIDADES — ATUALIZADO COM 5 NOVOS BAIRROS-->
+    <nav aria-label="Eletricista nos bairros e cidades da região de Barueri" class="mestre-hub-section">
+      <h2>📍 Eletricista nos Bairros e Região de Barueri</h2>
+      <p class="mestre-hub-desc">Atendimento elétrico residencial nos bairros de Barueri e cidades vizinhas com suporte para condomínios, apartamentos e residências.</p>
+      <div class="mestre-servicos">
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-engenho-novo.html?m=1">
+          <h3>📍 Eletricista no Engenho Novo — Barueri</h3>
+          <p>Atendimento elétrico residencial e emergencial no Engenho Novo em Barueri.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-18-do-forte.html?m=1">
+          <h3>📍 Eletricista no 18 do Forte — Barueri</h3>
+          <p>Instalações elétricas, manutenção e atendimento emergencial no 18 do Forte em Barueri.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-jardim-paulista.html?m=1">
+          <h3>📍 Eletricista no Jardim Paulista — Barueri</h3>
+          <p>Atendimento para apartamentos, residências e condomínios no Jardim Paulista em Barueri.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-boa-vista.html?m=1">
+          <h3>📍 Eletricista no Boa Vista — Barueri</h3>
+          <p>Serviços elétricos residenciais e emergenciais no Boa Vista em Barueri.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-cruz-preta.html?m=1">
+          <h3>📍 Eletricista na Cruz Preta — Barueri</h3>
+          <p>Atendimento elétrico residencial e emergencial na Cruz Preta em Barueri.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletrecista-em-santana-de-paranaiba.html">
+          <h3>📍 Eletricista em Santana de Parnaíba</h3>
+          <p>Serviços elétricos residenciais e atendimento em condomínios da região.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletrecista-em-itapevi-mestre-dos.html">
+          <h3>⚡ Eletricista em Itapevi</h3>
+          <p>Instalações elétricas, manutenção e atendimento emergencial em Itapevi.</p>
+        </a>
+        <a class="mestre-card" href="https://www.mestredosreparos.app.br/2026/05/eletricista-em-jandira-mestre-dos.html">
+          <h3>🔌 Eletricista em Jandira</h3>
+          <p>Atendimento para apartamentos, residências e condomínios em Jandira.</p>
+        </a>
+      </div>
+    </nav>
+
+  </div>
+
+  <!--ATENDIMENTO REAL-->
+  <section class="seo-real">
+    <h2>Atendimento Real em Barueri e Região</h2>
+    <p>Diferente de páginas genéricas com bancos de imagem, o Mestre dos Reparos utiliza fotos reais dos atendimentos realizados em Barueri e região. Nosso trabalho envolve manutenção elétrica residencial, instalações, montagens e atendimentos emergenciais executados diariamente em apartamentos, casas, empresas e condomínios.</p>
+    <p>Cada atendimento é realizado com foco em segurança, diagnóstico correto e solução definitiva do problema elétrico — conforme as normas técnicas da <strong>NBR 5410</strong>.</p>
+  </section>
+
+  <!--BAIRROS-->
+  <section id="bairros">
+    <h2>Eletricista em Barueri e Marido de Aluguel perto de mim em Barueri</h2>
+    <p style="margin-bottom: 20px;">Atendimento em todos os bairros de Barueri com rapidez, organização e execução profissional para residências, comércios e condomínios.</p>
+    <div class="bairros-colunas">
+      <div class="coluna">
+        <a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-18-do-forte.html?m=1" target="_blank"><span>18 do Forte</span></a>
+        <span>Aldeia da Serra</span>
+        <a href="https://www.mestredosreparos.app.br/p/blog-page_3.html" target="_blank"><span>Aldeia de Barueri</span></a>
+        <a href="https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html" target="_blank"><span>Alphaville</span></a>
+        <a href="https://www.mestredosreparos.app.br/p/blog-page_83.html" target="_blank"><span>Bethaville</span></a>
+        <a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-boa-vista.html?m=1" target="_blank"><span>Boa Vista</span></a>
+        <a href="https://www.mestredosreparos.app.br/p/blog-page_2.html" target="_blank"><span>Centro</span></a>
+        <span>Chácaras Marco</span>
+        <a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-cruz-preta.html?m=1" target="_blank"><span>Cruz Preta</span></a>
+        <a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-engenho-novo.html?m=1" target="_blank"><span>Engenho Novo</span></a>
+        <span>Fazenda Militar</span>
+        <span>Jardim Audir</span>
+        <span>Jardim Barueri</span>
+        <a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html" target="_blank"><span>Jardim Belval</span></a>
+        <span>Jardim Califórnia</span>
+        <span>Nossa Senhora da Escada</span>
+        <span>Votupoca</span>
+        <a href="https://www.mestredosreparos.app.br/p/blog-page_8.html" target="_blank"><span>Parque Viana</span></a>
+        <span>Parque Imperial</span>
+      </div>
+      <div class="coluna">
+        <span>Jardim dos Camargos</span>
+        <span>Jardim Esperança</span>
+        <span>Jardim Graziela</span>
+        <span>Jardim Iracema</span>
+        <span>Jardim Itaquiti</span>
+        <span>Jardim Júlio</span>
+        <span>Jardim Líbano</span>
+        <span>Jardim Maria Cristina</span>
+        <span>Jardim Maria Helena</span>
+        <span>Jardim Mutinga</span>
+        <span>Jardim Paraíso</span>
+        <a href="https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-jardim-paulista.html?m=1" target="_blank"><span>Jardim Paulista</span></a>
+        <span>Jardim Reginalice</span>
+        <span>Jardim São Pedro</span>
+        <span>Jardim São Silvestre</span>
+        <a href="https://www.mestredosreparos.app.br/p/blog-page_87.html" target="_blank"><span>Tamboré</span></a>
+        <a href="https://www.mestredosreparos.app.br/p/blog-page_29.html" target="_blank"><span>Jardim Silveira</span></a>
+        <span>Jardim dos Altos</span>
+        <a href="https://www.mestredosreparos.app.br/p/blog-page_43.html?m=1" target="_blank"><span>Tupanci</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!--CIDADES-->
+  <section class="mestre-section mestre-container" id="cidades">
+    <span class="mestre-title-tag">ATENDIMENTO REGIONAL</span>
+    <h2>Cidades de atendimento Eletricista em Barueri 24 horas e Marido de Aluguel</h2>
+    <p>Atendemos Barueri, Jandira, Santana de Parnaíba, Aldeia da Serra e Itapevi.</p>
+    <div class="mestre-city-grid">
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html">Barueri</a>
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/2026/05/eletricista-em-jandira-mestre-dos.html">Jandira</a>
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/2026/05/eletrecista-em-santana-de-paranaiba.html">Santana de Parnaíba</a>
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/p/eletricista-em-aldeia-da-serra.html">Aldeia da Serra</a>
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/2026/05/eletrecista-em-itapevi-mestre-dos.html">Itapevi</a>
+    </div>
+  </section>
+
+  <!--AVALIAÇÕES-->
+  <section class="mestre-section mestre-container" id="avaliacoes">
+    <span class="mestre-title-tag">DEPOIMENTOS</span>
+    <h2>O que dizem nossos clientes</h2>
+    <p class="mestre-center">Confiança conquistada através de serviços de qualidade e atendimento excepcional.</p>
+    <div style="display: grid; gap: 16px; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); margin-top: 32px;">
+      <div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+        <div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+          <div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">H</div>
+          <div><div style="color: white; font-size: 14px; font-weight: 600;">Hemillin Rodrigues</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div>
+        </div>
+        <div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+        <div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Super indico profissional topp bem organizada amei obrigada"</div>
+        <span style="border-radius: 100px; border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; display: inline-block; font-size: 11px; margin-top: 12px; padding: 3px 10px;">Manutenção predial • Santana de Parnaíba</span>
+      </div>
+      <div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+        <div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+          <div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">C</div>
+          <div><div style="color: white; font-size: 14px; font-weight: 600;">Cristiane Rodrigues</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div>
+        </div>
+        <div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+        <div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Excelente trabalho, pontualidade, respeito, e trabalho entregue...ótimo"</div>
+        <span style="color: #f59e0b; font-size: 11px;">Instalação elétrica</span>
+      </div>
+      <div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+        <div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+          <div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">R</div>
+          <div><div style="color: white; font-size: 14px; font-weight: 600;">Rodrigo Ferrari</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div>
+        </div>
+        <div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+        <div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Profissional excelente! Caprichoso e justo. Merece indicação!"</div>
+        <span style="border-radius: 100px; border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; display: inline-block; font-size: 11px; margin-top: 12px; padding: 3px 10px;">Eletricista em Barueri</span>
+      </div>
+      <div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+        <div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+          <div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">Y</div>
+          <div><div style="color: white; font-size: 14px; font-weight: 600;">Yasmim Clissa</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div>
+        </div>
+        <div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+        <div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Atendimento rápido e eficaz"</div>
+        <span style="border-radius: 100px; border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; display: inline-block; font-size: 11px; margin-top: 12px; padding: 3px 10px;">Eletricista em Barueri</span>
+      </div>
+    </div>
+    <div style="margin-top: 32px; text-align: center;">
+      <a href="https://www.google.com.br/search?ibp=gwp;0,7&amp;q=Mestre+dos+Reparos+%E2%80%93+Manuten%C3%A7%C3%A3o+e+Limpeza&amp;ludocid=10403281540691542326&amp;lsig=AB86z5VLVQ_QdcgOrXbf9RM6gL78#lkt=LocalPoiReviews&amp;lpg=cid:CgIgAQ%3D%3D" style="align-items: center; background: rgb(245, 158, 11); border-radius: 100px; color: #0d2461; display: inline-flex; font-size: 15px; font-weight: 700; gap: 8px; padding: 14px 32px; text-decoration: none;" target="_blank">⭐ Veja todas as avaliações no Google</a>
+    </div>
+  </section>
+
+  <!--SEO BAIRROS-->
+  <section class="seo-bairros">
+    <h2>Eletricista em Todos os Bairros de Barueri</h2>
+    <p>Atendemos: Alphaville, Tamboré, Bethaville, Jardim Belval, Jardim Paulista, Vila Boa Vista, Parque Imperial, Engenho Novo, Aldeia de Barueri, Centro de Barueri, Jardim Tupanci, Vila São Francisco, Jardim Silveira, Jardim Maria Helena, Jardim Califórnia, Regina Alice e região.</p>
+  </section>
+
+  <!--FAQ-->
+  <section class="mestre-section mestre-container" id="faq">
+    <span class="mestre-title-tag">❓ DÚVIDAS FREQUENTES</span>
+    <h2>Perguntas e Respostas</h2>
+    <p>Reunimos as principais dúvidas sobre atendimento, orçamento e serviços elétricos em Barueri.</p>
+    <div class="mestre-faq-list">
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Qual a área de atendimento?</button>
+        <div class="mestre-faq-a">Atendemos todos os bairros de Barueri, além de cidades próximas da região conforme disponibilidade da agenda.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Quanto custa um eletricista em Barueri?</button>
+        <div class="mestre-faq-a">O valor varia conforme o tipo de serviço, complexidade e urgência. Referências de mercado em Barueri: troca de tomada a partir de R$ 50, troca de disjuntor a partir de R$ 100, instalação de chuveiro a partir de R$ 80, revisão de quadro elétrico sob consulta. Use nossa calculadora online para estimativa personalizada ou chame no WhatsApp (11) 91839-0430.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Vocês atendem emergência elétrica 24 horas?</button>
+        <div class="mestre-faq-a">Sim. Realizamos atendimento emergencial para curto-circuito, falta de energia, disjuntores desarmando, tomadas aquecendo e riscos elétricos.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Quanto tempo demora para o atendimento?</button>
+        <div class="mestre-faq-a">O prazo depende da agenda e da região, mas trabalhamos com atendimento rápido sempre que possível. Em condições normais chegamos em 30 a 50 minutos após confirmação pelo WhatsApp em Barueri.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Como funciona o orçamento?</button>
+        <div class="mestre-faq-a">Você pode solicitar atendimento pelo WhatsApp, utilizar a calculadora online ou agendar diretamente pelo sistema online. O orçamento é apresentado antes de iniciar qualquer serviço — sem surpresas no valor final.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">O serviço possui garantia?</button>
+        <div class="mestre-faq-a">Sim. Os serviços executados possuem garantia técnica de 90 dias conforme o Código de Defesa do Consumidor. Se qualquer problema ocorrer relacionado à execução dentro do prazo, retornamos sem custo adicional.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Quais formas de pagamento são aceitas?</button>
+        <div class="mestre-faq-a">Aceitamos Pix, débito e crédito conforme a modalidade disponível no atendimento.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Preciso fornecer materiais?</button>
+        <div class="mestre-faq-a">Depende do serviço. Em muitos casos orientamos, validamos ou incluímos os materiais necessários antes da execução.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Vocês atendem apartamentos, condomínios e empresas?</button>
+        <div class="mestre-faq-a">Sim. Atuamos diariamente em apartamentos, residências, condomínios e empresas em Barueri e região.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Vocês fazem instalação de luminárias e ventiladores?</button>
+        <div class="mestre-faq-a">Sim. Realizamos instalação de iluminação, plafons, pendentes, ventiladores de teto e circuitos elétricos.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Vocês emitem nota fiscal e têm CNPJ?</button>
+        <div class="mestre-faq-a">Sim. O Mestre dos Reparos possui CNPJ ativo (64.521.657/0001-87) registrado em Barueri/SP e emite documentação fiscal conforme o serviço contratado.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Vocês fazem laudo de instalação elétrica em Barueri?</button>
+        <div class="mestre-faq-a">Sim. Realizamos laudo de instalação elétrica residencial e comercial em Barueri. A ART (Anotação de Responsabilidade Técnica) é emitida quando aplicável conforme a natureza e exigência contratual do serviço, em conformidade com os critérios do CREA.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">O que fazer quando o disjuntor fica desarmando em Barueri?</button>
+        <div class="mestre-faq-a">Não force o religamento repetido — isso pode agravar o problema e causar incêndio. Disjuntor desarmando com frequência indica sobrecarga no circuito, curto-circuito ou falha em equipamento. Chame um eletricista para diagnosticar a causa real antes de religar.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">É perigoso instalar chuveiro elétrico sem eletricista em Barueri?</button>
+        <div class="mestre-faq-a">Sim, é muito perigoso. O chuveiro elétrico requer circuito exclusivo de 220V com disjuntor adequado, fio dimensionado e aterramento correto. Uma instalação errada pode causar choque, incêndio ou queima do aparelho. Nossa equipe dimensiona e instala o circuito correto conforme a NBR 5410.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">O que é aterramento elétrico e por que é importante?</button>
+        <div class="mestre-faq-a">O aterramento é um sistema de proteção que desvia correntes de fuga para a terra, protegendo pessoas de choques elétricos e equipamentos de danos. É obrigatório pela NBR 5410 em instalações novas. Realizamos instalação e verificação de aterramento em Barueri e região.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Com que frequência devo revisar a instalação elétrica em Barueri?</button>
+        <div class="mestre-faq-a">Recomenda-se revisão elétrica a cada 5 anos em imóveis novos e a cada 2 a 3 anos em imóveis com mais de 15 anos. Imóveis em Barueri com instalações antigas merecem atenção especial pelo aumento no consumo elétrico das famílias modernas.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Como identificar fuga de energia elétrica em casa em Barueri?</button>
+        <div class="mestre-faq-a">Sinais de fuga de energia incluem: choque ao tocar em equipamentos metálicos, aumento inexplicável na conta de luz, disjuntores que desarmam sem motivo aparente, cheiro de queimado e lâmpadas que piscam. Nesses casos, chame um eletricista imediatamente. Nossa equipe usa equipamentos de diagnóstico para localizar o problema com precisão em Barueri.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Qual a diferença entre disjuntor e DR?</button>
+        <div class="mestre-faq-a">O disjuntor protege o circuito contra sobrecarga e curto-circuito — ele desarma quando a corrente ultrapassa o limite seguro. O DR (Dispositivo Residual) protege pessoas contra choques elétricos ao detectar fugas de corrente para a terra. São complementares e ambos obrigatórios pela NBR 5410 em instalações residenciais novas. Realizamos instalação e verificação de ambos em Barueri e região.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Minha conta de luz aumentou muito. Pode ser problema elétrico?</button>
+        <div class="mestre-faq-a">Sim. Aumento inexplicável na conta de luz pode indicar fuga de corrente na instalação, equipamentos com defeito consumindo mais energia, ou ligações clandestinas. Realizamos diagnóstico completo da instalação elétrica em Barueri para identificar desperdícios e irregularidades que aumentam o consumo.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Vocês instalam ar condicionado em Barueri?</button>
+        <div class="mestre-faq-a">Sim. Realizamos a parte elétrica da instalação de ar condicionado split em Barueri — ponto elétrico exclusivo, disjuntor adequado, fiação dimensionada e aterramento. A instalação elétrica correta é essencial para o funcionamento seguro e eficiente do equipamento e para manter a garantia do fabricante.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">É possível instalar tomadas externas e pontos elétricos novos em Barueri?</button>
+        <div class="mestre-faq-a">Sim. Realizamos abertura de novos pontos elétricos, instalação de tomadas externas, circuitos dedicados para equipamentos específicos e extensão de instalações existentes em residências, apartamentos e comércios em Barueri. Todo serviço é executado conforme a NBR 5410.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">O que é um circuito dedicado e quando é necessário?</button>
+        <div class="mestre-faq-a">Circuito dedicado é uma instalação elétrica exclusiva para um único equipamento de alta potência — como ar condicionado, forno elétrico, chuveiro, micro-ondas ou cooktop. É obrigatório pela NBR 5410 para equipamentos acima de determinada potência. Sem circuito dedicado, o equipamento pode causar sobrecarga, disjuntor desarmando e até incêndio. Realizamos dimensionamento e instalação de circuitos dedicados em Barueri.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Vocês atendem imóveis em reforma ou pós-obra em Barueri?</button>
+        <div class="mestre-faq-a">Sim. Atendemos imóveis em reforma, pós-obra e construção em Barueri com instalação elétrica completa, passagem de fiação, montagem de quadro elétrico, pontos de iluminação, tomadas e aterramento. Emitimos laudo de instalação elétrica quando necessário para entrega do imóvel ou exigência de seguradora.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Como funciona o pagamento? Cobram visita técnica?</button>
+        <div class="mestre-faq-a">O valor da visita técnica é informado antes do agendamento. Após o diagnóstico, apresentamos o orçamento completo do serviço para sua aprovação — sem surpresas no valor final. Aceitamos Pix, débito e crédito. Em casos de serviço contratado na mesma visita, a taxa de deslocamento costuma ser abatida do valor total. Consulte pelo WhatsApp (11) 91839-0430.</div>
+      </div>
+
+      <div class="mestre-faq-item">
+        <button class="mestre-faq-q" onclick="toggleFaq(this)">Tomada com faísca ao plugar aparelho é perigoso?</button>
+        <div class="mestre-faq-a">Sim. Faísca ao plugar um aparelho pode ser sinal de mau contato, tomada com defeito, sobrecarga no circuito ou problema na fiação. Faíscas frequentes ou intensas indicam risco real de incêndio elétrico. Não continue usando a tomada e chame um eletricista em Barueri para diagnóstico. WhatsApp (11) 91839-0430.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+  function toggleFaq(button) {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  }
+  </script>
+
+  <!--CTA DÚVIDAS-->
+  <section class="mestre-section mestre-container">
+    <div class="mestre-cta-box">
+      <h2>Ainda tem dúvidas?</h2>
+      <p>Entre em contato conosco, teremos prazer em ajudar.</p>
+      <a class="mestre-btn-gold" href="https://wa.me/5511918390430" style="margin: 0px auto; max-width: 360px;">❓ Falar com especialista</a>
+    </div>
+  </section>
+
+  <!--AVALIAÇÃO GOOGLE-->
+  <section class="mestre-google-box">
+    <div class="mestre-google-stars">★★★★★</div>
+    <h2>Gostou do nosso atendimento?</h2>
+    <p>Sua avaliação nos ajuda a crescer e a oferecer um serviço cada vez melhor. Compartilhe sua experiência no Google.</p>
+    <a class="mestre-btn-gold" href="https://g.page/r/CTZBTDtx4V-QEBM/review" style="margin: 18px auto 0px; max-width: 360px;">☆ Avaliar no Google ↗</a>
+  </section>
+
+  <!--MAPA-->
+  <section class="mestre-section mestre-container" id="mapa">
+    <span class="mestre-title-tag">📍 LOCALIZAÇÃO</span>
+    <h2>Eletricista em Barueri | Mestre dos Reparos</h2>
+    <p>Atendimento em Barueri, Itapevi, Santana de Parnaíba, Jandira e região.</p>
+    <div style="border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 30px; margin-top: 20px; overflow: hidden;">
+      <iframe allowfullscreen="" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Barueri+SP&amp;output=embed" style="border: 0;" width="100%"></iframe>
+    </div>
+    <div style="margin-top: 20px; text-align: center;">
+      <a href="https://maps.app.goo.gl/AcsP6DYGeHc3YqBb7" style="background: rgb(255, 152, 0); border-radius: 100px; color: white; display: inline-block; font-size: 16px; font-weight: 700; padding: 14px 28px; text-decoration: none;" target="_blank">📍 Abrir no Google Maps</a>
+    </div>
+  </section>
+
+  <!--RODAPÉ-->
+  <style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<footer class="mestre-footer">
+    <div class="mestre-footer-brand">
+      <div class="mestre-footer-logo">🔧</div>
+      <div>
+        <p class="mestre-footer-title">Mestre dos Reparos</p>
+        <p class="mestre-footer-sub">Manutenção e Limpeza</p>
+      </div>
+    </div>
+    <p class="mestre-footer-desc">Serviços de elétrica em Barueri e região. Qualidade, segurança e preço justo.</p>
+    <div class="mestre-legal-box">
+      <p><strong>Nome Fantasia:</strong> Mestre dos Reparos</p>
+      <p><strong>Razão Social:</strong> Maria Eduarda Hengles Valadão</p>
+      <p><strong>CNPJ:</strong> 64.521.657/0001-87</p>
+      <p><strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval, Barueri – SP | CEP: 06420-130</p>
+      <p><strong>E-mail:</strong> mestredosreparosbarueri@gmail.com</p>
+      <p><strong>Telefone:</strong> (11) 91839-0430</p>
+    </div>
+    <h3> Mapa do Site</h3>
+    <div class="mestre-footer-links">
+      <a href="https://www.mestredosreparos.app.br/">Início</a>
+      <a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html">Eletricista</a>
+      <a href="https://www.mestredosreparos.app.br/p/marido-de-aluguel.html">Marido de Aluguel</a>
+      <a href="https://wa.me/5511918390430">WhatsApp</a>
+      <a href="https://mestre-reparos.base44.app/Agendamento">Agendar Online</a>
+      <a href="https://mestre-reparos.base44.app/Calculadora">Calculadora de Preços</a>
+    </div>
+    <h3>Contato</h3>
+    <div class="mestre-contact-list">
+      <div class="mestre-contact-item">📞 <span>(11) 91839-0430</span></div>
+      <div class="mestre-contact-item">✉️ <span>mestredosreparosbarueri@gmail.com</span></div>
+      <div class="mestre-contact-item">📍 <span>Av. H. G. Baptista, 2245 – Jardim Belval, Barueri – SP</span></div>
+    </div>
+    <h3>Redes Sociais</h3>
+    <div class="mestre-socials">
+      <a aria-label="Instagram" href="https://www.instagram.com/mestredosreparosfacilites" target="_blank">◎</a>
+      <a aria-label="Facebook" href="https://facebook.com/mestredosreparos" target="_blank">f</a>
+      <a aria-label="YouTube" href="https://www.youtube.com/@mestredosreparos-i9d" target="_blank">▶</a>
+    </div>
+    <div class="mestre-policy-links">
+      <a href="https://www.mestredosreparos.app.br/p/lgpd-lei-geral-de-protecao-de-dados.html">LGPD</a>
+      <a href="https://www.mestredosreparos.app.br/p/politica-de-privacidade.html">Privacidade</a>
+      <a href="https://www.mestredosreparos.app.br/p/temos-de-uso.html">Termos de Uso</a>
+    </div>
+    <div style="height: 30px;"></div>
+    <p>O Mestre dos Reparos Manutenção &amp; Limpeza atua em Barueri e região com serviços de manutenção elétrica residencial e predial, contando com acompanhamento técnico de profissional com formação em Engenharia e experiência de mais de 20 anos em operações de manutenção, diagnóstico de falhas elétricas, instalações residenciais e sistemas prediais — conforme a NBR 5410. Empresa construída em Barueri com CNPJ ativo e emissão de notas fiscais.</p>
+    <p>A emissão de ART (Anotação de Responsabilidade Técnica) é realizada quando aplicável, conforme a natureza, complexidade ou exigência contratual do serviço executado, em conformidade com os critérios estabelecidos pelo CREA.</p>
+    <div class="mestre-footer-bottom">
+      © 2026 Mestre dos Reparos — Maria Eduarda Hengles Valadão — CNPJ 64.521.657/0001-87 — Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!--WHATSAPP FLUTUANTE-->
+  <a href="https://wa.me/5511918390430" rel="noopener noreferrer" style="align-items: center; background-color: #25d366; border-radius: 50%; bottom: 18px; box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 10px; display: flex; height: 65px; justify-content: center; position: fixed; right: 18px; width: 65px; z-index: 9999;" target="_blank">
+    <svg style="fill: rgb(255, 255, 255); height: 35px; width: 35px;" viewbox="0 0 32 32">
+      <path d="M19.11 17.34c-.27-.14-1.58-.78-1.82-.87-.24-.09-.41-.14-.59.14-.17.27-.68.86-.83 1.03-.15.18-.3.2-.56.07-.27-.14-1.12-.41-2.13-1.32-.79-.7-1.32-1.56-1.47-1.82-.15-.27-.02-.41.11-.55.12-.12.27-.3.41-.45.14-.15.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.59-1.43-.81-1.96-.21-.5-.43-.43-.59-.44h-.5c-.18 0-.45.07-.68.34-.24.27-.9.88-.9 2.14s.92 2.48 1.05 2.65c.14.18 1.81 2.76 4.38 3.87.61.27 1.09.43 1.46.55.61.19 1.17.16 1.61.1.49-.07 1.58-.65 1.8-1.28.22-.63.22-1.17.15-1.28-.06-.11-.23-.18-.49-.31zM16.03 3.2c-7 0-12.67 5.67-12.67 12.67 0 2.23.58 4.4 1.69 6.31L3.2 28.8l6.78-1.78a12.63 12.63 0 0 0 6.05 1.54h.01c6.99 0 12.67-5.67 12.67-12.67S23.03 3.2 16.03 3.2zm0 23.14h-.01a10.5 10.5 0 0 1-5.35-1.47l-.38-.23-4.02 1.05 1.07-3.92-.25-.4a10.47 10.47 0 0 1-1.61-5.55c0-5.8 4.72-10.52 10.53-10.52 2.81 0 5.45 1.09 7.44 3.08a10.45 10.45 0 0 1 3.08 7.44c0 5.81-4.73 10.52-10.5 10.52z"></path>
+    </svg>
+  </a>
+
+</section></div>
+</section>
+
+<div class="mr-aval">
+  <h3 class="mr-aval-titulo">Como você avalia este conteúdo?</h3>
+  <p class="mr-aval-sub">Seu feedback nos ajuda a melhorar a qualidade dos nossos artigos</p>
+  <div class="mr-aval-estrelas" role="radiogroup" aria-label="Avaliação de 1 a 5 estrelas">
+    <span data-v="1" role="radio" aria-label="1 estrela">&#9734;</span>
+    <span data-v="2" role="radio" aria-label="2 estrelas">&#9734;</span>
+    <span data-v="3" role="radio" aria-label="3 estrelas">&#9734;</span>
+    <span data-v="4" role="radio" aria-label="4 estrelas">&#9734;</span>
+    <span data-v="5" role="radio" aria-label="5 estrelas">&#9734;</span>
+  </div>
+  <p class="mr-aval-obrigado">Obrigado pela sua avaliação!</p>
+</div>
+
+<style>
+.mr-aval{max-width:1100px;margin:30px auto;background:#fff;border-radius:18px;padding:28px 30px;box-shadow:0 4px 18px rgba(0,0,0,.08);font-family:Arial,sans-serif;}
+.mr-aval-titulo{font-size:26px;color:#0b2a4a;font-weight:800;margin:0 0 6px;}
+.mr-aval-sub{color:#8a94a3;font-size:16px;margin:0 0 16px;}
+.mr-aval-estrelas{display:flex;gap:8px;font-size:42px;line-height:1;}
+.mr-aval-estrelas span{color:#c6ccd4;cursor:pointer;transition:color .12s,transform .12s;}
+.mr-aval-estrelas span:hover{transform:scale(1.08);}
+.mr-aval-estrelas span.on{color:#ffb300;}
+.mr-aval-obrigado{display:none;color:#1e8e3e;font-weight:700;font-size:17px;margin:14px 0 0;}
+.mr-aval.rated .mr-aval-estrelas span{cursor:default;}
+.mr-aval.rated .mr-aval-obrigado{display:block;}
+@media(max-width:768px){.mr-aval-titulo{font-size:22px;}.mr-aval-estrelas{font-size:38px;}}
+</style>
+
+<script>
+(function(){
+  var box=document.currentScript.parentNode.querySelector('.mr-aval')||document.querySelector('.mr-aval');
+  if(!box)return;
+  var stars=box.querySelectorAll('.mr-aval-estrelas span'), sel=0, locked=false;
+  var key='mr_aval_'+location.pathname;
+  function paint(n){stars.forEach(function(s){var v=+s.dataset.v;s.innerHTML=v<=n?'\u2605':'\u2606';s.classList.toggle('on',v<=n);});}
+  try{var saved=localStorage.getItem(key);if(saved){sel=+saved;locked=true;box.classList.add('rated');paint(sel);}}catch(e){}
+  stars.forEach(function(s){
+    s.addEventListener('mouseenter',function(){if(!locked)paint(+s.dataset.v);});
+    s.addEventListener('click',function(){
+      if(locked)return;
+      sel=+s.dataset.v;locked=true;paint(sel);box.classList.add('rated');
+      try{localStorage.setItem(key,sel);}catch(e){}
+    });
+  });
+  box.querySelector('.mr-aval-estrelas').addEventListener('mouseleave',function(){paint(sel);});
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question","name": "Quanto custa um eletricista em Barueri?","acceptedAnswer": {"@type": "Answer","text": "Referências: troca de tomada a partir de R$ 80, disjuntor a partir de R$ 100, chuveiro a partir de R$ 120, revisão de quadro sob consulta. Chame no WhatsApp (11) 91839-0430 para orçamento exato."}},
+    {"@type": "Question","name": "Quanto tempo demora para o eletricista chegar em Barueri?","acceptedAnswer": {"@type": "Answer","text": "Em condições normais, chegamos em 30 a 50 minutos após confirmação pelo WhatsApp em Barueri."}},
+    {"@type": "Question","name": "Eletricista em Barueri atende 24 horas?","acceptedAnswer": {"@type": "Answer","text": "Sim. Atendemos emergências 24 horas em Barueri para curto-circuito, disjuntor desarmando, falta de energia e tomadas aquecendo."}},
+    {"@type": "Question","name": "O serviço tem garantia?","acceptedAnswer": {"@type": "Answer","text": "Sim. Garantia técnica de 90 dias em todos os serviços conforme o Código de Defesa do Consumidor."}},
+    {"@type": "Question","name": "Vocês fazem laudo de instalação elétrica em Barueri?","acceptedAnswer": {"@type": "Answer","text": "Sim. Realizamos laudo de instalação elétrica residencial e comercial. A ART é emitida quando aplicável conforme os critérios do CREA."}},
+    {"@type": "Question","name": "Como agendar um eletricista em Barueri?","acceptedAnswer": {"@type": "Answer","text": "Pelo WhatsApp (11) 91839-0430, pela calculadora online ou pelo agendamento em mestre-reparos.base44.app/Agendamento."}}
+  ]
+}
+</script>

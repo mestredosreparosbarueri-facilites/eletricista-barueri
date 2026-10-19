@@ -1,0 +1,273 @@
+<style>
+h3.post-title.entry-title,.post-title.entry-title,.post-title{display:none!important}
+.mestre-container{max-width:1100px;margin:auto;padding:20px;font-family:Arial,sans-serif;line-height:1.7;color:#222}
+.mestre-hero{background:linear-gradient(135deg,#0b2a4a,#163d66);padding:45px 25px;border-radius:18px;color:#fff;margin-bottom:35px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.mestre-hero h1{font-size:42px;line-height:1.2;margin:0 0 20px;font-weight:900;color:#fff}
+.mestre-hero p{font-size:20px;color:#fff;margin:0 0 14px;max-width:900px}
+.mestre-btns{display:flex;gap:15px;flex-wrap:wrap;margin-top:28px}
+.mestre-btn{display:inline-block;padding:16px 24px;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none!important}
+.mestre-btn-whats{background:#25D366;color:#fff!important}
+.mestre-btn-agendar{background:#ffb300;color:#0b2a4a!important}
+.mestre-box{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-box h2{font-size:34px;color:#0b2a4a;margin:0 0 18px}
+.mestre-box h3{font-size:26px;color:#163d66;margin:28px 0 12px}
+.mestre-box p{font-size:20px;margin:0 0 18px}
+.mestre-box ul{padding-left:24px;font-size:19px;line-height:1.8;margin:0 0 18px}
+.mestre-box li{margin-bottom:8px}
+.mestre-servicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:25px}
+.mestre-card{background:#0b2a4a;color:#fff;padding:22px;border-radius:14px}
+.mestre-card h3{margin:0 0 10px;color:#ffb300;font-size:22px}
+.mestre-card p{color:#fff;font-size:17px;margin:0}
+.mestre-alerta{background:#fff5e0;border-left:6px solid #ffb300;padding:22px;border-radius:10px;margin:25px 0;font-size:19px}
+.mestre-passos{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+.mestre-passo{background:#f4f6f9;padding:20px;border-radius:14px}
+.mestre-passo-num{font-size:34px;font-weight:900;color:#ffb300;line-height:1;margin-bottom:8px}
+.mestre-passo h3{font-size:20px;color:#0b2a4a;margin:0 0 8px}
+.mestre-passo p{font-size:17px;margin:0}
+.mestre-faq{margin-top:25px}
+.mestre-faq details{background:#f4f6f9;padding:18px;border-radius:12px;margin-bottom:14px}
+.mestre-faq summary{font-size:20px;font-weight:700;cursor:pointer;color:#0b2a4a}
+.mestre-faq p{margin:12px 0 0;font-size:18px}
+.mestre-cluster{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-cluster h3{color:#0b2a4a;font-size:24px;margin:0 0 14px}
+.mestre-cluster ul{padding-left:24px;font-size:18px;line-height:1.8;margin:0 0 12px}
+.mestre-cluster a{color:#0b2a4a;font-weight:700}
+.mestre-footer{background:#0b2a4a;color:#fff;padding:40px 25px;border-radius:18px;margin-top:40px}
+.mestre-footer h3{color:#ffb300;font-size:28px;margin:0 0 15px}
+.mestre-footer p,.mestre-footer a{font-size:17px;color:#fff!important;margin:0 0 12px}
+.mestre-btn-avaliar{display:inline-block;background:#ffb300;color:#0b2a4a!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:17px;text-decoration:none!important;margin-top:16px}
+.mestre-links{display:grid;gap:10px;margin:20px 0}
+.mestre-links a{color:#fff!important;text-decoration:none;font-weight:700}
+@media(min-width:700px){.mestre-passos{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:768px){.mestre-hero{padding:32px 20px}.mestre-hero h1{font-size:34px}.mestre-hero p{font-size:18px}.mestre-box{padding:22px}.mestre-box h2{font-size:28px}.mestre-box p{font-size:18px}.mestre-box ul{font-size:17px}}
+</style>
+<style>
+.el-destaques{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+.el-destaque{background:#fff5e0;border:2px solid #ffb300;border-radius:14px;padding:18px}
+.el-destaque h3{margin:0 0 8px;font-size:19px;color:#0b2a4a}
+.el-destaque p{margin:0;font-size:16px;line-height:1.6}
+.el-disciplinas{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:24px}
+.el-disciplina{background:#f4f6f9;border-radius:14px;padding:20px}
+.el-disciplina h3{margin:0 0 12px;font-size:21px;color:#0b2a4a;border-bottom:3px solid #ffb300;padding-bottom:8px}
+.el-disciplina ul{padding-left:20px;margin:0;font-size:16px;line-height:1.65}
+.el-disciplina li{margin-bottom:5px}
+.el-total{display:inline-block;background:#0b2a4a;color:#ffb300;font-weight:800;padding:10px 18px;border-radius:999px;font-size:17px;margin-top:20px}
+@media(max-width:768px){.el-disciplina ul{font-size:15px}.el-disciplina h3{font-size:19px}}
+</style>
+<section class="mestre-container">
+  <div class="mestre-hero">
+    <h1>Eletricista no Jardim Esperança, em Barueri</h1>
+    <p>Para quem busca eletricista experiente no Jardim Esperança, a Mestre dos Reparos é a sua parceira ideal. Atuamos com transparência e responsabilidade técnica em todos os projetos de manutenção elétrica.</p><p style="font-size:18px;line-height:1.6;background:#fff5e0;color:#222;border-left:5px solid #ffb300;padding:14px 18px;border-radius:10px;margin:18px 0">Atendemos todos os bairros da cidade. Veja todos os serviços do nosso <a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html" style="color:#0b2a4a;font-weight:700">eletricista em Barueri</a>, com plantão 24 horas, nota fiscal e garantia de 90 dias.</p><p>Nosso atendimento em Barueri é reconhecido pela pontualidade e pela alta qualidade na resolução de problemas. Estamos à disposição para realizar visitas técnicas que identifiquem defeitos e previnam riscos graves na rede elétrica.</p>
+    <div class="mestre-btns">
+    <a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista.">⚡ Chamar eletricista agora</a>
+    <a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento">📅 Agendar visita técnica</a>
+  </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Serviços elétricos que o Mestre dos Reparos executa</h2>
+    <p>Somos eletricistas com atuação em <strong>quatro frentes</strong>: residencial, instalações, predial e comercial, e industrial. Isso significa que o mesmo eletricista que resolve uma tomada queimada na sua casa também atende o quadro de uma loja, o painel de um condomínio e o comando de um motor trifásico. Abaixo estão as atividades que executamos no dia a dia — e, se o seu caso não estiver na lista, mande uma foto pelo WhatsApp que a gente avalia.</p>
+    <div class="el-destaques">
+      <div class="el-destaque"><h3>Disjuntor caindo</h3><p>Diagnóstico da causa real — sobrecarga, curto-circuito ou disjuntor subdimensionado — com troca do disjuntor e balanceamento das cargas entre as fases.</p></div>
+      <div class="el-destaque"><h3>Troca de fiação</h3><p>Substituição de fiação antiga, derretida ou com bitola errada, instalando cabo novo conforme a NBR 5410 e identificando cada circuito.</p></div>
+      <div class="el-destaque"><h3>Troca de tomadas e interruptores</h3><p>Substituição de tomadas queimadas, frouxas ou com mau contato e de interruptores simples, duplos, paralelos e com tomada embutida.</p></div>
+      <div class="el-destaque"><h3>Troca de disjuntores</h3><p>Troca de disjuntores e do barramento, com dimensionamento correto para cada circuito e teste de atuação depois do serviço.</p></div>
+      <div class="el-destaque"><h3>Troca de IDRs</h3><p>Instalação e troca de IDR (interruptor diferencial residual) e de DPS contra surtos, protegendo as pessoas de choque e os equipamentos da casa.</p></div>
+      <div class="el-destaque"><h3>Diagnósticos, laudos e ART</h3><p>Laudo técnico de instalação elétrica, termografia de quadros, medição de aterramento e emissão de ART com responsável técnico habilitado.</p></div>
+    </div>
+    <p>Os serviços mais pedidos estão destacados acima: <strong>disjuntor caindo</strong>, <strong>troca de fiação</strong>, <strong>troca de tomadas e interruptores</strong>, <strong>troca de disjuntores</strong>, <strong>troca de IDRs</strong> e <strong>diagnósticos, laudos e ART</strong>. Em todos eles o serviço é executado conforme a ABNT NBR 5410, com teste na sua frente, nota fiscal e garantia técnica de 90 dias na mão de obra.</p>
+    <h3>As atividades, separadas por disciplina</h3>
+    <div class="el-disciplinas">
+    <div class="el-disciplina">
+      <h3>🏠 Eletricista residencial</h3>
+      <ul><li>Troca de fiação antiga ou danificada</li><li>Correção de disjuntor que fica caindo</li><li>Troca de disjuntores e barramento</li><li>Instalação e troca de IDR (diferencial residual)</li><li>Instalação de DPS contra surtos e raios</li><li>Troca de tomadas queimadas ou frouxas</li><li>Troca de interruptores simples, duplos e paralelos</li><li>Instalação de tomada 220V para chuveiro</li><li>Instalação de tomada para ar-condicionado</li><li>Instalação de tomada para máquina de lavar e secadora</li><li>Instalação de tomada com entrada USB</li><li>Troca de tomada e plugue do padrão antigo</li><li>Instalação de chuveiro elétrico e troca de resistência</li><li>Troca de torneira elétrica e resistência</li><li>Instalação de ventilador de teto com controle</li><li>Instalação de luminária, plafon e lustre</li><li>Instalação de spots e iluminação de LED embutida</li><li>Instalação de fita de LED e perfil de alumínio</li><li>Instalação de sensor de presença</li><li>Instalação de campainha, interfone e eletrônico de portão</li><li>Automação de portão de garagem</li><li>Instalação de ponto para cerca elétrica</li><li>Instalação de refletor e luminária externa</li><li>Troca de fio de chuveiro derretido</li><li>Localização de curto-circuito em tomadas e iluminação</li><li>Correção de choque no chuveiro e na torneira</li><li>Correção de queda de energia constante</li><li>Reparo e modernização de quadro de distribuição antigo</li><li>Instalação de quadro elétrico novo com circuitos separados</li><li>Aterramento residencial e ligação do fio terra</li></ul>
+    </div>
+    <div class="el-disciplina">
+      <h3>🔌 Instalador e instalações</h3>
+      <ul><li>Instalação elétrica completa de imóvel novo</li><li>Instalação de ponto de luz, tomada e interruptor</li><li>Passagem de fiação em parede, forro e contrapiso</li><li>Instalação de eletroduto, conduíte e canaleta</li><li>Instalação de caixa de passagem e de derivação</li><li>Ampliação de circuitos e aumento de carga</li><li>Criação de circuitos independentes por ambiente</li><li>Instalação de padrão de entrada e caixa de medição</li><li>Ligação de medidor e entrada de energia</li><li>Instalação de quadro de distribuição com circuitos identificados</li><li>Instalação de poste e mastro de entrada</li><li>Instalação de bomba d’água e pressurizador</li><li>Instalação de motor de piscina e hidromassagem</li><li>Instalação de aquecedor e boiler elétrico</li><li>Instalação da parte elétrica de painel solar e string box</li><li>Instalação de gerador e chave de transferência automática</li><li>Instalação de nobreak e estabilizador</li><li>Instalação de sistema de som e rede de dados</li><li>Cabeamento estruturado e tomadas de rede RJ45</li><li>Instalação de câmeras de segurança e CFTV</li><li>Instalação de antena, TV e interfone coletivo</li><li>Organização e identificação de quadros e fiação</li></ul>
+    </div>
+    <div class="el-disciplina">
+      <h3>🏢 Eletricista predial</h3>
+      <ul><li>Manutenção elétrica preventiva de condomínio</li><li>Manutenção corretiva de áreas comuns</li><li>Troca de luminárias de garagem, corredor e escada</li><li>Instalação de iluminação de emergência e blocos autônomos</li><li>Instalação e manutenção de portão eletrônico de garagem</li><li>Manutenção de bombas de recalque e elevatórias</li><li>Manutenção de portaria e interfone coletivo</li><li>Manutenção de grupo gerador de emergência</li><li>Manutenção de sistema de pressurização de escada</li><li>Manutenção de quadros elétricos e acompanhamento de subestação</li><li>Balanceamento de cargas entre fases</li><li>Medição de corrente, tensão e fator de potência</li><li>Correção de sobrecarga em alimentador de torres</li><li>Instalação de tomada para carro elétrico em garagem</li><li>Manutenção de iluminação de fachada e jardim</li><li>Adequação elétrica para o Corpo de Bombeiros (AVCB)</li><li>Adequação das instalações conforme a NBR 5410</li><li>Adequação conforme a NR-10 em instalações prediais</li><li>Emissão de relatório técnico de manutenção predial</li><li>Plano de manutenção elétrica com cronograma e checklist</li></ul>
+    </div>
+    <div class="el-disciplina">
+      <h3>🏬 Eletricista comercial</h3>
+      <ul><li>Instalação elétrica de loja e vitrine</li><li>Instalação de trilho e spot de LED para loja</li><li>Instalação de letreiro luminoso e painel de fachada</li><li>Adequação elétrica para balcão refrigerado e ilha de congelados</li><li>Instalação de ponto para máquina de cartão e PDV</li><li>Instalação de rede e infraestrutura de TI para escritório</li><li>Manutenção elétrica de restaurante, cozinha e exaustor</li><li>Instalação de ponto para forno, fogão industrial e chapa</li><li>Instalação de tomada para equipamento de alto consumo</li><li>Instalação de ar-condicionado e infraestrutura de dreno</li><li>Manutenção elétrica de clínica e consultório</li><li>Manutenção elétrica de salão de beleza e barbearia</li><li>Manutenção elétrica de academia e estúdio</li><li>Instalação de quadro elétrico comercial com identificação</li><li>Adequação de carga e aumento de demanda contratada</li><li>Correção de disjuntor caindo em operação comercial</li><li>Manutenção de sistema de som, alarme e CFTV</li><li>Contrato de manutenção elétrica mensal para empresa</li></ul>
+    </div>
+    <div class="el-disciplina">
+      <h3>🏭 Eletricista industrial</h3>
+      <ul><li>Instalação e manutenção de quadro de comando e painel elétrico</li><li>Montagem de painel com contator, relé e CLP</li><li>Instalação de motor trifásico com partida direta ou soft-starter</li><li>Instalação de inversor de frequência</li><li>Instalação de botoeira, sinaleiro e chave de emergência</li><li>Manutenção de esteira transportadora e linha de produção</li><li>Instalação de sensor de fim de curso e fotocélula</li><li>Manutenção de compressores e bombas industriais</li><li>Manutenção de iluminação de galpão e refletores de alto rendimento</li><li>Instalação de tomadas industriais trifásicas</li><li>Correção de desequilíbrio de fases e queda de tensão</li><li>Manutenção de banco de capacitores e correção de fator de potência</li><li>Instalação de aterramento industrial e malha de terra</li><li>Adequação elétrica conforme a NR-10 e a NR-12</li><li>Manutenção de subestação e transformador (acompanhamento)</li><li>Termografia de quadros e painéis elétricos</li><li>Manutenção de sistema de exaustão e ventilação industrial</li><li>Relatório técnico de manutenção industrial</li></ul>
+    </div>
+    </div>
+    <span class="el-total">⚡ 108 atividades elétricas mapeadas</span>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Serviços elétricos que executamos</h2>
+    <div class="mestre-servicos">
+      <div class="mestre-card"><h3>Spots e luminárias</h3><p>Instalamos iluminação decorativa e técnica com acabamento impecável.</p></div><div class="mestre-card"><h3>Sobrecarga</h3><p>Analisamos o circuito para distribuir corretamente a demanda de potência.</p></div><div class="mestre-card"><h3>Laudo técnico</h3><p>Preparamos documentos formais sobre as condições da rede elétrica.</p></div><div class="mestre-card"><h3>Manutenção</h3><p>Realizamos reparos preventivos em toda a rede de seu comércio.</p></div><div class="mestre-card"><h3>Aterramento</h3><p>Criamos o caminho seguro para descargas elétricas em seu sistema.</p></div>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Sinais de problema elétrico que atendemos</h2>
+    <p>Comércios locais nesta região frequentemente sobrecarregam circuitos mal dimensionados pelo uso excessivo de máquinas e iluminação. É essencial contar com um sistema moderno de proteção que suporte a demanda operacional do dia a dia. Identificamos pontos vulneráveis na fiação para evitar incêndios ou paralisações das atividades. Nossos engenheiros planejam soluções que valorizam seu imóvel e economizam energia.</p>
+    <ul><li>Tomadas com aspecto derretido ou escurecido.</li><li>Conta de luz que aumentou sem explicação.</li><li>Chuveiro que não esquenta como deveria.</li><li>Cheiro forte de ozônio ou plástico queimado.</li></ul>
+    <div class="mestre-alerta"><strong>Emergência?</strong> Em caso de cheiro de queimado, faísca, choque ou disjuntor que não arma, desligue o quadro geral e chame pelo WhatsApp antes de tentar religar.</div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Por que contratar o Mestre dos Reparos</h2>
+    <ul><li><strong>Equipe própria:</strong> Profissionais treinados e alinhados ao mesmo padrão de execução, sem intermediários no meio do caminho.</li><li><strong>Eletricista de plantão:</strong> Atendimento 24 horas para emergências, incluindo domingos e feriados, quando o imóvel não pode ficar sem energia.</li><li><strong>Documentação em ordem:</strong> CNPJ ativo em Barueri, nota fiscal em todo serviço e responsabilidade civil sobre a mão de obra.</li><li><strong>Padrão técnico:</strong> Serviços executados conforme a NBR 5410, com medições e testes registrados ao final do atendimento.</li><li><strong>Sem surpresa no valor:</strong> O orçamento é fechado antes do serviço começar e nada é cobrado sem a sua aprovação.</li><li><strong>Garantia por escrito:</strong> 90 dias de garantia técnica na mão de obra, conforme o Código de Defesa do Consumidor.</li></ul>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Como funciona o atendimento no Jardim Esperança</h2>
+    <div class="mestre-passos">
+      <div class="mestre-passo"><div class="mestre-passo-num">1</div><h3>Contato</h3><p>Você descreve o problema pelo WhatsApp, com fotos se puder, e informamos na hora se é caso de emergência.</p></div><div class="mestre-passo"><div class="mestre-passo-num">2</div><h3>Deslocamento</h3><p>A equipe sai com ferramentas de diagnóstico e os materiais básicos para resolver a maioria dos chamados na primeira visita.</p></div><div class="mestre-passo"><div class="mestre-passo-num">3</div><h3>Diagnóstico</h3><p>Medimos tensão, corrente e continuidade para achar a causa real do problema, e não apenas o ponto onde ele apareceu.</p></div><div class="mestre-passo"><div class="mestre-passo-num">4</div><h3>Orçamento</h3><p>O valor é apresentado antes de qualquer serviço começar, com a lista do que será trocado.</p></div><div class="mestre-passo"><div class="mestre-passo-num">5</div><h3>Execução</h3><p>Serviço feito com material de qualidade, teste de todo o circuito e organização do local ao final.</p></div><div class="mestre-passo"><div class="mestre-passo-num">6</div><h3>Garantia</h3><p>Garantia técnica de 90 dias na mão de obra, por escrito, conforme o Código de Defesa do Consumidor.</p></div>
+    </div>
+  </div>
+
+  <style>
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.dep-card{background:#fff;border:2px solid #e6ebf2;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.dep-top{display:flex;align-items:center;gap:12px}
+.dep-avatar{width:46px;height:46px;border-radius:50%;background:#0b2a4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 46px}
+.dep-nome{font-weight:800;color:#0b2a4a;font-size:16px;line-height:1.25}
+.dep-quando{font-size:13px;color:#6b7a8d}
+.dep-estrelas{color:#ffb300;font-size:17px;letter-spacing:2px}
+.mestre-box .dep-texto{margin:0;font-size:17px;color:#33445c;line-height:1.65}
+.dep-rodape{margin-top:auto;font-size:13px;color:#6b7a8d;font-weight:700}
+.dep-resumo{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#f4f6f9;border-radius:16px;padding:22px;margin-top:20px}
+.mestre-box .dep-nota{margin:0;font-size:16px;color:#33445c}
+.mestre-box .dep-nota b{font-size:34px;color:#0b2a4a;display:block;line-height:1;margin-bottom:4px}
+.dep-btn{display:inline-block;background:#0b2a4a;color:#fff!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none!important}
+@media(max-width:768px){.dep-card{padding:18px}.dep-resumo{padding:18px}.dep-btn{display:block;text-align:center}}
+</style>
+<div class="mestre-box" id="depoimentos">
+    <h2>Depoimentos de clientes no Google</h2>
+    <p>Quem contrata o Mestre dos Reparos avalia o serviço no Google depois do atendimento. Abaixo estão depoimentos reais de clientes atendidos em Barueri e região.</p>
+    <div class="dep-grid">
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">KC</div>
+        <div>
+          <div class="dep-nome">Kelly Carvalho</div>
+          <div class="dep-quando">Limpeza residencial · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente serviço de limpeza! Fiquei muito satisfeita com o resultado, tudo foi feito com muito cuidado e atenção aos detalhes. A equipe é pontual, organizada e deixou o lugar impecável. Recomendo demais!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">MF</div>
+        <div>
+          <div class="dep-nome">Marcelo Fernandes</div>
+          <div class="dep-quando">Manutenção e reparos · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Gostei muito do trabalho, foram super atenciosos e dá para ver o conhecimento e o domínio do que fazem. Sem contar a educação: gosto de entender as coisas e eles responderam todas as minhas perguntas.</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">LF</div>
+        <div>
+          <div class="dep-nome">Lais Tafnes Ferrari</div>
+          <div class="dep-quando">Atendimento · há 8 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente profissional, com atendimento excepcional!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+    </div>
+    <div class="dep-resumo">
+      <p class="dep-nota">
+        <b>4,9</b>
+        <span class="dep-estrelas">★★★★★</span><br>
+        Média de 32 avaliações de clientes no Google Meu Negócio
+      </p>
+      <a class="dep-btn" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+    </div>
+    <p style="margin-top:14px"><a href="https://www.google.com/maps/search/?api=1&query=Mestre%20dos%20Reparos%20Manuten%C3%A7%C3%A3o%20e%20Limpeza%2C%20Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Perguntas frequentes sobre eletricista no Jardim Esperança</h2>
+    <div class="mestre-faq">
+      <details><summary>Como garantir um serviço seguro no Jardim Esperança?</summary><p>Contratando nossa equipe, que segue rigorosamente a norma NBR 5410. Temos supervisão de engenheiro em todas as etapas.</p></details><details><summary>Atendem feriados se eu tiver uma emergência?</summary><p>Sim, nosso plantão é 24 horas ininterrupto. Estamos de prontidão inclusive em feriados e finais de semana.</p></details><details><summary>A empresa é legalizada aqui em Barueri?</summary><p>Sim, possuímos CNPJ ativo em Barueri. Emissão de nota fiscal é parte do nosso procedimento padrão.</p></details><details><summary>Qual o prazo da garantia oferecida?</summary><p>Concedemos 90 dias de garantia técnica. Tudo é feito conforme as leis de defesa do consumidor.</p></details><details><summary>Como posso agendar uma avaliação técnica?</summary><p>Basta nos chamar por telefone a qualquer momento. Um profissional técnico avaliará seu caso prontamente.</p></details>
+    </div>
+  </div>
+
+  <div class="mestre-cluster">
+    <h3>Regiões próximas que também atendemos</h3>
+    <ul><li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-graziela-barueri.html">Eletricista no Jardim Graziela</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-iracema-barueri.html">Eletricista no Jardim Iracema</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-itaquiti-barueri.html">Eletricista no Jardim Itaquiti</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-julio-barueri.html">Eletricista no Jardim Júlio</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-libano-barueri-24.html">Eletricista no Jardim Líbano</a></li><li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-cristina.html">Eletricista no Jardim Maria Cristina</a></li></ul>
+    <ul><li><a href="https://www.mestredosreparos.app.br">Mestre dos Reparos Manutenção &amp; Limpeza</a></li><li><a href="https://mestre-reparos.base44.app/Calculadora">Calculadora de preços</a></li></ul>
+  </div>
+  <style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<div class="mestre-footer">
+  <h3>Mestre dos Reparos Manutenção &amp; Limpeza</h3>
+  <p>Serviços elétricos residenciais, comerciais e prediais, além de reformas, hidráulica, pintura e limpeza, em Barueri e região.</p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista.">(11) 91839-0430</a> · <strong>E-mail:</strong> <a href="mailto:mestredosreparosbarueri@gmail.com">mestredosreparosbarueri@gmail.com</a><br>
+  <strong>Site:</strong> <a href="https://www.mestredosreparos.app.br">mestredosreparos.app.br</a></p>
+  <p><strong>Razão Social:</strong> Maria Eduarda Hengles Valadão · <strong>CNPJ:</strong> 64.521.657/0001-87<br>
+  <strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245, Jardim Belval, Barueri/SP, CEP 06420-130</p>
+  <div class="mestre-links mestre-redes">
+    <a href="https://www.instagram.com/mestredosreparosfacilites" target="_blank" rel="noopener">📸 Instagram: @mestredosreparosfacilites</a>
+    <a href="https://www.facebook.com/mestredosreparos.oficial/" target="_blank" rel="noopener">👍 Facebook: /mestredosreparos.oficial</a>
+    <a href="https://www.tiktok.com/@mestre.dos.reparo1" target="_blank" rel="noopener">🎵 TikTok: @mestre.dos.reparo1</a>
+    <a href="https://youtube.com/@mestredosreparos-i9d" target="_blank" rel="noopener">▶️ YouTube: @mestredosreparos-i9d</a>
+  </div>
+  <a class="mestre-btn-avaliar" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+</div>
+
+</section>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Mestre dos Reparos Manutenção & Limpeza","description":"Serviços de eletricista no Jardim Esperança, Barueri: quadro elétrico, disjuntores, tomadas, iluminação e emergências 24 horas.","url":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-esperanca-barueri.html","telephone":"+55 11 91839-0430","email":"mestredosreparosbarueri@gmail.com","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","priceRange":"$$","currenciesAccepted":"BRL","address":{"@type":"PostalAddress","streetAddress":"Av. Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"areaServed":{"@type":"Place","name":"Jardim Esperança"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como garantir um serviço seguro no Jardim Esperança?","acceptedAnswer":{"@type":"Answer","text":"Contratando nossa equipe, que segue rigorosamente a norma NBR 5410. Temos supervisão de engenheiro em todas as etapas."}},{"@type":"Question","name":"Atendem feriados se eu tiver uma emergência?","acceptedAnswer":{"@type":"Answer","text":"Sim, nosso plantão é 24 horas ininterrupto. Estamos de prontidão inclusive em feriados e finais de semana."}},{"@type":"Question","name":"A empresa é legalizada aqui em Barueri?","acceptedAnswer":{"@type":"Answer","text":"Sim, possuímos CNPJ ativo em Barueri. Emissão de nota fiscal é parte do nosso procedimento padrão."}},{"@type":"Question","name":"Qual o prazo da garantia oferecida?","acceptedAnswer":{"@type":"Answer","text":"Concedemos 90 dias de garantia técnica. Tudo é feito conforme as leis de defesa do consumidor."}},{"@type":"Question","name":"Como posso agendar uma avaliação técnica?","acceptedAnswer":{"@type":"Answer","text":"Basta nos chamar por telefone a qualquer momento. Um profissional técnico avaliará seu caso prontamente."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br"},{"@type":"ListItem","position":2,"name":"Eletricista no Jardim Esperança","item":"https://www.mestredosreparos.app.br/p/eletricista-no-jardim-esperanca-barueri.html"}]}</script>
+
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
