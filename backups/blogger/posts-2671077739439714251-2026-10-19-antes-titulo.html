@@ -1,0 +1,838 @@
+<style>
+:root{
+--azul:#0b2a4a;
+--azul2:#163d66;
+--amarelo:#ffb300;
+--branco:#ffffff;
+--cinza:#f4f6f9;
+--verde:#25D366;
+}
+
+.mestre-container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+font-family:Arial,sans-serif;
+line-height:1.7;
+color:#222;
+}
+
+.mestre-hero{
+background:linear-gradient(135deg,#0b2a4a,#163d66);
+padding:50px 28px;
+border-radius:18px;
+color:#fff;
+margin-bottom:35px;
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.mestre-hero h1{
+font-size:40px;
+line-height:1.2;
+margin-bottom:20px;
+font-weight:900;
+}
+
+.mestre-hero p{
+font-size:19px;
+max-width:920px;
+margin-bottom:12px;
+}
+
+.mestre-btns{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:28px;
+}
+
+.mestre-btn{
+display:inline-block;
+padding:16px 24px;
+border-radius:12px;
+font-size:18px;
+font-weight:700;
+text-decoration:none!important;
+}
+
+.mestre-btn-whats{
+background:#25D366;
+color:#fff!important;
+}
+
+.mestre-btn-agendar{
+background:#ffb300;
+color:#0b2a4a!important;
+}
+
+.mestre-box{
+background:#fff;
+padding:30px;
+border-radius:18px;
+margin-bottom:30px;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+.mestre-box h2{
+font-size:32px;
+color:#0b2a4a;
+margin-bottom:16px;
+font-weight:800;
+}
+
+.mestre-box h3{
+font-size:22px;
+color:#163d66;
+margin-top:24px;
+margin-bottom:10px;
+font-weight:700;
+}
+
+.mestre-box p{
+font-size:19px;
+margin-bottom:16px;
+}
+
+.mestre-box ul{
+padding-left:24px;
+font-size:18px;
+line-height:1.9;
+margin-bottom:16px;
+}
+
+.mestre-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:18px;
+margin-top:20px;
+}
+
+.mestre-card{
+background:#0b2a4a;
+padding:22px;
+border-radius:14px;
+color:#fff;
+}
+
+.mestre-card h3{
+margin-top:0;
+font-size:20px;
+color:#ffb300;
+margin-bottom:10px;
+}
+
+.mestre-card p{
+font-size:16px;
+margin:0;
+color:#cdd8e8;
+}
+
+.mestre-alerta{
+background:#fff5e0;
+border-left:6px solid #ffb300;
+padding:20px 24px;
+border-radius:12px;
+margin:20px 0;
+font-size:18px;
+}
+
+.mestre-alerta-vermelho{
+background:#fff0f0;
+border-left:6px solid #cc0000;
+padding:20px 24px;
+border-radius:12px;
+margin:20px 0;
+font-size:18px;
+}
+
+.mestre-alerta-verde{
+background:#f0fff4;
+border-left:6px solid #25D366;
+padding:20px 24px;
+border-radius:12px;
+margin:20px 0;
+font-size:18px;
+}
+
+.mestre-passos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:16px;
+margin-top:20px;
+}
+
+.mestre-passo{
+background:#f4f6f9;
+padding:22px;
+border-radius:14px;
+text-align:center;
+}
+
+.mestre-passo-num{
+font-size:44px;
+font-weight:900;
+color:#ffb300;
+line-height:1;
+margin-bottom:10px;
+}
+
+.mestre-passo h3{
+font-size:18px;
+color:#0b2a4a;
+margin:0 0 8px;
+}
+
+.mestre-passo p{
+font-size:16px;
+margin:0;
+color:#444;
+}
+
+.mestre-urgencia{
+background:linear-gradient(135deg,#cc0000,#990000);
+padding:30px;
+border-radius:18px;
+color:#fff;
+text-align:center;
+margin-bottom:30px;
+}
+
+.mestre-urgencia h2{
+font-size:30px;
+margin-bottom:12px;
+color:#fff;
+}
+
+.mestre-urgencia p{
+font-size:19px;
+margin-bottom:20px;
+}
+
+.mestre-faq details{
+background:#f4f6f9;
+padding:18px 20px;
+border-radius:12px;
+margin-bottom:12px;
+}
+
+.mestre-faq summary{
+font-size:19px;
+font-weight:700;
+cursor:pointer;
+color:#0b2a4a;
+line-height:1.4;
+}
+
+.mestre-faq details p{
+margin-top:12px;
+font-size:17px;
+color:#333;
+}
+
+.mestre-eeat{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:16px;
+margin-top:20px;
+}
+
+.mestre-eeat-item{
+background:#f4f6f9;
+padding:22px;
+border-radius:14px;
+border-top:4px solid #ffb300;
+}
+
+.mestre-eeat-item h3{
+font-size:18px;
+color:#0b2a4a;
+margin:0 0 10px;
+}
+
+.mestre-eeat-item p{
+font-size:16px;
+margin:0;
+color:#444;
+}
+
+.mestre-resposta{
+background:#f0fff4;
+border-left:6px solid #25D366;
+padding:24px 26px;
+border-radius:14px;
+margin-bottom:30px;
+}
+
+.mestre-resposta h2{
+font-size:24px;
+color:#0b2a4a;
+margin:0 0 12px;
+font-weight:800;
+}
+
+.mestre-resposta p{
+font-size:18px;
+margin:0;
+color:#1f2d20;
+}
+
+.mestre-toc{
+background:#f4f6f9;
+padding:24px 28px;
+border-radius:14px;
+margin-bottom:30px;
+}
+
+.mestre-toc h2{
+font-size:22px;
+color:#0b2a4a;
+margin:0 0 14px;
+font-weight:800;
+}
+
+.mestre-toc ul{
+list-style:none;
+padding:0;
+margin:0;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:8px 24px;
+}
+
+.mestre-toc a{
+color:#163d66;
+text-decoration:none;
+font-size:17px;
+font-weight:600;
+}
+
+.mestre-toc a:hover{
+color:#ffb300;
+}
+
+.mestre-footer{
+background:#0b2a4a;
+padding:40px 28px;
+border-radius:18px;
+color:#fff;
+margin-top:40px;
+}
+
+.mestre-footer h3{
+color:#ffb300;
+font-size:26px;
+margin-bottom:16px;
+}
+
+.mestre-footer h4{
+color:#ffb300;
+font-size:18px;
+margin:24px 0 10px;
+}
+
+.mestre-footer p{
+font-size:16px;
+margin-bottom:8px;
+color:#cdd8e8;
+}
+
+.mestre-footer a{
+color:#ffb300;
+}
+
+.mestre-footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:24px;
+margin-top:20px;
+}
+
+.mestre-footer-links{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:20px;
+}
+
+.mestre-footer-links a{
+color:#ffb300!important;
+text-decoration:none;
+font-size:15px;
+font-weight:700;
+border:1px solid #ffb300;
+padding:6px 14px;
+border-radius:20px;
+}
+
+.mestre-lgpd{
+background:#0a2240;
+padding:20px 24px;
+border-radius:12px;
+margin-top:24px;
+font-size:14px;
+color:#aab8c8;
+line-height:1.7;
+}
+
+.mestre-lgpd strong{
+color:#ffb300;
+}
+
+@media(max-width:768px){
+.mestre-hero h1{font-size:30px;}
+.mestre-box h2{font-size:26px;}
+.mestre-box p{font-size:17px;}
+}
+</style>
+
+<section style="padding:30px 0;">
+<div class="mestre-container">
+
+<div class="mestre-hero">
+<h1>Como Localizar e Corrigir um Curto-Circuito em Barueri — Guia Passo a Passo</h1>
+<p>Disjuntor caindo sozinho, cheiro de plástico queimado ou tomada com marca escura? São sinais de curto-circuito. O Mestre dos Reparos localiza a falha com instrumentos certos, corrige dentro da NBR 5410 e entrega garantia por escrito.</p>
+<p>Atendimento em residências, apartamentos, condomínios e comércios — chegamos em 30 a 50 minutos em Barueri e região.</p>
+<div class="mestre-btns">
+<a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20suspeito%20de%20curto-circuito%20e%20preciso%20de%20eletricista%20em%20Barueri." target="_blank" rel="noopener">⚡ Chamar Eletricista Agora</a>
+<a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento" target="_blank" rel="noopener">📅 Agendar Online</a>
+</div>
+</div>
+
+<div class="mestre-resposta">
+<h2>Resposta rápida</h2>
+<p>Para localizar um curto-circuito com segurança: desligue o disjuntor do circuito suspeito, confirme ausência de tensão com testador, desconecte todos os aparelhos e religue — se o disjuntor parar de cair, o defeito está no equipamento, não na fiação. Se continuar, teste a continuidade entre fase e neutro por trechos, do quadro às extremidades: resistência próxima de zero indica o trecho com curto. Nunca trabalhe com o circuito energizado. Se a falha estiver embutida, atingir vários circuitos ou houver barramento aquecido, chame um profissional habilitado.</p>
+</div>
+
+<div class="mestre-toc">
+<h2>Neste guia você encontra</h2>
+<ul>
+<li><a href="#causas">O que provoca um curto-circuito</a></li>
+<li><a href="#sinais">Sinais de falha na instalação</a></li>
+<li><a href="#equipamento">Defeito no equipamento ou na fiação</a></li>
+<li><a href="#seguranca">Como isolar o circuito com segurança</a></li>
+<li><a href="#localizar">Localizar a falha passo a passo</a></li>
+<li><a href="#instrumentos">Instrumentos de medição</a></li>
+<li><a href="#corrigir">Corrigir e prevenir recorrência</a></li>
+<li><a href="#quando-chamar">Quando chamar um especialista</a></li>
+<li><a href="#faq">Perguntas frequentes</a></li>
+</ul>
+</div>
+
+<div class="mestre-box" id="causas">
+<h2>O que provoca um curto-circuito e por que é risco real</h2>
+<p>Um curto-circuito não identificado a tempo não é só um inconveniente: vira incêndio, danifica equipamentos caros e coloca pessoas em risco. Muitos incêndios elétricos residenciais começam assim — uma falha ignorada que continuou esquentando dentro da parede, sem sinal visível até ser tarde demais.</p>
+
+<h3>Causas mais comuns em casas e comércios</h3>
+<ul>
+<li>Isolamento deteriorado por envelhecimento ou abrasão</li>
+<li>Conexões frouxas ou emendas malfeitas</li>
+<li>Sobrecarga por excesso de aparelhos em um único circuito</li>
+<li>Entrada de umidade em tomadas, quadros ou eletrodutos</li>
+</ul>
+<p>Equipamentos com defeito interno provocam o mesmo efeito — e aí o problema está no aparelho, não na fiação. Chuveiros elétricos, ferros de passar e secadores são candidatos frequentes porque trabalham com resistência e acumulam desgaste.</p>
+
+<h3>Por que ignorar agrava o risco</h3>
+<p>Quando fase e neutro se tocam sem impedância suficiente, a corrente sobe de forma abrupta e gera calor intenso no ponto de falha. O disjuntor protege, mas não elimina o defeito: ele apenas interrompe o circuito. Rearmar sem corrigir a causa faz o processo se repetir até a proteção falhar ou o dano se agravar. O disjuntor que cai toda hora é um aviso, não um recurso. Para entender esse sintoma em detalhe, veja <a href="https://www.mestredosreparos.app.br/2026/05/por-que-o-disjuntor-do-chuveiro-desarma.html?m=1">por que o disjuntor desarma</a>.</p>
+</div>
+
+<div class="mestre-box" id="sinais">
+<h2>Sinais que indicam uma falha elétrica</h2>
+<h3>O que observar antes de tocar em qualquer coisa</h3>
+<div class="mestre-alerta-vermelho">
+<ul>
+<li>Disjuntor desarmando repetidamente</li>
+<li>Tomadas com marcas escurecidas</li>
+<li>Fios com isolamento derretido ou ressecado</li>
+<li>Cheiro de plástico queimado</li>
+<li>Estalidos ao ligar determinados aparelhos</li>
+</ul>
+</div>
+<p>Se o disjuntor de um cômodo específico cai toda hora, o problema provavelmente está naquele circuito — e a busca começa ali. Um sinal menos óbvio: o medidor de energia registrando consumo mesmo com todos os disjuntores abertos pode indicar falha no alimentador principal ou fuga contínua, o que exige atenção imediata de um profissional, porque o problema está antes do quadro.</p>
+</div>
+
+<div class="mestre-box" id="equipamento">
+<h2>Quando o defeito está no equipamento, não na fiação</h2>
+<p>Antes de qualquer teste na fiação, desconecte todos os aparelhos do circuito suspeito. Se o disjuntor parar de desarmar após remover os equipamentos, o defeito está neles — não na instalação fixa. Essa triagem simples economiza tempo e evita desmontar paredes ou eletrodutos sem necessidade.</p>
+<p>Aparelhos com resistência interna são os principais suspeitos: chuveiro, ferro de passar, secador de cabelo e fornos elétricos podem desenvolver curto interno sem sinais externos claros. Substitua o equipamento suspeito antes de investigar a fiação.</p>
+</div>
+
+<div class="mestre-box" id="seguranca">
+<h2>Segurança em primeiro lugar: como isolar o circuito</h2>
+<h3>Desenergização e bloqueio do ponto de trabalho</h3>
+<p>O procedimento correto começa pelo básico: desligue o disjuntor do circuito suspeito, confirme que não há tensão no ponto com um testador e só então toque nos componentes. Nunca trabalhe com o circuito energizado. Em situações com fumaça, faíscas ou cheiro forte, desligue o disjuntor geral e aguarde antes de qualquer ação.</p>
+<div class="mestre-alerta">
+A NR-10 exige bloqueio e etiquetagem em qualquer intervenção elétrica. A ABNT NBR 5410 orienta a proteção dos circuitos desde o projeto. Entenda o que diz a norma em <a href="https://www.mestredosreparos.app.br/2026/06/o-que-e-nbr-5410.html?m=1">o que é a NBR 5410</a> ou consulte o <a href="http://ftp.demec.ufpr.br/disciplinas/TM249/Material%20de%20aula/NBR5410%20-%20Instala%E7%F5es%20El%E9tricas%20de%20Baixa%20Tens%E3o.pdf" target="_blank" rel="noopener">texto técnico da NBR 5410 (PDF)</a>.
+</div>
+
+<h3>EPIs para o diagnóstico básico</h3>
+<p>Para apenas inspecionar e medir, os itens mínimos são luvas dielétricas, calçado isolante e óculos de proteção. Eles reduzem o risco de choque, mas não eliminam a necessidade de conhecimento técnico. O diagnóstico em quadros com barramento energizado não é para leigo — se há qualquer dúvida sobre o procedimento, o momento de chamar um eletricista é antes de abrir o quadro, não depois.</p>
+</div>
+
+<div class="mestre-box" id="localizar">
+<h2>Localizar a falha passo a passo</h2>
+<div class="mestre-passos">
+<div class="mestre-passo">
+<div class="mestre-passo-num">1</div>
+<h3>Desenergize</h3>
+<p>Desligue o disjuntor do circuito e confirme ausência de tensão com testador antes de tocar em qualquer ponto.</p>
+</div>
+<div class="mestre-passo">
+<div class="mestre-passo-num">2</div>
+<h3>Inspeção visual</h3>
+<p>Percorra o circuito procurando tomadas escurecidas, isolamento danificado, emendas expostas e descoloração por calor.</p>
+</div>
+<div class="mestre-passo">
+<div class="mestre-passo-num">3</div>
+<h3>Elimine cargas</h3>
+<p>Remova todos os aparelhos. Isso separa o defeito de equipamento do defeito de fiação.</p>
+</div>
+<div class="mestre-passo">
+<div class="mestre-passo-num">4</div>
+<h3>Segmente o circuito</h3>
+<p>Teste continuidade entre fase e neutro por trechos, do quadro às extremidades, dividindo ao meio até isolar o ponto.</p>
+</div>
+<div class="mestre-passo">
+<div class="mestre-passo-num">5</div>
+<h3>Confirme com multímetro</h3>
+<p>Resistência próxima de zero ohm entre fase e neutro confirma o curto naquele segmento.</p>
+</div>
+<div class="mestre-passo">
+<div class="mestre-passo-num">6</div>
+<h3>Corrija e teste</h3>
+<p>Substitua o trecho ou componente danificado, refaça conexões e teste com segurança antes de religar.</p>
+</div>
+</div>
+<p>Uma técnica complementar usa uma lâmpada de teste ligada em paralelo ao disjuntor: ao desconectar trechos, quando a lâmpada apaga ou enfraquece, o defeito estava naquele trecho. O multímetro em modo continuidade nunca deve ser usado em circuito energizado — o teste ocorre sempre com o circuito desligado e os equipamentos desconectados.</p>
+</div>
+
+<div class="mestre-urgencia">
+<h2>⚡ Cheiro de queimado, fumaça ou faísca no quadro?</h2>
+<p>Não rearme o disjuntor nem investigue energizado. Desligue o geral e chame agora — chegamos em 30 a 50 minutos em Barueri.</p>
+<div class="mestre-btns" style="justify-content:center;">
+<a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Emerg%C3%AAncia%3A%20suspeita%20de%20curto-circuito%20em%20Barueri." target="_blank" rel="noopener">⚡ CHAMAR AGORA — WHATSAPP</a>
+</div>
+</div>
+
+<div class="mestre-box" id="instrumentos">
+<h2>Instrumentos para medir e confirmar a falha</h2>
+<p>Cada instrumento responde a uma pergunta diferente. Equipamentos de medição profissionais podem ser consultados em fornecedores especializados como a <a href="https://meastech.com.br/produtos/testadores/" target="_blank" rel="noopener">linha de testadores da Meastech</a>.</p>
+
+<h3>Megômetro — estado do isolamento</h3>
+<p>Mede a resistência de isolamento entre condutores e entre condutor e terra, em megaohms. A ABNT NBR 5410 estabelece resistência mínima de 0,5 MΩ para circuitos de baixa tensão até 500 V: leituras abaixo disso indicam isolamento comprometido, umidade ou degradação, e o trecho precisa ser substituído. O teste é feito com o circuito desenergizado e as cargas desconectadas — a tensão de ensaio pode danificar eletrônicos sensíveis.</p>
+
+<h3>Testador de loop e pinça amperimétrica</h3>
+<p>O testador de loop mede a impedância da malha de curto-circuito entre o ponto de instalação e a fonte; valores baixos confirmam que a proteção vai atuar dentro do tempo exigido pela norma. A pinça amperimétrica mede a corrente no condutor sem abrir o circuito: valores acima da corrente nominal apontam sobrecarga. Para isolar correntes de fuga, o indicado é a pinça diferencial.</p>
+</div>
+
+<div class="mestre-box" id="corrigir">
+<h2>Corrigir a falha e prevenir recorrência</h2>
+<h3>Ações corretivas imediatas</h3>
+<p>Após localizar a falha, substitua o trecho de cabo com isolamento danificado e refaça conexões frouxas ou emendas expostas com técnica correta. Tomadas e interruptores com sinais de carbonização devem ser trocados — veja como é feita a <a href="https://www.mestredosreparos.app.br/2026/05/trocadetomadaseinteruptores.html?m=1">troca de tomadas e interruptores</a>. Toda correção é feita com o circuito bloqueado e com materiais certificados pelo INMETRO.</p>
+
+<h3>Medidas preventivas</h3>
+<p>Revise o quadro para confirmar se os disjuntores estão dimensionados corretamente, redistribua cargas para eliminar sobrecargas crônicas e inspecione periodicamente os pontos mais vulneráveis: tomadas externas, áreas úmidas e circuitos de ar-condicionado. Instalações com mais de 10 a 15 anos devem ser avaliadas por profissional habilitado — substituir cabos degradados custa muito menos do que reparar depois de um incêndio.</p>
+</div>
+
+<div class="mestre-box" id="quando-chamar">
+<h2>Quando o problema exige um especialista</h2>
+<p>Existe um limite claro para o diagnóstico leigo. Chame um <a href="https://www.mestredosreparos.app.br/2026/05/eletricistaembarueri.html?m=1">eletricista em Barueri</a> quando:</p>
+<div class="mestre-alerta">
+<ul>
+<li>O curto está em circuito embutido, sem acesso visual</li>
+<li>Há múltiplos circuitos afetados ao mesmo tempo</li>
+<li>O quadro apresenta barramento aquecido ou disjuntor com sinal de arco elétrico</li>
+<li>A falha não foi localizada após os testes básicos</li>
+</ul>
+</div>
+<p>O Mestre dos Reparos realiza o diagnóstico seguindo a NBR 5410, com materiais certificados e garantia do serviço. Não conseguiu localizar a falha? Use a calculadora para uma estimativa ou chame direto para emergência.</p>
+<div class="mestre-btns">
+<a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Calculadora" target="_blank" rel="noopener">🧮 Calcular Preço Online</a>
+<a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20de%20curto-circuito%20em%20Barueri." target="_blank" rel="noopener">💬 Falar com Especialista</a>
+</div>
+</div>
+
+<div class="mestre-box">
+<h2>Por que contratar o Mestre dos Reparos</h2>
+<div class="mestre-eeat">
+<div class="mestre-eeat-item">
+<h3>🎓 Formação em Engenharia</h3>
+<p>Responsável técnico com formação em Engenharia Elétrica e Técnico em Eletrotécnica, com experiência consolidada em diagnóstico elétrico em Barueri e região.</p>
+</div>
+<div class="mestre-eeat-item">
+<h3>📋 CNPJ ativo em Barueri</h3>
+<p>CNPJ 64.521.657/0001-87 registrado em Barueri/SP. Emissão de nota fiscal e responsabilidade civil pelo serviço.</p>
+</div>
+<div class="mestre-eeat-item">
+<h3>🛡️ Garantia de 90 dias</h3>
+<p>Todos os serviços com garantia técnica por escrito, conforme o Código de Defesa do Consumidor.</p>
+</div>
+<div class="mestre-eeat-item">
+<h3>⭐ 32 avaliações 4,9</h3>
+<p>Avaliações verificadas no Google de clientes reais atendidos em Barueri e região.</p>
+</div>
+<div class="mestre-eeat-item">
+<h3>🚗 Chegamos em 30-50 min</h3>
+<p>Atendimento de emergência com tempo de chegada declarado e confirmado pelo WhatsApp.</p>
+</div>
+<div class="mestre-eeat-item">
+<h3>⚡ NR-10 e NBR 5410</h3>
+<p>Diagnóstico com bloqueio e desenergização conforme a NR-10 e correção dentro da NBR 5410.</p>
+</div>
+</div>
+</div>
+
+<div class="mestre-box">
+<h2>Atendemos Barueri e bairros próximos</h2>
+<p>Diagnóstico e correção de curto-circuito no <a href="https://www.mestredosreparos.app.br/p/blog-page_2.html?m=1">Centro de Barueri</a>, <a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html?m=1">Jardim Belval</a>, <a href="https://www.mestredosreparos.app.br/p/blog-page_29.html?m=1">Jardim Silveira</a>, <a href="https://www.mestredosreparos.app.br/p/blog-page_83.html?m=1">Bethaville</a> e em todos os bairros de Barueri.</p>
+</div>
+
+<div class="mestre-box" id="faq">
+<h2>Perguntas frequentes — Curto-circuito em Barueri</h2>
+<div class="mestre-faq">
+<details>
+<summary>Quanto custa para localizar e corrigir um curto-circuito?</summary>
+<p>O valor depende da complexidade do diagnóstico e da extensão da correção. Use nossa calculadora online para uma estimativa ou chame no WhatsApp (11) 91839-0430 para orçamento após avaliação.</p>
+</details>
+<details>
+<summary>Vocês atendem 24 horas em Barueri?</summary>
+<p>Sim. Atendemos emergências elétricas 24 horas em Barueri e região, incluindo fins de semana e feriados.</p>
+</details>
+<details>
+<summary>Em quanto tempo o eletricista chega?</summary>
+<p>Em condições normais chegamos em 30 a 50 minutos após a confirmação pelo WhatsApp.</p>
+</details>
+<details>
+<summary>O serviço tem garantia?</summary>
+<p>Sim. Garantia técnica de 90 dias por escrito em todos os serviços, conforme o Código de Defesa do Consumidor.</p>
+</details>
+<details>
+<summary>Vocês emitem nota fiscal?</summary>
+<p>Sim. Atuamos com CNPJ ativo (64.521.657/0001-87) em Barueri/SP e emitimos nota fiscal pelo serviço.</p>
+</details>
+<details>
+<summary>Vocês fazem laudo da instalação elétrica?</summary>
+<p>Sim. Realizamos verificação técnica e laudo da instalação, com avaliação de isolamento, dimensionamento e proteção, quando o cliente solicita.</p>
+</details>
+<details>
+<summary>Disjuntor caindo toda hora é curto-circuito?</summary>
+<p>Pode ser. Disjuntor que desarma repetidamente indica curto-circuito, sobrecarga ou defeito em equipamento. O primeiro passo é desconectar os aparelhos do circuito: se parar de cair, o defeito está no aparelho; se continuar, está na fiação.</p>
+</details>
+<details>
+<summary>Cheiro de queimado na tomada é perigoso?</summary>
+<p>Sim, é sinal de alerta grave. Indica aquecimento por mau contato, sobrecarga ou curto interno, e é uma das principais causas de incêndio elétrico. Desligue o circuito e chame um profissional antes de continuar usando.</p>
+</details>
+<details>
+<summary>Dá para achar o curto-circuito sozinho?</summary>
+<p>Em circuitos acessíveis e com conhecimento básico, a triagem inicial é possível com segurança. Mas se o curto está embutido, atinge vários circuitos ou há barramento aquecido, o diagnóstico exige profissional habilitado e instrumentos adequados.</p>
+</details>
+<details>
+<summary>Vocês atendem apartamento, condomínio e empresa?</summary>
+<p>Sim. Atendemos residências, apartamentos, condomínios e comércios em Barueri e região.</p>
+</details>
+<details>
+<summary>Quais bairros vocês atendem?</summary>
+<p>Atendemos todos os bairros de Barueri, incluindo Centro, Jardim Belval, Jardim Silveira, Bethaville e Boa Vista, além de cidades vizinhas da região.</p>
+</details>
+<details>
+<summary>Como chamar pelo WhatsApp?</summary>
+<p>Clique em qualquer botão de WhatsApp desta página ou envie mensagem para (11) 91839-0430 descrevendo o problema. Avaliamos a urgência e confirmamos o atendimento na hora.</p>
+</details>
+</div>
+</div>
+
+<style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<div class="mestre-footer">
+<h3>Mestre dos Reparos — Curto-Circuito e Diagnóstico Elétrico em Barueri</h3>
+<div class="mestre-footer-grid">
+<div>
+<h4>Dados da Empresa</h4>
+<p><strong>Nome Fantasia:</strong> Mestre dos Reparos</p>
+<p><strong>Razão Social:</strong> Maria Eduarda Hengles Valadão</p>
+<p><strong>CNPJ:</strong> 64.521.657/0001-87</p>
+<p><strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245 — Jardim Belval — Barueri/SP — CEP 06420-130</p>
+</div>
+<div>
+<h4>Contato</h4>
+<p><strong>WhatsApp:</strong> <a href="https://wa.me/5511918390430" target="_blank" rel="noopener">(11) 91839-0430</a></p>
+<p><strong>Telefone:</strong> <a href="tel:+5511918390430">(11) 91839-0430</a></p>
+<p><strong>E-mail:</strong> <a href="mailto:mestredosreparosbarueri@gmail.com">mestredosreparosbarueri@gmail.com</a></p>
+<p><strong>Horário:</strong> 24 horas — 7 dias por semana</p>
+<p><strong>Área:</strong> Barueri e região</p>
+</div>
+<div>
+<h4>Links</h4>
+<div class="mestre-footer-links">
+<a href="https://www.mestredosreparos.app.br/?m=1">Início</a>
+<a href="https://www.mestredosreparos.app.br/2026/05/eletricistaembarueri.html?m=1">Eletricista em Barueri</a>
+<a href="https://mestre-reparos.base44.app/Agendamento" target="_blank" rel="noopener">Agendamento</a>
+<a href="https://mestre-reparos.base44.app/Calculadora" target="_blank" rel="noopener">Calculadora</a>
+<a href="https://wa.me/5511918390430" target="_blank" rel="noopener">WhatsApp</a>
+<a href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">Avaliar no Google</a>
+<a href="https://www.mestredosreparos.app.br/2026/06/o-que-e-nbr-5410.html?m=1">NBR 5410</a>
+</div>
+</div>
+</div>
+<div class="mestre-lgpd">
+<strong>Norma técnica —</strong> Diagnóstico e correção de curto-circuito executados com bloqueio e desenergização conforme a NR-10 e proteção de circuitos conforme a ABNT NBR 5410, incluindo verificação de isolamento (mínimo 0,5 MΩ até 500 V), dimensionamento de proteção e uso de materiais certificados pelo INMETRO. Responsável técnico com formação em Engenharia Elétrica. Emissão de nota fiscal e ART quando aplicável ao escopo do serviço.
+<br><br>
+<strong>LGPD —</strong> Os dados coletados são utilizados exclusivamente para atendimento, orçamento e agendamento. O titular pode solicitar acesso, correção ou exclusão pelo e-mail <strong>mestredosreparosbarueri@gmail.com</strong> conforme a Lei nº 13.709/2018.
+<br><br>
+<strong>Termos de Uso —</strong> Ao utilizar este site e solicitar atendimento, o usuário concorda com as condições de atendimento, orçamento prévio e comunicação pelos canais oficiais da empresa.
+<br><br>
+© 2026 Mestre dos Reparos — Maria Eduarda Hengles Valadão — CNPJ 64.521.657/0001-87 — Todos os direitos reservados.
+</div>
+</div>
+
+</div>
+
+<div class="mr-aval">
+  <h3 class="mr-aval-titulo">Como você avalia este conteúdo?</h3>
+  <p class="mr-aval-sub">Seu feedback nos ajuda a melhorar a qualidade dos nossos artigos</p>
+  <div class="mr-aval-estrelas" role="radiogroup" aria-label="Avaliação de 1 a 5 estrelas">
+    <span data-v="1" role="radio" aria-label="1 estrela">&#9734;</span>
+    <span data-v="2" role="radio" aria-label="2 estrelas">&#9734;</span>
+    <span data-v="3" role="radio" aria-label="3 estrelas">&#9734;</span>
+    <span data-v="4" role="radio" aria-label="4 estrelas">&#9734;</span>
+    <span data-v="5" role="radio" aria-label="5 estrelas">&#9734;</span>
+  </div>
+  <p class="mr-aval-obrigado">Obrigado pela sua avaliação!</p>
+</div>
+
+<style>
+.mr-aval{max-width:1100px;margin:30px auto;background:#fff;border-radius:18px;padding:28px 30px;box-shadow:0 4px 18px rgba(0,0,0,.08);font-family:Arial,sans-serif;}
+.mr-aval-titulo{font-size:26px;color:#0b2a4a;font-weight:800;margin:0 0 6px;}
+.mr-aval-sub{color:#8a94a3;font-size:16px;margin:0 0 16px;}
+.mr-aval-estrelas{display:flex;gap:8px;font-size:42px;line-height:1;}
+.mr-aval-estrelas span{color:#c6ccd4;cursor:pointer;transition:color .12s,transform .12s;}
+.mr-aval-estrelas span:hover{transform:scale(1.08);}
+.mr-aval-estrelas span.on{color:#ffb300;}
+.mr-aval-obrigado{display:none;color:#1e8e3e;font-weight:700;font-size:17px;margin:14px 0 0;}
+.mr-aval.rated .mr-aval-estrelas span{cursor:default;}
+.mr-aval.rated .mr-aval-obrigado{display:block;}
+@media(max-width:768px){.mr-aval-titulo{font-size:22px;}.mr-aval-estrelas{font-size:38px;}}
+</style>
+
+<script>
+(function(){
+  var box=document.currentScript.parentNode.querySelector('.mr-aval')||document.querySelector('.mr-aval');
+  if(!box)return;
+  var stars=box.querySelectorAll('.mr-aval-estrelas span'), sel=0, locked=false;
+  var key='mr_aval_'+location.pathname;
+  function paint(n){stars.forEach(function(s){var v=+s.dataset.v;s.innerHTML=v<=n?'\u2605':'\u2606';s.classList.toggle('on',v<=n);});}
+  try{var saved=localStorage.getItem(key);if(saved){sel=+saved;locked=true;box.classList.add('rated');paint(sel);}}catch(e){}
+  stars.forEach(function(s){
+    s.addEventListener('mouseenter',function(){if(!locked)paint(+s.dataset.v);});
+    s.addEventListener('click',function(){
+      if(locked)return;
+      sel=+s.dataset.v;locked=true;paint(sel);box.classList.add('rated');
+      try{localStorage.setItem(key,sel);}catch(e){}
+    });
+  });
+  box.querySelector('.mr-aval-estrelas').addEventListener('mouseleave',function(){paint(sel);});
+})();
+</script>
+
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Mestre dos Reparos",
+  "image": "https://www.mestredosreparos.app.br/",
+  "url": "https://www.mestredosreparos.app.br/",
+  "telephone": "+5511918390430",
+  "email": "mestredosreparosbarueri@gmail.com",
+  "priceRange": "R$",
+  "legalName": "Maria Eduarda Hengles Valadão",
+  "taxID": "64.521.657/0001-87",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Henrique Gonçalves Baptista, 2245 - Jardim Belval",
+    "addressLocality": "Barueri",
+    "addressRegion": "SP",
+    "postalCode": "06420-130",
+    "addressCountry": "BR"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Barueri"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Localização e correção de curto-circuito em Barueri"
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question","name": "Quanto custa para localizar e corrigir um curto-circuito?","acceptedAnswer": {"@type": "Answer","text": "O valor depende da complexidade do diagnóstico e da extensão da correção. Use a calculadora online para uma estimativa ou chame no WhatsApp (11) 91839-0430 para orçamento após avaliação."}},
+    {"@type": "Question","name": "Vocês atendem 24 horas em Barueri?","acceptedAnswer": {"@type": "Answer","text": "Sim. Atendemos emergências elétricas 24 horas em Barueri e região, incluindo fins de semana e feriados."}},
+    {"@type": "Question","name": "Em quanto tempo o eletricista chega?","acceptedAnswer": {"@type": "Answer","text": "Em condições normais chegamos em 30 a 50 minutos após a confirmação pelo WhatsApp."}},
+    {"@type": "Question","name": "O serviço tem garantia?","acceptedAnswer": {"@type": "Answer","text": "Sim. Garantia técnica de 90 dias por escrito em todos os serviços, conforme o Código de Defesa do Consumidor."}},
+    {"@type": "Question","name": "Vocês emitem nota fiscal?","acceptedAnswer": {"@type": "Answer","text": "Sim. Atuamos com CNPJ ativo (64.521.657/0001-87) em Barueri/SP e emitimos nota fiscal pelo serviço."}},
+    {"@type": "Question","name": "Vocês fazem laudo da instalação elétrica?","acceptedAnswer": {"@type": "Answer","text": "Sim. Realizamos verificação técnica e laudo da instalação, com avaliação de isolamento, dimensionamento e proteção, quando o cliente solicita."}},
+    {"@type": "Question","name": "Disjuntor caindo toda hora é curto-circuito?","acceptedAnswer": {"@type": "Answer","text": "Pode ser. Disjuntor que desarma repetidamente indica curto-circuito, sobrecarga ou defeito em equipamento. O primeiro passo é desconectar os aparelhos do circuito: se parar de cair, o defeito está no aparelho; se continuar, está na fiação."}},
+    {"@type": "Question","name": "Cheiro de queimado na tomada é perigoso?","acceptedAnswer": {"@type": "Answer","text": "Sim, é sinal de alerta grave. Indica aquecimento por mau contato, sobrecarga ou curto interno, e é uma das principais causas de incêndio elétrico. Desligue o circuito e chame um profissional antes de continuar usando."}},
+    {"@type": "Question","name": "Dá para achar o curto-circuito sozinho?","acceptedAnswer": {"@type": "Answer","text": "Em circuitos acessíveis e com conhecimento básico, a triagem inicial é possível com segurança. Mas se o curto está embutido, atinge vários circuitos ou há barramento aquecido, o diagnóstico exige profissional habilitado e instrumentos adequados."}},
+    {"@type": "Question","name": "Vocês atendem apartamento, condomínio e empresa?","acceptedAnswer": {"@type": "Answer","text": "Sim. Atendemos residências, apartamentos, condomínios e comércios em Barueri e região."}},
+    {"@type": "Question","name": "Quais bairros vocês atendem?","acceptedAnswer": {"@type": "Answer","text": "Atendemos todos os bairros de Barueri, incluindo Centro, Jardim Belval, Jardim Silveira, Bethaville e Boa Vista, além de cidades vizinhas da região."}},
+    {"@type": "Question","name": "Como chamar pelo WhatsApp?","acceptedAnswer": {"@type": "Answer","text": "Clique em qualquer botão de WhatsApp da página ou envie mensagem para (11) 91839-0430 descrevendo o problema. Avaliamos a urgência e confirmamos o atendimento na hora."}}
+  ]
+}
+</script>
+
+
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>

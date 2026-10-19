@@ -1,0 +1,323 @@
+<div style="clear:both !important;" class="mdr-corp-wrap">
+<style>
+.mdr-corp-wrap{--azul:#0b2a4a;--azul2:#163d66;--amarelo:#ffb300;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;line-height:1.6;max-width:900px;margin:0 auto;}
+.mdr-corp-wrap h1,.mdr-corp-wrap h2,.mdr-corp-wrap h3{color:var(--azul);font-family:Arial,Helvetica,sans-serif;}
+.mestre-hero{background:linear-gradient(135deg,var(--azul),var(--azul2));color:#fff;padding:28px 20px;border-radius:10px;margin-bottom:22px;}
+.mestre-hero h1{color:#fff;font-size:1.55em;margin:0 0 10px;}
+.mestre-hero p{margin:0 0 14px;font-size:1.02em;}
+.mestre-hero .mdr-cta-row{display:flex;flex-wrap:wrap;gap:10px;}
+.mdr-btn{display:inline-block;background:var(--amarelo);color:#111;font-weight:bold;padding:12px 18px;border-radius:8px;text-decoration:none;font-size:0.95em;}
+.mdr-btn-outline{display:inline-block;border:2px solid #fff;color:#fff;font-weight:bold;padding:10px 16px;border-radius:8px;text-decoration:none;font-size:0.95em;}
+.mestre-box{background:#f6f8fb;border-left:4px solid var(--azul2);border-radius:8px;padding:18px;margin:18px 0;}
+.mestre-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0;}
+@media(min-width:620px){.mestre-grid{grid-template-columns:1fr 1fr;}}
+.mestre-card{background:#fff;border:1px solid #e3e8ee;border-radius:10px;padding:16px;}
+.mestre-card h3{margin-top:0;font-size:1.05em;}
+.mestre-urgencia{background:#fff4e5;border:1px solid var(--amarelo);border-radius:8px;padding:14px 16px;margin:18px 0;font-size:0.95em;}
+.mdr-carrossel-wrap{position:relative;overflow:hidden;margin:18px 0;padding:10px 0;background:#fff;border:1px solid #e3e8ee;border-radius:12px;}
+.mdr-carrossel-wrap::before,.mdr-carrossel-wrap::after{content:"";position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none;}
+.mdr-carrossel-wrap::before{left:0;background:linear-gradient(90deg,#fff,rgba(255,255,255,0));}
+.mdr-carrossel-wrap::after{right:0;background:linear-gradient(270deg,#fff,rgba(255,255,255,0));}
+.mdr-carrossel-track{display:flex;align-items:center;gap:0;width:max-content;animation:mdr-scroll 28s linear infinite;}
+.mdr-carrossel-wrap:hover .mdr-carrossel-track{animation-play-state:paused;}
+.mdr-cliente-card{flex:0 0 auto;width:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 18px;text-align:center;}
+.mdr-cliente-card img{max-width:120px;max-height:42px;object-fit:contain;filter:grayscale(100%);opacity:0.8;transition:filter .2s,opacity .2s;}
+.mdr-cliente-card img:hover{filter:grayscale(0%);opacity:1;}
+.mdr-cliente-card .nome{font-weight:bold;color:var(--azul);font-size:0.95em;}
+.mdr-cliente-card .local{font-size:0.78em;color:#667;margin-top:4px;}
+@keyframes mdr-scroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+@media(prefers-reduced-motion:reduce){.mdr-carrossel-track{animation:none;}}
+.mdr-stars{color:var(--amarelo);font-size:1.1em;}
+.mdr-review{background:#fff;border:1px solid #e3e8ee;border-radius:10px;padding:14px;margin-bottom:10px;}
+.mdr-review .nome{font-weight:bold;color:var(--azul);font-size:0.92em;}
+.mestre-faq details{background:#fff;border:1px solid #e3e8ee;border-radius:8px;margin-bottom:8px;padding:12px 14px;}
+.mestre-faq summary{font-weight:bold;cursor:pointer;color:var(--azul);}
+.mestre-faq summary::-webkit-details-marker{color:var(--amarelo);}
+.mdr-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.92em;}
+.mdr-table th,.mdr-table td{border:1px solid #e3e8ee;padding:8px 10px;text-align:left;}
+.mdr-table th{background:var(--azul);color:#fff;}
+.mdr-author{display:flex;gap:12px;align-items:flex-start;background:#f6f8fb;border-radius:10px;padding:14px;margin:20px 0;}
+.mdr-author .foto{width:56px;height:56px;border-radius:50%;background:var(--azul);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;}
+.mestre-footer{background:var(--azul);color:#dde6f0;border-radius:10px;padding:20px;margin-top:26px;font-size:0.88em;}
+.mestre-footer a{color:var(--amarelo);text-decoration:none;}
+.mdr-bairros{columns:2;column-gap:16px;font-size:0.9em;}
+@media(min-width:620px){.mdr-bairros{columns:3;}}
+.mdr-crumb{font-size:0.82em;color:#667;margin-bottom:10px;}
+.mdr-crumb a{color:var(--azul2);text-decoration:none;}
+</style>
+
+<nav class="mdr-crumb" aria-label="breadcrumb">
+<a href="https://www.mestredosreparos.app.br/">Início</a> &rsaquo;
+<a href="https://www.mestredosreparos.app.br/p/servicos-b2b.html">Serviços B2B</a> &rsaquo;
+Manutenção Predial para Empresas em Barueri
+</nav>
+
+<section class="mestre-hero">
+<h1>Manutenção Predial para Empresas e Prédios Corporativos em Barueri</h1>
+<p>Elétrica, hidráulica, ar-condicionado e reformas para empresas, galpões, centros de distribuição e edifícios corporativos em Barueri, Alphaville, Tamboré e região. Um único fornecedor para toda a manutenção predial do seu negócio — com contrato recorrente, visita avulsa ou atendimento emergencial.</p>
+<div class="mdr-cta-row">
+<a class="mdr-btn" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20manuten%C3%A7%C3%A3o%20predial%20para%20minha%20empresa%20em%20Barueri">Falar no WhatsApp agora</a>
+<a class="mdr-btn-outline" href="https://mestre-reparos.base44.app/Agendamento">Solicitar visita técnica</a>
+</div>
+</section>
+
+<p>A <strong>Mestre dos Reparos</strong> presta manutenção predial para empresas de diversos portes em Barueri e região — de centros de distribuição a agências financeiras e indústrias. Atendemos elétrica, hidráulica, ar-condicionado e reformas com uma única equipe, reduzindo o número de fornecedores que sua empresa precisa gerenciar e garantindo um padrão técnico único em todo o imóvel.</p>
+
+<h2>Por que empresas em Barueri contratam a Mestre dos Reparos</h2>
+<div class="mestre-grid">
+<div class="mestre-card">
+<h3>Um fornecedor, toda a manutenção</h3>
+<p>Elétrica, hidráulica, ar-condicionado e reformas com a mesma equipe — menos fornecedores para gerenciar e um só ponto de contato para qualquer chamado.</p>
+</div>
+<div class="mestre-card">
+<h3>Responsabilidade técnica</h3>
+<p>Serviços executados conforme NBR 5410 e NR-10, com ART/CREA emitida quando o escopo exigir, atendendo às exigências de auditorias e seguradoras.</p>
+</div>
+<div class="mestre-card">
+<h3>Contrato de manutenção recorrente</h3>
+<p>Planos mensais ou trimestrais de manutenção preventiva para reduzir paradas não programadas na operação do seu negócio.</p>
+</div>
+<div class="mestre-card">
+<h3>Nota fiscal e faturamento</h3>
+<p>Emissão de nota fiscal para pessoa jurídica, com possibilidade de faturamento mensal consolidado para clientes com contrato recorrente.</p>
+</div>
+</div>
+
+<h2>Serviços de manutenção predial para empresas</h2>
+<ul>
+<li><strong>Elétrica predial</strong> — manutenção de quadros elétricos, adequação à NR-10, iluminação comercial, nobreaks e geradores, padrão de entrada</li>
+<li><strong>Hidráulica</strong> — reparo de vazamentos, manutenção de caixas d'água, desentupimento, troca de registros e tubulações</li>
+<li><strong>Ar-condicionado</strong> — manutenção preventiva e corretiva de splits e sistemas centrais, limpeza e recarga de gás</li>
+<li><strong>Reformas e adequações de espaço</strong> — drywall, pintura, pequenas obras civis para adequação de layout corporativo</li>
+<li><strong>Manutenção geral predial</strong> — pequenos reparos, troca de peças, ajustes estruturais e de acabamento</li>
+<li><strong>Laudo técnico predial</strong> — relatório para laudos de seguradora, due diligence e locação comercial</li>
+</ul>
+
+<div class="mestre-urgencia">
+<strong>Atendimento emergencial para empresas:</strong> vazamento, falha elétrica ou ar-condicionado parado comprometem a operação. Priorizamos chamados corporativos com contrato ativo e atendemos emergências pontuais sujeitas à disponibilidade de agenda.
+</div>
+
+<h2>Segmentos atendidos</h2>
+<div class="mdr-bairros">
+<p>Centros de distribuição e armazéns</p>
+<p>Agências e escritórios financeiros</p>
+<p>Indústrias e fábricas</p>
+<p>Empresas de certificação e inspeção</p>
+<p>Escritórios corporativos</p>
+<p>Condomínios empresariais</p>
+<p>Lojas e comércios</p>
+<p>Galpões logísticos</p>
+</div>
+
+<h2>Região de atendimento corporativo</h2>
+<p>Atendemos empresas e condomínios comerciais em Barueri (incluindo Alphaville e Tamboré), Carapicuíba, Jandira, Itapevi e Santana de Parnaíba, em um raio de atendimento de aproximadamente 20 km a partir da nossa base operacional.</p>
+
+<h2>Tabela de modalidades de atendimento</h2>
+<table class="mdr-table">
+<tr><th>Modalidade</th><th>Indicado para</th><th>Como funciona</th></tr>
+<tr><td>Visita técnica avulsa</td><td>Demanda pontual ou primeira avaliação</td><td>Agendamento via WhatsApp ou plataforma, orçamento prévio</td></tr>
+<tr><td>Contrato de manutenção</td><td>Empresas com rotina de inspeção periódica</td><td>Plano mensal/trimestral com relatório técnico</td></tr>
+<tr><td>Atendimento emergencial</td><td>Falha que impacta a operação</td><td>Prioridade para clientes com contrato ativo</td></tr>
+</table>
+
+<h2>Empresas que já atendemos em Barueri e região</h2>
+<div class="mdr-carrossel-wrap">
+<div class="mdr-carrossel-track">
+<!-- bloco 1 -->
+<div class="mdr-cliente-card">
+<img src="https://armazena.com.br/wp-content/uploads/2021/09/logo_300.png" alt="Logo Armazena Armazéns Gerais" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Armazena Armazéns Gerais</div>
+<div class="local">Itapevi</div>
+</div>
+<div class="mdr-cliente-card">
+<div class="nome">PJ Bank</div>
+<div class="local">Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://cdn1-www.bureauveritas.com.br/themes/custom/bureauveritasbase/favicon/mstile-144x144.png" alt="Logo Bureau Veritas" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Bureau Veritas</div>
+<div class="local">Alphaville, Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://coca-cola-femsa.com.br/wp-content/uploads/2024/05/logo-femsa-juntos-new-2.svg" alt="Logo Coca-Cola FEMSA" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Coca-Cola FEMSA</div>
+<div class="local">Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://assets.bradesco/content/dam/portal-bradesco/assets/common/img/bra-logo.png" alt="Logo Bradesco" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Bradesco</div>
+<div class="local">Alphaville, Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://www.itau.com.br/media/dam/m/617c0fa5f48ce445/original/ITAU_LOGO_LARANJA_114X114.png" alt="Logo Itaú" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Itaú</div>
+<div class="local">Barueri</div>
+</div>
+<!-- bloco 2 (duplicado para loop contínuo) -->
+<div class="mdr-cliente-card">
+<img src="https://armazena.com.br/wp-content/uploads/2021/09/logo_300.png" alt="Logo Armazena Armazéns Gerais" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Armazena Armazéns Gerais</div>
+<div class="local">Itapevi</div>
+</div>
+<div class="mdr-cliente-card">
+<div class="nome">PJ Bank</div>
+<div class="local">Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://cdn1-www.bureauveritas.com.br/themes/custom/bureauveritasbase/favicon/mstile-144x144.png" alt="Logo Bureau Veritas" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Bureau Veritas</div>
+<div class="local">Alphaville, Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://coca-cola-femsa.com.br/wp-content/uploads/2024/05/logo-femsa-juntos-new-2.svg" alt="Logo Coca-Cola FEMSA" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Coca-Cola FEMSA</div>
+<div class="local">Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://assets.bradesco/content/dam/portal-bradesco/assets/common/img/bra-logo.png" alt="Logo Bradesco" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Bradesco</div>
+<div class="local">Alphaville, Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://www.itau.com.br/media/dam/m/617c0fa5f48ce445/original/ITAU_LOGO_LARANJA_114X114.png" alt="Logo Itaú" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Itaú</div>
+<div class="local">Barueri</div>
+</div>
+</div>
+</div>
+<p style="font-size:0.9em;color:#667;">Empresas de diferentes segmentos — logística, financeiro, certificação e indústria — confiam na Mestre dos Reparos para a manutenção predial de suas unidades em Barueri e região.</p>
+
+<h2>Perguntas frequentes — manutenção predial para empresas em Barueri</h2>
+<div class="mestre-faq">
+<details><summary>Vocês atendem só elétrica ou fazem manutenção predial completa?</summary><p>Fazemos manutenção predial completa: elétrica, hidráulica, ar-condicionado e pequenas reformas, com a mesma equipe. A empresa não precisa gerenciar fornecedores diferentes para cada tipo de serviço.</p></details>
+<details><summary>Vocês emitem ART para serviços elétricos em prédios comerciais?</summary><p>Sim. Para serviços que exigem responsabilidade técnica formal, emitimos ART/CREA, atendendo a exigências de auditorias internas, seguradoras e órgãos fiscalizadores.</p></details>
+<details><summary>É possível fechar um contrato de manutenção mensal para minha empresa?</summary><p>Sim, oferecemos planos de manutenção preventiva mensal ou trimestral, cobrindo elétrica, hidráulica e ar-condicionado, com relatório técnico de cada visita.</p></details>
+<details><summary>Atendem emergências fora do horário comercial?</summary><p>Atendemos emergências que comprometam a segurança ou a operação do negócio, com prioridade para clientes com contrato ativo. Entre em contato pelo WhatsApp para verificar disponibilidade imediata.</p></details>
+<details><summary>Que tipo de empresa vocês já atenderam em Barueri?</summary><p>Atendemos empresas de logística como a Armazena Armazéns Gerais em Itapevi, instituições financeiras como PJ Bank, Bradesco e Itaú em Barueri e Alphaville, empresas de certificação como a Bureau Veritas, e indústrias como a Coca-Cola FEMSA.</p></details>
+<details><summary>Emitem nota fiscal para pessoa jurídica?</summary><p>Sim, emitimos nota fiscal para empresas e, em contratos recorrentes, é possível consolidar o faturamento mensalmente.</p></details>
+<details><summary>Quais regiões de Barueri vocês atendem para clientes corporativos?</summary><p>Atendemos empresas em todo Barueri, incluindo Alphaville e Tamboré, além de Carapicuíba, Jandira, Itapevi e Santana de Parnaíba.</p></details>
+<details><summary>Como solicito um orçamento para minha empresa?</summary><p>Você pode solicitar pelo WhatsApp (11) 91839-0430 ou pela nossa plataforma de agendamento online, informando o tipo de imóvel e a necessidade.</p></details>
+</div>
+
+<div class="mdr-author">
+<div class="foto">ME</div>
+<div>
+<strong>Responsável técnico: Mestre dos Reparos</strong><br>
+<span style="font-size:0.9em;">Engenharia Elétrica, Técnico em Eletrotécnica (SENAI), certificação NR-10. Mais de 15 anos de experiência em manutenção predial residencial, comercial e corporativa, atuando conforme NBR 5410 e NR-10 em Barueri e região.</span>
+</div>
+</div>
+
+<style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<footer class="mestre-footer">
+<strong>Mestre dos Reparos</strong> — Maria Eduarda Hengles Valadão — CNPJ 64.521.657/0001-87<br>
+Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval, Barueri – SP | CEP 06420-130<br>
+WhatsApp: <a href="https://wa.me/5511918390430">(11) 91839-0430</a> | E-mail: mestredosreparosbarueri@gmail.com<br>
+<a href="https://www.mestredosreparos.app.br/p/lgpd-lei-geral-de-protecao-de-dados.html">LGPD</a> ·
+<a href="https://www.mestredosreparos.app.br/p/politica-de-privacidade.html">Privacidade</a> ·
+<a href="https://www.mestredosreparos.app.br/p/temos-de-uso.html">Termos de Uso</a>
+</footer>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@graph":[
+{
+"@type":"BreadcrumbList",
+"itemListElement":[
+{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br/"},
+{"@type":"ListItem","position":2,"name":"Serviços B2B","item":"https://www.mestredosreparos.app.br/p/servicos-b2b.html"},
+{"@type":"ListItem","position":3,"name":"Manutenção Predial para Empresas em Barueri","item":"https://www.mestredosreparos.app.br/p/manutencao-predial-empresas-barueri.html"}
+]
+},
+{
+"@type":"HomeAndConstructionBusiness",
+"name":"Mestre dos Reparos - Manutenção Predial Corporativa",
+"image":"https://www.mestredosreparos.app.br/logo-eletricista-barueri.png",
+"telephone":"+5511918390430",
+"email":"mestredosreparosbarueri@gmail.com",
+"priceRange":"$$",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval",
+"addressLocality":"Barueri",
+"addressRegion":"SP",
+"postalCode":"06420-130",
+"addressCountry":"BR"
+},
+"areaServed":{
+"@type":"GeoCircle",
+"geoMidpoint":{"@type":"GeoCoordinates","latitude":-23.511369,"longitude":-46.872942},
+"geoRadius":"20000"
+},
+"aggregateRating":{
+"@type":"AggregateRating",
+"ratingValue":"4.9",
+"reviewCount":"32"
+}
+},
+{
+"@type":"Organization",
+"name":"Mestre dos Reparos",
+"url":"https://www.mestredosreparos.app.br/",
+"logo":"https://www.mestredosreparos.app.br/logo-eletricista-barueri.png",
+"sameAs":[]
+},
+{
+"@type":"FAQPage",
+"mainEntity":[
+{"@type":"Question","name":"Vocês atendem só elétrica ou fazem manutenção predial completa?","acceptedAnswer":{"@type":"Answer","text":"Fazemos manutenção predial completa: elétrica, hidráulica, ar-condicionado e pequenas reformas, com a mesma equipe. A empresa não precisa gerenciar fornecedores diferentes para cada tipo de serviço."}},
+{"@type":"Question","name":"Vocês emitem ART para serviços elétricos em prédios comerciais?","acceptedAnswer":{"@type":"Answer","text":"Sim. Para serviços que exigem responsabilidade técnica formal, emitimos ART/CREA, atendendo a exigências de auditorias internas, seguradoras e órgãos fiscalizadores."}},
+{"@type":"Question","name":"É possível fechar um contrato de manutenção mensal para minha empresa?","acceptedAnswer":{"@type":"Answer","text":"Sim, oferecemos planos de manutenção preventiva mensal ou trimestral, cobrindo elétrica, hidráulica e ar-condicionado, com relatório técnico de cada visita."}},
+{"@type":"Question","name":"Atendem emergências fora do horário comercial?","acceptedAnswer":{"@type":"Answer","text":"Atendemos emergências que comprometam a segurança ou a operação do negócio, com prioridade para clientes com contrato ativo. Entre em contato pelo WhatsApp para verificar disponibilidade imediata."}},
+{"@type":"Question","name":"Que tipo de empresa vocês já atenderam em Barueri?","acceptedAnswer":{"@type":"Answer","text":"Atendemos empresas de logística como a Armazena Armazéns Gerais em Itapevi, instituições financeiras como PJ Bank, Bradesco e Itaú em Barueri e Alphaville, empresas de certificação como a Bureau Veritas, e indústrias como a Coca-Cola FEMSA."}},
+{"@type":"Question","name":"Emitem nota fiscal para pessoa jurídica?","acceptedAnswer":{"@type":"Answer","text":"Sim, emitimos nota fiscal para empresas e, em contratos recorrentes, é possível consolidar o faturamento mensalmente."}},
+{"@type":"Question","name":"Quais regiões de Barueri vocês atendem para clientes corporativos?","acceptedAnswer":{"@type":"Answer","text":"Atendemos empresas em todo Barueri, incluindo Alphaville e Tamboré, além de Carapicuíba, Jandira, Itapevi e Santana de Parnaíba."}},
+{"@type":"Question","name":"Como solicito um orçamento para minha empresa?","acceptedAnswer":{"@type":"Answer","text":"Você pode solicitar pelo WhatsApp (11) 91839-0430 ou pela nossa plataforma de agendamento online, informando o tipo de imóvel e a necessidade."}}
+]
+}
+]
+}
+</script>
+</div>
+
+
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>

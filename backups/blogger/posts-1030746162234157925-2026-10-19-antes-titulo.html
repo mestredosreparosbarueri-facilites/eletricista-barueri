@@ -1,0 +1,298 @@
+<style>
+:root{--azul:#0b2a4a;--azul2:#163d66;--amarelo:#ffb300;--branco:#ffffff;--cinza:#f4f6f9;--verde:#25D366;}
+.mestre-container{max-width:1100px;margin:auto;padding:20px;font-family:Arial,sans-serif;line-height:1.7;color:#222;}
+.mestre-hero{background:linear-gradient(135deg,#0b2a4a,#163d66);padding:50px 28px;border-radius:18px;color:#fff;margin-bottom:35px;box-shadow:0 10px 30px rgba(0,0,0,.18);}
+.mestre-hero h1{font-size:42px;line-height:1.2;margin-bottom:20px;font-weight:900;}
+.mestre-hero p{font-size:20px;max-width:920px;}
+.mestre-btns{display:flex;gap:15px;flex-wrap:wrap;margin-top:28px;}
+.mestre-btn{display:inline-block;padding:16px 24px;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none!important;}
+.mestre-btn-whats{background:#25D366;color:#fff!important;}
+.mestre-btn-agendar{background:#ffb300;color:#0b2a4a!important;}
+.mestre-box{background:#fff;padding:30px;border-radius:18px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08);}
+.mestre-box h2{font-size:32px;color:#0b2a4a;margin-bottom:18px;}
+.mestre-autor{background:#fff5e0;border-left:6px solid #ffb300;padding:18px 22px;border-radius:12px;margin-bottom:30px;font-size:17px;}
+.mestre-toc{background:#fff;padding:30px;border-radius:18px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08);}
+.mestre-toc h2{font-size:28px;color:#0b2a4a;margin-bottom:16px;}
+.mestre-toc ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;}
+.mestre-toc a{display:block;background:#f4f6f9;padding:14px 16px;border-radius:10px;color:#0b2a4a!important;text-decoration:none;font-weight:700;font-size:16px;border-left:5px solid #ffb300;}
+.mestre-qa{background:#f4f6f9;border-radius:12px;margin-bottom:14px;overflow:hidden;}
+.mestre-q{margin:0;font-size:20px;font-weight:700;color:#0b2a4a;padding:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.mestre-q .ic{font-size:26px;line-height:1;color:#ffb300;flex:0 0 auto;display:none;}
+.mestre-a{padding:0 18px 18px 18px;font-size:18px;color:#222;}
+.js-acc .mestre-q{cursor:pointer;}
+.js-acc .mestre-q .ic{display:inline;transition:transform .2s;}
+.js-acc .mestre-a{display:none;}
+.js-acc .mestre-qa.open .mestre-a{display:block;}
+.js-acc .mestre-qa.open .mestre-q .ic{transform:rotate(45deg);}
+.mestre-urgencia{background:linear-gradient(135deg,#cc0000,#990000);padding:30px;border-radius:18px;color:#fff;text-align:center;margin-bottom:30px;}
+.mestre-urgencia h2{font-size:32px;margin-bottom:15px;color:#fff;}
+.mestre-urgencia p{font-size:20px;margin-bottom:20px;}
+.mestre-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:25px;}
+.mestre-card{background:#0b2a4a;padding:22px;border-radius:14px;color:#fff;}
+.mestre-card h3{margin-top:0;font-size:22px;color:#ffb300;}
+.mestre-card p{font-size:17px;margin:0;}
+.mestre-footer{background:#0b2a4a;padding:40px 25px;border-radius:18px;color:#fff;margin-top:40px;}
+.mestre-footer h3{color:#ffb300;font-size:28px;margin-bottom:15px;}
+.mestre-links{display:grid;gap:10px;margin-top:20px;}
+.mestre-links a{color:#fff!important;text-decoration:none;font-weight:700;}
+@media(max-width:768px){.mestre-hero h1{font-size:32px;}.mestre-box h2{font-size:26px;}.mestre-q{font-size:18px;}}
+/* ajustes mínimos para formato de artigo (texto corrido) */
+.mestre-box h3{color:#0b2a4a;font-size:22px;margin:22px 0 10px;}
+.mestre-box p{margin:0 0 14px;font-size:18px;}
+.mestre-box ul,.mestre-box ol{padding-left:22px;margin:10px 0 16px;font-size:18px;}
+.mestre-box li{margin-bottom:8px;}
+.mestre-box a{color:#0b66c2;font-weight:700;}
+.mestre-alerta{background:#fff5e0;border-left:6px solid #ffb300;padding:16px 20px;border-radius:12px;margin:18px 0;font-size:18px;}
+</style>
+
+<section style="padding:30px 0;">
+<div class="mestre-container">
+
+<div class="mestre-hero">
+<h1>NBR 5410: O Que É e Para Que Serve</h1>
+<p>A norma técnica que define como instalações elétricas de baixa tensão devem ser projetadas, executadas e mantidas no Brasil — e o que separa uma instalação segura de uma que oferece risco real.</p>
+<div class="mestre-btns">
+<a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20eletricista%20em%20Barueri." target="_blank" rel="noopener">⚡ Chamar Eletricista Agora</a>
+<a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento" target="_blank" rel="noopener">📅 Agendar Visita Técnica</a>
+</div></div>
+
+<div class="mestre-autor"><strong>Conteúdo revisado pelo responsável técnico do Mestre dos Reparos</strong> — empresa de elétrica sediada em Barueri/SP, CNPJ 64.521.657/0001-87. Responsável com formação em Engenharia e mais de 20 anos de experiência em elétrica residencial, predial e comercial, com execução conforme a ABNT NBR 5410. Atendimento 24 horas pelo WhatsApp (11) 91839-0430.</div>
+
+<div class="mestre-toc"><h2>O que você vai encontrar</h2><ul>
+<li><a href="#resposta">Resposta rápida</a></li>
+<li><a href="#o-que-e">O que é a NBR 5410 e quem ela protege</a></li>
+<li><a href="#pilares">Os pilares técnicos que a norma exige</a></li>
+<li><a href="#ignora">O que acontece quando a instalação ignora a norma</a></li>
+<li><a href="#verificar">Como verificar a conformidade</a></li>
+<li><a href="#versao2026">O que muda na versão prevista para 2026</a></li>
+<li><a href="#faq">Perguntas frequentes</a></li>
+</ul></div>
+
+<div class="mestre-box" id="resposta"><h2>Resposta rápida</h2>
+<p>A ABNT NBR 5410 é o documento técnico que define como instalações elétricas de baixa tensão (até 1.000 V em corrente alternada) devem ser projetadas, executadas e mantidas no Brasil. Ela cobre o quadro de disjuntores, a fiação interna, tomadas, iluminação e circuitos de chuveiro e ar-condicionado. Seus pilares são:</p>
+<ul>
+<li>Proteção contra choque elétrico em duas camadas (básica e supletiva);</li>
+<li>Aterramento e equipotencialização de todas as massas metálicas;</li>
+<li>DR de alta sensibilidade (até 30 mA) em áreas molhadas;</li>
+<li>Dimensionamento correto de condutores e dispositivos de proteção.</li>
+</ul>
+</div>
+
+<div class="mestre-box" id="o-que-e"><h2>O que é a NBR 5410 e quem ela protege</h2>
+
+<h3>A norma em palavras simples</h3>
+<p>A ABNT NBR 5410, cujo título completo é "Instalações elétricas de baixa tensão", foi publicada originalmente em setembro de 2004 e passou por uma versão corrigida em março de 2008. Uma nova edição está prevista para ser publicada até o final de 2026, com atualizações importantes sobre proteção diferencial, aterramento e ensaios. Ela não é uma lei no sentido estrito, mas tem peso técnico e jurídico reconhecido: contratos de obras, laudos periciais e apólices de seguros residenciais ou comerciais costumam tomá-la como referência técnica obrigatória.</p>
+<p>A norma cobre qualquer instalação elétrica alimentada com tensão de até 1.000 V em corrente alternada. Isso abrange praticamente tudo que existe numa residência ou estabelecimento comercial: o quadro de disjuntores, a fiação interna, as tomadas, a iluminação e os circuitos de equipamentos como chuveiro e ar-condicionado.</p>
+
+<h3>Quem ela protege na prática</h3>
+<p>A norma não foi criada para o escritório de projeto. Ela protege o morador que dorme na casa todas as noites, o funcionário que trabalha no escritório oito horas por dia e o síndico que responde legalmente pela manutenção das áreas comuns do condomínio. Qualquer ponto elétrico que alimenta um equipamento do cotidiano está dentro do escopo dessa norma.</p>
+<p>Quando a instalação segue os critérios técnicos estabelecidos, os dispositivos de proteção funcionam no tempo certo, os condutores não aquecem além do permitido e o risco de choque ou incêndio cai a níveis aceitáveis. Quando a instalação ignora esses critérios, a pergunta não é "se" vai dar problema, mas "quando".</p>
+</div>
+
+<div class="mestre-box" id="pilares"><h2>Os pilares técnicos que a NBR 5410 exige</h2>
+
+<h3>Proteção contra choque elétrico em duas camadas</h3>
+<p>A norma exige dois níveis de proteção contra choque. A proteção básica atua na primeira linha de defesa: isolamento das partes vivas, barreiras físicas e invólucros adequados. A proteção supletiva entra quando a primeira falha: equipotencialização, aterramento e dispositivos de seccionamento automático, como o diferencial residual (DR). O objetivo é garantir que, mesmo em caso de falha na instalação, o risco de contato com tensão perigosa seja eliminado antes de causar dano.</p>
+<p>O DR de alta sensibilidade, com corrente diferencial nominal de até 30 mA, é indicado para circuitos de banheiros, cozinhas, lavanderias, áreas de serviço, garagens e áreas externas, conforme orientações técnicas da própria norma. Nesses ambientes, a combinação de umidade e eletricidade exige uma camada extra de proteção que o disjuntor convencional não oferece.</p>
+
+<h3>Aterramento, equipotencialização e esquemas admitidos</h3>
+<p>Todas as massas metálicas e partes condutivas expostas da instalação devem estar interligadas e conectadas ao condutor de proteção (PE). A norma admite três esquemas de aterramento: TT, TN e IT. Nas residências brasileiras, o esquema TT é bastante comum, especialmente onde a concessionária não fornece um PE confiável direto da rede. Nesse caso, a instalação precisa de eletrodo de aterramento próprio e a proteção por DR se torna ainda mais relevante.</p>
+<p>O aterramento correto não é só um detalhe técnico: é o que garante que um dispositivo de proteção consiga atuar dentro do tempo limite quando ocorre uma falta elétrica. Sem aterramento funcional, o disjuntor pode não "ver" o defeito a tempo de interromper a corrente perigosa.</p>
+
+<h3>Dimensionamento de condutores e dispositivos de proteção</h3>
+<p>A norma define que a seção de um condutor deve ser calculada com base em critérios simultâneos. Os dois principais são a capacidade de condução de corrente e a queda de tensão máxima admitida. A esses se somam a proteção contra sobrecarga e a proteção contra curto-circuito. A relação central é que a corrente do circuito deve ser menor ou igual à corrente nominal do dispositivo de proteção, que por sua vez não pode superar a capacidade do condutor. Fatores de correção por temperatura ambiente e agrupamento de circuitos no mesmo eletroduto também entram nesse cálculo.</p>
+<p>Na prática, esse critério evita dois erros clássicos: o cabo subdimensionado, que aquece acima do limite e pode causar incêndio, e a proteção superdimensionada, que demora para atuar e permite dano ao condutor antes de desligar o circuito. É matemática aplicada diretamente à segurança das pessoas.</p>
+</div>
+
+<div class="mestre-box" id="ignora"><h2>O que acontece quando a instalação ignora a norma</h2>
+
+<h3>Riscos diretos para quem usa o espaço</h3>
+<p>Uma instalação fora dos padrões técnicos da norma é uma instalação que não foi dimensionada para suportar as cargas reais do dia a dia. O resultado prático aparece de forma progressiva: disjuntores que demoram para atuar, condutores aquecendo acima do limite, tomadas que ficam quentes ao toque e, em casos mais graves, princípios de incêndio dentro da parede ou no quadro elétrico.</p>
+<p>Ausência de aterramento, falta de DR em áreas molhadas e cabos de seção insuficiente são as três não conformidades mais recorrentes em residências. Essas falhas não exigem uma situação extrema para causar acidente: uma simples variação de carga numa instalação mal dimensionada já é suficiente para colocar pessoas em risco.</p>
+
+<h3>Consequências legais e financeiras que poucos consideram</h3>
+<p>Seguros residenciais e comerciais costumam exigir conformidade com normas técnicas reconhecidas para cobrir sinistros de origem elétrica. Uma perícia que identifique instalação improvisada ou fora dos padrões da ABNT pode invalidar a cobertura do sinistro completamente. Além disso, em casos de acidente, o responsável pela execução ou pelo imóvel pode responder civil e, em situações graves, criminalmente pela negligência técnica comprovada.</p>
+<p>A norma não gera multa automática por si mesma, mas seu descumprimento é usado como prova de falha de conformidade em processos de responsabilidade civil. Indenizações por danos materiais, morais e lucros cessantes são consequências reais para quem mantém uma instalação fora do padrão e tem um acidente como resultado.</p>
+</div>
+
+<div class="mestre-urgencia"><h2>⚡ Quer saber se a sua instalação está dentro da norma?</h2><p>O melhor momento para checar é antes de um problema acontecer. Agende uma avaliação técnica em Barueri, Alphaville ou Tamboré.</p><div class="mestre-btns" style="justify-content:center;"><a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20eletricista%20em%20Barueri." target="_blank" rel="noopener">⚡ CHAMAR AGORA — WHATSAPP</a><a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento" target="_blank" rel="noopener">📅 Agendar Visita</a></div></div>
+
+<div class="mestre-box" id="verificar"><h2>Como verificar se a sua instalação está em conformidade</h2>
+
+<h3>Sinais de alerta que você pode identificar agora</h3>
+<p>Alguns indicadores de não conformidade são visíveis sem nenhum equipamento especializado. Disjuntor que desarma com frequência, tomadas que aquecem ao toque, fiação aparente sem proteção em eletrodutos adequados e quadro elétrico sem identificação dos circuitos são sinais concretos de que a instalação pode estar fora dos padrões técnicos. A ausência do condutor de proteção (fio terra) em tomadas e pontos que alimentam chuveiro, ar-condicionado e equipamentos de maior potência é outro indicador crítico.</p>
+<p>Instalações antigas, especialmente aquelas que nunca passaram por uma revisão elétrica formal, têm maior probabilidade de não atender aos critérios atuais. Se o imóvel nunca recebeu uma vistoria técnica, as chances de ter pelo menos uma não conformidade relevante são altas.</p>
+
+<h3>Checklist básico para uma primeira avaliação</h3>
+<ul>
+<li>Quadro elétrico identificado com cada circuito nomeado e disjuntores dimensionados corretamente;</li>
+<li>Fio de proteção (terra) presente em tomadas de uso geral e em todos os circuitos dedicados;</li>
+<li>Dispositivo diferencial residual (DR) instalado nos circuitos de banheiro, cozinha e área de serviço;</li>
+<li>Ausência de emendas expostas, fios pelados ou instalações improvisadas sem eletroduto;</li>
+<li>Circuitos de iluminação e tomadas separados conforme a função e carga de cada ambiente.</li>
+</ul>
+
+<h3>Quando chamar um profissional habilitado</h3>
+<p>Identificar os sinais de alerta é uma coisa; corrigir a instalação com segurança é outra. Qualquer intervenção no quadro elétrico, reorganização de circuitos ou instalação de novos pontos exige um eletricista habilitado que execute dentro dos critérios técnicos estabelecidos pela norma. Gambiarra não resolve: ela posterga o problema e aumenta o risco.</p>
+<div class="mestre-alerta">O Mestre dos Reparos atende residências e estabelecimentos comerciais em Barueri, Alphaville, Tamboré e região com execução conforme a ABNT NBR 5410, utilizando componentes de marcas consolidadas no mercado, como Schneider Electric, Siemens e Pial Legrand, com garantia do serviço. Se você suspeita que a sua instalação tem alguma não conformidade, o melhor momento para checar é antes de um problema acontecer. <a href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20eletricista%20em%20Barueri." target="_blank" rel="noopener">Fale conosco pelo WhatsApp</a>.</div>
+</div>
+
+<div class="mestre-box" id="versao2026"><h2>O que muda com a nova versão prevista para 2026</h2>
+<p>A revisão da norma em andamento, conforme o processo conduzido pela ABNT, deve trazer algumas mudanças relevantes para projetos residenciais. A principal discussão é sobre ampliar a indicação do DR para todos os circuitos da casa, não apenas os de áreas molhadas. Há também debate sobre a inclusão de dispositivos de detecção de arco elétrico (AFDD) em dormitórios, uma camada extra de proteção contra incêndios causados por arcos em fiações envelhecidas. Vale reforçar que essas são propostas em discussão, não texto definitivo aprovado.</p>
+<p>Outras tendências incluem maior rigor nas etapas de inspeção e ensaio na entrega de instalações novas, além de harmonização mais clara com a NBR 5419, que trata da proteção contra descargas atmosféricas e surtos. Na prática, quem executa instalações dentro dos padrões técnicos atuais já estará bem posicionado para atender às novas exigências quando elas entrarem em vigor.</p>
+</div>
+
+<div class="mestre-box"><h2>Conclusão: norma técnica é proteção real, não burocracia</h2>
+<p>A ABNT NBR 5410 não existe para complicar a vida de ninguém. Ela existe porque instalações elétricas mal executadas causam acidentes, incêndios e prejuízos que poderiam ter sido evitados com critério técnico adequado. Dimensionamento correto, aterramento funcional, proteção diferencial nos circuitos certos e materiais de qualidade: esses são os pilares que a norma estabelece e que fazem diferença concreta na vida das pessoas.</p>
+<p>Se você mora em Barueri, Alphaville, Tamboré ou qualquer área da região e quer saber se a instalação do seu imóvel está dentro dos padrões técnicos, o Mestre dos Reparos pode fazer essa avaliação. Com mais de 15 anos de atuação na região e atendimento emergencial disponível, a equipe executa cada serviço seguindo a norma do início ao fim. Agende uma visita técnica antes que um sinal de alerta se torne um problema real.</p>
+</div>
+
+<div class="mestre-box" id="faq"><h2>Perguntas frequentes sobre a NBR 5410</h2>
+
+<div class="mestre-qa"><h3 class="mestre-q"><span>O que é a NBR 5410?</span><span class="ic">+</span></h3><div class="mestre-a">É a norma da ABNT que define como instalações elétricas de baixa tensão, alimentadas com até 1.000 V em corrente alternada, devem ser projetadas, executadas e mantidas no Brasil. Abrange quadro de disjuntores, fiação, tomadas, iluminação e circuitos de chuveiro e ar-condicionado em residências e comércios.</div></div>
+
+<div class="mestre-qa"><h3 class="mestre-q"><span>A NBR 5410 é uma lei?</span><span class="ic">+</span></h3><div class="mestre-a">Não é uma lei no sentido estrito, mas tem peso técnico e jurídico reconhecido. Contratos de obra, laudos periciais e apólices de seguro costumam tomá-la como referência técnica obrigatória, e seu descumprimento pode ser usado como prova de falha de conformidade em processos de responsabilidade civil.</div></div>
+
+<div class="mestre-qa"><h3 class="mestre-q"><span>Onde o DR é obrigatório segundo a norma?</span><span class="ic">+</span></h3><div class="mestre-a">O DR de alta sensibilidade, com corrente diferencial nominal de até 30 mA, é indicado para circuitos de banheiros, cozinhas, lavanderias, áreas de serviço, garagens e áreas externas. Nesses ambientes, a combinação de umidade e eletricidade exige uma camada de proteção que o disjuntor comum não oferece.</div></div>
+
+<div class="mestre-qa"><h3 class="mestre-q"><span>Quais são as não conformidades mais comuns em residências?</span><span class="ic">+</span></h3><div class="mestre-a">As três mais recorrentes são ausência de aterramento, falta de DR em áreas molhadas e cabos de seção insuficiente. Essas falhas não exigem uma situação extrema para causar acidente: uma simples variação de carga numa instalação mal dimensionada já coloca pessoas em risco.</div></div>
+
+<div class="mestre-qa"><h3 class="mestre-q"><span>Instalação fora da norma pode invalidar o seguro?</span><span class="ic">+</span></h3><div class="mestre-a">Pode, sim. Seguros residenciais e comerciais costumam exigir conformidade com normas técnicas reconhecidas para cobrir sinistros de origem elétrica. Uma perícia que identifique instalação improvisada ou fora dos padrões da ABNT pode invalidar completamente a cobertura.</div></div>
+
+<div class="mestre-qa"><h3 class="mestre-q"><span>O que deve mudar na versão de 2026?</span><span class="ic">+</span></h3><div class="mestre-a">As principais propostas em discussão são ampliar a indicação do DR para todos os circuitos da casa e incluir dispositivos de detecção de arco elétrico (AFDD) em dormitórios. Também se discute maior rigor em inspeção e ensaio e harmonização com a NBR 5419. São propostas em discussão, ainda não texto definitivo aprovado.</div></div>
+
+</div>
+
+<div class="mestre-box"><h2>Por que chamar o Mestre dos Reparos em Barueri?</h2><div class="mestre-grid">
+<div class="mestre-card"><h3>📐 Execução na NBR 5410</h3><p>Todo serviço, da troca de disjuntor à reorganização do quadro, seguindo a norma.</p></div>
+<div class="mestre-card"><h3>🛡 Garantia de 90 dias</h3><p>Garantia técnica por escrito conforme o CDC.</p></div>
+<div class="mestre-card"><h3>🎓 Responsável técnico</h3><p>Formação em Engenharia e mais de 20 anos de experiência em elétrica.</p></div>
+<div class="mestre-card"><h3>🔌 Marcas consolidadas</h3><p>Schneider Electric, Siemens e Pial Legrand nos componentes utilizados.</p></div>
+<div class="mestre-card"><h3>⚡ Atendimento 24 horas</h3><p>Emergências elétricas atendidas a qualquer hora em Barueri e região.</p></div>
+<div class="mestre-card"><h3>📍 Cobertura regional</h3><p>Barueri, Alphaville, Tamboré, Jandira, Itapevi e Santana de Parnaíba.</p></div>
+</div></div>
+
+<style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<div class="mestre-footer"><h3>Mestre dos Reparos</h3><p>Eletricista em Barueri para urgências, instalações e manutenção elétrica residencial e comercial com atendimento 24 horas.</p><p><strong>Nome Fantasia:</strong> Mestre dos Reparos</p><p><strong>Razão Social:</strong> Maria Eduarda Hengles Valadao</p><p><strong>CNPJ:</strong> 64.521.657/0001-87</p><p><strong>WhatsApp:</strong> (11) 91839-0430</p><p><strong>Email:</strong> mestredosreparosbarueri@gmail.com</p><div class="mestre-links"><a href="https://www.mestredosreparos.app.br/p/politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a><a href="https://www.mestredosreparos.app.br/p/termos-de-uso.html" target="_blank" rel="noopener">Termos de Uso</a><a href="https://mestre-reparos.base44.app/Agendamento" target="_blank" rel="noopener">Agendamento Online</a><a href="https://mestre-reparos.base44.app/Calculadora" target="_blank" rel="noopener">Calculadora de Serviços</a><a href="https://wa.me/5511918390430" target="_blank" rel="noopener">WhatsApp Direto</a></div></div>
+
+</div>
+</section>
+
+<script>
+(function(){
+  var c=document.querySelectorAll('.mestre-container');
+  if(!c.length)return;
+  c.forEach(function(cont){
+    cont.classList.add('js-acc');
+    cont.querySelectorAll('.mestre-q').forEach(function(q){
+      q.addEventListener('click',function(){
+        q.parentNode.classList.toggle('open');
+      });
+    });
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"O que é a NBR 5410?","acceptedAnswer":{"@type":"Answer","text":"É a norma da ABNT que define como instalações elétricas de baixa tensão, alimentadas com até 1.000 V em corrente alternada, devem ser projetadas, executadas e mantidas no Brasil. Abrange quadro de disjuntores, fiação, tomadas, iluminação e circuitos de chuveiro e ar-condicionado em residências e comércios."}},
+    {"@type":"Question","name":"A NBR 5410 é uma lei?","acceptedAnswer":{"@type":"Answer","text":"Não é uma lei no sentido estrito, mas tem peso técnico e jurídico reconhecido. Contratos de obra, laudos periciais e apólices de seguro costumam tomá-la como referência técnica obrigatória, e seu descumprimento pode ser usado como prova de falha de conformidade em processos de responsabilidade civil."}},
+    {"@type":"Question","name":"Onde o DR é obrigatório segundo a norma?","acceptedAnswer":{"@type":"Answer","text":"O DR de alta sensibilidade, com corrente diferencial nominal de até 30 mA, é indicado para circuitos de banheiros, cozinhas, lavanderias, áreas de serviço, garagens e áreas externas. Nesses ambientes, a combinação de umidade e eletricidade exige uma camada de proteção que o disjuntor comum não oferece."}},
+    {"@type":"Question","name":"Quais são as não conformidades mais comuns em residências?","acceptedAnswer":{"@type":"Answer","text":"As três mais recorrentes são ausência de aterramento, falta de DR em áreas molhadas e cabos de seção insuficiente. Essas falhas não exigem uma situação extrema para causar acidente: uma simples variação de carga numa instalação mal dimensionada já coloca pessoas em risco."}},
+    {"@type":"Question","name":"Instalação fora da norma pode invalidar o seguro?","acceptedAnswer":{"@type":"Answer","text":"Pode, sim. Seguros residenciais e comerciais costumam exigir conformidade com normas técnicas reconhecidas para cobrir sinistros de origem elétrica. Uma perícia que identifique instalação improvisada ou fora dos padrões da ABNT pode invalidar completamente a cobertura."}},
+    {"@type":"Question","name":"O que deve mudar na versão de 2026?","acceptedAnswer":{"@type":"Answer","text":"As principais propostas em discussão são ampliar a indicação do DR para todos os circuitos da casa e incluir dispositivos de detecção de arco elétrico (AFDD) em dormitórios. Também se discute maior rigor em inspeção e ensaio e harmonização com a NBR 5419. São propostas em discussão, ainda não texto definitivo aprovado."}}
+  ]
+}
+</script>
+
+<!-- ===== AVALIAÇÃO DO CONTEÚDO — colar no fim de todo post ===== -->
+<div class="mr-aval">
+  <h3 class="mr-aval-titulo">Como você avalia este conteúdo?</h3>
+  <p class="mr-aval-sub">Seu feedback nos ajuda a melhorar a qualidade dos nossos artigos</p>
+  <div class="mr-aval-estrelas" role="radiogroup" aria-label="Avaliação de 1 a 5 estrelas">
+    <span data-v="1" role="radio" aria-label="1 estrela">&#9734;</span>
+    <span data-v="2" role="radio" aria-label="2 estrelas">&#9734;</span>
+    <span data-v="3" role="radio" aria-label="3 estrelas">&#9734;</span>
+    <span data-v="4" role="radio" aria-label="4 estrelas">&#9734;</span>
+    <span data-v="5" role="radio" aria-label="5 estrelas">&#9734;</span>
+  </div>
+  <p class="mr-aval-obrigado">Obrigado pela sua avaliação!</p>
+</div>
+
+<style>
+.mr-aval{max-width:1100px;margin:30px auto;background:#fff;border-radius:18px;padding:28px 30px;box-shadow:0 4px 18px rgba(0,0,0,.08);font-family:Arial,sans-serif;}
+.mr-aval-titulo{font-size:26px;color:#0b2a4a;font-weight:800;margin:0 0 6px;}
+.mr-aval-sub{color:#8a94a3;font-size:16px;margin:0 0 16px;}
+.mr-aval-estrelas{display:flex;gap:8px;font-size:42px;line-height:1;}
+.mr-aval-estrelas span{color:#c6ccd4;cursor:pointer;transition:color .12s,transform .12s;}
+.mr-aval-estrelas span:hover{transform:scale(1.08);}
+.mr-aval-estrelas span.on{color:#ffb300;}
+.mr-aval-obrigado{display:none;color:#1e8e3e;font-weight:700;font-size:17px;margin:14px 0 0;}
+.mr-aval.rated .mr-aval-estrelas span{cursor:default;}
+.mr-aval.rated .mr-aval-obrigado{display:block;}
+@media(max-width:768px){.mr-aval-titulo{font-size:22px;}.mr-aval-estrelas{font-size:38px;}}
+</style>
+
+<script>
+(function(){
+  var box=document.currentScript.parentNode.querySelector('.mr-aval')||document.querySelector('.mr-aval');
+  if(!box)return;
+  var stars=box.querySelectorAll('.mr-aval-estrelas span'), sel=0, locked=false;
+  var key='mr_aval_'+location.pathname;
+  function paint(n){stars.forEach(function(s){var v=+s.dataset.v;s.innerHTML=v<=n?'\u2605':'\u2606';s.classList.toggle('on',v<=n);});}
+  try{var saved=localStorage.getItem(key);if(saved){sel=+saved;locked=true;box.classList.add('rated');paint(sel);}}catch(e){}
+  stars.forEach(function(s){
+    s.addEventListener('mouseenter',function(){if(!locked)paint(+s.dataset.v);});
+    s.addEventListener('click',function(){
+      if(locked)return;
+      sel=+s.dataset.v;locked=true;paint(sel);box.classList.add('rated');
+      try{localStorage.setItem(key,sel);}catch(e){}
+    });
+  });
+  box.querySelector('.mr-aval-estrelas').addEventListener('mouseleave',function(){paint(sel);});
+})();
+</script>
+
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>

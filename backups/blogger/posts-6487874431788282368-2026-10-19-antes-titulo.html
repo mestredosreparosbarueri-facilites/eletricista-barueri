@@ -1,0 +1,334 @@
+<div style="clear:both !important;" class="mdr-ref-wrap">
+<style>
+.mdr-ref-wrap{--azul:#0b2a4a;--azul2:#163d66;--amarelo:#ffb300;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;line-height:1.6;max-width:900px;margin:0 auto;}
+.mdr-ref-wrap h1,.mdr-ref-wrap h2,.mdr-ref-wrap h3{color:var(--azul);font-family:Arial,Helvetica,sans-serif;}
+.mestre-hero{background:linear-gradient(135deg,var(--azul),var(--azul2));color:#fff;padding:28px 20px;border-radius:10px;margin-bottom:22px;}
+.mestre-hero h1{color:#fff;font-size:1.55em;margin:0 0 10px;}
+.mestre-hero p{margin:0 0 14px;font-size:1.02em;}
+.mestre-hero .mdr-cta-row{display:flex;flex-wrap:wrap;gap:10px;}
+.mdr-btn{display:inline-block;background:var(--amarelo);color:#111;font-weight:bold;padding:12px 18px;border-radius:8px;text-decoration:none;font-size:0.95em;}
+.mdr-btn-outline{display:inline-block;border:2px solid #fff;color:#fff;font-weight:bold;padding:10px 16px;border-radius:8px;text-decoration:none;font-size:0.95em;}
+.mestre-box{background:#f6f8fb;border-left:4px solid var(--azul2);border-radius:8px;padding:18px;margin:18px 0;}
+.mestre-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0;}
+@media(min-width:620px){.mestre-grid{grid-template-columns:1fr 1fr;}}
+.mestre-card{background:#fff;border:1px solid #e3e8ee;border-radius:10px;padding:16px;}
+.mestre-card h3{margin-top:0;font-size:1.05em;}
+.mestre-urgencia{background:#fff4e5;border:1px solid var(--amarelo);border-radius:8px;padding:14px 16px;margin:18px 0;font-size:0.95em;}
+.mdr-stars{color:var(--amarelo);font-size:1.1em;}
+.mdr-review{background:#fff;border:1px solid #e3e8ee;border-radius:10px;padding:14px;margin-bottom:10px;}
+.mdr-review .nome{font-weight:bold;color:var(--azul);font-size:0.92em;}
+.mestre-faq details{background:#fff;border:1px solid #e3e8ee;border-radius:8px;margin-bottom:8px;padding:12px 14px;}
+.mestre-faq summary{font-weight:bold;cursor:pointer;color:var(--azul);}
+.mestre-faq summary::-webkit-details-marker{color:var(--amarelo);}
+.mdr-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.92em;}
+.mdr-table th,.mdr-table td{border:1px solid #e3e8ee;padding:8px 10px;text-align:left;}
+.mdr-table th{background:var(--azul);color:#fff;}
+.mdr-author{display:flex;gap:12px;align-items:flex-start;background:#f6f8fb;border-radius:10px;padding:14px;margin:20px 0;}
+.mdr-author .foto{width:56px;height:56px;border-radius:50%;background:var(--azul);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;}
+.mestre-footer{background:var(--azul);color:#dde6f0;border-radius:10px;padding:20px;margin-top:26px;font-size:0.88em;}
+.mestre-footer a{color:var(--amarelo);text-decoration:none;}
+.mdr-bairros{columns:2;column-gap:16px;font-size:0.9em;}
+@media(min-width:620px){.mdr-bairros{columns:3;}}
+.mdr-crumb{font-size:0.82em;color:#667;margin-bottom:10px;}
+.mdr-crumb a{color:var(--azul2);text-decoration:none;}
+.mdr-carrossel-wrap{position:relative;overflow:hidden;margin:18px 0;padding:10px 0;background:#fff;border:1px solid #e3e8ee;border-radius:12px;}
+.mdr-carrossel-wrap::before,.mdr-carrossel-wrap::after{content:"";position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none;}
+.mdr-carrossel-wrap::before{left:0;background:linear-gradient(90deg,#fff,rgba(255,255,255,0));}
+.mdr-carrossel-wrap::after{right:0;background:linear-gradient(270deg,#fff,rgba(255,255,255,0));}
+.mdr-carrossel-track{display:flex;align-items:center;gap:0;width:max-content;animation:mdr-scroll 28s linear infinite;}
+.mdr-carrossel-wrap:hover .mdr-carrossel-track{animation-play-state:paused;}
+.mdr-cliente-card{flex:0 0 auto;width:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 18px;text-align:center;}
+.mdr-cliente-card img{max-width:120px;max-height:42px;object-fit:contain;filter:grayscale(100%);opacity:0.8;transition:filter .2s,opacity .2s;}
+.mdr-cliente-card img:hover{filter:grayscale(0%);opacity:1;}
+.mdr-cliente-card .nome{font-weight:bold;color:var(--azul);font-size:0.95em;}
+.mdr-cliente-card .local{font-size:0.78em;color:#667;margin-top:4px;}
+@keyframes mdr-scroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+@media(prefers-reduced-motion:reduce){.mdr-carrossel-track{animation:none;}}
+</style>
+
+<nav class="mdr-crumb" aria-label="breadcrumb">
+<a href="https://www.mestredosreparos.app.br/">Início</a> &rsaquo;
+<a href="https://www.mestredosreparos.app.br/p/servicos.html">Serviços</a> &rsaquo;
+Reformas em Barueri: Civil, Hidráulica, Drywall e Elétrica
+</nav>
+
+<section class="mestre-hero">
+<h1>Reformas em Barueri: Civil, Hidráulica, Drywall e Elétrica</h1>
+<p>Reforma de residências, apartamentos e comércios em Barueri e região, com equipe própria para alvenaria, hidráulica, drywall e elétrica — do diagnóstico inicial à entrega final, com responsabilidade técnica em cada etapa.</p>
+<div class="mdr-cta-row">
+<a class="mdr-btn" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20reforma%20em%20Barueri">Falar no WhatsApp agora</a>
+<a class="mdr-btn-outline" href="https://mestre-reparos.base44.app/Agendamento">Solicitar visita técnica</a>
+</div>
+</section>
+
+<p>A <strong>Mestre dos Reparos</strong> executa reformas completas em Barueri e região, reunindo em uma única equipe os serviços de construção civil, hidráulica, drywall e elétrica. Isso evita a necessidade de contratar profissionais separados para cada etapa da reforma, reduz o risco de retrabalho e garante que toda a obra siga um padrão técnico único, do início ao fim.</p>
+
+<h2>Por que centralizar sua reforma com a Mestre dos Reparos</h2>
+<div class="mestre-grid">
+<div class="mestre-card">
+<h3>Equipe única, obra sem ruído</h3>
+<p>Um só ponto de contato coordena pedreiro, encanador, gesseiro e eletricista, evitando conflitos de cronograma entre profissionais diferentes.</p>
+</div>
+<div class="mestre-card">
+<h3>Responsabilidade técnica</h3>
+<p>Instalações elétricas e hidráulicas executadas conforme NBR 5410 e normas técnicas aplicáveis, com ART/CREA quando o serviço exigir.</p>
+</div>
+<div class="mestre-card">
+<h3>Orçamento detalhado por etapa</h3>
+<p>Levantamento de material e mão de obra apresentado antes do início da obra, com valores por serviço — sem surpresas no meio da reforma.</p>
+</div>
+<div class="mestre-card">
+<h3>15+ anos de experiência</h3>
+<p>Equipe com formação técnica e know-how acumulado em reformas residenciais, comerciais e prediais em toda a região de Barueri.</p>
+</div>
+</div>
+
+<h2>Serviços de reforma oferecidos</h2>
+<ul>
+<li><strong>Reforma civil geral</strong> — demolição controlada, alvenaria, reboco, contrapiso, assentamento de piso e revestimento</li>
+<li><strong>Hidráulica</strong> — troca de tubulação, reparo de vazamentos, instalação de louças e metais, adequação de banheiros e cozinhas</li>
+<li><strong>Drywall</strong> — divisórias, forros, rebaixamento de teto, sancas e acabamento em gesso acartonado</li>
+<li><strong>Elétrica</strong> — troca de fiação, instalação de quadros e disjuntores, pontos de tomada e iluminação, adequação à NBR 5410</li>
+<li><strong>Pintura e acabamento</strong> — preparação de superfície, textura, pintura interna e externa</li>
+<li><strong>Impermeabilização</strong> — laje, varanda, área de serviço e banheiros</li>
+<li><strong>Reforma de banheiro e cozinha</strong> — projeto completo envolvendo hidráulica, elétrica, revestimento e marcenaria básica</li>
+<li><strong>Pequenos reparos e manutenção predial</strong> — serviços avulsos de manutenção em residências e condomínios</li>
+</ul>
+
+<div class="mestre-urgencia">
+<strong>Vazamento, infiltração ou falha elétrica durante a reforma?</strong> Priorizamos chamados emergenciais para evitar danos maiores ao imóvel. Fale com a gente pelo WhatsApp para verificar disponibilidade imediata.
+</div>
+
+<h2>Como funciona o processo de reforma</h2>
+<table class="mdr-table">
+<tr><th>Etapa</th><th>O que acontece</th></tr>
+<tr><td>1. Diagnóstico e visita técnica</td><td>Avaliação do imóvel, levantamento do escopo desejado e identificação de pontos críticos (elétrica, hidráulica, estrutura)</td></tr>
+<tr><td>2. Orçamento detalhado</td><td>Proposta por etapa, com materiais e mão de obra discriminados, antes do início da obra</td></tr>
+<tr><td>3. Execução por equipe própria</td><td>Civil, hidráulica, drywall e elétrica executados pela mesma equipe, com cronograma único</td></tr>
+<tr><td>4. Vistoria final</td><td>Checagem de todos os pontos (hidráulicos, elétricos e acabamento) antes da entrega</td></tr>
+</table>
+
+<h2>Região de atendimento</h2>
+<p>Atendemos reformas residenciais e comerciais em toda a região de Barueri — incluindo Alphaville, Tamboré, Aldeia da Serra — além de Carapicuíba, Jandira, Itapevi e Santana de Parnaíba, em um raio de aproximadamente 20 km a partir da nossa base operacional.</p>
+<div class="mdr-bairros">
+<p>Alphaville</p>
+<p>Tamboré</p>
+<p>Aldeia da Serra</p>
+<p>Centro de Barueri</p>
+<p>Jardim Belval</p>
+<p>Jardim Silveira</p>
+<p>Jardim dos Camargos</p>
+<p>Parque Imperial</p>
+<p>Parque Viana</p>
+<p>Carapicuíba</p>
+<p>Jandira</p>
+<p>Itapevi</p>
+<p>Santana de Parnaíba</p>
+</div>
+
+<h2>Empresas que já atendemos em Barueri e região</h2>
+<div class="mdr-carrossel-wrap">
+<div class="mdr-carrossel-track">
+<!-- bloco 1 -->
+<div class="mdr-cliente-card">
+<img src="https://armazena.com.br/wp-content/uploads/2021/09/logo_300.png" alt="Logo Armazena Armazéns Gerais" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Armazena Armazéns Gerais</div>
+<div class="local">Itapevi</div>
+</div>
+<div class="mdr-cliente-card">
+<div class="nome">PJ Bank</div>
+<div class="local">Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://cdn1-www.bureauveritas.com.br/themes/custom/bureauveritasbase/favicon/mstile-144x144.png" alt="Logo Bureau Veritas" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Bureau Veritas</div>
+<div class="local">Alphaville, Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://coca-cola-femsa.com.br/wp-content/uploads/2024/05/logo-femsa-juntos-new-2.svg" alt="Logo Coca-Cola FEMSA" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Coca-Cola FEMSA</div>
+<div class="local">Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://assets.bradesco/content/dam/portal-bradesco/assets/common/img/bra-logo.png" alt="Logo Bradesco" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Bradesco</div>
+<div class="local">Alphaville, Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://www.itau.com.br/media/dam/m/617c0fa5f48ce445/original/ITAU_LOGO_LARANJA_114X114.png" alt="Logo Itaú" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Itaú</div>
+<div class="local">Barueri</div>
+</div>
+<!-- bloco 2 (duplicado para loop contínuo) -->
+<div class="mdr-cliente-card">
+<img src="https://armazena.com.br/wp-content/uploads/2021/09/logo_300.png" alt="Logo Armazena Armazéns Gerais" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Armazena Armazéns Gerais</div>
+<div class="local">Itapevi</div>
+</div>
+<div class="mdr-cliente-card">
+<div class="nome">PJ Bank</div>
+<div class="local">Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://cdn1-www.bureauveritas.com.br/themes/custom/bureauveritasbase/favicon/mstile-144x144.png" alt="Logo Bureau Veritas" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Bureau Veritas</div>
+<div class="local">Alphaville, Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://coca-cola-femsa.com.br/wp-content/uploads/2024/05/logo-femsa-juntos-new-2.svg" alt="Logo Coca-Cola FEMSA" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Coca-Cola FEMSA</div>
+<div class="local">Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://assets.bradesco/content/dam/portal-bradesco/assets/common/img/bra-logo.png" alt="Logo Bradesco" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Bradesco</div>
+<div class="local">Alphaville, Barueri</div>
+</div>
+<div class="mdr-cliente-card">
+<img src="https://www.itau.com.br/media/dam/m/617c0fa5f48ce445/original/ITAU_LOGO_LARANJA_114X114.png" alt="Logo Itaú" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+<div class="nome" style="display:none;">Itaú</div>
+<div class="local">Barueri</div>
+</div>
+</div>
+</div>
+<p style="font-size:0.9em;color:#667;">Empresas de diferentes segmentos — logística, financeiro, certificação e indústria — confiam na Mestre dos Reparos para serviços de manutenção e reforma de suas unidades em Barueri e região.</p>
+
+<h2>O que dizem nossos clientes</h2>
+<div class="mdr-review"><div class="mdr-stars">★★★★★</div><div class="nome">Cristiane Rodrigues</div><p>Destaca excelente trabalho, pontualidade, respeito e entrega dentro do combinado.</p></div>
+<div class="mdr-review"><div class="mdr-stars">★★★★★</div><div class="nome">Leandro Silva</div><p>Elogia a qualidade do serviço prestado em sua residência, com resultado de acabamento de alto nível.</p></div>
+<div class="mdr-review"><div class="mdr-stars">★★★★★</div><div class="nome">Lais Tafnes Ferrari</div><p>Relata ótimo profissionalismo e atendimento excelente durante o serviço contratado.</p></div>
+
+<h2>Perguntas frequentes — reformas em Barueri</h2>
+<div class="mestre-faq">
+<details><summary>Vocês fazem reforma completa, incluindo civil, hidráulica, drywall e elétrica na mesma obra?</summary><p>Sim. Temos equipe própria para executar as quatro frentes dentro de um único cronograma, evitando a necessidade de contratar profissionais separados.</p></details>
+<details><summary>Como é feito o orçamento da reforma?</summary><p>Após a visita técnica, apresentamos um orçamento detalhado por etapa, com materiais e mão de obra discriminados, antes do início da obra.</p></details>
+<details><summary>Fazem reforma de banheiro e cozinha completa?</summary><p>Sim, incluindo troca de hidráulica, elétrica, revestimento, louças e metais, com acompanhamento técnico do início ao fim.</p></details>
+<details><summary>A elétrica e a hidráulica seguem alguma norma técnica?</summary><p>Sim, as instalações são executadas conforme NBR 5410 e boas práticas técnicas, com ART/CREA emitida quando o escopo do serviço exigir.</p></details>
+<details><summary>Quais bairros de Barueri vocês atendem para reformas?</summary><p>Atendemos toda a região de Barueri, incluindo Alphaville, Tamboré e Aldeia da Serra, além de Carapicuíba, Jandira, Itapevi e Santana de Parnaíba.</p></details>
+<details><summary>Fazem reformas em apartamentos de condomínio?</summary><p>Sim, realizamos reformas internas em apartamentos, respeitando as regras do condomínio e horários permitidos para obra.</p></details>
+<details><summary>Quanto tempo leva uma reforma completa?</summary><p>O prazo varia conforme o escopo e o tamanho do imóvel. Após a visita técnica, apresentamos um cronograma estimado junto com o orçamento.</p></details>
+<details><summary>Como solicito um orçamento de reforma?</summary><p>Você pode solicitar pelo WhatsApp (11) 91839-0430 ou pela nossa plataforma de agendamento online, descrevendo o que deseja reformar.</p></details>
+</div>
+
+<div class="mdr-author">
+<div class="foto">ME</div>
+<div>
+<strong>Responsável técnico: Mestre dos Reparos</strong><br>
+<span style="font-size:0.9em;">Engenharia Elétrica, Técnico em Eletrotécnica (SENAI), certificação NR-10. Mais de 15 anos de experiência em reformas residenciais, comerciais e prediais, atuando conforme NBR 5410 e NR-10 em Barueri e região.</span>
+</div>
+</div>
+
+<style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<footer class="mestre-footer">
+<strong>Mestre dos Reparos</strong> — Maria Eduarda Hengles Valadão — CNPJ 64.521.657/0001-87<br>
+Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval, Barueri – SP | CEP 06420-130<br>
+WhatsApp: <a href="https://wa.me/5511918390430">(11) 91839-0430</a> | E-mail: mestredosreparosbarueri@gmail.com<br>
+<a href="https://www.mestredosreparos.app.br/p/lgpd-lei-geral-de-protecao-de-dados.html">LGPD</a> ·
+<a href="https://www.mestredosreparos.app.br/p/politica-de-privacidade.html">Privacidade</a> ·
+<a href="https://www.mestredosreparos.app.br/p/temos-de-uso.html">Termos de Uso</a>
+</footer>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@graph":[
+{
+"@type":"BreadcrumbList",
+"itemListElement":[
+{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br/"},
+{"@type":"ListItem","position":2,"name":"Serviços","item":"https://www.mestredosreparos.app.br/p/servicos.html"},
+{"@type":"ListItem","position":3,"name":"Reformas em Barueri: Civil, Hidráulica, Drywall e Elétrica","item":"https://www.mestredosreparos.app.br/p/reformas-barueri.html"}
+]
+},
+{
+"@type":"HomeAndConstructionBusiness",
+"name":"Mestre dos Reparos - Reformas Civil, Hidráulica, Drywall e Elétrica",
+"image":"https://www.mestredosreparos.app.br/logo-eletricista-barueri.png",
+"telephone":"+5511918390430",
+"email":"mestredosreparosbarueri@gmail.com",
+"priceRange":"$$",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval",
+"addressLocality":"Barueri",
+"addressRegion":"SP",
+"postalCode":"06420-130",
+"addressCountry":"BR"
+},
+"areaServed":{
+"@type":"GeoCircle",
+"geoMidpoint":{"@type":"GeoCoordinates","latitude":-23.511369,"longitude":-46.872942},
+"geoRadius":"20000"
+},
+"aggregateRating":{
+"@type":"AggregateRating",
+"ratingValue":"4.9",
+"reviewCount":"32"
+}
+},
+{
+"@type":"Organization",
+"name":"Mestre dos Reparos",
+"url":"https://www.mestredosreparos.app.br/",
+"logo":"https://www.mestredosreparos.app.br/logo-eletricista-barueri.png",
+"sameAs":[]
+},
+{
+"@type":"FAQPage",
+"mainEntity":[
+{"@type":"Question","name":"Vocês fazem reforma completa, incluindo civil, hidráulica, drywall e elétrica na mesma obra?","acceptedAnswer":{"@type":"Answer","text":"Sim. Temos equipe própria para executar as quatro frentes dentro de um único cronograma, evitando a necessidade de contratar profissionais separados."}},
+{"@type":"Question","name":"Como é feito o orçamento da reforma?","acceptedAnswer":{"@type":"Answer","text":"Após a visita técnica, apresentamos um orçamento detalhado por etapa, com materiais e mão de obra discriminados, antes do início da obra."}},
+{"@type":"Question","name":"Fazem reforma de banheiro e cozinha completa?","acceptedAnswer":{"@type":"Answer","text":"Sim, incluindo troca de hidráulica, elétrica, revestimento, louças e metais, com acompanhamento técnico do início ao fim."}},
+{"@type":"Question","name":"A elétrica e a hidráulica seguem alguma norma técnica?","acceptedAnswer":{"@type":"Answer","text":"Sim, as instalações são executadas conforme NBR 5410 e boas práticas técnicas, com ART/CREA emitida quando o escopo do serviço exigir."}},
+{"@type":"Question","name":"Quais bairros de Barueri vocês atendem para reformas?","acceptedAnswer":{"@type":"Answer","text":"Atendemos toda a região de Barueri, incluindo Alphaville, Tamboré e Aldeia da Serra, além de Carapicuíba, Jandira, Itapevi e Santana de Parnaíba."}},
+{"@type":"Question","name":"Fazem reformas em apartamentos de condomínio?","acceptedAnswer":{"@type":"Answer","text":"Sim, realizamos reformas internas em apartamentos, respeitando as regras do condomínio e horários permitidos para obra."}},
+{"@type":"Question","name":"Quanto tempo leva uma reforma completa?","acceptedAnswer":{"@type":"Answer","text":"O prazo varia conforme o escopo e o tamanho do imóvel. Após a visita técnica, apresentamos um cronograma estimado junto com o orçamento."}},
+{"@type":"Question","name":"Como solicito um orçamento de reforma?","acceptedAnswer":{"@type":"Answer","text":"Você pode solicitar pelo WhatsApp (11) 91839-0430 ou pela nossa plataforma de agendamento online, descrevendo o que deseja reformar."}}
+]
+}
+]
+}
+</script>
+</div>
+
+
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>

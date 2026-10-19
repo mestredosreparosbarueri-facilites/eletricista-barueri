@@ -1,0 +1,394 @@
+<style>
+  .mdr-b2b-wrap { font-family: 'Roboto', Arial, sans-serif; background: #f7f8fb; color: #23395b; line-height: 1.6; }
+  .mdr-b2b-wrap * { box-sizing: border-box; }
+  .mdr-container { max-width: 1040px; margin: 0 auto; padding: 0 18px; }
+  .mdr-section { padding: 34px 0; }
+  .mdr-b2b-wrap h1 { font-size: 33px; line-height: 1.2; margin: 0 0 14px; color: #223d67; font-weight: 900; text-align: center; }
+  .mdr-b2b-wrap h2 { font-size: 24px; line-height: 1.3; margin: 0 0 8px; color: #223d67; font-weight: 800; }
+  .mdr-b2b-wrap h3 { font-size: 18px; margin: 0 0 8px; color: #223d67; font-weight: 700; }
+  .mdr-b2b-wrap p { margin: 0 0 14px; font-size: 16.5px; color: #5d6b82; }
+
+  .mdr-tag { display: inline-block; background: #fff4de; color: #d89b1d; padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 700; margin-bottom: 14px; }
+
+  .mdr-hero { background: linear-gradient(180deg, #264a78 0%, #223f67 100%); position: relative; overflow: hidden; padding: 40px 0 60px; }
+  .mdr-hero:after { content: ""; display: block; width: 100%; height: 100px; background: #f7f8fb; border-radius: 0 0 50% 50%; position: absolute; left: 0; bottom: -58px; }
+  .mdr-hero-content { position: relative; z-index: 2; text-align: center; }
+  .mdr-hero h1 { color: #fff; }
+  .mdr-hero p { color: #dce6f5; font-size: 18px; max-width: 720px; margin: 0 auto 22px; }
+  .mdr-hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(244,170,28,0.16); border: 1px solid rgba(244,170,28,0.45); color: #f4aa1c; border-radius: 999px; padding: 9px 18px; font-size: 14.5px; font-weight: 700; margin-bottom: 18px; }
+
+  .mdr-btn-gold { display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; border-radius: 18px; font-weight: 800; min-height: 56px; padding: 14px 26px; font-size: 17px; background: #f4aa1c; color: #223d67 !important; box-shadow: 0 10px 22px rgba(244,170,28,0.3); }
+  .mdr-btn-blue { display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; border-radius: 18px; font-weight: 800; min-height: 56px; padding: 14px 26px; font-size: 17px; background: #223d67; color: #fff !important; box-shadow: 0 10px 22px rgba(34,61,103,0.22); }
+  .mdr-btn-block { width: 100%; margin: 8px 0 4px; }
+
+  .mdr-card { background: #fff; border-radius: 26px; padding: 26px; box-shadow: 0 14px 32px rgba(24,42,72,0.10); margin-bottom: 20px; }
+  .mdr-card-blue { background: #223d67; border-radius: 26px; padding: 26px; margin-bottom: 20px; }
+  .mdr-card-blue h2, .mdr-card-blue h3, .mdr-card-blue p, .mdr-card-blue li { color: #fff; }
+  .mdr-card-blue li::marker { color: #f4aa1c; }
+
+  .mdr-service-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 18px; }
+  .mdr-service-card { background: #fff; border-top: 4px solid #f4aa1c; border-radius: 20px; padding: 20px; box-shadow: 0 10px 26px rgba(24,42,72,0.08); }
+
+  .mdr-trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
+  .mdr-trust-item { background: #fff; border-radius: 16px; padding: 16px 18px; text-align: center; box-shadow: 0 8px 20px rgba(24,42,72,0.07); }
+  .mdr-trust-item strong { display: block; font-size: 26px; color: #223d67; font-weight: 900; }
+  .mdr-trust-item span { font-size: 13px; color: #7e8aa0; }
+
+  .mdr-cta-box { background: #223d67; border-radius: 28px; padding: 32px 24px; text-align: center; margin: 30px 0; }
+  .mdr-cta-box h2, .mdr-cta-box p { color: #fff; }
+
+  .mdr-faq-list { display: flex; flex-direction: column; gap: 14px; }
+  .mdr-faq-item { background: #fff; border-radius: 18px; overflow: hidden; border: 1px solid #ecf0f6; }
+  .mdr-faq-q { width: 100%; border: none; background: #fff; color: #0b2a4a; font-size: 17.5px; font-weight: 700; text-align: left; padding: 20px; cursor: pointer; }
+  .mdr-faq-a { display: none; padding: 0 20px 20px; color: #5f6b7a; font-size: 16px; line-height: 1.8; }
+
+  .mdr-review { background: #fff; border-radius: 20px; padding: 20px; box-shadow: 0 8px 22px rgba(24,42,72,0.07); }
+  .mdr-stars { color: #f4aa1c; font-size: 18px; margin-bottom: 8px; }
+
+  .mdr-whatsapp-float { position: fixed; right: 18px; bottom: 18px; width: 64px; height: 64px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 24px rgba(0,0,0,0.22); z-index: 9999; text-decoration: none; }
+
+  @media (min-width: 700px) {
+    .mdr-service-grid { grid-template-columns: 1fr 1fr; }
+    .mdr-trust-grid { grid-template-columns: repeat(4,1fr); }
+  }
+</style>
+
+<div style="clear:both !important;" class="mdr-b2b-wrap">
+
+  <!--HERO-->
+  <section class="mdr-hero">
+    <div class="mdr-container mdr-hero-content">
+      <span class="mdr-hero-badge">🏢 SOLUÇÕES B2B</span>
+      <h1>Manutenção Predial e Elétrica para Empresas e Condomínios</h1>
+      <p>O Mestre dos Reparos atende empresas, condomínios e administradoras em Barueri e região com equipe própria, contrato de manutenção preventiva e atendimento emergencial prioritário — elétrica e manutenção predial completa, com CNPJ ativo e nota fiscal.</p>
+      <a class="mdr-btn-gold" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20represento%20uma%20empresa%2Fcondom%C3%ADnio%20e%20quero%20uma%20proposta%20de%20manuten%C3%A7%C3%A3o." target="_blank">🏢 Solicitar Proposta Comercial</a>
+    </div>
+  </section>
+
+  <div class="mdr-container">
+
+    <!--NÚMEROS DE CONFIANÇA-->
+    <section class="mdr-section" style="padding-bottom:0;">
+      <div class="mdr-trust-grid">
+        <div class="mdr-trust-item"><strong>1500+</strong><span>Clientes Atendidos</span></div>
+        <div class="mdr-trust-item"><strong>15</strong><span>Anos de Experiência</span></div>
+        <div class="mdr-trust-item"><strong>98%</strong><span>Satisfação</span></div>
+        <div class="mdr-trust-item"><strong>24h</strong><span>Emergência</span></div>
+      </div>
+    </section>
+
+    <!--O QUE OFERECEMOS-->
+    <section class="mdr-section" id="servicos-b2b">
+      <span class="mdr-tag">🔧 O QUE OFERECEMOS</span>
+      <h2>Duas frentes, um único fornecedor</h2>
+      <p>Reduza o número de fornecedores que sua empresa ou condomínio precisa gerenciar: cuidamos da parte elétrica e da manutenção predial geral com a mesma equipe e o mesmo contrato.</p>
+      <div class="mdr-service-grid">
+        <div class="mdr-service-card">
+          <h3>⚡ Elétrica</h3>
+          <p style="margin-bottom:10px;">Manutenção elétrica predial e comercial completa, conforme a NBR 5410:</p>
+          <ul style="padding-left:20px;margin:0;font-size:15px;color:#5d6b82;">
+            <li>Manutenção preventiva de quadros gerais e subquadros</li>
+            <li>Iluminação de áreas comuns, garagens e fachadas</li>
+            <li>Diagnóstico e correção de sobrecarga e curto-circuito</li>
+            <li>Padrão de entrada e adequação para concessionária</li>
+            <li>Instalação e manutenção de CFTV, portões e interfones</li>
+            <li>Laudo técnico e ART quando aplicável</li>
+          </ul>
+        </div>
+        <div class="mdr-service-card">
+          <h3>🛠️ Manutenção Predial</h3>
+          <p style="margin-bottom:10px;">Reparos gerais para manter a estrutura e a operação em dia:</p>
+          <ul style="padding-left:20px;margin:0;font-size:15px;color:#5d6b82;">
+            <li>Hidráulica: reparos, vazamentos e registros</li>
+            <li>Pequenos reparos civis e pintura de manutenção</li>
+            <li>Instalação e ajuste de portas, fechaduras e mobiliário</li>
+            <li>Impermeabilização pontual e tratamento de umidade</li>
+            <li>Montagem e manutenção de mobiliário e estruturas</li>
+            <li>Serviços de limpeza pós-obra e manutenção sob demanda</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--CTA 1-->
+    <div class="mdr-cta-box">
+      <h2>Precisa de um fornecedor único para elétrica e manutenção?</h2>
+      <p>Simplifique a gestão de fornecedores do seu condomínio ou empresa.</p>
+      <a class="mdr-btn-gold mdr-btn-block" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20quero%20simplificar%20a%20manuten%C3%A7%C3%A3o%20predial%20e%20el%C3%A9trica%20da%20minha%20empresa%2Fcondom%C3%ADnio." target="_blank">💬 Falar com Especialista Agora</a>
+    </div>
+
+    <!--MODELO DE CONTRATO-->
+    <section class="mdr-section" id="contrato">
+      <span class="mdr-tag">📄 COMO FUNCIONA</span>
+      <h2>Contrato de manutenção sob medida</h2>
+      <div class="mdr-card">
+        <p>Cada empresa e condomínio tem uma rotina diferente. Por isso, montamos a proposta depois de entender o porte do imóvel, a frequência de manutenção desejada e as prioridades operacionais — não vendemos pacote fechado genérico.</p>
+        <p style="margin:0;"><strong>Modelos mais comuns:</strong> visita mensal programada, visita quinzenal para áreas de maior desgaste, ou plantão de emergência avulso sem contrato fixo — você escolhe o que faz sentido para o seu caso.</p>
+      </div>
+    </section>
+
+    <!--DIFERENCIAIS-->
+    <section class="mdr-section" id="diferenciais">
+      <span class="mdr-tag">✅ POR QUE FECHAR COM A GENTE</span>
+      <div class="mdr-card-blue">
+        <h2>O que muda quando você tem um contrato ativo</h2>
+        <ul style="padding-left:20px;margin:0;">
+          <li>Atendimento emergencial prioritário — na frente dos chamados avulsos</li>
+          <li>Relatório de cada visita, útil para prestação de contas e auditoria</li>
+          <li>Equipe própria — mesma referência técnica em todas as visitas</li>
+          <li>CNPJ ativo e nota fiscal em todos os serviços</li>
+          <li>Responsabilidade técnica: NBR 5410, NR-10 e ART quando aplicável</li>
+          <li>Previsibilidade de custo — menos surpresas no orçamento anual</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--E-E-A-T-->
+    <section class="mdr-section" id="responsabilidade">
+      <span class="mdr-tag">🎓 QUEM EXECUTA</span>
+      <h2>Responsabilidade técnica</h2>
+      <div class="mdr-card">
+        <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
+          <div style="width:60px;height:60px;border-radius:50%;background:#223d67;color:#f4aa1c;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;flex:0 0 60px;">M</div>
+          <div style="flex:1;min-width:220px;">
+            <p style="margin-bottom:10px;">Serviços executados sob acompanhamento técnico de profissional com formação em Engenharia Elétrica, Técnico em Eletrotécnica (SENAI) e certificação NR-10, com mais de 15 anos de experiência em manutenção predial e comercial.</p>
+            <p style="margin:0;font-size:14px;color:#7e8aa0;">A ART (Anotação de Responsabilidade Técnica) é emitida junto ao CREA quando aplicável à natureza e exigência contratual do serviço.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--AVALIAÇÕES-->
+    <section class="mdr-section" id="avaliacoes">
+      <span class="mdr-tag">⭐ QUEM JÁ CONTRATOU</span>
+      <h2>Avaliações de clientes</h2>
+      <div style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:16px;">
+        <div class="mdr-review">
+          <div class="mdr-stars">★★★★★</div>
+          <p style="margin:0;font-size:15px;">"O serviço foi de qualidade, tudo ficou perfeito, o atendimento foi muito bom, sem enrolação, super recomendo em nossa região!"</p>
+          <p style="margin:8px 0 0;font-size:13px;color:#7e8aa0;">Barutec - Informática (Local Guide)</p>
+        </div>
+        <div class="mdr-review">
+          <div class="mdr-stars">★★★★★</div>
+          <p style="margin:0;font-size:15px;">"Excelente trabalho, pontualidade, respeito, e trabalho entregue...ótimo"</p>
+          <p style="margin:8px 0 0;font-size:13px;color:#7e8aa0;">Cristiane Rodrigues</p>
+        </div>
+        <div class="mdr-review">
+          <div class="mdr-stars">★★★★★</div>
+          <p style="margin:0;font-size:15px;">"Profissional excelente! Caprichoso e justo. Merece indicação!"</p>
+          <p style="margin:8px 0 0;font-size:13px;color:#7e8aa0;">Rodrigo Ferrari</p>
+        </div>
+      </div>
+      <div style="margin-top:20px;text-align:center;">
+        <a href="https://www.google.com.br/search?ibp=gwp;0,7&q=Mestre+dos+Reparos+%E2%80%93+Manuten%C3%A7%C3%A3o+e+Limpeza&ludocid=10403281540691542326&lsig=AB86z5VLVQ_QdcgOrXbf9RM6gL78#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D" style="display:inline-block;background:#223d67;color:#f4aa1c;border-radius:999px;padding:12px 26px;font-weight:700;text-decoration:none;font-size:14.5px;" target="_blank">⭐ Ver todas as avaliações no Google</a>
+      </div>
+    </section>
+
+    <!--FAQ-->
+    <section class="mdr-section" id="faq">
+      <span class="mdr-tag">❓ DÚVIDAS DE SÍNDICOS E GESTORES</span>
+      <h2>Perguntas frequentes sobre contratação B2B</h2>
+      <div class="mdr-faq-list">
+
+        <div class="mdr-faq-item">
+          <button class="mdr-faq-q" onclick="toggleFaqB2B(this)">Vocês atendem contratos de manutenção mensal para condomínios em Barueri?</button>
+          <div class="mdr-faq-a">Sim. Oferecemos contratos de manutenção preventiva mensal ou quinzenal para condomínios em Barueri e região, cobrindo elétrica e manutenção predial geral, com relatório de cada visita.</div>
+        </div>
+
+        <div class="mdr-faq-item">
+          <button class="mdr-faq-q" onclick="toggleFaqB2B(this)">Empresas com contrato ativo têm prioridade em emergências?</button>
+          <div class="mdr-faq-a">Sim. Clientes com contrato de manutenção ativo têm atendimento emergencial prioritário em relação a chamados avulsos, com chegada estimada de 30 a 50 minutos em Barueri.</div>
+        </div>
+
+        <div class="mdr-faq-item">
+          <button class="mdr-faq-q" onclick="toggleFaqB2B(this)">Qual a diferença entre contratar avulso e ter contrato de manutenção?</button>
+          <div class="mdr-faq-a">No contrato, você tem visitas programadas, prioridade em emergências, relatório de manutenção e previsibilidade de custo. No atendimento avulso, cada chamado é orçado individualmente, sem prioridade garantida.</div>
+        </div>
+
+        <div class="mdr-faq-item">
+          <button class="mdr-faq-q" onclick="toggleFaqB2B(this)">Emitem nota fiscal e relatório para apresentar em assembleia ou auditoria?</button>
+          <div class="mdr-faq-a">Sim. Temos CNPJ ativo (64.521.657/0001-87), emitimos nota fiscal para todos os serviços, e cada visita de manutenção gera um relatório que pode ser usado em prestação de contas.</div>
+        </div>
+
+        <div class="mdr-faq-item">
+          <button class="mdr-faq-q" onclick="toggleFaqB2B(this)">Atendem empresas fora do horário comercial para não impactar a operação?</button>
+          <div class="mdr-faq-a">Sim. Manutenções preventivas podem ser planejadas em horários de menor movimento ou fora do expediente, conforme a necessidade da empresa contratante.</div>
+        </div>
+
+        <div class="mdr-faq-item">
+          <button class="mdr-faq-q" onclick="toggleFaqB2B(this)">Fazem laudo técnico e ART para exigências de seguradora ou vistoria?</button>
+          <div class="mdr-faq-a">Sim. Emitimos laudo de instalação elétrica, e a ART é providenciada junto ao CREA quando aplicável à natureza e exigência contratual do serviço.</div>
+        </div>
+
+        <div class="mdr-faq-item">
+          <button class="mdr-faq-q" onclick="toggleFaqB2B(this)">Como peço uma proposta comercial?</button>
+          <div class="mdr-faq-a">Chame no WhatsApp (11) 91839-0430 informando o tipo de imóvel (condomínio, empresa, comércio), o número de unidades ou metragem, e a frequência de manutenção desejada. Enviamos uma proposta personalizada.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--CTA FINAL-->
+    <div class="mdr-cta-box">
+      <h2>Peça sua proposta de manutenção predial e elétrica</h2>
+      <p>Atendimento para empresas, condomínios e administradoras em Barueri e região.</p>
+      <a class="mdr-btn-gold mdr-btn-block" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20quero%20uma%20proposta%20comercial%20de%20manuten%C3%A7%C3%A3o%20predial%20e%20el%C3%A9trica." target="_blank">🏢 Solicitar Proposta Agora</a>
+    </div>
+
+  </div>
+
+  <!--RODAPÉ-->
+  <style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<footer style="background:#203f67;color:#fff;padding:36px 18px;">
+    <div class="mdr-container">
+      <div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:22px;">
+        <div style="width:52px;height:52px;border-radius:14px;background:#f4aa1c;display:flex;align-items:center;justify-content:center;font-size:24px;flex:0 0 52px;">🔧</div>
+        <div>
+          <p style="margin:0;font-size:20px;font-weight:900;">Mestre dos Reparos</p>
+          <p style="margin:2px 0 0;font-size:14px;color:#f4aa1c;">Manutenção e Limpeza — Soluções B2B</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(244,170,28,0.10);border:1px solid rgba(244,170,28,0.25);border-radius:16px;padding:18px 20px;margin-bottom:24px;">
+        <p style="margin:0 0 8px;font-size:15px;"><strong>Nome Fantasia:</strong> Mestre dos Reparos</p>
+        <p style="margin:0 0 8px;font-size:15px;"><strong>Razão Social:</strong> Maria Eduarda Hengles Valadão</p>
+        <p style="margin:0 0 8px;font-size:15px;"><strong>CNPJ:</strong> 64.521.657/0001-87</p>
+        <p style="margin:0 0 8px;font-size:15px;"><strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval, Barueri – SP | CEP: 06420-130</p>
+        <p style="margin:0 0 8px;font-size:15px;"><strong>E-mail:</strong> mestredosreparosbarueri@gmail.com</p>
+        <p style="margin:0;font-size:15px;"><strong>Telefone:</strong> (11) 91839-0430</p>
+      </div>
+
+      <p style="font-size:14.5px;color:#cdd8e8;line-height:1.8;">O Mestre dos Reparos atua em Barueri e região com manutenção elétrica e predial residencial, comercial e condominial, sob acompanhamento técnico de profissional com formação em Engenharia, Técnico em Eletrotécnica (SENAI), certificação NR-10 e mais de 15 anos de experiência — conforme a NBR 5410. Empresa com CNPJ ativo e emissão de nota fiscal.</p>
+      <p style="font-size:14.5px;color:#cdd8e8;line-height:1.8;">A emissão de ART é realizada quando aplicável, conforme a natureza, complexidade ou exigência contratual do serviço, em conformidade com os critérios do CREA.</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;">
+        <a href="https://www.mestredosreparos.app.br/p/lgpd-lei-geral-de-protecao-de-dados.html" style="background:rgba(244,170,28,0.16);color:#fff;text-decoration:none;padding:10px 16px;border-radius:100px;font-size:14px;font-weight:700;" target="_blank">LGPD</a>
+        <a href="https://www.mestredosreparos.app.br/p/politica-de-privacidade.html" style="background:rgba(244,170,28,0.16);color:#fff;text-decoration:none;padding:10px 16px;border-radius:100px;font-size:14px;font-weight:700;" target="_blank">Privacidade</a>
+        <a href="https://www.mestredosreparos.app.br/p/temos-de-uso.html" style="background:rgba(244,170,28,0.16);color:#fff;text-decoration:none;padding:10px 16px;border-radius:100px;font-size:14px;font-weight:700;" target="_blank">Termos de Uso</a>
+      </div>
+
+      <div style="border-top:1px solid rgba(244,170,28,0.25);margin-top:22px;padding-top:14px;font-size:13px;color:#9aa5b0;">
+        © 2026 Mestre dos Reparos — Maria Eduarda Hengles Valadão — CNPJ 64.521.657/0001-87 — Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script>function toggleFaqB2B(b){var a=b.nextElementSibling;a.style.display=a.style.display==="block"?"none":"block";}</script>
+
+  <a class="mdr-whatsapp-float" href="https://wa.me/5511918390430" rel="noopener noreferrer" target="_blank">
+    <svg style="fill:#fff;height:32px;width:32px;" viewBox="0 0 32 32"><path d="M19.11 17.34c-.27-.14-1.58-.78-1.82-.87-.24-.09-.41-.14-.59.14-.17.27-.68.86-.83 1.03-.15.18-.3.2-.56.07-.27-.14-1.12-.41-2.13-1.32-.79-.7-1.32-1.56-1.47-1.82-.15-.27-.02-.41.11-.55.12-.12.27-.3.41-.45.14-.15.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.59-1.43-.81-1.96-.21-.5-.43-.43-.59-.44h-.5c-.18 0-.45.07-.68.34-.24.27-.9.88-.9 2.14s.92 2.48 1.05 2.65c.14.18 1.81 2.76 4.38 3.87.61.27 1.09.43 1.46.55.61.19 1.17.16 1.61.1.49-.07 1.58-.65 1.8-1.28.22-.63.22-1.17.15-1.28-.06-.11-.23-.18-.49-.31zM16.03 3.2c-7 0-12.67 5.67-12.67 12.67 0 2.23.58 4.4 1.69 6.31L3.2 28.8l6.78-1.78a12.63 12.63 0 0 0 6.05 1.54h.01c6.99 0 12.67-5.67 12.67-12.67S23.03 3.2 16.03 3.2zm0 23.14h-.01a10.5 10.5 0 0 1-5.35-1.47l-.38-.23-4.02 1.05 1.07-3.92-.25-.4a10.47 10.47 0 0 1-1.61-5.55c0-5.8 4.72-10.52 10.53-10.52 2.81 0 5.45 1.09 7.44 3.08a10.45 10.45 0 0 1 3.08 7.44c0 5.81-4.73 10.52-10.5 10.52z"></path></svg>
+  </a>
+</div>
+
+<!--SCHEMA LOCAL: ProfessionalService com geo e catálogo B2B-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Mestre dos Reparos - Manutenção Predial e Elétrica B2B",
+  "telephone": "+5511918390430",
+  "priceRange": "Sob consulta",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval",
+    "addressLocality": "Barueri",
+    "addressRegion": "SP",
+    "postalCode": "06420-130",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -23.511369, "longitude": -46.872942 },
+  "areaServed": [
+    {"@type": "City","name": "Barueri"},
+    {"@type": "City","name": "Jandira"},
+    {"@type": "City","name": "Santana de Parnaíba"},
+    {"@type": "City","name": "Itapevi"},
+    {"@type": "City","name": "Carapicuíba"}
+  ],
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Empresas, condomínios e administradoras"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços B2B de Manutenção Predial e Elétrica",
+    "itemListElement": [
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Manutenção elétrica predial preventiva"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Manutenção elétrica emergencial 24h para empresas"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Manutenção hidráulica predial"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Reparos civis e manutenção estrutural"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Laudo técnico e ART para condomínios e empresas"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Contrato de manutenção preventiva programada"}}
+    ]
+  }
+}
+</script>
+
+<!--SCHEMA GLOBAL: Organization-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mestre dos Reparos",
+  "url": "https://www.mestredosreparos.app.br",
+  "sameAs": [
+    "https://www.instagram.com/mestredosreparosfacilites",
+    "https://facebook.com/mestredosreparos",
+    "https://www.youtube.com/@mestredosreparos-i9d"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+5511918390430",
+    "contactType": "sales",
+    "areaServed": "BR",
+    "availableLanguage": "Portuguese"
+  }
+}
+</script>
+
+<!--SCHEMA FAQ-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question","name": "Vocês atendem contratos de manutenção mensal para condomínios em Barueri?","acceptedAnswer": {"@type": "Answer","text": "Sim, oferecemos contratos de manutenção preventiva mensal ou quinzenal cobrindo elétrica e manutenção predial geral, com relatório de cada visita."}},
+    {"@type": "Question","name": "Empresas com contrato ativo têm prioridade em emergências?","acceptedAnswer": {"@type": "Answer","text": "Sim, clientes com contrato ativo têm atendimento emergencial prioritário, com chegada estimada de 30 a 50 minutos em Barueri."}},
+    {"@type": "Question","name": "Qual a diferença entre contratar avulso e ter contrato de manutenção?","acceptedAnswer": {"@type": "Answer","text": "No contrato há visitas programadas, prioridade em emergências, relatório e previsibilidade de custo; no avulso, cada chamado é orçado individualmente."}},
+    {"@type": "Question","name": "Emitem nota fiscal e relatório para apresentar em assembleia ou auditoria?","acceptedAnswer": {"@type": "Answer","text": "Sim, temos CNPJ ativo, emitimos nota fiscal, e cada visita gera relatório utilizável em prestação de contas."}},
+    {"@type": "Question","name": "Atendem empresas fora do horário comercial para não impactar a operação?","acceptedAnswer": {"@type": "Answer","text": "Sim, manutenções preventivas podem ser planejadas fora do expediente conforme a necessidade da empresa."}},
+    {"@type": "Question","name": "Fazem laudo técnico e ART para exigências de seguradora ou vistoria?","acceptedAnswer": {"@type": "Answer","text": "Sim, emitimos laudo de instalação elétrica e a ART é providenciada junto ao CREA quando aplicável."}},
+    {"@type": "Question","name": "Como peço uma proposta comercial?","acceptedAnswer": {"@type": "Answer","text": "Chame no WhatsApp (11) 91839-0430 informando tipo de imóvel, porte e frequência de manutenção desejada."}}
+  ]
+}
+</script>
