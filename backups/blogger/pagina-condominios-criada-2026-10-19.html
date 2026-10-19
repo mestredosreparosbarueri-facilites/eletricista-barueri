@@ -1,0 +1,646 @@
+<style>
+h3.post-title.entry-title,.post-title.entry-title,.post-title{display:none!important}
+.mestre-container{max-width:1100px;margin:auto;padding:20px;font-family:Arial,sans-serif;line-height:1.7;color:#222}
+.mestre-hero{background:linear-gradient(135deg,#0b2a4a,#163d66);padding:45px 25px;border-radius:18px;color:#fff;margin-bottom:35px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.mestre-hero h1{font-size:42px;line-height:1.2;margin:0 0 20px;font-weight:900;color:#fff}
+.mestre-hero p{font-size:20px;color:#fff;margin:0 0 14px;max-width:900px}
+.mestre-btns{display:flex;gap:15px;flex-wrap:wrap;margin-top:28px}
+.mestre-btn{display:inline-block;padding:16px 24px;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none!important}
+.mestre-btn-whats{background:#25D366;color:#fff!important}
+.mestre-btn-agendar{background:#ffb300;color:#0b2a4a!important}
+.mestre-box{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-box h2{font-size:34px;color:#0b2a4a;margin:0 0 18px}
+.mestre-box h3{font-size:26px;color:#163d66;margin:28px 0 12px}
+.mestre-box p{font-size:20px;margin:0 0 18px}
+.mestre-box ul{padding-left:24px;font-size:19px;line-height:1.8;margin:0 0 18px}
+.mestre-box li{margin-bottom:8px}
+.mestre-servicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:25px}
+.mestre-card{background:#0b2a4a;color:#fff;padding:22px;border-radius:14px}
+.mestre-card h3{margin:0 0 10px;color:#ffb300;font-size:22px}
+.mestre-card p{color:#fff;font-size:17px;margin:0}
+.mestre-alerta{background:#fff5e0;border-left:6px solid #ffb300;padding:22px;border-radius:10px;margin:25px 0;font-size:19px}
+.mestre-passos{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+.mestre-passo{background:#f4f6f9;padding:20px;border-radius:14px}
+.mestre-passo-num{font-size:34px;font-weight:900;color:#ffb300;line-height:1;margin-bottom:8px}
+.mestre-passo h3{font-size:20px;color:#0b2a4a;margin:0 0 8px}
+.mestre-passo p{font-size:17px;margin:0}
+.mestre-faq{margin-top:25px}
+.mestre-faq details{background:#f4f6f9;padding:18px;border-radius:12px;margin-bottom:14px}
+.mestre-faq summary{font-size:20px;font-weight:700;cursor:pointer;color:#0b2a4a}
+.mestre-faq p{margin:12px 0 0;font-size:18px}
+.mestre-cluster{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-cluster h3{color:#0b2a4a;font-size:24px;margin:0 0 14px}
+.mestre-cluster ul{padding-left:24px;font-size:18px;line-height:1.8;margin:0 0 12px}
+.mestre-cluster a{color:#0b2a4a;font-weight:700}
+.mestre-footer{background:#0b2a4a;color:#fff;padding:40px 25px;border-radius:18px;margin-top:40px}
+.mestre-footer h3{color:#ffb300;font-size:28px;margin:0 0 15px}
+.mestre-footer p,.mestre-footer a{font-size:17px;color:#fff!important;margin:0 0 12px}
+.mestre-btn-avaliar{display:inline-block;background:#ffb300;color:#0b2a4a!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:17px;text-decoration:none!important;margin-top:16px}
+.mestre-links{display:grid;gap:10px;margin:20px 0}
+.mestre-links a{color:#fff!important;text-decoration:none;font-weight:700}
+@media(min-width:700px){.mestre-passos{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:768px){.mestre-hero{padding:32px 20px}.mestre-hero h1{font-size:34px}.mestre-hero p{font-size:18px}.mestre-box{padding:22px}.mestre-box h2{font-size:28px}.mestre-box p{font-size:18px}.mestre-box ul{font-size:17px}}
+</style><style>
+.el-destaques{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+.el-destaque{background:#fff5e0;border:2px solid #ffb300;border-radius:14px;padding:18px}
+.el-destaque h3{margin:0 0 8px;font-size:19px;color:#0b2a4a}
+.el-destaque p{margin:0;font-size:16px;line-height:1.6}
+.el-disciplinas{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:24px}
+.el-disciplina{background:#f4f6f9;border-radius:14px;padding:20px}
+.el-disciplina h3{margin:0 0 12px;font-size:21px;color:#0b2a4a;border-bottom:3px solid #ffb300;padding-bottom:8px}
+.el-disciplina ul{padding-left:20px;margin:0;font-size:16px;line-height:1.65}
+.el-disciplina li{margin-bottom:5px}
+.el-total{display:inline-block;background:#0b2a4a;color:#ffb300;font-weight:800;padding:10px 18px;border-radius:999px;font-size:17px;margin-top:20px}
+@media(max-width:768px){.el-disciplina ul{font-size:15px}.el-disciplina h3{font-size:19px}}
+</style><style>.mestre-container li{break-inside:avoid;-webkit-column-break-inside:avoid}@media(max-width:600px){#lista-condominios ul{columns:1!important;-webkit-columns:1!important}}</style>
+<section class="mestre-container">
+  <div class="mestre-hero">
+    <h1>Eletricista para Condomínios em Barueri</h1>
+    <p>Atendemos síndicos, administradoras e moradores de condomínios em Barueri: manutenção elétrica das áreas comuns, quadros, bombas, portões, iluminação e reparos dentro dos apartamentos e casas.</p>
+    <p style="font-size:18px;line-height:1.6;background:#fff5e0;color:#222;border-left:5px solid #ffb300;padding:14px 18px;border-radius:10px;margin:18px 0">Abaixo está a lista de condomínios de Barueri organizada por bairro, com 63 condomínios. Veja também todos os serviços do nosso <a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html?m=1" style="color:#0b2a4a;font-weight:700">eletricista em Barueri</a>, com plantão 24 horas, nota fiscal e garantia de 90 dias.</p>
+    <div class="mestre-btns">
+    <a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista%20para%20condom%C3%ADnio%20em%20Barueri.">💬 Falar com um eletricista</a>
+    <a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento">📅 Agendar visita técnica</a>
+  </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Serviços elétricos para condomínios</h2>
+    <h3>Para o síndico: áreas comuns</h3>
+    <ul><li>Manutenção e organização de quadros de distribuição, com identificação dos circuitos</li><li>Iluminação de garagem, escadas, halls e fachada, incluindo sensores de presença</li><li>Iluminação de emergência e blocos autônomos</li><li>Bombas de recalque e pressurizadores</li><li>Portão eletrônico, interfone e portaria</li><li>Adequação elétrica para o AVCB do Corpo de Bombeiros</li><li>Laudo técnico, termografia de quadros e medição de aterramento, com ART</li><li>Contrato de manutenção preventiva com cronograma e relatório</li></ul>
+    <h3>Para o morador: dentro do apartamento ou da casa</h3>
+    <ul><li>Disjuntor caindo e troca de disjuntores</li><li>Troca de chuveiro e de resistência</li><li>Tomadas aquecendo, queimadas ou frouxas</li><li>Instalação de lustres, luminárias e ventilador de teto</li><li>Ponto elétrico para ar-condicionado, cooktop e forno</li><li>Tomada para carro elétrico na garagem</li></ul>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Condomínios onde já atendemos</h2>
+    <p>Alguns dos condomínios de Barueri onde nossa equipe já fez atendimentos:</p>
+    <ul style="columns:2;-webkit-columns:2"><li>Viva Mais Barueri</li><li>Spazio Club Barueri</li><li>Inspire Barueri</li><li>Vitalle Home Club</li><li>Reserva do Alto</li><li>Central Park Barueri</li><li>Bellagio Eco Park</li><li>Alphaview</li><li>Le Parc Barueri</li></ul>
+  </div>
+
+  <div class="mestre-box" id="lista-condominios">
+    <h2>Lista de condomínios em Barueri por bairro</h2>
+    <p>Condomínios residenciais, edifícios e conjuntos habitacionais de Barueri, agrupados por região. Os nomes e endereços vêm do mapa aberto OpenStreetMap. Se o seu não aparecer, atendemos do mesmo jeito.</p>
+    <h3>Condomínios em Alphaville e 18 do Forte</h3>
+    <ul style="columns:2;-webkit-columns:2"><li>Alphaville Residencial 0</li><li>Alphaville Residencial 1</li><li>Alphaville Residencial 2</li><li>Alphaville Residencial Plus</li><li>Alphaville Conde I</li><li>Alphaville Conde II</li><li>Alpha Gran</li><li>Alpha Park</li><li>Alpha Style</li><li>Gramercy Park</li><li>Condomínio Verte Ville <span style="color:#666">— Av. Verteville, 610</span></li><li>Edifício Alphalife <span style="color:#666">— Av. Copacabana, 291</span></li><li>Choice <span style="color:#666">— Av. Ômega, 265</span></li><li>Hit Alphaville <span style="color:#666">— Av. Ômega, 442</span></li><li>Present Alphaville <span style="color:#666">— Av. Ômega, 171</span></li><li>Maison Montblanc <span style="color:#666">— Av. Oiapoque, 65</span></li><li>Wi-House Alphaville <span style="color:#666">— Alameda Amazonas, 495</span></li><li>Pacific Towers</li><li>Edifício América I e II</li><li>Edifício Columbia</li><li>Edifício Oiapoque</li><li>Edifício Vitória I e II</li><li>Essência Alphaville</li><li>Oka Mamoré</li></ul>
+    <p style="margin-top:-6px"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html?m=1">Eletricista em Alphaville</a></p>
+    <h3>Condomínios no Tamboré</h3>
+    <ul style="columns:2;-webkit-columns:2"><li>Residencial Tamboré 1 <span style="color:#666">— Av. Ceci</span></li><li>Residencial Villa Solaia <span style="color:#666">— Av. Piraíba, 520</span></li></ul>
+    <p style="margin-top:-6px"><a href="https://www.mestredosreparos.app.br/p/blog-page_87.html?m=1">Eletricista no Tamboré</a></p>
+    <h3>Condomínios na Aldeia da Serra</h3>
+    <ul style="columns:2;-webkit-columns:2"><li>Residencial Morada das Estrelas</li><li>Residencial Morada dos Pássaros</li><li>Residencial e Comercial Morada dos Lagos</li></ul>
+    <p style="margin-top:-6px"><a href="https://www.mestredosreparos.app.br/p/eletricista-em-aldeia-da-serra.html?m=1">Eletricista na Aldeia da Serra</a></p>
+    <h3>Condomínios no Jardim Reginalice, Chácaras Marco e Jardim Graziela</h3>
+    <ul style="columns:2;-webkit-columns:2"><li>Mediterrâneo Residencial Clube <span style="color:#666">— R. Mar Vermelho, 913</span></li><li>Mirante do Bosque I <span style="color:#666">— R. Mar Vermelho, 807</span></li><li>Residencial Vila das Esmeraldas <span style="color:#666">— R. Mar Vermelho, 1135</span></li><li>Residencial Vila dos Diamantes <span style="color:#666">— R. Canal de Suez, 357</span></li><li>Quatro Estações <span style="color:#666">— R. Alberto José da Motta, 700</span></li><li>Residencial Bel Village <span style="color:#666">— R. Alberto José da Motta, 796</span></li><li>Residencial Première <span style="color:#666">— R. Alberto José da Motta, 807</span></li><li>Vila Real <span style="color:#666">— R. Alberto José da Motta, 670</span></li><li>Condomínio Maria Fernanda <span style="color:#666">— R. Maria Fernanda, 512</span></li><li>Residencial Alvorecer <span style="color:#666">— R. Chaves, 1361</span></li><li>Residencial Nova Barueri</li><li>Núcleo Residencial Célia Mota <span style="color:#666">— R. Curitiba, 66</span></li><li>Conjunto Habitacional Maria de Fátima</li><li>Conjunto Habitacional Recanto das Orquídeas</li><li>Conjunto Habitacional Reginaldo Batista de Souza</li></ul>
+    <p style="margin-top:-6px"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-reginalice.html?m=1">Eletricista no Jardim Reginalice</a></p>
+    <h3>Condomínios no Jardim Tupanci</h3>
+    <ul style="columns:2;-webkit-columns:2"><li>Condomínio Alphaview <span style="color:#666">— R. Marte, 429</span></li><li>Central Park Barueri <span style="color:#666">— Av. Pastor Sebastião Davino dos Reis</span></li></ul>
+    <p style="margin-top:-6px"><a href="https://www.mestredosreparos.app.br/p/blog-page_43.html?m=1">Eletricista no Jardim Tupanci</a></p>
+    <h3>Condomínios no Centro, Jardim Belval e Vila São João</h3>
+    <ul style="columns:2;-webkit-columns:2"><li>Viva Mais Barueri</li><li>Inspire Barueri <span style="color:#666">— Av. Henriqueta Mendes Guerra, 1330</span></li><li>Edifício Duq Central House <span style="color:#666">— R. Duque de Caxias, 614</span></li><li>Edifício Roma</li></ul>
+    <p style="margin-top:-6px"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html?m=1">Eletricista no Jardim Belval</a></p>
+    <h3>Condomínios no sul de Barueri: Parque Viana, Jardim Silveira e Votupoca</h3>
+    <ul style="columns:2;-webkit-columns:2"><li>UpperVille <span style="color:#666">— Av. Anibal Correia, 1629</span></li><li>Residencial Colore</li><li>Condomínio Parque Esmeralda</li><li>Condomínio Forest Hill</li><li>Residencial Villa Vianna</li><li>São Fernando Residencial</li><li>Outeiro do São Fernando</li><li>Residencial Park das Nações</li><li>Vitta Tolaini</li><li>Conjunto Habitacional Morada das Rosas</li><li>Conjunto Habitacional Parque dos Camargos</li><li>Conjunto Habitacional Pinheiros</li></ul>
+    <p style="margin-top:-6px"><a href="https://www.mestredosreparos.app.br/p/blog-page_8.html?m=1">Eletricista no Parque Viana</a></p>
+    <h3>Condomínios no Jardim Mutinga e Munhoz Júnior</h3>
+    <ul style="columns:2;-webkit-columns:2"><li>Conjunto Habitacional Munhoz Júnior</li></ul>
+    <p style="margin-top:-6px"><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-mutinga-barueri.html?m=1">Eletricista no Jardim Mutinga</a></p>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Como funciona o atendimento para condomínios</h2>
+    <ol><li><strong>Contato:</strong> mande pelo WhatsApp o nome do condomínio, o problema e, se puder, uma foto.</li><li><strong>Orçamento:</strong> o valor é fechado antes do serviço. Para áreas comuns, enviamos o orçamento por escrito para o síndico ou a administradora.</li><li><strong>Portaria:</strong> se houver cadastro prévio, enviamos os dados do eletricista antes da visita.</li><li><strong>Execução:</strong> serviço conforme a ABNT NBR 5410, com teste na sua frente.</li><li><strong>Documentação:</strong> nota fiscal em todo serviço e garantia de 90 dias na mão de obra.</li></ol>
+    <div class="mestre-alerta"><strong>Emergência?</strong> Em caso de cheiro de queimado, faísca, choque ou disjuntor que não arma, desligue o quadro e chame pelo WhatsApp antes de tentar religar.</div>
+  </div>
+<style>
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.dep-card{background:#fff;border:2px solid #e6ebf2;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.dep-top{display:flex;align-items:center;gap:12px}
+.dep-avatar{width:46px;height:46px;border-radius:50%;background:#0b2a4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 46px}
+.dep-nome{font-weight:800;color:#0b2a4a;font-size:16px;line-height:1.25}
+.dep-quando{font-size:13px;color:#6b7a8d}
+.dep-estrelas{color:#ffb300;font-size:17px;letter-spacing:2px}
+.mestre-box .dep-texto{margin:0;font-size:17px;color:#33445c;line-height:1.65}
+.dep-rodape{margin-top:auto;font-size:13px;color:#6b7a8d;font-weight:700}
+.dep-resumo{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#f4f6f9;border-radius:16px;padding:22px;margin-top:20px}
+.mestre-box .dep-nota{margin:0;font-size:16px;color:#33445c}
+.mestre-box .dep-nota b{font-size:34px;color:#0b2a4a;display:block;line-height:1;margin-bottom:4px}
+.dep-btn{display:inline-block;background:#0b2a4a;color:#fff!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none!important}
+@media(max-width:768px){.dep-card{padding:18px}.dep-resumo{padding:18px}.dep-btn{display:block;text-align:center}}
+</style>
+<div class="mestre-box" id="depoimentos">
+    <h2>Depoimentos de clientes no Google</h2>
+    <p>Quem contrata o Mestre dos Reparos avalia o serviço no Google depois do atendimento. Abaixo estão depoimentos reais de clientes atendidos em Barueri e região.</p>
+    <div class="dep-grid">
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">KC</div>
+        <div>
+          <div class="dep-nome">Kelly Carvalho</div>
+          <div class="dep-quando">Limpeza residencial · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente serviço de limpeza! Fiquei muito satisfeita com o resultado, tudo foi feito com muito cuidado e atenção aos detalhes. A equipe é pontual, organizada e deixou o lugar impecável. Recomendo demais!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">MF</div>
+        <div>
+          <div class="dep-nome">Marcelo Fernandes</div>
+          <div class="dep-quando">Manutenção e reparos · há 3 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Gostei muito do trabalho, foram super atenciosos e dá para ver o conhecimento e o domínio do que fazem. Sem contar a educação: gosto de entender as coisas e eles responderam todas as minhas perguntas.</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+      <div class="dep-card">
+      <div class="dep-top">
+        <div class="dep-avatar">LF</div>
+        <div>
+          <div class="dep-nome">Lais Tafnes Ferrari</div>
+          <div class="dep-quando">Atendimento · há 8 meses</div>
+        </div>
+      </div>
+      <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+      <p class="dep-texto">Excelente profissional, com atendimento excepcional!</p>
+      <div class="dep-rodape">Avaliação verificada no Google</div>
+    </div>
+    </div>
+    <div class="dep-resumo">
+      <p class="dep-nota">
+        <b>4,9</b>
+        <span class="dep-estrelas">★★★★★</span><br>
+        Média de 32 avaliações de clientes no Google Meu Negócio
+      </p>
+      <a class="dep-btn" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+    </div>
+    <p style="margin-top:14px"><a href="https://www.google.com/maps/search/?api=1&query=Mestre%20dos%20Reparos%20Manuten%C3%A7%C3%A3o%20e%20Limpeza%2C%20Av.%20Henrique%20Gon%C3%A7alves%20Baptista%2C%202245%2C%20Jardim%20Belval%2C%20Barueri%2C%20SP" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
+  </div>
+
+  
+  <div class="mestre-box">
+    <h2>Perguntas frequentes sobre eletricista para condomínios</h2>
+    <div class="mestre-faq"><details><summary>Vocês atendem as áreas comuns do condomínio?</summary><p>Sim. Fazemos manutenção de quadros de distribuição, iluminação de garagem, escadas e áreas comuns, iluminação de emergência, bombas de recalque, portão eletrônico, interfone e portaria.</p></details><details><summary>Emitem nota fiscal e ART?</summary><p>Sim. Todo serviço sai com nota fiscal. Laudos técnicos, termografia de quadros e medição de aterramento podem ser emitidos com ART de responsável técnico habilitado.</p></details><details><summary>Fazem contrato mensal de manutenção para condomínio?</summary><p>Sim. Montamos um plano de manutenção preventiva com cronograma, checklist e relatório técnico para o síndico. Veja o <a href="https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html?m=1">contrato de manutenção para empresas e condomínios</a>.</p></details><details><summary>Atendem o morador dentro do apartamento?</summary><p>Sim. Atendemos a unidade do morador para troca de chuveiro, disjuntor, tomadas, instalação de lustres, ventiladores e ponto para ar-condicionado.</p></details><details><summary>Como funciona a entrada pela portaria?</summary><p>Se o condomínio exige cadastro prévio, mande as regras pelo WhatsApp e enviamos os dados do eletricista antes da visita.</p></details><details><summary>Meu condomínio não está na lista. Vocês atendem?</summary><p>Sim. A lista mostra os condomínios mapeados por bairro, mas atendemos todos os condomínios de Barueri e região.</p></details></div>
+  </div>
+<style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<div class="mestre-footer">
+  <h3>Mestre dos Reparos Manutenção &amp; Limpeza</h3>
+  <p>Serviços elétricos residenciais, comerciais e prediais, além de reformas, hidráulica, pintura e limpeza, em Barueri e região.</p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista.">(11) 91839-0430</a> · <strong>E-mail:</strong> <a href="mailto:mestredosreparosbarueri@gmail.com">mestredosreparosbarueri@gmail.com</a><br>
+  <strong>Site:</strong> <a href="https://www.mestredosreparos.app.br">mestredosreparos.app.br</a></p>
+  <p><strong>Razão Social:</strong> Maria Eduarda Hengles Valadão · <strong>CNPJ:</strong> 64.521.657/0001-87<br>
+  <strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245, Jardim Belval, Barueri/SP, CEP 06420-130</p>
+  <div class="mestre-links mestre-redes">
+    <a href="https://www.instagram.com/mestredosreparosfacilites" target="_blank" rel="noopener">📸 Instagram: @mestredosreparosfacilites</a>
+    <a href="https://www.facebook.com/mestredosreparos.oficial/" target="_blank" rel="noopener">👍 Facebook: /mestredosreparos.oficial</a>
+    <a href="https://www.tiktok.com/@mestre.dos.reparo1" target="_blank" rel="noopener">🎵 TikTok: @mestre.dos.reparo1</a>
+    <a href="https://youtube.com/@mestredosreparos-i9d" target="_blank" rel="noopener">▶️ YouTube: @mestredosreparos-i9d</a>
+  </div>
+  <a class="mestre-btn-avaliar" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+</div>
+
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Eletricista para condomínios em Barueri",
+  "serviceType": "Manutenção elétrica para condomínios",
+  "url": "https://www.mestredosreparos.app.br/p/eletricista-condominios-barueri.html",
+  "provider": {
+    "@id": "https://www.mestredosreparos.app.br/#empresa"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Barueri"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Síndicos, administradoras e moradores de condomínios"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vocês atendem as áreas comuns do condomínio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Fazemos manutenção de quadros de distribuição, iluminação de garagem, escadas e áreas comuns, iluminação de emergência, bombas de recalque, portão eletrônico, interfone e portaria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Emitem nota fiscal e ART?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Todo serviço sai com nota fiscal. Laudos técnicos, termografia de quadros e medição de aterramento podem ser emitidos com ART de responsável técnico habilitado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Fazem contrato mensal de manutenção para condomínio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Montamos um plano de manutenção preventiva com cronograma, checklist e relatório técnico para o síndico. Veja o contrato de manutenção para empresas e condomínios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Atendem o morador dentro do apartamento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Atendemos a unidade do morador para troca de chuveiro, disjuntor, tomadas, instalação de lustres, ventiladores e ponto para ar-condicionado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como funciona a entrada pela portaria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Se o condomínio exige cadastro prévio, mande as regras pelo WhatsApp e enviamos os dados do eletricista antes da visita."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Meu condomínio não está na lista. Vocês atendem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A lista mostra os condomínios mapeados por bairro, mas atendemos todos os condomínios de Barueri e região."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Condomínios em Barueri",
+  "numberOfItems": 63,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Alphaville Residencial 0"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Alphaville Residencial 1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Alphaville Residencial 2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Alphaville Residencial Plus"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Alphaville Conde I"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Alphaville Conde II"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Alpha Gran"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Alpha Park"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Alpha Style"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Gramercy Park"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Condomínio Verte Ville"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Edifício Alphalife"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Choice"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Hit Alphaville"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Present Alphaville"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Maison Montblanc"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "Wi-House Alphaville"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "Pacific Towers"
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "Edifício América I e II"
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "name": "Edifício Columbia"
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "name": "Edifício Oiapoque"
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "name": "Edifício Vitória I e II"
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "name": "Essência Alphaville"
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "name": "Oka Mamoré"
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "name": "Residencial Tamboré 1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "name": "Residencial Villa Solaia"
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "name": "Residencial Morada das Estrelas"
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "name": "Residencial Morada dos Pássaros"
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "name": "Residencial e Comercial Morada dos Lagos"
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "name": "Mediterrâneo Residencial Clube"
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "name": "Mirante do Bosque I"
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "name": "Residencial Vila das Esmeraldas"
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "name": "Residencial Vila dos Diamantes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "name": "Quatro Estações"
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "name": "Residencial Bel Village"
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "name": "Residencial Première"
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "name": "Vila Real"
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "name": "Condomínio Maria Fernanda"
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "name": "Residencial Alvorecer"
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "name": "Residencial Nova Barueri"
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "name": "Núcleo Residencial Célia Mota"
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "name": "Conjunto Habitacional Maria de Fátima"
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "name": "Conjunto Habitacional Recanto das Orquídeas"
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "name": "Conjunto Habitacional Reginaldo Batista de Souza"
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "name": "Condomínio Alphaview"
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "name": "Central Park Barueri"
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "name": "Viva Mais Barueri"
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "name": "Inspire Barueri"
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "name": "Edifício Duq Central House"
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "name": "Edifício Roma"
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "name": "UpperVille"
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "name": "Residencial Colore"
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "name": "Condomínio Parque Esmeralda"
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "name": "Condomínio Forest Hill"
+    },
+    {
+      "@type": "ListItem",
+      "position": 55,
+      "name": "Residencial Villa Vianna"
+    },
+    {
+      "@type": "ListItem",
+      "position": 56,
+      "name": "São Fernando Residencial"
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "name": "Outeiro do São Fernando"
+    },
+    {
+      "@type": "ListItem",
+      "position": 58,
+      "name": "Residencial Park das Nações"
+    },
+    {
+      "@type": "ListItem",
+      "position": 59,
+      "name": "Vitta Tolaini"
+    },
+    {
+      "@type": "ListItem",
+      "position": 60,
+      "name": "Conjunto Habitacional Morada das Rosas"
+    },
+    {
+      "@type": "ListItem",
+      "position": 61,
+      "name": "Conjunto Habitacional Parque dos Camargos"
+    },
+    {
+      "@type": "ListItem",
+      "position": 62,
+      "name": "Conjunto Habitacional Pinheiros"
+    },
+    {
+      "@type": "ListItem",
+      "position": 63,
+      "name": "Conjunto Habitacional Munhoz Júnior"
+    }
+  ]
+}
+</script>
+<style>
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+<a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
