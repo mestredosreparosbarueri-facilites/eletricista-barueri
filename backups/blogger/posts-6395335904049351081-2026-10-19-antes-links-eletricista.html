@@ -1,0 +1,1796 @@
+<style>
+  /* =========================
+     TRAVA DE DESKTOP
+  ========================== */
+  @media screen and (min-width: 1025px) {
+    .mestre-home-wrap {
+      max-width: 1100px !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      display: block !important;
+    }
+  }
+
+  /* =========================
+     BASE
+  ========================== */
+  .mestre-home-wrap {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f7f8fb;
+    color: #23395b;
+    line-height: 1.6;
+  }
+
+  .mestre-home-wrap * {
+    box-sizing: border-box;
+  }
+
+  .mestre-container {
+    padding: 0 18px;
+  }
+
+  .mestre-section {
+    padding: 28px 0;
+  }
+
+  .mestre-title-tag {
+    display: inline-block;
+    background: #fff4de;
+    color: #d89b1d;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .mestre-home-wrap h1 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 0 0 14px;
+    color: #223d67;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .mestre-home-wrap h2 {
+    font-size: 22px;
+    line-height: 1.25;
+    margin: 0 0 14px;
+    color: #223d67;
+    font-weight: 800;
+  }
+
+  .mestre-home-wrap h3 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+    color: #223d67;
+    font-weight: 700;
+  }
+
+  .mestre-home-wrap p {
+    margin: 0 0 14px;
+    font-size: 17px;
+    color: #5d6b82;
+  }
+
+  .mestre-center {
+    text-align: center;
+  }
+
+  .mestre-light {
+    background: #f7f8fb;
+  }
+
+  .mestre-white {
+    background: #ffffff;
+  }
+
+  .mestre-blue {
+    background: linear-gradient(180deg, #264a78 0%, #223f67 100%);
+    color: #fff;
+  }
+
+  .mestre-blue h2,
+  .mestre-blue h3,
+  .mestre-blue p,
+  .mestre-blue li,
+  .mestre-blue a,
+  .mestre-blue span {
+    color: #fff;
+  }
+
+  .mestre-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 26px;
+    box-shadow: 0 14px 35px rgba(24, 42, 72, 0.12);
+  }
+
+  .mestre-btn-gold,
+  .mestre-btn-blue,
+  .mestre-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 18px;
+    font-weight: 800;
+    min-height: 58px;
+    padding: 16px 24px;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+
+  .mestre-btn-gold {
+    background: #f4aa1c;
+    color: #223d67 !important;
+    box-shadow: 0 10px 22px rgba(244, 170, 28, 0.28);
+  }
+
+  .mestre-btn-blue {
+    background: #223d67;
+    color: #fff !important;
+    box-shadow: 0 10px 22px rgba(34, 61, 103, 0.22);
+  }
+
+  .mestre-btn-outline {
+    background: #eef2f7;
+    color: #223d67 !important;
+    border: 1px solid #e2e7ef;
+  }
+
+  .mestre-btn-block {
+    width: 100%;
+  }
+
+  /* =========================
+     HERO
+  ========================== */
+  .mestre-hero {
+    background: linear-gradient(180deg, #254a78 0%, #26456f 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 34px 0 24px;
+  }
+
+  .mestre-hero:after {
+    content: "";
+    display: block;
+    width: 140%;
+    height: 110px;
+    background: #f7f8fb;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    left: -20%;
+    bottom: -68px;
+  }
+
+  .mestre-top-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 26px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .mestre-top-links a {
+    color: #dce6f5;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .mestre-hero-content {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 40px;
+  }
+
+  .mestre-hero h1,
+  .mestre-hero h2,
+  .mestre-hero p {
+    color: #fff;
+  }
+
+  .mestre-hero h2 {
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mestre-hero p {
+    text-align: center;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    color: #dce6f5;
+  }
+
+  /* =========================
+     CHIPS
+  ========================== */
+  .mestre-chip-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 18px 0 24px;
+  }
+
+  .mestre-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f7;
+    color: #69768c;
+    border: 1px solid #ececf1;
+    border-radius: 999px;
+    padding: 12px 16px;
+    font-size: 16px;
+    min-height: 46px;
+  }
+
+  /* =========================
+     SERVIÇOS
+  ========================== */
+  .mestre-services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .mestre-service-card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #ecf0f6;
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 0 10px 28px rgba(26, 42, 71, 0.06);
+  }
+
+  .mestre-service-card h3 {
+    margin-bottom: 8px;
+  }
+
+  .mestre-service-card p {
+    margin: 0;
+  }
+
+  /* =========================
+     B2B
+  ========================== */
+  .mestre-b2b-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 18px 0 24px;
+  }
+
+  .mestre-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 14px 18px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #e9f0fb;
+    font-size: 16px;
+  }
+
+  /* =========================
+     CONTADOR
+  ========================== */
+  .mestre-counter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 18px;
+    margin-top: 20px;
+  }
+
+  .mestre-counter-item {
+    text-align: center;
+    padding: 10px 6px;
+  }
+
+  .mestre-counter-icon {
+    width: 74px;
+    height: 74px;
+    border-radius: 22px;
+    margin: 0 auto 14px;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+  }
+
+  .mestre-counter-number {
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .mestre-counter-label {
+    font-size: 15px;
+    color: #dce6f5;
+  }
+
+  /* =========================
+     PROVA SOCIAL
+  ========================== */
+  .mestre-review-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mestre-review-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 22px;
+    box-shadow: 0 12px 30px rgba(24, 42, 72, 0.10);
+  }
+
+  .mestre-review-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .mestre-avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #31c46a;
+    background: #e9edf3;
+  }
+
+  .mestre-review-name {
+    font-size: 16px;
+    font-weight: 800;
+    color: #223d67;
+  }
+
+  .mestre-review-meta {
+    font-size: 14px;
+    color: #7e8aa0;
+  }
+
+  .mestre-review-body {
+    background: #edf8f1;
+    color: #5e6d84;
+    border-radius: 22px;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .mestre-stars {
+    color: #f4aa1c;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-top: 14px;
+  }
+
+  /* =========================
+     FAQ
+  ========================== */
+  .mestre-faq-list {
+    display: grid;
+    gap: 16px;
+  }
+
+  .mestre-faq-item {
+    background: #f8f9fc;
+    border: 1px solid #e6e9ef;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  .mestre-faq-q {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    padding: 22px 22px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 800;
+    color: #223d67;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mestre-faq-a {
+    display: none;
+    padding: 0 22px 22px;
+    font-size: 16px;
+    color: #5f6d84;
+  }
+
+  .mestre-faq-item.active .mestre-faq-a {
+    display: block;
+  }
+
+  .mestre-faq-item.active .mestre-faq-q {
+    border-bottom: 1px solid #eceff4;
+  }
+
+  /* =========================
+     CIDADES
+  ========================== */
+  .mestre-city-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .mestre-city-card {
+    background: #fff;
+    border: 1px solid #ecf0f6;
+    border-radius: 20px;
+    padding: 16px 18px;
+    text-decoration: none;
+    color: #223d67 !important;
+    font-weight: 700;
+    display: block;
+  }
+
+  /* =========================
+     CTA DÚVIDAS
+  ========================== */
+  .mestre-cta-box {
+    background: #264a78;
+    color: #fff;
+    border-radius: 28px;
+    padding: 34px 24px;
+    text-align: center;
+  }
+
+  .mestre-cta-box h2,
+  .mestre-cta-box p {
+    color: #fff;
+    text-align: center;
+  }
+
+  /* =========================
+     GOOGLE REVIEW
+  ========================== */
+  .mestre-google-box {
+    background: linear-gradient(180deg, #294e7d 0%, #244267 100%);
+    color: #fff;
+    padding: 34px 22px;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .mestre-google-stars {
+    font-size: 54px;
+    color: #f4aa1c;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+
+  .mestre-google-box h2,
+  .mestre-google-box p {
+    color: #fff;
+    text-align: center;
+  }
+
+  .mestre-google-box p {
+    color: #dce6f5;
+  }
+
+ /* =========================
+   RODAPÉ
+========================= */
+
+.mestre-footer {
+  background: #203f67;
+  color: #ffffff !important;
+  padding: 38px 22px;
+}
+
+.mestre-footer * {
+  box-sizing: border-box;
+}
+
+.mestre-footer p,
+.mestre-footer span,
+.mestre-footer li,
+.mestre-footer strong,
+.mestre-footer h3,
+.mestre-footer a {
+  color: #ffffff !important;
+}
+
+.mestre-footer-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.mestre-footer-logo {
+  width: 58px;
+  height: 58px;
+  background: #f4aa1c;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #203f67 !important;
+  flex: 0 0 58px;
+}
+
+.mestre-footer-title {
+  font-size: 21px;
+  font-weight: 900;
+  margin: 0;
+  color: #ffffff !important;
+}
+
+.mestre-footer-sub {
+  font-size: 16px;
+  margin: 4px 0 0;
+  color: #ffffff !important;
+}
+
+.mestre-footer-desc {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 18px 0 24px;
+  color: #ffffff !important;
+}
+
+.mestre-legal-box {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.mestre-legal-box p {
+  color: #ffffff !important;
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.mestre-footer h3 {
+  color: #ffffff !important;
+  margin: 26px 0 16px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.mestre-footer-links {
+  display: grid;
+  gap: 12px;
+}
+
+.mestre-footer-links a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.mestre-contact-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.mestre-contact-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: #ffffff !important;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.mestre-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.mestre-socials a {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #f4aa1c;
+  color: #203f67 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.mestre-policy-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.mestre-policy-links a {
+  background: rgba(255,255,255,0.12);
+  color: #ffffff !important;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.mestre-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.18);
+  margin-top: 28px;
+  padding-top: 18px;
+  color: #ffffff !important;
+  font-size: 14px;
+  line-height: 1.7;
+}
+  
+ 
+
+  .mestre-contact-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #dbe6f4;
+    font-size: 16px;
+  }
+
+  .mestre-socials {
+    display: flex;
+    gap: 14px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  .mestre-socials a {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #f4aa1c;
+    color: #203f67 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .mestre-policy-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .mestre-policy-links a {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  /* =========================
+     WHATSAPP FLUTUANTE
+  ========================== */
+  .mestre-whatsapp-float {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.22);
+    z-index: 9999;
+    text-decoration: none;
+  }
+
+  .mestre-whatsapp-float svg {
+    width: 34px;
+    height: 34px;
+    fill: #fff;
+  }
+
+  /* =========================
+     RESPONSIVO MAIOR
+  ========================== */
+  @media screen and (min-width: 768px) {
+    .mestre-services-grid,
+    .mestre-city-grid,
+    .mestre-review-list {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .mestre-counter-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+</style>
+<section style="padding: 60px 0px;">
+
+
+<div class="mestre-home-wrap">
+
+  <!--HERO-->
+  <section class="mestre-hero">
+    <div class="mestre-container mestre-hero-content">
+      
+<h1 style="color: white; font-size: 42px; line-height: 1.2; text-align: left;">Eletricista em Itapevi com Atendimento Imediato e Suporte 24 Horas
+
+</h1>
+
+<h2 style="color: white; font-weight: normal; line-height: 1.7; margin-top: 20px; text-align: left;">
+
+Curto circuito, disjuntor desarmando, tomadas aquecendo, falta de energia, troca de chuveiros, instalação de luminárias, ventiladores de teto e manutenção elétrica residencial e comercial em Itapevi.
+
+O Mestre dos Reparos atende apartamentos, casas, condomínios e empresas com eletricista experiente, atendimento imediato e suporte 24 horas para emergcias elétricas</h2>
+   
+    </div>
+  </section>
+
+  <!--CALCULADORA-->
+  <section class="mestre-section mestre-container">
+    <div class="mestre-card" style="background: rgb(255, 255, 255);">
+      <span class="mestre-title-tag">✨ NOVO</span>
+      <h2>Calcule o preço do seu serviço na hora</h2>
+      <p>Use nossa calculadora interativa e descubra o valor estimado antes mesmo de falar com a gente. Sem surpresas.</p>
+
+      <div class="mestre-chip-wrap">&nbsp;<span class="mestre-chip">🔧 Marido de Aluguel</span>
+        <span class="mestre-chip">⚡ Elétrica</span>&nbsp;</div>
+
+      <a class="mestre-btn-gold mestre-btn-block" href="https://mestre-reparos.base44.app/Calculadora">🧮 Calcular Agora — É Grátis</a>
+    </div>
+  </section>
+
+  
+  <section class="seo-bloco">
+
+<h2>Eletricista em Itapevi para Reparos, Instalações e Emergências 24 Horas</h2>
+
+<p>
+O Mestre dos Reparos realiza serviços elétricos residenciais e comerciais em Itapevi com atendimento rápido e suporte técnico especializado. Atuamos com instalação de tomadas, troca de disjuntores, diagnóstico de curto-circuito, manutenção elétrica preventiva, instalação de luminárias, ventiladores de teto e atendimento emergencial 24 horas.
+</p>
+
+<p>
+Atendemos apartamentos, casas, condomínios, empresas e comércios em Centro, Amador Bueno, Vila Dr. Cardoso, Jardim Vitápolis, Jardim Briquet, Jardim Santa Rita, Jardim Rosemary, Cohab e região.
+</p>
+
+</section>
+  
+  
+  <!--CONTADOR-->
+  <section class="mestre-section mestre-blue" style="padding-top: 0px;">
+    <div class="mestre-container">
+      <div class="mestre-counter-grid">
+        <div class="mestre-counter-item">
+          <div class="mestre-counter-icon">👥</div>
+          <div class="mestre-counter-number">1500+</div>
+          <div class="mestre-counter-label">Clientes Atendidos</div>
+        </div>
+
+        <div class="mestre-counter-item">
+          <div class="mestre-counter-icon">📄</div>
+          <div class="mestre-counter-number">13</div>
+          <div class="mestre-counter-label">Contratos Ativos</div>
+        </div>
+
+        <div class="mestre-counter-item">
+          <div class="mestre-counter-icon">🏅</div>
+          <div class="mestre-counter-number">15</div>
+          <div class="mestre-counter-label">Anos de Experiência</div>
+        </div>
+
+        <div class="mestre-counter-item">
+          <div class="mestre-counter-icon">📈</div>
+          <div class="mestre-counter-number">98%</div>
+          <div class="mestre-counter-label">Taxa de Satisfação</div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!--BLOCO DE SERVIÇOS-->
+  <section class="mestre-section mestre-container">
+    <span class="mestre-title-tag">NOSSOS SERVIÇOS</span>
+    <h2>Soluções completas para sua casa e sua empresa.Eletricista em Itapevi, Marido de aluguel.</h2>
+    <p>Oferecemos serviços de eletricista e marido de aluguel,&nbsp; atendimento rápido e organizado em Itapevi e cidades vizinhas.</p>
+
+  <div class="mestre-services-grid" style="display: grid; gap: 18px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); margin: 35px 0px;">
+
+<a href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html" style="background: rgb(11, 42, 74); border-radius: 16px; border: 3px solid rgb(255, 180, 0); box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px; color: white; display: block; padding: 24px 20px; text-decoration: none;">
+
+<h3 style="color: #ffb400; font-size: 24px; margin: 0px 0px 12px;">
+⚡ Eletricista em Itapevi
+</h3>
+
+<p style="color: white; font-size: 16px; line-height: 1.7; margin: 0px;">
+Chamar Eletricista Agora!</p></a>
+
+<a href="https://www.mestredosreparos.app.br/p/marido-de-aluguel.html" style="background: rgb(11, 42, 74); border-radius: 16px; border: 3px solid rgb(255, 180, 0); box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px; color: white; display: block; padding: 24px 20px; text-decoration: none;">
+
+<h3 style="color: #ffb400; font-size: 24px; margin: 0px 0px 12px;">
+🛠️ Marido de Aluguel em Itapevi&nbsp;</h3>
+
+<p style="color: white; font-size: 16px; line-height: 1.7; margin: 0px;">
+Chamar Marido de Aluguel Agora!</p></a>
+
+</div>
+    
+    <section>
+  
+  <!--BLOCO CASOS REAIS-->
+<section style="background: rgb(245, 247, 250); border-radius: 22px; margin: 50px 0px; padding: 60px 20px;">
+
+<div style="margin: auto; max-width: 1200px;">
+
+<span style="background: rgb(255, 106, 0); border-radius: 30px; color: white; font-size: 14px; font-weight: bold; padding: 8px 16px;">
+CASOS REAIS ATENDIDOS
+</span>
+
+<h2 style="color: #0b2a4a; font-size: 38px; line-height: 1.3; margin-top: 20px;">
+Serviços Executados em Itapevi e Região
+</h2>
+
+<p style="color: #4b5563; font-size: 19px; line-height: 1.9; max-width: 950px;">
+O Mestre dos Reparos realiza atendimentos reais em apartamentos, casas, condomínios e empresas em Itapevi. As imagens abaixo são de serviços executados pela nossa equipe em instalações elétricas, reparos emergenciais, montagem e manutenção residencial.
+</p>
+
+<!--GRID-->
+<div style="display: grid; gap: 28px; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); margin-top: 40px;">
+
+<!--CARD-->
+<div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK0I0vrz2bdQ1CCTSq_lXlilU2hZNkPW3DxQG7HKZncRmVpM8i6p7wdWInQGcs6GS-xYmq0IrOzwPvqwKNuRdTogwM4OPhiMIe1zJK-6fZSDYCWlnxA7PNT_bBn97JL3WtInTwpabErL5ZqxT5Np0be7zA5hQVU602sHs07HeLTeikLfCKiaTQkflBi1W0/s1600/1000444736.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="900" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK0I0vrz2bdQ1CCTSq_lXlilU2hZNkPW3DxQG7HKZncRmVpM8i6p7wdWInQGcs6GS-xYmq0IrOzwPvqwKNuRdTogwM4OPhiMIe1zJK-6fZSDYCWlnxA7PNT_bBn97JL3WtInTwpabErL5ZqxT5Np0be7zA5hQVU602sHs07HeLTeikLfCKiaTQkflBi1W0/w360-h640/1000444736.jpg" width="360" /></a></div><br /><div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;"><br /><div style="padding: 24px;">
+<h3 style="color: #0b2a4a; font-size: 24px;">
+Instalação de Luminária
+</h3>
+
+<p style="color: #5f6b7a; line-height: 1.8;">
+Atendimento residencial em Itapevi com instalação elétrica e acabamento profissional em iluminação decorativa.
+</p>
+</div>
+</div>
+
+<!--CARD-->
+<div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHG_wwUTlcnUjSTMNkrzOkjJRzaAinjZ6gMnWMJb4RA_zkSjh4tULkRPIp99o1IK7gbnBdwYPyDuCvPY3YYrpgCiEsGgv8jhSoKoAmv0xVZcyb3fd9WyfZ3GZeE7cAPAP5S-D5Vp-g_ziw4D4OcNZOd4BzfO5UjyXqtXM_KV0rESEqrfnoLltxEOtgKzu/s1600/1000439067.jpg" style="height: 320px; object-fit: cover; width: 100%;" />
+
+<div style="padding: 24px;">
+<h3 style="color: #0b2a4a; font-size: 24px;">
+Tomada Aquecendo
+</h3>
+
+<p style="color: #5f6b7a; line-height: 1.8;">
+Diagnóstico de aquecimento por mau contato em tomada residencial com risco de carbonização e curto-circuito.
+</p>
+</div>
+</div>
+
+<!--CARD-->
+<div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogz6RJwEyTHlrf0_h6kvIgvzj4Ssm7zY9hw_mkMT4UxoTutEp-THq2cDJGspls-mLaKp3-dxqbTfNvC7G4nz20wvC8wxNNoteeP9-ojhR9R_c4G0we22rfyUeYlxSZvwsxLDFjHzOfmOQmBRfXM1Cg2H4UKIBrIee4twE3qRCb52Sm4d1M30Ts4JtM06j/s1600/1000439057.jpg" style="height: 320px; object-fit: cover; width: 100%;" />
+
+<div style="padding: 24px;">
+<h3 style="color: #0b2a4a; font-size: 24px;">
+Quadro Elétrico
+</h3>
+
+<p style="color: #5f6b7a; line-height: 1.8;">
+Correção e revisão de quadro elétrico residencial após falha de aquecimento em circuito.
+</p>
+</div>
+</div>
+
+<!--CARD-->
+<div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEneL_V0eNZVdSffmuiyD5-ihSu8TokMZS2p80Ud_RKfjzRXXupCI4d7_u8Z8_NNedkGXfWPtpjOFVpLq-rqHszpEt4xxxHYNkLA57z-UYAfeNtbxYVlRnSkGacY9NlJ-fPVoyeEPVIrC2V2Vhw8d_GJ0WXaq4dvQDry5Mgcdjkg66OVD_CmBpOc1rfqe5/s4080/1000401900.jpg" style="height: 320px; object-fit: cover; width: 100%;" />
+
+<div style="padding: 24px;">
+<h3 style="color: #0b2a4a; font-size: 24px;">
+Montagem Residencial
+</h3>
+
+<p style="color: #5f6b7a; line-height: 1.8;">
+Serviços de montagem e instalação executados em apartamentos e residências em Itapevi.
+</p>
+</div>
+</div>
+
+<!--CARD-->
+<div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2eW-zw-DBFaHxUjhr9YnM7gVgzzQdnxh8Q2oTcteMkrW8zG7P1gdTSWcp0VJhNI7jMof-nEJ1asXr0Edd0tb-gX9ouDJF-W2NgwBbS8iIUODVB3bk5R-Zlpc3Vt7ittyn5zE9h1XPyTmkXkimh0Y_m0iW6eQSwDaiShRKta4sH95Nd7qt9yYLMFKA_dJ1/s1600/1000385655.jpg" style="height: 320px; object-fit: cover; width: 100%;" />
+
+<div style="padding: 24px;">
+<h3 style="color: #0b2a4a; font-size: 24px;">
+Instalação e Acabamento
+</h3>
+
+<p style="color: #5f6b7a; line-height: 1.8;">
+Atendimento residencial com foco em acabamento, organização e execução profissional.
+</p>
+</div>
+</div>
+
+<!--CARD-->
+<div style="background: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 25px; overflow: hidden;">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYg96CYWymvFCvg67gRxmlvnJPeTr6wOeU_u3_nqqPVervRMHftjQJeboAPNEunHxx0CFWBE0Ngt_O0KtQsM7AAoYmcp-n_3zJA1ZXsEcpdjcZoPFPuTce0nKnSvORi7g1n6HP3Vbav5_beyLpXGbMsMyfnXOl0rQtQW7jadp8DNCT1ekM6iMH7ujKYcYx/s478/1000256887.jpg" style="height: 320px; object-fit: cover; width: 100%;" />
+
+<div style="padding: 24px;">
+<h3 style="color: #0b2a4a; font-size: 24px;">
+Atendimento Técnico
+</h3>
+
+<p style="color: #5f6b7a; line-height: 1.8;">
+Equipe atuando em manutenção e suporte técnico residencial com atendimento profissional.
+</p>
+</div>
+</div>
+
+</div>
+
+<div style="margin-top: 50px; text-align: center;">
+
+<a href="https://www.mestredosreparos.app.br/" style="background: rgb(255, 106, 0); border-radius: 12px; color: white; display: inline-block; font-size: 18px; font-weight: bold; padding: 18px 32px; text-decoration: none;">
+Solicitar Atendimento Agora
+</a>
+
+</div>
+
+</div>
+</section>
+  
+  
+  <section class="mestre-servicos-home">
+  
+  <h2>Eletricista em Itapevi e Marido de Aluguel em Itapevi</h2>
+  <p class="sub">
+    Atendimento rápido em Itapevi e região. Serviço profissional, organizado e com garantia.
+  </p>
+
+  <div class="grid-servicos">
+
+    <!--ELETRICISTA-->
+    <div class="card-servico">
+      <h3>
+  Procurando um eletricista em Itapevi com atendimento rápido, suporte emergencial 24 horas e serviço profissional para residências, comércios e condomínios? O Mestre dos Reparos atende Itapevi e região com agilidade, experiência e diagnóstico técnico especializado.
+</h3>
+      <p>Instalações e manutenções elétricas. Troca de disjuntores, tomadas, chuveiros e resistências. Atendimento emergencial com plantão 24 horas. Instalação de ventiladores de teto, automação residencial, circuitos de iluminação e tomadas. Diagnóstico e reparo de curto-circuito, além de análise e correção de disjuntores desarmando. Dimensionamento e montagem de quadros elétricos e condutores, conforme a NBR 5410. Instalação de portões eletrônicos, sistemas de CFTV, fechaduras eletrônicas, interruptores inteligentes, lustres, pendentes e arandelas.</p>
+      <span class="tag">⚡ Perto de você</span>
+      <span class="tag destaque">⚡ 24 horas</span>
+    </div>
+
+    <!--MARIDO DE ALUGUEL-->
+    <div class="card-servico">
+      <h3>Marido de aluguel em Itapevi, Marido de aluguel perto de mim.</h3>
+      <p>Fixação e pequenos reparos em geral. Instalação de suportes, prateleiras, persianas, cortinas, barras de acessibilidade e piso tátil. Ajustes e reparos residenciais diversos. Instalação de ar-condicionado split. Troca de torneiras, sifões e registros (gaveta e pressão). Instalação de espelhos e quadros. Instalação de filtros e purificadores de água. Montagem de móveis em geral. Pequenas pinturas, impermeabilização e tratamento de paredes com umidade.</p>
+      <span class="tag">🔧 Serviço completo</span>
+    </div>
+
+    <!--URGÊNCIA-->
+    <div class="card-servico urgencia">
+      <h3>Emergência elétrica 24h</h3>
+      <p>
+        Falta de energia, curto-circuito, disjuntor desarmando. Atendimento imediato.
+      </p>
+      <a class="btn-cta" href="https://wa.me/5511918390430">
+        ⚡ Chamar agora
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="seo-servicos">
+
+<h2>Serviços Elétricos Mais Procurados em Itapevi</h2>
+
+<ul>
+
+<li>Troca de disjuntores desarmando</li>
+
+<li>Reparo de curto-circuito</li>
+
+<li>Tomadas aquecendo ou queimando</li>
+
+<li>Instalação de ventilador de teto</li>
+
+<li>Troca de resistência de chuveiro</li>
+
+<li>Instalação de luminárias e plafons</li>
+
+<li>Correção de queda de energia parcial</li>
+
+<li>Instalação de tomadas 110v e 220v</li>
+
+<li>Montagem e adequação de quadro elétrico</li>
+
+<li>Instalação elétrica residencial</li>
+
+<li>Manutenção elétrica comercial</li>
+
+<li>Eletricista emergencial 24 horas</li>
+
+<li>Troca de fiação elétrica antiga</li>
+
+<li>Instalação de circuitos dedicados</li>
+
+<li>Diagnóstico de sobrecarga elétrica</li>
+
+</ul>
+
+</section>
+  
+  
+<style>
+.mestre-servicos-home {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.mestre-servicos-home h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.mestre-servicos-home .sub {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.grid-servicos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.card-servico {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.card-servico h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-servico p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  background: #f1f3f5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.destaque {
+  background: #ffe066;
+}
+
+.urgencia {
+  border: 2px solid #2f5bea;
+}
+
+.btn-cta {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  background: #25d366;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .grid-servicos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+
+  <!--AGENDAMENTO-->
+  <section class="mestre-section mestre-container">
+    <div class="mestre-card">
+      <span class="mestre-title-tag">📅 AGENDAMENTO ONLINE</span>
+      <h2>Agende seu atendimento sem complicação</h2>
+      <p>Escolha o melhor dia e horário para elétrica, e serviços de manutenção em Itapevi e região.</p>
+      <a class="mestre-btn-blue mestre-btn-block" href="https://mestre-reparos.base44.app/Agendamento">.             Agendar Atendimento</a>
+      
+    
+    </div>
+</section>
+
+  
+  <section class="seo-real">
+
+<h2>Atendimento Real em Itapevi e Região</h2>
+
+<p>
+Diferente de páginas genéricas com bancos de imagem, o Mestre dos Reparos utiliza fotos reais dos atendimentos realizados em Itapevi e região. Nosso trabalho envolve manutenção elétrica residencial, instalações, montagens e atendimentos emergenciais executados diariamente em apartamentos, casas, empresas e condomínios.
+</p>
+
+<p>
+Cada atendimento é realizado com foco em segurança, diagnóstico correto e solução definitiva do problema elétrico.
+</p>
+
+</section>
+<div style="margin: 40px 0px;">
+  <h2 style="text-align: left;"><u>Serviços Realizados</u></h2>
+</div>
+
+<!--Marido de Aluguel-->
+<div style="margin-bottom: 40px; text-align: center;">
+  <h3>Marido de Aluguel em Itapevi e Região</h3>
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHtgL03vzoGiBQ7t19voGLwMexDcF_XSP-QfN0spKTluLxpC25XngUG99DVuOtaarNq0sH0OA1mdJruas1310IdOZXiizrcjbWwX-M8sfblxqhgcU_uB4UJCqGY1Mtum1rhsy1EavOuDQeA3o8nzIlXNM7vD9CIE4sZ9GGMcV43dGG1KESsh2SDl4M0yxw/w600" style="height: auto; max-width: 100%;" />
+  <div style="margin-top: 15px;">
+    <a href="https://wa.me/5511918390430" style="background: rgb(255, 102, 0); border-radius: 6px; color: white; font-weight: bold; padding: 12px 20px; text-decoration: none;">
+      Chamar Marido de Aluguel Agora
+    </a>
+  </div>
+</div>
+
+<!--Eletricista-->
+<div style="margin-bottom: 40px; text-align: center;">
+  <h3>Eletricista em Itapevi | Atendimento 24 Horas</h3>
+  <img height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8OeaSoBzHmEmSGJphZGhKEnp3ehD06fKCNR23ZzzkIl4PNg7rZvNHGRTzKMafV7MQUhp8whSLvj3x8HXo7_uHRWzgaytid9k-_GM5YIm_yDDabXVGkEvymhWFaT0wHNqbDiuUwqBubvKlOhA3PgS6Alg8qvg7IZx1PnkYNrfQeb8n4KOJPiwJPhgAmqhG/w426-h640/w400" style="height: auto; max-width: 100%;" width="426" />
+  <div style="margin-top: 15px;">
+    <a href="https://wa.me/5511918390430" style="background: rgb(255, 102, 0); border-radius: 6px; color: white; font-weight: bold; padding: 12px 20px; text-decoration: none;">
+      Chamar Eletricista Agora</a></div><div style="margin-top: 15px;"><br /></div></div>
+    
+<h2>Eletricista em Itapevi e Marido de Aluguel perto de mim em Itapevi</h2>
+
+    <p style="margin-bottom: 20px;">
+      Atendimento em todos os bairros de Itapevi com rapidez, organização e execução profissional para residências, comércios e condomínios.
+    </p>
+
+    <div class="bairros-colunas">
+
+      <div class="coluna">
+        <span>Amador Bueno</span>
+        <span>Centro</span>
+        <span>Vila Dr. Cardoso</span>
+        <span>Jardim Vitápolis</span>
+        <span>Chácara Vitápolis</span>
+        <span>Jardim Briquet</span>
+        <span>Jardim Dona Elvira</span>
+        <span>Nova Itapevi</span>
+        <span>Cidade da Saúde</span>
+        <span>Vila Olinda</span>
+        <span>Jardim Itaparica</span>
+        <span>Jardim Hokkaido</span>
+        <span>Jardim São Luiz</span>
+        <span>Jardim Beatriz</span>
+        <span>Jardim Rosemary</span>
+        <span>Jardim Santa Rita</span>
+        <span>Vila Santa Rita</span>
+        <span>Jardim Marina</span>
+        <span>Jardim Petrucci</span>
+        <span>Vila Nova Itapevi</span>
+        <span>Itaqui</span>
+        <span>Vila Dolores</span>
+        <span>Vila Lícia</span>
+        <span>Parque Boa Esperança</span>
+        
+        </div>
+
+      <div class="coluna">
+        <span>Jardim Alabama</span>
+        <span>Jardim Bela Vista</span>
+        <span>Jardim Cruzeiro</span>
+        <span>Jardim Itapevi</span>
+        <span>Jardim Itapoã</span>
+        <span>Jardim Julieta</span>
+        <span>Jardim Jurema</span>
+        <span>Jardim Maria Cecília</span>
+        <span>Jardim Maria Judite</span>
+        <span>Jardim Maristela</span>
+        <span>Jardim Paulista</span>
+        <span>Jardim Portela</span>
+        <span>Jardim Ruth</span>
+        <span>Jardim Santo Antônio</span>
+        <span>Jardim São Carlos</span>
+        <span>Jardim Sorocabana</span>
+        <span>Parque Suburbano</span>
+        <span>Parque Wey</span>
+        <span>Parque Itamarati</span>
+        <span>Parque Mira Flores</span>
+        <span>Parque Santo Antônio</span>
+        <span>Cohab Setor A</span>
+        <span>Cohab Setor B</span>
+        <span>Cohab Setor D</span></div>
+
+    </div>
+
+ 
+<style>
+.bairros-colunas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.coluna span {
+  display: block;
+  padding: 7px 0;
+  font-size: 14px;
+  color: #1f3556;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+@media (max-width: 420px) {
+  .bairros-colunas {
+    gap: 18px;
+  }
+
+  .coluna span {
+    font-size: 13px;
+  }
+}
+</style>
+
+
+  <!--CIDADES DE ATENDIMENTO-->
+  <section class="mestre-section mestre-container">
+    <span class="mestre-title-tag">ATENDIMENTO REGIONAL</span>
+    <h2>Cidades de atendimento Eletricista em Itapevi 24 horas e Marido de Aluguel</h2>
+    <p>Atendemos Itapevi, Barueri, Jandira, Santana de Parnaíba e Aldeia da Serra.</p>
+    
+ <section class="mestre-section">
+  <div class="mestre-container">
+
+    <div class="mestre-city-grid">
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html">Barueri</a>
+      <a class="mestre-city-card" href=" https://www.mestredosreparos.app.br/p/eletricista-em-jandira.html?m=1">Jandira</a>
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/p/eletricista-em-santana-de-parnaiba.html?m=1">Santana de Parnaíba</a>
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/p/eletricista-em-aldeia-da-serra.html?m=1">Aldeia da Serra</a>
+      <a class="mestre-city-card" href="https://www.mestredosreparos.app.br/p/eletricista-em-itapevi.html?m=1">Itapevi</a>
+      
+    </div><div class="mestre-city-grid"><br /></div>
+  </div></section>
+
+<section class="mestre-section mestre-container">
+<span class="mestre-title-tag">DEPOIMENTOS</span>
+<h2>O que dizem nossos clientes</h2>
+<p class="mestre-center">Confiança conquistada através de serviços de qualidade e atendimento excepcional.</p>
+
+<div style="display: grid; gap: 16px; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); margin-top: 32px;">
+
+<div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+<div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+<div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">H</div>
+<div><div style="color: white; font-size: 14px; font-weight: 600;">Hemillin Rodrigues</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div></div>
+<div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+<div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Super indico profissional topp bem organizada amei obrigada"</div>
+<span style="border-radius: 100px; border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; display: inline-block; font-size: 11px; margin-top: 12px; padding: 3px 10px;">Diarista • Santana de Parnaíba</span>
+</div>
+
+<div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+<div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+<div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">C</div>
+<div><div style="color: white; font-size: 14px; font-weight: 600;">Cristiane Rodrigues</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div></div>
+<div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+<div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Excelente trabalho, pontualidade, respeito, e trabalho entregue...ótimo"</div>
+<span style="border-radius: 100px; border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; display: inline-block; font-size: 11px; margin-top: 12px; padding: 3px 10px;">Serviço Geral</span>
+</div>
+
+<div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+<div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+<div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">L</div>
+<div><div style="color: white; font-size: 14px; font-weight: 600;">Lais Tafnes Ferrari</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div></div>
+<div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+<div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Ótimo profissional e com atendimento excelente!"</div>
+<span style="border-radius: 100px; border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; display: inline-block; font-size: 11px; margin-top: 12px; padding: 3px 10px;">Atendimento</span>
+</div>
+
+<div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+<div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+<div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">R</div>
+<div><div style="color: white; font-size: 14px; font-weight: 600;">Rodrigo Ferrari</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div></div>
+<div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+<div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Profissional excelente! Caprichoso e justo. Merece indicação!"</div>
+<span style="border-radius: 100px; border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; display: inline-block; font-size: 11px; margin-top: 12px; padding: 3px 10px;">Manutenção</span>
+</div>
+
+<div style="background: rgb(13, 36, 97); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.15); padding: 20px;">
+<div style="align-items: center; display: flex; gap: 12px; margin-bottom: 12px;">
+<div style="align-items: center; background: rgb(245, 158, 11); border-radius: 50%; color: white; display: flex; flex-shrink: 0; font-size: 18px; font-weight: 700; height: 44px; justify-content: center; width: 44px;">Y</div>
+<div><div style="color: white; font-size: 14px; font-weight: 600;">Yasmim Clissa</div><div style="color: rgba(255, 255, 255, 0.5); font-size: 12px;">2 meses atrás</div></div></div>
+<div style="color: #f59e0b; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+<div style="color: rgba(255, 255, 255, 0.85); font-size: 14px; line-height: 1.6;">"Atendimento rápido e eficaz"</div>
+<span style="border-radius: 100px; border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; display: inline-block; font-size: 11px; margin-top: 12px; padding: 3px 10px;">Rapidez</span>
+</div>
+
+</div>
+
+<div style="margin-top: 32px; text-align: center;">
+<a href="https://www.google.com.br/search?ibp=gwp;0,7&amp;q=Mestre+dos+Reparos+%E2%80%93+Manuten%C3%A7%C3%A3o+e+Limpeza&amp;ludocid=10403281540691542326&amp;lsig=AB86z5VLVQ_QdcgOrXbf9RM6gL78#lkt=LocalPoiReviews&amp;lpg=cid:CgIgAQ%3D%3D" style="align-items: center; background: rgb(245, 158, 11); border-radius: 100px; color: #0d2461; display: inline-flex; font-size: 15px; font-weight: 700; gap: 8px; padding: 14px 32px; text-decoration: none;" target="_blank">
+⭐ Veja todas as avaliações no Google
+</a>
+</div>
+
+</section>
+
+<section class="seo-bairros">
+
+<h2>Eletricista em Todos os Bairros de Itapevi</h2>
+
+<p>
+
+Atendemos:
+
+Amador Bueno, Centro, Vila Dr. Cardoso, Jardim Vitápolis, Chácara Vitápolis, Jardim Briquet, Jardim Dona Elvira, Nova Itapevi, Cidade da Saúde, Vila Olinda, Jardim Itaparica, Jardim Hokkaido, Jardim São Luiz, Jardim Rosemary, Jardim Santa Rita, Jardim Portela, Jardim Ruth, Parque Suburbano, Parque Wey, Cohab Setor A, Cohab Setor B, Cohab Setor D e região.
+
+</p>
+
+</section>
+    
+
+<!--FAQ-->
+<section class="mestre-section mestre-container">
+
+  <span class="mestre-title-tag">❓ DÚVIDAS FREQUENTES</span>
+
+  <h2>Perguntas e Respostas</h2>
+
+  <p>
+    Reunimos as principais dúvidas sobre atendimento, orçamento e serviços elétricos em Itapevi.
+  </p>
+
+  <div class="mestre-faq-list">
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Qual a área de atendimento?
+      </button>
+
+      <div class="mestre-faq-a">
+        Atendemos todos os bairros de Itapevi, além de cidades próximas da região conforme disponibilidade da agenda.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Quanto custa um eletricista em Itapevi?
+      </button>
+
+      <div class="mestre-faq-a">
+        O valor depende do tipo de serviço, complexidade e urgência. O Mestre dos Reparos possui calculadora online e orçamento transparente para facilitar a estimativa inicial.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Vocês atendem emergência elétrica 24 horas?
+      </button>
+
+      <div class="mestre-faq-a">
+        Sim. Realizamos atendimento emergencial para curto-circuito, falta de energia, disjuntores desarmando, tomadas aquecendo e riscos elétricos.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Como funciona o orçamento?
+      </button>
+
+      <div class="mestre-faq-a">
+        Você pode solicitar atendimento pelo WhatsApp, utilizar a calculadora online ou agendar diretamente pelo sistema online.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Quanto tempo demora para o atendimento?
+      </button>
+
+      <div class="mestre-faq-a">
+        O prazo depende da agenda e da região, mas trabalhamos com atendimento rápido sempre que possível.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        O serviço possui garantia?
+      </button>
+
+      <div class="mestre-faq-a">
+        Sim. Os serviços executados possuem garantia técnica conforme o tipo de atendimento realizado.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Quais formas de pagamento são aceitas?
+      </button>
+
+      <div class="mestre-faq-a">
+        Aceitamos Pix, débito e crédito conforme a modalidade disponível no atendimento.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Preciso fornecer materiais?
+      </button>
+
+      <div class="mestre-faq-a">
+        Depende do serviço. Em muitos casos orientamos, validamos ou incluímos os materiais necessários antes da execução.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Vocês atendem apartamentos, condomínios e empresas?
+      </button>
+
+      <div class="mestre-faq-a">
+        Sim. Atuamos diariamente em apartamentos, residências, condomínios e empresas em Itapevi e região.
+      </div>
+    </div>
+
+    <div class="mestre-faq-item">
+      <button class="mestre-faq-q" onclick="toggleFaq(this)">
+        Vocês fazem instalação de luminárias e ventiladores?
+      </button>
+
+      <div class="mestre-faq-a">
+        Sim. Realizamos instalação de iluminação, plafons, pendentes, ventiladores de teto e circuitos elétricos.
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.mestre-faq-list{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.mestre-faq-item{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid #e7e7e7;
+}
+
+.mestre-faq-q{
+  width:100%;
+  border:none;
+  background:#fff;
+  color:#0b2a4a;
+  font-size:20px;
+  font-weight:700;
+  text-align:left;
+  padding:24px;
+  cursor:pointer;
+}
+
+.mestre-faq-a{
+  display:none;
+  padding:0 24px 24px;
+  color:#5f6b7a;
+  font-size:17px;
+  line-height:1.8;
+}
+</style>
+
+<script>
+function toggleFaq(button) {
+
+  const answer = button.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+
+}
+</script>
+   
+ 
+    
+  <!--CTA DÚVIDAS-->
+  <section class="mestre-section mestre-container">
+    <div class="mestre-cta-box">
+      <h2>Ainda tem dúvidas?</h2>
+      <p>Entre em contato conosco, teremos prazer em ajudar.</p>
+      <a class="mestre-btn-gold" href="https://wa.me/5511918390430" style="margin: 0px auto; max-width: 360px;">❓ Falar com especialista</a>
+    </div>
+  </section>
+
+  <!--AVALIAÇÃO GOOGLE-->
+  <section class="mestre-google-box">
+    <div class="mestre-google-stars">★★★★★</div>
+    <h2>Gostou do nosso atendimento?</h2>
+    <p>Sua avaliação nos ajuda a crescer e a oferecer um serviço cada vez melhor. Compartilhe sua experiência no Google.</p>
+    <a class="mestre-btn-gold" href="https://g.page/r/CTZBTDtx4V-QEBM/review" style="margin: 18px auto 0px; max-width: 360px;">☆ Avaliar no Google ↗</a>
+  </section>
+
+    <!--MAPA GEOLOCALIZAÇÃO-->
+<section class="mestre-section mestre-container">
+
+<span class="mestre-title-tag">📍 LOCALIZAÇÃO</span>
+
+<h2>Eletricista em Itapevi | Mestre dos Reparos</h2>
+
+<p>
+Atendimento em Itapevi, Barueri, Jandira, Santana de Parnaíba e região.
+</p>
+
+<div style="border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 30px; margin-top: 20px; overflow: hidden;">
+
+<iframe allowfullscreen="" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Itapevi+SP&amp;output=embed" style="border: 0;" width="100%">
+</iframe>
+
+</div>
+
+<div style="margin-top: 20px; text-align: center;">
+
+<a href="https://maps.app.goo.gl/AcsP6DYGeHc3YqBb7" style="background: rgb(255, 152, 0); border-radius: 100px; color: white; display: inline-block; font-size: 16px; font-weight: 700; padding: 14px 28px; text-decoration: none;" target="_blank">
+📍 Abrir no Google Maps
+</a>
+
+</div>
+
+</section>
+    
+    
+  <!--RODAPÉ-->
+  <style>
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+<div class="mestre-box" id="mestre-empresas-carrossel">
+  <h2>Empresas e organizações que já atendemos</h2>
+  <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+  <div class="emp-carrossel">
+    <div class="emp-trilha">
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+      <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+      <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+      <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+      <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+      <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+      <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+    </div>
+  </div>
+</div>
+<footer class="mestre-footer">
+    <div class="mestre-footer-brand">
+      <div class="mestre-footer-logo">🔧</div>
+      <div>
+        <p class="mestre-footer-title">Mestre dos Reparos</p>
+        <p class="mestre-footer-sub">manutenção e Limpeza</p>
+      </div>
+    </div>
+
+    <p class="mestre-footer-desc">Serviços de elétrica, em Itapevi e região. Qualidade, segurança e preço justo.</p>
+
+    <div class="mestre-legal-box">
+      <p><strong>CNPJ:</strong> 64.521.657/0001-87</p>
+      <p><strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245 – Jardim Belval, Barueri – SP | CEP: 06420-130</p>
+      <p><strong>E-mail:</strong> mestredosreparosbarueri@gmail.com</p>
+      <p><strong>Telefone:</strong> (11) 91839-0430</p>
+    </div>
+
+    <h3>🗂️ Mapa do Site</h3>
+    <div class="mestre-footer-links">
+      <a href="https://www.mestredosreparos.app.br/">Início</a>
+      <a href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html">Eletricista</a>
+<a href="https://www.mestredosreparos.app.br/p/marido-de-aluguel.html">Marido de Aluguel</a>
+      <a href="https://www.mestredosreparos.app.br/p/limpeza-pos-obra-mestre-dos-reparos.html">Limpeza Pós-Obra</a>
+<a href="https://wa.me/5511918390430">WhatsApp</a>
+      <a href="https://mestre-reparos.base44.app/Agendamento">Agendar Online</a>
+      <a href="https://mestre-reparos.base44.app/Calculadora">Calculadora de Preços</a>
+      <a href="https://mestre-reparos.base44.app/Agendamento">Meus Agendamentos</a>
+    </div>
+
+    <h3>Contato</h3>
+    <div class="mestre-contact-list">
+      <div class="mestre-contact-item">📞 <span>(11) 91839-0430</span></div>
+      <div class="mestre-contact-item">✉️ <span>mestredosreparosbarueri@gmail.com</span></div>
+      <div class="mestre-contact-item">📍 <span>Av. H. G. Baptista, 2245 – Jardim Belval, Barueri – SP</span></div>
+    </div>
+
+    <h3>Redes Sociais</h3>
+    <div class="mestre-socials">
+      <a aria-label="Instagram" href="   https://www.instagram.com/mestredosreparosfacilites?igsh=OTkwdXE5Z2pvd3Z0" target="_blank">◎</a>
+      <a aria-label="Facebook" href="https://facebook.com/mestredosreparos" target="_blank">f</a>
+      <a aria-label="YouTube" href="https://www.youtube.com/@mestredosreparos-i9d" si="vtUi5-5PiwYWPjQb" target="_blank">▶</a>
+    </div>
+
+    <div class="mestre-policy-links">
+      <a href="https://www.mestredosreparos.app.br/p/lgpd-lei-geral-de-protecao-de-dados.html">LGPD</a>
+      <a href="https://www.mestredosreparos.app.br/p/politica-de-privacidade.html">Privacidade</a>
+      <a href="https://www.mestredosreparos.app.br/p/temos-de-uso.html">Termos de Uso</a>
+    </div>
+    <div style="height: 30px;"></div>
+    
+   <p>
+  O Mestre dos Reparos Manutenção &amp; Limpeza atua em Itapevi, e região com serviços de manutenção elétrica, residencial, predial , contando com acompanhamento técnico de profissional com formação em Engenharia e experiência de mais de 20 anos em operações de manutenção, diagnóstico de falhas elétricas, instalações residenciais e sistemas prediais.
+Empresa construída em Barueri com CNPJ ativo, e emissão de notas fiscais.
+</p>
+
+<p>
+  A emissão de ART (Anotação de Responsabilidade Técnica) é realizada quando aplicável, conforme a natureza, complexidade ou exigência contratual do serviço executado, em conformidade com os critérios estabelecidos pelo CREA.
+</p>
+  </footer>
+
+  <!--WHATSAPP FLUTUANTE-->
+  
+    <a href="https://wa.me/5511918390430" rel="noopener noreferrer" style="align-items: center; background-color: #25d366; border-radius: 50%; bottom: 18px; box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 10px; display: flex; height: 65px; justify-content: center; position: fixed; right: 18px; width: 65px; z-index: 9999;" target="_blank">
+  <svg style="fill: rgb(255, 255, 255); height: 35px; width: 35px;" viewbox="0 0 32 32">
+    <path d="M19.11 17.34c-.27-.14-1.58-.78-1.82-.87-.24-.09-.41-.14-.59.14-.17.27-.68.86-.83 1.03-.15.18-.3.2-.56.07-.27-.14-1.12-.41-2.13-1.32-.79-.7-1.32-1.56-1.47-1.82-.15-.27-.02-.41.11-.55.12-.12.27-.3.41-.45.14-.15.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.59-1.43-.81-1.96-.21-.5-.43-.43-.59-.44h-.5c-.18 0-.45.07-.68.34-.24.27-.9.88-.9 2.14s.92 2.48 1.05 2.65c.14.18 1.81 2.76 4.38 3.87.61.27 1.09.43 1.46.55.61.19 1.17.16 1.61.1.49-.07 1.58-.65 1.8-1.28.22-.63.22-1.17.15-1.28-.06-.11-.23-.18-.49-.31zM16.03 3.2c-7 0-12.67 5.67-12.67 12.67 0 2.23.58 4.4 1.69 6.31L3.2 28.8l6.78-1.78a12.63 12.63 0 0 0 6.05 1.54h.01c6.99 0 12.67-5.67 12.67-12.67S23.03 3.2 16.03 3.2zm0 23.14h-.01a10.5 10.5 0 0 1-5.35-1.47l-.38-.23-4.02 1.05 1.07-3.92-.25-.4a10.47 10.47 0 0 1-1.61-5.55c0-5.8 4.72-10.52 10.53-10.52 2.81 0 5.45 1.09 7.44 3.08a10.45 10.45 0 0 1 3.08 7.44c0 5.81-4.73 10.52-10.5 10.52z"></path>
+  </svg>
+</a>
+  
+ </section></section></section></div></section>
+
+
+<div class="mr-aval">
+  <h3 class="mr-aval-titulo">Como você avalia este conteúdo?</h3>
+  <p class="mr-aval-sub">Seu feedback nos ajuda a melhorar a qualidade dos nossos artigos</p>
+  <div class="mr-aval-estrelas" role="radiogroup" aria-label="Avaliação de 1 a 5 estrelas">
+    <span data-v="1" role="radio" aria-label="1 estrela">&#9734;</span>
+    <span data-v="2" role="radio" aria-label="2 estrelas">&#9734;</span>
+    <span data-v="3" role="radio" aria-label="3 estrelas">&#9734;</span>
+    <span data-v="4" role="radio" aria-label="4 estrelas">&#9734;</span>
+    <span data-v="5" role="radio" aria-label="5 estrelas">&#9734;</span>
+  </div>
+  <p class="mr-aval-obrigado">Obrigado pela sua avaliação!</p>
+</div>
+
+<style>
+.mr-aval{max-width:1100px;margin:30px auto;background:#fff;border-radius:18px;padding:28px 30px;box-shadow:0 4px 18px rgba(0,0,0,.08);font-family:Arial,sans-serif;}
+.mr-aval-titulo{font-size:26px;color:#0b2a4a;font-weight:800;margin:0 0 6px;}
+.mr-aval-sub{color:#8a94a3;font-size:16px;margin:0 0 16px;}
+.mr-aval-estrelas{display:flex;gap:8px;font-size:42px;line-height:1;}
+.mr-aval-estrelas span{color:#c6ccd4;cursor:pointer;transition:color .12s,transform .12s;}
+.mr-aval-estrelas span:hover{transform:scale(1.08);}
+.mr-aval-estrelas span.on{color:#ffb300;}
+.mr-aval-obrigado{display:none;color:#1e8e3e;font-weight:700;font-size:17px;margin:14px 0 0;}
+.mr-aval.rated .mr-aval-estrelas span{cursor:default;}
+.mr-aval.rated .mr-aval-obrigado{display:block;}
+@media(max-width:768px){.mr-aval-titulo{font-size:22px;}.mr-aval-estrelas{font-size:38px;}}
+</style>
+
+<script>
+(function(){
+  var box=document.currentScript.parentNode.querySelector('.mr-aval')||document.querySelector('.mr-aval');
+  if(!box)return;
+  var stars=box.querySelectorAll('.mr-aval-estrelas span'), sel=0, locked=false;
+  var key='mr_aval_'+location.pathname;
+  function paint(n){stars.forEach(function(s){var v=+s.dataset.v;s.innerHTML=v<=n?'\u2605':'\u2606';s.classList.toggle('on',v<=n);});}
+  try{var saved=localStorage.getItem(key);if(saved){sel=+saved;locked=true;box.classList.add('rated');paint(sel);}}catch(e){}
+  stars.forEach(function(s){
+    s.addEventListener('mouseenter',function(){if(!locked)paint(+s.dataset.v);});
+    s.addEventListener('click',function(){
+      if(locked)return;
+      sel=+s.dataset.v;locked=true;paint(sel);box.classList.add('rated');
+      try{localStorage.setItem(key,sel);}catch(e){}
+    });
+  });
+  box.querySelector('.mr-aval-estrelas').addEventListener('mouseleave',function(){paint(sel);});
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto custa um eletricista em Itapevi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O valor varia conforme o serviço. Troca de tomada a partir de R$ 80, troca de disjuntor a partir de R$ 100, instalação de chuveiro a partir de R$ 120. Use nossa calculadora online ou chame no WhatsApp (11) 91839-0430."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Eletricista em Itapevi atende emergências 24 horas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Atendemos emergências 24 horas em Itapevi para curto-circuito, disjuntor desarmando, falta de energia e tomadas aquecendo. WhatsApp (11) 91839-0430."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a garantia do serviço elétrico em Itapevi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todos os serviços possuem garantia técnica de 90 dias conforme o Código de Defesa do Consumidor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Atendem apartamentos e condomínios em Itapevi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Atendemos apartamentos, residências, condomínios, lojas e empresas em Itapevi e região."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como agendar eletricista em Itapevi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pelo WhatsApp (11) 91839-0430 ou pelo agendamento em mestre-reparos.base44.app/Agendamento."
+      }
+    }
+  ]
+}
+</script>
+

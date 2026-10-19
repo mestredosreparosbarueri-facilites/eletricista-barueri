@@ -1,0 +1,327 @@
+<style>
+h3.post-title.entry-title,.post-title.entry-title,.post-title{display:none!important}
+.mestre-container{max-width:1100px;margin:auto;padding:20px;font-family:Arial,sans-serif;line-height:1.7;color:#222}
+.mestre-hero{background:linear-gradient(135deg,#0b2a4a,#163d66);padding:45px 25px;border-radius:18px;color:#fff;margin-bottom:35px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.mestre-hero h1{font-size:42px;line-height:1.2;margin:0 0 20px;font-weight:900;color:#fff}
+.mestre-hero p{font-size:20px;color:#fff;margin:0 0 14px;max-width:900px}
+.mestre-btns{display:flex;gap:15px;flex-wrap:wrap;margin-top:28px}
+.mestre-btn{display:inline-block;padding:16px 24px;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none!important}
+.mestre-btn-whats{background:#25D366;color:#fff!important}
+.mestre-btn-agendar{background:#ffb300;color:#0b2a4a!important}
+.mestre-box{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-box h2{font-size:34px;color:#0b2a4a;margin:0 0 18px}
+.mestre-box h3{font-size:26px;color:#163d66;margin:28px 0 12px}
+.mestre-box p{font-size:20px;margin:0 0 18px}
+.mestre-box ul{padding-left:24px;font-size:19px;line-height:1.8;margin:0 0 18px}
+.mestre-box li{margin-bottom:8px}
+.mestre-resposta{background:#f4f6f9;border-left:6px solid #ffb300;padding:22px 24px;border-radius:12px;margin-bottom:30px}
+.mestre-resposta strong.mestre-resposta-tit{display:block;color:#0b2a4a;font-size:22px;margin-bottom:8px}
+.mestre-resposta p{font-size:19px;margin:0}
+.mestre-servicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:25px}
+.mestre-card{background:#0b2a4a;color:#fff;padding:22px;border-radius:14px}
+.mestre-card h3{margin:0 0 10px;color:#ffb300;font-size:22px}
+.mestre-card p{color:#fff;font-size:17px;margin:0}
+.mestre-alerta{background:#fff5e0;border-left:6px solid #ffb300;padding:22px;border-radius:10px;margin:25px 0;font-size:19px}
+.mestre-tabela{overflow-x:auto;margin:20px 0}
+.mestre-tabela table{width:100%;border-collapse:collapse;font-size:17px}
+.mestre-tabela th{background:#0b2a4a;color:#fff;text-align:left;padding:14px}
+.mestre-tabela td{padding:14px;border-bottom:1px solid #e6ebf2;vertical-align:top}
+.mestre-tabela tr:nth-child(even) td{background:#f4f6f9}
+.mestre-passos{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+.mestre-passo{background:#f4f6f9;padding:20px;border-radius:14px}
+.mestre-passo-num{font-size:34px;font-weight:900;color:#ffb300;line-height:1;margin-bottom:8px}
+.mestre-passo h3{font-size:20px;color:#0b2a4a;margin:0 0 8px}
+.mestre-passo p{font-size:17px;margin:0}
+.mestre-faq{margin-top:25px}
+.mestre-faq details{background:#f4f6f9;padding:18px;border-radius:12px;margin-bottom:14px}
+.mestre-faq summary{font-size:20px;font-weight:700;cursor:pointer;color:#0b2a4a}
+.mestre-faq p{margin:12px 0 0;font-size:18px}
+.mestre-cluster{background:#fff;padding:28px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.mestre-cluster h3{color:#0b2a4a;font-size:24px;margin:0 0 14px}
+.mestre-cluster ul{padding-left:24px;font-size:18px;line-height:1.8;margin:0 0 12px}
+.mestre-cluster a{color:#0b2a4a;font-weight:700}
+.mestre-footer{background:#0b2a4a;color:#fff;padding:40px 25px;border-radius:18px;margin-top:40px}
+.mestre-footer h3{color:#ffb300;font-size:28px;margin:0 0 15px}
+.mestre-footer p,.mestre-footer a{font-size:17px;color:#fff!important;margin:0 0 12px}
+.mestre-btn-avaliar{display:inline-block;background:#ffb300;color:#0b2a4a!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:17px;text-decoration:none!important;margin-top:16px}
+.mestre-links{display:grid;gap:10px;margin:20px 0}
+.mestre-links a{color:#fff!important;text-decoration:none;font-weight:700}
+.el-disciplinas{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:24px}
+.el-disciplina{background:#f4f6f9;border-radius:14px;padding:20px}
+.el-disciplina h3{margin:0 0 12px;font-size:21px;color:#0b2a4a;border-bottom:3px solid #ffb300;padding-bottom:8px}
+.el-disciplina ul{padding-left:20px;margin:0;font-size:16px;line-height:1.65}
+.el-disciplina li{margin-bottom:5px}
+.emp-carrossel{overflow:hidden;position:relative;margin-top:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.emp-trilha{display:flex;gap:14px;width:max-content;animation:empDeslizar 36s linear infinite}
+.emp-carrossel:hover .emp-trilha{animation-play-state:paused}
+@keyframes empDeslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.emp-cliente{min-width:200px;background:#0b2a4a;border:2px solid #0b2a4a;border-top:5px solid #ffb300;border-radius:14px;padding:20px;text-align:center}
+.emp-cliente strong{display:block;color:#ffb300;font-size:19px;margin-bottom:6px}
+.emp-cliente span{font-size:14px;color:#dbe6f3}
+@media (prefers-reduced-motion: reduce){.emp-trilha{animation:none;flex-wrap:wrap;width:auto}}
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.dep-card{background:#fff;border:2px solid #e6ebf2;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.dep-top{display:flex;align-items:center;gap:12px}
+.dep-avatar{width:46px;height:46px;border-radius:50%;background:#0b2a4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 46px}
+.dep-nome{font-weight:800;color:#0b2a4a;font-size:16px;line-height:1.25}
+.dep-quando{font-size:13px;color:#6b7a8d}
+.dep-estrelas{color:#ffb300;font-size:17px;letter-spacing:2px}
+.mestre-box .dep-texto{margin:0;font-size:17px;color:#33445c;line-height:1.65}
+.dep-rodape{margin-top:auto;font-size:13px;color:#6b7a8d;font-weight:700}
+.dep-resumo{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#f4f6f9;border-radius:16px;padding:22px;margin-top:20px}
+.mestre-box .dep-nota{margin:0;font-size:16px;color:#33445c}
+.mestre-box .dep-nota b{font-size:34px;color:#0b2a4a;display:block;line-height:1;margin-bottom:4px}
+.dep-btn{display:inline-block;background:#0b2a4a;color:#fff!important;padding:15px 24px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none!important}
+.mestre-whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:9999;width:64px;height:64px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);text-decoration:none!important;transition:transform .2s ease}
+.mestre-whats-flutuante:hover{transform:scale(1.07)}
+.mestre-whats-flutuante svg{width:34px;height:34px;fill:#fff}
+@media(min-width:700px){.mestre-passos{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:768px){.mestre-hero{padding:32px 20px}.mestre-hero h1{font-size:34px}.mestre-hero p{font-size:18px}.mestre-box{padding:22px}.mestre-box h2{font-size:28px}.mestre-box p{font-size:18px}.mestre-box ul{font-size:17px}.el-disciplina ul{font-size:15px}.el-disciplina h3{font-size:19px}.dep-card{padding:18px}.dep-resumo{padding:18px}.dep-btn{display:block;text-align:center}.mestre-tabela table{font-size:15px}}
+@media(max-width:600px){.mestre-whats-flutuante{right:14px;bottom:14px;width:58px;height:58px}.mestre-whats-flutuante svg{width:30px;height:30px}}
+</style>
+
+<section class="mestre-container">
+
+  <div class="mestre-hero">
+    <h1>Manutenção Elétrica em Barueri</h1>
+    <p>A <strong>manutenção elétrica em Barueri</strong> é o serviço que evita quedas de energia, curto-circuito e aparelhos queimados antes que eles aconteçam. O Mestre dos Reparos atende residências, condomínios e empresas com manutenção preventiva e corretiva, prolongando a vida útil da instalação e garantindo a qualidade de cada conexão do seu imóvel.</p>
+    <p>Responsável técnico com formação em engenharia, serviço conforme a NBR 5410, nota fiscal e garantia de 90 dias na mão de obra. Plantão 24 horas para emergências elétricas.</p>
+    <div class="mestre-btns">
+      <a class="mestre-btn mestre-btn-whats" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20manuten%C3%A7%C3%A3o%20el%C3%A9trica%20em%20Barueri.">⚡ Pedir manutenção agora</a>
+      <a class="mestre-btn mestre-btn-agendar" href="https://mestre-reparos.base44.app/Agendamento">📅 Agendar revisão elétrica</a>
+    </div>
+  </div>
+
+  <div class="mestre-resposta">
+    <strong class="mestre-resposta-tit">Resposta rápida</strong>
+    <p>Manutenção elétrica é a revisão periódica e o reparo da instalação: inspeção do quadro, aperto de conexões, troca de componentes oxidados, correção de sobrecarga, instalação de IDR e testes de tensão e corrente. Em residências, a recomendação é uma revisão a cada dois anos ou após qualquer reforma. O Mestre dos Reparos faz manutenção elétrica em Barueri, Alphaville e região, com orçamento pelo WhatsApp (11) 91839-0430.</p>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Quando chamar a manutenção elétrica</h2>
+    <p>A instalação elétrica dá sinais antes de falhar. Conexões frouxas esquentam, componentes oxidam e circuitos sobrecarregados começam a desarmar. Chame a manutenção quando perceber qualquer um destes sinais:</p>
+    <ul>
+      <li>Aquecimento excessivo nas paredes próximas a tomadas</li>
+      <li>Quedas de energia constantes em cômodos específicos</li>
+      <li>Ruídos estranhos, zumbido ou estalos vindos do quadro de disjuntores</li>
+      <li>Dificuldade em ligar equipamentos de alta potência</li>
+      <li>Disjuntores desarmando sem motivo aparente</li>
+      <li>Necessidade de aumentar a capacidade de carga instalada</li>
+      <li>Reforma completa de infraestrutura elétrica antiga</li>
+    </ul>
+    <div class="mestre-alerta"><strong>Atenção:</strong> parede quente perto da tomada, cheiro de queimado ou estalos no quadro indicam conexão com mau contato aquecendo. Desligue o disjuntor do circuito e chame um eletricista antes de religar.</div>
+
+    <h3>O que cada sinal indica</h3>
+    <div class="mestre-tabela">
+      <table>
+        <thead><tr><th>Sinal</th><th>Causa provável</th><th>Urgência</th></tr></thead>
+        <tbody>
+          <tr><td>Parede quente perto da tomada</td><td>Conexão frouxa ou fio subdimensionado aquecendo dentro da caixa</td><td><strong>Imediata:</strong> desligue o circuito</td></tr>
+          <tr><td>Zumbido ou estalo no quadro</td><td>Borne frouxo, disjuntor desgastado ou arco elétrico</td><td><strong>Imediata</strong></td></tr>
+          <tr><td>Queda de energia em um cômodo</td><td>Circuito sobrecarregado ou emenda com mau contato</td><td><strong>Alta:</strong> chame em até 24 horas</td></tr>
+          <tr><td>Aparelho potente não liga ou desarma</td><td>Circuito sem capacidade para a carga</td><td><strong>Média:</strong> agende a visita</td></tr>
+          <tr><td>Instalação com mais de 20 anos</td><td>Isolamento ressecado e componentes fora de norma</td><td>Programada: revisão completa</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Manutenção preventiva, corretiva e preditiva</h2>
+    <p>Existem três tipos de manutenção elétrica. A preventiva é a mais barata a longo prazo, porque encontra o problema antes de ele virar um curto-circuito ou um equipamento queimado.</p>
+    <div class="mestre-tabela">
+      <table>
+        <thead><tr><th>Tipo</th><th>Quando é feita</th><th>Objetivo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Preventiva</strong></td><td>Em datas programadas, com a instalação funcionando</td><td>Apertar conexões, trocar peças desgastadas e evitar falhas</td></tr>
+          <tr><td><strong>Corretiva</strong></td><td>Depois que a falha acontece</td><td>Restabelecer a energia e corrigir a causa do problema</td></tr>
+          <tr><td><strong>Preditiva</strong></td><td>Com medições periódicas, como a termografia</td><td>Detectar pontos quentes e sobrecarga antes de qualquer sintoma</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Com que frequência fazer a manutenção</h3>
+    <ul>
+      <li><strong>Residências:</strong> revisão preventiva a cada dois anos ou sempre que houver reforma.</li>
+      <li><strong>Comércios e escritórios:</strong> revisão anual, ou antes, se houver aumento de equipamentos.</li>
+      <li><strong>Condomínios:</strong> plano de manutenção com cronograma para quadros, bombas, iluminação e áreas comuns.</li>
+      <li><strong>Indústrias:</strong> plano de manutenção preventiva e preditiva conforme a NR-10.</li>
+    </ul>
+  </div>
+
+  <div class="mestre-box">
+    <h2>O que está incluído na manutenção elétrica</h2>
+    <div class="mestre-servicos">
+      <div class="mestre-card"><h3>Inspeção do quadro</h3><p>Inspeção visual e termográfica de quadros para encontrar pontos quentes e componentes no limite.</p></div>
+      <div class="mestre-card"><h3>Aperto de conexões</h3><p>Reaperto de bornes, disjuntores e barramentos, a principal causa de aquecimento em instalações antigas.</p></div>
+      <div class="mestre-card"><h3>Troca de componentes</h3><p>Substituição de disjuntores, terminais e peças oxidadas ou danificadas.</p></div>
+      <div class="mestre-card"><h3>Correção de sobrecarga</h3><p>Identificação dos circuitos sobrecarregados e redistribuição ou criação de circuitos novos.</p></div>
+      <div class="mestre-card"><h3>Proteção contra choque</h3><p>Instalação de dispositivos DR (IDR) e de DPS contra surtos e raios.</p></div>
+      <div class="mestre-card"><h3>Testes de tensão e corrente</h3><p>Medição de tensão, corrente, aterramento e equilíbrio entre as fases.</p></div>
+      <div class="mestre-card"><h3>Organização do quadro</h3><p>Organização e identificação da fiação dentro dos quadros, facilitando manutenções futuras.</p></div>
+      <div class="mestre-card"><h3>Relatório e garantia</h3><p>Relatório do que foi encontrado e feito, nota fiscal e garantia de 90 dias na mão de obra.</p></div>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Manutenção elétrica para cada tipo de imóvel</h2>
+    <div class="el-disciplinas">
+      <div class="el-disciplina">
+        <h3>🏠 Residencial</h3>
+        <ul><li>Revisão completa do quadro de distribuição</li><li>Reaperto de conexões e troca de disjuntores</li><li>Instalação e troca de IDR</li><li>Instalação de DPS contra surtos e raios</li><li>Aterramento residencial e fio terra</li><li>Correção de queda de energia constante</li><li>Troca de fiação antiga ou ressecada</li><li>Aumento de carga para ar-condicionado e chuveiro</li></ul>
+      </div>
+      <div class="el-disciplina">
+        <h3>🏢 Condomínios e prédios</h3>
+        <ul><li>Manutenção preventiva de condomínio</li><li>Manutenção corretiva de áreas comuns</li><li>Iluminação de garagem, corredor e escada</li><li>Iluminação de emergência</li><li>Bombas de recalque e portão eletrônico</li><li>Balanceamento de cargas entre fases</li><li>Adequação para AVCB</li><li>Plano de manutenção com cronograma e checklist</li></ul>
+      </div>
+      <div class="el-disciplina">
+        <h3>🏬 Comércios e empresas</h3>
+        <ul><li>Contrato de manutenção elétrica mensal</li><li>Quadro elétrico comercial identificado</li><li>Correção de disjuntor caindo em operação</li><li>Tomadas para equipamentos de alto consumo</li><li>Adequação de carga e demanda</li><li>Termografia de quadros e painéis</li><li>Adequação conforme a NR-10</li><li>Relatório técnico de manutenção</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Como funciona a manutenção elétrica em Barueri</h2>
+    <div class="mestre-passos">
+      <div class="mestre-passo"><div class="mestre-passo-num">1</div><h3>Relato inicial</h3><p>Você conta pelo WhatsApp o que está acontecendo, com fotos do quadro se puder, e identificamos a urgência.</p></div>
+      <div class="mestre-passo"><div class="mestre-passo-num">2</div><h3>Visita técnica</h3><p>Agendamos a visita para análise detalhada do sistema, com medições e inspeção do quadro e dos circuitos.</p></div>
+      <div class="mestre-passo"><div class="mestre-passo-num">3</div><h3>Plano de ação</h3><p>Elaboramos o plano de correção dos pontos falhos, em ordem de prioridade de risco.</p></div>
+      <div class="mestre-passo"><div class="mestre-passo-num">4</div><h3>Orçamento</h3><p>O valor é apresentado antes do início, com a lista de peças e serviços. Nada é feito sem a sua aprovação.</p></div>
+      <div class="mestre-passo"><div class="mestre-passo-num">5</div><h3>Execução</h3><p>Reparos executados com foco em segurança e durabilidade, com o circuito desligado e material de qualidade.</p></div>
+      <div class="mestre-passo"><div class="mestre-passo-num">6</div><h3>Testes e relatório</h3><p>Testamos tudo na sua frente e entregamos nota fiscal, relatório e garantia de 90 dias.</p></div>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>O que influencia o valor da manutenção elétrica</h2>
+    <p>O <strong>nível de degradação da fiação</strong> e a necessidade de modernizar os componentes elétricos são os pontos que mais pesam no orçamento. Uma instalação revisada há pouco tempo pede só reaperto e testes; uma instalação antiga pode exigir troca de quadro e de cabos.</p>
+    <ul>
+      <li><strong>Localização da falha:</strong> intervenções em forro, laje ou conduítes obstruídos levam mais tempo</li>
+      <li><strong>Componentes específicos</strong>, como IDR, DPS, disjuntores de alta capacidade ou dispositivos de automação</li>
+      <li><strong>Tamanho da instalação:</strong> número de quadros e circuitos a revisar</li>
+      <li><strong>Tipo de contrato:</strong> visita avulsa ou plano de manutenção periódica</li>
+      <li><strong>Urgência e horário</strong> do atendimento</li>
+    </ul>
+    <p>O orçamento é sempre fechado antes do serviço. Para ter uma ideia prévia, use a <a href="https://mestre-reparos.base44.app/Calculadora">calculadora de preços</a>.</p>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Por que contratar o Mestre dos Reparos</h2>
+    <ul>
+      <li><strong>Formação em engenharia:</strong> o atendimento é conduzido por profissional com formação em engenharia e mais de 20 anos na área elétrica.</li>
+      <li><strong>Empresa de Barueri:</strong> base na Av. Henrique Gonçalves Baptista, o que encurta o deslocamento e facilita a volta em caso de garantia.</li>
+      <li><strong>Nota fiscal e CNPJ:</strong> CNPJ 64.521.657/0001-87, com emissão de nota fiscal, útil também para condomínios e empresas.</li>
+      <li><strong>Trabalho conforme norma:</strong> tudo executado seguindo a NBR 5410, com aterramento e dispositivos de proteção verificados no final.</li>
+      <li><strong>Disponível todos os dias:</strong> plantão 24 horas para emergências elétricas residenciais e comerciais.</li>
+      <li><strong>Garantia e avaliações:</strong> garantia técnica de 90 dias por escrito e nota 4,9 no Google.</li>
+    </ul>
+  </div>
+
+  <div class="mestre-box" id="mestre-empresas-carrossel">
+    <h2>Empresas e organizações que já atendemos</h2>
+    <p>Nossos contratos corporativos incluem limpeza recorrente, manutenção predial preventiva e corretiva, adequações elétricas e hidráulicas e reparos em unidades administrativas e operacionais.</p>
+    <div class="emp-carrossel">
+      <div class="emp-trilha">
+        <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+        <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+        <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+        <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+        <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+        <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+        <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+        <div class="emp-cliente"><strong>Coca-Cola FEMSA</strong><span>Manutenção e limpeza</span></div>
+        <div class="emp-cliente"><strong>Bradesco</strong><span>Manutenção predial e reparos</span></div>
+        <div class="emp-cliente"><strong>Itaú</strong><span>Serviços de manutenção</span></div>
+        <div class="emp-cliente"><strong>PJ Bank</strong><span>Reparos e adequações</span></div>
+        <div class="emp-cliente"><strong>Armazena Armazéns</strong><span>Limpeza e manutenção</span></div>
+        <div class="emp-cliente"><strong>MFA Transportes</strong><span>Manutenção de unidade</span></div>
+        <div class="emp-cliente"><strong>Bureau Veritas</strong><span>Serviços prediais</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mestre-box" id="depoimentos">
+    <h2>Depoimentos de clientes no Google</h2>
+    <p>Quem contrata o Mestre dos Reparos avalia o serviço no Google depois do atendimento. Abaixo estão depoimentos reais de clientes atendidos em Barueri e região.</p>
+    <div class="dep-grid">
+      <div class="dep-card">
+        <div class="dep-top"><div class="dep-avatar">KC</div><div><div class="dep-nome">Kelly Carvalho</div><div class="dep-quando">Limpeza residencial · há 3 meses</div></div></div>
+        <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+        <p class="dep-texto">Excelente serviço de limpeza! Fiquei muito satisfeita com o resultado, tudo foi feito com muito cuidado e atenção aos detalhes. A equipe é pontual, organizada e deixou o lugar impecável. Recomendo demais!</p>
+        <div class="dep-rodape">Avaliação verificada no Google</div>
+      </div>
+      <div class="dep-card">
+        <div class="dep-top"><div class="dep-avatar">MF</div><div><div class="dep-nome">Marcelo Fernandes</div><div class="dep-quando">Manutenção e reparos · há 3 meses</div></div></div>
+        <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+        <p class="dep-texto">Gostei muito do trabalho, foram super atenciosos e dá para ver o conhecimento e o domínio do que fazem. Sem contar a educação: gosto de entender as coisas e eles responderam todas as minhas perguntas.</p>
+        <div class="dep-rodape">Avaliação verificada no Google</div>
+      </div>
+      <div class="dep-card">
+        <div class="dep-top"><div class="dep-avatar">LF</div><div><div class="dep-nome">Lais Tafnes Ferrari</div><div class="dep-quando">Atendimento · há 8 meses</div></div></div>
+        <div class="dep-estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+        <p class="dep-texto">Excelente profissional, com atendimento excepcional!</p>
+        <div class="dep-rodape">Avaliação verificada no Google</div>
+      </div>
+    </div>
+    <div class="dep-resumo">
+      <p class="dep-nota"><b>4,9</b><span class="dep-estrelas">★★★★★</span><br>Média de 32 avaliações de clientes no Google Meu Negócio</p>
+      <a class="dep-btn" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+    </div>
+  </div>
+
+  <div class="mestre-box">
+    <h2>Perguntas frequentes sobre manutenção elétrica em Barueri</h2>
+    <div class="mestre-faq">
+      <details open><summary>Qual a frequência ideal de manutenção elétrica?</summary><p>Em residências, recomendamos uma revisão preventiva a cada dois anos ou sempre que for realizada uma reforma. Comércios e escritórios devem revisar a instalação uma vez por ano, e condomínios e indústrias precisam de um plano de manutenção com cronograma. Instalações com mais de 20 anos merecem uma revisão completa o quanto antes.</p></details>
+      <details><summary>Como saber se a rede elétrica está sobrecarregada?</summary><p>O desarme constante dos disjuntores é o indicador mais comum de que o sistema atingiu o limite. Outros sinais são tomadas e paredes aquecendo, luzes que enfraquecem quando um aparelho potente liga e cheiro de queimado perto do quadro. A sobrecarga é confirmada com a medição da corrente de cada circuito durante a visita técnica.</p></details>
+      <details><summary>Podemos instalar tomadas extras?</summary><p>Sim, desde que a capacidade do circuito suporte a carga adicional exigida pelos novos aparelhos. Antes de instalar, o eletricista verifica a bitola do fio e o disjuntor do circuito. Quando o circuito já está no limite, o correto é criar um circuito novo a partir do quadro, em vez de puxar extensões ou benjamins.</p></details>
+      <details><summary>A manutenção elétrica pode economizar luz?</summary><p>Sim. Conexões frouxas e fugas de corrente transformam energia em calor e aumentam o consumo. A eliminação de fugas de energia, o reaperto das conexões e a correção de circuitos sobrecarregados reduzem perdas desnecessárias na conta, além de diminuir o risco de aparelhos queimados.</p></details>
+      <details><summary>Qual a diferença entre manutenção preventiva e corretiva?</summary><p>A manutenção preventiva é feita em datas programadas, com a instalação ainda funcionando, para apertar conexões, trocar peças desgastadas e evitar falhas. A corretiva é feita depois que o problema acontece, para restabelecer a energia e corrigir a causa. A preventiva costuma custar menos, porque evita danos maiores à fiação e aos equipamentos.</p></details>
+      <details><summary>Zumbido no quadro de disjuntores é perigoso?</summary><p>Sim. Zumbido, estalos ou cheiro de queimado no quadro geralmente indicam borne frouxo, disjuntor desgastado ou arco elétrico, que aquecem e podem iniciar um incêndio. Desligue o disjuntor geral se houver cheiro ou fumaça e chame um eletricista. O Mestre dos Reparos atende emergências em Barueri 24 horas.</p></details>
+      <details><summary>Por que a parede perto da tomada esquenta?</summary><p>A parede esquenta quando há conexão frouxa, emenda mal feita ou fio mais fino do que a carga exige dentro da caixa da tomada. A resistência do mau contato gera calor contínuo, que resseca o isolamento e pode derreter a tomada. É preciso desligar o circuito e refazer a conexão ou trocar o cabo.</p></details>
+      <details><summary>O que é termografia de quadros elétricos?</summary><p>Termografia é a inspeção com câmera térmica, que mostra a temperatura de cada disjuntor, borne e cabo com a instalação em funcionamento. Ela encontra pontos quentes causados por mau contato ou sobrecarga antes de qualquer sintoma visível. É a base da manutenção preditiva em condomínios, comércios e indústrias.</p></details>
+      <details><summary>Vocês fazem contrato de manutenção para condomínios e empresas?</summary><p>Sim. O Mestre dos Reparos oferece contrato de manutenção elétrica periódica para condomínios, comércios e empresas, com cronograma, checklist, relatório técnico e nota fiscal. O plano cobre quadros, iluminação de áreas comuns, bombas, portões e adequações às normas NBR 5410 e NR-10.</p></details>
+      <details><summary>Vocês atendem Alphaville e as cidades vizinhas?</summary><p>Sim. O Mestre dos Reparos fica no Jardim Belval e faz manutenção elétrica em todos os bairros de Barueri, incluindo Alphaville, Tamboré, Centro, Aldeia e Jardim Silveira, além de Santana de Parnaíba, Carapicuíba, Jandira, Itapevi e Aldeia da Serra. O contato é pelo WhatsApp (11) 91839-0430.</p></details>
+    </div>
+  </div>
+
+  <div class="mestre-cluster">
+    <h3>Eletricista nos bairros e cidades que atendemos</h3>
+    <ul>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html">Eletricista em Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html">Eletricista em Alphaville</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html">Eletricista no Jardim Belval</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-mestre-dos-reparos.html">Eletricista 24 horas em Barueri</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-santana-de-parnaiba.html">Eletricista em Santana de Parnaíba</a></li>
+      <li><a href="https://www.mestredosreparos.app.br/p/eletricista-em-carapicuiba-atendimento.html">Eletricista em Carapicuíba</a></li>
+    </ul>
+    <ul><li><a href="https://www.mestredosreparos.app.br">Mestre dos Reparos Manutenção &amp; Limpeza</a></li><li><a href="https://mestre-reparos.base44.app/Calculadora">Calculadora de preços</a></li></ul>
+  </div>
+
+  <footer class="mestre-footer">
+    <h3>Mestre dos Reparos Manutenção &amp; Limpeza</h3>
+    <p>Serviços elétricos residenciais, comerciais e prediais, além de reformas, hidráulica, pintura e limpeza, em Barueri e região.</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20manuten%C3%A7%C3%A3o%20el%C3%A9trica%20em%20Barueri.">(11) 91839-0430</a> · <strong>E-mail:</strong> <a href="mailto:mestredosreparosbarueri@gmail.com">mestredosreparosbarueri@gmail.com</a><br>
+    <strong>Site:</strong> <a href="https://www.mestredosreparos.app.br">mestredosreparos.app.br</a></p>
+    <p><strong>Razão Social:</strong> Maria Eduarda Hengles Valadão · <strong>CNPJ:</strong> 64.521.657/0001-87<br>
+    <strong>Endereço:</strong> Av. Henrique Gonçalves Baptista, 2245, Jardim Belval, Barueri/SP, CEP 06420-130</p>
+    <div class="mestre-links mestre-redes">
+      <a href="https://www.instagram.com/mestredosreparosfacilites" target="_blank" rel="noopener">📸 Instagram: @mestredosreparosfacilites</a>
+      <a href="https://www.facebook.com/mestredosreparos.oficial/" target="_blank" rel="noopener">👍 Facebook: /mestredosreparos.oficial</a>
+      <a href="https://www.tiktok.com/@mestre.dos.reparo1" target="_blank" rel="noopener">🎵 TikTok: @mestre.dos.reparo1</a>
+      <a href="https://youtube.com/@mestredosreparos-i9d" target="_blank" rel="noopener">▶️ YouTube: @mestredosreparos-i9d</a>
+    </div>
+    <a class="mestre-btn-avaliar" href="https://g.page/r/CTZBTDtx4V-QEBM/review" target="_blank" rel="noopener">⭐ Avaliar no Google</a>
+  </footer>
+
+  <a class="mestre-whats-flutuante" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20manuten%C3%A7%C3%A3o%20el%C3%A9trica%20em%20Barueri." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" title="Falar no WhatsApp" onclick="if(typeof gtag==='function')gtag('event','conversion',{'send_to':'AW-17918599259/42knCLy_j68cENvAoOBC'});">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+</section>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Electrician","HomeAndConstructionBusiness"],"@id":"https://www.mestredosreparos.app.br/#empresa","name":"Mestre dos Reparos Manutenção & Limpeza","description":"Manutenção elétrica preventiva e corretiva em Barueri para residências, condomínios e empresas: inspeção e termografia de quadros, aperto de conexões, correção de sobrecarga, IDR, DPS e emergências 24 horas.","url":"https://www.mestredosreparos.app.br","telephone":"+55 11 91839-0430","email":"mestredosreparosbarueri@gmail.com","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","logo":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","priceRange":"$$","currenciesAccepted":"BRL","taxID":"64.521.657/0001-87","address":{"@type":"PostalAddress","streetAddress":"Av. Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"areaServed":[{"@type":"City","name":"Barueri"},{"@type":"Place","name":"Alphaville"},{"@type":"Place","name":"Tamboré"},{"@type":"City","name":"Santana de Parnaíba"},{"@type":"City","name":"Carapicuíba"},{"@type":"City","name":"Jandira"},{"@type":"City","name":"Itapevi"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"32","bestRating":5,"worstRating":1},"sameAs":["https://www.instagram.com/mestredosreparosfacilites","https://www.facebook.com/mestredosreparos.oficial/","https://www.tiktok.com/@mestre.dos.reparo1","https://youtube.com/@mestredosreparos-i9d"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Manutenção elétrica em Barueri","serviceType":"Manutenção elétrica preventiva e corretiva","provider":{"@id":"https://www.mestredosreparos.app.br/#empresa"},"areaServed":{"@type":"City","name":"Barueri"},"audience":{"@type":"Audience","audienceType":"Residências, condomínios e empresas"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Serviços de manutenção elétrica","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Inspeção visual e termográfica de quadros"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Aperto de conexões em bornes e disjuntores"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Troca de componentes oxidados ou danificados"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Correção de sobrecarga nos circuitos"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Instalação de dispositivo DR (IDR) e DPS"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Testes de tensão e corrente"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Organização de fiação em quadros elétricos"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Contrato de manutenção elétrica para condomínios e empresas"}}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Manutenção Elétrica em Barueri","description":"Quando chamar a manutenção elétrica em Barueri, tipos de manutenção, frequência recomendada, o que está incluído e o que influencia o valor.","inLanguage":"pt-BR","datePublished":"2026-10-14","dateModified":"2026-10-14","image":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png","author":{"@type":"Organization","name":"Mestre dos Reparos Manutenção & Limpeza","url":"https://www.mestredosreparos.app.br"},"publisher":{"@type":"Organization","name":"Mestre dos Reparos Manutenção & Limpeza","logo":{"@type":"ImageObject","url":"https://media.base44.com/images/public/6ac90b58b627d4d678c3ad09/ed5161469_logo.png"}},"about":"Manutenção elétrica em Barueri","keywords":"manutenção elétrica Barueri, manutenção elétrica preventiva, manutenção elétrica Alphaville, eletricista Barueri, termografia de quadros, manutenção elétrica condomínio","speakable":{"@type":"SpeakableSpecification","cssSelector":[".mestre-resposta",".mestre-faq summary"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Como funciona a manutenção elétrica em Barueri","step":[{"@type":"HowToStep","position":1,"name":"Relato inicial","text":"Você conta pelo WhatsApp o que está acontecendo, com fotos do quadro se puder, e identificamos a urgência."},{"@type":"HowToStep","position":2,"name":"Visita técnica","text":"Agendamos a visita para análise detalhada do sistema, com medições e inspeção do quadro e dos circuitos."},{"@type":"HowToStep","position":3,"name":"Plano de ação","text":"Elaboramos o plano de correção dos pontos falhos, em ordem de prioridade de risco."},{"@type":"HowToStep","position":4,"name":"Orçamento","text":"O valor é apresentado antes do início, com a lista de peças e serviços. Nada é feito sem a sua aprovação."},{"@type":"HowToStep","position":5,"name":"Execução","text":"Reparos executados com foco em segurança e durabilidade, com o circuito desligado e material de qualidade."},{"@type":"HowToStep","position":6,"name":"Testes e relatório","text":"Testamos tudo na sua frente e entregamos nota fiscal, relatório e garantia de 90 dias."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual a frequência ideal de manutenção elétrica?","acceptedAnswer":{"@type":"Answer","text":"Em residências, recomendamos uma revisão preventiva a cada dois anos ou sempre que for realizada uma reforma. Comércios e escritórios devem revisar a instalação uma vez por ano, e condomínios e indústrias precisam de um plano de manutenção com cronograma. Instalações com mais de 20 anos merecem uma revisão completa o quanto antes."}},{"@type":"Question","name":"Como saber se a rede elétrica está sobrecarregada?","acceptedAnswer":{"@type":"Answer","text":"O desarme constante dos disjuntores é o indicador mais comum de que o sistema atingiu o limite. Outros sinais são tomadas e paredes aquecendo, luzes que enfraquecem quando um aparelho potente liga e cheiro de queimado perto do quadro. A sobrecarga é confirmada com a medição da corrente de cada circuito durante a visita técnica."}},{"@type":"Question","name":"Podemos instalar tomadas extras?","acceptedAnswer":{"@type":"Answer","text":"Sim, desde que a capacidade do circuito suporte a carga adicional exigida pelos novos aparelhos. Antes de instalar, o eletricista verifica a bitola do fio e o disjuntor do circuito. Quando o circuito já está no limite, o correto é criar um circuito novo a partir do quadro, em vez de puxar extensões ou benjamins."}},{"@type":"Question","name":"A manutenção elétrica pode economizar luz?","acceptedAnswer":{"@type":"Answer","text":"Sim. Conexões frouxas e fugas de corrente transformam energia em calor e aumentam o consumo. A eliminação de fugas de energia, o reaperto das conexões e a correção de circuitos sobrecarregados reduzem perdas desnecessárias na conta, além de diminuir o risco de aparelhos queimados."}},{"@type":"Question","name":"Qual a diferença entre manutenção preventiva e corretiva?","acceptedAnswer":{"@type":"Answer","text":"A manutenção preventiva é feita em datas programadas, com a instalação ainda funcionando, para apertar conexões, trocar peças desgastadas e evitar falhas. A corretiva é feita depois que o problema acontece, para restabelecer a energia e corrigir a causa. A preventiva costuma custar menos, porque evita danos maiores à fiação e aos equipamentos."}},{"@type":"Question","name":"Zumbido no quadro de disjuntores é perigoso?","acceptedAnswer":{"@type":"Answer","text":"Sim. Zumbido, estalos ou cheiro de queimado no quadro geralmente indicam borne frouxo, disjuntor desgastado ou arco elétrico, que aquecem e podem iniciar um incêndio. Desligue o disjuntor geral se houver cheiro ou fumaça e chame um eletricista. O Mestre dos Reparos atende emergências em Barueri 24 horas."}},{"@type":"Question","name":"Por que a parede perto da tomada esquenta?","acceptedAnswer":{"@type":"Answer","text":"A parede esquenta quando há conexão frouxa, emenda mal feita ou fio mais fino do que a carga exige dentro da caixa da tomada. A resistência do mau contato gera calor contínuo, que resseca o isolamento e pode derreter a tomada. É preciso desligar o circuito e refazer a conexão ou trocar o cabo."}},{"@type":"Question","name":"O que é termografia de quadros elétricos?","acceptedAnswer":{"@type":"Answer","text":"Termografia é a inspeção com câmera térmica, que mostra a temperatura de cada disjuntor, borne e cabo com a instalação em funcionamento. Ela encontra pontos quentes causados por mau contato ou sobrecarga antes de qualquer sintoma visível. É a base da manutenção preditiva em condomínios, comércios e indústrias."}},{"@type":"Question","name":"Vocês fazem contrato de manutenção para condomínios e empresas?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Mestre dos Reparos oferece contrato de manutenção elétrica periódica para condomínios, comércios e empresas, com cronograma, checklist, relatório técnico e nota fiscal. O plano cobre quadros, iluminação de áreas comuns, bombas, portões e adequações às normas NBR 5410 e NR-10."}},{"@type":"Question","name":"Vocês atendem Alphaville e as cidades vizinhas?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Mestre dos Reparos fica no Jardim Belval e faz manutenção elétrica em todos os bairros de Barueri, incluindo Alphaville, Tamboré, Centro, Aldeia e Jardim Silveira, além de Santana de Parnaíba, Carapicuíba, Jandira, Itapevi e Aldeia da Serra. O contato é pelo WhatsApp (11) 91839-0430."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.mestredosreparos.app.br"},{"@type":"ListItem","position":2,"name":"Manutenção Elétrica em Barueri"}]}</script>
