@@ -1,0 +1,2761 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "PObU37RUb91ELmpXcv1CKO_z00c",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "Vsl7TRA-kNVpQurfeDvYpj6WNFI",
+      "id": "EoDp7SUaUyM",
+      "snippet": {
+        "publishedAt": "2026-10-23T23:11:27Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Calha entupida de folhas: limpeza na Vila Boa Vista, Barueri #Shorts",
+        "description": "Calha cheia de folhas é água entrando em casa na primeira chuva forte 🌧️\n\nHoje: limpeza e revisão de calhas na Vila Boa Vista, Barueri.\n\nSua calha não é limpa há mais de 6 meses? Chama no WhatsApp: (11) 91839-0430\n\n#barueri #vilaboavista #limpezadecalha #manutencaoresidencial #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/EoDp7SUaUyM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/EoDp7SUaUyM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/EoDp7SUaUyM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/EoDp7SUaUyM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/EoDp7SUaUyM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "limpeza de calha",
+          "manutenção residencial",
+          "mestre dos reparos"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Calha entupida de folhas: limpeza na Vila Boa Vista, Barueri #Shorts",
+          "description": "Calha cheia de folhas é água entrando em casa na primeira chuva forte 🌧️\n\nHoje: limpeza e revisão de calhas na Vila Boa Vista, Barueri.\n\nSua calha não é limpa há mais de 6 meses? Chama no WhatsApp: (11) 91839-0430\n\n#barueri #vilaboavista #limpezadecalha #manutencaoresidencial #mestredosreparos"
+        },
+        "defaultAudioLanguage": "pt-PT"
+      },
+      "contentDetails": {
+        "duration": "PT21S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "0",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "r8-Arc54LdTJ67SRUEemCsc-As0",
+      "id": "uRD8M-44_qs",
+      "snippet": {
+        "publishedAt": "2026-10-23T15:11:19Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Iluminação de galpão em Itapevi: fiação nova e tubulares LED #Shorts",
+        "description": "Galpão inteiro com iluminação nova em Itapevi ⚡\n\nServiço na Armazena Armazéns Gerais: andaime, fiação nova circuito por circuito e tubulares LED no alto da estrutura.\n\nEmpresa, galpão ou condomínio em Barueri e região? Chama no WhatsApp: (11) 91839-0430\n\n#eletricistaitapevi #eletricistabarueri #manutencaopredial #galpao #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uRD8M-44_qs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uRD8M-44_qs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uRD8M-44_qs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/uRD8M-44_qs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/uRD8M-44_qs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "eletricista barueri",
+          "eletricista itapevi",
+          "iluminação galpão",
+          "mestre dos reparos"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Iluminação de galpão em Itapevi: fiação nova e tubulares LED #Shorts",
+          "description": "Galpão inteiro com iluminação nova em Itapevi ⚡\n\nServiço na Armazena Armazéns Gerais: andaime, fiação nova circuito por circuito e tubulares LED no alto da estrutura.\n\nEmpresa, galpão ou condomínio em Barueri e região? Chama no WhatsApp: (11) 91839-0430\n\n#eletricistaitapevi #eletricistabarueri #manutencaopredial #galpao #mestredosreparos"
+        },
+        "defaultAudioLanguage": "pt-PT"
+      },
+      "contentDetails": {
+        "duration": "PT25S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "12",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Ht21VMVt-RrhFUzNivk46U9ip1U",
+      "id": "tSyJplh2-qs",
+      "snippet": {
+        "publishedAt": "2026-10-22T00:07:49Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Sobrou uma peça na montagem do móvel? Não ignore #Shorts",
+        "description": "Sobrou uma peça? Não ignore\n\nFerragens e fixações fazem parte da estabilidade do móvel. Montagem improvisada ou peça solta pede revisão; não force o mecanismo para compensar um desalinhamento.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#montagemdemoveis #moveis #marcenaria #casa #montador #barueri #alphaville #tambore #aldeiadaserra #itapevi #jandira #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tSyJplh2-qs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tSyJplh2-qs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tSyJplh2-qs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/tSyJplh2-qs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/tSyJplh2-qs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "marcenaria",
+          "mestre dos reparos",
+          "montador",
+          "montagem de móveis",
+          "móveis"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Sobrou uma peça na montagem do móvel? Não ignore #Shorts",
+          "description": "Sobrou uma peça? Não ignore\n\nFerragens e fixações fazem parte da estabilidade do móvel. Montagem improvisada ou peça solta pede revisão; não force o mecanismo para compensar um desalinhamento.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#montagemdemoveis #moveis #marcenaria #casa #montador #barueri #alphaville #tambore #aldeiadaserra #itapevi #jandira #mestredosreparos"
+        },
+        "defaultAudioLanguage": "pt-PT"
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "35",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "EUeQPeT9Tuy0jk0HQ7aZhRW6DvM",
+      "id": "8L1necEKDKA",
+      "snippet": {
+        "publishedAt": "2026-10-21T00:07:51Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Porta travou de novo? Olhe antes de forçar a fechadura #Shorts",
+        "description": "Travou de novo? Olhe antes de forçar\n\nDesalinhamento, fixação e desgaste podem aparecer como dificuldade de abrir ou fechar. Forçar a peça pode agravar o dano; primeiro identifique o ponto que está prendendo.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#seguranca #portas #fechaduras #reparo #manutencao #barueri #itapevi #alphaville #tambore #aldeiadaserra #santanadeparnaiba #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8L1necEKDKA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8L1necEKDKA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8L1necEKDKA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8L1necEKDKA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8L1necEKDKA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "esquadria",
+          "fechadura",
+          "mestre dos reparos",
+          "porta",
+          "reparo"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Porta travou de novo? Olhe antes de forçar a fechadura #Shorts",
+          "description": "Travou de novo? Olhe antes de forçar\n\nDesalinhamento, fixação e desgaste podem aparecer como dificuldade de abrir ou fechar. Forçar a peça pode agravar o dano; primeiro identifique o ponto que está prendendo.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#seguranca #portas #fechaduras #reparo #manutencao #barueri #itapevi #alphaville #tambore #aldeiadaserra #santanadeparnaiba #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "57",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Y_DcP5bqufYtCENpPxQCEI9Ri5w",
+      "id": "gAjMkEwRnU0",
+      "snippet": {
+        "publishedAt": "2026-10-20T00:07:43Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Infiltração na laje: por onde a água entrou? #Shorts",
+        "description": "A água entrou. Mas entrou por onde?\n\nA mancha no teto nem sempre fica abaixo do ponto de entrada. Juntas, encontros e condições da superfície precisam ser avaliados antes de escolher o reparo.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#impermeabilizacao #laje #infiltracao #construcao #imovel #barueri #tambore #alphaville #aldeiadaserra #santanadeparnaiba #jandira #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gAjMkEwRnU0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gAjMkEwRnU0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gAjMkEwRnU0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gAjMkEwRnU0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gAjMkEwRnU0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "impermeabilização",
+          "infiltração",
+          "laje",
+          "mestre dos reparos"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Infiltração na laje: por onde a água entrou? #Shorts",
+          "description": "A água entrou. Mas entrou por onde?\n\nA mancha no teto nem sempre fica abaixo do ponto de entrada. Juntas, encontros e condições da superfície precisam ser avaliados antes de escolher o reparo.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#impermeabilizacao #laje #infiltracao #construcao #imovel #barueri #tambore #alphaville #aldeiadaserra #santanadeparnaiba #jandira #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "172",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "mxbgksKL90kPVI7iz0WY75HUCrE",
+      "id": "peyCy4NekGU",
+      "snippet": {
+        "publishedAt": "2026-10-19T00:08:54Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "A água entrou. Mas entrou por onde? A mancha no teto engana #Shorts",
+        "description": "A água entrou. Mas entrou por onde?\n\nA mancha no teto nem sempre fica abaixo do ponto de entrada. Juntas, encontros e condições da superfície precisam ser avaliados antes de escolher o reparo.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#telhado #calhas #chuva #manutencao #impermeabilizacao #barueri #alphaville #tambore #aldeiadaserra #santanadeparnaiba #itapevi #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/peyCy4NekGU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/peyCy4NekGU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/peyCy4NekGU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/peyCy4NekGU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/peyCy4NekGU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "calhas",
+          "goteira",
+          "infiltração",
+          "mestre dos reparos",
+          "telhado"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "A água entrou. Mas entrou por onde? A mancha no teto engana #Shorts",
+          "description": "A água entrou. Mas entrou por onde?\n\nA mancha no teto nem sempre fica abaixo do ponto de entrada. Juntas, encontros e condições da superfície precisam ser avaliados antes de escolher o reparo.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#telhado #calhas #chuva #manutencao #impermeabilizacao #barueri #alphaville #tambore #aldeiadaserra #santanadeparnaiba #itapevi #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "18",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "nD6hZzG5LnYaj92eywrHX1cp_6M",
+      "id": "zej38wFdywQ",
+      "snippet": {
+        "publishedAt": "2026-10-18T00:08:49Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "O rejunte abriu. É só acabamento? Veja por que a causa importa #Shorts",
+        "description": "O rejunte abriu. É só acabamento?\n\nFalhas nas juntas podem facilitar entrada de água, mas a causa precisa ser verificada. Refazer a parte visível sem observar a base pode esconder o problema por um tempo.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#pisos #revestimento #obra #reforma #piso #barueri #santanadeparnaiba #alphaville #tambore #itapevi #jandira #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zej38wFdywQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zej38wFdywQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zej38wFdywQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zej38wFdywQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zej38wFdywQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "infiltração",
+          "mestre dos reparos",
+          "pisos e revestimentos",
+          "reforma",
+          "rejunte"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "O rejunte abriu. É só acabamento? Veja por que a causa importa #Shorts",
+          "description": "O rejunte abriu. É só acabamento?\n\nFalhas nas juntas podem facilitar entrada de água, mas a causa precisa ser verificada. Refazer a parte visível sem observar a base pode esconder o problema por um tempo.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#pisos #revestimento #obra #reforma #piso #barueri #santanadeparnaiba #alphaville #tambore #itapevi #jandira #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "515",
+        "likeCount": "7",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ZLBmfOu1Ie696i7wpYNzxVvxET0",
+      "id": "Hvjx0D3VWMM",
+      "snippet": {
+        "publishedAt": "2026-10-17T00:07:42Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "A rachadura voltou no mesmo lugar? Entenda a causa antes de cobrir #Shorts",
+        "description": "A rachadura voltou no mesmo lugar?\n\nCobrir a fissura sem entender a causa pode fazer a marca voltar. Juntas, umidade e movimentação devem ser avaliadas; uma rachadura isolada não permite afirmar risco de desabamento.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#drywall #gesso #reforma #interiores #arquitetura #barueri #aldeiadaserra #tambore #alphaville #itapevi #jandira #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Hvjx0D3VWMM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Hvjx0D3VWMM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Hvjx0D3VWMM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Hvjx0D3VWMM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Hvjx0D3VWMM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "drywall",
+          "fissura",
+          "gesso",
+          "mestre dos reparos",
+          "rachadura na parede"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "A rachadura voltou no mesmo lugar? Entenda a causa antes de cobrir #Shorts",
+          "description": "A rachadura voltou no mesmo lugar?\n\nCobrir a fissura sem entender a causa pode fazer a marca voltar. Juntas, umidade e movimentação devem ser avaliadas; uma rachadura isolada não permite afirmar risco de desabamento.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#drywall #gesso #reforma #interiores #arquitetura #barueri #aldeiadaserra #tambore #alphaville #itapevi #jandira #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "217",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "idF0MzwkkKU7lsh5Ft7H8Wsd3rw",
+      "id": "pu6cxOY7t9s",
+      "snippet": {
+        "publishedAt": "2026-10-16T23:53:25Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Instalação de ventilador retrátil, condomínio Essenciale, em Barueri #barueri #eletricista",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pu6cxOY7t9s/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pu6cxOY7t9s/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pu6cxOY7t9s/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pu6cxOY7t9s/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pu6cxOY7t9s/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Instalação de ventilador retrátil, condomínio Essenciale, em Barueri #barueri #eletricista",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "4",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "s6Ci-OmLnvr_onm_hypycOxHpE8",
+      "id": "p2448e0bfJ0",
+      "snippet": {
+        "publishedAt": "2026-10-16T00:07:48Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "O pó da obra ainda está escondido: limpeza pós-obra certa #Shorts",
+        "description": "O pó da obra ainda está escondido\n\nResíduos podem ficar em frestas e sobre superfícies sensíveis. O método de limpeza deve respeitar cada material; misturar produtos ou esfregar mais forte pode causar dano.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#limpeza #posobra #reforma #casanova #faxina #barueri #alphaville #tambore #itapevi #jandira #santanadeparnaiba #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/p2448e0bfJ0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/p2448e0bfJ0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/p2448e0bfJ0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/p2448e0bfJ0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/p2448e0bfJ0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "acabamento",
+          "barueri",
+          "limpeza de obra",
+          "limpeza pós-obra",
+          "mestre dos reparos",
+          "reforma"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "O pó da obra ainda está escondido: limpeza pós-obra certa #Shorts",
+          "description": "O pó da obra ainda está escondido\n\nResíduos podem ficar em frestas e sobre superfícies sensíveis. O método de limpeza deve respeitar cada material; misturar produtos ou esfregar mais forte pode causar dano.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#limpeza #posobra #reforma #casanova #faxina #barueri #alphaville #tambore #itapevi #jandira #santanadeparnaiba #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "123",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "3xFwvYyn-8PA8nqvAYfkIfylfzM",
+      "id": "BrTcIuNFHpo",
+      "snippet": {
+        "publishedAt": "2026-10-15T00:08:08Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Nem toda parede pode sair: avalie antes de abrir um vão #Shorts",
+        "description": "Nem toda parede pode sair\n\nA função da parede precisa ser conhecida antes de abrir um vão ou demolir. Aparência e espessura não são critérios suficientes; isso exige avaliação técnica.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#galpoes #logistica #manutencao #empresa #segurancadotrabalho #barueri #alphaville #tambore #aldeiadaserra #santanadeparnaiba #jandira #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BrTcIuNFHpo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BrTcIuNFHpo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BrTcIuNFHpo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/BrTcIuNFHpo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/BrTcIuNFHpo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "abrir vão",
+          "avaliação técnica",
+          "barueri",
+          "demolição de parede",
+          "mestre dos reparos",
+          "parede estrutural"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Nem toda parede pode sair: avalie antes de abrir um vão #Shorts",
+          "description": "Nem toda parede pode sair\n\nA função da parede precisa ser conhecida antes de abrir um vão ou demolir. Aparência e espessura não são critérios suficientes; isso exige avaliação técnica.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#galpoes #logistica #manutencao #empresa #segurancadotrabalho #barueri #alphaville #tambore #aldeiadaserra #santanadeparnaiba #jandira #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "1241",
+        "likeCount": "17",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "BsRkyb855dTF03EQkizS_5HrSag",
+      "id": "hYL2YXlBpn0",
+      "snippet": {
+        "publishedAt": "2026-10-13T00:09:46Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "A tinta nova está escondendo o quê? Veja antes de pintar #Shorts",
+        "description": "A tinta nova está escondendo o quê?\n\nUma superfície bonita pode esconder umidade ou preparo inadequado. Antes da pintura, observe bolhas, descascamento e manchas recorrentes: acabamento não substitui avaliação da base.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#pintura #pintor #reforma #casa #acabamento #barueri #santanadeparnaiba #alphaville #tambore #itapevi #jandira #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hYL2YXlBpn0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hYL2YXlBpn0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hYL2YXlBpn0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/hYL2YXlBpn0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/hYL2YXlBpn0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "mestre dos reparos",
+          "pintura residencial",
+          "preparo de parede",
+          "umidade na parede"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "A tinta nova está escondendo o quê? Veja antes de pintar #Shorts",
+          "description": "A tinta nova está escondendo o quê?\n\nUma superfície bonita pode esconder umidade ou preparo inadequado. Antes da pintura, observe bolhas, descascamento e manchas recorrentes: acabamento não substitui avaliação da base.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#pintura #pintor #reforma #casa #acabamento #barueri #santanadeparnaiba #alphaville #tambore #itapevi #jandira #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "171",
+        "likeCount": "4",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "JTYS8mGmcRIIAkOrRQvq1vLEnG8",
+      "id": "73LJy2ST8Tk",
+      "snippet": {
+        "publishedAt": "2026-10-12T00:08:44Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "A mancha aparece longe do vazamento: descubra a origem #Shorts",
+        "description": "A mancha aparece longe do vazamento\n\nA água pode percorrer caminhos antes de aparecer na parede. Pintar a marca não identifica a origem; investigar a causa evita tratar só o que está visível.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#vazamento #infiltracao #encanador #hidraulica #reparo #mofo #barueri #aldeiadaserra #tambore #alphaville #jandira #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/73LJy2ST8Tk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/73LJy2ST8Tk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/73LJy2ST8Tk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/73LJy2ST8Tk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/73LJy2ST8Tk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "hidráulica",
+          "infiltração",
+          "mancha na parede",
+          "mestre dos reparos",
+          "vazamento"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "A mancha aparece longe do vazamento: descubra a origem #Shorts",
+          "description": "A mancha aparece longe do vazamento\n\nA água pode percorrer caminhos antes de aparecer na parede. Pintar a marca não identifica a origem; investigar a causa evita tratar só o que está visível.\n\nSalve para lembrar e compartilhe com quem precisa reconhecer esse sinal.\n\nMestre dos Reparos\nReparos sem mistério.\nSite: https://mestredosreparos.app.br\nBarueri e região\n\n#vazamento #infiltracao #encanador #hidraulica #reparo #mofo #barueri #aldeiadaserra #tambore #alphaville #jandira #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "23",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "UVUYZM0YYR3LYE6TrLQyEKszlhY",
+      "id": "eUbvDqyX3FU",
+      "snippet": {
+        "publishedAt": "2026-10-11T03:20:49Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Qual pequeno sinal você está ignorando em casa? #Shorts",
+        "description": "Qual pequeno sinal você está ignorando?\n\nUma porta que prende, uma mancha que volta ou um ponto que aquece merecem observação. Registre quando o sinal aparece e investigue a causa; aparência pequena não define a gravidade.\n\nMestre dos Reparos. Reparos sem mistério. Barueri e região.\nSite: https://mestredosreparos.app.br\n\n#maridodealuguel #manutencao #eletrica #hidraulica #barueri #alphaville #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/eUbvDqyX3FU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/eUbvDqyX3FU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/eUbvDqyX3FU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/eUbvDqyX3FU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/eUbvDqyX3FU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "manutenção residencial",
+          "marido de aluguel",
+          "mestre dos reparos"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Qual pequeno sinal você está ignorando em casa? #Shorts",
+          "description": "Qual pequeno sinal você está ignorando?\n\nUma porta que prende, uma mancha que volta ou um ponto que aquece merecem observação. Registre quando o sinal aparece e investigue a causa; aparência pequena não define a gravidade.\n\nMestre dos Reparos. Reparos sem mistério. Barueri e região.\nSite: https://mestredosreparos.app.br\n\n#maridodealuguel #manutencao #eletrica #hidraulica #barueri #alphaville #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "696",
+        "likeCount": "8",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "UdLF2Ai6JFILeJwqWE6-TxAqAI0",
+      "id": "4UrLUkHCHFI",
+      "snippet": {
+        "publishedAt": "2026-10-11T03:05:52Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Piso soltando e fazendo barulho? Veja a causa real #Shorts",
+        "description": "Piso soltando e fazendo barulho ao pisar? Passar cola por cima só esconde o problema. A causa é a argamassa velha que perdeu a força embaixo da peça: o certo é tirar a sujeira e aplicar argamassa nova.\n\nMestre dos Reparos. Reparos sem mistério. Barueri e região.\nSite: https://mestredosreparos.app.br\n\n#pisos #reforma #manutencaopredial #condominio #barueri #alphaville #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4UrLUkHCHFI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4UrLUkHCHFI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4UrLUkHCHFI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4UrLUkHCHFI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/4UrLUkHCHFI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "tags": [
+          "barueri",
+          "mestre dos reparos",
+          "piso soltando",
+          "reforma"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Piso soltando e fazendo barulho? Veja a causa real #Shorts",
+          "description": "Piso soltando e fazendo barulho ao pisar? Passar cola por cima só esconde o problema. A causa é a argamassa velha que perdeu a força embaixo da peça: o certo é tirar a sujeira e aplicar argamassa nova.\n\nMestre dos Reparos. Reparos sem mistério. Barueri e região.\nSite: https://mestredosreparos.app.br\n\n#pisos #reforma #manutencaopredial #condominio #barueri #alphaville #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "59",
+        "likeCount": "2",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "reokwSDY3rEWRsEaAeulGEog14g",
+      "id": "bPeA3EcqISo",
+      "snippet": {
+        "publishedAt": "2026-07-08T20:07:50Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Chá de cadeira em visita técnica Alphaville !!!! #eletricista #barueri #mestredosreparos",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bPeA3EcqISo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bPeA3EcqISo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bPeA3EcqISo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/bPeA3EcqISo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/bPeA3EcqISo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Chá de cadeira em visita técnica Alphaville !!!! #eletricista #barueri #mestredosreparos",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT35S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "47",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "1o6ESZwctd2_HPBNT0CcsO2vVwU",
+      "id": "51fvAv0OzGc",
+      "snippet": {
+        "publishedAt": "2026-06-13T21:29:53Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Limpeza pesada?Diárista em demanda? Mestre dos Reparos! pezasatisfatoria #barueri #mestredosreparos",
+        "description": "Limpeza pesada? Diárista sobre demanda? Limpeza pós obra, descontaminação de ambientes? Mestre dos Reparos. Barueri \n#limpezasatisfatoria #barueri #mestredosreparos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/51fvAv0OzGc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/51fvAv0OzGc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/51fvAv0OzGc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/51fvAv0OzGc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/51fvAv0OzGc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Limpeza pesada?Diárista em demanda? Mestre dos Reparos! pezasatisfatoria #barueri #mestredosreparos",
+          "description": "Limpeza pesada? Diárista sobre demanda? Limpeza pós obra, descontaminação de ambientes? Mestre dos Reparos. Barueri \n#limpezasatisfatoria #barueri #mestredosreparos"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT38S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "1162",
+        "likeCount": "7",
+        "dislikeCount": "1",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "zFUF_RB31Fkpkq0nJ12vee4CLDs",
+      "id": "yeIIZTzVBhQ",
+      "snippet": {
+        "publishedAt": "2026-06-09T22:36:14Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Iniciando mais uma obra eletrica.Acompnhe os detalhes até o final.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yeIIZTzVBhQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yeIIZTzVBhQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yeIIZTzVBhQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/yeIIZTzVBhQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/yeIIZTzVBhQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Iniciando mais uma obra eletrica.Acompnhe os detalhes até o final.",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT44S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "113",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "FwvXTxqRefaifMm8F-iBsyXjWj8",
+      "id": "iyD2iPhM9IE",
+      "snippet": {
+        "publishedAt": "2026-06-02T22:01:57Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Veja o final, como ficou a instalação da Luminária. Condomínio Reserva do alto, em Barueri",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iyD2iPhM9IE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iyD2iPhM9IE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iyD2iPhM9IE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/iyD2iPhM9IE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/iyD2iPhM9IE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Veja o final, como ficou a instalação da Luminária. Condomínio Reserva do alto, em Barueri",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "195",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "YEyWKvVcoeRpv5h_q-uJm-RjXiY",
+      "id": "SMsTyndX_44",
+      "snippet": {
+        "publishedAt": "2026-05-30T00:29:28Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "cuidado, ao ligar eletrodomésticos em qualquer tomada!!  quase deu ruim, um aquecedor. #eletricista",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SMsTyndX_44/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SMsTyndX_44/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SMsTyndX_44/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SMsTyndX_44/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SMsTyndX_44/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "cuidado, ao ligar eletrodomésticos em qualquer tomada!!  quase deu ruim, um aquecedor. #eletricista",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT46S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "861",
+        "likeCount": "12",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "cUi6smmscIzZiPCZBJg5wl-STzE",
+      "id": "SjDJtCjtf4U",
+      "snippet": {
+        "publishedAt": "2026-05-25T14:44:08Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Tomadas derretendo!! não espere o pior, faça manutenção. #aldeiadaserra #barueri #eletricista",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SjDJtCjtf4U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SjDJtCjtf4U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SjDJtCjtf4U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SjDJtCjtf4U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SjDJtCjtf4U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Tomadas derretendo!! não espere o pior, faça manutenção. #aldeiadaserra #barueri #eletricista",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT30S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "324",
+        "likeCount": "5",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "2OypvH6ABXvsNyREy16e7qFII8A",
+      "id": "NqfUQxPz_Kw",
+      "snippet": {
+        "publishedAt": "2026-05-23T16:35:08Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Isso pode causar danos! Sindal frouxo, condutores derretidos. instalamos Wago,e  condutores corretos",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NqfUQxPz_Kw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NqfUQxPz_Kw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NqfUQxPz_Kw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/NqfUQxPz_Kw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/NqfUQxPz_Kw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Isso pode causar danos! Sindal frouxo, condutores derretidos. instalamos Wago,e  condutores corretos",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT20S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "372",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ZbeKgDM-eOa6f8XUNtf6DXHfr9k",
+      "id": "tYkKZH_Z2hQ",
+      "snippet": {
+        "publishedAt": "2026-05-13T21:49:50Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Cenário de hoje, Chuveiro desligado a energia da casa inteira. Circuitos de dois chuveiros Juntos.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tYkKZH_Z2hQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tYkKZH_Z2hQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tYkKZH_Z2hQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/tYkKZH_Z2hQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/tYkKZH_Z2hQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Cenário de hoje, Chuveiro desligado a energia da casa inteira. Circuitos de dois chuveiros Juntos.",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT1M12S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "98",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "OIiE6LcckvY5Cw9bnH0Qh3Q9Fg4",
+      "id": "LXBt69HYscI",
+      "snippet": {
+        "publishedAt": "2026-05-07T12:17:39Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Seu ventokit parou de funcionar? É sempre bom avaliar a quantidade de M³ do ambiente.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LXBt69HYscI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LXBt69HYscI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LXBt69HYscI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/LXBt69HYscI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/LXBt69HYscI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Seu ventokit parou de funcionar? É sempre bom avaliar a quantidade de M³ do ambiente.",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT39S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "66",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "00p9OJIJ-Av7X__hdH1-uCshvP8",
+      "id": "eayr24zeT-Q",
+      "snippet": {
+        "publishedAt": "2026-05-05T21:00:25Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Hoje o dia foi registro de Gaveta.Dando passgem foi água que Deus deu.maridodealuguel",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/eayr24zeT-Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/eayr24zeT-Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/eayr24zeT-Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/eayr24zeT-Q/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/eayr24zeT-Q/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Hoje o dia foi registro de Gaveta.Dando passgem foi água que Deus deu.maridodealuguel",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT39S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "256",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "KF9Mjc885ZC59qXT83iDo6aRBIk",
+      "id": "St0TSw7Eves",
+      "snippet": {
+        "publishedAt": "2026-05-03T22:28:53Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Tomada esquentando NÃO é normal.Isso aqui quase virou incêndio 🔥Se a sua tá assim, chama agora.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/St0TSw7Eves/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/St0TSw7Eves/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/St0TSw7Eves/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/St0TSw7Eves/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/St0TSw7Eves/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Tomada esquentando NÃO é normal.Isso aqui quase virou incêndio 🔥Se a sua tá assim, chama agora.",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT33S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "1151",
+        "likeCount": "6",
+        "dislikeCount": "1",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "1vEfU_tqD6-Szkhxwxwe-_8VeS4",
+      "id": "GGgTGwk8TrU",
+      "snippet": {
+        "publishedAt": "2026-04-25T12:18:42Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "PLANTÃO BARUERI ELETRICISTA: MESTRE DOS REPAROS 24H ⚡🚨\u200bCURTO RESOLVIDO ÀS 23:30H!  11 91890-430",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GGgTGwk8TrU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GGgTGwk8TrU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GGgTGwk8TrU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/GGgTGwk8TrU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/GGgTGwk8TrU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "PLANTÃO BARUERI ELETRICISTA: MESTRE DOS REPAROS 24H ⚡🚨\u200bCURTO RESOLVIDO ÀS 23:30H!  11 91890-430",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT55S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "446",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "QW9wRwFUACgz4lhh2af2waGmEZE",
+      "id": "0_oB5C4iu_o",
+      "snippet": {
+        "publishedAt": "2026-04-24T22:38:44Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "24 de abril de 2026",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0_oB5C4iu_o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0_oB5C4iu_o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0_oB5C4iu_o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0_oB5C4iu_o/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/0_oB5C4iu_o/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "24 de abril de 2026",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "348",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "GxGPwRXQgcHsw2nyWfgoLpeE9rM",
+      "id": "dOJzn8p36Ng",
+      "snippet": {
+        "publishedAt": "2026-04-17T21:41:13Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "A água arrebentou a parede todinha — veja como resolver do jeito certo | Parte 1 de 5",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dOJzn8p36Ng/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dOJzn8p36Ng/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dOJzn8p36Ng/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dOJzn8p36Ng/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dOJzn8p36Ng/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "A água arrebentou a parede todinha — veja como resolver do jeito certo | Parte 1 de 5",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT32S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "1517",
+        "likeCount": "11",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "phpKRIojVdaFoBpqPk6PeJuSyWo",
+      "id": "W_W_npS5SBI",
+      "snippet": {
+        "publishedAt": "2026-04-16T21:33:39Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "🪟 Vidro sujo afasta cliente! Mestre dos Reparos Facilities — Betaville, Barueri. Link abaixo! 👇",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/W_W_npS5SBI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/W_W_npS5SBI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/W_W_npS5SBI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/W_W_npS5SBI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/W_W_npS5SBI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "🪟 Vidro sujo afasta cliente! Mestre dos Reparos Facilities — Betaville, Barueri. Link abaixo! 👇",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT21S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "1305",
+        "likeCount": "9",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "hqiwWIF6xYUXP4fdfAEb_RT-2Dw",
+      "id": "3WFQFRJlzqA",
+      "snippet": {
+        "publishedAt": "2026-04-11T21:20:58Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Ventilador retrátil no Viva Mais Barueri: teto limpo e design! 💡 Mora na região? Comenta EU QUERO! 📲",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3WFQFRJlzqA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3WFQFRJlzqA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3WFQFRJlzqA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/3WFQFRJlzqA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/3WFQFRJlzqA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Ventilador retrátil no Viva Mais Barueri: teto limpo e design! 💡 Mora na região? Comenta EU QUERO! 📲",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT26S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": true
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "343",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "RX80gyBmer5giNt051xycOa9_wM",
+      "id": "vtPQa_h3d3o",
+      "snippet": {
+        "publishedAt": "2026-04-08T19:42:46Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Iluminação do Salão da Cícera, no Jardim Belval em Barueri.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vtPQa_h3d3o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vtPQa_h3d3o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vtPQa_h3d3o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/vtPQa_h3d3o/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/vtPQa_h3d3o/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Iluminação do Salão da Cícera, no Jardim Belval em Barueri.",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT46S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "43",
+        "likeCount": "1",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "6_mHCTnJdj_8AGMEPU3hgw3aUPw",
+      "id": "xXNWHffpgYY",
+      "snippet": {
+        "publishedAt": "2026-04-06T16:35:19Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Iluminação de jardim, será que deu certo?",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xXNWHffpgYY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xXNWHffpgYY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xXNWHffpgYY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/xXNWHffpgYY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/xXNWHffpgYY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Iluminação de jardim, será que deu certo?",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT8S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "6",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "yTnuwlF8vS7m6JOnWNUlVTPyAmw",
+      "id": "HBtPuCqA4ko",
+      "snippet": {
+        "publishedAt": "2026-04-06T16:33:24Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "Trabalho em equipe, sempre dá certo!! Eu a patroa e as crianças,kkk. serviço de Limpeza pré Mudança.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HBtPuCqA4ko/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HBtPuCqA4ko/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HBtPuCqA4ko/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/HBtPuCqA4ko/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/HBtPuCqA4ko/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "Trabalho em equipe, sempre dá certo!! Eu a patroa e as crianças,kkk. serviço de Limpeza pré Mudança.",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT1M22S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "8",
+        "likeCount": "0",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "VoB6esnEmNS6bgoy-ZU4X42hY5A",
+      "id": "297qf6tB4LI",
+      "snippet": {
+        "publishedAt": "2026-04-06T16:29:22Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "olha que problemão !!!!",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/297qf6tB4LI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/297qf6tB4LI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/297qf6tB4LI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/297qf6tB4LI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/297qf6tB4LI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "olha que problemão !!!!",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT23S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "2212",
+        "likeCount": "14",
+        "dislikeCount": "3",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ssxvUI5JIi82ysTIf5YVhEwCeo8",
+      "id": "GNcDNvDEh8M",
+      "snippet": {
+        "publishedAt": "2026-04-06T16:26:45Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "vai mudar? muita gente entra na casa nova sem uma Limpeza pré Mudança, e acaba levando a sujeira.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GNcDNvDEh8M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GNcDNvDEh8M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GNcDNvDEh8M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/GNcDNvDEh8M/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/GNcDNvDEh8M/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "vai mudar? muita gente entra na casa nova sem uma Limpeza pré Mudança, e acaba levando a sujeira.",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "698",
+        "likeCount": "3",
+        "dislikeCount": "4",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "h495BAalzd4_HYabBcKhsxMrOlY",
+      "id": "IKag8yfbqWk",
+      "snippet": {
+        "publishedAt": "2026-04-06T16:21:56Z",
+        "channelId": "UC_y6rF_-Cqw6_97Xa_VPhwg",
+        "title": "6 de abril de 2026",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/IKag8yfbqWk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/IKag8yfbqWk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/IKag8yfbqWk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/IKag8yfbqWk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/IKag8yfbqWk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mestre dos Reparos Manutenção e Limpeza ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "pt-PT",
+        "localized": {
+          "title": "6 de abril de 2026",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "statistics": {
+        "viewCount": "1162",
+        "likeCount": "9",
+        "dislikeCount": "4",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 37,
+    "resultsPerPage": 37
+  }
+}
