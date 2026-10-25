@@ -19,6 +19,8 @@ class LinkFix {
       if (v && v.includes('m=1') && (v.startsWith('/') || v.includes('mestredosreparos.app.br'))) {
         el.setAttribute(a, v.replace(/([?&])m=1(&m=1)*&?/g, '$1').replace(/[?&]$/, ''));
       }
+      const v2 = el.getAttribute(a);
+      if (v2 && (v2 === RAIZ || v2.endsWith('mestredosreparos.app.br' + RAIZ))) el.setAttribute(a, v2.slice(0, -RAIZ.length) + '/');
     }
   }
 }
@@ -53,8 +55,23 @@ export default {
     if (req.pathname === '/' + INDEXNOW_KEY + '.txt') {
       return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain' } });
     }
-    // protótipo da nova home (fora do Google): servido do GitHub
-    if (req.pathname === '/nova') return Response.redirect(req.origin + '/nova/', 301);
+    // home nova (servida do GitHub, cache na borda); a página antiga do Blogger vira 301 para "/"
+    if (req.pathname === RAIZ) return Response.redirect(req.origin + '/', 301);
+    const rastreio = [...req.searchParams.keys()].every(k => /^(utm_|gclid|gbraid|wbraid|fbclid|srsltid)/.test(k));
+    if (req.pathname === '/' && rastreio && (request.method === 'GET' || request.method === 'HEAD')) {
+      const chave = new Request(req.origin + '/__home');
+      const hit = await caches.default.match(chave);
+      if (hit) return hit;
+      const r = await fetch(NOVA + 'home.html', { cf: { cacheTtl: 300, cacheEverything: true } });
+      if (r.ok) {
+        const out = new Response(r.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
+        ctx.waitUntil(caches.default.put(chave, out.clone()));
+        return out;
+      }
+      return Response.redirect(new URL('/p/eletricista-em-barueri.html', req.origin).toString(), 302);   // GitHub fora do ar
+    }
+    // prévia antiga e imagens da home
+    if (req.pathname === '/nova' || req.pathname === '/nova/' || req.pathname === '/nova/index.html') return Response.redirect(req.origin + '/', 301);
     if (req.pathname.startsWith('/nova/')) {
       const rest = req.pathname.slice(6) || 'index.html';
       const r = await fetch(NOVA + rest, { cf: { cacheTtl: 120, cacheEverything: true } });
@@ -70,7 +87,6 @@ export default {
       const limpo = semM(req.pathname + req.search);
       return Response.redirect(new URL(limpo.pathname + limpo.search, req.origin).toString(), 301);
     }
-    if (req.pathname === '/' && !req.search) return Response.redirect(new URL(RAIZ, req.origin).toString(), 301);
     const mobile = MOBILE.test(request.headers.get('user-agent') || '');
     const cacheKey = new Request(req.origin + req.pathname + (req.search ? req.search + '&' : '?') + '__v=' + (mobile ? 'm' : 'd'));
     const cache = caches.default;
@@ -93,6 +109,10 @@ export default {
     const h = new Headers(resp.headers);
     h.delete('content-length');
     const html = (h.get('content-type') || '').includes('text/html');
+    if (req.pathname.startsWith('/sitemap') && resp.status === 200) {
+      const xml = (await resp.text()).split(ORIGIN + RAIZ).join(ORIGIN + '/');
+      return new Response(xml, { status: 200, headers: h });
+    }
     if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600');
     const out = new Response(resp.body, { status: resp.status, headers: h });
     const final = html
