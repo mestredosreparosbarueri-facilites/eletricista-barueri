@@ -24,6 +24,7 @@ class LinkFix {
 }
 
 const MOBILE = /Mobi|Android|iPhone|iPad|iPod/i;
+const NOVA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/ccr-33db381a-6kweq8/nova/';
 const RAIZ = '/p/mestre-dos-reparos-manutencao-reparos.html';
 
 // Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
@@ -51,6 +52,19 @@ export default {
     const req = new URL(request.url);
     if (req.pathname === '/' + INDEXNOW_KEY + '.txt') {
       return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain' } });
+    }
+    // protótipo da nova home (fora do Google): servido do GitHub
+    if (req.pathname === '/nova') return Response.redirect(req.origin + '/nova/', 301);
+    if (req.pathname.startsWith('/nova/')) {
+      const rest = req.pathname.slice(6) || 'index.html';
+      const r = await fetch(NOVA + rest, { cf: { cacheTtl: 120, cacheEverything: true } });
+      const h = new Headers(r.headers);
+      const ext = rest.split('.').pop();
+      h.set('content-type', { html: 'text/html; charset=utf-8', jpg: 'image/jpeg', png: 'image/png', webp: 'image/webp', mp4: 'video/mp4', css: 'text/css', js: 'text/javascript' }[ext] || h.get('content-type'));
+      h.set('x-robots-tag', 'noindex, nofollow');
+      h.set('cache-control', ext === 'html' ? 'public, max-age=60' : 'public, max-age=86400');
+      ['content-security-policy', 'x-frame-options'].forEach(k => h.delete(k));
+      return new Response(r.body, { status: r.status, headers: h });
     }
     if (req.searchParams.has('m')) {
       const limpo = semM(req.pathname + req.search);
