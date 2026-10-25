@@ -3,104 +3,182 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Eletricista e Manutenção em Barueri | Mestre dos Reparos — resolvemos hoje</title>
-<meta name="description" content="Tomada esquentando, disjuntor caindo, quadro antigo? Eletricista e manutenção em Barueri, Alphaville e região. Nota fiscal, garantia de 90 dias. Orçamento pelo WhatsApp.">
+<title>Eletricista e Manutenção em Barueri | Mestre dos Reparos — Engenheiro CREA</title>
+<meta name="description" content="Tomada esquentando, disjuntor caindo, quadro antigo? Elétrica, manutenção predial, reformas e limpeza em Barueri e Alphaville com engenheiro eletricista responsável (CREA). Nota fiscal e garantia de 90 dias.">
 <meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#0b1726">
+<meta name="theme-color" content="#071120">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E⚡%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero-iluminacao.jpg">
 <style>
-:root{--azul:#0b1726;--azul2:#13263d;--amarelo:#f5b700;--amarelo2:#ffd24d;--texto:#0f172a;--cinza:#5b6475;--claro:#f4f6f9;--verde:#25d366;--r:18px}
+:root{--n0:#050c18;--n1:#071120;--n2:#0d1d33;--n3:#15294a;--ouro:#f5b700;--ouro2:#ffd65a;--branco:#fff;--txt:#e8eef7;--mut:#9fb0c7;--linha:rgba(255,255,255,.09);--glass:rgba(255,255,255,.055);--verde:#25d366;--r:20px}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--texto);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
-.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
-.top{position:sticky;top:0;z-index:50;background:rgba(11,23,38,.92);backdrop-filter:blur(10px);color:#fff}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{font-weight:900;letter-spacing:-.02em;font-size:18px}.logo b{color:var(--amarelo)}
-.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;border-radius:999px;padding:13px 20px;transition:transform .15s,box-shadow .2s}
-.btn:active{transform:scale(.97)}.btn-wa{background:var(--verde);color:#062b14;box-shadow:0 8px 24px rgba(37,211,102,.35)}
-.btn-ghost{border:2px solid rgba(255,255,255,.4);color:#fff}.top .btn{padding:9px 14px;font-size:14px}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--txt);background:var(--n1);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.wrap{max-width:1160px;margin:0 auto;padding:0 18px}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ouro),var(--ouro2));z-index:100;box-shadow:0 0 12px var(--ouro)}
+.top{position:sticky;top:0;z-index:50;background:rgba(5,12,24,.72);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid var(--linha)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.02em;font-size:17px}.logo i{width:30px;height:30px;border-radius:9px;background:var(--ouro);color:var(--n1);display:grid;place-items:center;font-style:normal;box-shadow:0 0 18px rgba(245,183,0,.5)}.logo b{color:var(--ouro)}
+.nav{display:none;gap:22px;font-size:14px;color:var(--mut)}.nav a:hover{color:#fff}@media(min-width:900px){.nav{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:800;border-radius:999px;padding:14px 22px;border:0;cursor:pointer;transition:transform .15s,box-shadow .25s,background .25s}
+.btn:active{transform:scale(.97)}
+.btn-ouro{background:var(--ouro);color:var(--n1);box-shadow:0 10px 30px rgba(245,183,0,.35)}.btn-ouro:hover{box-shadow:0 10px 40px rgba(245,183,0,.6)}
+.btn-wa{background:var(--verde);color:#052b13;box-shadow:0 10px 28px rgba(37,211,102,.35)}
+.btn-glass{background:var(--glass);border:1px solid var(--linha);color:#fff;backdrop-filter:blur(8px)}
+.top .btn{padding:9px 15px;font-size:14px}
 /* HERO */
-.hero{position:relative;min-height:92vh;color:#fff;display:flex;align-items:flex-end;overflow:hidden;background:var(--azul)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;animation:kb 18s ease-out infinite alternate}
-@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.14) translate(-2%,-2%)}}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,23,38,.2) 0%,rgba(11,23,38,.6) 45%,var(--azul) 100%)}
-.hero .wrap{position:relative;z-index:2;padding-bottom:56px}
-.tag{display:inline-block;background:var(--amarelo);color:var(--azul);font-weight:800;font-size:13px;padding:6px 12px;border-radius:999px;margin-bottom:16px}
-h1{font-size:clamp(34px,7.5vw,64px);line-height:1.04;font-weight:900;letter-spacing:-.03em;max-width:820px}
-h1 em{font-style:normal;color:var(--amarelo)}
-.hero p{font-size:clamp(17px,2.4vw,21px);opacity:.92;max-width:620px;margin:18px 0 26px}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;isolation:isolate;padding:90px 0 60px}
+.hero .foto{position:absolute;inset:0;z-index:-3;background:url(img/hero-iluminacao.jpg) center/cover;opacity:.28;animation:kb 22s ease-out infinite alternate}
+@keyframes kb{to{transform:scale(1.15) translate(-2%,-1%)}}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 60% at 75% 30%,rgba(245,183,0,.16),transparent 60%),linear-gradient(180deg,rgba(7,17,32,.55),var(--n1) 92%)}
+.grade{position:absolute;inset:0;z-index:-2;background-image:linear-gradient(var(--linha) 1px,transparent 1px),linear-gradient(90deg,var(--linha) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(70% 60% at 50% 40%,#000,transparent);opacity:.55}
+#circ{position:absolute;inset:0;z-index:-1;width:100%;height:100%;pointer-events:none}
+#circ path{fill:none;stroke:var(--ouro);stroke-width:1.6;stroke-linecap:round;opacity:.5;stroke-dasharray:var(--l);stroke-dashoffset:var(--l);animation:draw 3.2s cubic-bezier(.6,0,.2,1) forwards;filter:drop-shadow(0 0 4px rgba(245,183,0,.8))}
+#circ circle{fill:var(--ouro);opacity:0;animation:pop .4s forwards;filter:drop-shadow(0 0 6px var(--ouro))}
+#circ .pulse{fill:#fff;opacity:1;animation:none;filter:drop-shadow(0 0 8px var(--ouro2))}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes pop{to{opacity:.9}}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;background:var(--glass);border:1px solid rgba(245,183,0,.35);color:var(--ouro2);backdrop-filter:blur(6px)}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 0 rgba(37,211,102,.7);animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 10px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+h1{font-size:clamp(36px,8vw,76px);line-height:1.02;font-weight:900;letter-spacing:-.035em;max-width:900px;margin:20px 0 0;color:#fff}
+.gold{background:linear-gradient(90deg,var(--ouro),var(--ouro2),var(--ouro));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:sh 4s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
+.typed{display:inline-block;min-width:1ch;border-right:3px solid var(--ouro);padding-right:4px;animation:cur .8s steps(1) infinite}@keyframes cur{50%{border-color:transparent}}
+.hero p.sub{font-size:clamp(17px,2.4vw,21px);color:#cfd9e6;max-width:640px;margin:20px 0 28px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
-.selos{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:28px;font-size:14px;opacity:.95}
-.selos span{display:flex;align-items:center;gap:6px}.star{color:var(--amarelo)}
+.assin{display:flex;align-items:center;gap:14px;margin-top:34px;padding:12px 16px 12px 12px;border-radius:18px;background:var(--glass);border:1px solid var(--linha);backdrop-filter:blur(10px);max-width:520px}
+.assin img{width:52px;height:52px;border-radius:14px;object-fit:cover;border:2px solid var(--ouro)}
+.assin small{display:block;color:var(--mut);font-size:12.5px}.assin b{font-size:15px;color:#fff}
+.ok{color:var(--ouro)}
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--linha);border:1px solid var(--linha);border-radius:var(--r);overflow:hidden;margin-top:-30px;position:relative;z-index:3}
+@media(min-width:800px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:rgba(9,20,38,.92);backdrop-filter:blur(10px);padding:22px 18px}
+.stat b{display:block;font-size:clamp(30px,5vw,44px);font-weight:900;color:#fff;letter-spacing:-.03em;line-height:1}.stat b span{color:var(--ouro)}
+.stat small{color:var(--mut);font-size:13.5px}
 /* SECTIONS */
-section{padding:72px 0}.claro{background:var(--claro)}.escuro{background:var(--azul);color:#fff}
-.kicker{color:#b07f00;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:13px}.escuro .kicker{color:var(--amarelo)}
-h2{font-size:clamp(28px,5vw,44px);line-height:1.1;letter-spacing:-.025em;font-weight:900;margin:8px 0 14px;max-width:760px}
-.lead{color:var(--cinza);font-size:18px;max-width:680px}.escuro .lead{color:#c9d3e0}
-/* PROBLEMAS */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:30px}
-.card{background:#fff;border:1px solid #e5e9f0;border-radius:var(--r);padding:18px 16px;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;text-align:left;font:inherit;color:inherit}
-.card:hover,.card:focus{transform:translateY(-4px);box-shadow:0 14px 30px rgba(15,23,42,.10);border-color:var(--amarelo)}
-.card .ic{font-size:30px;line-height:1}.card b{display:block;margin-top:10px;font-size:16px;line-height:1.25}.card small{color:var(--cinza);font-size:13px}
-.card.hot{border-color:#ffd9d9;background:linear-gradient(180deg,#fff 0,#fff6f6 100%)}
-.grupo{margin-top:34px;font-weight:800;font-size:15px;color:var(--cinza)}
-/* SHEET */
-.sheet{position:fixed;inset:0;z-index:80;display:none}.sheet.on{display:block}
-.sheet .bg{position:absolute;inset:0;background:rgba(5,10,18,.6);animation:fade .2s}
-.sheet .box{position:absolute;left:0;right:0;bottom:0;max-height:88vh;overflow:auto;background:#fff;border-radius:24px 24px 0 0;padding:22px 20px 28px;animation:up .28s cubic-bezier(.2,.8,.2,1)}
-@media(min-width:760px){.sheet .box{left:50%;bottom:auto;top:50%;transform:translate(-50%,-50%);width:560px;border-radius:24px;animation:fade .2s}}
-@keyframes up{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}@keyframes fade{from{opacity:0}to{opacity:1}}
-.sheet img{border-radius:14px;margin:12px 0;max-height:260px;width:100%;object-fit:cover}
-.sheet h3{font-size:24px;line-height:1.15;font-weight:900}.sheet ul{margin:10px 0 18px 18px}.sheet li{margin:4px 0}
-.x{position:absolute;right:14px;top:12px;font-size:28px;background:none;border:0;cursor:pointer;color:var(--cinza)}
+section{padding:84px 0;position:relative}
+.kicker{font-family:"JetBrains Mono",monospace;color:var(--ouro);font-weight:700;letter-spacing:.06em;font-size:12.5px;text-transform:uppercase}
+.kicker:before{content:"// "}
+h2{font-size:clamp(30px,5.4vw,50px);line-height:1.06;letter-spacing:-.03em;font-weight:900;margin:10px 0 14px;max-width:780px;color:#fff}
+.lead{color:var(--mut);font-size:18px;max-width:680px}
+.branco{background:#fff;color:#0f172a}.branco h2{color:#0b1726}.branco .lead{color:#5b6475}.branco .kicker{color:#a87900}
+.n2{background:var(--n2)}
+/* BENTO */
+.bento{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:34px}
+@media(min-width:900px){.bento{grid-template-columns:repeat(4,1fr);grid-auto-rows:190px}}
+.tile{position:relative;border-radius:var(--r);overflow:hidden;background:var(--n2);border:1px solid var(--linha);padding:18px;min-height:170px;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;transform-style:preserve-3d;transition:border-color .3s,box-shadow .3s;text-align:left}
+.tile:hover{border-color:rgba(245,183,0,.55);box-shadow:0 20px 50px rgba(0,0,0,.4),0 0 0 1px rgba(245,183,0,.2)}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;transition:transform .7s,opacity .4s}
+.tile:hover img{transform:scale(1.07);opacity:.55}
+.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 25%,rgba(5,12,24,.92))}
+.tile>*{position:relative;z-index:1}
+.tile .pct{position:absolute;top:14px;right:14px;z-index:2;font-family:"JetBrains Mono",monospace;font-size:11px;padding:4px 9px;border-radius:999px;background:rgba(245,183,0,.15);border:1px solid rgba(245,183,0,.4);color:var(--ouro2)}
+.tile h3{font-size:clamp(18px,2.4vw,24px);font-weight:900;color:#fff;line-height:1.1}.tile p{color:#c4d0de;font-size:13.5px;margin-top:6px}
+.tile.big{grid-column:span 2;grid-row:span 2;min-height:300px}.tile.wide{grid-column:span 2}
+/* DORES */
+.dores{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.dor{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:14px;background:var(--glass);border:1px solid var(--linha);cursor:pointer;font-weight:700;font-size:15px;transition:all .2s}
+.dor:hover{border-color:var(--ouro);background:rgba(245,183,0,.08);transform:translateY(-2px)}
+.dor.hot{border-color:rgba(255,90,90,.45)}.dor.hot:before{content:"";width:7px;height:7px;border-radius:50%;background:#ff5a5a;box-shadow:0 0 8px #ff5a5a}
+/* QUIZ */
+.quiz{margin-top:30px;border-radius:24px;background:linear-gradient(160deg,rgba(21,41,74,.9),rgba(9,20,38,.9));border:1px solid rgba(245,183,0,.25);padding:26px;max-width:760px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.qbar{height:6px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden;margin-bottom:20px}.qbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--ouro),var(--ouro2));transition:width .4s}
+.quiz h3{font-size:22px;color:#fff;margin-bottom:16px;line-height:1.2}
+.opts{display:grid;gap:10px}@media(min-width:600px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:15px 16px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid var(--linha);cursor:pointer;text-align:left;font-weight:600;transition:all .2s}
+.opt:hover{border-color:var(--ouro);background:rgba(245,183,0,.1)}
+.res{text-align:left}.gauge{height:14px;border-radius:9px;background:linear-gradient(90deg,#25d366,#f5b700,#ff4d4d);position:relative;margin:18px 0 8px}
+.gauge i{position:absolute;top:-6px;width:4px;height:26px;border-radius:3px;background:#fff;box-shadow:0 0 10px #fff;left:0;transition:left 1.2s cubic-bezier(.2,.8,.2,1)}
+.res .nv{font-size:30px;font-weight:900}.res p{color:#cfd9e6;margin:10px 0 18px}
+/* QUEM ASSINA */
+.eeat{display:grid;gap:26px;margin-top:34px}@media(min-width:900px){.eeat{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.perfil{border-radius:24px;overflow:hidden;background:#0b1726;color:#fff;position:relative;box-shadow:0 30px 70px rgba(11,23,38,.25)}
+.perfil img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:30% 30%}@media(min-width:900px){.perfil img{aspect-ratio:4/4.2}}
+.perfil .info{padding:22px}
+.perfil h3{font-size:26px;font-weight:900;line-height:1.1}.perfil .cargo{color:var(--ouro2);font-weight:700;margin-top:4px}
+.crea{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding:12px 14px;border-radius:14px;background:rgba(245,183,0,.1);border:1px dashed rgba(245,183,0,.55)}
+.crea small{color:#c4d0de;font-size:12px;display:block}.crea b{font-family:"JetBrains Mono",monospace;font-size:17px;color:#fff;letter-spacing:.03em}
+.crea a{font-size:12px;font-weight:800;color:var(--ouro2);white-space:nowrap}
+.tl{position:relative;padding-left:26px;margin-top:6px}
+.tl:before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(#f5b700,#e5e9f0)}
+.tl li{list-style:none;position:relative;padding:0 0 20px}
+.tl li:before{content:"";position:absolute;left:-23px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--ouro)}
+.tl b{display:block;font-size:17px;color:#0b1726}.tl span{color:#5b6475;font-size:14.5px}.tl em{font-style:normal;font-family:"JetBrains Mono",monospace;font-size:12px;color:#a87900;font-weight:700}
+.nrs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 22px}
+.nrs span{font-family:"JetBrains Mono",monospace;font-size:12.5px;font-weight:700;padding:7px 11px;border-radius:10px;background:#0b1726;color:var(--ouro2)}
+.emp{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14.5px;padding:18px;border-radius:18px;background:#f4f6f9;border:1px solid #e5e9f0}
+.emp dt{font-weight:800;color:#0b1726}.emp dd{color:#5b6475}
+.carreira{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.carreira span{font-size:13px;padding:7px 12px;border-radius:999px;border:1px solid #e2e7ef;color:#334155;background:#fff}
 /* ANTES DEPOIS */
-.ba-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:30px}
-.ba{border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,.08)}
-.cmp{position:relative;aspect-ratio:4/5;overflow:hidden;user-select:none;touch-action:pan-y}
+.ba-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:32px}
+.ba{border-radius:var(--r);overflow:hidden;background:var(--n2);border:1px solid var(--linha)}
+.cmp{position:relative;aspect-ratio:4/5;overflow:hidden;user-select:none;touch-action:pan-y;cursor:ew-resize}
 .cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .cmp .depois{clip-path:inset(0 0 0 50%)}
-.cmp .bar{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.2)}
-.cmp .bar:after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--amarelo);color:var(--azul);display:grid;place-items:center;font-weight:900;box-shadow:0 6px 18px rgba(0,0,0,.3)}
-.cmp .lb{position:absolute;top:12px;font-size:12px;font-weight:800;padding:5px 10px;border-radius:999px;background:rgba(0,0,0,.6);color:#fff}.cmp .l1{left:12px}.cmp .l2{right:12px;background:var(--amarelo);color:var(--azul)}
-.cap{padding:16px 18px 20px;font-size:15px}.cap h3{font-size:19px;margin-bottom:8px}
-.cap dl{display:grid;grid-template-columns:auto 1fr;gap:4px 10px}.cap dt{font-weight:800;color:#b07f00}.cap dd{color:var(--cinza)}
+.cmp .bar{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--ouro);box-shadow:0 0 12px var(--ouro)}
+.cmp .bar:after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--ouro);color:var(--n1);display:grid;place-items:center;font-weight:900;box-shadow:0 0 0 6px rgba(245,183,0,.25)}
+.cmp .lb{position:absolute;top:12px;font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;padding:5px 10px;border-radius:999px;background:rgba(0,0,0,.65);color:#fff}.cmp .l1{left:12px}.cmp .l2{right:12px;background:var(--ouro);color:var(--n1)}
+.cap{padding:16px 18px 20px;font-size:14.5px}.cap h3{font-size:18px;color:#fff;margin-bottom:8px}
+.cap dl{display:grid;grid-template-columns:auto 1fr;gap:4px 10px}.cap dt{font-weight:800;color:var(--ouro)}.cap dd{color:var(--mut)}
 /* PASSOS */
-.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:30px;counter-reset:p}
-.passo{background:var(--azul2);border-radius:var(--r);padding:22px;border:1px solid rgba(255,255,255,.08)}
-.passo:before{counter-increment:p;content:counter(p);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--amarelo);color:var(--azul);font-weight:900;margin-bottom:12px}
-.passo b{font-size:18px}.passo p{color:#c9d3e0;margin-top:6px}
-/* GALERIA */
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:28px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}}
-.gal figure{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1}.gal figure.big{grid-row:span 2;aspect-ratio:auto}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.gal figure:hover img{transform:scale(1.06)}
-.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:13px;font-weight:600}
-/* AVALIACOES */
-.rev{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;margin-top:26px}
-.rev article{flex:0 0 min(320px,84%);scroll-snap-align:start;background:#fff;border-radius:var(--r);padding:20px;box-shadow:0 8px 24px rgba(15,23,42,.07)}
-.rev .s{color:var(--amarelo);letter-spacing:2px}.rev p{margin:10px 0;font-size:15px}.rev cite{font-style:normal;font-weight:800;font-size:14px}
-.nota{display:flex;align-items:center;gap:14px;margin-top:10px}.nota b{font-size:48px;font-weight:900;line-height:1}
-/* ORCAMENTO */
-.orc{background:#fff;color:var(--texto);border-radius:24px;padding:24px;margin-top:28px;max-width:720px}
-.orc h3{font-size:16px;margin:16px 0 10px}.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{border:2px solid #e2e7ef;background:#fff;border-radius:999px;padding:10px 14px;font:inherit;font-weight:600;cursor:pointer}
-.chip.on{border-color:var(--amarelo);background:#fff6d6}
-.orc input{width:100%;padding:13px 14px;border:2px solid #e2e7ef;border-radius:12px;font:inherit}
+.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:30px}
+.passo{border-radius:var(--r);padding:22px;background:var(--glass);border:1px solid var(--linha)}
+.passo .mono{color:var(--ouro);font-size:13px}.passo b{display:block;font-size:19px;color:#fff;margin-top:8px}.passo p{color:var(--mut);margin-top:6px}
+/* REVIEWS */
+.nota{display:flex;align-items:center;gap:16px;margin-top:8px}.nota b{font-size:58px;font-weight:900;line-height:1;color:#0b1726}
+.star{color:var(--ouro);letter-spacing:2px}
+.marq{overflow:hidden;margin-top:28px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marq .tr{display:flex;gap:14px;width:max-content;animation:mq 50s linear infinite}.marq:hover .tr{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.marq article{width:310px;flex:0 0 auto;background:#fff;border:1px solid #e5e9f0;border-radius:var(--r);padding:20px;box-shadow:0 10px 30px rgba(15,23,42,.06)}
+.marq p{margin:10px 0;font-size:15px;color:#334155}.marq cite{font-style:normal;font-weight:800;font-size:14px;color:#0b1726}
+.g{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#5b6475;margin-left:6px}
+/* PERGUNTE */
+.ask{margin-top:28px;display:grid;gap:14px;max-width:760px}
+.ask textarea{width:100%;min-height:110px;padding:16px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid var(--linha);color:#fff;font:inherit;resize:vertical}
+.ask textarea:focus,.orc input:focus{outline:2px solid var(--ouro);outline-offset:2px}
+.sug{display:flex;flex-wrap:wrap;gap:8px}.sug button{padding:8px 12px;border-radius:999px;background:transparent;border:1px dashed rgba(245,183,0,.5);color:var(--ouro2);cursor:pointer;font-size:13.5px}
+/* ORC */
+.orc{border-radius:24px;padding:24px;margin-top:28px;max-width:760px;background:var(--glass);border:1px solid var(--linha)}
+.orc h3{font-size:15px;margin:18px 0 10px;color:#fff}.orc h3:first-child{margin-top:0}.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--linha);background:rgba(255,255,255,.04);border-radius:999px;padding:10px 14px;font-weight:600;cursor:pointer;transition:all .2s}
+.chip.on{border-color:var(--ouro);background:rgba(245,183,0,.15);color:var(--ouro2)}
+.orc input{width:100%;padding:14px;border:1px solid var(--linha);border-radius:12px;font:inherit;background:rgba(255,255,255,.05);color:#fff}
 /* FAQ */
-details{border-bottom:1px solid #e5e9f0;padding:18px 0}summary{font-weight:800;font-size:18px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
-summary:after{content:"+";color:#b07f00;font-size:24px;line-height:1}details[open] summary:after{content:"–"}details p{color:var(--cinza);margin-top:10px;max-width:760px}
-.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.areas span{background:#fff;border:1px solid #e5e9f0;border-radius:999px;padding:8px 14px;font-size:14px}
-footer{background:#08111c;color:#9fb0c4;padding:40px 0 110px;font-size:14px}footer b{color:#fff}
+details{border-bottom:1px solid #e5e9f0;padding:18px 0}summary{font-weight:800;font-size:18px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;color:#0b1726}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:#a87900;font-size:24px;line-height:1;transition:transform .3s}details[open] summary:after{transform:rotate(45deg)}details p{color:#5b6475;margin-top:10px;max-width:780px}
+/* AREAS */
+.radar{position:relative;margin-top:30px;border-radius:24px;overflow:hidden;background:radial-gradient(circle at 50% 50%,rgba(245,183,0,.1),transparent 60%),var(--n2);border:1px solid var(--linha);padding:26px}
+.radar:before{content:"";position:absolute;left:50%;top:50%;width:900px;height:900px;margin:-450px 0 0 -450px;background:conic-gradient(from 0deg,rgba(245,183,0,.22),transparent 18%);border-radius:50%;animation:spin 6s linear infinite;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.radar .areas{position:relative;display:flex;flex-wrap:wrap;gap:8px}
+.areas span{padding:8px 13px;border-radius:999px;font-size:14px;background:rgba(5,12,24,.7);border:1px solid var(--linha)}
+.areas span.sede{border-color:var(--ouro);color:var(--ouro2);font-weight:800}
+footer{background:var(--n0);color:var(--mut);padding:46px 0 120px;font-size:14px;border-top:1px solid var(--linha)}footer b{color:#fff}footer a{text-decoration:underline;text-decoration-color:rgba(255,255,255,.25)}
 .fixo{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:10px}
-.fixo a{flex:1;justify-content:center;padding:15px}.fixo .tel{flex:0 0 auto;background:#fff;color:var(--azul);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.fixo .btn-wa{flex:1;padding:15px}.fixo .tel{background:#fff;color:var(--n1);padding:15px 18px}
 @media(min-width:900px){.fixo{left:auto;right:24px;bottom:24px}.fixo .tel{display:none}}
-.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+/* SHEET */
+.sheet{position:fixed;inset:0;z-index:80;display:none}.sheet.on{display:block}
+.sheet .bg{position:absolute;inset:0;background:rgba(2,6,12,.7);backdrop-filter:blur(4px);animation:fade .2s}
+.sheet .box{position:absolute;left:0;right:0;bottom:0;max-height:88vh;overflow:auto;background:var(--n2);border:1px solid var(--linha);border-radius:24px 24px 0 0;padding:22px 20px 28px;animation:up .3s cubic-bezier(.2,.8,.2,1)}
+@media(min-width:760px){.sheet .box{left:50%;bottom:auto;top:50%;transform:translate(-50%,-50%);width:560px;border-radius:24px;animation:fade .2s}}
+@keyframes up{from{transform:translateY(40px);opacity:0}}@keyframes fade{from{opacity:0}}
+.sheet img{border-radius:14px;margin:12px 0;max-height:260px;width:100%;object-fit:cover}
+.sheet h3{font-size:24px;line-height:1.15;font-weight:900;color:#fff}.sheet p{color:#cfd9e6}.sheet ul{margin:10px 0 18px 18px;color:#cfd9e6}.sheet li{margin:4px 0}.sheet li::marker{color:var(--ouro)}
+.x{position:absolute;right:14px;top:10px;font-size:30px;background:none;border:0;cursor:pointer;color:var(--mut)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}#circ path{stroke-dashoffset:0}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","@id":"https://www.mestredosreparos.app.br/#empresa","name":"Mestre dos Reparos Manutenção & Limpeza","url":"https://www.mestredosreparos.app.br/","telephone":"+55 11 91839-0430","address":{"@type":"PostalAddress","streetAddress":"Avenida Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"areaServed":["Barueri","Alphaville","Tamboré","Aldeia da Serra","Jandira","Itapevi","Santana de Parnaíba","Carapicuíba"],"knowsAbout":["instalações elétricas","quadro de distribuição","manutenção predial","iluminação LED","forro de drywall","pintura","limpeza pós-obra"],"sameAs":["https://www.instagram.com/mestredosreparosfacilites","https://www.youtube.com/@mestredosreparos-i9d"]}
+{"@context":"https://schema.org","@graph":[
+{"@type":["HomeAndConstructionBusiness","Electrician"],"@id":"https://www.mestredosreparos.app.br/#empresa","name":"Mestre dos Reparos Manutenção & Limpeza","legalName":"Maria Eduarda Hengles Valadão","taxID":"64.521.657/0001-87","url":"https://www.mestredosreparos.app.br/","image":"https://www.mestredosreparos.app.br/nova/img/hero-iluminacao.jpg","telephone":"+55 11 91839-0430","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Avenida Henrique Gonçalves Baptista, 2245","addressLocality":"Barueri","addressRegion":"SP","postalCode":"06420-130","addressCountry":"BR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"32"},"areaServed":["Barueri","Alphaville","Tamboré","Aldeia da Serra","Jandira","Itapevi","Santana de Parnaíba","Carapicuíba"],"employee":{"@id":"https://www.mestredosreparos.app.br/#paulo"},"knowsAbout":["instalações elétricas NBR 5410","quadro de distribuição","manutenção predial","iluminação LED","hidráulica","forro de drywall","pintura","limpeza pós-obra"],"sameAs":["https://www.instagram.com/mestredosreparosfacilites","https://www.youtube.com/@mestredosreparos-i9d"]},
+{"@type":"Person","@id":"https://www.mestredosreparos.app.br/#paulo","name":"Paulo","jobTitle":"Engenheiro Eletricista e Responsável Técnico","worksFor":{"@id":"https://www.mestredosreparos.app.br/#empresa"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidade Federal do Rio de Janeiro (UFRJ)"},{"@type":"EducationalOrganization","name":"SENAI"}],"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Registro profissional","name":"CREA 141129611802","recognizedBy":{"@type":"Organization","name":"CREA"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"degree","name":"Bacharel em Engenharia Elétrica"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Técnico em Eletrotécnica"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Técnico em Refrigeração"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"NR-10 e NR-10 SEP"}],"knowsAbout":["NBR 5410","NR-10","manutenção predial","gestão de facilities"]}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -113,153 +191,217 @@ footer{background:#08111c;color:#9fb0c4;padding:40px 0 110px;font-size:14px}foot
 </script>
 </head>
 <body>
-<header class="top"><div class="wrap"><a href="#" class="logo">Mestre <b>dos Reparos</b></a><a class="btn btn-wa" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp</a></div></header>
+<div id="prog"></div>
+<header class="top"><div class="wrap"><a href="#" class="logo"><i>⚡</i><span>Mestre <b>dos Reparos</b></span></a><nav class="nav"><a href="#servicos">Serviços</a><a href="#diagnostico">Diagnóstico</a><a href="#quem">Quem assina</a><a href="#provas">Antes e depois</a><a href="#avaliacoes">Avaliações</a></nav><a class="btn btn-wa" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp</a></div></header>
 
 <section class="hero">
-  <img src="img/hero-iluminacao.jpg" alt="Apartamento com iluminação embutida instalada pela Mestre dos Reparos" fetchpriority="high">
+  <div class="foto" role="img" aria-label="Apartamento com iluminação embutida instalada pela Mestre dos Reparos"></div>
+  <div class="grade"></div>
+  <svg id="circ" aria-hidden="true"></svg>
   <div class="wrap">
-    <span class="tag">⚡ Barueri · Alphaville · região</span>
-    <h1>Tomada esquentando? Disjuntor caindo? <em>A gente resolve.</em></h1>
-    <p>Elétrica, manutenção e reformas para casas, condomínios e empresas. Um só responsável do orçamento à entrega — com nota fiscal e garantia de 90 dias.</p>
-    <div class="ctas"><a class="btn btn-wa" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20vim%20pelo%20site.%20Posso%20mandar%20uma%20foto%20do%20problema%3F" target="_blank" rel="noopener">📲 Mandar foto do problema</a><a class="btn btn-ghost" href="#problemas">Ver o que fazemos</a></div>
-    <div class="selos"><span><b class="star">★★★★★</b> 4,9 no Google · 32 avaliações</span><span>🧾 Nota fiscal</span><span>🛡️ Garantia de 90 dias</span><span>👷 Responsável técnico</span></div>
+    <span class="badge"><span class="dot"></span>Atendendo hoje em Barueri, Alphaville e região</span>
+    <h1><span class="typed" id="typed">Tomada esquentando?</span><br><span class="gold">A gente resolve.</span></h1>
+    <p class="sub">Elétrica, manutenção predial, reformas, hidráulica e limpeza para casas, condomínios e empresas — com <b class="ok">engenheiro eletricista responsável</b>, nota fiscal e garantia de 90 dias.</p>
+    <div class="ctas"><a class="btn btn-ouro" href="#diagnostico">⚡ Diagnóstico em 30 s</a><a class="btn btn-wa" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20vim%20pelo%20site.%20Posso%20mandar%20uma%20foto%20do%20problema%3F" target="_blank" rel="noopener">📲 Mandar foto do problema</a></div>
+    <a class="assin" href="#quem"><img src="img/paulo-atendimento.jpg" alt="Paulo, engenheiro eletricista responsável técnico" width="52" height="52"><span><small>Responsável técnico</small><b>Paulo · Engenheiro Eletricista · CREA 141129611802</b><small>25 anos de experiência · UFRJ · SENAI</small></span></a>
   </div>
 </section>
 
-<section id="problemas"><div class="wrap">
-  <div class="kicker rv">Comece pela dor</div>
-  <h2 class="rv">Qual é o seu problema agora?</h2>
-  <p class="lead rv">Toque no que está acontecendo. Explicamos o risco, o que fazemos e você já chama no WhatsApp com a mensagem pronta.</p>
-  <div class="grupo rv">⚡ Elétrica</div>
-  <div class="grid" id="g-eletrica"></div>
-  <div class="grupo rv">🏢 Manutenção predial e empresas</div>
-  <div class="grid" id="g-predial"></div>
-  <div class="grupo rv">🛠️ Reformas e acabamento</div>
-  <div class="grid" id="g-reforma"></div>
-  <div class="grupo rv">🧽 Limpeza técnica</div>
-  <div class="grid" id="g-limpeza"></div>
+<div class="wrap"><div class="stats rv">
+  <div class="stat"><b><span data-n="25">0</span></b><small>anos de experiência em elétrica e manutenção</small></div>
+  <div class="stat"><b><span data-n="4.9" data-d="1">0</span>★</b><small>nota no Google · 32 avaliações</small></div>
+  <div class="stat"><b><span data-n="90">0</span> dias</b><small>de garantia por escrito</small></div>
+  <div class="stat"><b>NF<span>+</span>ART</b><small>nota fiscal sempre; ART quando o serviço exige</small></div>
+</div></div>
+
+<section id="servicos"><div class="wrap">
+  <div class="kicker rv">comece pela dor</div>
+  <h2 class="rv">O que está acontecendo aí?</h2>
+  <p class="lead rv">Toque no problema. Explicamos o risco, o que fazemos e você chama no WhatsApp com a mensagem pronta.</p>
+  <div class="dores rv" id="dores"></div>
+  <div class="bento" id="bento">
+    <button class="tile big rv" data-g="eletrica"><img src="img/quadro-novo.jpg" alt="Quadro elétrico montado pela Mestre dos Reparos" loading="lazy"><span class="pct">nosso forte</span><h3>Elétrica residencial e predial</h3><p>Quadros, disjuntores, chuveiro, tomadas, pontos novos, iluminação. Diagnóstico com medição, não no chute.</p></button>
+    <button class="tile rv" data-g="predial"><img src="img/galpao-led.jpg" alt="Iluminação LED em galpão" loading="lazy"><span class="pct">condomínios</span><h3>Manutenção predial</h3><p>Condomínios, lojas e galpões.</p></button>
+    <button class="tile rv" data-g="reforma"><img src="img/forro-depois.jpg" alt="Forro de drywall com spots" loading="lazy"><h3>Reformas e acabamento</h3><p>Drywall, pintura, portas.</p></button>
+    <button class="tile rv" data-g="hidraulica"><img src="img/calha.jpg" alt="Manutenção de calha" loading="lazy"><h3>Hidráulica</h3><p>Vazamentos, registros, calhas.</p></button>
+    <button class="tile rv" data-g="limpeza"><img src="img/exaustor-depois.jpg" alt="Exaustor limpo" loading="lazy"><h3>Limpeza técnica</h3><p>Pós-obra, exaustores, calhas.</p></button>
+    <button class="tile wide rv" data-g="iluminacao"><img src="img/sanca-led.jpg" alt="Iluminação embutida em sala" loading="lazy"><span class="pct">projeto + instalação</span><h3>Iluminação e automação</h3><p>Spots, perfis de LED, pendentes e interruptores inteligentes.</p></button>
+  </div>
 </div></section>
 
-<section class="claro"><div class="wrap">
-  <div class="kicker rv">Prova, não promessa</div>
+<section class="n2" id="diagnostico"><div class="wrap">
+  <div class="kicker rv">diagnóstico interativo</div>
+  <h2 class="rv">Sua instalação elétrica está em risco? Descubra em 30 segundos.</h2>
+  <p class="lead rv">4 perguntas baseadas nos sinais que mais vemos em campo. É uma orientação — não substitui a vistoria.</p>
+  <div class="quiz rv" id="quiz"><div class="qbar"><i id="qb"></i></div><div id="qc"></div></div>
+</div></section>
+
+<section class="branco" id="quem"><div class="wrap">
+  <div class="kicker rv">quem assina o serviço</div>
+  <h2 class="rv">Não é “um eletricista qualquer”. É engenheiro, com registro e 25 anos de campo.</h2>
+  <p class="lead rv">Todo serviço elétrico segue a NBR 5410 e passa pelo responsável técnico. Abaixo, a formação e a trajetória — com documentos.</p>
+  <div class="eeat">
+    <div class="perfil rv"><img src="img/paulo-atendimento.jpg" alt="Paulo, engenheiro eletricista, em atendimento" loading="lazy">
+      <div class="info"><h3>Paulo</h3><div class="cargo">Engenheiro Eletricista · Responsável Técnico</div>
+        <div class="crea"><span><small>Registro profissional</small><b>CREA 141129611802</b></span><a href="https://www.creasp.org.br/" target="_blank" rel="noopener">Consultar ↗</a></div>
+        <p style="color:#c4d0de;font-size:14px;margin-top:14px">Habilitado para emissão de ART. 25 anos entre execução em campo e gestão de manutenção de grandes operações.</p></div></div>
+    <div class="rv">
+      <ul class="tl">
+        <li><em>FORMAÇÃO</em><b>Engenharia Elétrica — UFRJ</b><span>Bacharelado, Universidade Federal do Rio de Janeiro.</span></li>
+        <li><em>SENAI</em><b>Técnico em Eletrotécnica</b><span>Formação técnica completa (1.656 h): base prática em instalações prediais e residenciais.</span></li>
+        <li><em>SENAI</em><b>Técnico em Refrigeração</b><span>Sistemas de climatização e refrigeração.</span></li>
+        <li><em>SENAI</em><b>Comandos Elétricos Industriais</b><span>Montagem e diagnóstico de painéis e motores.</span></li>
+        <li><em>CARREIRA</em><b>Gestão de manutenção em grandes operações</b><span>Gerência de manutenção no contrato Bradesco Cidade de Deus (GPS / In-Haus), com mais de 300 colaboradores em civil, elétrica, ar-condicionado e mecânica; coordenação em shoppings, hospitais e contratos corporativos.</span>
+          <div class="carreira"><span>Bradesco · Cidade de Deus</span><span>GPS / In-Haus</span><span>Onet Brasil</span><span>Shopping SP Market</span><span>Brasanitas</span><span>Vivante</span></div></li>
+      </ul>
+      <div class="nrs"><span>NR-10</span><span>NR-10 SEP</span><span>NR-12</span><span>NR-33</span><span>NR-6</span><span>NBR 5410</span><span>FGV · Riscos</span></div>
+      <dl class="emp"><dt>Empresa</dt><dd>Mestre dos Reparos Manutenção &amp; Limpeza</dd><dt>CNPJ</dt><dd>64.521.657/0001-87 · ativo</dd><dt>Sede</dt><dd>Av. Henrique Gonçalves Baptista, 2245 · Jardim Belval · Barueri/SP</dd><dt>Garantia</dt><dd>90 dias por escrito, com nota fiscal</dd></dl>
+      <p style="margin-top:16px"><a class="btn btn-ouro" href="/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html">Ver diplomas e certificados →</a></p>
+    </div>
+  </div>
+</div></section>
+
+<section id="provas"><div class="wrap">
+  <div class="kicker rv">prova, não promessa</div>
   <h2 class="rv">Arraste e veja o antes e o depois</h2>
-  <p class="lead rv">Fotos reais de atendimentos nossos. Cada uma conta o problema, a causa e o que fizemos.</p>
+  <p class="lead rv">Fotos reais da nossa equipe. Cada caso mostra problema, causa e solução.</p>
   <div class="ba-list">
     <div class="ba rv"><div class="cmp"><img src="img/quadro-antes.jpg" alt="Quadro elétrico com marcas de queimado antes da troca" loading="lazy"><img class="depois" src="img/quadro-depois.jpg" alt="Quadro elétrico novo com disjuntores e medição de corrente" loading="lazy"><span class="lb l1">ANTES</span><span class="lb l2">DEPOIS</span><div class="bar"></div></div>
-      <div class="cap"><h3>Quadro com marcas de queimado</h3><dl><dt>Problema</dt><dd>Disjuntores aquecendo e fuligem dentro do quadro.</dd><dt>Causa</dt><dd>Conexões frouxas e componentes antigos.</dd><dt>O que fizemos</dt><dd>Disjuntores novos, fiação organizada e corrente medida circuito por circuito.</dd></dl></div></div>
+      <div class="cap"><h3>Quadro com marcas de queimado</h3><dl><dt>Problema</dt><dd>Disjuntores aquecendo e fuligem dentro do quadro.</dd><dt>Causa</dt><dd>Conexões frouxas e componentes antigos.</dd><dt>Solução</dt><dd>Disjuntores novos, fiação organizada e corrente medida circuito por circuito.</dd></dl></div></div>
     <div class="ba rv"><div class="cmp"><img src="img/forro-antes.jpg" alt="Forro de drywall em execução" loading="lazy"><img class="depois" src="img/forro-depois.jpg" alt="Forro finalizado com spots de LED" loading="lazy"><span class="lb l1">DURANTE</span><span class="lb l2">ENTREGUE</span><div class="bar"></div></div>
-      <div class="cap"><h3>Forro + elétrica + iluminação</h3><dl><dt>Pedido</dt><dd>Apartamento novo, teto sem acabamento.</dd><dt>Solução</dt><dd>Forro de drywall, pontos elétricos embutidos e spots de LED.</dd><dt>Diferencial</dt><dd>Uma só equipe do forro à entrega.</dd></dl></div></div>
-    <div class="ba rv"><div class="cmp"><img src="img/exaustor-antes.jpg" alt="Exaustor de banheiro sujo" loading="lazy"><img class="depois" src="img/exaustor-depois.jpg" alt="Exaustor limpo e reinstalado" loading="lazy"><span class="lb l1">ANTES</span><span class="lb l2">DEPOIS</span><div class="bar"></div></div>
-      <div class="cap"><h3>Exaustor que não tirava o vapor</h3><dl><dt>Problema</dt><dd>Banheiro úmido e com mofo.</dd><dt>Causa</dt><dd>Hélice e grade tomadas por pó.</dd><dt>O que fizemos</dt><dd>Limpeza completa e reinstalação.</dd></dl></div></div>
+      <div class="cap"><h3>Forro + elétrica + iluminação</h3><dl><dt>Pedido</dt><dd>Apartamento novo, teto sem acabamento.</dd><dt>Solução</dt><dd>Drywall, pontos embutidos e spots de LED.</dd><dt>Diferencial</dt><dd>Uma só equipe do forro à entrega.</dd></dl></div></div>
     <div class="ba rv"><div class="cmp"><img src="img/quadro2-antes.jpg" alt="Quadro antigo com disjuntores tipo NEMA" loading="lazy"><img class="depois" src="img/quadro2-depois.jpg" alt="Quadro atualizado com disjuntores DIN" loading="lazy"><span class="lb l1">ANTES</span><span class="lb l2">DEPOIS</span><div class="bar"></div></div>
-      <div class="cap"><h3>Atualização de quadro antigo</h3><dl><dt>Problema</dt><dd>Quadro antigo, sem margem para novos aparelhos.</dd><dt>O que fizemos</dt><dd>Disjuntores modernos e circuitos reorganizados.</dd><dt>Resultado</dt><dd>Mais segurança e espaço para crescer.</dd></dl></div></div>
+      <div class="cap"><h3>Atualização de quadro antigo</h3><dl><dt>Problema</dt><dd>Sem margem para novos aparelhos.</dd><dt>Solução</dt><dd>Disjuntores modernos e circuitos reorganizados.</dd><dt>Resultado</dt><dd>Mais segurança e espaço para crescer.</dd></dl></div></div>
+    <div class="ba rv"><div class="cmp"><img src="img/exaustor-antes.jpg" alt="Exaustor de banheiro sujo" loading="lazy"><img class="depois" src="img/exaustor-depois.jpg" alt="Exaustor limpo e reinstalado" loading="lazy"><span class="lb l1">ANTES</span><span class="lb l2">DEPOIS</span><div class="bar"></div></div>
+      <div class="cap"><h3>Exaustor que não tirava o vapor</h3><dl><dt>Problema</dt><dd>Banheiro úmido e com mofo.</dd><dt>Causa</dt><dd>Hélice e grade tomadas por pó.</dd><dt>Solução</dt><dd>Limpeza completa e reinstalação.</dd></dl></div></div>
   </div>
-</div></section>
-
-<section class="escuro"><div class="wrap">
-  <div class="kicker rv">Simples assim</div>
-  <h2 class="rv">Do WhatsApp ao serviço entregue</h2>
   <div class="passos">
-    <div class="passo rv"><b>Mande uma foto</b><p>Mostre o problema e diga o bairro. Respondemos rápido.</p></div>
-    <div class="passo rv"><b>Diagnóstico e orçamento</b><p>Explicamos a causa sem enrolação. Serviços maiores têm visita técnica.</p></div>
-    <div class="passo rv"><b>Execução com garantia</b><p>Ambiente limpo, nota fiscal e 90 dias de garantia.</p></div>
+    <div class="passo rv"><span class="mono">01 /</span><b>Mande uma foto</b><p>Mostre o problema e diga o bairro.</p></div>
+    <div class="passo rv"><span class="mono">02 /</span><b>Diagnóstico e orçamento</b><p>Causa explicada sem enrolação. Orçamento por escrito.</p></div>
+    <div class="passo rv"><span class="mono">03 /</span><b>Execução com garantia</b><p>Teste na sua frente, local limpo, NF e 90 dias.</p></div>
   </div>
 </div></section>
 
-<section><div class="wrap">
-  <div class="kicker rv">Trabalhos recentes</div>
-  <h2 class="rv">Casa, condomínio, empresa e galpão</h2>
-  <div class="gal">
-    <figure class="big rv"><img src="img/galpao-led.jpg" alt="Iluminação LED instalada em galpão em Itapevi" loading="lazy"><figcaption>Galpão em Itapevi · iluminação LED em altura</figcaption></figure>
-    <figure class="rv"><img src="img/pendente.jpg" alt="Pendente instalado em apartamento" loading="lazy"><figcaption>Pendente de madeira · apartamento</figcaption></figure>
-    <figure class="rv"><img src="img/interruptor-smart.jpg" alt="Interruptor inteligente touch" loading="lazy"><figcaption>Interruptores inteligentes</figcaption></figure>
-    <figure class="rv"><img src="img/sanca-led.jpg" alt="Iluminação embutida em sala" loading="lazy"><figcaption>Iluminação embutida</figcaption></figure>
-    <figure class="rv"><img src="img/calha.jpg" alt="Limpeza de calha com folhas" loading="lazy"><figcaption>Limpeza de calhas</figcaption></figure>
-    <figure class="rv"><img src="img/tomada-queimada.jpg" alt="Caixa de tomada derretida por aquecedor" loading="lazy"><figcaption>Tomada que pegou fogo · refeita</figcaption></figure>
-    <figure class="rv"><img src="img/portas.jpg" alt="Portas novas instaladas" loading="lazy"><figcaption>Portas e acabamento</figcaption></figure>
-  </div>
-</div></section>
-
-<section class="claro"><div class="wrap">
-  <div class="kicker rv">Quem já contratou</div>
+<section class="branco" id="avaliacoes"><div class="wrap">
+  <div class="kicker rv">quem já contratou</div>
   <h2 class="rv">O que os clientes dizem no Google</h2>
-  <div class="nota rv"><b>4,9</b><div><div class="star">★★★★★</div><small>32 avaliações no Google</small></div></div>
-  <div class="rev">
-    <article><div class="s">★★★★★</div><p>“Gostei muito do trabalho, super atenciosos, é visível o conhecimento e entendimento do que fazem… todas as dúvidas tiraram.”</p><cite>Marcelo Fernandes</cite></article>
-    <article><div class="s">★★★★★</div><p>“Paulo realizou um excelente atendimento. É visível que tem grande domínio técnico para execução dos reparos. Os valores praticados são justos.”</p><cite>Anderson Querido</cite></article>
-    <article><div class="s">★★★★★</div><p>“Instalaram um pendente aqui no meu AP, ficou top d+, parece pôr do sol. Obrigado pelo excelente atendimento.”</p><cite>Leandro Silva</cite></article>
-    <article><div class="s">★★★★★</div><p>“O serviço foi de qualidade, tudo ficou perfeito, o atendimento foi muito bom, tudo explicadinho sem enrolação.”</p><cite>Barutec - Informática</cite></article>
-    <article><div class="s">★★★★★</div><p>“Serviço de limpeza excelente! A equipe é pontual, organizada e deixou o ambiente impecável.”</p><cite>Kelly Carvalho</cite></article>
-    <article><div class="s">★★★★★</div><p>“Profissional excelente! Caprichoso e justo. Merece indicação!”</p><cite>Rodrigo Ferrari</cite></article>
-  </div>
+  <div class="nota rv"><b>4,9</b><div><div class="star">★★★★★</div><small style="color:#5b6475">32 avaliações reais no Google</small></div></div>
+</div>
+  <div class="marq"><div class="tr" id="rev"></div></div>
+</section>
+
+<section class="n2" id="pergunte"><div class="wrap">
+  <div class="kicker rv">pergunte ao engenheiro</div>
+  <h2 class="rv">Tem uma dúvida? Pergunte direto para quem assina o serviço.</h2>
+  <p class="lead rv">Sem cadastro. A pergunta vai pelo WhatsApp e o Paulo responde. As dúvidas mais comuns viram resposta pública aqui embaixo — sem o seu nome.</p>
+  <div class="ask rv"><div class="sug" id="sug"><button>Posso trocar o chuveiro por um mais potente?</button><button>Meu quadro precisa de DR?</button><button>Benjamim é perigoso?</button><button>Quanto tempo dura uma fiação?</button></div>
+    <textarea id="perg" placeholder="Escreva sua pergunta…"></textarea><a id="enviaP" class="btn btn-ouro" href="#" target="_blank" rel="noopener">Enviar pergunta ↗</a></div>
 </div></section>
 
-<section class="escuro" id="orcamento"><div class="wrap">
-  <div class="kicker rv">Orçamento em 3 toques</div>
-  <h2 class="rv">Monte seu pedido e fale com a gente</h2>
-  <div class="orc rv">
-    <h3>1. Onde é?</h3><div class="chips" data-k="local"><button class="chip">Casa</button><button class="chip">Apartamento</button><button class="chip">Condomínio</button><button class="chip">Empresa / galpão</button></div>
-    <h3>2. O que precisa?</h3><div class="chips" data-k="servico"><button class="chip">Problema elétrico</button><button class="chip">Quadro / disjuntores</button><button class="chip">Iluminação</button><button class="chip">Forro / drywall</button><button class="chip">Pintura</button><button class="chip">Hidráulica</button><button class="chip">Limpeza / calhas</button><button class="chip">Manutenção predial</button></div>
-    <h3>3. Bairro ou cidade</h3><input id="bairro" placeholder="Ex.: Jardim Belval, Alphaville..." autocomplete="address-level3">
-    <p style="margin-top:18px"><a id="enviar" class="btn btn-wa" href="#" target="_blank" rel="noopener">📲 Enviar pelo WhatsApp</a></p>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="kicker rv">Perguntas reais</div>
+<section class="branco"><div class="wrap">
+  <div class="kicker rv">perguntas reais</div>
   <h2 class="rv">Respostas diretas, sem enrolação</h2>
   <div id="faq"></div>
 </div></section>
 
-<section class="claro"><div class="wrap">
-  <div class="kicker rv">Onde atendemos</div>
-  <h2 class="rv">Barueri e região</h2>
-  <div class="areas rv"><span>Centro de Barueri</span><span>Jardim Belval</span><span>Jardim Silveira</span><span>Jardim Tupanci</span><span>Parque Viana</span><span>Votupoca</span><span>Jardim Regina Alice</span><span>Jardim Paulista</span><span>Jardim Califórnia</span><span>Alphaville</span><span>Tamboré</span><span>Aldeia da Serra</span><span>Jandira</span><span>Itapevi</span><span>Santana de Parnaíba</span><span>Carapicuíba</span></div>
+<section id="orcamento"><div class="wrap">
+  <div class="kicker rv">orçamento em 3 toques</div>
+  <h2 class="rv">Monte seu pedido e fale com a gente</h2>
+  <div class="orc rv">
+    <h3>1. Onde é?</h3><div class="chips" data-k="local"><button class="chip">Casa</button><button class="chip">Apartamento</button><button class="chip">Condomínio</button><button class="chip">Empresa / galpão</button></div>
+    <h3>2. O que precisa?</h3><div class="chips" data-k="servico"><button class="chip">Problema elétrico</button><button class="chip">Quadro / disjuntores</button><button class="chip">Iluminação</button><button class="chip">Hidráulica</button><button class="chip">Reforma / drywall</button><button class="chip">Pintura</button><button class="chip">Limpeza</button><button class="chip">Manutenção predial</button></div>
+    <h3>3. Bairro ou cidade</h3><input id="bairro" placeholder="Ex.: Jardim Belval, Alphaville..." autocomplete="address-level3">
+    <p style="margin-top:18px"><a id="enviar" class="btn btn-wa" href="#" target="_blank" rel="noopener">📲 Enviar pelo WhatsApp</a></p>
+  </div>
+  <div class="kicker rv" style="margin-top:70px">onde atendemos</div>
+  <h2 class="rv">Base no Jardim Belval. Barueri inteira e região.</h2>
+  <div class="radar rv"><div class="areas"><span class="sede">📍 Jardim Belval (sede)</span><span>Alphaville</span><span>Tamboré</span><span>Bethaville</span><span>Aldeia de Barueri</span><span>Jardim Silveira</span><span>Engenho Novo</span><span>Parque Imperial</span><span>Jardim Tupanci</span><span>Regina Alice</span><span>Chácaras Marco</span><span>Vila São Francisco</span><span>Santana de Parnaíba</span><span>Aldeia da Serra</span><span>Carapicuíba</span><span>Jandira</span><span>Itapevi</span></div></div>
 </div></section>
 
-<footer><div class="wrap"><p><b>Mestre dos Reparos Manutenção &amp; Limpeza</b><br>Av. Henrique Gonçalves Baptista, 2245 · Jardim Belval · Barueri/SP<br>WhatsApp (11) 91839-0430 · <a href="https://www.instagram.com/mestredosreparosfacilites" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@mestredosreparos-i9d" target="_blank" rel="noopener">YouTube</a></p><p style="margin-top:12px"><a href="/p/eletricista-em-barueri.html">Eletricista em Barueri</a> · <a href="/p/eletricista-condominios-barueri.html">Condomínios</a> · <a href="/2026/10/manutencao-para-empresas.html">Empresas</a> · <a href="/2026/10/reformas-em-geral.html">Reformas</a></p></div></footer>
+<footer><div class="wrap"><p><b>Mestre dos Reparos Manutenção &amp; Limpeza</b> · CNPJ 64.521.657/0001-87<br>Av. Henrique Gonçalves Baptista, 2245 · Jardim Belval · Barueri/SP · CEP 06420-130<br>Responsável técnico: Paulo, Engenheiro Eletricista · CREA 141129611802<br>WhatsApp (11) 91839-0430 · <a href="https://www.instagram.com/mestredosreparosfacilites" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@mestredosreparos-i9d" target="_blank" rel="noopener">YouTube</a></p><p style="margin-top:12px"><a href="/p/eletricista-em-barueri.html">Eletricista em Barueri</a> · <a href="/p/eletricista-condominios-barueri.html">Condomínios</a> · <a href="/2026/10/manutencao-para-empresas.html">Empresas</a> · <a href="/2026/10/reformas-em-geral.html">Reformas</a> · <a href="/p/quem-somos-mestre-dos-reparos.html">Quem somos</a></p></div></footer>
 
 <div class="fixo"><a class="btn btn-wa" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20vim%20pelo%20site." target="_blank" rel="noopener">📲 Orçamento no WhatsApp</a><a class="btn tel" href="tel:+5511918390430" aria-label="Ligar">📞</a></div>
-
 <div class="sheet" id="sheet"><div class="bg"></div><div class="box"><button class="x" aria-label="Fechar">×</button><div id="sheet-c"></div></div></div>
-
 <script>
-const WA='https://wa.me/5511918390430?text=';
+const WA='https://wa.me/5511918390430?text=',$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const P={
 eletrica:[
-{ic:'🔥',t:'Tomada esquentando ou derretendo',s:'Risco de incêndio',hot:1,img:'tomada-queimada',d:'Tomada quente não é normal: é mau contato ou fio fino. O disjuntor não desarma porque não é curto — é aquecimento.',f:['Trocamos tomada e caixa','Refazemos as conexões (conectores Wago)','Conferimos o circuito e a corrente']},
+{ic:'🔥',t:'Tomada esquentando ou derretendo',s:'Risco de incêndio',hot:1,img:'tomada-queimada',d:'Tomada quente não é normal: é mau contato ou fio fino. O disjuntor não desarma porque não é curto — é aquecimento.',f:['Trocamos tomada e caixa','Refazemos as conexões','Conferimos o circuito e a corrente']},
 {ic:'⚡',t:'Disjuntor caindo',s:'Sozinho ou ao ligar aparelhos',hot:1,img:'quadro-antes',d:'Disjuntor que cai está avisando: sobrecarga, curto ou componente com defeito. Rearmar várias vezes piora.',f:['Diagnóstico com alicate amperímetro','Identificação do circuito com problema','Correção e disjuntor adequado']},
-{ic:'🚿',t:'Chuveiro desarmando ou sem esquentar',s:'Chuveiro, resistência, circuito',img:'quadro-novo',d:'Chuveiro puxa muita corrente. Se divide circuito ou o cabo é fino, desarma a casa toda.',f:['Medição de corrente','Circuito exclusivo para o chuveiro','Troca de resistência ou disjuntor']},
-{ic:'🗄️',t:'Quadro antigo ou com emendas',s:'Troca de disjuntores e organização',img:'quadro2-antes',d:'Quadro com mais de 15 anos, marcas de calor ou emendas precisa de revisão.',f:['Disjuntores novos (DIN)','Fiação organizada e identificada','Medição antes da entrega']},
-{ic:'💡',t:'Iluminação, LED e pendentes',s:'Spots, perfis, pendentes',img:'sanca-led',d:'Projeto de luz bonito começa na instalação certa: pontos, drivers e fixação.',f:['Spots e perfis de LED','Pendentes e lustres','Interruptores inteligentes']},
+{ic:'🚿',t:'Chuveiro desarmando ou sem esquentar',s:'Resistência, circuito',img:'quadro-novo',d:'Chuveiro puxa muita corrente. Se divide circuito ou o cabo é fino, desarma a casa toda.',f:['Medição de corrente','Circuito exclusivo para o chuveiro','Troca de resistência ou disjuntor']},
+{ic:'🗄️',t:'Quadro antigo ou com emendas',s:'Troca e organização',img:'quadro2-antes',d:'Quadro com mais de 15 anos, marcas de calor ou emendas precisa de revisão.',f:['Disjuntores novos (DIN)','Fiação organizada e identificada','Medição antes da entrega']},
 {ic:'🔌',t:'Pontos novos e tomadas',s:'Tomadas, interruptores, 220V',img:'interruptor-smart',d:'Precisa de mais tomadas ou um ponto 220V? Fazemos com o circuito dimensionado.',f:['Novos pontos e tomadas','Ponto para forno, cooktop, air fryer','Acabamento caprichado']}],
+iluminacao:[
+{ic:'💡',t:'Iluminação, LED e pendentes',s:'Spots, perfis, pendentes',img:'sanca-led',d:'Luz bonita começa na instalação certa: pontos, drivers e fixação.',f:['Spots e perfis de LED','Pendentes e lustres','Interruptores inteligentes']}],
 predial:[
-{ic:'🏢',t:'Condomínios',s:'Áreas comuns e manutenção',img:'galpao',d:'Manutenção elétrica e predial para condomínios, com nota fiscal e responsável técnico.',f:['Iluminação de áreas comuns','Quadros e disjuntores','Manutenção preventiva']},
-{ic:'🏭',t:'Galpões e empresas',s:'Iluminação em altura, quadros',img:'galpao-led',d:'Trabalho em altura com equipamento e segurança, sem parar sua operação.',f:['Iluminação LED em galpão','Fiação circuito por circuito','Contrato de manutenção']}],
+{ic:'🏢',t:'Condomínios',s:'Áreas comuns e preventiva',img:'galpao',d:'Manutenção elétrica e predial para condomínios, com nota fiscal e responsável técnico.',f:['Iluminação de áreas comuns','Quadros e disjuntores','Manutenção preventiva']},
+{ic:'🏭',t:'Galpões e empresas',s:'Iluminação em altura, quadros',img:'galpao-led',d:'Trabalho em altura com equipamento e segurança, sem parar sua operação.',f:['Iluminação LED em galpão','Revisão circuito por circuito','Contrato de manutenção']}],
 reforma:[
 {ic:'🧱',t:'Forro de drywall',s:'Com elétrica embutida',img:'forro-antes',d:'Forro com os pontos elétricos já planejados — sem retrabalho.',f:['Estrutura e placas','Pontos de iluminação','Acabamento pronto para pintura']},
-{ic:'🎨',t:'Pintura e acabamento',s:'Paredes, portas, retoques',img:'portas',d:'Acabamento limpo, com proteção dos móveis e piso.',f:['Pintura interna','Instalação de portas','Retoques e reparos']},
-{ic:'🚰',t:'Pequenos reparos hidráulicos',s:'Registros, vazamentos, sifões',img:'calha',d:'Vazamento pequeno vira prejuízo grande. Resolvemos sem quebradeira quando possível.',f:['Troca de registros e reparos','Sifões e ligações','Instalação de máquinas']}],
+{ic:'🎨',t:'Pintura e acabamento',s:'Paredes, portas, retoques',img:'portas',d:'Acabamento limpo, com proteção dos móveis e piso.',f:['Pintura interna','Instalação de portas','Retoques e reparos']}],
+hidraulica:[
+{ic:'💧',t:'Vazamento ou registro pingando',s:'Registros, sifões, ligações',hot:1,img:'calha',d:'Vazamento pequeno vira prejuízo grande. Localizamos e resolvemos sem quebradeira quando possível.',f:['Troca de registros e reparos','Sifões e ligações','Instalação de máquinas']},
+{ic:'🍂',t:'Calha transbordando',s:'Antes da chuva forte',img:'calha',d:'Calha cheia de folhas é água entrando em casa na primeira chuva.',f:['Retirada de folhas e sujeira','Teste de escoamento','Revisão visual']}],
 limpeza:[
-{ic:'🌀',t:'Exaustores e ventilação',s:'Banheiro úmido, mofo',img:'exaustor-antes',d:'Exaustor sujo não tira o vapor e o banheiro fica com mofo.',f:['Limpeza completa','Reinstalação','Verificação elétrica']},
-{ic:'🍂',t:'Limpeza de calhas',s:'Antes da chuva forte',img:'calha',d:'Calha cheia de folhas é água entrando em casa na primeira chuva.',f:['Retirada de folhas e sujeira','Teste de escoamento','Revisão visual']},
+{ic:'🌀',t:'Exaustor sem puxar / mofo',s:'Banheiro úmido',img:'exaustor-antes',d:'Exaustor sujo não tira o vapor e o banheiro fica com mofo.',f:['Limpeza completa','Reinstalação','Verificação elétrica']},
 {ic:'🧹',t:'Limpeza pós-obra',s:'Pó e resíduos da reforma',img:'forro-depois',d:'O pó da obra fica em frestas e superfícies. Entregamos pronto para morar.',f:['Limpeza fina','Vidros e esquadrias','Retirada de resíduos']}]};
-function card(p,k,i){return `<button class="card rv${p.hot?' hot':''}" data-g="${k}" data-i="${i}"><span class="ic">${p.ic}</span><b>${p.t}</b><small>${p.s}</small></button>`}
-for(const k in P){document.getElementById('g-'+k).innerHTML=P[k].map((p,i)=>card(p,k,i)).join('')}
-const sh=document.getElementById('sheet'),sc=document.getElementById('sheet-c');
-document.addEventListener('click',e=>{const c=e.target.closest('.card');if(c){const p=P[c.dataset.g][c.dataset.i];const msg=encodeURIComponent(`Olá! Vim pelo site. Preciso de ajuda com: ${p.t}. Meu bairro é: `);
-sc.innerHTML=`<span class="tag">${p.ic} ${p.s}</span><h3>${p.t}</h3><img src="img/${p.img}.jpg" alt="${p.t}"><p>${p.d}</p><ul>${p.f.map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn btn-wa" href="${WA+msg}" target="_blank" rel="noopener">📲 Chamar no WhatsApp</a>`;sh.classList.add('on')}
+const sh=$('#sheet'),sc=$('#sheet-c');
+function abre(p){const m=encodeURIComponent(`Olá! Vim pelo site. Preciso de ajuda com: ${p.t}. Meu bairro é: `);
+sc.innerHTML=`<span class="badge">${p.ic} ${p.s}</span><h3 style="margin-top:12px">${p.t}</h3><img src="img/${p.img}.jpg" alt="${p.t}"><p>${p.d}</p><ul>${p.f.map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn btn-wa" href="${WA+m}" target="_blank" rel="noopener">📲 Chamar no WhatsApp</a>`;sh.classList.add('on')}
+function lista(g){const L=P[g];sc.innerHTML=`<h3>Escolha o problema</h3><div class="dores">${L.map((p,i)=>`<button class="dor${p.hot?' hot':''}" data-g="${g}" data-i="${i}">${p.ic} ${p.t}</button>`).join('')}</div>`;sh.classList.add('on')}
+const todas=[];for(const g in P)P[g].forEach((p,i)=>todas.push([g,i,p]));
+$('#dores').innerHTML=todas.filter(x=>x[2].hot||['🚿','🗄️','🌀'].includes(x[2].ic)).map(([g,i,p])=>`<button class="dor${p.hot?' hot':''}" data-g="${g}" data-i="${i}">${p.ic} ${p.t}</button>`).join('');
+document.addEventListener('click',e=>{const d=e.target.closest('.dor');if(d){abre(P[d.dataset.g][d.dataset.i]);return}
+const t=e.target.closest('.tile');if(t){lista(t.dataset.g);return}
 if(e.target.matches('.sheet .bg,.x'))sh.classList.remove('on')});
-document.querySelectorAll('.chips').forEach(g=>g.addEventListener('click',e=>{if(!e.target.matches('.chip'))return;g.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));e.target.classList.add('on');monta()}));
-const env=document.getElementById('enviar'),bai=document.getElementById('bairro');bai.addEventListener('input',monta);
-function monta(){const l=document.querySelector('[data-k=local] .on')?.textContent||'',s=document.querySelector('[data-k=servico] .on')?.textContent||'';env.href=WA+encodeURIComponent(`Olá! Vim pelo site. Local: ${l||'-'}. Serviço: ${s||'-'}. Bairro: ${bai.value||'-'}.`)}monta();
-const F=[...document.querySelectorAll('script[type="application/ld+json"]')].map(s=>JSON.parse(s.textContent)).find(j=>j['@type']==='FAQPage').mainEntity;
-document.getElementById('faq').innerHTML=F.map(q=>`<details class="rv"><summary>${q.name}</summary><p>${q.acceptedAnswer.text}</p></details>`).join('');
-document.querySelectorAll('.cmp').forEach(c=>{const d=c.querySelector('.depois'),b=c.querySelector('.bar');const set=x=>{const r=c.getBoundingClientRect();let p=Math.max(0,Math.min(100,(x-r.left)/r.width*100));d.style.clipPath=`inset(0 0 0 ${p}%)`;b.style.left=p+'%'};let on=false;
+addEventListener('keydown',e=>{if(e.key==='Escape')sh.classList.remove('on')});
+/* typed hero */
+const dores=['Tomada esquentando?','Disjuntor caindo?','Chuveiro desarmando?','Vazamento na parede?','Calha transbordando?','Reforma sem fim?'];let di=0;const ty=$('#typed');
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)setInterval(()=>{di=(di+1)%dores.length;let s=dores[di],k=0;ty.textContent='';const iv=setInterval(()=>{ty.textContent=s.slice(0,++k);if(k>=s.length)clearInterval(iv)},45)},3200);
+/* circuit lines */
+(function(){const sv=$('#circ'),W=innerWidth,H=Math.max(innerHeight,640);sv.setAttribute('viewBox',`0 0 ${W} ${H}`);let html='',n=W<700?5:12;
+for(let i=0;i<n;i++){const left=i%2==0;let x=left?0:W,y=60+Math.random()*(H-120),d=`M${x} ${y}`;const seg=3+Math.floor(Math.random()*3);
+for(let k=0;k<seg;k++){x+= (left?1:-1)*(40+Math.random()*W*.12);d+=` H${x|0}`;if(k<seg-1){y+=(Math.random()<.5?-1:1)*(30+Math.random()*70);y=Math.max(20,Math.min(H-20,y));d+=` V${y|0}`}}
+const L=W*.6+400,del=(i*.18).toFixed(2);html+=`<path d="${d}" style="--l:${L};animation-delay:${del}s"/><circle cx="${x|0}" cy="${y|0}" r="3.5" style="animation-delay:${(+del+2.6).toFixed(2)}s"/>`;
+if(i%3==0)html+=`<circle class="pulse" r="2.6"><animateMotion dur="${(3+Math.random()*3).toFixed(1)}s" begin="${(+del+3).toFixed(1)}s" repeatCount="indefinite" path="${d}"/></circle>`}
+sv.innerHTML=html})();
+/* progress + counters + reveal */
+addEventListener('scroll',()=>{const h=document.documentElement;$('#prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+function conta(el){const n=+el.dataset.n,dec=+(el.dataset.d||0),t0=performance.now();const f=t=>{const p=Math.min(1,(t-t0)/1400),v=n*(1-Math.pow(1-p,3));el.textContent=v.toFixed(dec).replace('.',',');if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');x.target.querySelectorAll('[data-n]').forEach(conta);io.unobserve(x.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+/* tilt (desktop) */
+if(matchMedia('(hover:hover)').matches)$$('.tile').forEach(t=>{t.addEventListener('pointermove',e=>{const r=t.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;t.style.transform=`perspective(800px) rotateY(${x*8}deg) rotateX(${-y*8}deg)`});t.addEventListener('pointerleave',()=>t.style.transform='')});
+/* quiz */
+const Q=[{q:'Quantos anos tem a instalação elétrica?',o:[['Menos de 10 anos',0],['10 a 20 anos',1],['Mais de 20 anos',2],['Não sei',1]]},
+{q:'Alguma tomada ou espelho fica quente, escurecido ou com cheiro de queimado?',o:[['Não',0],['Já percebi calor',2],['Tem marca escura ou cheiro',3],['Não reparei',1]]},
+{q:'O disjuntor cai com frequência?',o:[['Nunca',0],['Às vezes, com chuveiro ou forno',2],['Cai sozinho',3],['Não tenho disjuntor (fusível)',3]]},
+{q:'Usa benjamim, extensão ou “T” para ligar aparelhos fixos?',o:[['Não',0],['Em 1 ou 2 lugares',1],['Em vários lugares',2],['No ar-condicionado ou chuveiro',3]]}];
+let qi=0,pts=0,resp=[];
+function qr(){const qc=$('#qc');$('#qb').style.width=(qi/Q.length*100)+'%';
+if(qi<Q.length){const q=Q[qi];qc.innerHTML=`<div class="kicker">pergunta ${qi+1} de ${Q.length}</div><h3 style="margin-top:8px">${q.q}</h3><div class="opts">${q.o.map((o,k)=>`<button class="opt" data-k="${k}">${o[0]}</button>`).join('')}</div>`;return}
+const max=11,p=pts/max,nv=pts<=2?['Risco baixo','#25d366','Sua instalação parece em ordem. Uma revisão preventiva a cada 5 anos mantém assim.']:pts<=5?['Atenção','#f5b700','Há sinais que merecem revisão. Vale uma vistoria antes que vire emergência.']:['Risco alto','#ff4d4d','Calor, cheiro ou disjuntor caindo são sinais de aquecimento. Evite sobrecarregar e chame um eletricista o quanto antes.'];
+const m=encodeURIComponent(`Olá! Fiz o diagnóstico no site e deu: ${nv[0]}. Respostas: ${resp.join(' | ')}. Meu bairro é: `);
+qc.innerHTML=`<div class="res"><div class="kicker">resultado</div><div class="nv" style="color:${nv[1]}">${nv[0]}</div><div class="gauge"><i id="gi"></i></div><p>${nv[2]}</p><a class="btn btn-wa" href="${WA+m}" target="_blank" rel="noopener">📲 Enviar resultado ao engenheiro</a> <button class="btn btn-glass" id="refaz" style="margin-top:10px">Refazer</button></div>`;
+requestAnimationFrame(()=>setTimeout(()=>$('#gi').style.left=Math.min(98,p*100)+'%',60))}
+$('#quiz').addEventListener('click',e=>{const o=e.target.closest('.opt');if(o){const q=Q[qi],v=q.o[o.dataset.k];pts+=v[1];resp.push(v[0]);qi++;qr()}if(e.target.id==='refaz'){qi=0;pts=0;resp=[];qr()}});qr();
+/* reviews marquee */
+const R=[['Marcelo Fernandes','Gostei muito do trabalho, super atenciosos, é visível o conhecimento e entendimento do que fazem… todas as dúvidas tiraram.'],['Anderson Querido','Paulo realizou um excelente atendimento. É visível que tem grande domínio técnico para execução dos reparos. Os valores praticados são justos.'],['Leandro Silva','Instalaram um pendente aqui no meu AP, ficou top d+, parece pôr do sol. Obrigado pelo excelente atendimento.'],['Barutec - Informática','O serviço foi de qualidade, tudo ficou perfeito, o atendimento foi muito bom, tudo explicadinho sem enrolação.'],['Kelly Carvalho','Serviço de limpeza excelente! A equipe é pontual, organizada e deixou o ambiente impecável.'],['Rodrigo Ferrari','Profissional excelente! Caprichoso e justo. Merece indicação!']];
+const rh=R.map(r=>`<article><div class="star">★★★★★<span class="g">Google</span></div><p>“${r[1]}”</p><cite>${r[0]}</cite></article>`).join('');$('#rev').innerHTML=rh+rh.replace(/<article>/g,'<article aria-hidden="true">');
+/* pergunte */
+const pg=$('#perg'),ep=$('#enviaP');const mp=()=>ep.href=WA+encodeURIComponent('Pergunta para o engenheiro (vim pelo site): '+(pg.value||''));pg.addEventListener('input',mp);mp();
+$('#sug').addEventListener('click',e=>{if(e.target.tagName==='BUTTON'){pg.value=e.target.textContent;mp();pg.focus()}});
+/* orçamento */
+$$('.chips').forEach(g=>g.addEventListener('click',e=>{if(!e.target.matches('.chip'))return;g.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));e.target.classList.add('on');monta()}));
+const env=$('#enviar'),bai=$('#bairro');bai.addEventListener('input',monta);
+function monta(){const l=$('[data-k=local] .on')?.textContent||'',s=$('[data-k=servico] .on')?.textContent||'';env.href=WA+encodeURIComponent(`Olá! Vim pelo site. Local: ${l||'-'}. Serviço: ${s||'-'}. Bairro: ${bai.value||'-'}.`)}monta();
+/* faq */
+const F=$$('script[type="application/ld+json"]').map(s=>JSON.parse(s.textContent)).find(j=>j['@type']==='FAQPage').mainEntity;
+$('#faq').innerHTML=F.map(q=>`<details class="rv in"><summary>${q.name}</summary><p>${q.acceptedAnswer.text}</p></details>`).join('');
+/* antes/depois */
+$$('.cmp').forEach(c=>{const d=c.querySelector('.depois'),b=c.querySelector('.bar');const set=x=>{const r=c.getBoundingClientRect();let p=Math.max(0,Math.min(100,(x-r.left)/r.width*100));d.style.clipPath=`inset(0 0 0 ${p}%)`;b.style.left=p+'%'};let on=false;
 c.addEventListener('pointerdown',e=>{on=true;set(e.clientX)});addEventListener('pointermove',e=>{if(on)set(e.clientX)});addEventListener('pointerup',()=>on=false);
-c.addEventListener('touchmove',e=>{set(e.touches[0].clientX)},{passive:true})});
-const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+c.addEventListener('touchmove',e=>set(e.touches[0].clientX),{passive:true})});
 </script>
 </body>
 </html>
