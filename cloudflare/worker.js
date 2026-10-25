@@ -28,6 +28,7 @@ class LinkFix {
 const MOBILE = /Mobi|Android|iPhone|iPad|iPod/i;
 const NOVA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/ccr-33db381a-6kweq8/nova/';
 const RAIZ = '/p/mestre-dos-reparos-manutencao-reparos.html';
+const HOME_MOD = '2026-10-25T22:30:00Z';   // última atualização da home nova (sitemap)
 
 // Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
 const IMG = /(https:\/\/blogger\.googleusercontent\.com\/img\/[^\s"',]+?=)([swh]\d+[^\s"',]*)/g;
@@ -111,7 +112,8 @@ export default {
     const html = (h.get('content-type') || '').includes('text/html');
     if (req.pathname.startsWith('/sitemap') && resp.status === 200) {
       const xml = (await resp.text()).split(ORIGIN + RAIZ).join(ORIGIN + '/');
-      return new Response(xml, { status: 200, headers: h });
+      const casa = xml.replace(new RegExp('(<loc>' + ORIGIN + '/</loc><lastmod>)[^<]*'), '$1' + HOME_MOD);
+      return new Response(casa, { status: 200, headers: h });
     }
     if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600');
     const out = new Response(resp.body, { status: resp.status, headers: h });
