@@ -1,0 +1,5 @@
+Zona DNS mestredosreparos.app.br (Registro.br, servidores a.sec.dns.br / c.sec.dns.br) em 25/10/2026:
+TXT   mestredosreparos.app.br            tiktok-developers-site-verification=5q89lWCSFgk3JspodSWfmrNtVbQZIr4R
+CNAME tr3i6mh7r2qc.mestredosreparos.app.br  gv-45qtiuniwt36g3.dv.googlehosted.com
+CNAME www.mestredosreparos.app.br          ghs.google.com
+(sem registro A no domínio raiz, sem MX)

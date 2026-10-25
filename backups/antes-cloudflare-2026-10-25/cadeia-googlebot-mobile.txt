@@ -1,0 +1,120 @@
+== /p/termos-de-uso.html
+   302 /p/termos-de-uso.html -> /p/termos-de-uso.html?m=1
+   200 /p/termos-de-uso.html?m=1 
+== /p/llms.html
+   302 /p/llms.html -> /p/llms.html?m=1
+   200 /p/llms.html?m=1 
+== /p/eletricista-condominios-barueri.html
+   302 /p/eletricista-condominios-barueri.html -> /p/eletricista-condominios-barueri.html?m=1
+   200 /p/eletricista-condominios-barueri.html?m=1 
+== /p/mestre-dos-reparos-manutencao-reparos.html
+   302 /p/mestre-dos-reparos-manutencao-reparos.html -> /p/mestre-dos-reparos-manutencao-reparos.html?m=1
+   200 /p/mestre-dos-reparos-manutencao-reparos.html?m=1 
+== /p/quem-somos-mestre-dos-reparos.html
+   302 /p/quem-somos-mestre-dos-reparos.html -> /p/quem-somos-mestre-dos-reparos.html?m=1
+   200 /p/quem-somos-mestre-dos-reparos.html?m=1 
+== /p/contrato-de-limpeza-para-empresas.html
+   302 /p/contrato-de-limpeza-para-empresas.html -> /p/contrato-de-limpeza-para-empresas.html?m=1
+   200 /p/contrato-de-limpeza-para-empresas.html?m=1 
+== /p/contrato-de-manutencao-para-empresas.html
+   302 /p/contrato-de-manutencao-para-empresas.html -> /p/contrato-de-manutencao-para-empresas.html?m=1
+   200 /p/contrato-de-manutencao-para-empresas.html?m=1 
+== /p/diarista-com-agendamento-em-barueri-e.html
+   302 /p/diarista-com-agendamento-em-barueri-e.html -> /p/diarista-com-agendamento-em-barueri-e.html?m=1
+   200 /p/diarista-com-agendamento-em-barueri-e.html?m=1 
+== /p/limpeza-pos-mudanca-em-barueri-e-regiao.html
+   302 /p/limpeza-pos-mudanca-em-barueri-e-regiao.html -> /p/limpeza-pos-mudanca-em-barueri-e-regiao.html?m=1
+   200 /p/limpeza-pos-mudanca-em-barueri-e-regiao.html?m=1 
+== /p/limpeza-pos-obra-em-barueri-e-regiao.html
+   302 /p/limpeza-pos-obra-em-barueri-e-regiao.html -> /p/limpeza-pos-obra-em-barueri-e-regiao.html?m=1
+   200 /p/limpeza-pos-obra-em-barueri-e-regiao.html?m=1 
+== /p/reforma-na-aldeia-da-serra-obra.html
+   302 /p/reforma-na-aldeia-da-serra-obra.html -> /p/reforma-na-aldeia-da-serra-obra.html?m=1
+   200 /p/reforma-na-aldeia-da-serra-obra.html?m=1 
+== /p/reforma-em-cotia-obra-completa-com.html
+   302 /p/reforma-em-cotia-obra-completa-com.html -> /p/reforma-em-cotia-obra-completa-com.html?m=1
+   200 /p/reforma-em-cotia-obra-completa-com.html?m=1 
+== /p/reforma-em-osasco-pintura-pisos-e.html
+   302 /p/reforma-em-osasco-pintura-pisos-e.html -> /p/reforma-em-osasco-pintura-pisos-e.html?m=1
+   200 /p/reforma-em-osasco-pintura-pisos-e.html?m=1 
+== /p/reforma-em-itapevi-obra-completa-com.html
+   302 /p/reforma-em-itapevi-obra-completa-com.html -> /p/reforma-em-itapevi-obra-completa-com.html?m=1
+   200 /p/reforma-em-itapevi-obra-completa-com.html?m=1 
+== /p/reforma-em-jandira-pintura-pisos-e.html
+   302 /p/reforma-em-jandira-pintura-pisos-e.html -> /p/reforma-em-jandira-pintura-pisos-e.html?m=1
+   200 /p/reforma-em-jandira-pintura-pisos-e.html?m=1 
+== /p/reforma-em-carapicuiba-obra-completa.html
+   302 /p/reforma-em-carapicuiba-obra-completa.html -> /p/reforma-em-carapicuiba-obra-completa.html?m=1
+   200 /p/reforma-em-carapicuiba-obra-completa.html?m=1 
+== /p/reforma-em-santana-de-parnaiba-pintura.html
+   302 /p/reforma-em-santana-de-parnaiba-pintura.html -> /p/reforma-em-santana-de-parnaiba-pintura.html?m=1
+   200 /p/reforma-em-santana-de-parnaiba-pintura.html?m=1 
+== /p/reforma-na-regina-alice-barueri-obra.html
+   302 /p/reforma-na-regina-alice-barueri-obra.html -> /p/reforma-na-regina-alice-barueri-obra.html?m=1
+   200 /p/reforma-na-regina-alice-barueri-obra.html?m=1 
+== /p/reforma-na-cruz-preta-barueri-obra.html
+   302 /p/reforma-na-cruz-preta-barueri-obra.html -> /p/reforma-na-cruz-preta-barueri-obra.html?m=1
+   200 /p/reforma-na-cruz-preta-barueri-obra.html?m=1 
+== /p/reforma-na-vila-sao-francisco-barueri.html
+   302 /p/reforma-na-vila-sao-francisco-barueri.html -> /p/reforma-na-vila-sao-francisco-barueri.html?m=1
+   200 /p/reforma-na-vila-sao-francisco-barueri.html?m=1 
+== /p/reforma-no-jardim-mutinga-barueri-obra.html
+   302 /p/reforma-no-jardim-mutinga-barueri-obra.html -> /p/reforma-no-jardim-mutinga-barueri-obra.html?m=1
+   200 /p/reforma-no-jardim-mutinga-barueri-obra.html?m=1 
+== /p/reforma-no-jardim-paraiso-barueri.html
+   302 /p/reforma-no-jardim-paraiso-barueri.html -> /p/reforma-no-jardim-paraiso-barueri.html?m=1
+   200 /p/reforma-no-jardim-paraiso-barueri.html?m=1 
+== /p/reforma-no-jardim-california-barueri.html
+   302 /p/reforma-no-jardim-california-barueri.html -> /p/reforma-no-jardim-california-barueri.html?m=1
+   200 /p/reforma-no-jardim-california-barueri.html?m=1 
+== /p/reforma-nas-chacaras-marco-barueri-obra.html
+   302 /p/reforma-nas-chacaras-marco-barueri-obra.html -> /p/reforma-nas-chacaras-marco-barueri-obra.html?m=1
+   200 /p/reforma-nas-chacaras-marco-barueri-obra.html?m=1 
+== /p/reforma-no-jardim-dos-camargos-barueri.html
+   302 /p/reforma-no-jardim-dos-camargos-barueri.html -> /p/reforma-no-jardim-dos-camargos-barueri.html?m=1
+   200 /p/reforma-no-jardim-dos-camargos-barueri.html?m=1 
+== /p/reforma-na-vila-boa-vista-barueri-obra.html
+   302 /p/reforma-na-vila-boa-vista-barueri-obra.html -> /p/reforma-na-vila-boa-vista-barueri-obra.html?m=1
+   200 /p/reforma-na-vila-boa-vista-barueri-obra.html?m=1 
+== /p/reforma-no-jardim-tupanci-barueri-obra.html
+   302 /p/reforma-no-jardim-tupanci-barueri-obra.html -> /p/reforma-no-jardim-tupanci-barueri-obra.html?m=1
+   200 /p/reforma-no-jardim-tupanci-barueri-obra.html?m=1 
+== /p/reforma-no-jardim-maria-helena-barueri.html
+   302 /p/reforma-no-jardim-maria-helena-barueri.html -> /p/reforma-no-jardim-maria-helena-barueri.html?m=1
+   200 /p/reforma-no-jardim-maria-helena-barueri.html?m=1 
+== /p/reforma-no-parque-imperial-barueri-obra.html
+   302 /p/reforma-no-parque-imperial-barueri-obra.html -> /p/reforma-no-parque-imperial-barueri-obra.html?m=1
+   200 /p/reforma-no-parque-imperial-barueri-obra.html?m=1 
+== /p/reforma-no-engenho-novo-barueri-obra.html
+   302 /p/reforma-no-engenho-novo-barueri-obra.html -> /p/reforma-no-engenho-novo-barueri-obra.html?m=1
+   200 /p/reforma-no-engenho-novo-barueri-obra.html?m=1 
+== /p/reforma-no-jardim-silveira-barueri.html
+   302 /p/reforma-no-jardim-silveira-barueri.html -> /p/reforma-no-jardim-silveira-barueri.html?m=1
+   200 /p/reforma-no-jardim-silveira-barueri.html?m=1 
+== /p/reforma-no-jardim-belval-barueri-obra.html
+   302 /p/reforma-no-jardim-belval-barueri-obra.html -> /p/reforma-no-jardim-belval-barueri-obra.html?m=1
+   200 /p/reforma-no-jardim-belval-barueri-obra.html?m=1 
+== /p/reforma-na-aldeia-de-barueri-obra.html
+   302 /p/reforma-na-aldeia-de-barueri-obra.html -> /p/reforma-na-aldeia-de-barueri-obra.html?m=1
+   200 /p/reforma-na-aldeia-de-barueri-obra.html?m=1 
+== /p/reforma-no-bethaville-barueri-pintura-e.html
+   302 /p/reforma-no-bethaville-barueri-pintura-e.html -> /p/reforma-no-bethaville-barueri-pintura-e.html?m=1
+   200 /p/reforma-no-bethaville-barueri-pintura-e.html?m=1 
+== /p/reforma-no-tambore-barueri-obra-completa.html
+   302 /p/reforma-no-tambore-barueri-obra-completa.html -> /p/reforma-no-tambore-barueri-obra-completa.html?m=1
+   200 /p/reforma-no-tambore-barueri-obra-completa.html?m=1 
+== /p/reforma-em-alphaville-pintura-pisos-e.html
+   302 /p/reforma-em-alphaville-pintura-pisos-e.html -> /p/reforma-em-alphaville-pintura-pisos-e.html?m=1
+   200 /p/reforma-em-alphaville-pintura-pisos-e.html?m=1 
+== /p/reforma-no-centro-de-barueri-obra.html
+   302 /p/reforma-no-centro-de-barueri-obra.html -> /p/reforma-no-centro-de-barueri-obra.html?m=1
+   200 /p/reforma-no-centro-de-barueri-obra.html?m=1 
+== /p/pisos-porcelanato-ceramica-ardosia.html
+   302 /p/pisos-porcelanato-ceramica-ardosia.html -> /p/pisos-porcelanato-ceramica-ardosia.html?m=1
+   200 /p/pisos-porcelanato-ceramica-ardosia.html?m=1 
+== /p/pintura-forro-e-paredes-de-drywall-em.html
+   302 /p/pintura-forro-e-paredes-de-drywall-em.html -> /p/pintura-forro-e-paredes-de-drywall-em.html?m=1
+   200 /p/pintura-forro-e-paredes-de-drywall-em.html?m=1 
+== /p/reformas-residenciais-e-comerciais-em.html
+   302 /p/reformas-residenciais-e-comerciais-em.html -> /p/reformas-residenciais-e-comerciais-em.html?m=1
+   200 /p/reformas-residenciais-e-comerciais-em.html?m=1 
