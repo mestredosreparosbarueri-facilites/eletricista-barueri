@@ -71,7 +71,7 @@ export default {
       const chave = new Request(req.origin + '/__home');
       const hit = await caches.default.match(chave);
       if (hit) return hit;
-      const r = await fetch(NOVA + 'home.html', { cf: { cacheTtl: 300, cacheEverything: true } });
+      const r = await fetch(NOVA + 'home.html', { cf: { cacheTtl: 30, cacheEverything: true } });
       if (r.ok) {
         const out = new Response(r.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
         ctx.waitUntil(caches.default.put(chave, out.clone()));
