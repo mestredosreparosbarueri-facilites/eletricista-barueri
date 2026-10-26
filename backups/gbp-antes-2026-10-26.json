@@ -1,0 +1,2707 @@
+{
+  "title": "Mestre dos Reparos Manutenção e Limpeza",
+  "categories": {
+    "primaryCategory": {
+      "name": "categories/gcid:electrician",
+      "displayName": "Eletricista",
+      "serviceTypes": [
+        {
+          "serviceTypeId": "job_type_id:alarm_installation",
+          "displayName": "Instalação geral de alarmes"
+        },
+        {
+          "serviceTypeId": "job_type_id:antenna_installation",
+          "displayName": "Instalação de antenas"
+        },
+        {
+          "serviceTypeId": "job_type_id:auto_electrician",
+          "displayName": "Autoelétrico"
+        },
+        {
+          "serviceTypeId": "job_type_id:building",
+          "displayName": "Construção"
+        },
+        {
+          "serviceTypeId": "job_type_id:construction",
+          "displayName": "Construção geral"
+        },
+        {
+          "serviceTypeId": "job_type_id:electric_car_charger",
+          "displayName": "Instalação de estação para carregamento de carros elétricos"
+        },
+        {
+          "serviceTypeId": "job_type_id:electrical_design",
+          "displayName": "Design elétrico"
+        },
+        {
+          "serviceTypeId": "job_type_id:electrical_installation",
+          "displayName": "Instalação de aparelhos elétricos"
+        },
+        {
+          "serviceTypeId": "job_type_id:electrical_maintenance",
+          "displayName": "Manutenção elétrica"
+        },
+        {
+          "serviceTypeId": "job_type_id:electrical_services",
+          "displayName": "Montagem de peças elétricas"
+        },
+        {
+          "serviceTypeId": "job_type_id:electrical_wiring_installation",
+          "displayName": "Instalação de fiação elétrica"
+        },
+        {
+          "serviceTypeId": "job_type_id:electrical_wiring_repair",
+          "displayName": "Reparo de fiação elétrica"
+        },
+        {
+          "serviceTypeId": "job_type_id:electrician_remodeling",
+          "displayName": "Reformas"
+        },
+        {
+          "serviceTypeId": "job_type_id:fuse_changing",
+          "displayName": "Troca de fusível elétrico"
+        },
+        {
+          "serviceTypeId": "job_type_id:general_repairs",
+          "displayName": "Reparos gerais"
+        },
+        {
+          "serviceTypeId": "job_type_id:handyman",
+          "displayName": "Faz-tudo"
+        },
+        {
+          "serviceTypeId": "job_type_id:heater_element_changing",
+          "displayName": "Troca de resistência de aquecedor elétrico"
+        },
+        {
+          "serviceTypeId": "job_type_id:industrial",
+          "displayName": "Industrial"
+        },
+        {
+          "serviceTypeId": "job_type_id:inspections",
+          "displayName": "Inspeções elétricas"
+        },
+        {
+          "serviceTypeId": "job_type_id:install_fan",
+          "displayName": "Instalação de ventiladores"
+        },
+        {
+          "serviceTypeId": "job_type_id:install_ground_wire",
+          "displayName": "Instalação de aterramento"
+        },
+        {
+          "serviceTypeId": "job_type_id:install_light_fixtures",
+          "displayName": "Instalação de luminárias"
+        },
+        {
+          "serviceTypeId": "job_type_id:install_outdoor_lighting",
+          "displayName": "Instalação de iluminação externa"
+        },
+        {
+          "serviceTypeId": "job_type_id:install_outlets_switches",
+          "displayName": "Instalação de tomadas e interruptores"
+        },
+        {
+          "serviceTypeId": "job_type_id:install_security_system",
+          "displayName": "Instalação de sistema de segurança"
+        },
+        {
+          "serviceTypeId": "job_type_id:installation",
+          "displayName": "Instalação"
+        },
+        {
+          "serviceTypeId": "job_type_id:relocate_outlets_switches",
+          "displayName": "Realocação de tomadas e interruptores"
+        },
+        {
+          "serviceTypeId": "job_type_id:repair_fan",
+          "displayName": "Reparo de ventilador"
+        },
+        {
+          "serviceTypeId": "job_type_id:repair_light_fixtures",
+          "displayName": "Reparo de luminária"
+        },
+        {
+          "serviceTypeId": "job_type_id:repair_outlets_switches",
+          "displayName": "Reparo de tomadas e interruptores"
+        },
+        {
+          "serviceTypeId": "job_type_id:repair_panel",
+          "displayName": "Reparo de painel elétrico"
+        },
+        {
+          "serviceTypeId": "job_type_id:replace_upgrade_panel",
+          "displayName": "Troca ou upgrade de painel elétrico"
+        },
+        {
+          "serviceTypeId": "job_type_id:residential_ac",
+          "displayName": "A/C residencial"
+        },
+        {
+          "serviceTypeId": "job_type_id:restore_power",
+          "displayName": "Restauração de instalação elétrica"
+        }
+      ],
+      "moreHoursTypes": [
+        {
+          "hoursTypeId": "ACCESS",
+          "displayName": "Access",
+          "localizedDisplayName": "Acesso"
+        },
+        {
+          "hoursTypeId": "BREAKFAST",
+          "displayName": "Breakfast",
+          "localizedDisplayName": "Café da manhã"
+        },
+        {
+          "hoursTypeId": "BRUNCH",
+          "displayName": "Brunch",
+          "localizedDisplayName": "Brunch"
+        },
+        {
+          "hoursTypeId": "DELIVERY",
+          "displayName": "Delivery",
+          "localizedDisplayName": "Entrega"
+        },
+        {
+          "hoursTypeId": "DINNER",
+          "displayName": "Dinner",
+          "localizedDisplayName": "Jantar"
+        },
+        {
+          "hoursTypeId": "DRIVE_THROUGH",
+          "displayName": "Drive through",
+          "localizedDisplayName": "Drive-through"
+        },
+        {
+          "hoursTypeId": "HAPPY_HOUR",
+          "displayName": "Happy hours",
+          "localizedDisplayName": "Happy hours"
+        },
+        {
+          "hoursTypeId": "KITCHEN",
+          "displayName": "Kitchen",
+          "localizedDisplayName": "Cozinha"
+        },
+        {
+          "hoursTypeId": "LUNCH",
+          "displayName": "Lunch",
+          "localizedDisplayName": "Almoço"
+        },
+        {
+          "hoursTypeId": "ONLINE_SERVICE_HOURS",
+          "displayName": "Online service hours",
+          "localizedDisplayName": "Horário de atendimento on-line"
+        },
+        {
+          "hoursTypeId": "PICKUP",
+          "displayName": "Pickup",
+          "localizedDisplayName": "Retirada"
+        },
+        {
+          "hoursTypeId": "TAKEOUT",
+          "displayName": "Takeout",
+          "localizedDisplayName": "Para viagem"
+        },
+        {
+          "hoursTypeId": "SENIOR_HOURS",
+          "displayName": "Senior hours",
+          "localizedDisplayName": "Horário para idosos"
+        }
+      ]
+    },
+    "additionalCategories": [
+      {
+        "name": "categories/gcid:painter",
+        "displayName": "Pintor",
+        "serviceTypes": [
+          {
+            "serviceTypeId": "job_type_id:building",
+            "displayName": "Construção"
+          },
+          {
+            "serviceTypeId": "job_type_id:deck_painting",
+            "displayName": "Pintura de deques"
+          },
+          {
+            "serviceTypeId": "job_type_id:drywall_painting",
+            "displayName": "Pintura de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:exterior_painting",
+            "displayName": "Pintura de áreas externas"
+          },
+          {
+            "serviceTypeId": "job_type_id:faux_finishes",
+            "displayName": "Imitação de outro acabamento"
+          },
+          {
+            "serviceTypeId": "job_type_id:furniture_painting",
+            "displayName": "Pintura de móveis"
+          },
+          {
+            "serviceTypeId": "job_type_id:industrial",
+            "displayName": "Industrial"
+          },
+          {
+            "serviceTypeId": "job_type_id:interior_painting",
+            "displayName": "Pintura de áreas internas"
+          },
+          {
+            "serviceTypeId": "job_type_id:metal_painting",
+            "displayName": "Pintura de metal"
+          },
+          {
+            "serviceTypeId": "job_type_id:mural_painting",
+            "displayName": "Pintura de murais"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_cabinets",
+            "displayName": "Pintura de armários"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_doors",
+            "displayName": "Pintura de portas"
+          },
+          {
+            "serviceTypeId": "job_type_id:painting_designs",
+            "displayName": "Pintura de design especial"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_drywall",
+            "displayName": "Reparo de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_water_damage",
+            "displayName": "Reparo de danos causados pela água"
+          },
+          {
+            "serviceTypeId": "job_type_id:residential_ac",
+            "displayName": "A/C residencial"
+          },
+          {
+            "serviceTypeId": "job_type_id:roof_painting",
+            "displayName": "Pintura de telhados"
+          },
+          {
+            "serviceTypeId": "job_type_id:siding_painting",
+            "displayName": "Pintura de revestimentos"
+          },
+          {
+            "serviceTypeId": "job_type_id:spray",
+            "displayName": "Pintura com spray"
+          },
+          {
+            "serviceTypeId": "job_type_id:staining",
+            "displayName": "Coloração de madeira"
+          },
+          {
+            "serviceTypeId": "job_type_id:varnishing",
+            "displayName": "Envernizamento de madeira"
+          },
+          {
+            "serviceTypeId": "job_type_id:wallpaper_hanging",
+            "displayName": "Instalação de papel de parede"
+          },
+          {
+            "serviceTypeId": "job_type_id:wallpaper_removal",
+            "displayName": "Remoção de papel de parede"
+          },
+          {
+            "serviceTypeId": "job_type_id:wood_painting",
+            "displayName": "Pintura em madeira"
+          }
+        ],
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      },
+      {
+        "name": "categories/gcid:handyman",
+        "displayName": "Faz-tudo",
+        "serviceTypes": [
+          {
+            "serviceTypeId": "job_type_id:assemble_furniture",
+            "displayName": "Montagem de móveis"
+          },
+          {
+            "serviceTypeId": "job_type_id:carpenter",
+            "displayName": "Carpinteiro"
+          },
+          {
+            "serviceTypeId": "job_type_id:clean_gutters",
+            "displayName": "Limpeza de calhas"
+          },
+          {
+            "serviceTypeId": "job_type_id:cleaning",
+            "displayName": "Limpeza"
+          },
+          {
+            "serviceTypeId": "job_type_id:concierge_service",
+            "displayName": "Serviço de concierge"
+          },
+          {
+            "serviceTypeId": "job_type_id:construction",
+            "displayName": "Construção geral"
+          },
+          {
+            "serviceTypeId": "job_type_id:construction_worker",
+            "displayName": "Operário de construção civil"
+          },
+          {
+            "serviceTypeId": "job_type_id:drain_unblocker",
+            "displayName": "Desentupidor"
+          },
+          {
+            "serviceTypeId": "job_type_id:electrical",
+            "displayName": "Elétrico"
+          },
+          {
+            "serviceTypeId": "job_type_id:electrical_service",
+            "displayName": "Eletricista"
+          },
+          {
+            "serviceTypeId": "job_type_id:flooring_repairs",
+            "displayName": "Reparo de pisos"
+          },
+          {
+            "serviceTypeId": "job_type_id:gardener",
+            "displayName": "Jardineiro"
+          },
+          {
+            "serviceTypeId": "job_type_id:general_repairs",
+            "displayName": "Reparos gerais"
+          },
+          {
+            "serviceTypeId": "job_type_id:handyman_remodeling",
+            "displayName": "Reformas"
+          },
+          {
+            "serviceTypeId": "job_type_id:home_maintenance_and_repairs",
+            "displayName": "Reparo e manutenção domiciliar"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_drywall",
+            "displayName": "Instalação de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_fan",
+            "displayName": "Instalação de ventiladores"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_flooring",
+            "displayName": "Instalação de pisos"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_tile_work",
+            "displayName": "Instalação de azulejos"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_water_fixtures",
+            "displayName": "Instalação de equipamentos hidráulicos"
+          },
+          {
+            "serviceTypeId": "job_type_id:interior_painting",
+            "displayName": "Pintura de áreas internas"
+          },
+          {
+            "serviceTypeId": "job_type_id:mount_tv",
+            "displayName": "Fixação de TV"
+          },
+          {
+            "serviceTypeId": "job_type_id:moving_service",
+            "displayName": "Assistência para mudanças"
+          },
+          {
+            "serviceTypeId": "job_type_id:overnight",
+            "displayName": "Durante a noite"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_indoors",
+            "displayName": "Pintura interna"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_outdoors",
+            "displayName": "Pintura de áreas externas"
+          },
+          {
+            "serviceTypeId": "job_type_id:painting",
+            "displayName": "Pintura"
+          },
+          {
+            "serviceTypeId": "job_type_id:plumber",
+            "displayName": "Encanador"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_drywall",
+            "displayName": "Reparo de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_fan",
+            "displayName": "Reparo de ventilador"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_flooring",
+            "displayName": "Reparo de pisos"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_water_fixtures",
+            "displayName": "Conserto de instalações hidráulicas"
+          },
+          {
+            "serviceTypeId": "job_type_id:replace_tile_work",
+            "displayName": "Troca de azulejos"
+          },
+          {
+            "serviceTypeId": "job_type_id:roof_repair",
+            "displayName": "Reparo de telhados"
+          },
+          {
+            "serviceTypeId": "job_type_id:woodworker",
+            "displayName": "Marceneiro"
+          }
+        ],
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      },
+      {
+        "name": "categories/gcid:bathroom_remodeler",
+        "displayName": "Fornecedor de reformas de banheiros",
+        "serviceTypes": [
+          {
+            "serviceTypeId": "job_type_id:assemble_furniture",
+            "displayName": "Montagem de móveis"
+          },
+          {
+            "serviceTypeId": "job_type_id:bathroom_countertop_resurfacing",
+            "displayName": "Renovação de bancadas para banheiros"
+          },
+          {
+            "serviceTypeId": "job_type_id:bathroom_tile_reglazing",
+            "displayName": "Revitrificação de azulejos"
+          },
+          {
+            "serviceTypeId": "job_type_id:bathtub_installation",
+            "displayName": "Instalação de banheira"
+          },
+          {
+            "serviceTypeId": "job_type_id:bathtub_refinishing",
+            "displayName": "Recuperação de banheira"
+          },
+          {
+            "serviceTypeId": "job_type_id:bathtub_reglazing",
+            "displayName": "Revitrificação de banheira"
+          },
+          {
+            "serviceTypeId": "job_type_id:bathtub_repair",
+            "displayName": "Reparos de banheira"
+          },
+          {
+            "serviceTypeId": "job_type_id:bathtub_replacement",
+            "displayName": "Troca de banheira"
+          },
+          {
+            "serviceTypeId": "job_type_id:bathtub_resurfacing",
+            "displayName": "Troca do acabamento de banheiras"
+          },
+          {
+            "serviceTypeId": "job_type_id:clean_gutters",
+            "displayName": "Limpeza de calhas"
+          },
+          {
+            "serviceTypeId": "job_type_id:handyman_remodeling",
+            "displayName": "Reformas"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_drywall",
+            "displayName": "Instalação de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_fan",
+            "displayName": "Instalação de ventiladores"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_flooring",
+            "displayName": "Instalação de pisos"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_tile_work",
+            "displayName": "Instalação de azulejos"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_water_fixtures",
+            "displayName": "Instalação de equipamentos hidráulicos"
+          },
+          {
+            "serviceTypeId": "job_type_id:interior_structural_repairs",
+            "displayName": "Reparos estruturais internos"
+          },
+          {
+            "serviceTypeId": "job_type_id:mount_tv",
+            "displayName": "Fixação de TV"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_indoors",
+            "displayName": "Pintura interna"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_outdoors",
+            "displayName": "Pintura de áreas externas"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_drywall",
+            "displayName": "Reparo de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_fan",
+            "displayName": "Reparo de ventilador"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_flooring",
+            "displayName": "Reparo de pisos"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_water_fixtures",
+            "displayName": "Conserto de instalações hidráulicas"
+          },
+          {
+            "serviceTypeId": "job_type_id:replace_tile_work",
+            "displayName": "Troca de azulejos"
+          },
+          {
+            "serviceTypeId": "job_type_id:shower_refinishing",
+            "displayName": "Troca do acabamento de chuveiros"
+          }
+        ],
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      },
+      {
+        "name": "categories/gcid:masonry_contractor",
+        "displayName": "Pedreiro",
+        "serviceTypes": [
+          {
+            "serviceTypeId": "job_type_id:brick_and_block_work",
+            "displayName": "Tijolos e blocos"
+          },
+          {
+            "serviceTypeId": "job_type_id:color_change",
+            "displayName": "Mudança de cor"
+          },
+          {
+            "serviceTypeId": "job_type_id:cracks_settlement_and_leaks",
+            "displayName": "Rachaduras, assentamentos e vazamentos"
+          },
+          {
+            "serviceTypeId": "job_type_id:custom_masonry",
+            "displayName": "Alvenaria personalizada"
+          },
+          {
+            "serviceTypeId": "job_type_id:historic_stuccos_and_renders",
+            "displayName": "Estuque e reboco históricos"
+          },
+          {
+            "serviceTypeId": "job_type_id:masonry_cleaning",
+            "displayName": "Limpeza de alvenaria"
+          },
+          {
+            "serviceTypeId": "job_type_id:masonry_repair_and_maintenance",
+            "displayName": "Reparo e manutenção em alvenaria"
+          },
+          {
+            "serviceTypeId": "job_type_id:mortar_analysis_and_matching",
+            "displayName": "Análise e combinação de argamassa"
+          },
+          {
+            "serviceTypeId": "job_type_id:new_construction",
+            "displayName": "Serviços para novas construções"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_stripping",
+            "displayName": "Remoção de tinta"
+          },
+          {
+            "serviceTypeId": "job_type_id:remodeling",
+            "displayName": "Reformas"
+          },
+          {
+            "serviceTypeId": "job_type_id:repointing",
+            "displayName": "Redirecionamento"
+          },
+          {
+            "serviceTypeId": "job_type_id:stone_masonry",
+            "displayName": "Cantaria"
+          },
+          {
+            "serviceTypeId": "job_type_id:veneers",
+            "displayName": "Alvenaria"
+          }
+        ],
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      },
+      {
+        "name": "categories/gcid:dry_wall_contractor",
+        "displayName": "Empreiteira de serviços com gesso",
+        "serviceTypes": [
+          {
+            "serviceTypeId": "job_type_id:acoustical_ceiling_installation",
+            "displayName": "Instalação de teto com isolamento acústico"
+          },
+          {
+            "serviceTypeId": "job_type_id:assemble_furniture",
+            "displayName": "Montagem de móveis"
+          },
+          {
+            "serviceTypeId": "job_type_id:ceiling_repair",
+            "displayName": "Reparo de tetos"
+          },
+          {
+            "serviceTypeId": "job_type_id:clean_gutters",
+            "displayName": "Limpeza de calhas"
+          },
+          {
+            "serviceTypeId": "job_type_id:drywall_finishing",
+            "displayName": "Acabamento em drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:drywall_texturing",
+            "displayName": "Texturização de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:handyman_remodeling",
+            "displayName": "Reformas"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_drywall",
+            "displayName": "Instalação de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_fan",
+            "displayName": "Instalação de ventiladores"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_flooring",
+            "displayName": "Instalação de pisos"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_tile_work",
+            "displayName": "Instalação de azulejos"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_water_fixtures",
+            "displayName": "Instalação de equipamentos hidráulicos"
+          },
+          {
+            "serviceTypeId": "job_type_id:insulation_services",
+            "displayName": "Serviços de isolamento"
+          },
+          {
+            "serviceTypeId": "job_type_id:interior_painting",
+            "displayName": "Pintura de áreas internas"
+          },
+          {
+            "serviceTypeId": "job_type_id:interior_repairs",
+            "displayName": "Reparo de interiores"
+          },
+          {
+            "serviceTypeId": "job_type_id:mount_tv",
+            "displayName": "Fixação de TV"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_indoors",
+            "displayName": "Pintura interna"
+          },
+          {
+            "serviceTypeId": "job_type_id:paint_outdoors",
+            "displayName": "Pintura de áreas externas"
+          },
+          {
+            "serviceTypeId": "job_type_id:plaster_repair",
+            "displayName": "Reparo em gesso"
+          },
+          {
+            "serviceTypeId": "job_type_id:plastering",
+            "displayName": "Serviços de gesso"
+          },
+          {
+            "serviceTypeId": "job_type_id:popcorn_ceiling_removal",
+            "displayName": "Remoção de teto com textura"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_drywall",
+            "displayName": "Reparo de drywall"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_fan",
+            "displayName": "Reparo de ventilador"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_flooring",
+            "displayName": "Reparo de pisos"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_water_fixtures",
+            "displayName": "Conserto de instalações hidráulicas"
+          },
+          {
+            "serviceTypeId": "job_type_id:replace_tile_work",
+            "displayName": "Troca de azulejos"
+          },
+          {
+            "serviceTypeId": "job_type_id:stucco_installation",
+            "displayName": "Instalação de estuque"
+          }
+        ],
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      },
+      {
+        "name": "categories/gcid:property_maintenance",
+        "displayName": "Manutenção predial",
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      },
+      {
+        "name": "categories/gcid:floor_refinishing_service",
+        "displayName": "Serviço de acabamento de pisos",
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      },
+      {
+        "name": "categories/gcid:electrical_installation_service",
+        "displayName": "Serviço de instalação elétrica",
+        "serviceTypes": [
+          {
+            "serviceTypeId": "job_type_id:electric_car_charger",
+            "displayName": "Instalação de estação para carregamento de carros elétricos"
+          },
+          {
+            "serviceTypeId": "job_type_id:electrician_remodeling",
+            "displayName": "Reformas"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_fan",
+            "displayName": "Instalação de ventiladores"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_ground_wire",
+            "displayName": "Instalação de aterramento"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_light_fixtures",
+            "displayName": "Instalação de luminárias"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_outdoor_lighting",
+            "displayName": "Instalação de iluminação externa"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_outlets_switches",
+            "displayName": "Instalação de tomadas e interruptores"
+          },
+          {
+            "serviceTypeId": "job_type_id:install_security_system",
+            "displayName": "Instalação de sistema de segurança"
+          },
+          {
+            "serviceTypeId": "job_type_id:relocate_outlets_switches",
+            "displayName": "Realocação de tomadas e interruptores"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_fan",
+            "displayName": "Reparo de ventilador"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_light_fixtures",
+            "displayName": "Reparo de luminária"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_outlets_switches",
+            "displayName": "Reparo de tomadas e interruptores"
+          },
+          {
+            "serviceTypeId": "job_type_id:repair_panel",
+            "displayName": "Reparo de painel elétrico"
+          },
+          {
+            "serviceTypeId": "job_type_id:replace_upgrade_panel",
+            "displayName": "Troca ou upgrade de painel elétrico"
+          },
+          {
+            "serviceTypeId": "job_type_id:restore_power",
+            "displayName": "Restauração de instalação elétrica"
+          }
+        ],
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      },
+      {
+        "name": "categories/gcid:wood_floor_installation_service",
+        "displayName": "Serviço de instalação de piso de madeira",
+        "serviceTypes": [
+          {
+            "serviceTypeId": "job_type_id:cherry_wood",
+            "displayName": "Madeira de cerejeira"
+          },
+          {
+            "serviceTypeId": "job_type_id:coating",
+            "displayName": "Revestimento"
+          },
+          {
+            "serviceTypeId": "job_type_id:engineered_wood",
+            "displayName": "Assoalhos de derivados de madeira"
+          },
+          {
+            "serviceTypeId": "job_type_id:general_repairs_and_maintenance",
+            "displayName": "Reparos e manutenção em geral"
+          },
+          {
+            "serviceTypeId": "job_type_id:hickory_wood",
+            "displayName": "Madeira de nogueira"
+          },
+          {
+            "serviceTypeId": "job_type_id:installation",
+            "displayName": "Instalação"
+          },
+          {
+            "serviceTypeId": "job_type_id:maple_wood",
+            "displayName": "Assoalho de bordo"
+          },
+          {
+            "serviceTypeId": "job_type_id:oak_wood",
+            "displayName": "Assoalho de carvalho"
+          },
+          {
+            "serviceTypeId": "job_type_id:restoration",
+            "displayName": "Restauração"
+          },
+          {
+            "serviceTypeId": "job_type_id:sanding",
+            "displayName": "Lixamento"
+          },
+          {
+            "serviceTypeId": "job_type_id:staining",
+            "displayName": "Coloração de madeira"
+          },
+          {
+            "serviceTypeId": "job_type_id:walnut_wood",
+            "displayName": "Assoalho de nogueira"
+          }
+        ],
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Acesso"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Café da manhã"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Entrega"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Jantar"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive-through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Cozinha"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Almoço"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Horário de atendimento on-line"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Retirada"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Para viagem"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Horário para idosos"
+          }
+        ]
+      }
+    ]
+  },
+  "storefrontAddress": {
+    "regionCode": "BR",
+    "languageCode": "pt",
+    "postalCode": "06420130",
+    "administrativeArea": "SP",
+    "locality": "Barueri",
+    "addressLines": [
+      "Avenida Henrique Gonçalves Baptista 2245"
+    ]
+  },
+  "websiteUri": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+  "regularHours": {
+    "periods": [
+      {
+        "openDay": "SUNDAY",
+        "openTime": {},
+        "closeDay": "SUNDAY",
+        "closeTime": {
+          "hours": 24
+        }
+      },
+      {
+        "openDay": "MONDAY",
+        "openTime": {},
+        "closeDay": "MONDAY",
+        "closeTime": {
+          "hours": 24
+        }
+      },
+      {
+        "openDay": "TUESDAY",
+        "openTime": {},
+        "closeDay": "TUESDAY",
+        "closeTime": {
+          "hours": 24
+        }
+      },
+      {
+        "openDay": "WEDNESDAY",
+        "openTime": {},
+        "closeDay": "WEDNESDAY",
+        "closeTime": {
+          "hours": 24
+        }
+      },
+      {
+        "openDay": "THURSDAY",
+        "openTime": {},
+        "closeDay": "THURSDAY",
+        "closeTime": {
+          "hours": 24
+        }
+      },
+      {
+        "openDay": "FRIDAY",
+        "openTime": {},
+        "closeDay": "FRIDAY",
+        "closeTime": {
+          "hours": 24
+        }
+      },
+      {
+        "openDay": "SATURDAY",
+        "openTime": {},
+        "closeDay": "SATURDAY",
+        "closeTime": {
+          "hours": 24
+        }
+      }
+    ]
+  },
+  "specialHours": {
+    "specialHourPeriods": [
+      {
+        "startDate": {
+          "year": 2026,
+          "month": 9,
+          "day": 7
+        },
+        "openTime": {},
+        "endDate": {
+          "year": 2026,
+          "month": 9,
+          "day": 8
+        },
+        "closeTime": {}
+      },
+      {
+        "startDate": {
+          "year": 2026,
+          "month": 10,
+          "day": 12
+        },
+        "openTime": {},
+        "endDate": {
+          "year": 2026,
+          "month": 10,
+          "day": 13
+        },
+        "closeTime": {}
+      }
+    ]
+  },
+  "serviceArea": {
+    "businessType": "CUSTOMER_AND_BUSINESS_LOCATION",
+    "places": {
+      "placeInfos": [
+        {
+          "placeName": "Barueri, SP, Brasil",
+          "placeId": "ChIJlbkdat0Dz5QRoqnk1jaIVHA"
+        },
+        {
+          "placeName": "Itapevi, SP, Brasil",
+          "placeId": "ChIJveaX3gUGz5QRn5jstWtwElM"
+        },
+        {
+          "placeName": "Jandira, SP, Brasil",
+          "placeId": "ChIJTb9z_jcBz5QRTfHWwUk2114"
+        },
+        {
+          "placeName": "Tamboré, Barueri - SP, Brasil",
+          "placeId": "ChIJx9cWWgICz5QRgnTGfrFBVEQ"
+        },
+        {
+          "placeName": "Santana de Parnaíba, SP, Brasil",
+          "placeId": "ChIJvU-fzEgbz5QRbC5pDp5bKp4"
+        },
+        {
+          "placeName": "Aldeia da Serra, Santana de Parnaíba - SP, Brasil",
+          "placeId": "ChIJN4FKGWwFz5QRKA75yxn4QlI"
+        },
+        {
+          "placeName": "Alphaville, Santana de Parnaíba - SP, 06542-115, Brasil",
+          "placeId": "ChIJr2LQ9qoDz5QR8Rd_zVjeIiw"
+        }
+      ]
+    },
+    "regionCode": "BR"
+  },
+  "openInfo": {
+    "status": "OPEN",
+    "canReopen": true,
+    "openingDate": {
+      "year": 2025,
+      "month": 11,
+      "day": 10
+    }
+  },
+  "metadata": {
+    "canDelete": true,
+    "canModifyServiceList": true,
+    "placeId": "ChIJ82qx0nwLvUERNkFMO3HhX5A",
+    "mapsUri": "https://maps.google.com/maps?cid=10403281540691542326",
+    "newReviewUri": "https://search.google.com/local/writereview?placeid=ChIJ82qx0nwLvUERNkFMO3HhX5A",
+    "hasVoiceOfMerchant": true
+  },
+  "profile": {
+    "description": "Mestre dos Reparos é eletricista em Barueri para residências, condomínios e empresas, com atendimento 24 horas, equipe com NR-10, responsável técnico, nota fiscal e garantia de 90 dias. Na elétrica residencial: troca de quadro e disjuntores, curto-circuito, tomada esquentando, chuveiro desarmando, falta de energia e instalação de iluminação. Para condomínios, galpões, lojas e clínicas: manutenção elétrica predial preventiva e corretiva, iluminação de galpão, circuitos dedicados e atendimento de emergência. Também executamos reformas com a mesma equipe: pintura, pisos, drywall e acabamento, do orçamento à entrega. Atendemos Barueri, Alphaville, Tamboré, Jardim Belval, Santana de Parnaíba, Jandira e Itapevi."
+  },
+  "serviceItems": [
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:install_outdoor_lighting",
+        "description": "Instalação técnica de iluminação externa com avaliação do ponto elétrico, dimensionamento de cabos, proteção por disjuntor, vedação contra umidade, fixação segura da luminária/refletor e testes finais de funcionamento. Serviço executado conforme boas práticas da NBR 5410, com atenção à segurança."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:install_light_fixtures",
+        "description": "Instalação de luminárias residenciais e comerciais com desligamento seguro do circuito, conferência da tensão elétrica, fixação adequada, ligação correta dos condutores, isolamento das conexões e testes finais de funcionamento. Serviço executado conforme boas práticas e normas técnicas da NBR 5410"
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:install_outlets_switches",
+        "description": "Instalação de tomadas e interruptores com análise do circuito, reaperto técnico das conexões e testes de tensão conforme NBR 5410. O Mestre dos Reparos garante acabamento profissional, segurança elétrica e redução de riscos de aquecimento, mau contato e curto circuito."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:relocate_outlets_switches",
+        "description": "Recolocação de tomadas e interruptores com análise do circuito, reaperto técnico das conexões e testes de tensão conforme NBR 5410. O Mestre dos Reparos garante acabamento profissional, segurança elétrica e redução de riscos de aquecimento, mau contato e curto circuito."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:repair_outlets_switches",
+        "description": "Reparo de tomadas e interruptores com identificação de mau contato, aquecimento, curto circuito e falhas elétricas. Eletricista em Barueri Mestre dos Reparos realiza reaperto técnico, substituição de componentes danificados e testes de segurança conforme NBR 5410."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:residential_ac",
+        "description": "Adequação elétrica para ar-condicionado residencial: circuito exclusivo, cabo dimensionado, disjuntor correto e tomada ou ponto de ligação no local do aparelho. Evita disjuntor caindo e fio esquentando. Atendemos Barueri e Alphaville. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:construction",
+        "description": "Execução de obras de reforma por empreitada: alvenaria, contrapiso, assentamento de pisos, reboco, pintura e instalações elétricas, com coordenação da mão de obra e acompanhamento técnico. Orçamento após visita técnica. Atendemos Barueri, Alphaville, Santana de Parnaíba e região."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:inspections",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialistanem manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança. Os melhores eletricistas de Barueri."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:electrical_installation",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialista em manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:electric_car_charger",
+        "description": "Instalação de carregador veicular (wallbox) com circuito exclusivo, proteção DR e verificação da capacidade do padrão de entrada."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:electrical_wiring_installation",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialista em manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança. Os melhores eletricistas de Barueri"
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:install_fan",
+        "description": "Instalação de ventilador de teto em casas e apartamentos: fixação segura na laje ou forro, ligação elétrica, controle ou interruptor e teste de balanço. Indicado também para trocar ventilador antigo. Atendemos Barueri e Jardim Belval. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:electrical_maintenance",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialista em manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança. Os Melhores eletricistas de Barueri."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:electrician_remodeling",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista com 25 anos de experiência em operações de Manutenção."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:electrical_wiring_repair",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialista em manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança. Os melhores eletricistas de Barueri"
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:repair_light_fixtures",
+        "description": "Reparo de luminárias, plafons e spots que piscam, não acendem ou esquentam: troca de soquete, reator, driver de LED e conexões. Antes, verificamos se o problema está no circuito. Casas, condomínios e comércio em Barueri e Tamboré. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:repair_panel",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialista em manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança. Os melhores eletricistas de Barueri."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:repair_fan",
+        "description": "Conserto de ventilador de teto que faz barulho, balança, não liga ou perdeu velocidade: revisão da fixação, capacitor, chave e ligação elétrica. Se não compensar o reparo, orientamos a troca. Atendemos Barueri e Santana de Parnaíba. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:general_repairs",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialista em manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança. Os melhores eletricistas de Barueri"
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:restore_power",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialista em manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança. Os melhores eletricistas de Barueri"
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:fuse_changing",
+        "description": "Troca de fusíveis antigos e substituição por disjuntores adequados, aumentando a segurança da instalação. Indicado para quadros antigos que queimam fusível com frequência. Atendimento em casas e comércios de Barueri, Jandira e Itapevi. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:heater_element_changing",
+        "description": "Troca de resistência de chuveiro e de aquecedor elétrico, com conferência da potência, do cabo e do disjuntor do circuito. Se a resistência queima toda hora, investigamos a causa. Atendemos Barueri, Alphaville e Carapicuíba. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:replace_upgrade_panel",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista, especialista em manutenção predial e residencial, com 25 anos de experiência em operações de manutenção elétrica, diagnóstico de falhas e execução de serviços conforme normas técnicas e padrões de segurança. Os melhores eletricistas de Barueri"
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "troca de disjuntor",
+          "description": "Substituição de disjuntores danificados, aquecendo ou com capacidade errada para o circuito, com verificação da bitola dos cabos."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "eletricista 24h",
+          "description": "Eletricista 24 horas em Barueri e região para serviços de instalação, manutenção e reparos elétricos residenciais e comerciais. Atendimento para problemas elétricos, disjuntores, tomadas, interruptores, luminárias e circuitos elétricos."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "instalação de chuveiro",
+          "description": "Instalação de chuveiro elétrico em Barueri e região, com conexão elétrica adequada e verificação das condições do circuito, da fiação e do disjuntor. Serviço realizado conforme as características da instalação existente e as especificações do equipamento."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "troca de tomada",
+          "description": "Troca de tomadas antigas, quebradas ou soltas pelo padrão atual de três pinos, com conferência do aterramento e do aperto dos fios. Sinal de alerta: tomada folgada, escurecida ou que esquenta. Atendemos Barueri e Jardim Belval. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista disponível",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista em Barueri e região, para instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias e reparos elétricos residenciais e comerciais. Entre em contato para consultar a disponibilidade e solicitar atend"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista Plantão 24 horas em Barueri",
+          "description": "Plantão de eletricista em Barueri para falta de energia, disjuntor que não rearma, curto-circuito e cheiro de queimado. Primeiro deixamos a instalação segura, depois fazemos o reparo definitivo. Casas, condomínios e empresas. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Troca de fiação do chuveiro",
+          "description": "Troca da fiação do chuveiro elétrico em Barueri e região. Serviço de substituição dos condutores elétricos do chuveiro, com verificação das condições da fiação, conexões e circuito de alimentação, considerando a potência do equipamento e as condições da instalação existente."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Conserto de tomadas",
+          "description": "Conserto de tomadas com mau contato, folgadas, derretidas ou sem energia: troca do módulo, reaperto e, se preciso, troca do trecho de fio danificado. Tomada escurecida é sinal de risco. Atendemos Barueri e Alphaville. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Conserto de interruptores",
+          "description": "Conserto e troca de interruptores que falham, estalam ou esquentam, incluindo paralelo (three-way) e intermediário. Conferimos a ligação para a lâmpada acender e apagar sem falhas. Casas e apartamentos em Barueri e Osasco. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista em Barueri",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista em Barueri, com instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias, disjuntores e reparos elétricos. Atendimento residencial, comercial e predial, conforme as necessidades de cada cliente."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista em Jandira",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista em Jandira, incluindo instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias e reparos elétricos residenciais e comerciais. Atendimento para manutenção e reparos elétricos conforme as necessidade"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista em Santana de Parnaíba",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista em Santana de Parnaíba, com instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias e manutenção de disjuntores. Atendimento residencial, comercial e predial, conforme a necessidade de cada client"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista em Itapevi",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista em Itapevi, incluindo instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias, disjuntores e reparos elétricos residenciais e comerciais. Serviços realizados conforme as necessidades de cada insta"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no Jardim Belval",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista no Jardim Belval, em Barueri, para instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias e reparos elétricos residenciais e comerciais. Os serviços são realizados conforme as necessidades de cad"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no Jardim Silveira",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista no Jardim Silveira, em Barueri, para instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias e reparos elétricos residenciais e comerciais. Serviços realizados conforme as necessidades de cada ins"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista na Aldeia de Barueri",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista na Aldeia de Barueri, com instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias, disjuntores e reparos elétricos residenciais. Atendimento para manutenção e instalações elétricas conforme as nec"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no Alphaville",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista em Alphaville, incluindo instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias, disjuntores e reparos elétricos residenciais e comerciais. Atendimento para manutenção e instalações elétricas con"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no Betaville",
+          "description": "O Mestre dos Reparos oferece serviços de eletricista no Betaville, em Barueri, incluindo instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias, disjuntores e reparos elétricos residenciais e comerciais. Atendimento conforme as necessidades de cada"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista atendimento emergencial",
+          "description": "Atendimento emergencial de eletricista em Barueri e região para falhas elétricas, curtos-circuitos, disjuntores desarmando, falta de energia em circuitos e outros problemas na instalação elétrica. Avaliação técnica para identificar a causa da falha e orientar a correção com segurança."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista atendimento imediato",
+          "description": "Eletricista em Barueri para atendimento de urgências elétricas residenciais e comerciais. Serviços de diagnóstico de falhas, disjuntores desarmando, curtos-circuitos, falta de energia em circuitos, tomadas com defeito e outros problemas elétricos. Consulte a disponibilidade para atendimento."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista perto de mim",
+          "description": "Precisa de eletricista perto de você em Barueri e região? O Mestre dos Reparos realiza instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias e reparos elétricos residenciais e comerciais. Entre em contato para consultar a disponibilidade do atendi"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista perto de mim em Barueri",
+          "description": "Precisa de eletricista perto de você em Barueri e região? O Mestre dos Reparos realiza instalações elétricas, manutenção de circuitos, troca de tomadas e interruptores, instalação de luminárias e reparos elétricos residenciais e comerciais. Entre em contato para consultar a disponibilidade do atendi"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Diagnóstico de Curto-circuito",
+          "description": "Diagnóstico de curto-circuito com testes por circuito para achar o ponto exato do defeito, sem quebrar parede à toa. Sinais: disjuntor desarma na hora, estalo ou faísca. Residências e comércios em Barueri, Jandira e Itapevi. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Curto circuito em tomadas",
+          "description": "Curto-circuito em tomada: tomada que solta faísca, derrete ou derruba o disjuntor. Trocamos tomada e fios danificados e verificamos se o circuito aguenta os aparelhos ligados. Atendemos Barueri e Jardim Belval. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Curto-circuito no chuveiro",
+          "description": "Curto-circuito no chuveiro: resistência encostando, fio derretido ou conexão frouxa. Trocamos o que está danificado e conferimos cabo e disjuntor do chuveiro para não repetir. Atendemos Barueri, Carapicuíba e Osasco. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Curto circuito no quadro de distribuição",
+          "description": "Curto no quadro de distribuição: barramento, disjuntor ou fio queimado dentro do quadro. Fazemos a troca dos componentes danificados e a reorganização dos circuitos. Atendemos casas, condomínios e empresas em Barueri e Itapevi. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Dr desarmando",
+          "description": "Diagnóstico elétrico para identificar as causas do desarme do IDR (Interruptor Diferencial Residual) por fuga de corrente. Verificação do circuito elétrico, análise das possíveis causas e identificação de falhas na instalação para orientar a correção do problema com segurança."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "IDR desarmando",
+          "description": "Diagnóstico elétrico para identificar as causas do desarme do IDR (Interruptor Diferencial Residual) por fuga de corrente. Verificação do circuito elétrico, análise das possíveis causas e identificação de falhas na instalação para orientar a correção do problema com segurança."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Disjuntor Geral caindo",
+          "description": "Diagnóstico da causa do desarme: sobrecarga, curto, fuga de corrente ou disjuntor defeituoso. Correção do problema, não só a troca da peça. 6. Instalação de chuveiro elétrico"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Disjuntor geral desarmando",
+          "description": "Diagnóstico elétrico em Barueri para casos de disjuntor geral desarmando. Verificação das possíveis causas, como sobrecarga, curto-circuito, fuga de corrente ou falhas na instalação elétrica. Avaliação do quadro de distribuição e dos circuitos para identificar a origem do problema e orientar a corre"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Disjuntor caindo quando liga o chuveiro",
+          "description": "Disjuntor caindo quando liga o chuveiro geralmente indica disjuntor, cabo ou resistência fora da potência certa. Medimos o circuito e corrigimos o que estiver errado, sem chute. Atendemos Barueri, Jardim Belval e Alphaville. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Projetos elétricos",
+          "description": "Projetos elétricos residenciais e comerciais com responsável técnico engenheiro eletricista: dimensionamento de circuitos, quadro de cargas e adequação à NBR 5410. Indicado para reformas, ampliações e empresas em Barueri e região. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalaçãode DPS",
+          "description": "Instalação de DPS (protetor contra surtos) no quadro elétrico para proteger eletrônicos de raios e picos de tensão. Conferimos o aterramento, que é essencial para o DPS funcionar. Casas e empresas em Barueri e Santana de Parnaíba. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Fiação com cheiro de queimado",
+          "description": "Fiação com cheiro de queimado é sinal de sobrecarga ou mau contato. Desligamos o circuito, localizamos o trecho danificado e trocamos fios e conexões. Não espere virar incêndio. Atendemos Barueri, Osasco e Carapicuíba. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Troca dos cabos do chuveiro",
+          "description": "Troca dos cabos do chuveiro por bitola adequada à potência, com disjuntor correto e conexão segura. Resolve chuveiro que esquenta pouco, desarma ou derrete o fio. Atendemos casas e apartamentos em Barueri e Jandira. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Fiação derretendo",
+          "description": "Fiação derretendo é emergência: desligamos o circuito, retiramos o trecho danificado e instalamos cabos novos na bitola certa, com disjuntor compatível. Atendemos residências, comércios e condomínios em Barueri e Itapevi. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Tomada esquentando",
+          "description": "Tomada esquentando costuma ser mau contato, tomada de baixa qualidade ou aparelho potente demais no circuito. Trocamos a tomada, refazemos as conexões e avaliamos o circuito. Atendemos Barueri e Jardim Belval. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalação de luminárias e plafons",
+          "description": "Instalação de luminárias, plafons e pendentes com fixação segura e ligação correta, em casas, apartamentos e escritórios. Também fazemos troca de lâmpadas antigas por LED. Atendemos Barueri, Alphaville e Aldeia da Serra. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalação de tomadas 110v e 220v",
+          "description": "Instalação de tomadas 110 V e 220 V com identificação da tensão, cabo adequado e aterramento. Ideal para cozinha, lavanderia e aparelhos novos. Evita queimar equipamento ligado na tensão errada. Barueri e Santana de Parnaíba. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Correção de queda de energia parcial",
+          "description": "Correção de queda de energia parcial: quando só parte da casa fica sem luz, verificamos disjuntores, fases e conexões do quadro e do padrão até achar a causa. Atendemos Barueri, Jandira, Itapevi e Osasco. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Montagem e adequação de quadro elétrico",
+          "description": "Montagem e adequação de quadro elétrico: troca de disjuntores, inclusão de DR e DPS, barramentos, identificação de circuitos e organização dos cabos. Para quadros antigos ou que esquentam. Casas e empresas em Barueri. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Troca de fiação elétrica antiga",
+          "description": "Troca de fiação elétrica antiga, ressecada ou de bitola insuficiente, por cabos novos dimensionados para o uso atual do imóvel. Recomendado para imóveis com mais de 20 anos. Atendemos Barueri, Osasco e Carapicuíba. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Diagnóstico de sobrecarga elétrica",
+          "description": "Diagnóstico de sobrecarga elétrica: medimos a corrente dos circuitos e identificamos onde há aparelhos demais para o fio e o disjuntor. Sinais: disjuntor desarmando e fios quentes. Barueri, Alphaville e Tamboré. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Correção de curto-circuito",
+          "description": "Diagnóstico de curto-circuito em Barueri e região para identificar falhas em instalações elétricas residenciais e comerciais. Verificação dos circuitos, disjuntores, tomadas, conexões e fiação para localizar a origem do problema e orientar a correção adequada, priorizando a segurança da instalação."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Chuveiro derrubando energia",
+          "description": "Chuveiro derrubando a energia da casa: verificamos resistência, cabo, disjuntor e DR para achar a causa. Muitas vezes é fuga de corrente ou disjuntor errado. Atendemos casas e apartamentos em Barueri, Jandira e Itapevi. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Luz piscando ou queda de energia em pontos específicos",
+          "description": "Luz piscando ou queda de energia em pontos específicos: localizamos mau contato em tomadas, emendas, interruptores ou no quadro e corrigimos. Problema comum em instalações antigas. Atendemos Barueri e Osasco. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalação de tomadas 10A e 20A",
+          "description": "Instalação de tomadas de 10 A e 20 A conforme a potência do aparelho, com cabo e disjuntor compatíveis. Tomada de 20 A é indicada para micro-ondas, forno e máquinas. Atendemos casas e comércios em Barueri e Jandira. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalação de spots e trilhos de iluminação",
+          "description": "Instalação de spots, trilhos e perfis de LED para iluminação de sala, cozinha, lojas e escritórios, com fonte, driver e circuito adequados. Atendemos Barueri, Alphaville e Aldeia da Serra. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Separação de circuitos",
+          "description": "Separação de circuitos para tirar a sobrecarga do quadro: chuveiro, ar-condicionado, cozinha e tomadas em circuitos próprios, cada um com seu disjuntor. Reduz desarmes e aquecimento de fios. Barueri e Santana de Parnaíba. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Correção de mau contato",
+          "description": "Correção de mau contato em tomadas, interruptores, emendas e disjuntores, causa comum de luz piscando, faísca e aquecimento. Refazemos as conexões com conectores adequados. Atendemos Barueri, Osasco e Carapicuíba. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Diagnóstico de fuga de corrente",
+          "description": "Diagnóstico de fuga de corrente: quando o DR desarma, a conta sobe sem motivo ou há choque em torneiras e aparelhos. Testamos os circuitos para achar a fuga e corrigir. Atendemos Barueri, Jandira e Itapevi. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalação elétrica residencial",
+          "description": "Instalação elétrica residencial completa ou parcial: pontos de tomada, iluminação, quadro, circuitos do chuveiro e ar-condicionado, seguindo a NBR 5410. Para obras, reformas e ampliações em Barueri e Alphaville. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Manutenção elétrica comercial",
+          "description": "Manutenção elétrica comercial para lojas, escritórios, agências e galpões: quadros, iluminação, tomadas e correção de falhas, com mínimo de interrupção do funcionamento. Atendemos Barueri, Tamboré e Itapevi. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Manutenção elétrica predial",
+          "description": "Manutenção elétrica predial para condomínios: áreas comuns, iluminação de garagem e corredores, quadros e bombas, com responsável técnico. Atendemos condomínios em Barueri, Alphaville e Santana de Parnaíba. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Adequação elétrica para ar-condicionado",
+          "description": "Adequação elétrica para ar-condicionado: circuito exclusivo do quadro até o aparelho, cabo na bitola certa, disjuntor e ponto de ligação. Evita queda de energia ao ligar o ar. Atendemos Barueri, Alphaville e Tamboré. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Adequação de pontos elétricos",
+          "description": "Adequação de pontos elétricos: mudança de lugar, inclusão ou retirada de tomadas e interruptores para nova disposição de móveis ou reforma. Acabamento limpo e circuito revisado. Atendemos Barueri e Jardim Belval. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Teste de tomadas e aterramento",
+          "description": "Teste de tomadas e aterramento com instrumento: conferimos polaridade, tensão e se o fio terra realmente funciona. Importante para eletrônicos, máquinas e equipamentos sensíveis. Barueri, Osasco e Carapicuíba. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Emitimos nota fiscal",
+          "description": "Todos os serviços elétricos e de reforma da Mestre dos Reparos saem com nota fiscal emitida pelo CNPJ da empresa, o que dá segurança para residências, condomínios e empresas que precisam comprovar o serviço. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Técnico responsável engenheiro eletricista",
+          "description": "Serviços elétricos com responsável técnico engenheiro eletricista e equipe com NR-10. Garante projeto, execução e laudos conforme as normas, importante para empresas, condomínios e obras em Barueri e região. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Tupanci Eletricista",
+          "description": "Eletricista no Tupanci, em Barueri: reparos, tomadas, chuveiros, quadros e emergências elétricas em casas e comércios do bairro. Atendimento com responsável técnico e orçamento antes do serviço. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista parque Viana",
+          "description": "Eletricista no Parque Viana, em Barueri: troca de tomadas, conserto de chuveiro, curto-circuito, quadro elétrico e iluminação, para casas e comércios do bairro. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista Jardim Audir",
+          "description": "Eletricista no Jardim Audir, em Barueri: atendimento para falta de energia, disjuntor desarmando, tomadas, chuveiro e instalação de iluminação em residências e comércios. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista18 do forte",
+          "description": "Eletricista no 18 do Forte, em Barueri: reparos e instalações elétricas, curto-circuito, troca de fiação e quadros para casas, condomínios e comércios do bairro. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no centro de Barueri",
+          "description": "Eletricista no Centro de Barueri para lojas, escritórios e residências: manutenção de quadros, iluminação, tomadas e atendimento a emergências elétricas, com responsável técnico. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalação de ventilador de teto",
+          "description": "Instalação de ventilador de teto com ou sem luminária, fixação em laje ou forro, ligação a interruptor ou controle e teste de balanço. Atendemos casas e apartamentos em Barueri, Jandira e Osasco. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no viva maís Barueri",
+          "description": "Eletricista no condomínio Viva Mais, em Barueri: troca de tomadas, chuveiros, iluminação, quadros de apartamento e reparos elétricos, com agendamento e respeito às regras do condomínio. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no condomínio Spazio club Barueri",
+          "description": "Eletricista no condomínio Spazio Club, em Barueri: reparos elétricos em apartamentos, troca de tomadas e chuveiros, iluminação e ajustes no quadro, seguindo as regras do condomínio. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no condomínio Inspire",
+          "description": "Eletricista no condomínio Inspire, em Barueri: instalações e reparos elétricos em apartamentos, como tomadas, luminárias, chuveiro e quadro, com agendamento conforme as regras do condomínio. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no condomínio Vitalle home club",
+          "description": "Eletricista no condomínio Vitalle Home Club, em Barueri: atendimento para tomadas, chuveiros, iluminação e quadros de apartamento, além de pequenos reparos, seguindo as normas do condomínio. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletricista no Condomínio Nações Barueri",
+          "description": "Eletricista no Condomínio Nações, em Barueri: reparos e instalações elétricas em apartamentos, como tomadas, chuveiros, luminárias e quadro, com agendamento conforme o condomínio. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Troca de quadro de distribuição",
+          "description": "Substituição de quadros antigos ou subdimensionados por quadro novo, com disjuntores identificados, barramento de neutro e terra e organização dos circuitos conforme a NBR 5410."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalação de DR",
+          "description": "Instalação de dispositivo DR para proteger pessoas contra choque elétrico em banheiros, cozinhas, áreas externas e lavanderias, como exige a NBR 5410."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Instalação de carregador para carro elétrico",
+          "description": "Instalação de carregador veicular (wallbox) com circuito exclusivo, proteção DR e verificação da capacidade do padrão de entrada."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Iluminação de áreas comuns de condomínio",
+          "description": "Troca e modernização da iluminação de halls, escadas, garagens e fachadas térreas, com LED e sensores para reduzir o consumo."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Manutenção elétrica em condomínios",
+          "description": "Atendimento elétrico para síndicos e administradoras: quadros, iluminação, bombas, portões e áreas comuns, com relatório do serviço. Atendimento 24 horas"
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:electrician",
+        "label": {
+          "displayName": "Eletrecista residencial em Barueri",
+          "description": "Serviços de eletricista residencial em Barueri, incluindo instalações elétricas, manutenção de circuitos, troca e instalação de tomadas, interruptores, luminárias e disjuntores. O Mestre dos Reparos realiza serviços elétricos e reparos para residências, conforme a necessidade de cada cliente."
+        }
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:repair_water_fixtures",
+        "description": "Conserto de instalações hidráulicas: vazamentos em torneiras, registros, sifões, caixa acoplada e conexões aparentes, com troca de peças danificadas. Atendemos casas e apartamentos em Barueri e Alphaville. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:overnight",
+        "description": "Atendimento durante a noite para emergências elétricas, como falta de energia, curto-circuito e disjuntor que não rearma, em residências, condomínios e empresas de Barueri e região. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:electrical_service",
+        "description": "Eletricista em Barueri Mestre dos Reparos, empresa com responsável técnico Engenheiro Eletricista e 25 anos de experiência em operações de manutenção elétrica residencial, comercial e predial, atuando com segurança, diagnóstico técnico e serviços conforme normas da NBR 5410."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:electrical",
+        "description": "Empresa com responsável técnico Engenheiro Eletricista com 25 anos de experiência em operações de Manutenção."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:mount_tv",
+        "description": "Fixação de TV na parede com suporte adequado ao peso e ao tamanho, furação segura evitando fios e canos, e organização dos cabos. Também instalamos tomada atrás da TV. Atendemos Barueri e Alphaville. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:install_tile_work",
+        "description": "Instalação de azulejos e revestimentos em cozinhas, banheiros e áreas de serviço, com preparo da base, assentamento nivelado e rejunte. Atendemos reformas em Barueri, Jardim Belval e Santana de Parnaíba. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:install_drywall",
+        "description": "Montagem de estruturas em drywall para paredes, forros e móveis embutidos, com obra limpa, rápida e pronta para pintura."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:install_flooring",
+        "description": "Instalação de pisos cerâmicos, porcelanato e vinílico, com preparo e nivelamento da base, assentamento e acabamento de rodapé. Para casas, apartamentos e comércios em Barueri, Alphaville e Tamboré. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:cleaning",
+        "description": "Responsável técnica pela área Graduada em Higienização de ambientes, com experiência em grandes operações, galpões de logística, grandes escritórios corporativos, Hospitais, grandes operações residências."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:clean_gutters",
+        "description": "Limpeza de calhas e rufos para retirar folhas e sujeira que causam transbordo e infiltração, com verificação dos condutores de descida. Atendemos casas e galpões em Barueri, Jandira e Itapevi. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:assemble_furniture",
+        "description": "Montagem de móveis residenciais e de escritório, como guarda-roupas, armários, racks e mesas, com fixação na parede quando necessário. Atendemos Barueri, Alphaville e Jardim Belval. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:painting",
+        "description": "Pintura residencial e comercial com preparo de superfície, correção de trincas, massa e acabamento, usando tinta adequada para cada ambiente. Atendemos casas, apartamentos e empresas em Barueri e região. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:paint_outdoors",
+        "description": "Pintura de áreas externas, como fachadas, muros e portões, com limpeza, tratamento de trincas e tinta resistente ao sol e à chuva. Atendemos casas, condomínios e comércios em Barueri e Santana de Parnaíba. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:interior_painting",
+        "description": "Pintura de áreas internas com proteção de móveis e pisos, correção de imperfeições, massa corrida e acabamento uniforme. Para salas, quartos, cozinhas e escritórios em Barueri, Alphaville e Tamboré. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:paint_indoors",
+        "description": "Pintura interna de apartamentos e casas, incluindo teto, paredes e portas, com preparo da superfície e limpeza ao final. Atendemos imóveis ocupados ou vazios em Barueri, Jardim Belval e Osasco. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:handyman_remodeling",
+        "description": "Reformas residenciais e comerciais da parte civil à elétrica: alvenaria, pisos, revestimentos, gesso, pintura e instalações, com responsável técnico. Atendemos Barueri, Alphaville e região. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:repair_drywall",
+        "description": "Reparo de drywall e gesso: fechamento de furos, trincas e emendas aparentes, com massa, lixamento e pintura de acabamento. Atendemos casas, apartamentos e escritórios em Barueri e Alphaville. Nota fiscal e garantia de 90 dias."
+      }
+    },
+    {
+      "structuredServiceItem": {
+        "serviceTypeId": "job_type_id:home_maintenance_and_repairs",
+        "description": "Médias reformas em casas e apartamentos com gestão completa da obra: serviços de pedreiro, troca de pisos, pintura, parte elétrica e instalação de ar-condicionado, além de reparos e manutenção. Um só responsável do orçamento à entrega. Atendimento em Barueri, Alphaville e região."
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Diarista sobre demanda",
+          "description": "Diarista sob demanda para limpeza residencial e pós-obra, com agendamento conforme a necessidade do cliente. Ideal para depois de reformas e mudanças. Atendemos Barueri, Alphaville e Jardim Belval. Nota fiscal e garantia de 90 dias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Reformas prediais em geral",
+          "description": "Reformas prediais completas em condomínios, prédios comerciais e residências: serviços de pedreiro, instalação de pisos, pintura predial, instalação de ar-condicionado, parte elétrica e manutenção geral. Execução com responsabilidade técnica. Orçamento após visita em Barueri e região."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Reforma de áreas comuns de condomínio",
+          "description": "Reformas em halls, escadas, garagens, salões e guaritas, com cronograma combinado com o síndico para reduzir o incômodo aos moradores."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Paredes de drywall",
+          "description": "Construção de paredes de drywall para criar quartos, closets e escritórios, com reforço para fixação de TV, armários e prateleiras."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Forro de drywall",
+          "description": "Instalação de forro de gesso em placas ou estruturado, com acabamento liso e preparo para spots e luminárias."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Divisórias de drywall para escritórios",
+          "description": "Divisão de salas comerciais em drywall, com isolamento acústico opcional, portas e pontos elétricos já integrados."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Instalação de porcelanato",
+          "description": "Assentamento de porcelanato com argamassa adequada, dupla colagem, niveladores e junta mínima para acabamento uniforme."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Instalação de piso vinílico",
+          "description": "Instalação de piso vinílico colado ou em régua clicada sobre contrapiso regularizado ou piso existente, com rodapé."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Instalação de piso cerâmico",
+          "description": "Assentamento de piso cerâmico em salas, quartos, cozinhas e áreas externas, com caimento correto nas áreas molhadas."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Instalação de piso laminado",
+          "description": "Instalação de piso laminado com manta, rodapé e acabamentos de soleira, em obra limpa e rápida."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Pintura residencial",
+          "description": "Pintura interna de casas com proteção de móveis e pisos, preparo de paredes, correção de imperfeições e limpeza ao final."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Pintura de apartamento",
+          "description": "Pintura completa de apartamentos, inclusive para entrega de imóvel alugado ou preparo para venda, com prazo combinado."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Pintura predial",
+          "description": "Pintura interna de prédios residenciais e comerciais: halls, corredores, escadas e garagens, com cronograma por andar."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Pintura de áreas comuns de condomínio",
+          "description": "Renovação da pintura de áreas comuns com execução por etapas para não bloquear a circulação dos moradores."
+        }
+      }
+    },
+    {
+      "freeFormServiceItem": {
+        "category": "categories/gcid:handyman",
+        "label": {
+          "displayName": "Pintura comercial",
+          "description": "Pintura de lojas, escritórios e consultórios, com opção de trabalho à noite ou no fim de semana para não interromper o atendimento."
+        }
+      }
+    }
+  ]
+}
