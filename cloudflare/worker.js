@@ -115,7 +115,7 @@ export default {
       const casa = xml.replace(new RegExp('(<loc>' + ORIGIN + '/</loc><lastmod>)[^<]*'), '$1' + HOME_MOD);
       return new Response(casa, { status: 200, headers: h });
     }
-    if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600');
+    if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600, s-maxage=21600');
     const out = new Response(resp.body, { status: resp.status, headers: h });
     const final = html
       ? new HTMLRewriter().on('a[href]', new LinkFix()).on('link[href]', new LinkFix()).on('meta[content]', new LinkFix()).on('img', new ImgFix()).transform(out)
