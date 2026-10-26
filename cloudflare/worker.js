@@ -21,6 +21,8 @@ class LinkFix {
       }
       const v2 = el.getAttribute(a);
       if (v2 && (v2 === RAIZ || v2.endsWith('mestredosreparos.app.br' + RAIZ))) el.setAttribute(a, v2.slice(0, -RAIZ.length) + '/');
+      const v3 = el.getAttribute(a);
+      if (v3) for (const [de, para] of Object.entries(LINK_FINAL)) if (v3.endsWith(de)) el.setAttribute(a, v3.slice(0, -de.length) + para);
     }
   }
 }
@@ -28,6 +30,12 @@ class LinkFix {
 const MOBILE = /Mobi|Android|iPhone|iPad|iPod/i;
 const NOVA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/ccr-33db381a-6kweq8/nova/';
 const RAIZ = '/p/mestre-dos-reparos-manutencao-reparos.html';
+// links internos antigos que redirecionam → destino final (evita link para redirecionamento)
+const LINK_FINAL = { '/2026/02/mestre-dos-reparos-facilites_0115649963.html': '/p/eletricista-em-barueri.html' };
+// páginas que o Blogger marca com noindex mas devem ser indexadas
+const INDEXAR = new Set(['/p/hidrailica-mestre-dos-reparos.html', '/p/contratos-corporativos-b2b.html']);
+// páginas com noindex que não devem constar no sitemap
+const FORA_SITEMAP = ['/p/diarista-em-itapevi.html', '/p/diarista-em-jandira.html', '/p/diarista-em-santana-de-parnaiba.html', '/p/lgpd-lei-geral-de-protecao-de-dados.html', '/p/politica-de-privacidade.html', '/p/temos-de-uso.html'];
 const HOME_MOD = '2026-10-25T22:30:00Z';   // última atualização da home nova (sitemap)
 
 // Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
@@ -112,10 +120,12 @@ export default {
     const html = (h.get('content-type') || '').includes('text/html');
     if (req.pathname.startsWith('/sitemap') && resp.status === 200) {
       const xml = (await resp.text()).split(ORIGIN + RAIZ).join(ORIGIN + '/');
-      const casa = xml.replace(new RegExp('(<loc>' + ORIGIN + '/</loc><lastmod>)[^<]*'), '$1' + HOME_MOD);
+      let casa = xml.replace(new RegExp('(<loc>' + ORIGIN + '/</loc><lastmod>)[^<]*'), '$1' + HOME_MOD);
+      for (const p of FORA_SITEMAP) casa = casa.replace(new RegExp('<url><loc>' + ORIGIN + p.replace(/[.]/g, '\\.') + '</loc>.*?</url>'), '');
       return new Response(casa, { status: 200, headers: h });
     }
     if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600, s-maxage=21600');
+    if (INDEXAR.has(req.pathname)) h.set('x-robots-tag', 'all');
     const out = new Response(resp.body, { status: resp.status, headers: h });
     const final = html
       ? new HTMLRewriter().on('a[href]', new LinkFix()).on('link[href]', new LinkFix()).on('meta[content]', new LinkFix()).on('img', new ImgFix()).transform(out)
