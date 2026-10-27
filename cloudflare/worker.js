@@ -58,9 +58,59 @@ class ImgFix {
   }
 }
 
+
+// estrelas reais: votos dos clientes guardados no KV (binding AVAL); a nota só entra no Google quando existe voto
+const AVALIAR = { '/p/eletricista-em-barueri.html': 'Eletricista em Barueri SP' };
+const FOTO_NOTA = ['quadro-depois.jpg', 'paulo-atendimento.jpg', 'quadro2-depois.jpg'].map(f => ORIGIN + '/nova/img/' + f);
+
+async function lerNota(env, p) {
+  const a = env.AVAL ? await env.AVAL.get('a:' + p, 'json') : null;
+  return a && a.t > 0 ? { media: Math.round((a.s / a.t) * 10) / 10, total: a.t } : null;
+}
+
+async function votar(request, env) {
+  const cors = { 'content-type': 'application/json', 'cache-control': 'no-store' };
+  if (request.method !== 'POST' || !env.AVAL) return new Response('{"ok":false}', { status: 405, headers: cors });
+  let b; try { b = await request.json(); } catch { return new Response('{"ok":false}', { status: 400, headers: cors }); }
+  const p = b && b.p, n = Number(b && b.n);
+  if (!AVALIAR[p] || !Number.isInteger(n) || n < 1 || n > 5) return new Response('{"ok":false}', { status: 400, headers: cors });
+  const ip = request.headers.get('cf-connecting-ip') || '';
+  const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(ip + '|mdr|' + p)))].map(x => x.toString(16).padStart(2, '0')).join('').slice(0, 32);
+  const kv = 'v:' + p + ':' + hash;
+  const antes = Number(await env.AVAL.get(kv)) || 0;   // um voto por pessoa; votar de novo troca a nota
+  const a = (await env.AVAL.get('a:' + p, 'json')) || { s: 0, t: 0 };
+  if (antes) a.s += n - antes; else { a.s += n; a.t += 1; }
+  await env.AVAL.put(kv, String(n));
+  await env.AVAL.put('a:' + p, JSON.stringify(a));
+  return new Response(JSON.stringify({ ok: true, media: Math.round((a.s / a.t) * 10) / 10, total: a.t }), { headers: cors });
+}
+
+function estrelas(m) { const c = Math.round(m); return '★'.repeat(c) + '☆'.repeat(5 - c); }
+
+async function comNota(resp, env, p) {
+  const nota = await lerNota(env, p);
+  const resumo = nota
+    ? `<p style="margin:8px 0 0;font-size:17px"><span style="color:#ffb300;font-size:22px;letter-spacing:2px">${estrelas(nota.media)}</span> <strong>${nota.media.toFixed(1).replace('.', ',')}</strong> de 5 · ${nota.total} ${nota.total === 1 ? 'avaliação' : 'avaliações'} de clientes</p>`
+    : '';
+  const botoes = `<div class="mr-votar" style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">${[1, 2, 3, 4, 5].map(n => `<button type="button" data-n="${n}" aria-label="${n} estrela${n > 1 ? 's' : ''}" style="background:#ffb300;color:#0b2a4a;border:0;border-radius:8px;padding:8px 12px;font:700 16px Arial,sans-serif;cursor:pointer">${n} ★</button>`).join('')}</div><p class="mr-msg" style="margin:8px 0 0;font-size:14px"></p>
+<script>(function(){var b=document.getElementById('mr-avaliacao');if(!b)return;b.querySelectorAll('.mr-votar button').forEach(function(x){x.onclick=function(){fetch('/api/avaliar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({p:b.getAttribute('data-p'),n:+x.getAttribute('data-n')})}).then(function(r){return r.json()}).then(function(d){b.querySelector('.mr-msg').textContent=d.ok?'Obrigado pela avaliação! Nota atual: '+String(d.media).replace('.',',')+' de 5 ('+d.total+')':'Não foi possível registrar agora.';})}})})();</script>`;
+  const ld = nota ? `<script type="application/ld+json">${JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'Product', name: AVALIAR[p],
+    description: 'Serviço de eletricista em Barueri SP: instalação, manutenção e reparos elétricos residenciais e prediais, com nota fiscal e garantia de 90 dias.',
+    image: FOTO_NOTA, brand: { '@type': 'Brand', name: 'Mestre dos Reparos' },
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: nota.media, ratingCount: nota.total, bestRating: 5, worstRating: 1 },
+  })}</script>` : '';
+  const h = new Headers(resp.headers); h.set('cache-control', 'public, max-age=300');
+  return new HTMLRewriter()
+    .on('#mr-avaliacao', { element(e) { e.append(resumo + botoes, { html: true }); } })
+    .on('head', { element(e) { if (ld) e.append(ld, { html: true }); } })
+    .transform(new Response(resp.body, { status: resp.status, headers: h }));
+}
+
 export default {
   async fetch(request, env, ctx) {
     const req = new URL(request.url);
+    if (req.pathname === '/api/avaliar') return votar(request, env);
     if (req.pathname === '/' + INDEXNOW_KEY + '.txt') {
       return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain' } });
     }
@@ -101,7 +151,7 @@ export default {
     const cache = caches.default;
     if (request.method === 'GET') {
       const hit = await cache.match(cacheKey);
-      if (hit) return hit;
+      if (hit) return AVALIAR[req.pathname] ? comNota(hit, env, req.pathname) : hit;
     }
     let alvo = new URL(req.pathname + req.search, ORIGIN);
     if (mobile) alvo.searchParams.set('m', '1');   // pula o 302 de celular do Blogger
@@ -131,6 +181,6 @@ export default {
       ? new HTMLRewriter().on('a[href]', new LinkFix()).on('link[href]', new LinkFix()).on('meta[content]', new LinkFix()).on('img', new ImgFix()).transform(out)
       : out;
     if (request.method === 'GET' && resp.status === 200 && html) ctx.waitUntil(cache.put(cacheKey, final.clone()));
-    return final;
+    return html && resp.status === 200 && AVALIAR[req.pathname] ? comNota(final, env, req.pathname) : final;
   },
 };
