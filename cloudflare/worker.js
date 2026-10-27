@@ -60,8 +60,12 @@ class ImgFix {
 
 
 // estrelas reais: votos dos clientes guardados no KV (binding AVAL); a nota só entra no Google quando existe voto
-const AVALIAR = { '/p/eletricista-em-barueri.html': 'Eletricista em Barueri SP' };
-const FOTO_NOTA = ['quadro-depois.jpg', 'paulo-atendimento.jpg', 'quadro2-depois.jpg'].map(f => ORIGIN + '/nova/img/' + f);
+const AVALIAR = {
+  '/p/eletricista-em-barueri.html': { nome: 'Eletricista em Barueri SP', fotos: ['quadro-depois.jpg', 'paulo-atendimento.jpg', 'quadro2-depois.jpg'],
+    desc: 'Serviço de eletricista em Barueri SP: instalação, manutenção e reparos elétricos residenciais e prediais, com nota fiscal e garantia de 90 dias.' },
+  '/': { nome: 'Mestre dos Reparos: eletricista, reformas e limpeza em Barueri SP', fotos: ['quadro-depois.jpg', 'sala-reforma.jpg', 'limpeza-exaustor.jpg'],
+    desc: 'Serviços de elétrica, reformas, pintura, hidráulica e limpeza em Barueri SP, do básico ao acabamento, com nota fiscal e garantia de 90 dias.' },
+};
 
 async function lerNota(env, p) {
   const a = env.AVAL ? await env.AVAL.get('a:' + p, 'json') : null;
@@ -95,9 +99,9 @@ async function comNota(resp, env, p) {
   const botoes = `<div class="mr-votar" style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">${[1, 2, 3, 4, 5].map(n => `<button type="button" data-n="${n}" aria-label="${n} estrela${n > 1 ? 's' : ''}" style="background:#ffb300;color:#0b2a4a;border:0;border-radius:8px;padding:8px 12px;font:700 16px Arial,sans-serif;cursor:pointer">${n} ★</button>`).join('')}</div><p class="mr-msg" style="margin:8px 0 0;font-size:14px"></p>
 <script>(function(){var b=document.getElementById('mr-avaliacao');if(!b)return;b.querySelectorAll('.mr-votar button').forEach(function(x){x.onclick=function(){fetch('/api/avaliar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({p:b.getAttribute('data-p'),n:+x.getAttribute('data-n')})}).then(function(r){return r.json()}).then(function(d){b.querySelector('.mr-msg').textContent=d.ok?'Obrigado pela avaliação! Nota atual: '+String(d.media).replace('.',',')+' de 5 ('+d.total+')':'Não foi possível registrar agora.';})}})})();</script>`;
   const ld = nota ? `<script type="application/ld+json">${JSON.stringify({
-    '@context': 'https://schema.org', '@type': 'Product', name: AVALIAR[p],
-    description: 'Serviço de eletricista em Barueri SP: instalação, manutenção e reparos elétricos residenciais e prediais, com nota fiscal e garantia de 90 dias.',
-    image: FOTO_NOTA, brand: { '@type': 'Brand', name: 'Mestre dos Reparos' },
+    '@context': 'https://schema.org', '@type': 'Product', name: AVALIAR[p].nome,
+    description: AVALIAR[p].desc,
+    image: AVALIAR[p].fotos.map(f => ORIGIN + '/nova/img/' + f), brand: { '@type': 'Brand', name: 'Mestre dos Reparos' },
     aggregateRating: { '@type': 'AggregateRating', ratingValue: nota.media, ratingCount: nota.total, bestRating: 5, worstRating: 1 },
   })}</script>` : '';
   const h = new Headers(resp.headers); h.set('cache-control', 'public, max-age=300');
@@ -120,12 +124,12 @@ export default {
     if (req.pathname === '/' && rastreio && (request.method === 'GET' || request.method === 'HEAD')) {
       const chave = new Request(req.origin + '/__home');
       const hit = await caches.default.match(chave);
-      if (hit) return hit;
+      if (hit) return comNota(hit, env, '/');
       const r = await fetch(NOVA + 'home.html', { cf: { cacheTtl: 30, cacheEverything: true } });
       if (r.ok) {
         const out = new Response(r.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
         ctx.waitUntil(caches.default.put(chave, out.clone()));
-        return out;
+        return comNota(out, env, '/');
       }
       return Response.redirect(new URL('/p/eletricista-em-barueri.html', req.origin).toString(), 302);   // GitHub fora do ar
     }
