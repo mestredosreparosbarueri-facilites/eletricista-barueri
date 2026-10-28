@@ -36,7 +36,7 @@ const LINK_FINAL = { '/2026/02/mestre-dos-reparos-facilites_0115649963.html': '/
 const INDEXAR = new Set(['/p/hidrailica-mestre-dos-reparos.html', '/p/contratos-corporativos-b2b.html']);
 // páginas com noindex que não devem constar no sitemap
 const FORA_SITEMAP = ['/p/diarista-em-itapevi.html', '/p/diarista-em-jandira.html', '/p/diarista-em-santana-de-parnaiba.html', '/p/lgpd-lei-geral-de-protecao-de-dados.html', '/p/politica-de-privacidade.html', '/p/temos-de-uso.html'];
-const HOME_MOD = '2026-10-27T20:06:00Z';   // última atualização da home nova (sitemap)
+const HOME_MOD = '2026-10-28T23:40:00Z';   // última atualização da home nova (sitemap)
 
 // Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
 const IMG = /(https:\/\/blogger\.googleusercontent\.com\/img\/[^\s"',]+?=)([swh]\d+[^\s"',]*)/g;
