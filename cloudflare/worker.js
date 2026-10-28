@@ -89,6 +89,22 @@ async function votar(request, env) {
   return new Response(JSON.stringify({ ok: true, media: Math.round((a.s / a.t) * 10) / 10, total: a.t }), { headers: cors });
 }
 
+// número de avaliações do Google sempre atualizado (chave 'rc' no KV AVAL, gravada pela rotina das 9h)
+class Contagem {
+  constructor(rc) { this.rc = rc; this.buf = ''; }
+  text(t) {
+    this.buf += t.text;
+    if (!t.lastInTextNode) { t.remove(); return; }
+    const novo = this.buf.replace(/\b([3-9]\d) (avaliações|avaliacoes)/g, (m, n, w) => this.rc + ' ' + w);
+    t.replace(novo, { html: false }); this.buf = '';
+  }
+}
+async function comContagem(resp, env) {
+  const rc = env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
+  if (!rc) return resp;
+  return new HTMLRewriter().onDocument(new Contagem(rc)).transform(resp);
+}
+
 function estrelas(m) { const c = Math.round(m); return '★'.repeat(c) + '☆'.repeat(5 - c); }
 
 async function comNota(resp, env, p) {
@@ -198,7 +214,7 @@ export default {
       const hit = await cache.match(cacheKey);
       if (hit) {
         const hh = new Response(hit.body, hit); hh.headers.set('x-mdr', 'hit');
-        return AVALIAR[req.pathname] ? comNota(hh, env, req.pathname) : hh;
+        return comContagem(AVALIAR[req.pathname] ? await comNota(hh, env, req.pathname) : hh, env);
       }
     }
     const ps = req.pathname + req.search;
@@ -211,7 +227,7 @@ export default {
         const r = new Response(value, { headers: hh });
         ctx.waitUntil(cache.put(cacheKey, r.clone()));
         if (!metadata || Date.now() - metadata.ts > KV_IDADE) ctx.waitUntil(gravar(env, ps, mobile).catch(() => {}));
-        return AVALIAR[req.pathname] ? comNota(r, env, req.pathname) : r;
+        return comContagem(AVALIAR[req.pathname] ? await comNota(r, env, req.pathname) : r, env);
       }
     }
     let alvo = new URL(ps, ORIGIN);
@@ -246,6 +262,7 @@ export default {
       if (env.PAG && !req.search) ctx.waitUntil(env.PAG.put(chavePag(ps, mobile), txt, { metadata: { ts: Date.now(), xr: resp.headers.get('x-robots-tag') || '' } }));
       ctx.waitUntil(cache.put(cacheKey, final.clone()));
     }
-    return html && resp.status === 200 && AVALIAR[req.pathname] ? comNota(final, env, req.pathname) : final;
+    if (!(html && resp.status === 200)) return final;
+    return comContagem(AVALIAR[req.pathname] ? await comNota(final, env, req.pathname) : final, env);
   },
 };
