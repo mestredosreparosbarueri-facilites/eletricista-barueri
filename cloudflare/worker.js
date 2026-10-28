@@ -111,7 +111,48 @@ async function comNota(resp, env, p) {
     .transform(new Response(resp.body, { status: resp.status, headers: h }));
 }
 
+// cópia pronta das páginas do Blogger no KV (binding PAG): o Blogger leva ~0,7 s por página e não deixa a
+// Cloudflare guardar (cache-control private), então guardamos o HTML já tratado e servimos do KV no mundo todo
+const KV_IDADE = 20 * 3600 * 1000;
+const chavePag = (ps, mobile) => (mobile ? 'm:' : 'd:') + ps;
+
+function tratar(resp) {   // mesmas correções de links e imagens do caminho normal
+  return new HTMLRewriter().on('a[href]', new LinkFix()).on('link[href]', new LinkFix()).on('meta[content]', new LinkFix()).on('img', new ImgFix()).transform(resp);
+}
+
+async function gravar(env, ps, mobile) {
+  let alvo = new URL(ps, ORIGIN); if (mobile) alvo.searchParams.set('m', '1');
+  let r;
+  for (let i = 0; i < 4; i++) {
+    r = await fetch(alvo.toString(), { redirect: 'manual' });
+    if (![301, 302, 303, 307, 308].includes(r.status)) break;
+    const loc = new URL(r.headers.get('location'), alvo);
+    if (semM(loc).pathname === alvo.pathname && loc.searchParams.has('m')) { alvo = loc; continue; }
+    return;   // redirecionamento de verdade: não guarda
+  }
+  if (r.status !== 200 || !(r.headers.get('content-type') || '').includes('text/html')) return;
+  const txt = await tratar(new Response(r.body, r)).text();
+  await env.PAG.put(chavePag(ps, mobile), txt, { metadata: { ts: Date.now(), xr: r.headers.get('x-robots-tag') || '' } });
+}
+
+// aquecimento a cada hora: ~22 páginas do sitemap (celular e desktop) que estão sem cópia ou com cópia velha
+async function aquecer(env) {
+  const urls = [];
+  for (const sm of ['/sitemap-pages.xml', '/sitemap.xml']) {
+    const xml = await (await fetch(ORIGIN + sm)).text();
+    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) if (!m[1].endsWith(RAIZ)) urls.push(new URL(m[1]).pathname);
+  }
+  const lote = 22, h = Math.floor(Date.now() / 3600000) % Math.ceil(urls.length / lote);
+  for (const p of urls.slice(h * lote, h * lote + lote)) {
+    for (const m of [true, false]) {
+      const { metadata } = await env.PAG.getWithMetadata(chavePag(p, m));
+      if (!metadata || Date.now() - metadata.ts > KV_IDADE) await gravar(env, p, m).catch(() => {});
+    }
+  }
+}
+
 export default {
+  async scheduled(event, env, ctx) { ctx.waitUntil(aquecer(env)); },
   async fetch(request, env, ctx) {
     const req = new URL(request.url);
     if (req.pathname === '/api/avaliar') return votar(request, env);
@@ -124,10 +165,10 @@ export default {
     if (req.pathname === '/' && rastreio && (request.method === 'GET' || request.method === 'HEAD')) {
       const chave = new Request(req.origin + '/__home');
       const hit = await caches.default.match(chave);
-      if (hit) return comNota(hit, env, '/');
-      const r = await fetch(NOVA + 'home.html', { cf: { cacheTtl: 30, cacheEverything: true } });
+      if (hit) { const hh = new Response(hit.body, hit); hh.headers.set('x-mdr', 'hit'); return comNota(hh, env, '/'); }
+      const r = await fetch(NOVA + 'home.html', { cf: { cacheTtl: 3600, cacheEverything: true } });
       if (r.ok) {
-        const out = new Response(r.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
+        const out = new Response(r.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600, s-maxage=86400' } });
         ctx.waitUntil(caches.default.put(chave, out.clone()));
         return comNota(out, env, '/');
       }
@@ -137,7 +178,7 @@ export default {
     if (req.pathname === '/nova' || req.pathname === '/nova/' || req.pathname === '/nova/index.html') return Response.redirect(req.origin + '/', 301);
     if (req.pathname.startsWith('/nova/')) {
       const rest = req.pathname.slice(6) || 'index.html';
-      const r = await fetch(NOVA + rest, { cf: { cacheTtl: 120, cacheEverything: true } });
+      const r = await fetch(NOVA + rest, { cf: { cacheTtl: rest.endsWith('.html') ? 120 : 604800, cacheEverything: true } });
       const h = new Headers(r.headers);
       const ext = rest.split('.').pop();
       h.set('content-type', { html: 'text/html; charset=utf-8', jpg: 'image/jpeg', png: 'image/png', webp: 'image/webp', mp4: 'video/mp4', css: 'text/css', js: 'text/javascript' }[ext] || h.get('content-type'));
@@ -155,11 +196,27 @@ export default {
     const cache = caches.default;
     if (request.method === 'GET') {
       const hit = await cache.match(cacheKey);
-      if (hit) return AVALIAR[req.pathname] ? comNota(hit, env, req.pathname) : hit;
+      if (hit) {
+        const hh = new Response(hit.body, hit); hh.headers.set('x-mdr', 'hit');
+        return AVALIAR[req.pathname] ? comNota(hh, env, req.pathname) : hh;
+      }
     }
-    let alvo = new URL(req.pathname + req.search, ORIGIN);
+    const ps = req.pathname + req.search;
+    if (request.method === 'GET' && env.PAG && !req.search && !req.pathname.startsWith('/sitemap')) {
+      const { value, metadata } = await env.PAG.getWithMetadata(chavePag(ps, mobile), { cacheTtl: 300 });
+      if (value) {
+        const hh = new Headers({ 'content-type': 'text/html; charset=UTF-8', 'cache-control': 'public, max-age=600, s-maxage=86400', 'x-mdr': 'kv' });
+        if (metadata && metadata.xr) hh.set('x-robots-tag', metadata.xr);
+        if (INDEXAR.has(req.pathname)) hh.set('x-robots-tag', 'all');
+        const r = new Response(value, { headers: hh });
+        ctx.waitUntil(cache.put(cacheKey, r.clone()));
+        if (!metadata || Date.now() - metadata.ts > KV_IDADE) ctx.waitUntil(gravar(env, ps, mobile).catch(() => {}));
+        return AVALIAR[req.pathname] ? comNota(r, env, req.pathname) : r;
+      }
+    }
+    let alvo = new URL(ps, ORIGIN);
     if (mobile) alvo.searchParams.set('m', '1');   // pula o 302 de celular do Blogger
-    let resp;
+    let resp; const t0 = Date.now();
     for (let i = 0; i < 4; i++) {
       resp = await fetch(alvo.toString(), { method: request.method, headers: request.headers, redirect: 'manual' });
       if (![301, 302, 303, 307, 308].includes(resp.status)) break;
@@ -170,7 +227,8 @@ export default {
       return Response.redirect(destino.toString(), resp.status === 302 ? 302 : 301);
     }
     const h = new Headers(resp.headers);
-    h.delete('content-length');
+    h.delete('content-length'); h.delete('set-cookie'); h.delete('expires'); h.delete('vary');
+    h.set('x-mdr', 'miss'); h.set('server-timing', 'origem;dur=' + (Date.now() - t0) + ', cf;desc="' + (resp.headers.get('cf-cache-status') || '-') + '"');
     const html = (h.get('content-type') || '').includes('text/html');
     if (req.pathname.startsWith('/sitemap') && resp.status === 200) {
       const xml = (await resp.text()).split(ORIGIN + RAIZ).join(ORIGIN + '/');
@@ -178,13 +236,16 @@ export default {
       for (const p of FORA_SITEMAP) casa = casa.replace(new RegExp('<url><loc>' + ORIGIN + p.replace(/[.]/g, '\\.') + '</loc>.*?</url>'), '');
       return new Response(casa, { status: 200, headers: h });
     }
-    if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600, s-maxage=21600');
+    if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600, s-maxage=86400');
     if (INDEXAR.has(req.pathname)) h.set('x-robots-tag', 'all');
     const out = new Response(resp.body, { status: resp.status, headers: h });
-    const final = html
-      ? new HTMLRewriter().on('a[href]', new LinkFix()).on('link[href]', new LinkFix()).on('meta[content]', new LinkFix()).on('img', new ImgFix()).transform(out)
-      : out;
-    if (request.method === 'GET' && resp.status === 200 && html) ctx.waitUntil(cache.put(cacheKey, final.clone()));
+    let final = html ? tratar(out) : out;
+    if (request.method === 'GET' && resp.status === 200 && html) {
+      const txt = await final.text();
+      final = new Response(txt, { status: 200, headers: h });
+      if (env.PAG && !req.search) ctx.waitUntil(env.PAG.put(chavePag(ps, mobile), txt, { metadata: { ts: Date.now(), xr: resp.headers.get('x-robots-tag') || '' } }));
+      ctx.waitUntil(cache.put(cacheKey, final.clone()));
+    }
     return html && resp.status === 200 && AVALIAR[req.pathname] ? comNota(final, env, req.pathname) : final;
   },
 };
