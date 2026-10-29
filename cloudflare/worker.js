@@ -182,6 +182,7 @@ export default {
   async scheduled(event, env, ctx) { ctx.waitUntil(aquecer(env)); },
   async fetch(request, env, ctx) {
     const req = new URL(request.url);
+    if (req.pathname === '/x/ads') return Response.redirect('https://accounts.google.com/o/oauth2/v2/auth?client_id=660029911002-aqfh5488tlnf0vivsne272qs04sicpjl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fdevelopers.google.com%2Foauthplayground&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fadwords&access_type=offline&prompt=consent&login_hint=mestredosreparosbarueri%40gmail.com', 302);   // atalho: autorizar Google Ads
     if (req.pathname === '/api/avaliar') return votar(request, env);
     if (req.pathname === '/' + INDEXNOW_KEY + '.txt') {
       return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain' } });
