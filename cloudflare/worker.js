@@ -96,11 +96,22 @@ class Contagem {
     this.buf += t.text;
     if (!t.lastInTextNode) { t.remove(); return; }
     const novo = this.buf.replace(/\b([3-9]\d) (avaliações|avaliacoes)/g, (m, n, w) => this.rc + ' ' + w);
-    t.replace(novo, { html: false }); this.buf = '';
+    t.replace(novo, { html: true }); this.buf = '';
   }
 }
+// selo "Empresa regularizada" (widget do tema) ficava depois do rodapé da página: mostra antes do rodapé
+const SELO = `<a class="mr-selo-rt" href="/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html" style="display:block;max-width:560px;margin:8px auto 24px;padding:14px 18px;background:#0a1f4d;border:2px solid #f7a600;color:#fff;border-radius:12px;text-decoration:none;font:600 16px/1.4 Arial,sans-serif;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.18)">&#9989; Empresa regularizada e com responsável técnico<br><span style="font-weight:400;font-size:14px">CNPJ e Inscrição Estadual ativos &#183; Engenheiro eletricista &#183; Certificados</span><br><span style="display:inline-block;margin-top:8px;padding:6px 14px;background:#f7a600;color:#0a1f4d;font-weight:700;border-radius:20px;font-size:14px">Ver documentos e certificados &#8594;</span></a>`;
+function seloAntesDoRodape(resp) {
+  let feito = false;
+  return new HTMLRewriter()
+    .on('footer.mestre-footer', { element(e) { if (!feito) { e.before(SELO, { html: true }); feito = true; } } })
+    .on('.mr-selos > a[href*="responsabilidade-tecnica"]', { element(e) { if (feito) e.remove(); } })
+    .transform(resp);
+}
+
 async function comContagem(resp, env) {
   const rc = env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
+  resp = seloAntesDoRodape(resp);
   if (!rc) return resp;
   return new HTMLRewriter().onDocument(new Contagem(rc)).transform(resp);
 }
