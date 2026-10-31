@@ -109,9 +109,19 @@ function seloAntesDoRodape(resp) {
     .transform(resp);
 }
 
-async function comContagem(resp, env) {
+// páginas de bairro/cidade e posts de reforma apontam para a página principal de reformas (concentra relevância nela)
+const PILAR_REFORMA = '/p/reformas-residenciais-e-comerciais-em.html';
+const EH_REFORMA = /^\/(p\/reforma-(no|na|nas|nos|em)-|2026\/\d\d\/reforma)/;
+const BOX_REFORMA = `<div style="max-width:720px;margin:16px auto;padding:16px 18px;border:2px solid #f7a600;border-radius:12px;font:16px/1.5 Arial,sans-serif;background:#fffaf0"><strong>Procurando uma empresa de reforma em Barueri?</strong> Veja a obra real que fizemos numa clínica no Centro, quem atendemos e como funciona: <a href="${PILAR_REFORMA}" style="color:#0a1f4d;font-weight:700">empresa de reforma em Barueri</a>.</div>`;
+function linkPilar(resp, path) {
+  if (path === PILAR_REFORMA || !EH_REFORMA.test(path)) return resp;
+  let feito = false;
+  return new HTMLRewriter().on('footer.mestre-footer', { element(e) { if (!feito) { e.before(BOX_REFORMA, { html: true }); feito = true; } } }).transform(resp);
+}
+
+async function comContagem(resp, env, path = '') {
   const rc = env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
-  resp = seloAntesDoRodape(resp);
+  resp = linkPilar(seloAntesDoRodape(resp), path);
   if (!rc) return resp;
   return new HTMLRewriter().onDocument(new Contagem(rc)).transform(resp);
 }
@@ -226,7 +236,7 @@ export default {
       const hit = await cache.match(cacheKey);
       if (hit) {
         const hh = new Response(hit.body, hit); hh.headers.set('x-mdr', 'hit');
-        return comContagem(AVALIAR[req.pathname] ? await comNota(hh, env, req.pathname) : hh, env);
+        return comContagem(AVALIAR[req.pathname] ? await comNota(hh, env, req.pathname) : hh, env, req.pathname);
       }
     }
     const ps = req.pathname + req.search;
@@ -239,7 +249,7 @@ export default {
         const r = new Response(value, { headers: hh });
         ctx.waitUntil(cache.put(cacheKey, r.clone()));
         if (!metadata || Date.now() - metadata.ts > KV_IDADE) ctx.waitUntil(gravar(env, ps, mobile).catch(() => {}));
-        return comContagem(AVALIAR[req.pathname] ? await comNota(r, env, req.pathname) : r, env);
+        return comContagem(AVALIAR[req.pathname] ? await comNota(r, env, req.pathname) : r, env, req.pathname);
       }
     }
     let alvo = new URL(ps, ORIGIN);
@@ -275,6 +285,6 @@ export default {
       ctx.waitUntil(cache.put(cacheKey, final.clone()));
     }
     if (!(html && resp.status === 200)) return final;
-    return comContagem(AVALIAR[req.pathname] ? await comNota(final, env, req.pathname) : final, env);
+    return comContagem(AVALIAR[req.pathname] ? await comNota(final, env, req.pathname) : final, env, req.pathname);
   },
 };
