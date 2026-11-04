@@ -9,5 +9,18 @@
   },
   "enabledPlugins": {
     "claude-seo@agricidaniel-claude-seo": true
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ \"$CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE\" = \"cloud\" ] && [ ! -x \"$HOME/.claude/skills/seo/scripts/claude-seo\" ]; then curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-seo/v2.5.0/install.sh | bash > /tmp/claude-seo-install.log 2>&1 || echo \"claude-seo: instalacao falhou, veja /tmp/claude-seo-install.log\"; fi",
+            "timeout": 600
+          }
+        ]
+      }
+    ]
   }
 }
