@@ -1,0 +1,2 @@
+Origem: https://github.com/sergebulaev/instagram-skills (MIT) commit 550d3cf
+Instalado em 04/11/2026. Publicação pelo Publora e leitura pelo Apify (serviços pagos) NÃO são usadas: publicamos pela Graph API/Metricool.
