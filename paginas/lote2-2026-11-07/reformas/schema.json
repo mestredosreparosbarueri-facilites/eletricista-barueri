@@ -1,445 +1,445 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "Electrician",
+    "HomeAndConstructionBusiness"
+   ],
+   "@id": "https://www.mestredosreparos.app.br/#empresa",
+   "name": "Mestre dos Reparos Manutenção & Limpeza",
+   "url": "https://www.mestredosreparos.app.br/",
+   "logo": "https://www.mestredosreparos.app.br/nova/img/empresa-logo-180.png",
+   "image": [
+    "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-equipe-escada.jpg"
+   ],
+   "telephone": "+55-11-91839-0430",
+   "email": "mestredosreparosbarueri@gmail.com",
+   "taxID": "64.521.657/0001-87",
+   "priceRange": "$$",
+   "currenciesAccepted": "BRL",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Henrique Gonçalves Baptista, 2245",
+    "addressLocality": "Barueri",
+    "addressRegion": "SP",
+    "postalCode": "06420-130",
+    "addressCountry": "BR"
+   },
+   "areaServed": [
     {
-      "@type": [
-        "HomeAndConstructionBusiness",
-        "GeneralContractor"
-      ],
-      "@id": "https://www.mestredosreparos.app.br/#empresa",
-      "name": "Mestre dos Reparos Manutenção & Limpeza",
-      "url": "https://www.mestredosreparos.app.br/",
-      "logo": "https://www.mestredosreparos.app.br/nova/img/empresa-logo-180.png",
-      "image": [
-        "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-equipe-escada.jpg"
-      ],
-      "telephone": "+55-11-91839-0430",
-      "email": "mestredosreparosbarueri@gmail.com",
-      "taxID": "64.521.657/0001-87",
-      "priceRange": "$$",
-      "currenciesAccepted": "BRL",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Av. Henrique Gonçalves Baptista, 2245",
-        "addressLocality": "Barueri",
-        "addressRegion": "SP",
-        "postalCode": "06420-130",
-        "addressCountry": "BR"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Barueri"
-        },
-        {
-          "@type": "City",
-          "name": "Santana de Parnaíba"
-        },
-        {
-          "@type": "City",
-          "name": "Jandira"
-        },
-        {
-          "@type": "City",
-          "name": "Itapevi"
-        },
-        {
-          "@type": "City",
-          "name": "Carapicuíba"
-        },
-        {
-          "@type": "City",
-          "name": "Osasco"
-        },
-        {
-          "@type": "City",
-          "name": "Cotia"
-        }
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "00:00",
-          "closes": "23:59"
-        }
-      ],
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "contactType": "WhatsApp",
-          "url": "https://wa.me/5511918390430",
-          "availableLanguage": "pt-BR"
-        }
-      ],
-      "employee": {
-        "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
-      },
-      "sameAs": [
-        "https://www.instagram.com/mestredosreparosfacilites",
-        "https://www.facebook.com/profile.php?id=61587382650217",
-        "https://www.youtube.com/@mestredosreparos-i9d",
-        "https://www.tiktok.com/@mestre.dos.reparo1",
-        "https://lojamestredosreparos.com/"
-      ]
+     "@type": "City",
+     "name": "Barueri"
     },
     {
-      "@type": "Person",
-      "@id": "https://www.mestredosreparos.app.br/#paulo-valadao",
-      "name": "Paulo Henrique Valadão",
-      "honorificPrefix": "Eng.",
-      "jobTitle": "Engenheiro e responsável técnico",
-      "worksFor": {
-        "@id": "https://www.mestredosreparos.app.br/#empresa"
-      },
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Universidade Federal do Rio de Janeiro (UFRJ)"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "SENAI"
-        }
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Registro no CREA nº 141129611802",
-          "credentialCategory": "Registro profissional",
-          "identifier": "141129611802",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "CREA - Conselho Regional de Engenharia e Agronomia"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Formação em engenharia",
-          "credentialCategory": "Diploma de graduação",
-          "recognizedBy": {
-            "@type": "CollegeOrUniversity",
-            "name": "Universidade Federal do Rio de Janeiro (UFRJ)"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Curso técnico",
-          "credentialCategory": "Diploma técnico",
-          "recognizedBy": {
-            "@type": "EducationalOrganization",
-            "name": "SENAI"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "NR-10 - Segurança em instalações e serviços em eletricidade",
-          "credentialCategory": "Certificado"
-        }
-      ],
-      "knowsAbout": [
-        "Reforma residencial e comercial",
-        "Alvenaria",
-        "Forro e drywall",
-        "Pisos e revestimentos",
-        "Instalações elétricas de baixa tensão",
-        "NBR 5410"
-      ],
-      "description": "Engenheiro formado pela UFRJ, CREA 141129611802, responsável técnico do Mestre dos Reparos, com 25 anos de experiência."
+     "@type": "City",
+     "name": "Santana de Parnaíba"
     },
     {
-      "@type": "WebSite",
-      "@id": "https://www.mestredosreparos.app.br/#site",
-      "url": "https://www.mestredosreparos.app.br/",
-      "name": "Mestre dos Reparos",
-      "inLanguage": "pt-BR",
-      "publisher": {
-        "@id": "https://www.mestredosreparos.app.br/#empresa"
-      }
+     "@type": "City",
+     "name": "Jandira"
     },
     {
-      "@type": "WebPage",
-      "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#webpage",
-      "url": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html",
-      "name": "Empresa de Reforma em Barueri | Obras Residenciais e Comerciais",
-      "headline": "Empresa de reforma em Barueri: obras residenciais e comerciais",
-      "description": "Reforma de casa, apartamento, loja e escritório em Barueri, equipe própria e engenheiro com CREA. Mande fotos no WhatsApp e receba o orçamento por etapa.",
-      "inLanguage": "pt-BR",
-      "isPartOf": {
-        "@id": "https://www.mestredosreparos.app.br/#site"
-      },
-      "about": {
-        "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#servico"
-      },
-      "mainEntity": {
-        "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#servico"
-      },
-      "publisher": {
-        "@id": "https://www.mestredosreparos.app.br/#empresa"
-      },
-      "reviewedBy": {
-        "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
-      },
-      "lastReviewed": "2026-11-07",
-      "datePublished": "2026-10-11T02:12:41-03:00",
-      "dateModified": "2026-11-07T00:00:00-03:00",
-      "breadcrumb": {
-        "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#breadcrumb"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-equipe-escada.jpg",
-        "caption": "Equipe do Mestre dos Reparos na obra da clínica de estética no Centro de Barueri"
-      },
-      "image": [
-        {
-          "@type": "ImageObject",
-          "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-forro-aberto.jpg",
-          "caption": "Forro aberto para localizar vazamento na reforma da clínica no Centro de Barueri"
-        },
-        {
-          "@type": "ImageObject",
-          "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-piso-cadeira-dentista.jpg",
-          "caption": "Piso com os pontos da antiga cadeira de dentista antes da troca, na reforma da clínica em Barueri"
-        }
-      ]
+     "@type": "City",
+     "name": "Itapevi"
     },
     {
-      "@type": "Service",
-      "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#servico",
-      "name": "Reforma residencial e comercial em Barueri",
-      "serviceType": "Reforma de imóveis",
-      "description": "Reforma de casa, apartamento, loja, escritório, clínica e condomínio com equipe própria: alvenaria, forro e drywall, pisos e revestimentos, pintura, elétrica e reforma de banheiro e cozinha.",
-      "provider": {
-        "@id": "https://www.mestredosreparos.app.br/#empresa"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Barueri"
-        },
-        {
-          "@type": "City",
-          "name": "Santana de Parnaíba"
-        },
-        {
-          "@type": "City",
-          "name": "Jandira"
-        },
-        {
-          "@type": "City",
-          "name": "Itapevi"
-        },
-        {
-          "@type": "City",
-          "name": "Carapicuíba"
-        },
-        {
-          "@type": "City",
-          "name": "Osasco"
-        },
-        {
-          "@type": "City",
-          "name": "Cotia"
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Serviços de reforma",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Pedreiro e alvenaria"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Gesso, forro e drywall"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Pisos e revestimentos"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Pintura"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Elétrica da reforma"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Reforma de banheiro e cozinha"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Reforma de escritório"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Reforma de loja, clínica e consultório"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Reforma predial e de fachada de condomínio"
-            }
-          }
-        ]
-      }
+     "@type": "City",
+     "name": "Carapicuíba"
     },
     {
-      "@type": "FAQPage",
-      "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#faq",
-      "url": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html",
-      "inLanguage": "pt-BR",
-      "isPartOf": {
-        "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#webpage"
-      },
-      "about": {
-        "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#servico"
-      },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Quanto custa uma reforma completa em Barueri?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depende da metragem, do estado do imóvel e do padrão do material, por isso não passamos preço fechado sem ver. Serviço abaixo de R$ 700 a gente orça só pelas fotos no WhatsApp. Acima disso fazemos visita técnica gratuita e mandamos o orçamento por escrito, separado por etapa."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quanto tempo demora uma reforma de apartamento?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Um banheiro leva de 7 a 15 dias e uma cozinha, de 10 a 20 dias. O apartamento completo, com piso, forro, elétrica e pintura, leva de 30 a 60 dias. O prazo muda com a entrega do material e com o horário de obra que o condomínio permite."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vocês fazem reforma em apartamento de condomínio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim. Mandamos a lista da equipe para a portaria, protegemos elevador e corredor e seguimos o horário de obra do prédio. O entulho sai do jeito que o regulamento interno pede. Um apartamento completo leva de 30 a 60 dias, e o horário do condomínio entra nessa conta."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Preciso sair de casa durante a reforma?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Na maioria das obras não. Dividimos a reforma por ambiente para a casa continuar funcionando: numa reforma de banheiro, de 7 a 15 dias, a família usa o outro banheiro. Só recomendamos liberar o imóvel quando a obra quebra contrapiso ou troca a elétrica de todos os cômodos ao mesmo tempo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quem compra o material da reforma?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Você escolhe. A gente pode comprar e apresentar as notas, ou fazer só a mão de obra e passar a lista com as quantidades certas. Na nossa tabela a mão de obra vem separada do material: um ponto de tomada novo, por exemplo, custa R$ 60 de mão de obra."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "A visita técnica é cobrada?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Não, a visita técnica para orçamento de reforma é gratuita. Para serviço abaixo de R$ 700 nem precisa de visita: com as fotos e as medidas a gente já passa o valor e marca a execução."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vocês reformam escritório e loja sem parar o funcionamento?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim. Montamos o cronograma por setor e, quando precisa, trabalhamos à noite e no fim de semana. A empresa recebe contrato, nota fiscal e 90 dias de garantia na mão de obra."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vocês executam projeto de arquiteto?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim. Seguimos as medidas e as especificações do projeto do seu arquiteto ou designer. Se a obra mexe em parede estrutural, o engenheiro Paulo Henrique Valadão, CREA 141129611802, confere antes e indica o reforço necessário."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vocês retiram o entulho?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim. Usamos caçamba quando o condomínio ou a prefeitura permitem, e a obra é limpa no fim de cada etapa. Na entrega, que é a etapa 5, fazemos a limpeza pós-obra e a vistoria final com você."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Tem nota fiscal e garantia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim. Emitimos nota fiscal em todo serviço, com CNPJ 64.521.657/0001-87. A garantia é de 90 dias por escrito na mão de obra, e o material tem a garantia do fabricante."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quem é o responsável técnico pela obra?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "É o engenheiro Paulo Henrique Valadão, formado pela UFRJ, CREA 141129611802, com 25 anos de experiência. Ele define a sequência da obra e acompanha até a entrega."
-          }
-        }
-      ]
+     "@type": "City",
+     "name": "Osasco"
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Início",
-          "item": "https://www.mestredosreparos.app.br/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Reformas em Barueri",
-          "item": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html"
-        }
-      ]
+     "@type": "City",
+     "name": "Cotia"
     }
-  ]
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "opens": "00:00",
+     "closes": "23:59"
+    }
+   ],
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "WhatsApp",
+     "url": "https://wa.me/5511918390430",
+     "availableLanguage": "pt-BR"
+    }
+   ],
+   "employee": {
+    "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
+   },
+   "sameAs": [
+    "https://www.instagram.com/mestredosreparosfacilites",
+    "https://www.facebook.com/profile.php?id=61587382650217",
+    "https://www.youtube.com/@mestredosreparos-i9d",
+    "https://www.tiktok.com/@mestre.dos.reparo1",
+    "https://lojamestredosreparos.com/"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://www.mestredosreparos.app.br/#paulo-valadao",
+   "name": "Paulo Henrique Valadão",
+   "honorificPrefix": "Eng.",
+   "jobTitle": "Engenheiro e responsável técnico",
+   "worksFor": {
+    "@id": "https://www.mestredosreparos.app.br/#empresa"
+   },
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "Universidade Federal do Rio de Janeiro (UFRJ)"
+    },
+    {
+     "@type": "EducationalOrganization",
+     "name": "SENAI"
+    }
+   ],
+   "hasCredential": [
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Registro no CREA nº 141129611802",
+     "credentialCategory": "Registro profissional",
+     "identifier": "141129611802",
+     "recognizedBy": {
+      "@type": "Organization",
+      "name": "CREA - Conselho Regional de Engenharia e Agronomia"
+     }
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Formação em engenharia",
+     "credentialCategory": "Diploma de graduação",
+     "recognizedBy": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade Federal do Rio de Janeiro (UFRJ)"
+     }
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Curso técnico",
+     "credentialCategory": "Diploma técnico",
+     "recognizedBy": {
+      "@type": "EducationalOrganization",
+      "name": "SENAI"
+     }
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "NR-10 - Segurança em instalações e serviços em eletricidade",
+     "credentialCategory": "Certificado"
+    }
+   ],
+   "knowsAbout": [
+    "Reforma residencial e comercial",
+    "Alvenaria",
+    "Forro e drywall",
+    "Pisos e revestimentos",
+    "Instalações elétricas de baixa tensão",
+    "NBR 5410"
+   ],
+   "description": "Engenheiro formado pela UFRJ, CREA 141129611802, responsável técnico do Mestre dos Reparos, com 25 anos de experiência."
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://www.mestredosreparos.app.br/#site",
+   "url": "https://www.mestredosreparos.app.br/",
+   "name": "Mestre dos Reparos",
+   "inLanguage": "pt-BR",
+   "publisher": {
+    "@id": "https://www.mestredosreparos.app.br/#empresa"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#webpage",
+   "url": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html",
+   "name": "Empresa de Reforma em Barueri | Obras Residenciais e Comerciais",
+   "headline": "Empresa de reforma em Barueri: obras residenciais e comerciais",
+   "description": "Reforma de casa, apartamento, loja e escritório em Barueri, equipe própria e engenheiro com CREA. Mande fotos no WhatsApp e receba o orçamento por etapa.",
+   "inLanguage": "pt-BR",
+   "isPartOf": {
+    "@id": "https://www.mestredosreparos.app.br/#site"
+   },
+   "about": {
+    "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#servico"
+   },
+   "mainEntity": {
+    "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#servico"
+   },
+   "publisher": {
+    "@id": "https://www.mestredosreparos.app.br/#empresa"
+   },
+   "reviewedBy": {
+    "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
+   },
+   "lastReviewed": "2026-11-07",
+   "datePublished": "2026-10-11T02:12:41-03:00",
+   "dateModified": "2026-11-07T00:00:00-03:00",
+   "breadcrumb": {
+    "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#breadcrumb"
+   },
+   "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-equipe-escada.jpg",
+    "caption": "Equipe do Mestre dos Reparos na obra da clínica de estética no Centro de Barueri"
+   },
+   "image": [
+    {
+     "@type": "ImageObject",
+     "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-forro-aberto.jpg",
+     "caption": "Forro aberto para localizar vazamento na reforma da clínica no Centro de Barueri"
+    },
+    {
+     "@type": "ImageObject",
+     "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-piso-cadeira-dentista.jpg",
+     "caption": "Piso com os pontos da antiga cadeira de dentista antes da troca, na reforma da clínica em Barueri"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#servico",
+   "name": "Reforma residencial e comercial em Barueri",
+   "serviceType": "Reforma de imóveis",
+   "description": "Reforma de casa, apartamento, loja, escritório, clínica e condomínio com equipe própria: alvenaria, forro e drywall, pisos e revestimentos, pintura, elétrica e reforma de banheiro e cozinha.",
+   "provider": {
+    "@id": "https://www.mestredosreparos.app.br/#empresa"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Barueri"
+    },
+    {
+     "@type": "City",
+     "name": "Santana de Parnaíba"
+    },
+    {
+     "@type": "City",
+     "name": "Jandira"
+    },
+    {
+     "@type": "City",
+     "name": "Itapevi"
+    },
+    {
+     "@type": "City",
+     "name": "Carapicuíba"
+    },
+    {
+     "@type": "City",
+     "name": "Osasco"
+    },
+    {
+     "@type": "City",
+     "name": "Cotia"
+    }
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços de reforma",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Pedreiro e alvenaria"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Gesso, forro e drywall"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Pisos e revestimentos"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Pintura"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Elétrica da reforma"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Reforma de banheiro e cozinha"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Reforma de escritório"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Reforma de loja, clínica e consultório"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Reforma predial e de fachada de condomínio"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#faq",
+   "url": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html",
+   "inLanguage": "pt-BR",
+   "isPartOf": {
+    "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#webpage"
+   },
+   "about": {
+    "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#servico"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Quanto custa uma reforma completa em Barueri?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Depende da metragem, do estado do imóvel e do padrão do material, por isso não passamos preço fechado sem ver. Serviço abaixo de R$ 700 a gente orça só pelas fotos no WhatsApp. Acima disso fazemos visita técnica gratuita e mandamos o orçamento por escrito, separado por etapa."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quanto tempo demora uma reforma de apartamento?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Um banheiro leva de 7 a 15 dias e uma cozinha, de 10 a 20 dias. O apartamento completo, com piso, forro, elétrica e pintura, leva de 30 a 60 dias. O prazo muda com a entrega do material e com o horário de obra que o condomínio permite."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Vocês fazem reforma em apartamento de condomínio?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Mandamos a lista da equipe para a portaria, protegemos elevador e corredor e seguimos o horário de obra do prédio. O entulho sai do jeito que o regulamento interno pede. Um apartamento completo leva de 30 a 60 dias, e o horário do condomínio entra nessa conta."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Preciso sair de casa durante a reforma?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Na maioria das obras não. Dividimos a reforma por ambiente para a casa continuar funcionando: numa reforma de banheiro, de 7 a 15 dias, a família usa o outro banheiro. Só recomendamos liberar o imóvel quando a obra quebra contrapiso ou troca a elétrica de todos os cômodos ao mesmo tempo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quem compra o material da reforma?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Você escolhe. A gente pode comprar e apresentar as notas, ou fazer só a mão de obra e passar a lista com as quantidades certas. Na nossa tabela a mão de obra vem separada do material: um ponto de tomada novo, por exemplo, custa R$ 60 de mão de obra."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "A visita técnica é cobrada?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Não, a visita técnica para orçamento de reforma é gratuita. Para serviço abaixo de R$ 700 nem precisa de visita: com as fotos e as medidas a gente já passa o valor e marca a execução."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Vocês reformam escritório e loja sem parar o funcionamento?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Montamos o cronograma por setor e, quando precisa, trabalhamos à noite e no fim de semana. A empresa recebe contrato, nota fiscal e 90 dias de garantia na mão de obra."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Vocês executam projeto de arquiteto?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Seguimos as medidas e as especificações do projeto do seu arquiteto ou designer. Se a obra mexe em parede estrutural, o engenheiro Paulo Henrique Valadão, CREA 141129611802, confere antes e indica o reforço necessário."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Vocês retiram o entulho?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Usamos caçamba quando o condomínio ou a prefeitura permitem, e a obra é limpa no fim de cada etapa. Na entrega, que é a etapa 5, fazemos a limpeza pós-obra e a vistoria final com você."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Tem nota fiscal e garantia?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Emitimos nota fiscal em todo serviço, com CNPJ 64.521.657/0001-87. A garantia é de 90 dias por escrito na mão de obra, e o material tem a garantia do fabricante."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quem é o responsável técnico pela obra?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "É o engenheiro Paulo Henrique Valadão, formado pela UFRJ, CREA 141129611802, com 25 anos de experiência. Ele define a sequência da obra e acompanha até a entrega."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Início",
+     "item": "https://www.mestredosreparos.app.br/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Reformas em Barueri",
+     "item": "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html"
+    }
+   ]
+  }
+ ]
 }

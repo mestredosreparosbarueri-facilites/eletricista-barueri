@@ -29,6 +29,8 @@ class LinkFix {
 
 const MOBILE = /Mobi|Android|iPhone|iPad|iPod/i;
 const NOVA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/ccr-33db381a-6kweq8/nova/';
+// home lida do commit fixo (muda a cada publicação): o cache da borda não segura versão velha
+const NOVA_SHA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/891ae1f116766df5652cc52486111705e45e88d6/nova/';
 const RAIZ = '/p/mestre-dos-reparos-manutencao-reparos.html';
 // links internos antigos que redirecionam → destino final (evita link para redirecionamento)
 const LINK_FINAL = { '/p/temos-de-uso.html': '/p/termos-de-uso.html', '/2026/02/mestre-dos-reparos-facilites_0115649963.html': '/p/eletricista-em-barueri.html' };
@@ -290,7 +292,7 @@ async function servir(request, env, ctx) {
       const chave = new Request(req.origin + '/__home');
       const hit = await caches.default.match(chave);
       if (hit) { const hh = new Response(hit.body, hit); hh.headers.set('x-mdr', 'hit'); return comNota(hh, env, '/'); }
-      const r = await fetch(NOVA + 'home.html', { cf: { cacheTtl: 3600, cacheEverything: true } });
+      const r = await fetch(NOVA_SHA + 'home.html', { cf: { cacheTtl: 3600, cacheEverything: true } });
       if (r.ok) {
         const out = new Response(r.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600, s-maxage=86400' } });
         ctx.waitUntil(caches.default.put(chave, out.clone()));
