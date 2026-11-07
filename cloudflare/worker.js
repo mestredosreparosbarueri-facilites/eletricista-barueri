@@ -179,9 +179,26 @@ class SemLdTema {
     t.after(out.includes('"BlogPosting"') && !out.includes('@graph') ? '{}' : out, { html: true });
   }
 }
+// troca de texto que vem do tema/descrição de busca do Blogger (não editável pela API)
+const TROCA = { '/p/contratos-corporativos-b2b.html': [['com a Mestre dos Reparos', 'com o Mestre dos Reparos']] };
+class TrocaTexto {
+  constructor(path) { this.t = TROCA[path]; this.buf = ''; }
+  text(t) {
+    if (!this.t) return;
+    this.buf += t.text; t.remove();
+    if (!t.lastInTextNode) return;
+    let out = this.buf; this.buf = '';
+    for (const [a, b] of this.t) out = out.split(a).join(b);
+    t.after(out, { html: true });
+  }
+}
+class TrocaAttr {
+  constructor(path) { this.t = TROCA[path]; }
+  element(e) { if (!this.t) return; let v = e.getAttribute('content') || ''; for (const [a, b] of this.t) v = v.split(a).join(b); e.setAttribute('content', v); }
+}
 async function comContagem(resp, env, path = '') {
   const rc = env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
-  resp = new HTMLRewriter().on('meta[name="description"]', { element(e) { if (DESC[path]) e.remove(); } }).on('script[type="application/ld+json"]', new SemLdTema(path)).on('meta[property="og:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('meta[name="twitter:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('a[href]', new LinkFix()).on('head', { element(e) { e.append(ADS_TAG + (DESC[path] ? `<meta name="description" content="${DESC[path]}">` : ''), { html: true }); } }).transform(ldFix(linkPilar(seloAntesDoRodape(resp), path), path));
+  resp = new HTMLRewriter().on('script', new TrocaTexto(path)).on('meta[content]', new TrocaAttr(path)).on('meta[name="description"]', { element(e) { if (DESC[path]) e.remove(); } }).on('script[type="application/ld+json"]', new SemLdTema(path)).on('meta[property="og:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('meta[name="twitter:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('a[href]', new LinkFix()).on('head', { element(e) { e.append(ADS_TAG + (DESC[path] ? `<meta name="description" content="${DESC[path]}">` : ''), { html: true }); } }).transform(ldFix(linkPilar(seloAntesDoRodape(resp), path), path));
   if (!rc) return resp;
   return new HTMLRewriter().onDocument(new Contagem(rc)).transform(resp);
 }
