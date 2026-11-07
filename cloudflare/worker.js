@@ -31,11 +31,16 @@ const MOBILE = /Mobi|Android|iPhone|iPad|iPod/i;
 const NOVA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/ccr-33db381a-6kweq8/nova/';
 const RAIZ = '/p/mestre-dos-reparos-manutencao-reparos.html';
 // links internos antigos que redirecionam → destino final (evita link para redirecionamento)
-const LINK_FINAL = { '/2026/02/mestre-dos-reparos-facilites_0115649963.html': '/p/eletricista-em-barueri.html' };
+const LINK_FINAL = { '/p/temos-de-uso.html': '/p/termos-de-uso.html', '/2026/02/mestre-dos-reparos-facilites_0115649963.html': '/p/eletricista-em-barueri.html' };
 // páginas que o Blogger marca com noindex mas devem ser indexadas
 const INDEXAR = new Set(['/p/hidrailica-mestre-dos-reparos.html', '/p/contratos-corporativos-b2b.html']);
 // páginas com noindex que não devem constar no sitemap
 const FORA_SITEMAP = ['/p/diarista-em-itapevi.html', '/p/diarista-em-jandira.html', '/p/diarista-em-santana-de-parnaiba.html', '/p/lgpd-lei-geral-de-protecao-de-dados.html', '/p/politica-de-privacidade.html', '/p/temos-de-uso.html'];
+// páginas de reforma por bairro feitas do mesmo modelo (quase iguais): 301 para a página de bairros atendidos de reforma (cada bairro tem o seu bloco lá)
+const HUB_REFORMA = '/2026/10/reformas-em-barueri-para-residencias.html';
+const hubDe = p => HUB_REFORMA + (/^\/p\/reforma-em-(?!alphaville)|aldeia-da-serra/.test(p) ? '#cidades' : '#bairros');
+const NOINDEX = new Set(["/p/reforma-na-aldeia-da-serra-obra.html", "/p/reforma-em-cotia-obra-completa-com.html", "/p/reforma-em-osasco-pintura-pisos-e.html", "/p/reforma-em-itapevi-obra-completa-com.html", "/p/reforma-em-jandira-pintura-pisos-e.html", "/p/reforma-em-carapicuiba-obra-completa.html", "/p/reforma-em-santana-de-parnaiba-pintura.html", "/p/reforma-na-regina-alice-barueri-obra.html", "/p/reforma-na-cruz-preta-barueri-obra.html", "/p/reforma-na-vila-sao-francisco-barueri.html", "/p/reforma-no-jardim-mutinga-barueri-obra.html", "/p/reforma-no-jardim-paraiso-barueri.html", "/p/reforma-no-jardim-california-barueri.html", "/p/reforma-nas-chacaras-marco-barueri-obra.html", "/p/reforma-no-jardim-dos-camargos-barueri.html", "/p/reforma-na-vila-boa-vista-barueri-obra.html", "/p/reforma-no-jardim-tupanci-barueri-obra.html", "/p/reforma-no-jardim-maria-helena-barueri.html", "/p/reforma-no-parque-imperial-barueri-obra.html", "/p/reforma-no-engenho-novo-barueri-obra.html", "/p/reforma-no-jardim-silveira-barueri.html", "/p/reforma-no-jardim-belval-barueri-obra.html", "/p/reforma-na-aldeia-de-barueri-obra.html", "/p/reforma-no-bethaville-barueri-pintura-e.html", "/p/reforma-no-tambore-barueri-obra-completa.html", "/p/reforma-em-alphaville-pintura-pisos-e.html", "/p/reforma-no-centro-de-barueri-obra.html"]);
+for (const p of NOINDEX) LINK_FINAL[p] = hubDe(p);
 const HOME_MOD = '2026-10-28T23:40:00Z';   // última atualização da home nova (sitemap)
 
 // Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
@@ -119,9 +124,48 @@ function linkPilar(resp, path) {
   return new HTMLRewriter().on('footer.mestre-footer', { element(e) { if (!feito) { e.before(BOX_REFORMA, { html: true }); feito = true; } } }).transform(resp);
 }
 
+const LOGO = ORIGIN + '/nova/img/empresa-logo-180.png';
+class LdFix {
+  constructor(path) { this.path = path; this.buf = ''; this.desc = ''; }
+  meta(e) { if (!this.desc) this.desc = e.getAttribute('content') || ''; }
+  text(t) {
+    this.buf += t.text;
+    if (!t.lastInTextNode) { t.remove(); return; }
+    let out = this.buf; this.buf = '';
+    if (out.includes('BlogPosting')) {
+      try {
+        const d = JSON.parse(out);
+        if (d['@type'] === 'BlogPosting') {
+          d.publisher = { '@type': 'Organization', name: 'Mestre dos Reparos Manutenção & Limpeza', url: ORIGIN + '/', logo: { '@type': 'ImageObject', url: LOGO, width: 180, height: 180 } };
+          d.author = { '@type': 'Person', name: 'Paulo Henrique Valadão', jobTitle: 'Engenheiro Eletricista e Responsável Técnico (CREA 141129611802)', url: ORIGIN + '/', worksFor: { '@type': 'Organization', name: 'Mestre dos Reparos Manutenção & Limpeza', url: ORIGIN + '/' } };
+          if (this.desc) d.description = this.desc;
+          if (this.path.startsWith('/p/')) { d['@type'] = 'WebPage'; d.url = ORIGIN + this.path; delete d.mainEntityOfPage; }
+          out = JSON.stringify(d);
+        }
+      } catch (e) {}
+    }
+    t.replace(out, { html: true });
+  }
+}
+function ldFix(resp, path) {
+  const f = new LdFix(path);
+  return new HTMLRewriter()
+    .on('meta[name="description"]', { element: e => f.meta(e) })
+    .on('script[type="application/ld+json"]', { text: t => f.text(t) })
+    .transform(resp);
+}
+
+// conversão do Google Ads: o tema do Blogger só configura AW-3322908435 (ID da conta, não da tag) e só o botão
+// flutuante disparava conversão. Aqui: configura a tag certa e conta clique em QUALQUER link de WhatsApp.
+const ADS_TAG = `<script>(function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments)}window.gtag=window.gtag||g;
+if(!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=AW-17918599259';document.head.appendChild(s);gtag('js',new Date());}
+gtag('config','AW-17918599259');var u=0;
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+if(/wa\\.me|whatsapp\\.com/i.test(h)&&!u&&!/42knCLy_j68cENvAoOBC/.test(a.getAttribute('onclick')||'')){u=1;setTimeout(function(){u=0},3000);gtag('event','conversion',{send_to:'AW-17918599259/42knCLy_j68cENvAoOBC'});}},true);})();</script>`;
+
 async function comContagem(resp, env, path = '') {
   const rc = env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
-  resp = linkPilar(seloAntesDoRodape(resp), path);
+  resp = new HTMLRewriter().on('a[href]', new LinkFix()).on('head', { element(e) { e.append(ADS_TAG, { html: true }); } }).transform(ldFix(linkPilar(seloAntesDoRodape(resp), path), path));
   if (!rc) return resp;
   return new HTMLRewriter().onDocument(new Contagem(rc)).transform(resp);
 }
@@ -135,7 +179,7 @@ async function comNota(resp, env, p) {
     : '';
   const botoes = `<div class="mr-votar" style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">${[1, 2, 3, 4, 5].map(n => `<button type="button" data-n="${n}" aria-label="${n} estrela${n > 1 ? 's' : ''}" style="background:#ffb300;color:#0b2a4a;border:0;border-radius:8px;padding:8px 12px;font:700 16px Arial,sans-serif;cursor:pointer">${n} ★</button>`).join('')}</div><p class="mr-msg" style="margin:8px 0 0;font-size:14px"></p>
 <script>(function(){var b=document.getElementById('mr-avaliacao');if(!b)return;b.querySelectorAll('.mr-votar button').forEach(function(x){x.onclick=function(){fetch('/api/avaliar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({p:b.getAttribute('data-p'),n:+x.getAttribute('data-n')})}).then(function(r){return r.json()}).then(function(d){b.querySelector('.mr-msg').textContent=d.ok?'Obrigado pela avaliação! Nota atual: '+String(d.media).replace('.',',')+' de 5 ('+d.total+')':'Não foi possível registrar agora.';})}})})();</script>`;
-  const ld = nota ? `<script type="application/ld+json">${JSON.stringify({
+  const ld = false && nota ? `<script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'Product', name: AVALIAR[p].nome,
     description: AVALIAR[p].desc,
     image: AVALIAR[p].fotos.map(f => ORIGIN + '/nova/img/' + f), brand: { '@type': 'Brand', name: 'Mestre dos Reparos' },
@@ -191,6 +235,14 @@ async function aquecer(env) {
 export default {
   async scheduled(event, env, ctx) { ctx.waitUntil(aquecer(env)); },
   async fetch(request, env, ctx) {
+    const u = new URL(request.url);
+    if (NOINDEX.has(u.pathname)) return Response.redirect(u.origin + hubDe(u.pathname), 301);
+    return servir(request, env, ctx);
+  },
+};
+
+async function servir(request, env, ctx) {
+  {
     const req = new URL(request.url);
     if (req.pathname === '/x/ads') return Response.redirect('https://accounts.google.com/o/oauth2/v2/auth?client_id=660029911002-aqfh5488tlnf0vivsne272qs04sicpjl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fdevelopers.google.com%2Foauthplayground&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fadwords&access_type=offline&prompt=consent&login_hint=mestredosreparosbarueri%40gmail.com', 302);   // atalho: autorizar Google Ads
     if (req.pathname === '/api/avaliar') return votar(request, env);
@@ -199,6 +251,7 @@ export default {
     }
     // home nova (servida do GitHub, cache na borda); a página antiga do Blogger vira 301 para "/"
     if (req.pathname === RAIZ) return Response.redirect(req.origin + '/', 301);
+    if (req.pathname === '/p/temos-de-uso.html') return Response.redirect(req.origin + '/p/termos-de-uso.html', 301);
     const rastreio = [...req.searchParams.keys()].every(k => /^(utm_|gclid|gbraid|wbraid|fbclid|srsltid)/.test(k));
     if (req.pathname === '/' && rastreio && (request.method === 'GET' || request.method === 'HEAD')) {
       const chave = new Request(req.origin + '/__home');
@@ -269,9 +322,9 @@ export default {
     h.set('x-mdr', 'miss'); h.set('server-timing', 'origem;dur=' + (Date.now() - t0) + ', cf;desc="' + (resp.headers.get('cf-cache-status') || '-') + '"');
     const html = (h.get('content-type') || '').includes('text/html');
     if (req.pathname.startsWith('/sitemap') && resp.status === 200) {
-      const xml = (await resp.text()).split(ORIGIN + RAIZ).join(ORIGIN + '/');
+      const xml = (await resp.text()).split(ORIGIN + RAIZ).join(ORIGIN + '/').replace(/<loc>([^<]*)<\/loc>/g, (m, u) => '<loc>' + u.replace(/ /g, '%20') + '</loc>');
       let casa = xml.replace(new RegExp('(<loc>' + ORIGIN + '/</loc><lastmod>)[^<]*'), '$1' + HOME_MOD);
-      for (const p of FORA_SITEMAP) casa = casa.replace(new RegExp('<url><loc>' + ORIGIN + p.replace(/[.]/g, '\\.') + '</loc>.*?</url>'), '');
+      for (const p of [...FORA_SITEMAP, ...NOINDEX]) casa = casa.replace(new RegExp('<url><loc>' + ORIGIN + p.replace(/[.]/g, '\\.') + '</loc>.*?</url>'), '');
       return new Response(casa, { status: 200, headers: h });
     }
     if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600, s-maxage=86400');
@@ -286,5 +339,5 @@ export default {
     }
     if (!(html && resp.status === 200)) return final;
     return comContagem(AVALIAR[req.pathname] ? await comNota(final, env, req.pathname) : final, env, req.pathname);
-  },
-};
+  }
+}
