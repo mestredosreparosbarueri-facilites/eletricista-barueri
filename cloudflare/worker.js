@@ -164,12 +164,24 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 if(/wa\\.me|whatsapp\\.com/i.test(h)&&!u&&!/42knCLy_j68cENvAoOBC/.test(a.getAttribute('onclick')||'')){u=1;setTimeout(function(){u=0},3000);gtag('event','conversion',{send_to:'AW-17918599259/42knCLy_j68cENvAoOBC'});}},true);})();</script>`;
 
 // meta description de páginas do Blogger que não têm (Paulo aprovou 07/11)
-const OGIMG = { '/p/eletricista-em-barueri.html': 'https://www.mestredosreparos.app.br/nova/img/quadro-depois.jpg' };
-const DESC = { '/p/eletricista-em-barueri.html': 'Disjuntor caindo, tomada quente ou quadro sem DPS? Mande a foto no WhatsApp e receba o preço. Engenheiro com CREA e 90 dias de garantia por escrito.' };
+const OGIMG = { '/p/eletricista-em-barueri.html': 'https://www.mestredosreparos.app.br/nova/img/quadro-depois.jpg', '/p/reformas-residenciais-e-comerciais-em.html': 'https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/reformas/sala-reformada-com-iluminacao.jpg', '/p/contrato-de-manutencao-para-empresas.html': 'https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/galpao-estrutura-metalica-manutencao.jpg', '/2026/10/manutencao-para-empresas.html': 'https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/medicao-de-corrente-no-quadro.jpg' };
+const DESC = { '/p/eletricista-em-barueri.html': 'Disjuntor caindo, tomada quente ou quadro sem DPS? Mande a foto no WhatsApp e receba o preço. Engenheiro com CREA e 90 dias de garantia por escrito.', '/p/reformas-residenciais-e-comerciais-em.html': 'Reforma de casa, apartamento, loja e escritório em Barueri, equipe própria e engenheiro com CREA. Mande fotos no WhatsApp e receba o orçamento por etapa.', '/p/contrato-de-manutencao-para-empresas.html': 'Contrato de manutenção predial em Barueri para empresas, condomínios e galpões: elétrica, civil, pintura e reparos, com engenheiro CREA. Peça a proposta.', '/2026/10/manutencao-para-empresas.html': 'Guia de manutenção predial para empresas em Barueri: preventiva x corretiva, checklist por tipo de prédio, NR-10 e o que exigir antes de contratar.' };
 
+// páginas com schema próprio no corpo (@graph): tira o BlogPosting que o tema do Blogger gera, para não duplicar
+const LD_PROPRIO = new Set(['/2026/10/manutencao-para-empresas.html']);
+class SemLdTema {
+  constructor(path) { this.on = LD_PROPRIO.has(path); this.buf = ''; }
+  text(t) {
+    if (!this.on) return;
+    this.buf += t.text; t.remove();
+    if (!t.lastInTextNode) return;
+    const out = this.buf; this.buf = '';
+    t.after(out.includes('"BlogPosting"') && !out.includes('@graph') ? '{}' : out, { html: true });
+  }
+}
 async function comContagem(resp, env, path = '') {
   const rc = env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
-  resp = new HTMLRewriter().on('meta[property="og:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('meta[name="twitter:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('a[href]', new LinkFix()).on('head', { element(e) { e.append(ADS_TAG + (DESC[path] ? `<meta name="description" content="${DESC[path]}">` : ''), { html: true }); } }).transform(ldFix(linkPilar(seloAntesDoRodape(resp), path), path));
+  resp = new HTMLRewriter().on('meta[name="description"]', { element(e) { if (DESC[path]) e.remove(); } }).on('script[type="application/ld+json"]', new SemLdTema(path)).on('meta[property="og:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('meta[name="twitter:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('a[href]', new LinkFix()).on('head', { element(e) { e.append(ADS_TAG + (DESC[path] ? `<meta name="description" content="${DESC[path]}">` : ''), { html: true }); } }).transform(ldFix(linkPilar(seloAntesDoRodape(resp), path), path));
   if (!rc) return resp;
   return new HTMLRewriter().onDocument(new Contagem(rc)).transform(resp);
 }

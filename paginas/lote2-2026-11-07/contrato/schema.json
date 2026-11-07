@@ -1,0 +1,406 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://www.mestredosreparos.app.br/#empresa",
+      "name": "Mestre dos Reparos Manutenção & Limpeza",
+      "url": "https://www.mestredosreparos.app.br/",
+      "logo": "https://www.mestredosreparos.app.br/nova/img/empresa-logo-180.png",
+      "image": [
+        "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@441521da086af3f647bc7427f6f79eefda3292b4/fotos/servicos/galpao-estrutura-metalica-manutencao.webp"
+      ],
+      "telephone": "+55-11-91839-0430",
+      "email": "mestredosreparosbarueri@gmail.com",
+      "taxID": "64.521.657/0001-87",
+      "priceRange": "$$",
+      "currenciesAccepted": "BRL",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Henrique Gonçalves Baptista, 2245",
+        "addressLocality": "Barueri",
+        "addressRegion": "SP",
+        "postalCode": "06420-130",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Barueri"
+        },
+        {
+          "@type": "City",
+          "name": "Santana de Parnaíba"
+        },
+        {
+          "@type": "City",
+          "name": "Jandira"
+        },
+        {
+          "@type": "City",
+          "name": "Itapevi"
+        },
+        {
+          "@type": "City",
+          "name": "Carapicuíba"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "WhatsApp",
+          "url": "https://wa.me/5511918390430",
+          "availableLanguage": "pt-BR"
+        }
+      ],
+      "employee": {
+        "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
+      },
+      "sameAs": [
+        "https://www.instagram.com/mestredosreparosfacilites",
+        "https://www.facebook.com/profile.php?id=61587382650217",
+        "https://www.youtube.com/@mestredosreparos-i9d",
+        "https://www.tiktok.com/@mestre.dos.reparo1",
+        "https://lojamestredosreparos.com/"
+      ],
+      "description": "Manutenção predial, elétrica, reformas e limpeza em Barueri e região, com engenheiro responsável (CREA 141129611802)."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.mestredosreparos.app.br/#paulo-valadao",
+      "name": "Paulo Henrique Valadão",
+      "honorificPrefix": "Eng.",
+      "jobTitle": "Engenheiro e responsável técnico",
+      "worksFor": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade Federal do Rio de Janeiro (UFRJ)"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "SENAI"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Registro no CREA nº 141129611802",
+          "credentialCategory": "Registro profissional",
+          "identifier": "141129611802",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "CREA - Conselho Regional de Engenharia e Agronomia"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Formação em engenharia",
+          "credentialCategory": "Diploma de graduação",
+          "recognizedBy": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidade Federal do Rio de Janeiro (UFRJ)"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Curso técnico",
+          "credentialCategory": "Diploma técnico",
+          "recognizedBy": {
+            "@type": "EducationalOrganization",
+            "name": "SENAI"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "NR-10 - Segurança em instalações e serviços em eletricidade",
+          "credentialCategory": "Certificado"
+        }
+      ],
+      "knowsAbout": [
+        "Manutenção predial preventiva e corretiva",
+        "Instalações elétricas de baixa tensão",
+        "NBR 5410",
+        "NR-10",
+        "Quadro de distribuição"
+      ],
+      "description": "Responsável técnico da Mestre dos Reparos, com 25 anos de experiência em instalações e manutenção."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.mestredosreparos.app.br/#site",
+      "url": "https://www.mestredosreparos.app.br/",
+      "name": "Mestre dos Reparos",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#webpage",
+      "url": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html",
+      "name": "Manutenção Predial em Barueri | Contrato para Empresas e Condomínios",
+      "headline": "Manutenção predial em Barueri: contrato para empresas, condomínios, galpões e CDs",
+      "description": "Contrato de manutenção predial em Barueri para empresas, condomínios e galpões: elétrica, civil, pintura e reparos, com engenheiro CREA. Peça a proposta.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://www.mestredosreparos.app.br/#site"
+      },
+      "about": {
+        "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#servico"
+      },
+      "mainEntity": {
+        "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#servico"
+      },
+      "publisher": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      },
+      "reviewedBy": {
+        "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
+      },
+      "lastReviewed": "2026-11-07",
+      "datePublished": "2026-10-11T10:41:32-03:00",
+      "dateModified": "2026-11-07T00:00:00-03:00",
+      "breadcrumb": {
+        "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@441521da086af3f647bc7427f6f79eefda3292b4/fotos/servicos/galpao-estrutura-metalica-manutencao.webp",
+        "caption": "Manutenção em galpão com estrutura metálica feita pela equipe da Mestre dos Reparos em Barueri"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#servico",
+      "name": "Contrato de manutenção predial em Barueri",
+      "serviceType": "Manutenção predial",
+      "description": "Contrato de manutenção preventiva e corretiva para empresas, condomínios, galpões e centros de distribuição: elétrica predial, civil e alvenaria, pintura, hidráulica, serralheria, pequenos reparos e limpeza integrada, com relatório mensal e nota fiscal.",
+      "provider": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Barueri"
+        },
+        {
+          "@type": "City",
+          "name": "Santana de Parnaíba"
+        },
+        {
+          "@type": "City",
+          "name": "Jandira"
+        },
+        {
+          "@type": "City",
+          "name": "Itapevi"
+        },
+        {
+          "@type": "City",
+          "name": "Carapicuíba"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Empresas, condomínios, galpões logísticos e centros de distribuição"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Modalidades de contrato de manutenção",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Preventivo programado"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Preventivo com corretiva inclusa"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Por chamado com preço fechado"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plantão 24 horas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Multiunidade"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Com limpeza integrada"
+            }
+          }
+        ]
+      },
+      "url": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#faq",
+      "url": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#webpage"
+      },
+      "about": {
+        "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#servico"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é um contrato de manutenção predial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É um acordo mensal em que a empresa de manutenção assume a preventiva e a corretiva de um ou mais imóveis. Escopo, frequência e prazo de atendimento ficam por escrito. Você deixa de contratar um fornecedor a cada problema e passa a ter uma equipe fixa que conhece as instalações."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Para quem o contrato de manutenção é indicado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para empresas, condomínios residenciais e comerciais, galpões logísticos, centros de distribuição, lojas, clínicas, escolas e redes com várias unidades. Vale para qualquer operação em que uma falha elétrica, hidráulica ou civil para o trabalho e dá prejuízo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que está incluso no contrato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vistoria periódica com checklist, preventiva da elétrica, da hidráulica e da parte civil, pintura de manutenção, revisão de portas, fechaduras e telas, chamados corretivos com prazo definido e relatório mensal. O escopo final de cada imóvel fica descrito na proposta, junto com o que não está incluso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como é definido o valor mensal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O valor sai da área construída, do número de unidades ou pontos de manutenção, da complexidade das instalações, da frequência das visitas e do prazo de atendimento contratado. Primeiro fazemos a vistoria inicial e só depois apresentamos a proposta, sem estimativa por cima."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o prazo mínimo do contrato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O contrato padrão é de 12 meses, que é o tempo para a preventiva reduzir as corretivas. Também atendemos contratos de 3 ou 6 meses, quando é preciso cobrir um período específico, como uma obra ou uma troca de gestão."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o prazo de atendimento em emergência?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O prazo fica por escrito no contrato, conforme a criticidade do chamado. Falha que para a operação, como falta de energia em área crítica, vazamento ativo ou porta de acesso que não fecha, é atendida no mesmo dia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês atendem fora do horário comercial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Para galpão, centro de distribuição e condomínio com operação em turno, atendemos à noite, de madrugada, no fim de semana e no feriado. O adicional desse horário fica informado no contrato."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como eu abro um chamado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pelo WhatsApp (11) 91839-0430 ou por e-mail, de preferência com uma foto do problema. A gente registra o chamado, classifica a criticidade e manda a equipe. No fim, você recebe o registro do que foi feito, com as peças e a mão de obra descritas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peças e materiais estão inclusos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A mão de obra e o material de consumo básico estão inclusos, como parafuso, bucha, silicone e abraçadeira. Peças de maior valor, como disjuntor, bomba, torneira, fechadura, luminária e válvula de descarga, são orçadas à parte e só trocadas depois da sua aprovação por escrito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês entregam relatório e checklist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Cada visita preventiva gera um checklist assinado com o que foi verificado, o que está certo e o que precisa de correção. Todo mês entregamos o relatório com os chamados abertos, atendidos e pendentes. Esse material serve para prestação de contas em assembleia e para auditoria interna."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A limpeza pode entrar no mesmo contrato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pode. A limpeza de áreas comuns, escritório, vestiário, refeitório e pátio entra na mesma proposta e na mesma fatura. Se você já tem um contrato de limpeza separado, fazemos só a manutenção."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tem nota fiscal e garantia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Emitimos nota fiscal em todos os serviços e damos 90 dias de garantia na mão de obra. Se o mesmo problema voltar nesse prazo, a gente refaz sem cobrar a mão de obra."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.mestredosreparos.app.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Manutenção predial para empresas",
+          "item": "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html#artigo",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html"
+      },
+      "url": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html",
+      "headline": "Manutenção Predial para Empresas e Prédios Corporativos em Barueri",
+      "name": "Manutenção Predial para Empresas",
+      "description": "Guia de manutenção predial para empresas em Barueri: preventiva x corretiva, checklist por tipo de prédio, NR-10 e o que exigir antes de contratar.",
+      "inLanguage": "pt-BR",
+      "datePublished": "2026-10-07T12:54:58-03:00",
+      "dateModified": "2026-11-07T00:00:00-03:00",
+      "author": {
+        "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
+      },
+      "publisher": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      },
+      "image": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/medicao-de-corrente-no-quadro.webp",
+          "url": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/medicao-de-corrente-no-quadro.webp",
+          "caption": "Alicate amperímetro medindo corrente em quadro de distribuição com fuligem atrás dos disjuntores, durante manutenção preventiva"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/escritorio-paineis-led.webp",
+          "url": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/escritorio-paineis-led.webp",
+          "caption": "Painéis de LED embutidos no forro de escritório revisados na manutenção predial em Barueri"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/exaustor-de-banheiro-sujo.webp",
+          "url": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/exaustor-de-banheiro-sujo.webp",
+          "caption": "Grelha de exaustor de banheiro com acúmulo de poeira antes da limpeza na manutenção preventiva"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/exaustor-apos-limpeza.webp",
+          "url": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/exaustor-apos-limpeza.webp",
+          "caption": "Exaustor de banheiro depois da limpeza feita na manutenção preventiva"
+        }
+      ],
+      "articleSection": "Manutenção Predial",
+      "keywords": [
+        "manutenção predial em Barueri",
+        "manutenção predial em Alphaville",
+        "manutenção preventiva",
+        "NR-10",
+        "NBR 5674",
+        "contrato de manutenção predial"
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Manutenção predial"
+        },
+        {
+          "@type": "Place",
+          "name": "Barueri, SP"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "NR-10"
+        },
+        {
+          "@type": "Thing",
+          "name": "NBR 5410"
+        },
+        {
+          "@type": "Thing",
+          "name": "NBR 5674"
+        },
+        {
+          "@type": "Thing",
+          "name": "NBR 14037"
+        }
+      ],
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Alphaville, Barueri, SP"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html#faq",
+      "url": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html#artigo"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é manutenção predial para empresas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É o cuidado programado com elétrica, hidráulica, acabamento e pequenos reparos do imóvel comercial, para evitar falhas que parem a operação. Inclui visitas preventivas com checklist e o atendimento corretivo quando algo quebra. A NBR 5674 é a norma da ABNT que orienta a gestão dessa manutenção."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre manutenção preventiva e corretiva?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A preventiva é feita com data marcada, antes da falha, seguindo um checklist. A corretiva é feita depois que algo quebrou. A preventiva deixa a empresa escolher o horário e registra o estado de cada item. A corretiva acontece no horário do problema, muitas vezes no meio do expediente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De quanto em quanto tempo deve ser feita a manutenção preventiva?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do uso e da idade do prédio. Nossos planos são mensais ou trimestrais, com os quadros elétricos revisados em toda visita. Alguns itens seguem referência própria: a Sabesp recomenda limpar a caixa d'água a cada 6 meses, e gerador, nobreak e DR seguem o manual do fabricante."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O eletricista da manutenção precisa ter NR-10?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A NR-10 exige que quem trabalha em instalações elétricas seja qualificado e treinado, com o curso básico de 40 horas e reciclagem a cada dois anos. Peça o certificado antes do serviço. Empresas com carga instalada acima de 75 kW também precisam manter o Prontuário de Instalações Elétricas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A empresa de manutenção emite ART?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quando o escopo exige responsabilidade técnica formal, sim. A ART é emitida pelo engenheiro responsável, registrado no CREA. Aqui o responsável é o engenheiro Paulo Henrique Valadão, CREA 141129611802. Isso costuma ser pedido por auditoria interna e seguradora."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que um contrato de manutenção predial deve ter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Escopo com a lista de itens, frequência das visitas, modelo de relatório, forma de abrir chamado de emergência, regra para peças e materiais, serviços com ART e forma de faturamento. Se a proposta traz só o valor mensal, sem a lista do que será feito, peça o escopo por escrito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vale a pena contratar manutenção predial ou chamar só quando quebra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para escritório pequeno com pouca carga, chamar quando quebra pode bastar. Para agência, galpão ou prédio com operação que não pode parar, o plano preventivo evita parada no expediente e deixa registro para auditoria. Se ficar em dúvida, mande fotos do quadro no WhatsApp e a gente orienta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês atendem empresas em Alphaville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Alphaville é bairro de Barueri e fica perto da nossa base, no Jardim Belval. Atendemos empresas em toda Barueri e também em Santana de Parnaíba, Jandira, Itapevi e Carapicuíba. Para conhecer as modalidades, veja o contrato de manutenção predial em Barueri."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.mestredosreparos.app.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.mestredosreparos.app.br/search"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Manutenção Predial para Empresas",
+          "item": "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html"
+        }
+      ]
+    }
+  ]
+}
