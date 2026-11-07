@@ -98,7 +98,12 @@ def parse(md):
                 i += 1
             th = ''.join(f'<th scope="col">{inline(c)}</th>' for c in rows[0])
             tb = ''.join('<tr>' + f'<th scope="row">{inline(r[0])}</th>' + ''.join(f'<td>{inline(c)}</td>' for c in r[1:]) + '</tr>' for r in rows[1:])
-            out.append(f'<div class="tab"><table><thead><tr>{th}</tr></thead><tbody>{tb}</tbody></table></div>'); continue
+            preco = all(re.fullmatch(r'(R\$.*|\d.*(dias|metro|h)?|visita técnica)', r[-1].strip(), re.I) and len(r[-1]) < 25 for r in rows[1:])
+            if not preco:
+                hd = rows[0]
+                tb = ''.join('<tr role="row">' + f'<th scope="row" role="rowheader">{inline(r[0])}</th>' + ''.join(f'<td role="cell" data-label="{html.escape(hd[k+1])}">{inline(x)}</td>' for k, x in enumerate(r[1:])) + '</tr>' for r in rows[1:])
+                th = ''.join(f'<th scope="col" role="columnheader">{inline(x)}</th>' for x in hd)
+            out.append(f'<div class="tab"><table class="{"preco" if preco else "texto"}"{"" if preco else ' role="table"'}><thead{"" if preco else ' role="rowgroup"'}><tr{"" if preco else ' role="row"'}>{th}</tr></thead><tbody>{tb}</tbody></table></div>'); continue
         if Ln.startswith('> '):
             out.append(f'<p class="nota">{inline(Ln[2:].strip())}</p>'); i += 1; continue
         if re.match(r'^(- |\d+\. )', Ln):
@@ -173,6 +178,19 @@ def build(nome):
     print(nome, 'ok', len(page), 'H2', body.count('<h2'), 'H3', body.count('<h3'), 'meta', len(meta.group(1).strip()) if meta else 0)
 
 EXTRA_CSS = '''
+.mdr3 table.texto th,.mdr3 table.texto td{vertical-align:top;text-align:left;font-weight:400;white-space:normal;word-break:normal;overflow-wrap:normal;hyphens:manual;font-size:16px;line-height:1.5;padding:14px 12px 14px 0}
+.mdr3 table.texto thead th{font-size:14px;font-weight:600;color:var(--cinza)}
+.mdr3 table.texto tbody th{min-width:9em;font-weight:600;color:var(--marinho)}
+.mdr3 table.texto td:last-child{text-align:left;font-weight:400;white-space:normal}
+@media (max-width:700px){
+.mdr3 table.texto thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.mdr3 table.texto,.mdr3 table.texto tbody,.mdr3 table.texto tr,.mdr3 table.texto th,.mdr3 table.texto td{display:block;width:auto}
+.mdr3 table.texto tr{border-left:3px solid var(--marinho);padding:2px 0 2px 14px;margin:0 0 22px}
+.mdr3 table.texto tbody th{border:0;padding:0 0 6px;font-size:18px}
+.mdr3 table.texto td{border:0;padding:0 0 8px}
+.mdr3 table.texto td::before{content:attr(data-label);display:block;font-size:14px;color:var(--cinza);font-weight:600}
+.mdr3 table.texto td:empty{display:none}
+}
 .mdr3 .hero.artigo{grid-template-columns:1fr;max-width:860px}
 .mdr3 .hero.artigo .hero-txt ul{columns:2;gap:32px;padding-left:1.1em;font-size:16px}
 @media (max-width:820px){.mdr3 .hero.artigo .hero-txt ul{columns:1}}
