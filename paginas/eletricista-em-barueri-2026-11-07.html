@@ -1,0 +1,659 @@
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--marinho:#0E2347;--grafite:#1E2329;--cinza:#5E6670;--linha:#E3E6EA;--zap:#1A7F43;--zap2:#146A37;--fundo:#fff}
+*{box-sizing:border-box}
+.mdr3-body-unused{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--grafite);background:var(--fundo);font-size:18px;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:var(--marinho)}
+:focus-visible{outline:3px solid var(--marinho);outline-offset:3px}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--marinho);text-decoration:none;font-size:17px}
+.logo img{width:36px;height:36px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--zap);color:#fff;text-decoration:none;font-weight:600;border-radius:6px;padding:15px 24px;min-height:52px;font-size:18px}
+.btn:hover{background:var(--zap2)}
+.btn svg{width:22px;height:22px;flex:none}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:56px;padding-bottom:64px}
+h1{font-size:clamp(40px,5.6vw,64px);line-height:1.05;letter-spacing:-.02em;color:var(--marinho);margin:0 0 20px;font-weight:700}
+.lead{font-size:20px;max-width:30em;margin:0 0 28px}
+.prova{margin:22px 0 0;font-size:16px;color:var(--cinza)}
+.prova strong{color:var(--grafite)}
+.prova a{color:var(--cinza)}
+.estr{color:#B87800;letter-spacing:1px}
+figure{margin:0}
+.hero figure img{width:100%;height:min(560px,68vh);object-fit:cover;object-position:50% 45%;border-radius:4px}
+.hero figcaption{font-size:15px;color:var(--cinza);margin-top:10px}
+/* clientes */
+.clientes{border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);padding:22px 0;overflow:hidden}
+.clientes p{margin:0 0 12px;font-size:15px;color:var(--cinza)}
+.trilho{display:flex;gap:56px;width:max-content;animation:rola 32s linear infinite}
+.clientes:hover .trilho{animation-play-state:paused}
+.trilho span{font-size:22px;font-weight:600;color:var(--marinho);white-space:nowrap}
+@keyframes rola{to{transform:translateX(-50%)}}
+/* depoimentos */
+.dep{padding-top:72px;padding-bottom:72px}
+h2{font-size:clamp(30px,3.6vw,40px);line-height:1.15;color:var(--marinho);margin:0 0 8px;letter-spacing:-.01em}
+.dep .sub{color:var(--cinza);margin:0 0 28px;font-size:17px}
+.faixa{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.faixa::-webkit-scrollbar{display:none}
+blockquote{margin:0;flex:0 0 min(420px,86%);scroll-snap-align:start;border-top:2px solid var(--marinho);padding-top:18px}
+blockquote p{margin:0 0 14px;font-size:19px;line-height:1.55}
+blockquote footer{font-size:15px;color:var(--cinza)}
+blockquote footer b{color:var(--grafite)}
+.ctrl{display:flex;gap:10px;margin-top:22px}
+.ctrl button{width:48px;height:48px;border:1px solid var(--linha);background:#fff;border-radius:50%;font-size:20px;cursor:pointer;color:var(--marinho)}
+.ctrl button:hover{border-color:var(--marinho)}
+@media (max-width:820px){
+ .hero{grid-template-columns:1fr;gap:32px;padding-top:28px;padding-bottom:40px}
+ .hero figure img{height:auto;aspect-ratio:4/3}
+ .btn.grande{width:100%}
+}
+@media (prefers-reduced-motion:reduce){.trilho{animation:none;flex-wrap:wrap;width:auto;gap:12px 32px}}
+.rod{background:var(--marinho);color:#D5DCE6;font-size:16px;padding:56px 0 40px}
+.rod a{color:#fff}
+.rod .g{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.rod h2{color:#fff;font-size:20px;margin:0 0 12px}
+.rod p{margin:0 0 12px}
+.rod ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.rod ul a{display:inline-block;min-height:28px}
+.rod .base{border-top:1px solid #2A3E63;margin-top:40px;padding-top:20px;font-size:14px;color:#AEB9C9}
+@media (max-width:820px){.rod .g{grid-template-columns:1fr;gap:32px}}
+.redes{background:#F4F6F9;padding:72px 0}
+.redes-g{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.redes p{margin:0 0 22px;max-width:34em}
+.btn svg{fill:currentColor}
+.btn.ig{background:#fff;color:var(--grafite);border:1px solid #D62976}
+.btn.ig svg{fill:#D62976}
+.btn.ig:hover{background:#FDF2F7}
+.tiles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tiles a{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--linha);border-radius:8px;padding:14px 16px;text-decoration:none;color:var(--grafite);min-height:64px}
+.tiles a:hover{border-color:var(--c)}
+.tiles .ic{flex:none;width:40px;height:40px;border-radius:50%;background:var(--c);display:grid;place-items:center}
+.tiles .ic svg{width:22px;height:22px;fill:#fff}
+.tiles b{display:block;font-size:16px}
+.tiles small{display:block;font-size:13.5px;color:var(--cinza);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tiles a>span:last-child{min-width:0}
+.icrow{display:flex;gap:12px;flex-wrap:wrap}
+.icrow a{width:44px;height:44px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.icrow svg{width:22px;height:22px;fill:var(--marinho)}
+@media (max-width:820px){.redes-g{grid-template-columns:1fr;gap:40px}.tiles{grid-template-columns:1fr}.btn.ig{width:100%}}
+.topbar{background:var(--marinho);color:#D5DCE6;font-size:14px}
+.topbar .w{display:flex;justify-content:space-between;align-items:center;min-height:40px;gap:16px}
+.topbar a{color:#fff}
+.tb-soc{display:flex;gap:6px}
+.tb-soc a{width:32px;height:32px;display:grid;place-items:center}
+.tb-soc svg{width:17px;height:17px;fill:#fff}
+.cab{border-bottom:1px solid var(--linha);background:#fff;position:sticky;top:0;z-index:10}
+.cab .w{display:flex;align-items:center;gap:28px;height:76px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--marinho);text-decoration:none;font-size:18px;line-height:1.15}
+.logo img{width:44px;height:44px}
+.logo small{display:block;font-weight:500;font-size:13px;color:var(--cinza)}
+.cab nav{margin-left:auto}
+.menu{list-style:none;display:flex;gap:4px;margin:0;padding:0}
+.menu a{display:block;white-space:nowrap;padding:10px 12px;text-decoration:none;color:var(--grafite);font-size:16px;font-weight:500;border-radius:4px}
+.menu a:hover{background:#F4F6F9}
+.menu a[aria-current]{color:var(--marinho);box-shadow:inset 0 -2px 0 var(--marinho);border-radius:0}
+.cab .btn{padding:10px 18px;min-height:44px;font-size:16px}
+.mob{display:none;position:relative}
+.mob summary{list-style:none;width:44px;height:44px;display:grid;place-content:center;gap:5px;cursor:pointer;border:1px solid var(--linha);border-radius:6px}
+.mob summary::-webkit-details-marker{display:none}
+.mob summary span{display:block;width:20px;height:2px;background:var(--marinho)}
+.mob ul{position:absolute;right:0;top:52px;background:#fff;border:1px solid var(--linha);border-radius:8px;list-style:none;margin:0;padding:8px;width:240px;box-shadow:0 12px 32px rgba(14,35,71,.16)}
+.mob ul a{display:block;padding:12px 14px;text-decoration:none;color:var(--grafite)}
+@media (max-width:1080px){.cab nav{display:none}.mob{display:block}.cab .btn{margin-left:auto}}
+.pular{position:absolute;left:-999px}.pular:focus{left:12px;top:12px;z-index:20;background:#fff;padding:8px 12px}
+@media (max-width:820px){.topbar .w>span:first-child{font-size:12.5px;line-height:1.3;padding:6px 0}.tb-soc{display:none}.cab .w{height:64px;gap:10px}.logo{font-size:16px}.logo small{font-size:12px}.cab .btn span{display:none}.cab .btn{padding:10px 12px}}
+.rod address{font-style:normal}
+.trilha ol{list-style:none;display:flex;gap:8px;margin:0;padding:14px 0 0;font-size:14px;color:var(--cinza)}
+.trilha li+li::before{content:"/";margin-right:8px}
+.bloco{padding:56px 0;border-top:1px solid var(--linha)}
+.estreito{max-width:760px}
+.bloco p,.bloco li{max-width:68ch}
+.bloco h3{font-size:22px;color:var(--marinho);margin:36px 0 10px;line-height:1.25}
+.sub{scroll-margin-top:90px}
+.foto{margin:24px 0}
+.foto img{width:100%;max-height:520px;object-fit:cover;border-radius:4px}
+.foto figcaption{font-size:15px;color:var(--cinza);margin-top:8px}
+.tab{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+caption{text-align:left;font-size:15px;color:var(--cinza);padding-bottom:8px}
+th,td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--linha);font-size:17px}
+thead th{font-size:14px;color:var(--cinza);font-weight:600}
+td:last-child{text-align:right;font-weight:600;white-space:nowrap}
+tbody th{font-weight:400}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 32px 18px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:14px;font-size:26px;color:var(--marinho)}
+.faq details[open] summary::after{content:"−"}
+.faq summary h3{margin:0;font-size:19px}
+.faq details p{margin:0 0 18px}
+.clientes{margin-top:0}
+.video a{font-weight:600}
+.bloco .faixa{margin-top:20px}
+
+/* página dentro do tema Blogger: esconde cabeçalho, título e rodapé do tema só nesta página */
+.centered-top-placeholder,header.centered-top-container,.post-outer h3.post-title,.post-bottom,footer#footer,.sidebar-container{display:none!important}
+.page_body .centered,.centered-bottom,.post-outer,.post,.post-body,.blog-posts{max-width:none!important;width:auto!important;margin:0!important;padding:0!important;background:#fff!important;box-shadow:none!important;border:0!important}
+html,body{overflow-x:hidden}
+.mdr3{width:100vw;position:relative;left:50%;margin-left:-50vw;background:#fff;font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--grafite);font-size:18px;line-height:1.6}
+.aval-site{margin-top:24px;padding:16px 0;border-top:1px solid var(--linha);font-size:16px}
+.aval-site .mr-votar button{background:#fff!important;color:var(--marinho)!important;border:1px solid var(--linha)!important;min-height:44px}
+.aval-site p{font-family:"IBM Plex Sans",sans-serif!important}
+.mr-faixa-docs{display:none!important}
+.mr-selo-rt{background:#fff!important;color:#0E2347!important;border:1px solid #E3E6EA!important;box-shadow:none!important;border-radius:6px!important;font-family:"IBM Plex Sans",sans-serif!important}
+.mr-selo-rt span{background:none!important;color:#0E2347!important;text-decoration:underline;padding:0!important}
+</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Electrician",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.mestredosreparos.app.br/#empresa",
+      "name": "Mestre dos Reparos Manutenção & Limpeza",
+      "url": "https://www.mestredosreparos.app.br/",
+      "logo": "https://www.mestredosreparos.app.br/nova/img/empresa-logo-180.png",
+      "image": [
+        "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/quadro-com-dps-instalado.webp"
+      ],
+      "telephone": "+55-11-91839-0430",
+      "email": "mestredosreparosbarueri@gmail.com",
+      "taxID": "64.521.657/0001-87",
+      "priceRange": "$$",
+      "currenciesAccepted": "BRL",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Henrique Gonçalves Baptista, 2245",
+        "addressLocality": "Barueri",
+        "addressRegion": "SP",
+        "postalCode": "06420-130",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Barueri"
+        },
+        {
+          "@type": "City",
+          "name": "Santana de Parnaíba"
+        },
+        {
+          "@type": "City",
+          "name": "Jandira"
+        },
+        {
+          "@type": "City",
+          "name": "Itapevi"
+        },
+        {
+          "@type": "City",
+          "name": "Carapicuíba"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "WhatsApp",
+          "url": "https://wa.me/5511918390430",
+          "availableLanguage": "pt-BR"
+        }
+      ],
+      "employee": {
+        "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
+      },
+      "sameAs": [
+        "https://www.instagram.com/mestredosreparosfacilites",
+        "https://www.facebook.com/profile.php?id=61587382650217",
+        "https://www.youtube.com/@mestredosreparos-i9d",
+        "https://www.tiktok.com/@mestre.dos.reparo1",
+        "https://lojamestredosreparos.com/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.mestredosreparos.app.br/#paulo-valadao",
+      "name": "Paulo Henrique Valadão",
+      "honorificPrefix": "Eng.",
+      "jobTitle": "Engenheiro e responsável técnico",
+      "worksFor": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade Federal do Rio de Janeiro (UFRJ)"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "SENAI"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Registro no CREA nº 141129611802",
+          "credentialCategory": "Registro profissional",
+          "identifier": "141129611802",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "CREA - Conselho Regional de Engenharia e Agronomia"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Formação em engenharia",
+          "credentialCategory": "Diploma de graduação",
+          "recognizedBy": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidade Federal do Rio de Janeiro (UFRJ)"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Curso técnico",
+          "credentialCategory": "Diploma técnico",
+          "recognizedBy": {
+            "@type": "EducationalOrganization",
+            "name": "SENAI"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "NR-10 - Segurança em instalações e serviços em eletricidade",
+          "credentialCategory": "Certificado"
+        }
+      ],
+      "knowsAbout": [
+        "Instalações elétricas de baixa tensão",
+        "NBR 5410",
+        "NR-10",
+        "Quadro de distribuição",
+        "DR e DPS"
+      ],
+      "description": "Responsável técnico da Mestre dos Reparos, com 25 anos de experiência em instalações elétricas."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.mestredosreparos.app.br/#site",
+      "url": "https://www.mestredosreparos.app.br/",
+      "name": "Mestre dos Reparos",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html#webpage",
+      "url": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html",
+      "name": "Eletricista em Barueri | Atendimento 24 Horas",
+      "headline": "Eletricista em Barueri SP",
+      "description": "Disjuntor caindo, tomada quente ou quadro sem DPS? Mande a foto no WhatsApp e receba o preço. Engenheiro com CREA e 90 dias de garantia por escrito.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://www.mestredosreparos.app.br/#site"
+      },
+      "about": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      },
+      "publisher": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      },
+      "reviewedBy": {
+        "@id": "https://www.mestredosreparos.app.br/#paulo-valadao"
+      },
+      "lastReviewed": "2026-11-07",
+      "datePublished": "2026-05-28T05:43:00-03:00",
+      "dateModified": "2026-11-07T00:00:00-03:00",
+      "breadcrumb": {
+        "@id": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@51f6b3c89d5ff05127871779d610b0a2abe244f6/fotos/servicos/quadro-com-dps-instalado.webp",
+        "caption": "Quadro de distribuição com DPS instalado pela Mestre dos Reparos em Barueri"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html#faq",
+      "url": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html#webpage"
+      },
+      "about": {
+        "@id": "https://www.mestredosreparos.app.br/#empresa"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa chamar um eletricista?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do serviço. Pela nossa tabela de mão de obra, trocar tomada custa R$ 60, trocar disjuntor R$ 110, instalar chuveiro R$ 140 e instalar luminária R$ 100. O mínimo por atendimento é R$ 150 em horário comercial e R$ 250 à noite, domingo e feriado. O material é à parte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tomada esquentando ou derretendo: o que pode ser?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quase sempre é mau contato dentro da tomada ou aparelho puxando mais corrente do que ela aguenta, que é 10 A na tomada comum. O calor derrete o plástico e pode começar um incêndio sem o disjuntor cair. Pare de usar a tomada e mande uma foto. A troca custa R$ 60."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Luz piscando em casa: o que pode ser? É perigoso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se pisca uma lâmpada só, costuma ser a própria lâmpada, o driver do LED ou o interruptor. A troca do driver custa R$ 100. Se piscam várias luzes ao mesmo tempo, pode ser conexão frouxa no quadro, e aí é perigoso, porque o ponto frouxo esquenta. Mais causas em luz piscando em casa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quantos disjuntores precisa o quadro de uma casa ou apartamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Um disjuntor por circuito, e o número muda de casa para casa. A NBR 5410 pede iluminação separada das tomadas, cozinha e lavanderia com circuito próprio e um circuito para cada aparelho acima de 10 A, como chuveiro, forno e cooktop. Deixe sempre espaço reserva no quadro para circuitos futuros."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Eletricista cobra por ponto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para ponto novo, sim. Na nossa tabela, o ponto de tomada simples custa R$ 60, o ponto de luz simples R$ 80 e o ponto de luz com interruptor R$ 90. Se precisar passar fio novo até o ponto, a passagem sai R$ 15 por metro. O material é à parte e entra no mesmo orçamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa uma diária de eletricista?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A diária de eletricista custa R$ 550 por 8 horas de trabalho, com material à parte. Compensa quando há muitos serviços pequenos no mesmo endereço, como trocar várias tomadas, instalar luminárias e revisar o quadro no mesmo dia. Mande a lista no WhatsApp que a gente diz se cabe numa diária."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês atendem emergência à noite?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O mínimo é R$ 250 à noite, domingo e feriado, e R$ 350 depois das 22 h. Escreva no WhatsApp o que está acontecendo, como cheiro de queimado, faísca ou falta de luz só na sua casa, para a gente priorizar. Se tiver cheiro de queimado, desligue o disjuntor geral antes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que eu faço enquanto o eletricista não chega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se tem cheiro de queimado, fumaça ou faísca, desligue o disjuntor geral e não religue. Não encoste em fio exposto e não jogue água perto do quadro. Tire uma foto do quadro com a tampa aberta e mande no WhatsApp (11) 91839-0430. Isso ajuda o eletricista a chegar com a peça certa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso desligar a casa inteira para trocar uma tomada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Basta desligar o circuito daquela tomada, desde que o quadro esteja identificado. Se os disjuntores não têm etiqueta, a gente descobre qual é qual e identifica todos os circuitos do quadro por R$ 150. Depois disso, qualquer manutenção fica mais rápida e você não precisa desligar a casa toda."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês fazem revisão geral da parte elétrica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A revisão elétrica da casa leva cerca de 3 horas e custa R$ 320. Olhamos o quadro, os disjuntores, o reaperto, as tomadas que esquentam e o aterramento. No fim você recebe a lista do que precisa corrigir, com o preço de cada item, e decide o que fazer primeiro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre eletricista e engenheiro eletricista?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O engenheiro tem registro no CREA e responde tecnicamente pelo serviço, do projeto à execução. O eletricista executa. Aqui os dois trabalham juntos. O responsável técnico é o engenheiro Paulo Henrique Valadão, CREA 141129611802, formado pela UFRJ. Os serviços seguem a NBR 5410, a norma das instalações de baixa tensão."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A garantia vale para quê?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A garantia é de 90 dias por escrito na mão de obra, com nota fiscal. Se o mesmo problema voltar nesse prazo, a gente volta e refaz sem cobrar a mão de obra. A peça tem a garantia do fabricante."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.mestredosreparos.app.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Eletricista em Barueri",
+          "item": "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html"
+        }
+      ]
+    }
+  ]
+}</script>
+<div class="mdr3">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="topbar"><div class="w">
+ <span>Atendimento em Barueri inteira e cidades vizinhas · <a href="https://maps.google.com/maps?cid=10403281540691542326">4,9 no Google, 34 avaliações</a></span>
+ <span class="tb-soc"><a href="https://maps.google.com/maps?cid=10403281540691542326" aria-label="Perfil do Google" title="Perfil do Google"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.273 1.636c-.736 0-1.363.492-1.568 1.16L0 9.272c0 1.664 1.336 3 3 3a3 3 0 003-3c0 1.664 1.336 3 3 3a3 3 0 003-3c0 1.65 1.35 3 3 3 1.664 0 3-1.336 3-3 0 1.664 1.336 3 3 3s3-1.336 3-3l-1.705-6.476a1.646 1.646 0 00-1.568-1.16zm8.729 9.326c-.604 1.063-1.703 1.81-3.002 1.81-1.304 0-2.398-.747-3-1.806-.604 1.06-1.702 1.806-3 1.806-.484 0-.944-.1-1.363-.277v8.232c0 .9.736 1.637 1.636 1.637h17.454c.9 0 1.636-.737 1.636-1.637v-8.232a3.48 3.48 0 01-1.363.277c-1.304 0-2.398-.746-3-1.804-.602 1.058-1.696 1.804-3 1.804-1.299 0-2.394-.75-2.998-1.81zm5.725 3.765c.808 0 1.488.298 2.007.782l-.859.859a1.623 1.623 0 00-1.148-.447c-.98 0-1.772.827-1.772 1.806 0 .98.792 1.807 1.772 1.807.882 0 1.485-.501 1.615-1.191h-1.615v-1.16h2.826c.035.196.054.4.054.613 0 1.714-1.147 2.931-2.88 2.931a3 3 0 010-6z"/></svg></a><a href="https://www.instagram.com/mestredosreparosfacilites/" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a><a href="https://www.youtube.com/channel/UC_y6rF_-Cqw6_97Xa_VPhwg" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="https://www.tiktok.com/@mestre.dos.reparo1" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a href="https://www.facebook.com/1037730922750860" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a></span>
+</div></div>
+<header class="cab"><div class="w">
+ <a class="logo" href="/"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEjtLtM5NO95z1sgeuR7AxeY5ZL6nZBuR-3_gqi4EiuQtr5EFV--4rgxp8eIg8ljwAsLEohKBVnC86V4ihRAt0c8157GvgfvWDbBQpn16J1N4Z4OzF5POMaW5RYjW0w1lKsNxG8p6MzbAQm5KbWy6dU90f1zugXPEFjcgeZmmz5gLxf0df3saqlZ9ET-P6vc=w120" alt="" width="44" height="44"><span>Mestre dos Reparos<small>Manutenção &amp; Limpeza</small></span></a>
+ <nav aria-label="Menu principal"><ul class="menu"><li><a href="/">Início</a></li><li><a href="/p/eletricista-em-barueri.html" aria-current="page">Elétrica</a></li><li><a href="/p/reformas-residenciais-e-comerciais-em.html">Reformas</a></li><li><a href="/p/contrato-de-manutencao-para-empresas.html">Empresas</a></li><li><a href="/p/limpeza-pos-obra-em-barueri-e-regiao.html">Limpeza</a></li><li><a href="https://lojamestredosreparos.com/?utm_source=blog&amp;utm_medium=menu&amp;utm_campaign=eletricista">Loja</a></li><li><a href="/search">Blog</a></li></ul></nav>
+ <a class="btn" href="https://wa.me/5511918390430"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg><span>WhatsApp</span></a>
+ <details class="mob"><summary aria-label="Abrir menu"><span></span><span></span><span></span></summary><ul><li><a href="/">Início</a></li><li><a href="/p/eletricista-em-barueri.html" aria-current="page">Elétrica</a></li><li><a href="/p/reformas-residenciais-e-comerciais-em.html">Reformas</a></li><li><a href="/p/contrato-de-manutencao-para-empresas.html">Empresas</a></li><li><a href="/p/limpeza-pos-obra-em-barueri-e-regiao.html">Limpeza</a></li><li><a href="https://lojamestredosreparos.com/?utm_source=blog&amp;utm_medium=menu&amp;utm_campaign=eletricista">Loja</a></li><li><a href="/search">Blog</a></li></ul></details>
+</div></header>
+<nav class="trilha w" aria-label="Você está em"><ol><li><a href="/">Início</a></li><li aria-current="page">Eletricista em Barueri</li></ol></nav>
+<main id="conteudo"><article>
+<div class="w hero">
+ <div>
+  <h1>Eletricista em Barueri SP</h1>
+  <p class="lead">Somos eletricistas em Barueri, com base no Jardim Belval. Atendemos casa, apartamento, condomínio e empresa, com equipe própria e sem terceirizar. O responsável técnico é o engenheiro Paulo Henrique Valadão, CREA 141129611802, com 25 anos de experiência em instalações elétricas.</p><p>O jeito mais rápido é mandar uma foto do problema no WhatsApp (11) 91839-0430. Com a foto a gente já passa o preço. Nota 4,9 no Google, com 34 avaliações.</p><p><em>Página revisada pelo Eng. Paulo Henrique Valadão (CREA 141129611802) em 7 de novembro de 2026.</em></p>
+  <a class="btn grande" href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>Mandar foto no WhatsApp</a>
+  <p class="prova"><span class="estr" aria-hidden="true">★★★★★</span> <strong>4,9 no Google</strong>, <a href="https://maps.google.com/maps?cid=10403281540691542326">34 avaliações</a><br>CREA 141129611802 · Jardim Belval, Barueri</p>
+ </div>
+ <figure><img src="https://www.mestredosreparos.app.br/nova/img/quadro-depois.jpg" alt="Engenheiro medindo a corrente de um quadro de disjuntores com alicate amperímetro" width="1100" height="1466"><figcaption>Quadro refeito e corrente medida, num apartamento em Barueri.</figcaption></figure>
+</div>
+<section class="bloco " aria-labelledby="serviços-elétricos-que-fazemos-em-barueri"><div class="w estreito"><h2 id="serviços-elétricos-que-fazemos-em-barueri">Serviços elétricos que fazemos em Barueri</h2>
+<p>Em Barueri, quase todo chamado de elétrica que recebemos cai em seis serviços: quadro de distribuição, disjuntor caindo, tomada esquentando, fiação antiga, iluminação e circuito da cozinha. O mínimo por atendimento é R$ 150 em horário comercial. Abaixo está o que fazemos em cada caso e quanto custa a mão de obra.</p>
+<section class="sub" aria-labelledby="quadro-de-distribuição-troca-dr-e-dps"><h3 id="quadro-de-distribuição-troca-dr-e-dps">Quadro de distribuição: troca, DR e DPS</h3>
+<p>O quadro é onde ficam os disjuntores da casa. Muito quadro antigo em Barueri ainda não tem DR nem DPS. O DR desliga o circuito quando há fuga de corrente e evita o choque no banho. O DPS protege os aparelhos contra surto na rede. Instalar cada um custa R$ 200 de mão de obra.</p>
+<p>Trocar um disjuntor custa R$ 110 e o disjuntor geral, R$ 180. A revisão com reaperto do quadro sai R$ 180. Já a troca do quadro inteiro pede visita técnica antes, porque leva em torno de 5 horas e depende do que está lá dentro.</p>
+<p>Se você não sabe se o seu está no fim da vida, leia <a href="/2026/06/7-sinais-para-trocar-quadro-eletrico.html">os 7 sinais de que é hora de trocar o quadro elétrico</a>.</p>
+<figure class="foto"><img src="https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/quadro-com-dps-instalado.webp" alt="Quadro de distribuição com DPS instalado pela Mestre dos Reparos em Barueri" loading="lazy"><figcaption>Quadro de distribuição com DPS instalado pela Mestre dos Reparos em Barueri</figcaption></figure>
+</section>
+<section class="sub" aria-labelledby="disjuntor-desarmando-e-chuveiro-derrubando-a-luz"><h3 id="disjuntor-desarmando-e-chuveiro-derrubando-a-luz">Disjuntor desarmando e chuveiro derrubando a luz</h3>
+<p>Quando o disjuntor cai só com o chuveiro ligado, a causa costuma ser disjuntor ou fio menor do que o chuveiro pede, resistência com defeito ou chuveiro dividindo o circuito com tomadas. Um chuveiro de 7.500 W em 220 V puxa cerca de 34 A. Num disjuntor de 32 A, ele cai na posição inverno.</p>
+<p>Religar várias vezes não resolve e ainda esquenta o fio. A gente mede a corrente com o alicate amperímetro, acha a causa e corrige. Trocar o disjuntor custa R$ 110 e trocar a resistência, R$ 100. Se o chuveiro precisa de um circuito só dele, até 15 metros sai R$ 380.</p>
+<p>Explicamos as outras causas em <a href="/2026/05/disjuntor-desarmando-causas-riscos-e.html">disjuntor desarmando sozinho</a> e no caso específico do <a href="/2026/05/root-primary0b2a4a-accentff6a00_7.html">chuveiro desligando a energia da casa</a>.</p>
+</section>
+<section class="sub" aria-labelledby="tomada-esquentando-ou-derretendo"><h3 id="tomada-esquentando-ou-derretendo">Tomada esquentando ou derretendo</h3>
+<p>Tomada quente é mau contato ou aparelho puxando mais do que ela aguenta. A tomada comum é de 10 A, e air fryer com micro-ondas no mesmo benjamim passam disso fácil. O plástico derrete e muitas vezes o disjuntor nem cai, porque não chega a ser um curto. Pare de usar a tomada. A troca custa R$ 60.</p>
+<p>Se o aparelho pede tomada de 20 A, a instalação sai R$ 80. Em toda troca a gente confere o fio que chega na tomada. Se ele também esquentou, trocar só a tomada não adianta: o problema volta.</p>
+<p>Tem mais sinais de alerta em <a href="/2026/05/tomada-ou-cabos-aquecendo-causas-riscos.html">tomada ou cabos aquecendo</a>.</p>
+</section>
+<section class="sub" aria-labelledby="troca-de-fiação-antiga"><h3 id="troca-de-fiação-antiga">Troca de fiação antiga</h3>
+<p>Fio antigo fica com a capa ressecada e quebradiça, e muitas vezes é fino para a carga de hoje. A casa não foi feita para cooktop, forno elétrico e tanta coisa ligada ao mesmo tempo. A troca de fiação de um circuito, até 15 metros e aproveitando o eletroduto que já existe, custa R$ 280 de mão de obra.</p>
+<p>Nem sempre precisa trocar a casa toda. Muitas vezes resolve refazer só os circuitos que trabalham mais: chuveiro, cozinha e lavanderia. Passagem de fio avulsa sai R$ 15 por metro.</p>
+<figure class="foto"><img src="https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/caixa-de-passagem-fiacao-exposta.webp" alt="Caixa de passagem aberta para trocar fiação antiga em Barueri" loading="lazy"><figcaption>Caixa de passagem aberta para trocar fiação antiga em Barueri</figcaption></figure>
+</section>
+<section class="sub" aria-labelledby="iluminação-de-led-spots-e-pendentes"><h3 id="iluminação-de-led-spots-e-pendentes">Iluminação de LED, spots e pendentes</h3>
+<p>Instalamos spot, plafon, painel de LED, pendente, trilho e fita de LED. Cada spot sai R$ 100, pendente R$ 120 por unidade, plafon R$ 100 e painel de LED R$ 110. Quando é preciso puxar ponto novo com circuito, para spots ou pendentes no forro, a mão de obra é R$ 220 por ponto.</p>
+<p>Em forro de gesso, o melhor é combinar os pontos antes de fechar o forro. Depois de fechado dá para fazer, mas abre mais buraco. Para lustre pesado ou pé-direito alto, veja <a href="/2026/05/instalacao-de-lustres-em-barueri.html">instalação de lustres em Barueri</a>.</p>
+<figure class="foto"><img src="https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/spots-e-paineis-led-instalados.webp" alt="Spots e painéis de LED instalados pela Mestre dos Reparos em Barueri" loading="lazy"><figcaption>Spots e painéis de LED instalados pela Mestre dos Reparos em Barueri</figcaption></figure>
+</section>
+<section class="sub" aria-labelledby="circuito-exclusivo-para-cooktop-forno-e-torneira-elétrica"><h3 id="circuito-exclusivo-para-cooktop-forno-e-torneira-elétrica">Circuito exclusivo para cooktop, forno e torneira elétrica</h3>
+<p>Cooktop, forno elétrico e torneira elétrica puxam mais de 10 A. Pela NBR 5410, todo aparelho assim precisa de circuito próprio, com disjuntor e fio do tamanho certo. Ligar cooktop em tomada comum é a causa de muita tomada derretida em cozinha. O circuito exclusivo de até 15 metros custa R$ 380.</p>
+<p>Com o ponto pronto, ligar o cooktop sai R$ 160, o forno de embutir R$ 140 e a torneira elétrica R$ 110. Quantos circuitos a sua cozinha precisa está em <a href="/2026/06/circuitos-eletricos-dedicados-cozinha.html">circuitos elétricos dedicados na cozinha</a>.</p>
+</section>
+</div></section>
+<section class="bloco " aria-labelledby="elétrica-para-condomínios-e-empresas"><div class="w estreito"><h2 id="elétrica-para-condomínios-e-empresas">Elétrica para condomínios e empresas</h2>
+<p>Atendemos condomínios e empresas em Barueri com manutenção elétrica preventiva e corretiva. Já prestamos manutenção predial para o Bradesco e a Bureau Veritas, em Alphaville, em Barueri, e para o Itaú e a Coca-Cola FEMSA, em Barueri. Também atendemos PJ Bank, Armazena, em Itapevi, e MFA Transportes. Inspeção e reaperto de quadro custam R$ 180 por quadro.</p>
+<p>Em condomínio, os pedidos mais comuns são luminária de garagem, sensor de presença no hall e na escada, iluminação de emergência e minuteria. Também atendemos portão automático. A luminária tubular de garagem sai R$ 90 e o sensor de presença de hall, R$ 110.</p>
+<p>Para síndico e administradora, juntamos tudo em <a href="/p/eletricista-condominios-barueri.html">elétrica para condomínios em Barueri</a>. Para empresa que quer manutenção fixa, veja o <a href="/p/contrato-de-manutencao-para-empresas.html">contrato de manutenção para empresas</a>.</p>
+<figure class="foto"><img src="https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/quadro-de-distribuicao-montado.webp" alt="Quadro de distribuição montado pela Mestre dos Reparos para cliente em Barueri" loading="lazy"><figcaption>Quadro de distribuição montado pela Mestre dos Reparos para cliente em Barueri</figcaption></figure>
+</div></section><section class="clientes" aria-label="Empresas que já atendemos">
+ <div class="w"><p>Empresas que já atendemos em Barueri e região</p></div>
+ <div class="trilho">
+  <span>Coca-Cola FEMSA</span><span>Bradesco</span><span>Itaú</span><span>Bureau Veritas</span><span>PJ Bank</span><span>Armazena</span><span>MFA Transportes</span>
+  <span aria-hidden="true">Coca-Cola FEMSA</span><span aria-hidden="true">Bradesco</span><span aria-hidden="true">Itaú</span><span aria-hidden="true">Bureau Veritas</span><span aria-hidden="true">PJ Bank</span><span aria-hidden="true">Armazena</span><span aria-hidden="true">MFA Transportes</span>
+ </div>
+</section>
+<section class="bloco " aria-labelledby="o-que-encontramos-nas-obras-em-barueri"><div class="w estreito"><h2 id="o-que-encontramos-nas-obras-em-barueri">O que encontramos nas obras em Barueri</h2>
+<p>Estes são 3 casos reais de atendimentos nossos em Barueri. Um apartamento novo sem DPS no Acqua Park Barueri, uma tomada que pegou fogo na Aldeia da Serra e uma fiação ressecada atrás do drywall em Alphaville. Nos três, o problema só apareceu quando alguém abriu o quadro ou a caixa da tomada.</p>
+<section class="sub" aria-labelledby="apartamento-novo-no-acqua-park-barueri-entregue-sem-dps"><h3 id="apartamento-novo-no-acqua-park-barueri-entregue-sem-dps">Apartamento novo no Acqua Park Barueri entregue sem DPS</h3>
+<p>O cliente recebeu o apartamento da construtora no Acqua Park Barueri e pediu para a gente olhar a elétrica. O quadro tinha só o disjuntor geral e o DR. Não tinha DPS. Instalamos o DPS no quadro, serviço que hoje custa R$ 200 de mão de obra pela nossa tabela.</p>
+<p>Apartamento novo não quer dizer quadro completo. Sem DPS, um surto na rede chega direto na TV, na geladeira e no computador. Se o seu apartamento é novo, abra a tampa do quadro e mande uma foto no WhatsApp. A gente olha e diz se tem ou não.</p>
+<p class="video"><a href="https://www.youtube.com/shorts/vFQhF_ZQLtE">Ver o vídeo deste apartamento no YouTube</a></p>
+</section>
+<section class="sub" aria-labelledby="tomada-que-pegou-fogo-numa-cozinha-na-aldeia-da-serra"><h3 id="tomada-que-pegou-fogo-numa-cozinha-na-aldeia-da-serra">Tomada que pegou fogo numa cozinha na Aldeia da Serra</h3>
+<p>Numa casa na Aldeia da Serra, a tomada da cozinha pegou fogo. Cozinha é onde isso mais acontece. É ali que ficam os aparelhos que mais puxam corrente: air fryer, forno, micro-ondas e cafeteira, muitas vezes na mesma tomada de 10 A. Trocamos a tomada queimada.</p>
+<p>Nesse tipo de caso a gente sempre confere também o fio e o disjuntor daquele circuito. Se a tomada queimou, o fio que chega nela pode ter esquentado junto.</p>
+<figure class="foto"><img src="https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/obras/aldeia-da-serra-eletricista-instalando-tomada.webp" alt="Eletricista da Mestre dos Reparos trocando tomada que pegou fogo em cozinha na Aldeia da Serra" loading="lazy"><figcaption>Eletricista da Mestre dos Reparos trocando tomada que pegou fogo em cozinha na Aldeia da Serra</figcaption></figure>
+</section>
+<section class="sub" aria-labelledby="fiação-ressecada-atrás-do-drywall-em-alphaville-barueri"><h3 id="fiação-ressecada-atrás-do-drywall-em-alphaville-barueri">Fiação ressecada atrás do drywall em Alphaville, Barueri</h3>
+<p>Em novembro de 2026, num imóvel em Alphaville, em Barueri, fomos fazer a revisão antes da instalação dos móveis planejados. Uma tomada na parede de drywall estava com a fiação ressecada e com emendas dentro da caixa. Não dava para só trocar a tomada: cortamos o drywall em volta da caixa e refizemos o ponto.</p>
+<p>É melhor achar isso antes do marceneiro fechar a parede com o móvel. Atendemos o bairro inteiro, de casa em condomínio a escritório. Veja <a href="/p/eletricista-em-alphaville-barueri.html">eletricista em Alphaville</a>.</p>
+</section>
+</div></section>
+<section class="bloco " aria-labelledby="quanto-custa-um-eletricista-em-barueri"><div class="w estreito"><h2 id="quanto-custa-um-eletricista-em-barueri">Quanto custa um eletricista em Barueri</h2>
+<p>Chamar um eletricista em Barueri custa a partir de R$ 150, que é o nosso mínimo por atendimento em horário comercial. À noite, domingo e feriado o mínimo é R$ 250, e depois das 22 h é R$ 350. Os valores abaixo são só de mão de obra, da nossa tabela de 2026. O material é à parte.</p>
+<div class="tab"><table><caption>Preço de mão de obra em Barueri. Material à parte.</caption><thead><tr><th scope="col">Serviço</th><th scope="col">Mão de obra</th></tr></thead><tbody><tr><th scope="row">Trocar tomada ou interruptor</th><td>R$ 60</td></tr><tr><th scope="row">Tomada de 20 A</th><td>R$ 80</td></tr><tr><th scope="row">Trocar disjuntor</th><td>R$ 110</td></tr><tr><th scope="row">Trocar disjuntor geral</th><td>R$ 180</td></tr><tr><th scope="row">Instalar DR</th><td>R$ 200</td></tr><tr><th scope="row">Instalar DPS</th><td>R$ 200</td></tr><tr><th scope="row">Trocar resistência do chuveiro</th><td>R$ 100</td></tr><tr><th scope="row">Instalar chuveiro elétrico</th><td>R$ 140</td></tr><tr><th scope="row">Instalar luminária ou spot</th><td>R$ 100</td></tr><tr><th scope="row">Diagnóstico de curto-circuito</th><td>R$ 200</td></tr><tr><th scope="row">Circuito exclusivo até 15 m</th><td>R$ 380</td></tr><tr><th scope="row">Revisão elétrica da casa (cerca de 3 h)</th><td>R$ 320</td></tr><tr><th scope="row">Diária de eletricista (8 h)</th><td>R$ 550</td></tr><tr><th scope="row">Troca do quadro de distribuição</th><td>visita técnica</td></tr></tbody></table></div>
+<p>Se forem vários serviços no mesmo endereço, a gente soma tudo num orçamento só. Para comparar com outro orçamento que você recebeu, leia <a href="/2026/06/como-saber-se-o-orcamento-do-eletricista-e-justo.html">como saber se o orçamento do eletricista é justo</a>.</p>
+</div></section>
+<section class="bloco " aria-labelledby="como-funciona-o-atendimento"><div class="w estreito"><h2 id="como-funciona-o-atendimento">Como funciona o atendimento</h2>
+<p>Você manda a foto ou o vídeo do problema no WhatsApp (11) 91839-0430 e a gente responde com o preço. Se o serviço fica abaixo de R$ 700, já marcamos a execução direto, sem visita antes. Acima disso, ou quando é troca de quadro, fazemos uma visita técnica para ver no local.</p>
+<p>No dia, o eletricista desliga o circuito, faz o serviço, testa na sua frente e deixa o local limpo. Você recebe nota fiscal e 90 dias de garantia por escrito na mão de obra. Se o mesmo problema voltar nesse prazo, a gente volta sem cobrar a mão de obra.</p>
+</div></section>
+<section class="bloco " aria-labelledby="quem-é-o-responsável-técnico"><div class="w estreito"><h2 id="quem-é-o-responsável-técnico">Quem é o responsável técnico</h2>
+<p>O responsável técnico da Mestre dos Reparos é o engenheiro Paulo Henrique Valadão, formado pela UFRJ e registrado no CREA com o número 141129611802. Ele também é técnico formado pelo SENAI e tem o curso de NR-10, a norma de segurança para quem trabalha com eletricidade. São 25 anos de experiência em instalações elétricas.</p>
+<p>Os serviços seguem a NBR 5410, a norma das instalações elétricas de baixa tensão. A equipe é própria, sem terceirizar: quem aparece nas fotos desta página é quem vai até a sua casa. A empresa tem CNPJ 64.521.657/0001-87, em Barueri.</p>
+<p>Os documentos da empresa e do responsável estão em <a href="/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html">responsabilidade técnica</a>.</p>
+<figure class="foto"><img src="https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/equipe/equipe-responsavel-cinto.webp" alt="Eng. Paulo Henrique Valadão, responsável técnico da Mestre dos Reparos, em atendimento em Barueri" loading="lazy"><figcaption>Eng. Paulo Henrique Valadão, responsável técnico da Mestre dos Reparos, em atendimento em Barueri</figcaption></figure>
+</div></section>
+<section class="bloco " aria-labelledby="avaliações-de-clientes-no-google"><div class="w estreito"><h2 id="avaliações-de-clientes-no-google">Avaliações de clientes no Google</h2><p>Temos nota 4,9 no Google, com 34 avaliações de clientes (consulta de 7 de novembro de 2026). Copiamos quatro aqui do jeito que os clientes escreveram, com o nome e o mês em que avaliaram. Todas estão no nosso Perfil da Empresa no Google, junto com as outras 30 avaliações.</p><div class="faixa" id="faixa" tabindex="0">
+  <blockquote><p>Paulo realizou um excelente atendimento. É visível que tem grande domínio técnico para execução dos reparos. Os valores praticados são justos.</p><footer><b>Anderson Querido</b> · 5 estrelas</footer></blockquote>
+  <blockquote><p>O Engenheiro Paulo e o João Pedro são extremamente atenciosos, pontuais. Possuem conhecimento técnico e competência para executar o trabalho de forma segura.</p><footer><b>Bruna Alves</b> · 5 estrelas</footer></blockquote>
+  <blockquote><p>Os caras são bons mesmo, instalaram um pendente aqui no meu AP, ficou top, parece pôr do sol. Obrigado pelo excelente atendimento.</p><footer><b>Leandro Silva</b> · 5 estrelas</footer></blockquote>
+  <blockquote><p>O serviço foi de qualidade, tudo ficou perfeito, o atendimento foi muito bom, tudo explicadinho sem enrolação. Super recomendo em nossa região!</p><footer><b>Barutec Informática</b> · 5 estrelas</footer></blockquote>
+ </div>
+ <div class="ctrl"><button type="button" aria-label="Avaliação anterior" data-d="-1">‹</button><button type="button" aria-label="Próxima avaliação" data-d="1">›</button></div><p><a href="https://g.page/r/CTZBTDtx4V-QEBM/review">Ver todas as avaliações no Google</a></p><div id="mr-avaliacao" class="aval-site" data-p="/p/eletricista-em-barueri.html"><strong>Já foi atendido por nós?</strong> <span>Dê sua nota de 1 a 5.</span></div></div></section>
+<section class="bloco " aria-labelledby="bairros-de-barueri-e-cidades-atendidas"><div class="w estreito"><h2 id="bairros-de-barueri-e-cidades-atendidas">Bairros de Barueri e cidades atendidas</h2>
+<p>Atendemos Barueri inteira, de Alphaville ao Jardim Belval, e também Santana de Parnaíba, Jandira, Itapevi e Carapicuíba. Nossa base fica no Jardim Belval, na Av. Henrique Gonçalves Baptista, 2245. Cada bairro abaixo tem uma página própria com o atendimento naquela região.</p>
+<p>Bairros de Barueri: <a href="/p/eletricista-em-alphaville-barueri.html">Alphaville</a>, <a href="/p/eletricista-em-aldeia-da-serra.html">Aldeia da Serra</a>, <a href="/p/eletricista-no-jardim-belval.html">Jardim Belval</a>, <a href="/p/eletricista-no-jardim-dos-altos-barueri.html">Jardim dos Altos</a>, <a href="/p/eletricista-no-jardim-sao-silvestre.html">Jardim São Silvestre</a>, <a href="/p/eletricista-no-jardim-sao-pedro-barueri.html">Jardim São Pedro</a>, <a href="/p/eletricista-no-jardim-reginalice.html">Jardim Reginalice</a>, <a href="/p/eletricista-no-jardim-paraiso-barueri.html">Jardim Paraíso</a>, <a href="/p/eletricista-no-jardim-mutinga-barueri.html">Jardim Mutinga</a>, <a href="/p/eletricista-no-jardim-maria-cristina.html">Jardim Maria Cristina</a>, <a href="/p/eletricista-no-jardim-libano-barueri-24.html">Jardim Líbano</a>, <a href="/p/eletricista-no-jardim-julio-barueri.html">Jardim Júlio</a>, <a href="/p/eletricista-no-jardim-itaquiti-barueri.html">Jardim Itaquiti</a>, <a href="/p/eletricista-no-jardim-iracema-barueri.html">Jardim Iracema</a>, <a href="/p/eletricista-no-jardim-graziela-barueri.html">Jardim Graziela</a>, <a href="/p/eletricista-no-jardim-esperanca-barueri.html">Jardim Esperança</a>, <a href="/p/eletricista-no-jardim-dos-camargos.html">Jardim dos Camargos</a>, <a href="/p/eletricista-na-votupoca-barueri.html">Votupoca</a>, <a href="/p/eletricista-na-nossa-senhora-da-escada.html">Nossa Senhora da Escada</a>, <a href="/p/eletricista-no-jardim-barueri.html">Jardim Barueri</a>, <a href="/p/eletricista-no-jardim-audir-barueri.html">Jardim Audir</a>, <a href="/p/eletricista-na-fazenda-militar-barueri.html">Fazenda Militar</a>, <a href="/p/eletricista-nas-chacaras-marco-barueri.html">Chácaras Marco</a>, <a href="/p/eletricista-no-jardim-california.html">Jardim Califórnia</a>, <a href="/p/eletricista-no-jardim-maria-helena.html">Jardim Maria Helena</a>, <a href="/p/eletricista-na-vila-sao-francisco.html">Vila São Francisco</a> e <a href="/p/eletricista-no-parque-imperial-barueri.html">Parque Imperial</a>.</p>
+<p>Cidades vizinhas: <a href="/p/eletricista-em-santana-de-parnaiba.html">Santana de Parnaíba</a>, <a href="/p/eletricista-em-jandira.html">Jandira</a>, <a href="/p/eletricista-em-itapevi.html">Itapevi</a> e <a href="/p/eletricista-em-carapicuiba-atendimento.html">Carapicuíba</a>.</p>
+</div></section>
+<section class="bloco faq" aria-labelledby="perguntas-frequentes-sobre-eletricista-em-barueri"><div class="w estreito"><h2 id="perguntas-frequentes-sobre-eletricista-em-barueri">Perguntas frequentes sobre eletricista em Barueri</h2>
+<details><summary><h3>Quanto custa chamar um eletricista?</h3></summary>
+<p>Depende do serviço. Pela nossa tabela de mão de obra, trocar tomada custa R$ 60, trocar disjuntor R$ 110, instalar chuveiro R$ 140 e instalar luminária R$ 100. O mínimo por atendimento é R$ 150 em horário comercial e R$ 250 à noite, domingo e feriado. O material é à parte.</p>
+</details>
+<details><summary><h3>Tomada esquentando ou derretendo: o que pode ser?</h3></summary>
+<p>Quase sempre é mau contato dentro da tomada ou aparelho puxando mais corrente do que ela aguenta, que é 10 A na tomada comum. O calor derrete o plástico e pode começar um incêndio sem o disjuntor cair. Pare de usar a tomada e mande uma foto. A troca custa R$ 60.</p>
+</details>
+<details><summary><h3>Luz piscando em casa: o que pode ser? É perigoso?</h3></summary>
+<p>Se pisca uma lâmpada só, costuma ser a própria lâmpada, o driver do LED ou o interruptor. A troca do driver custa R$ 100. Se piscam várias luzes ao mesmo tempo, pode ser conexão frouxa no quadro, e aí é perigoso, porque o ponto frouxo esquenta. Mais causas em <a href="/2026/05/root-primary0b2a4a-accentff6a00.html">luz piscando em casa</a>.</p>
+</details>
+<details><summary><h3>Quantos disjuntores precisa o quadro de uma casa ou apartamento?</h3></summary>
+<p>Um disjuntor por circuito, e o número muda de casa para casa. A NBR 5410 pede iluminação separada das tomadas, cozinha e lavanderia com circuito próprio e um circuito para cada aparelho acima de 10 A, como chuveiro, forno e cooktop. Deixe sempre espaço reserva no quadro para circuitos futuros.</p>
+</details>
+<details><summary><h3>Eletricista cobra por ponto?</h3></summary>
+<p>Para ponto novo, sim. Na nossa tabela, o ponto de tomada simples custa R$ 60, o ponto de luz simples R$ 80 e o ponto de luz com interruptor R$ 90. Se precisar passar fio novo até o ponto, a passagem sai R$ 15 por metro. O material é à parte e entra no mesmo orçamento.</p>
+</details>
+<details><summary><h3>Quanto custa uma diária de eletricista?</h3></summary>
+<p>A diária de eletricista custa R$ 550 por 8 horas de trabalho, com material à parte. Compensa quando há muitos serviços pequenos no mesmo endereço, como trocar várias tomadas, instalar luminárias e revisar o quadro no mesmo dia. Mande a lista no WhatsApp que a gente diz se cabe numa diária.</p>
+</details>
+<details><summary><h3>Vocês atendem emergência à noite?</h3></summary>
+<p>Sim. O mínimo é R$ 250 à noite, domingo e feriado, e R$ 350 depois das 22 h. Escreva no WhatsApp o que está acontecendo, como cheiro de queimado, faísca ou falta de luz só na sua casa, para a gente priorizar. Se tiver cheiro de queimado, desligue o disjuntor geral antes.</p>
+</details>
+<details><summary><h3>O que eu faço enquanto o eletricista não chega?</h3></summary>
+<p>Se tem cheiro de queimado, fumaça ou faísca, desligue o disjuntor geral e não religue. Não encoste em fio exposto e não jogue água perto do quadro. Tire uma foto do quadro com a tampa aberta e mande no WhatsApp (11) 91839-0430. Isso ajuda o eletricista a chegar com a peça certa.</p>
+</details>
+<details><summary><h3>Preciso desligar a casa inteira para trocar uma tomada?</h3></summary>
+<p>Não. Basta desligar o circuito daquela tomada, desde que o quadro esteja identificado. Se os disjuntores não têm etiqueta, a gente descobre qual é qual e identifica todos os circuitos do quadro por R$ 150. Depois disso, qualquer manutenção fica mais rápida e você não precisa desligar a casa toda.</p>
+</details>
+<details><summary><h3>Vocês fazem revisão geral da parte elétrica?</h3></summary>
+<p>Sim. A revisão elétrica da casa leva cerca de 3 horas e custa R$ 320. Olhamos o quadro, os disjuntores, o reaperto, as tomadas que esquentam e o aterramento. No fim você recebe a lista do que precisa corrigir, com o preço de cada item, e decide o que fazer primeiro.</p>
+</details>
+<details><summary><h3>Qual a diferença entre eletricista e engenheiro eletricista?</h3></summary>
+<p>O engenheiro tem registro no CREA e responde tecnicamente pelo serviço, do projeto à execução. O eletricista executa. Aqui os dois trabalham juntos. O responsável técnico é o engenheiro Paulo Henrique Valadão, CREA 141129611802, formado pela UFRJ. Os serviços seguem a NBR 5410, a norma das instalações de baixa tensão.</p>
+</details>
+<details><summary><h3>A garantia vale para quê?</h3></summary>
+<p>A garantia é de 90 dias por escrito na mão de obra, com nota fiscal. Se o mesmo problema voltar nesse prazo, a gente volta e refaz sem cobrar a mão de obra. A peça tem a garantia do fabricante.</p>
+<p>Mande a foto do problema no WhatsApp (11) 91839-0430. A gente responde com o preço.</p>
+</details>
+</div></section>
+</article>
+<aside class="redes" aria-labelledby="redes-t"><div class="w redes-g">
+ <div class="pergunta">
+  <h2 id="redes-t">Pergunte ao especialista</h2>
+  <p>Ficou com dúvida de elétrica, reforma, obra ou limpeza? Mande no direct do Instagram. O engenheiro Paulo responde, e as perguntas que mais chegam viram vídeo no nosso perfil.</p>
+  <a class="btn ig" href="https://ig.me/m/mestredosreparosfacilites"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>Perguntar no Instagram</a>
+ </div>
+ <div>
+  <h2>Veja nossas obras nas redes</h2>
+  <p>Todo dia sai um vídeo de serviço real, gravado na obra.</p>
+  <ul class="tiles"><li><a href="https://maps.google.com/maps?cid=10403281540691542326" style="--c:#1A73E8"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.273 1.636c-.736 0-1.363.492-1.568 1.16L0 9.272c0 1.664 1.336 3 3 3a3 3 0 003-3c0 1.664 1.336 3 3 3a3 3 0 003-3c0 1.65 1.35 3 3 3 1.664 0 3-1.336 3-3 0 1.664 1.336 3 3 3s3-1.336 3-3l-1.705-6.476a1.646 1.646 0 00-1.568-1.16zm8.729 9.326c-.604 1.063-1.703 1.81-3.002 1.81-1.304 0-2.398-.747-3-1.806-.604 1.06-1.702 1.806-3 1.806-.484 0-.944-.1-1.363-.277v8.232c0 .9.736 1.637 1.636 1.637h17.454c.9 0 1.636-.737 1.636-1.637v-8.232a3.48 3.48 0 01-1.363.277c-1.304 0-2.398-.746-3-1.804-.602 1.058-1.696 1.804-3 1.804-1.299 0-2.394-.75-2.998-1.81zm5.725 3.765c.808 0 1.488.298 2.007.782l-.859.859a1.623 1.623 0 00-1.148-.447c-.98 0-1.772.827-1.772 1.806 0 .98.792 1.807 1.772 1.807.882 0 1.485-.501 1.615-1.191h-1.615v-1.16h2.826c.035.196.054.4.054.613 0 1.714-1.147 2.931-2.88 2.931a3 3 0 010-6z"/></svg></span><span><b>Perfil do Google</b><small>4,9 com 34 avaliações</small></span></a></li><li><a href="https://www.instagram.com/mestredosreparosfacilites/" style="--c:#D62976"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span><span><b>Instagram</b><small>@mestredosreparosfacilites</small></span></a></li><li><a href="https://www.youtube.com/channel/UC_y6rF_-Cqw6_97Xa_VPhwg" style="--c:#E00000"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span><span><b>YouTube</b><small>Vídeos das obras</small></span></a></li><li><a href="https://www.tiktok.com/@mestre.dos.reparo1" style="--c:#111111"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></span><span><b>TikTok</b><small>@mestre.dos.reparo1</small></span></a></li><li><a href="https://www.facebook.com/1037730922750860" style="--c:#0866FF"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><span><b>Facebook</b><small>Mestre dos Reparos</small></span></a></li></ul>
+ </div>
+</div></aside>
+</main>
+<footer class="rod"><div class="w">
+ <div class="g">
+  <div>
+   <h2>Mestre dos Reparos Manutenção &amp; Limpeza</h2>
+   <p>Empresa de Barueri com equipe própria de elétrica, reforma, manutenção predial e limpeza. Atendemos casa, apartamento, condomínio e empresa em Barueri inteira, de Alphaville ao Jardim Belval, e em Santana de Parnaíba, Jandira, Itapevi e Carapicuíba.</p>
+   <address><p>Responsável técnico: Eng. Paulo Henrique Valadão, CREA 141129611802, 25 anos de experiência.</p>
+   <p>CNPJ 64.521.657/0001-87<br>Av. Henrique Gonçalves Baptista, 2245, Jardim Belval, Barueri, SP, 06420-130</p>
+   <p>WhatsApp <a href="https://wa.me/5511918390430">(11) 91839-0430</a>. Atendimento só pelo WhatsApp.</p></address>
+  </div>
+  <div>
+   <h2>Serviços</h2>
+   <ul><li><a href="/p/eletricista-em-barueri.html">Eletricista em Barueri</a></li><li><a href="/p/eletricista-em-alphaville-barueri.html">Eletricista em Alphaville</a></li><li><a href="/p/eletricista-condominios-barueri.html">Elétrica para condomínios</a></li><li><a href="/p/reformas-residenciais-e-comerciais-em.html">Reformas</a></li><li><a href="/p/contrato-de-manutencao-para-empresas.html">Manutenção para empresas</a></li><li><a href="/p/limpeza-pos-obra-em-barueri-e-regiao.html">Limpeza pós-obra</a></li><li><a href="https://lojamestredosreparos.com/?utm_source=blog&amp;utm_medium=rodape&amp;utm_campaign=eletricista">Loja de material elétrico</a></li></ul>
+  </div>
+  <div>
+   <h2>Siga a gente</h2>
+   <div class="icrow"><a href="https://maps.google.com/maps?cid=10403281540691542326" aria-label="Perfil do Google" title="Perfil do Google"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.273 1.636c-.736 0-1.363.492-1.568 1.16L0 9.272c0 1.664 1.336 3 3 3a3 3 0 003-3c0 1.664 1.336 3 3 3a3 3 0 003-3c0 1.65 1.35 3 3 3 1.664 0 3-1.336 3-3 0 1.664 1.336 3 3 3s3-1.336 3-3l-1.705-6.476a1.646 1.646 0 00-1.568-1.16zm8.729 9.326c-.604 1.063-1.703 1.81-3.002 1.81-1.304 0-2.398-.747-3-1.806-.604 1.06-1.702 1.806-3 1.806-.484 0-.944-.1-1.363-.277v8.232c0 .9.736 1.637 1.636 1.637h17.454c.9 0 1.636-.737 1.636-1.637v-8.232a3.48 3.48 0 01-1.363.277c-1.304 0-2.398-.746-3-1.804-.602 1.058-1.696 1.804-3 1.804-1.299 0-2.394-.75-2.998-1.81zm5.725 3.765c.808 0 1.488.298 2.007.782l-.859.859a1.623 1.623 0 00-1.148-.447c-.98 0-1.772.827-1.772 1.806 0 .98.792 1.807 1.772 1.807.882 0 1.485-.501 1.615-1.191h-1.615v-1.16h2.826c.035.196.054.4.054.613 0 1.714-1.147 2.931-2.88 2.931a3 3 0 010-6z"/></svg></a><a href="https://www.instagram.com/mestredosreparosfacilites/" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a><a href="https://www.youtube.com/channel/UC_y6rF_-Cqw6_97Xa_VPhwg" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="https://www.tiktok.com/@mestre.dos.reparo1" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a href="https://www.facebook.com/1037730922750860" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a></div>
+   <p style="margin-top:16px"><a href="https://maps.google.com/maps?cid=10403281540691542326">Avaliar no Google</a></p>
+  </div>
+ </div>
+ <p class="base">© 2026 Mestre dos Reparos Manutenção &amp; Limpeza · <a href="/p/termos-de-uso.html">Termos de uso</a></p>
+</div></footer>
+<script>
+(function(){var f=document.getElementById('faixa'),passo=function(d){var c=f.querySelector('blockquote');f.scrollBy({left:d*(c.offsetWidth+24),behavior:'smooth'})};
+document.querySelectorAll('.ctrl button').forEach(function(b){b.onclick=function(){passo(+b.dataset.d);parar()}});
+var t,parar=function(){clearInterval(t)};if(!matchMedia('(prefers-reduced-motion: reduce)').matches){t=setInterval(function(){if(f.scrollLeft+f.clientWidth>=f.scrollWidth-5)f.scrollTo({left:0,behavior:'smooth'});else passo(1)},6000)}
+f.addEventListener('pointerdown',parar);f.addEventListener('focus',parar)})();
+</script>
+</div>
