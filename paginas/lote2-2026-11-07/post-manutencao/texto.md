@@ -15,7 +15,7 @@ Clientes citados 1 vez só (seção de Alphaville). Sem bloco de logos repetido.
 
 Manutenção predial para empresas é o cuidado programado com elétrica, hidráulica e acabamento do imóvel, para que nada pare a operação. Este guia é para quem cuida de um escritório, agência, galpão ou condomínio empresarial em Barueri, incluindo Alphaville, em Barueri, e precisa decidir o que revisar, de quanto em quanto tempo e o que pedir para quem faz o serviço.
 
-Escrevo com base em 25 anos de trabalho em instalações elétricas e na manutenção que a Mestre dos Reparos faz em empresas da região. Onde existe norma, cito a norma pelo nome.
+Escrevo com base em 25 anos de trabalho em instalações elétricas e na manutenção que o Mestre dos Reparos faz em empresas da região. Onde existe norma, cito a norma pelo nome.
 
 **Neste guia:**
 
@@ -169,7 +169,7 @@ Se você já está na fase de comparar propostas, veja como funciona o nosso [co
 
 ## Manutenção predial em Alphaville, em Barueri
 
-A Mestre dos Reparos tem base no Jardim Belval, em Barueri. Atendemos Barueri inteira, de Alphaville ao Jardim Belval, passando por Tamboré, e também Santana de Parnaíba, Jandira, Itapevi e Carapicuíba, num raio de cerca de 20 km.
+O Mestre dos Reparos tem base no Jardim Belval, em Barueri. Atendemos Barueri inteira, de Alphaville ao Jardim Belval, passando por Tamboré, e também Santana de Parnaíba, Jandira, Itapevi e Carapicuíba, num raio de cerca de 20 km.
 
 Já prestamos manutenção predial para o Bradesco e a Bureau Veritas, em Alphaville, em Barueri, para o Itaú e a Coca-Cola FEMSA, em Barueri, para o PJ Bank, para a Armazena, em Itapevi, e para a MFA Transportes.
 
@@ -177,7 +177,7 @@ O responsável técnico é o engenheiro Paulo Henrique Valadão, CREA 1411296118
 
 ## Avaliações de clientes no Google
 
-A Mestre dos Reparos tem nota 4,9 no Google. Abaixo, algumas avaliações do jeito que os clientes escreveram, com o nome e o mês.
+O Mestre dos Reparos tem nota 4,9 no Google. Abaixo, algumas avaliações do jeito que os clientes escreveram, com o nome e o mês.
 
 ## Perguntas frequentes sobre manutenção predial para empresas
 

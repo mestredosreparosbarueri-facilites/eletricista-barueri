@@ -10,14 +10,14 @@ Botões: só WhatsApp (11) 91839-0430. Nenhum botão de ligar.
 
 # Manutenção predial em Barueri: contrato para empresas, condomínios, galpões e CDs
 
-A Mestre dos Reparos faz manutenção predial em Barueri por contrato para empresas, condomínios, galpões e centros de distribuição. A mesma equipe cuida da elétrica, da parte civil, da pintura, da hidráulica e dos pequenos reparos do imóvel. O contrato tem visita preventiva programada, chamado corretivo com prazo por escrito e relatório todo mês.
+O Mestre dos Reparos faz manutenção predial em Barueri por contrato para empresas, condomínios, galpões e centros de distribuição. A mesma equipe cuida da elétrica, da parte civil, da pintura, da hidráulica e dos pequenos reparos do imóvel. O contrato tem visita preventiva programada, chamado corretivo com prazo por escrito e relatório todo mês.
 
 O responsável técnico é o engenheiro Paulo Henrique Valadão, CREA 141129611802, com 25 anos de experiência. A equipe é própria e sai da nossa base no Jardim Belval, em Barueri. Já atendemos Bradesco, Bureau Veritas, Itaú e Coca-Cola FEMSA, entre outras empresas da região.
 
 *Página revisada pelo Eng. Paulo Henrique Valadão (CREA 141129611802) em 7 de novembro de 2026.*
 
 <!-- BOTÃO: "Pedir proposta pelo WhatsApp" → https://wa.me/5511918390430?text=Ol%C3%A1%2C%20quero%20uma%20proposta%20de%20contrato%20de%20manuten%C3%A7%C3%A3o. -->
-<!-- FOTO: fotos/servicos/galpao-estrutura-metalica-manutencao.jpg | alt: Manutenção em galpão com estrutura metálica feita pela equipe da Mestre dos Reparos em Barueri -->
+<!-- FOTO: fotos/servicos/galpao-estrutura-metalica-manutencao.jpg | alt: Manutenção em galpão com estrutura metálica feita pela equipe do Mestre dos Reparos em Barueri -->
 
 ## O que o contrato de manutenção cobre
 
@@ -73,11 +73,11 @@ Montagem, fixação, prateleira, quadro de aviso, sinalização, suporte e os re
 
 A limpeza de áreas comuns, escritório, vestiário, refeitório e pátio pode entrar na mesma proposta, com equipe e frequência definidas. Na limpeza de manutenção também entram itens que ninguém lembra, como o exaustor do banheiro. Se você já tem uma empresa de limpeza, fazemos só a manutenção, sem sobrepor escopo. Detalhes no [contrato de limpeza para empresas](/p/contrato-de-limpeza-para-empresas.html).
 
-<!-- FOTO: fotos/servicos/exaustor-apos-limpeza.jpg | alt: Exaustor de banheiro depois da limpeza feita pela Mestre dos Reparos em contrato de manutenção em Barueri -->
+<!-- FOTO: fotos/servicos/exaustor-apos-limpeza.jpg | alt: Exaustor de banheiro depois da limpeza feita pelo Mestre dos Reparos em contrato de manutenção em Barueri -->
 
 ## Modalidades de contrato
 
-A Mestre dos Reparos trabalha com seis formatos de contrato de manutenção predial. A frequência das visitas, os prazos de atendimento e o valor são combinados na proposta, depois da vistoria inicial.
+O Mestre dos Reparos trabalha com seis formatos de contrato de manutenção predial. A frequência das visitas, os prazos de atendimento e o valor são combinados na proposta, depois da vistoria inicial.
 
 | Modalidade | Como funciona | Indicada para | Prazo de atendimento |
 |---|---|---|---|
@@ -117,7 +117,7 @@ O contrato muda conforme o tipo de imóvel. Estes são os segmentos que mais ate
 
 Salas, copa, banheiro, recepção e iluminação. Quando o serviço faz barulho ou desliga circuito, dá para marcar fora do expediente.
 
-<!-- FOTO: fotos/servicos/escritorio-paineis-led.jpg | alt: Painéis de LED instalados em escritório atendido pela Mestre dos Reparos em Barueri -->
+<!-- FOTO: fotos/servicos/escritorio-paineis-led.jpg | alt: Painéis de LED instalados em escritório atendido pelo Mestre dos Reparos em Barueri -->
 
 ### Galpões logísticos e centros de distribuição
 
@@ -143,11 +143,11 @@ Já prestamos manutenção predial e serviços para estas empresas em Barueri e 
 
 ## Quem é o responsável técnico
 
-O responsável técnico da Mestre dos Reparos é o engenheiro Paulo Henrique Valadão, formado pela UFRJ e registrado no CREA com o número 141129611802. Ele também é técnico formado pelo SENAI e tem o curso de NR-10. São 25 anos de experiência em instalações e manutenção.
+O responsável técnico do Mestre dos Reparos é o engenheiro Paulo Henrique Valadão, formado pela UFRJ e registrado no CREA com o número 141129611802. Ele também é técnico formado pelo SENAI e tem o curso de NR-10. São 25 anos de experiência em instalações e manutenção.
 
 A vistoria inicial e o plano de manutenção passam por ele. A equipe é própria, uniformizada e trabalha com EPI. A empresa tem CNPJ 64.521.657/0001-87 e endereço fixo em Barueri, na Av. Henrique Gonçalves Baptista, 2245, Jardim Belval. Os documentos estão em [responsabilidade técnica](/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html).
 
-<!-- FOTO: fotos/equipe/equipe-responsavel.jpg | alt: Eng. Paulo Henrique Valadão, responsável técnico da Mestre dos Reparos, em Barueri -->
+<!-- FOTO: fotos/equipe/equipe-responsavel.jpg | alt: Eng. Paulo Henrique Valadão, responsável técnico do Mestre dos Reparos, em Barueri -->
 
 ## Avaliações de clientes no Google
 

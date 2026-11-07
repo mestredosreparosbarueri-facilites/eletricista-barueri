@@ -17,11 +17,11 @@ Para começar, mande fotos e as medidas do ambiente no WhatsApp (11) 91839-0430.
 *Página revisada pelo Eng. Paulo Henrique Valadão (CREA 141129611802) em 7 de novembro de 2026.*
 
 <!-- BOTÃO: "Mandar fotos da reforma no WhatsApp" → https://wa.me/5511918390430?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20reforma. -->
-<!-- FOTO: https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-equipe-escada.jpg | alt: Equipe da Mestre dos Reparos na obra da clínica de estética no Centro de Barueri -->
+<!-- FOTO: https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@ccr-33db381a-6kweq8/fotos/obras/clinica-centro-barueri/obra-clinica-centro-barueri-equipe-escada.jpg | alt: Equipe do Mestre dos Reparos na obra da clínica de estética no Centro de Barueri -->
 
 ## Serviços de reforma que fazemos em Barueri
 
-A Mestre dos Reparos faz seis tipos de serviço de reforma em Barueri: alvenaria, forro e drywall, piso e revestimento, pintura, elétrica e reforma de banheiro e cozinha. Uma reforma quase sempre junta várias dessas frentes. Quando cada uma é um fornecedor diferente, uma espera a outra e quem paga o retrabalho é o cliente. Aqui a mesma equipe faz tudo, e o engenheiro acompanha a sequência.
+O Mestre dos Reparos faz seis tipos de serviço de reforma em Barueri: alvenaria, forro e drywall, piso e revestimento, pintura, elétrica e reforma de banheiro e cozinha. Uma reforma quase sempre junta várias dessas frentes. Quando cada uma é um fornecedor diferente, uma espera a outra e quem paga o retrabalho é o cliente. Aqui a mesma equipe faz tudo, e o engenheiro acompanha a sequência.
 
 ### Pedreiro e alvenaria
 
@@ -53,7 +53,7 @@ São as duas reformas que mais pedem. Retiramos o revestimento antigo, refazemos
 
 ## Obra real: clínica de estética no Centro de Barueri
 
-Nesta obra da Mestre dos Reparos, um antigo consultório odontológico no Centro de Barueri virou clínica de estética. O pedido era trocar o piso, refazer a iluminação e dividir as salas. Ao abrir o forro, encontramos sinal de vazamento.
+Nesta obra do Mestre dos Reparos, um antigo consultório odontológico no Centro de Barueri virou clínica de estética. O pedido era trocar o piso, refazer a iluminação e dividir as salas. Ao abrir o forro, encontramos sinal de vazamento.
 
 ### Antes: forro aberto e vazamento
 
@@ -79,7 +79,7 @@ Em apartamento de condomínio, cuidamos da parte chata: mandamos a lista da equi
 
 As fotos abaixo são de obras de apartamento da nossa equipe em Barueri: parede e forro em andamento e uma sala pronta, com forro e iluminação embutida. Em toda obra assim a sequência é a mesma: alvenaria e elétrica primeiro, depois forro, piso, portas e pintura por último.
 
-<!-- FOTO: fotos/reformas/reforma-parede-e-forro-em-andamento.webp | alt: Parede e forro de apartamento em reforma, durante a obra da Mestre dos Reparos em Barueri -->
+<!-- FOTO: fotos/reformas/reforma-parede-e-forro-em-andamento.webp | alt: Parede e forro de apartamento em reforma, durante a obra do Mestre dos Reparos em Barueri -->
 <!-- FOTO: fotos/reformas/sala-reformada-com-iluminacao.webp | alt: Sala pronta, com forro e iluminação embutida, depois de reforma de apartamento em Barueri -->
 
 ## Reforma comercial e de escritório
@@ -102,7 +102,7 @@ Já prestamos manutenção predial para o Bradesco e a Bureau Veritas, em Alphav
 
 ## Como funciona a reforma
 
-A reforma com a Mestre dos Reparos tem cinco etapas, sempre nesta ordem: fotos pelo WhatsApp, visita técnica, orçamento por etapa, cronograma e obra, e entrega com 90 dias de garantia. Abaixo de R$ 700 o serviço é fechado só pelas fotos, sem visita. Acima disso, a visita técnica é gratuita.
+A reforma com o Mestre dos Reparos tem cinco etapas, sempre nesta ordem: fotos pelo WhatsApp, visita técnica, orçamento por etapa, cronograma e obra, e entrega com 90 dias de garantia. Abaixo de R$ 700 o serviço é fechado só pelas fotos, sem visita. Acima disso, a visita técnica é gratuita.
 
 ### 1. Fotos e medidas pelo WhatsApp
 
@@ -126,7 +126,7 @@ Vistoria final com você, limpeza pós-obra, nota fiscal e 90 dias de garantia p
 
 ## Quanto custa uma reforma em Barueri
 
-O orçamento de reforma na Mestre dos Reparos é gratuito. Serviço abaixo de R$ 700 é orçado só pelas fotos no WhatsApp; acima disso, depois da visita técnica. Reforma não tem preço fechado sem ver o imóvel. O que mais pesa no valor é a metragem, o estado da elétrica e do contrapiso, o padrão do revestimento e o prazo. O orçamento sai separado por etapa. Os valores da parte elétrica da reforma são da nossa tabela de 2026, só mão de obra, com material à parte.
+O orçamento de reforma no Mestre dos Reparos é gratuito. Serviço abaixo de R$ 700 é orçado só pelas fotos no WhatsApp; acima disso, depois da visita técnica. Reforma não tem preço fechado sem ver o imóvel. O que mais pesa no valor é a metragem, o estado da elétrica e do contrapiso, o padrão do revestimento e o prazo. O orçamento sai separado por etapa. Os valores da parte elétrica da reforma são da nossa tabela de 2026, só mão de obra, com material à parte.
 
 | Serviço elétrico na reforma | Mão de obra |
 |---|---|
@@ -154,11 +154,11 @@ Para entender o que entra em cada tipo de obra, leia [reformas em geral](/2026/1
 
 ## Quem é o responsável técnico
 
-O responsável técnico da Mestre dos Reparos é o engenheiro Paulo Henrique Valadão, formado pela UFRJ e registrado no CREA com o número 141129611802. São 25 anos de experiência em obra e instalações. Ele define a ordem das etapas, confere parede antes de derrubar e acompanha a obra até a entrega.
+O responsável técnico do Mestre dos Reparos é o engenheiro Paulo Henrique Valadão, formado pela UFRJ e registrado no CREA com o número 141129611802. São 25 anos de experiência em obra e instalações. Ele define a ordem das etapas, confere parede antes de derrubar e acompanha a obra até a entrega.
 
 A equipe é própria, sem terceirizar: quem aparece nas fotos desta página é quem vai até a sua obra. A empresa tem CNPJ 64.521.657/0001-87 e endereço na Av. Henrique Gonçalves Baptista, 2245, Jardim Belval, Barueri.
 
-<!-- FOTO: fotos/equipe/equipe-responsavel-cinto.webp | alt: Eng. Paulo Henrique Valadão, responsável técnico da Mestre dos Reparos, em obra em Barueri -->
+<!-- FOTO: fotos/equipe/equipe-responsavel-cinto.webp | alt: Eng. Paulo Henrique Valadão, responsável técnico do Mestre dos Reparos, em obra em Barueri -->
 
 ## Avaliações de clientes no Google
 

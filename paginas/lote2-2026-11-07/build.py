@@ -15,7 +15,7 @@ CFG = {
    lead='Mande fotos do ambiente no WhatsApp e receba a visita e o orçamento. Equipe própria, engenheiro responsável e 25 anos de experiência.',
    aval='escolher uma empresa de reforma de confiança'),
  'contrato': dict(path='/p/contrato-de-manutencao-para-empresas.html', menu='Empresas', trilha=[('Manutenção predial para empresas', None)],
-   wa='Olá, quero uma proposta de contrato de manutenção', btn='Pedir proposta pelo WhatsApp', utm='contrato-manutencao', tipo='servico',
+   wa='Olá, quero uma proposta de contrato de manutenção', foco='50% 75%', btn='Pedir proposta pelo WhatsApp', utm='contrato-manutencao', tipo='servico',
    lead='Uma equipe só para a elétrica, a parte civil, a pintura e os pequenos reparos do seu prédio, com engenheiro responsável e nota fiscal.',
    aval='escolher uma empresa de manutenção de confiança'),
  'post-manutencao': dict(path='/2026/10/manutencao-para-empresas.html', menu='Blog', trilha=[('Blog', '/search'), ('Manutenção predial para empresas', None)],
@@ -168,6 +168,7 @@ def build(nome):
     tail = BASE[BASE.find('</article>'):]
     tail = tail.replace('utm_campaign=eletricista', 'utm_campaign=' + c['utm'])
     tail = tail.replace('href="https://wa.me/5511918390430?text=Ol%C3%A1%2C%20preciso%20de%20um%20eletricista"', f'href="{wa}"')
+    if c.get('foco'): pre = pre.replace('</style>', '.mdr3 .hero figure img{object-position:%s!important}\n</style>' % c['foco'], 1)
     page = pre + chrome + trilha + '<main id="conteudo"><article>\n' + heroh + '\n' + body + '\n' + tail
     for bad in ['tel:', 'Barueri e Alphaville', 'câmera', 'ar-condicionado', 'ventilador', 'AVCB', 'laudo', 'encanador', 'marido de aluguel', ' · ']:
         if bad.lower() in re.sub(r'<style>.*?</style>', '', page, flags=re.S).lower(): print('ALERTA proibido:', bad)
@@ -178,6 +179,7 @@ def build(nome):
     print(nome, 'ok', len(page), 'H2', body.count('<h2'), 'H3', body.count('<h3'), 'meta', len(meta.group(1).strip()) if meta else 0)
 
 EXTRA_CSS = '''
+.mdr3 .foto img.pessoa{width:auto!important;max-width:100%!important;height:auto!important;max-height:620px!important;aspect-ratio:auto!important;object-fit:contain!important;display:block}
 .mdr3 table.texto th,.mdr3 table.texto td{vertical-align:top;text-align:left;font-weight:400;white-space:normal;word-break:normal;overflow-wrap:normal;hyphens:manual;font-size:16px;line-height:1.5;padding:14px 12px 14px 0}
 .mdr3 table.texto thead th{font-size:14px;font-weight:600;color:var(--cinza)}
 .mdr3 table.texto tbody th{min-width:9em;font-weight:600;color:var(--marinho)}
