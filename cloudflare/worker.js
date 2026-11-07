@@ -164,11 +164,12 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 if(/wa\\.me|whatsapp\\.com/i.test(h)&&!u&&!/42knCLy_j68cENvAoOBC/.test(a.getAttribute('onclick')||'')){u=1;setTimeout(function(){u=0},3000);gtag('event','conversion',{send_to:'AW-17918599259/42knCLy_j68cENvAoOBC'});}},true);})();</script>`;
 
 // meta description de páginas do Blogger que não têm (Paulo aprovou 07/11)
+const OGIMG = { '/p/eletricista-em-barueri.html': 'https://www.mestredosreparos.app.br/nova/img/quadro-depois.jpg' };
 const DESC = { '/p/eletricista-em-barueri.html': 'Disjuntor caindo, tomada quente ou quadro sem DPS? Mande a foto no WhatsApp e receba o preço. Engenheiro com CREA e 90 dias de garantia por escrito.' };
 
 async function comContagem(resp, env, path = '') {
   const rc = env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
-  resp = new HTMLRewriter().on('a[href]', new LinkFix()).on('head', { element(e) { e.append(ADS_TAG + (DESC[path] ? `<meta name="description" content="${DESC[path]}">` : ''), { html: true }); } }).transform(ldFix(linkPilar(seloAntesDoRodape(resp), path), path));
+  resp = new HTMLRewriter().on('meta[property="og:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('meta[name="twitter:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('a[href]', new LinkFix()).on('head', { element(e) { e.append(ADS_TAG + (DESC[path] ? `<meta name="description" content="${DESC[path]}">` : ''), { html: true }); } }).transform(ldFix(linkPilar(seloAntesDoRodape(resp), path), path));
   if (!rc) return resp;
   return new HTMLRewriter().onDocument(new Contagem(rc)).transform(resp);
 }
