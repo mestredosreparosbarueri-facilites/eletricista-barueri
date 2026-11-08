@@ -285,6 +285,8 @@ async function servir(request, env, ctx) {
       return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain' } });
     }
     // home nova (servida do GitHub, cache na borda); a página antiga do Blogger vira 301 para "/"
+    // chave IndexNow do OpenSEO (Bing/Yandex)
+    if (req.pathname === '/30224266bf7a45ab8efe264d1a68bb19.txt') return new Response('30224266bf7a45ab8efe264d1a68bb19', { headers: { 'content-type': 'text/plain; charset=utf-8' } });
     if (req.pathname === RAIZ) return Response.redirect(req.origin + '/', 301);
     // post antigo com espaço na URL → post novo (07/11)
     if (['/2026/05/eletrica-130-%20perguntas-e-respostas.html', '/2026/05/eletrica-130- perguntas-e-respostas.html'].includes(req.pathname)) return Response.redirect(req.origin + '/2026/11/duvidas-de-eletrica.html', 301);
