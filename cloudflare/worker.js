@@ -43,6 +43,9 @@ const HUB_REFORMA = '/2026/10/reformas-em-barueri-para-residencias.html';
 const hubDe = p => HUB_REFORMA + (/^\/p\/reforma-em-(?!alphaville)|aldeia-da-serra/.test(p) ? '#cidades' : '#bairros');
 const NOINDEX = new Set(["/p/reforma-na-aldeia-da-serra-obra.html", "/p/reforma-em-cotia-obra-completa-com.html", "/p/reforma-em-osasco-pintura-pisos-e.html", "/p/reforma-em-itapevi-obra-completa-com.html", "/p/reforma-em-jandira-pintura-pisos-e.html", "/p/reforma-em-carapicuiba-obra-completa.html", "/p/reforma-em-santana-de-parnaiba-pintura.html", "/p/reforma-na-regina-alice-barueri-obra.html", "/p/reforma-na-cruz-preta-barueri-obra.html", "/p/reforma-na-vila-sao-francisco-barueri.html", "/p/reforma-no-jardim-mutinga-barueri-obra.html", "/p/reforma-no-jardim-paraiso-barueri.html", "/p/reforma-no-jardim-california-barueri.html", "/p/reforma-nas-chacaras-marco-barueri-obra.html", "/p/reforma-no-jardim-dos-camargos-barueri.html", "/p/reforma-na-vila-boa-vista-barueri-obra.html", "/p/reforma-no-jardim-tupanci-barueri-obra.html", "/p/reforma-no-jardim-maria-helena-barueri.html", "/p/reforma-no-parque-imperial-barueri-obra.html", "/p/reforma-no-engenho-novo-barueri-obra.html", "/p/reforma-no-jardim-silveira-barueri.html", "/p/reforma-no-jardim-belval-barueri-obra.html", "/p/reforma-na-aldeia-de-barueri-obra.html", "/p/reforma-no-bethaville-barueri-pintura-e.html", "/p/reforma-no-tambore-barueri-obra-completa.html", "/p/reforma-em-alphaville-pintura-pisos-e.html", "/p/reforma-no-centro-de-barueri-obra.html"]);
 for (const p of NOINDEX) LINK_FINAL[p] = hubDe(p);
+// 14/11 fim da canibalização (ok do Paulo): página repetida → 301 para a que fica (mais cliques no GSC)
+const JUNTAR = {"/2026/06/curto-circuito-o-que-fazer.html": "/2026/05/blog-post_5.html", "/2026/05/trocadetomadaeletrecistabarueri.html": "/2026/05/trocadetomadaseinteruptores.html", "/2026/05/por-que-o-disjuntor-do-chuveiro-desarma.html": "/2026/05/root-primary0b2a4a-accentff6a00_7.html", "/2026/05/7sinais-para-chamar-eletricista-em-barueri.html": "/2026/05/eletricista-em-barueri-quando-chamar.html", "/2026/10/manutencao-para-empresas.html": "/p/contrato-de-manutencao-para-empresas.html", "/2026/07/manutencao-predial-para-sua-empresa.html": "/p/contrato-de-manutencao-para-empresas.html", "/2026/10/reformas-em-geral.html": "/p/reformas-residenciais-e-comerciais-em.html"};
+for (const [de, para] of Object.entries(JUNTAR)) LINK_FINAL[de] = para;
 const HOME_MOD = '2026-11-14T15:40:00Z';   // última atualização da home nova (sitemap)
 
 // Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
@@ -275,6 +278,7 @@ export default {
   async fetch(request, env, ctx) {
     const u = new URL(request.url);
     if (NOINDEX.has(u.pathname)) return Response.redirect(u.origin + hubDe(u.pathname), 301);
+    if (JUNTAR[u.pathname]) return Response.redirect(u.origin + JUNTAR[u.pathname], 301);
     return servir(request, env, ctx);
   },
 };
@@ -366,7 +370,7 @@ async function servir(request, env, ctx) {
     if (req.pathname.startsWith('/sitemap') && resp.status === 200) {
       const xml = (await resp.text()).split(ORIGIN + RAIZ).join(ORIGIN + '/').replace(/<loc>([^<]*)<\/loc>/g, (m, u) => '<loc>' + u.replace(/ /g, '%20') + '</loc>');
       let casa = xml.replace(new RegExp('(<loc>' + ORIGIN + '/</loc><lastmod>)[^<]*'), '$1' + HOME_MOD);
-      for (const p of [...FORA_SITEMAP, ...NOINDEX]) casa = casa.replace(new RegExp('<url><loc>' + ORIGIN + p.replace(/[.]/g, '\\.') + '</loc>.*?</url>'), '');
+      for (const p of [...FORA_SITEMAP, ...NOINDEX, ...Object.keys(JUNTAR)]) casa = casa.replace(new RegExp('<url><loc>' + ORIGIN + p.replace(/[.]/g, '\\.') + '</loc>.*?</url>'), '');
       return new Response(casa, { status: 200, headers: h });
     }
     if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600, s-maxage=86400');
