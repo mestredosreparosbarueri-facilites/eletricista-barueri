@@ -134,3 +134,28 @@ Levantado em 14/11/2026. Cada fato tem a fonte. Abreviações das fontes:
 ## Serviços que NÃO fazemos (Paulo, 14/11/2026)
 - Desentupimento e caça-vazamento: não fazemos e não queremos. Hidráulica = vazamentos, registros e instalações (home, card Hidráulica). Nunca sugerir página, post ou palavra-chave desses serviços.
 - Fonte dos serviços: sempre a lista de cards da home (nova/home.html).
+
+## 14/11/2026 — REGRAS E LIÇÕES (Paulo: "grave isso, eu vou cobrar")
+REGRAS DE RESPOSTA
+- Só afirmar com número + fonte + período. Hipótese = escrever "HIPÓTESE, não provado". Nunca chutar causa.
+- Posição real = o print do celular do Paulo. Depois Search Console (média do período). Leitura de ferramenta (OpenSEO etc.) = só "foto", nunca "estamos em 1º".
+- Ler o histórico (ESTADO.md, GSC desde fev) ANTES de recomendar. Nunca repetir proposta que já falhou.
+- Não propor gasto sem prova. Não mexer na estrutura do site. Só fazer o que o Paulo mandar.
+- Serviços = cards da home. NÃO fazemos desentupimento nem caça-vazamento.
+- Canibalização: apontar só com prova (GSC: query, páginas, impressões, posição, período). Páginas de serviços diferentes = diversificação. Juntar/redirecionar só se fizer sentido p/ SEO, com ok do Paulo. Nunca redirecionar a home. Home = estrela, multisserviço.
+- Posts de elétrica linkam as DUAS: página de eletricista + home.
+- Ler prints na ordem que o Paulo disser (14/11 li invertido 2x).
+FATOS PROVADOS 14/11
+- Celular do Paulo, "eletricista em Barueri": Mestre 8º orgânico (1 Electrikmente, 2 GetNinjas, 3 Instagram Aldemir @eletricista.barueri, 4 oHub, 5 Barueri Fácil, 6 Adriano, 7 Reforma Fácil, 8 Mestre, 9 eletricistaembarueri, 10 Fag).
+- GSC "eletricista em barueri" celular 16/10–12/11: média 6,4; diária 3,2–8,0.
+- Mapa (grade 5x5 2km, "eletricista", OpenSEO): 1º só ao lado da sede (Belval); fora do top 20 nos outros 24 pontos. No Centro, os 20 primeiros estão a <1,6 km; Mestre a 3,46 km. Arquivo: repo seo/reports/gbp-grid/.
+- Ahrefs DR: Mestre 3,0 > Electrikmente 0,1, Fag 0,1, eletricistaembarueri 0,0, Adriano 0,0. Links NÃO explicam. OpenSEO: 39 backlinks/18 domínios; band.com.br visto 13/11.
+- Inspeção GSC: /p/eletricista-em-barueri.html indexada, canonical correto, último rastreio 06/11.
+- GSC semanal: maio 46 cliques/semana → 18/05 queda −78% (Paulo tirou multisserviço do ar) → jun–set 1–11/sem → out recuperação (impressões ~330 → ~1.050/sem; cliques 13–28/sem). NÃO mexer na estrutura.
+ERROS MEUS 14/11 (não repetir)
+- Disse "estamos em 1º" com leitura de robô; real = 8º.
+- Inventei canibalização com dado antigo do GSC; disse "resolvido" sem prova.
+- Propus desentupimento/caça-vazamento (não é serviço) — e post do Perfil (pergunta 8) prometia desentupimento: corrigido com ok do Paulo.
+- Hipóteses derrubadas pelos dados: links, conteúdo, velocidade, foco do site (já falhou em maio), domínio com palavra-chave.
+- Disse que fazia tudo de agência e depois mandei procurar especialista: contradição.
+COMPROMISSO: relatório toda segunda só com números (GSC semanal + print), sem opinião.
