@@ -5,7 +5,7 @@ Regras do dono que limitam o backlog (ver context.md): NÃO juntar/redirecionar 
 | # | Query | Página | Mudança | Precisa do Paulo? |
 |---|---|---|---|---|
 | 2 | eletricista em barueri | home | Home ranqueia na mesma query: trocar âncoras internas "eletricista em Barueri" para apontar à /p/ e deixar a home focada em "reformas e manutenção em Barueri" | não |
-| 3 | encanador barueri (260, pos. 3,3 via Perfil do Google; página 23) / desentupidora barueri (590, gap) / caça vazamento barueri (140, gap) | /p/hidrailica-mestre-dos-reparos.html | Responder no 1º parágrafo "encanador em Barueri", seções de desentupimento e caça-vazamento com preço só se publicado pelo dono; links de 3 páginas fortes | SIM: preços de hidráulica |
+| 3 | encanador barueri (260, pos. 3,3 via Perfil do Google; página 23) | /p/hidrailica-mestre-dos-reparos.html | Responder no 1º parágrafo "encanador em Barueri", só os serviços da home: vazamentos, registros e instalações (NÃO fazemos desentupimento nem caça-vazamento); links de 3 páginas fortes | não |
 | 4 | eletricista alphaville (pos. 10,2, 30 impr) | /p/eletricista-em-alphaville-barueri.html | Home aparece na frente: links internos com âncora "eletricista em Alphaville" a partir da /p/eletricista-em-barueri e posts | não |
 | 5 | eletricista jandira (110, pos. 11,3) | /p/eletricista-em-jandira.html | Página 2→1: abrir top 3, completar o que falta, links de entrada | não |
 | 6 | eletricista itapevi (210, pos. 44) | /p/eletricista-em-itapevi.html | Diagnóstico de por que não ranqueia (conteúdo, links) | não |

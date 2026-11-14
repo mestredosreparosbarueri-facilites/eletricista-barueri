@@ -130,3 +130,7 @@ Levantado em 14/11/2026. Cada fato tem a fonte. Abreviações das fontes:
 - Páginas de assuntos diferentes NÃO podem disputar força entre si; se o Google fizer isso, é erro do Google a ser corrigido com sinais (links internos, títulos), não juntando serviços diferentes.
 - Juntar/redirecionar páginas: SÓ se fizer sentido para SEO, com prova, e com ok do Paulo. Nunca redirecionar a home.
 - Nunca dizer "resolvido" sem prova atual (dados das últimas 4 semanas + conferência no ar).
+
+## Serviços que NÃO fazemos (Paulo, 14/11/2026)
+- Desentupimento e caça-vazamento: não fazemos e não queremos. Hidráulica = vazamentos, registros e instalações (home, card Hidráulica). Nunca sugerir página, post ou palavra-chave desses serviços.
+- Fonte dos serviços: sempre a lista de cards da home (nova/home.html).
