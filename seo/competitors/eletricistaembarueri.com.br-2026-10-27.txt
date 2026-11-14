@@ -1,0 +1,3 @@
+https://eletricistaembarueri.com.br/sitemap-paginas.xml
+https://eletricistaembarueri.com.br/sitemap-bairros.xml
+https://eletricistaembarueri.com.br/sitemap-blog.xml

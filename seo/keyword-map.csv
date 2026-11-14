@@ -1,0 +1,133 @@
+query,intent,monthly volume,difficulty,target URL,status,current position,last checked
+eletricista em barueri,transacional,590,0,https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html,live,7.0 (395 impr/40 cliq 90d),2026-11-14
+manutenção residencial,comercial,480,0,https://www.mestredosreparos.app.br/,live,3.0 (17 impr/0 cliq 90d),2026-11-14
+marido de aluguel barueri,transacional,110,0,https://www.mestredosreparos.app.br/p/marido-de-aluguel.html,live,3.3 (77 impr/1 cliq 90d),2026-11-14
+encanador barueri,transacional,260,0,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,live,3.3 (13 impr/0 cliq 90d),2026-11-14
+eletricista alphaville,transacional,50,sem dado,https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html,live,10.2 (30 impr/0 cliq 90d),2026-11-14
+eletricista santana de parnaíba,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-em-santana-de-parnaiba.html,live,8.3 (3 impr/0 cliq 90d),2026-11-14
+eletricista carapicuíba,transacional,30,0,https://www.mestredosreparos.app.br/p/eletricista-em-carapicuiba-atendimento.html,live,28.7 (3 impr/0 cliq 90d),2026-11-14
+eletricista jandira,transacional,110,0,https://www.mestredosreparos.app.br/p/eletricista-em-jandira.html,live,11.3 (15 impr/0 cliq 90d),2026-11-14
+eletricista itapevi,transacional,210,0,https://www.mestredosreparos.app.br/p/eletricista-em-itapevi.html,live,44.0 (3 impr/0 cliq 90d),2026-11-14
+marido de aluguel itapevi,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/marido-de-aluguel-em-itapevi.html,live,7.8 (9 impr/0 cliq 90d),2026-11-14
+marido de aluguel jandira,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/marido-de-aluguel-em-jandira.html,live,sem dado,2026-11-14
+marido de aluguel santana de parnaíba,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/marido-de-aluguel-em-santana-de-parnaiba.html,live,sem dado,2026-11-14
+marido de aluguel aldeia da serra,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/marido-de-aluguel-em-aldeia-da-serra.html,live,sem dado,2026-11-14
+manutenção predial em barueri,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html,live,30.2 (37 impr/1 cliq 90d),2026-11-14
+empresa de manutenção predial,comercial,480,0,https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html,live,1.1 (7 impr/0 cliq 90d),2026-11-14
+contrato de manutenção predial,comercial,40,48,https://www.mestredosreparos.app.br/2026/07/manutencao-predial-para-sua-empresa.html,live,sem dado,2026-11-14
+limpeza e manutenção predial para empresas,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/p/contratos-corporativos-b2b.html,live,sem dado,2026-11-14
+eletricista residencial barueri,transacional,10,sem dado,https://www.mestredosreparos.app.br/2026/10/eletricista-residencial-em-barueri.html,live,8.0 (variante 'eletricista residencial': 5 impr/1 cliq 90d),2026-11-14
+eletricista predial barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/eletricista-predial-em-barueri-mestre.html,live,3.5 (variante 'eletricista predial': 2 impr/0 cliq 90d),2026-11-14
+eletricista para condomínio barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-condominios-barueri.html,live,sem dado,2026-11-14
+manutenção elétrica barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/manutencao-eletrica-em-barueri-mestre.html,live,1.0 (variante 'manutencao eletrica': 1 impr/0 cliq 90d),2026-11-14
+eletricista de emergência,transacional,140,0,https://www.mestredosreparos.app.br/2026/05/como-funciona-o-atendimento-de.html,live,1.0 (2 impr/0 cliq 90d),2026-11-14
+troca de disjuntor,transacional,320,0,https://www.mestredosreparos.app.br/2026/05/trocadedisjuntoreseletrecistaembarueri.html,live,sem dado,2026-11-14
+troca de tomada,transacional,210,0,https://www.mestredosreparos.app.br/2026/05/trocadetomadaeletrecistabarueri.html,live,sem dado,2026-11-14
+troca de tomadas e interruptores,transacional,20,sem dado,https://www.mestredosreparos.app.br/2026/05/trocadetomadaseinteruptores.html,live,sem dado,2026-11-14
+instalação de lustre,comercial,170,0,https://www.mestredosreparos.app.br/2026/05/instalacao-de-lustres-em-barueri.html,live,sem dado,2026-11-14
+instalação de ventilador e ar condicionado,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/05/instalacao-de-ventiladores-e-ar.html,live,sem dado,2026-11-14
+diarista barueri,transacional,110,sem dado,https://www.mestredosreparos.app.br/p/diarista-com-agendamento-em-barueri-e.html,live,sem dado,2026-11-14
+diarista aldeia da serra,transacional,10,sem dado,https://www.mestredosreparos.app.br/p/diarista-em-aldeia-da-serra.html,live,sem dado,2026-11-14
+limpeza pós obra barueri,transacional,40,sem dado,https://www.mestredosreparos.app.br/p/limpeza-pos-obra-em-barueri-e-regiao.html,live,sem dado,2026-11-14
+limpeza pós mudança barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/limpeza-pos-mudanca-em-barueri-e-regiao.html,live,sem dado,2026-11-14
+contrato de limpeza para empresas,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/p/contrato-de-limpeza-para-empresas.html,live,sem dado,2026-11-14
+reforma em barueri,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html,live,15.0 (8 impr/0 cliq 90d),2026-11-14
+reformas em geral barueri,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/reformas-em-geral.html,live,sem dado,2026-11-14
+reforma residencial barueri bairros,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/reformas-em-barueri-para-residencias.html,live,sem dado,2026-11-14
+reforma de banheiro barueri,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/reforma-de-banheiro-em-barueri-mestre.html,live,sem dado,2026-11-14
+reforma de cozinha barueri,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/reforma-de-cozinha-em-barueri-mestre.html,live,sem dado,2026-11-14
+reforma de apartamento barueri,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/reforma-de-apartamento-em-barueri.html,live,sem dado,2026-11-14
+reforma predial barueri,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/reforma-predial-em-barueri-mestre-dos.html,live,6.0 (variante 'reforma predial': 2 impr/0 cliq 90d),2026-11-14
+pintor barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/pintura-forro-e-paredes-de-drywall-em.html,live,11.2 (6 impr/0 cliq 90d),2026-11-14
+porcelanato barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/pisos-porcelanato-ceramica-ardosia.html,live,sem dado,2026-11-14
+bairros atendidos eletricista barueri,navegacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/10/bairros-com-atendimento-de-eletricistas.html,live,sem dado,2026-11-14
+quanto custa um eletricista,informacional,140,0,https://www.mestredosreparos.app.br/2026/06/como-saber-se-o-orcamento-do-eletricista-e-justo.html,live,sem dado,2026-11-14
+como encontrar eletricista de confiança,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/06/como-encontrar-eletricista-de-confianca-em-barueri.html,live,sem dado,2026-11-14
+quando chamar um eletricista,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-quando-chamar.html,live,sem dado,2026-11-14
+sinais de que precisa de eletricista,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/05/7sinais-para-chamar-eletricista-em-barueri.html,live,sem dado,2026-11-14
+eletricista com responsabilidade técnica,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html,live,sem dado,2026-11-14
+quando trocar quadro elétrico,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/06/7-sinais-para-trocar-quadro-eletrico.html,live,sem dado,2026-11-14
+disjuntor desarmando sozinho,transacional,590,0,https://www.mestredosreparos.app.br/2026/05/disjuntor-desarmando-causas-riscos-e.html,live,15.2 (4 impr/0 cliq 90d),2026-11-14
+disjuntor do chuveiro desarmando,transacional,390,0,https://www.mestredosreparos.app.br/2026/05/por-que-o-disjuntor-do-chuveiro-desarma.html,live,sem dado,2026-11-14
+chuveiro desligando a energia,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00_7.html,live,sem dado,2026-11-14
+disjuntor geral desarmando,informacional,320,0,https://www.mestredosreparos.app.br/2026/05/disjuntorgeraleletricistaembarueri.html,live,sem dado,2026-11-14
+dr desarmando,informacional,260,0,https://www.mestredosreparos.app.br/2026/05/drdesarmandoeletrecistaembarueri.html,live,sem dado,2026-11-14
+chuveiro queimando resistência,transacional,140,0,https://www.mestredosreparos.app.br/2026/05/estilo-profissional-root-primary0b2a4a.html,live,7.0 (1 impr/0 cliq 90d),2026-11-14
+luz piscando o que pode ser,informacional,720,0,https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00.html,live,23.5 (variante 'quando a luz fica piscando o que pode ser': 4 impr/0 cliq 90d),2026-11-14
+tomada esquentando,transacional,110,0,https://www.mestredosreparos.app.br/2026/05/tomada-ou-cabos-aquecendo-causas-riscos.html,live,sem dado,2026-11-14
+curto circuito o que fazer,informacional,50,sem dado,https://www.mestredosreparos.app.br/2026/06/curto-circuito-o-que-fazer.html,live,2.0 (1 impr/0 cliq 90d),2026-11-14
+o que fazer em curto circuito e o que não fazer,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/05/blog-post_5.html,live,sem dado,2026-11-14
+problemas elétricos residenciais,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/11/duvidas-de-eletrica.html,live,sem dado,2026-11-14
+instalação de chuveiro passo a passo,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/06/instalacao-de-chuveiros-passo-passo.html,live,sem dado,2026-11-14
+o que é disjuntor,informacional,1600,0,https://www.mestredosreparos.app.br/2026/06/o-que-e-e-como-funciona-um-disjuntor.html,live,sem dado,2026-11-14
+nbr 5410,informacional,27100,26,https://www.mestredosreparos.app.br/2026/06/o-que-e-nbr-5410.html,live,sem dado,2026-11-14
+circuito dedicado cozinha,informacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/06/circuitos-eletricos-dedicados-cozinha.html,live,sem dado,2026-11-14
+mestre dos reparos,navegacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/quem-somos-mestre-dos-reparos.html,live,7.9 (44 impr/1 cliq 90d),2026-11-14
+mestre dos reparos llms,navegacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/llms.html,live,sem dado,2026-11-14
+mestre dos reparos termos de uso,navegacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/termos-de-uso.html,live,sem dado,2026-11-14
+eletricista jardim silveira barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/blog-page_29.html,live,sem dado,2026-11-14
+eletricista bethaville barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/blog-page_83.html,live,sem dado,2026-11-14
+eletricista parque viana barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/blog-page_8.html,live,sem dado,2026-11-14
+eletricista centro barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/blog-page_2.html,live,sem dado,2026-11-14
+eletricista aldeia barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/blog-page_3.html,live,sem dado,2026-11-14
+eletricista jardim tupanci barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/blog-page_43.html,live,sem dado,2026-11-14
+eletricista tamboré barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/blog-page_87.html,live,sem dado,2026-11-14
+eletricista engenho novo barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-engenho-novo.html,live,16.8 (variante 'eletricista no engenho novo': 24 impr/0 cliq 90d),2026-11-14
+eletricista vila boa vista barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-boa-vista.html,live,sem dado,2026-11-14
+eletricista 18 do forte barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-18-do-forte.html,live,sem dado,2026-11-14
+eletricista jardim paulista barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-jardim-paulista.html,live,sem dado,2026-11-14
+eletricista cruz preta barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-cruz-preta.html,live,sem dado,2026-11-14
+eletricista aldeia da serra  barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-em-aldeia-da-serra.html,live,sem dado,2026-11-14
+eletricista nossa senhora da escada barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-na-nossa-senhora-da-escada.html,live,sem dado,2026-11-14
+eletricista fazenda militar barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-na-fazenda-militar-barueri.html,live,sem dado,2026-11-14
+eletricista vila são francisco barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-na-vila-sao-francisco.html,live,sem dado,2026-11-14
+eletricista votupoca barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-na-votupoca-barueri.html,live,sem dado,2026-11-14
+eletricista chácaras marco barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-nas-chacaras-marco-barueri.html,live,sem dado,2026-11-14
+eletricista jardim audir barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-audir-barueri.html,live,sem dado,2026-11-14
+eletricista jardim barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-barueri.html,live,sem dado,2026-11-14
+eletricista jardim califórnia barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-california.html,live,sem dado,2026-11-14
+eletricista jardim belval barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html,live,sem dado,2026-11-14
+eletricista jardim esperança barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-esperanca-barueri.html,live,sem dado,2026-11-14
+eletricista jardim dos altos barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-altos-barueri.html,live,sem dado,2026-11-14
+eletricista jardim graziela barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-graziela-barueri.html,live,sem dado,2026-11-14
+eletricista jardim júlio barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-julio-barueri.html,live,sem dado,2026-11-14
+eletricista jardim itaquiti barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-itaquiti-barueri.html,live,sem dado,2026-11-14
+eletricista jardim dos camargos barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-camargos.html,live,sem dado,2026-11-14
+eletricista jardim maria cristina barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-cristina.html,live,sem dado,2026-11-14
+eletricista jardim maria helena barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-helena.html,live,sem dado,2026-11-14
+eletricista jardim reginalice barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-reginalice.html,live,sem dado,2026-11-14
+eletricista jardim paraíso barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-paraiso-barueri.html,live,sem dado,2026-11-14
+eletricista jardim líbano barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-libano-barueri-24.html,live,sem dado,2026-11-14
+eletricista jardim mutinga barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-mutinga-barueri.html,live,sem dado,2026-11-14
+eletricista jardim iracema barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-iracema-barueri.html,live,sem dado,2026-11-14
+eletricista jardim são pedro barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-pedro-barueri.html,live,sem dado,2026-11-14
+eletricista parque imperial barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-parque-imperial-barueri.html,live,sem dado,2026-11-14
+eletricista jardim são silvestre barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-silvestre.html,live,sem dado,2026-11-14
+desentupidora barueri,transacional,590,0,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,sem dado,2026-11-14
+caça vazamento barueri,transacional,140,0,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,sem dado,2026-11-14
+vazamento de água barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,sem dado,2026-11-14
+encanador alphaville,transacional,90,47,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,sem dado,2026-11-14
+encanador carapicuíba,transacional,140,0,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,20.0 (1 impr/0 cliq 90d),2026-11-14
+encanador itapevi,transacional,90,sem dado,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,8.7 (3 impr/0 cliq 90d),2026-11-14
+encanador jandira,transacional,50,sem dado,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,4.8 (6 impr/0 cliq 90d),2026-11-14
+desentupidora alphaville,transacional,70,0,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,sem dado,2026-11-14
+encanador perto de mim,transacional,9900,0,https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html,gap,1.2 (13 impr/0 cliq 90d),2026-11-14
+eletricista perto de mim,transacional,18100,0,https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html,gap,7.8 (110 impr/1 cliq 90d),2026-11-14
+eletricista 24 horas barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/05/como-funciona-o-atendimento-de.html,gap,7.0 (variante 'eletricista de plantao 24 horas': 3 impr/0 cliq 90d),2026-11-14
+eletricista 24 horas perto de mim,transacional,720,2,https://www.mestredosreparos.app.br/2026/05/como-funciona-o-atendimento-de.html,gap,9.1 (7 impr/0 cliq 90d),2026-11-14
+reparo de chuveiro,transacional,2900,0,https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00_7.html,gap,3.2 (15 impr/0 cliq 90d),2026-11-14
+conserto de ventilador de teto,transacional,720,0,https://www.mestredosreparos.app.br/2026/05/instalacao-de-ventiladores-e-ar.html,gap,2.2 (6 impr/0 cliq 90d),2026-11-14
+quadro de luz barueri,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/2026/06/7-sinais-para-trocar-quadro-eletrico.html,gap,sem dado,2026-11-14
+marido de aluguel alphaville,transacional,20,sem dado,https://www.mestredosreparos.app.br/p/marido-de-aluguel.html,gap,sem dado,2026-11-14
+marido de aluguel carapicuíba,transacional,sem dado,sem dado,https://www.mestredosreparos.app.br/p/marido-de-aluguel.html,gap,sem dado,2026-11-14
+marido de aluguel perto de mim,transacional,1300,0,https://www.mestredosreparos.app.br/p/marido-de-aluguel.html,gap,4.4 (11 impr/1 cliq 90d),2026-11-14
+faz tudo perto de mim,transacional,720,0,https://www.mestredosreparos.app.br/p/marido-de-aluguel.html,gap,1.5 (21 impr/0 cliq 90d),2026-11-14
+manutenção predial alphaville,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html,gap,32.2 (variante 'manutencao predial em alphaville': 25 impr/0 cliq 90d),2026-11-14
+manutenção predial santana de parnaíba,comercial,sem dado,sem dado,https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html,gap,20.8 (variante 'manutencao predial em santana de parnaiba': 15 impr/0 cliq 90d),2026-11-14
+pedreiro barueri,transacional,140,0,https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html,gap,17.4 (22 impr/0 cliq 90d),2026-11-14
+pedreiro itapevi,transacional,140,0,https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html,gap,26.7 (6 impr/0 cliq 90d),2026-11-14
+reforma alphaville,comercial,260,0,https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html,gap,sem dado,2026-11-14
+reforma de fachada predial,comercial,140,0,https://www.mestredosreparos.app.br/2026/10/reforma-predial-em-barueri-mestre-dos.html,gap,38.7 (variante 'reforma de fachada predial em barueri': 15 impr/0 cliq 90d),2026-11-14
+diarista alphaville,transacional,50,53,https://www.mestredosreparos.app.br/p/diarista-com-agendamento-em-barueri-e.html,gap,sem dado,2026-11-14
+orçamento eletricista,comercial,170,0,https://www.mestredosreparos.app.br/2026/06/como-saber-se-o-orcamento-do-eletricista-e-justo.html,gap,sem dado,2026-11-14
+quanto cobra um eletricista,informacional,110,0,https://www.mestredosreparos.app.br/2026/06/como-saber-se-o-orcamento-do-eletricista-e-justo.html,gap,sem dado,2026-11-14

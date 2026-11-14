@@ -1,0 +1,385 @@
+// Mestre dos Reparos — remove o ?m=1 do Blogger: uma URL por página.
+// - pedidos com ?m=1 → 301 para a URL limpa
+// - URL limpa → busca na origem (seguindo o 302 de celular do Blogger) e entrega 200 na URL limpa
+// - redirecionamentos personalizados do Blogger → 301 sem ?m=1
+// - chave do IndexNow em /ab2d63c7130888b84f8955c6932b3501.txt
+const ORIGIN = 'https://www.mestredosreparos.app.br';
+const INDEXNOW_KEY = 'ab2d63c7130888b84f8955c6932b3501';
+
+function semM(u) {
+  const url = new URL(u, ORIGIN);
+  url.searchParams.delete('m');
+  return url;
+}
+
+class LinkFix {
+  element(el) {
+    for (const a of ['href', 'content']) {
+      const v = el.getAttribute(a);
+      if (v && v.includes('m=1') && (v.startsWith('/') || v.includes('mestredosreparos.app.br'))) {
+        el.setAttribute(a, v.replace(/([?&])m=1(&m=1)*&?/g, '$1').replace(/[?&]$/, ''));
+      }
+      const v2 = el.getAttribute(a);
+      if (v2 && (v2 === RAIZ || v2.endsWith('mestredosreparos.app.br' + RAIZ))) el.setAttribute(a, v2.slice(0, -RAIZ.length) + '/');
+      const v3 = el.getAttribute(a);
+      if (v3) for (const [de, para] of Object.entries(LINK_FINAL)) if (v3.endsWith(de)) el.setAttribute(a, v3.slice(0, -de.length) + para);
+    }
+  }
+}
+
+const MOBILE = /Mobi|Android|iPhone|iPad|iPod/i;
+const NOVA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/ccr-33db381a-6kweq8/nova/';
+// home lida do commit fixo (muda a cada publicação): o cache da borda não segura versão velha
+const NOVA_SHA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/891ae1f116766df5652cc52486111705e45e88d6/nova/';
+const RAIZ = '/p/mestre-dos-reparos-manutencao-reparos.html';
+// links internos antigos que redirecionam → destino final (evita link para redirecionamento)
+const LINK_FINAL = { '/p/temos-de-uso.html': '/p/termos-de-uso.html', '/2026/02/mestre-dos-reparos-facilites_0115649963.html': '/p/eletricista-em-barueri.html' };
+// páginas que o Blogger marca com noindex mas devem ser indexadas
+const INDEXAR = new Set(['/p/hidrailica-mestre-dos-reparos.html', '/p/contratos-corporativos-b2b.html']);
+// páginas com noindex que não devem constar no sitemap
+const FORA_SITEMAP = ['/p/diarista-em-itapevi.html', '/p/diarista-em-jandira.html', '/p/diarista-em-santana-de-parnaiba.html', '/p/lgpd-lei-geral-de-protecao-de-dados.html', '/p/politica-de-privacidade.html', '/p/temos-de-uso.html'];
+// páginas de reforma por bairro feitas do mesmo modelo (quase iguais): 301 para a página de bairros atendidos de reforma (cada bairro tem o seu bloco lá)
+const HUB_REFORMA = '/2026/10/reformas-em-barueri-para-residencias.html';
+const hubDe = p => HUB_REFORMA + (/^\/p\/reforma-em-(?!alphaville)|aldeia-da-serra/.test(p) ? '#cidades' : '#bairros');
+const NOINDEX = new Set(["/p/reforma-na-aldeia-da-serra-obra.html", "/p/reforma-em-cotia-obra-completa-com.html", "/p/reforma-em-osasco-pintura-pisos-e.html", "/p/reforma-em-itapevi-obra-completa-com.html", "/p/reforma-em-jandira-pintura-pisos-e.html", "/p/reforma-em-carapicuiba-obra-completa.html", "/p/reforma-em-santana-de-parnaiba-pintura.html", "/p/reforma-na-regina-alice-barueri-obra.html", "/p/reforma-na-cruz-preta-barueri-obra.html", "/p/reforma-na-vila-sao-francisco-barueri.html", "/p/reforma-no-jardim-mutinga-barueri-obra.html", "/p/reforma-no-jardim-paraiso-barueri.html", "/p/reforma-no-jardim-california-barueri.html", "/p/reforma-nas-chacaras-marco-barueri-obra.html", "/p/reforma-no-jardim-dos-camargos-barueri.html", "/p/reforma-na-vila-boa-vista-barueri-obra.html", "/p/reforma-no-jardim-tupanci-barueri-obra.html", "/p/reforma-no-jardim-maria-helena-barueri.html", "/p/reforma-no-parque-imperial-barueri-obra.html", "/p/reforma-no-engenho-novo-barueri-obra.html", "/p/reforma-no-jardim-silveira-barueri.html", "/p/reforma-no-jardim-belval-barueri-obra.html", "/p/reforma-na-aldeia-de-barueri-obra.html", "/p/reforma-no-bethaville-barueri-pintura-e.html", "/p/reforma-no-tambore-barueri-obra-completa.html", "/p/reforma-em-alphaville-pintura-pisos-e.html", "/p/reforma-no-centro-de-barueri-obra.html"]);
+for (const p of NOINDEX) LINK_FINAL[p] = hubDe(p);
+const HOME_MOD = '2026-10-28T23:40:00Z';   // última atualização da home nova (sitemap)
+
+// Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
+const IMG = /(https:\/\/blogger\.googleusercontent\.com\/img\/[^\s"',]+?=)([swh]\d+[^\s"',]*)/g;
+// fotos grandes (origem PNG pesada) → JPEG qualidade 80 (~40 KB); imagens pequenas (logos) → webp sem perda
+function webp(v, limitar, foto) {
+  return v.replace(IMG, (m, base, p) => {
+    let q = p.replace(/-(rw|rj|l\d+)/g, '');
+    if (limitar && /^s(\d+)$/.test(q) && +q.slice(1) > 800) q = 'w800';
+    return base + q + (foto ? '-rj-l80' : '-rw');
+  });
+}
+class ImgFix {
+  element(el) {
+    const foto = +(el.getAttribute('data-original-width') || 0) >= 500;
+    const s = el.getAttribute('src');
+    if (s && s.includes('googleusercontent.com/img/')) el.setAttribute('src', webp(s, true, foto));
+    const ss = el.getAttribute('srcset');
+    if (ss && ss.includes('googleusercontent.com/img/')) el.setAttribute('srcset', webp(ss, false, foto));
+  }
+}
+
+
+// estrelas reais: votos dos clientes guardados no KV (binding AVAL); a nota só entra no Google quando existe voto
+const AVALIAR = {
+  '/p/eletricista-em-barueri.html': { nome: 'Eletricista em Barueri SP', fotos: ['quadro-depois.jpg', 'paulo-atendimento.jpg', 'quadro2-depois.jpg'],
+    desc: 'Serviço de eletricista em Barueri SP: instalação, manutenção e reparos elétricos residenciais e prediais, com nota fiscal e garantia de 90 dias.' },
+  '/': { nome: 'Mestre dos Reparos: eletricista, reformas e limpeza em Barueri SP', fotos: ['quadro-depois.jpg', 'sala-reforma.jpg', 'limpeza-exaustor.jpg'],
+    desc: 'Serviços de elétrica, reformas, pintura, hidráulica e limpeza em Barueri SP, do básico ao acabamento, com nota fiscal e garantia de 90 dias.' },
+};
+
+async function lerNota(env, p) {
+  const a = env.AVAL ? await env.AVAL.get('a:' + p, 'json') : null;
+  return a && a.t > 0 ? { media: Math.round((a.s / a.t) * 10) / 10, total: a.t } : null;
+}
+
+async function votar(request, env) {
+  const cors = { 'content-type': 'application/json', 'cache-control': 'no-store' };
+  if (request.method !== 'POST' || !env.AVAL) return new Response('{"ok":false}', { status: 405, headers: cors });
+  let b; try { b = await request.json(); } catch { return new Response('{"ok":false}', { status: 400, headers: cors }); }
+  const p = b && b.p, n = Number(b && b.n);
+  if (!AVALIAR[p] || !Number.isInteger(n) || n < 1 || n > 5) return new Response('{"ok":false}', { status: 400, headers: cors });
+  const ip = request.headers.get('cf-connecting-ip') || '';
+  const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(ip + '|mdr|' + p)))].map(x => x.toString(16).padStart(2, '0')).join('').slice(0, 32);
+  const kv = 'v:' + p + ':' + hash;
+  const antes = Number(await env.AVAL.get(kv)) || 0;   // um voto por pessoa; votar de novo troca a nota
+  const a = (await env.AVAL.get('a:' + p, 'json')) || { s: 0, t: 0 };
+  if (antes) a.s += n - antes; else { a.s += n; a.t += 1; }
+  await env.AVAL.put(kv, String(n));
+  await env.AVAL.put('a:' + p, JSON.stringify(a));
+  return new Response(JSON.stringify({ ok: true, media: Math.round((a.s / a.t) * 10) / 10, total: a.t }), { headers: cors });
+}
+
+// número de avaliações do Google sempre atualizado (chave 'rc' no KV AVAL, gravada pela rotina das 9h)
+class Contagem {
+  constructor(rc) { this.rc = rc; this.buf = ''; }
+  text(t) {
+    this.buf += t.text;
+    if (!t.lastInTextNode) { t.remove(); return; }
+    const novo = this.buf.replace(/\b([3-9]\d) (avaliações|avaliacoes)/g, (m, n, w) => this.rc + ' ' + w);
+    t.replace(novo, { html: true }); this.buf = '';
+  }
+}
+// selo "Empresa regularizada" (widget do tema) ficava depois do rodapé da página: mostra antes do rodapé
+const SELO = `<a class="mr-selo-rt" href="/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html" style="display:block;max-width:560px;margin:8px auto 24px;padding:14px 18px;background:#0a1f4d;border:2px solid #f7a600;color:#fff;border-radius:12px;text-decoration:none;font:600 16px/1.4 Arial,sans-serif;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.18)">&#9989; Empresa regularizada e com responsável técnico<br><span style="font-weight:400;font-size:14px">CNPJ e Inscrição Estadual ativos &#183; Engenheiro eletricista &#183; Certificados</span><br><span style="display:inline-block;margin-top:8px;padding:6px 14px;background:#f7a600;color:#0a1f4d;font-weight:700;border-radius:20px;font-size:14px">Ver documentos e certificados &#8594;</span></a>`;
+function seloAntesDoRodape(resp) {
+  let feito = false;
+  return new HTMLRewriter()
+    .on('footer.mestre-footer', { element(e) { if (!feito) { e.before(SELO, { html: true }); feito = true; } } })
+    .on('.mr-selos > a[href*="responsabilidade-tecnica"]', { element(e) { if (feito) e.remove(); } })
+    .transform(resp);
+}
+
+// páginas de bairro/cidade e posts de reforma apontam para a página principal de reformas (concentra relevância nela)
+const PILAR_REFORMA = '/p/reformas-residenciais-e-comerciais-em.html';
+const EH_REFORMA = /^\/(p\/reforma-(no|na|nas|nos|em)-|2026\/\d\d\/reforma)/;
+const BOX_REFORMA = `<div style="max-width:720px;margin:16px auto;padding:16px 18px;border:2px solid #f7a600;border-radius:12px;font:16px/1.5 Arial,sans-serif;background:#fffaf0"><strong>Procurando uma empresa de reforma em Barueri?</strong> Veja a obra real que fizemos numa clínica no Centro, quem atendemos e como funciona: <a href="${PILAR_REFORMA}" style="color:#0a1f4d;font-weight:700">empresa de reforma em Barueri</a>.</div>`;
+function linkPilar(resp, path) {
+  if (path === PILAR_REFORMA || !EH_REFORMA.test(path)) return resp;
+  let feito = false;
+  return new HTMLRewriter().on('footer.mestre-footer', { element(e) { if (!feito) { e.before(BOX_REFORMA, { html: true }); feito = true; } } }).transform(resp);
+}
+
+const LOGO = ORIGIN + '/nova/img/empresa-logo-180.png';
+class LdFix {
+  constructor(path) { this.path = path; this.buf = ''; this.desc = ''; }
+  meta(e) { if (!this.desc) this.desc = e.getAttribute('content') || ''; }
+  text(t) {
+    this.buf += t.text;
+    if (!t.lastInTextNode) { t.remove(); return; }
+    let out = this.buf; this.buf = '';
+    if (out.includes('BlogPosting')) {
+      try {
+        const d = JSON.parse(out);
+        if (d['@type'] === 'BlogPosting') {
+          d.publisher = { '@type': 'Organization', name: 'Mestre dos Reparos Manutenção & Limpeza', url: ORIGIN + '/', logo: { '@type': 'ImageObject', url: LOGO, width: 180, height: 180 } };
+          d.author = { '@type': 'Person', name: 'Paulo Henrique Valadão', jobTitle: 'Engenheiro Eletricista e Responsável Técnico (CREA 141129611802)', url: ORIGIN + '/', worksFor: { '@type': 'Organization', name: 'Mestre dos Reparos Manutenção & Limpeza', url: ORIGIN + '/' } };
+          if (this.desc) d.description = this.desc;
+          if (this.path.startsWith('/p/')) { d['@type'] = 'WebPage'; d.url = ORIGIN + this.path; delete d.mainEntityOfPage; }
+          out = JSON.stringify(d);
+        }
+      } catch (e) {}
+    }
+    t.replace(out, { html: true });
+  }
+}
+function ldFix(resp, path) {
+  const f = new LdFix(path);
+  return new HTMLRewriter()
+    .on('meta[name="description"]', { element: e => f.meta(e) })
+    .on('script[type="application/ld+json"]', { text: t => f.text(t) })
+    .transform(resp);
+}
+
+// conversão do Google Ads: o tema do Blogger só configura AW-3322908435 (ID da conta, não da tag) e só o botão
+// flutuante disparava conversão. Aqui: configura a tag certa e conta clique em QUALQUER link de WhatsApp.
+const ADS_TAG = `<script>(function(){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments)}window.gtag=window.gtag||g;
+if(!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=AW-17918599259';document.head.appendChild(s);gtag('js',new Date());}
+gtag('config','AW-17918599259');var u=0;
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+if(/wa\\.me|whatsapp\\.com/i.test(h)&&!u&&!/42knCLy_j68cENvAoOBC/.test(a.getAttribute('onclick')||'')){u=1;setTimeout(function(){u=0},3000);gtag('event','conversion',{send_to:'AW-17918599259/42knCLy_j68cENvAoOBC'});}},true);})();</script>`;
+
+// meta description de páginas do Blogger que não têm (Paulo aprovou 07/11)
+const OGIMG = { '/p/eletricista-em-barueri.html': 'https://www.mestredosreparos.app.br/nova/img/quadro-depois.jpg', '/p/reformas-residenciais-e-comerciais-em.html': 'https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/reformas/sala-reformada-com-iluminacao.jpg', '/p/contrato-de-manutencao-para-empresas.html': 'https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/galpao-estrutura-metalica-manutencao.jpg', '/2026/10/manutencao-para-empresas.html': 'https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/medicao-de-corrente-no-quadro.jpg', '/2026/11/duvidas-de-eletrica.html': 'https://cdn.jsdelivr.net/gh/mestredosreparosbarueri-facilites/eletricista-barueri@0461ceca138fbb788e6654c9560300d99a9b1e83/fotos/servicos/quadro-com-dps-instalado.jpg' };
+const DESC = { '/p/eletricista-em-barueri.html': 'Disjuntor caindo, tomada quente ou quadro sem DPS? Mande a foto no WhatsApp e receba o preço. Engenheiro com CREA e 90 dias de garantia por escrito.', '/p/reformas-residenciais-e-comerciais-em.html': 'Reforma de casa, apartamento, loja e escritório em Barueri, equipe própria e engenheiro com CREA. Mande fotos no WhatsApp e receba o orçamento por etapa.', '/p/contrato-de-manutencao-para-empresas.html': 'Contrato de manutenção predial em Barueri para empresas, condomínios e galpões: elétrica, civil, pintura e reparos, com engenheiro CREA. Peça a proposta.', '/2026/10/manutencao-para-empresas.html': 'Guia de manutenção predial para empresas em Barueri: preventiva x corretiva, checklist por tipo de prédio, NR-10 e o que exigir antes de contratar.', '/p/contratos-corporativos-b2b.html': 'Manutenção predial e limpeza em Barueri. Contratos corporativos B2B para empresas e condomínios com o Mestre dos Reparos Facilities.', '/2026/11/duvidas-de-eletrica.html': 'Disjuntor caindo, tomada esquentando, choque ou luz piscando? Respostas diretas de engenheiro com CREA e preço de mão de obra para casas em Barueri.' };
+
+// páginas com schema próprio no corpo (@graph): tira o BlogPosting que o tema do Blogger gera, para não duplicar
+const LD_PROPRIO = new Set(['/2026/10/manutencao-para-empresas.html', '/2026/11/duvidas-de-eletrica.html']);
+class SemLdTema {
+  constructor(path) { this.on = LD_PROPRIO.has(path); this.buf = ''; }
+  text(t) {
+    if (!this.on) return;
+    this.buf += t.text; t.remove();
+    if (!t.lastInTextNode) return;
+    const out = this.buf; this.buf = '';
+    t.after(out.includes('"BlogPosting"') && !out.includes('@graph') ? '{}' : out, { html: true });
+  }
+}
+// troca de texto que vem do tema/descrição de busca do Blogger (não editável pela API)
+const TROCA = { '/p/contratos-corporativos-b2b.html': [['com a Mestre dos Reparos', 'com o Mestre dos Reparos']] };
+class TrocaTexto {
+  constructor(path) { this.t = TROCA[path]; this.buf = ''; }
+  text(t) {
+    if (!this.t) return;
+    this.buf += t.text; t.remove();
+    if (!t.lastInTextNode) return;
+    let out = this.buf; this.buf = '';
+    for (const [a, b] of this.t) out = out.split(a).join(b);
+    t.after(out, { html: true });
+  }
+}
+class TrocaAttr {
+  constructor(path) { this.t = TROCA[path]; }
+  element(e) { if (!this.t) return; let v = e.getAttribute('content') || ''; for (const [a, b] of this.t) v = v.split(a).join(b); e.setAttribute('content', v); }
+}
+async function comContagem(resp, env, path = '') {
+  const rc = env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
+  resp = new HTMLRewriter().on('script', new TrocaTexto(path)).on('meta[content]', new TrocaAttr(path)).on('meta[name="description"]', { element(e) { if (DESC[path]) e.remove(); } }).on('script[type="application/ld+json"]', new SemLdTema(path)).on('meta[property="og:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('meta[name="twitter:image"]', { element(e) { if (OGIMG[path]) e.setAttribute('content', OGIMG[path]); } }).on('a[href]', new LinkFix()).on('head', { element(e) { e.append(ADS_TAG + (DESC[path] ? `<meta name="description" content="${DESC[path]}">` : ''), { html: true }); } }).transform(ldFix(linkPilar(seloAntesDoRodape(resp), path), path));
+  if (!rc) return resp;
+  return new HTMLRewriter().onDocument(new Contagem(rc)).transform(resp);
+}
+
+function estrelas(m) { const c = Math.round(m); return '★'.repeat(c) + '☆'.repeat(5 - c); }
+
+async function comNota(resp, env, p) {
+  const nota = await lerNota(env, p);
+  const resumo = nota
+    ? `<p style="margin:8px 0 0;font-size:17px"><span style="color:#ffb300;font-size:22px;letter-spacing:2px">${estrelas(nota.media)}</span> <strong>${nota.media.toFixed(1).replace('.', ',')}</strong> de 5 · ${nota.total} ${nota.total === 1 ? 'avaliação' : 'avaliações'} de clientes</p>`
+    : '';
+  const botoes = `<div class="mr-votar" style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">${[1, 2, 3, 4, 5].map(n => `<button type="button" data-n="${n}" aria-label="${n} estrela${n > 1 ? 's' : ''}" style="background:#ffb300;color:#0b2a4a;border:0;border-radius:8px;padding:8px 12px;font:700 16px Arial,sans-serif;cursor:pointer">${n} ★</button>`).join('')}</div><p class="mr-msg" style="margin:8px 0 0;font-size:14px"></p>
+<script>(function(){var b=document.getElementById('mr-avaliacao');if(!b)return;b.querySelectorAll('.mr-votar button').forEach(function(x){x.onclick=function(){fetch('/api/avaliar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({p:b.getAttribute('data-p'),n:+x.getAttribute('data-n')})}).then(function(r){return r.json()}).then(function(d){b.querySelector('.mr-msg').textContent=d.ok?'Obrigado pela avaliação! Nota atual: '+String(d.media).replace('.',',')+' de 5 ('+d.total+')':'Não foi possível registrar agora.';})}})})();</script>`;
+  const ld = nota ? `<script type="application/ld+json">${JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'Product', name: AVALIAR[p].nome,
+    description: AVALIAR[p].desc,
+    image: AVALIAR[p].fotos.map(f => ORIGIN + '/nova/img/' + f), brand: { '@type': 'Brand', name: 'Mestre dos Reparos' },
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: nota.media, ratingCount: nota.total, bestRating: 5, worstRating: 1 },
+  })}</script>` : '';
+  const h = new Headers(resp.headers); h.set('cache-control', 'public, max-age=300');
+  const out = new HTMLRewriter()
+    .on('#mr-avaliacao', { element(e) { e.append(resumo + botoes, { html: true }); } })
+    .on('head', { element(e) { if (ld) e.append(ld, { html: true }); } })
+    .transform(new Response(resp.body, { status: resp.status, headers: h }));
+  // home vem do GitHub (não passa por comContagem): aplica aqui o número atual de avaliações do Google
+  const rc = p === '/' && env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
+  return rc ? new HTMLRewriter().onDocument(new Contagem(rc)).transform(out) : out;
+}
+
+// cópia pronta das páginas do Blogger no KV (binding PAG): o Blogger leva ~0,7 s por página e não deixa a
+// Cloudflare guardar (cache-control private), então guardamos o HTML já tratado e servimos do KV no mundo todo
+const KV_IDADE = 20 * 3600 * 1000;
+const chavePag = (ps, mobile) => (mobile ? 'm:' : 'd:') + ps;
+
+function tratar(resp) {   // mesmas correções de links e imagens do caminho normal
+  return new HTMLRewriter().on('a[href]', new LinkFix()).on('link[href]', new LinkFix()).on('meta[content]', new LinkFix()).on('img', new ImgFix()).transform(resp);
+}
+
+async function gravar(env, ps, mobile) {
+  let alvo = new URL(ps, ORIGIN); if (mobile) alvo.searchParams.set('m', '1');
+  let r;
+  for (let i = 0; i < 4; i++) {
+    r = await fetch(alvo.toString(), { redirect: 'manual' });
+    if (![301, 302, 303, 307, 308].includes(r.status)) break;
+    const loc = new URL(r.headers.get('location'), alvo);
+    if (semM(loc).pathname === alvo.pathname && loc.searchParams.has('m')) { alvo = loc; continue; }
+    return;   // redirecionamento de verdade: não guarda
+  }
+  if (r.status !== 200 || !(r.headers.get('content-type') || '').includes('text/html')) return;
+  const txt = await tratar(new Response(r.body, r)).text();
+  await env.PAG.put(chavePag(ps, mobile), txt, { metadata: { ts: Date.now(), xr: r.headers.get('x-robots-tag') || '' } });
+}
+
+// aquecimento a cada hora: ~22 páginas do sitemap (celular e desktop) que estão sem cópia ou com cópia velha
+async function aquecer(env) {
+  const urls = [];
+  for (const sm of ['/sitemap-pages.xml', '/sitemap.xml']) {
+    const xml = await (await fetch(ORIGIN + sm)).text();
+    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) if (!m[1].endsWith(RAIZ)) urls.push(new URL(m[1]).pathname);
+  }
+  const lote = 22, h = Math.floor(Date.now() / 3600000) % Math.ceil(urls.length / lote);
+  for (const p of urls.slice(h * lote, h * lote + lote)) {
+    for (const m of [true, false]) {
+      const { metadata } = await env.PAG.getWithMetadata(chavePag(p, m));
+      if (!metadata || Date.now() - metadata.ts > KV_IDADE) await gravar(env, p, m).catch(() => {});
+    }
+  }
+}
+
+export default {
+  async scheduled(event, env, ctx) { ctx.waitUntil(aquecer(env)); },
+  async fetch(request, env, ctx) {
+    const u = new URL(request.url);
+    if (NOINDEX.has(u.pathname)) return Response.redirect(u.origin + hubDe(u.pathname), 301);
+    return servir(request, env, ctx);
+  },
+};
+
+async function servir(request, env, ctx) {
+  {
+    const req = new URL(request.url);
+    if (req.pathname === '/x/ads') return Response.redirect('https://accounts.google.com/o/oauth2/v2/auth?client_id=660029911002-aqfh5488tlnf0vivsne272qs04sicpjl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fdevelopers.google.com%2Foauthplayground&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fadwords&access_type=offline&prompt=consent&login_hint=mestredosreparosbarueri%40gmail.com', 302);   // atalho: autorizar Google Ads
+    if (req.pathname === '/api/avaliar') return votar(request, env);
+    if (req.pathname === '/' + INDEXNOW_KEY + '.txt') {
+      return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain' } });
+    }
+    // home nova (servida do GitHub, cache na borda); a página antiga do Blogger vira 301 para "/"
+    // chave IndexNow do OpenSEO (Bing/Yandex)
+    if (req.pathname === '/30224266bf7a45ab8efe264d1a68bb19.txt') return new Response('30224266bf7a45ab8efe264d1a68bb19', { headers: { 'content-type': 'text/plain; charset=utf-8' } });
+    if (req.pathname === RAIZ) return Response.redirect(req.origin + '/', 301);
+    // post antigo com espaço na URL → post novo (07/11)
+    if (['/2026/05/eletrica-130-%20perguntas-e-respostas.html', '/2026/05/eletrica-130- perguntas-e-respostas.html'].includes(req.pathname)) return Response.redirect(req.origin + '/2026/11/duvidas-de-eletrica.html', 301);
+    if (req.pathname === '/p/temos-de-uso.html') return Response.redirect(req.origin + '/p/termos-de-uso.html', 301);
+    const rastreio = [...req.searchParams.keys()].every(k => /^(utm_|gclid|gbraid|wbraid|fbclid|srsltid)/.test(k));
+    if (req.pathname === '/' && rastreio && (request.method === 'GET' || request.method === 'HEAD')) {
+      const chave = new Request(req.origin + '/__home');
+      const hit = await caches.default.match(chave);
+      if (hit) { const hh = new Response(hit.body, hit); hh.headers.set('x-mdr', 'hit'); return comNota(hh, env, '/'); }
+      const r = await fetch(NOVA_SHA + 'home.html', { cf: { cacheTtl: 3600, cacheEverything: true } });
+      if (r.ok) {
+        const out = new Response(r.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600, s-maxage=86400' } });
+        ctx.waitUntil(caches.default.put(chave, out.clone()));
+        return comNota(out, env, '/');
+      }
+      return Response.redirect(new URL('/p/eletricista-em-barueri.html', req.origin).toString(), 302);   // GitHub fora do ar
+    }
+    // prévia antiga e imagens da home
+    if (req.pathname === '/nova' || req.pathname === '/nova/' || req.pathname === '/nova/index.html') return Response.redirect(req.origin + '/', 301);
+    if (req.pathname.startsWith('/nova/')) {
+      const rest = req.pathname.slice(6) || 'index.html';
+      const r = await fetch(NOVA + rest, { cf: { cacheTtl: rest.endsWith('.html') ? 120 : 604800, cacheEverything: true } });
+      const h = new Headers(r.headers);
+      const ext = rest.split('.').pop();
+      h.set('content-type', { html: 'text/html; charset=utf-8', jpg: 'image/jpeg', png: 'image/png', webp: 'image/webp', mp4: 'video/mp4', css: 'text/css', js: 'text/javascript' }[ext] || h.get('content-type'));
+      h.set('x-robots-tag', 'noindex, nofollow');
+      h.set('cache-control', ext === 'html' ? 'public, max-age=60' : 'public, max-age=86400');
+      ['content-security-policy', 'x-frame-options'].forEach(k => h.delete(k));
+      return new Response(r.body, { status: r.status, headers: h });
+    }
+    if (req.searchParams.has('m')) {
+      const limpo = semM(req.pathname + req.search);
+      return Response.redirect(new URL(limpo.pathname + limpo.search, req.origin).toString(), 301);
+    }
+    const mobile = MOBILE.test(request.headers.get('user-agent') || '');
+    const cacheKey = new Request(req.origin + req.pathname + (req.search ? req.search + '&' : '?') + '__v=' + (mobile ? 'm' : 'd'));
+    const cache = caches.default;
+    if (request.method === 'GET') {
+      const hit = await cache.match(cacheKey);
+      if (hit) {
+        const hh = new Response(hit.body, hit); hh.headers.set('x-mdr', 'hit');
+        return comContagem(AVALIAR[req.pathname] ? await comNota(hh, env, req.pathname) : hh, env, req.pathname);
+      }
+    }
+    const ps = req.pathname + req.search;
+    if (request.method === 'GET' && env.PAG && !req.search && !req.pathname.startsWith('/sitemap')) {
+      const { value, metadata } = await env.PAG.getWithMetadata(chavePag(ps, mobile), { cacheTtl: 300 });
+      if (value) {
+        const hh = new Headers({ 'content-type': 'text/html; charset=UTF-8', 'cache-control': 'public, max-age=600, s-maxage=86400', 'x-mdr': 'kv' });
+        if (metadata && metadata.xr) hh.set('x-robots-tag', metadata.xr);
+        if (INDEXAR.has(req.pathname)) hh.set('x-robots-tag', 'all');
+        const r = new Response(value, { headers: hh });
+        ctx.waitUntil(cache.put(cacheKey, r.clone()));
+        if (!metadata || Date.now() - metadata.ts > KV_IDADE) ctx.waitUntil(gravar(env, ps, mobile).catch(() => {}));
+        return comContagem(AVALIAR[req.pathname] ? await comNota(r, env, req.pathname) : r, env, req.pathname);
+      }
+    }
+    let alvo = new URL(ps, ORIGIN);
+    if (mobile) alvo.searchParams.set('m', '1');   // pula o 302 de celular do Blogger
+    let resp; const t0 = Date.now();
+    for (let i = 0; i < 4; i++) {
+      resp = await fetch(alvo.toString(), { method: request.method, headers: request.headers, redirect: 'manual' });
+      if (![301, 302, 303, 307, 308].includes(resp.status)) break;
+      const loc = new URL(resp.headers.get('location'), alvo);
+      const mesmo = semM(loc).pathname === alvo.pathname && semM(loc).search === semM(alvo).search && loc.hostname === alvo.hostname;
+      if (mesmo && loc.searchParams.has('m')) { alvo = loc; continue; }   // 302 de celular do Blogger: segue por dentro
+      const destino = loc.hostname === new URL(ORIGIN).hostname ? new URL(semM(loc).pathname + semM(loc).search, req.origin) : loc;
+      return Response.redirect(destino.toString(), resp.status === 302 ? 302 : 301);
+    }
+    const h = new Headers(resp.headers);
+    h.delete('content-length'); h.delete('set-cookie'); h.delete('expires'); h.delete('vary');
+    h.set('x-mdr', 'miss'); h.set('server-timing', 'origem;dur=' + (Date.now() - t0) + ', cf;desc="' + (resp.headers.get('cf-cache-status') || '-') + '"');
+    const html = (h.get('content-type') || '').includes('text/html');
+    if (req.pathname.startsWith('/sitemap') && resp.status === 200) {
+      const xml = (await resp.text()).split(ORIGIN + RAIZ).join(ORIGIN + '/').replace(/<loc>([^<]*)<\/loc>/g, (m, u) => '<loc>' + u.replace(/ /g, '%20') + '</loc>');
+      let casa = xml.replace(new RegExp('(<loc>' + ORIGIN + '/</loc><lastmod>)[^<]*'), '$1' + HOME_MOD);
+      for (const p of [...FORA_SITEMAP, ...NOINDEX]) casa = casa.replace(new RegExp('<url><loc>' + ORIGIN + p.replace(/[.]/g, '\\.') + '</loc>.*?</url>'), '');
+      return new Response(casa, { status: 200, headers: h });
+    }
+    if (html && resp.status === 200) h.set('cache-control', 'public, max-age=600, s-maxage=86400');
+    if (INDEXAR.has(req.pathname)) h.set('x-robots-tag', 'all');
+    const out = new Response(resp.body, { status: resp.status, headers: h });
+    let final = html ? tratar(out) : out;
+    if (request.method === 'GET' && resp.status === 200 && html) {
+      const txt = await final.text();
+      final = new Response(txt, { status: 200, headers: h });
+      if (env.PAG && !req.search) ctx.waitUntil(env.PAG.put(chavePag(ps, mobile), txt, { metadata: { ts: Date.now(), xr: resp.headers.get('x-robots-tag') || '' } }));
+      ctx.waitUntil(cache.put(cacheKey, final.clone()));
+    }
+    if (!(html && resp.status === 200)) return final;
+    return comContagem(AVALIAR[req.pathname] ? await comNota(final, env, req.pathname) : final, env, req.pathname);
+  }
+}

@@ -30,7 +30,7 @@ class LinkFix {
 const MOBILE = /Mobi|Android|iPhone|iPad|iPod/i;
 const NOVA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/ccr-33db381a-6kweq8/nova/';
 // home lida do commit fixo (muda a cada publicação): o cache da borda não segura versão velha
-const NOVA_SHA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/891ae1f116766df5652cc52486111705e45e88d6/nova/';
+const NOVA_SHA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/8b1356ee2e68a8c5d5a1e0df9fbef886b1c81274/nova/';
 const RAIZ = '/p/mestre-dos-reparos-manutencao-reparos.html';
 // links internos antigos que redirecionam → destino final (evita link para redirecionamento)
 const LINK_FINAL = { '/p/temos-de-uso.html': '/p/termos-de-uso.html', '/2026/02/mestre-dos-reparos-facilites_0115649963.html': '/p/eletricista-em-barueri.html' };
@@ -43,7 +43,7 @@ const HUB_REFORMA = '/2026/10/reformas-em-barueri-para-residencias.html';
 const hubDe = p => HUB_REFORMA + (/^\/p\/reforma-em-(?!alphaville)|aldeia-da-serra/.test(p) ? '#cidades' : '#bairros');
 const NOINDEX = new Set(["/p/reforma-na-aldeia-da-serra-obra.html", "/p/reforma-em-cotia-obra-completa-com.html", "/p/reforma-em-osasco-pintura-pisos-e.html", "/p/reforma-em-itapevi-obra-completa-com.html", "/p/reforma-em-jandira-pintura-pisos-e.html", "/p/reforma-em-carapicuiba-obra-completa.html", "/p/reforma-em-santana-de-parnaiba-pintura.html", "/p/reforma-na-regina-alice-barueri-obra.html", "/p/reforma-na-cruz-preta-barueri-obra.html", "/p/reforma-na-vila-sao-francisco-barueri.html", "/p/reforma-no-jardim-mutinga-barueri-obra.html", "/p/reforma-no-jardim-paraiso-barueri.html", "/p/reforma-no-jardim-california-barueri.html", "/p/reforma-nas-chacaras-marco-barueri-obra.html", "/p/reforma-no-jardim-dos-camargos-barueri.html", "/p/reforma-na-vila-boa-vista-barueri-obra.html", "/p/reforma-no-jardim-tupanci-barueri-obra.html", "/p/reforma-no-jardim-maria-helena-barueri.html", "/p/reforma-no-parque-imperial-barueri-obra.html", "/p/reforma-no-engenho-novo-barueri-obra.html", "/p/reforma-no-jardim-silveira-barueri.html", "/p/reforma-no-jardim-belval-barueri-obra.html", "/p/reforma-na-aldeia-de-barueri-obra.html", "/p/reforma-no-bethaville-barueri-pintura-e.html", "/p/reforma-no-tambore-barueri-obra-completa.html", "/p/reforma-em-alphaville-pintura-pisos-e.html", "/p/reforma-no-centro-de-barueri-obra.html"]);
 for (const p of NOINDEX) LINK_FINAL[p] = hubDe(p);
-const HOME_MOD = '2026-10-28T23:40:00Z';   // última atualização da home nova (sitemap)
+const HOME_MOD = '2026-11-14T15:40:00Z';   // última atualização da home nova (sitemap)
 
 // Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
 const IMG = /(https:\/\/blogger\.googleusercontent\.com\/img\/[^\s"',]+?=)([swh]\d+[^\s"',]*)/g;
@@ -221,10 +221,13 @@ async function comNota(resp, env, p) {
     aggregateRating: { '@type': 'AggregateRating', ratingValue: nota.media, ratingCount: nota.total, bestRating: 5, worstRating: 1 },
   })}</script>` : '';
   const h = new Headers(resp.headers); h.set('cache-control', 'public, max-age=300');
-  return new HTMLRewriter()
+  const out = new HTMLRewriter()
     .on('#mr-avaliacao', { element(e) { e.append(resumo + botoes, { html: true }); } })
     .on('head', { element(e) { if (ld) e.append(ld, { html: true }); } })
     .transform(new Response(resp.body, { status: resp.status, headers: h }));
+  // home vem do GitHub (não passa por comContagem): aplica aqui o número atual de avaliações do Google
+  const rc = p === '/' && env.AVAL ? await env.AVAL.get('rc', { cacheTtl: 300 }) : null;
+  return rc ? new HTMLRewriter().onDocument(new Contagem(rc)).transform(out) : out;
 }
 
 // cópia pronta das páginas do Blogger no KV (binding PAG): o Blogger leva ~0,7 s por página e não deixa a

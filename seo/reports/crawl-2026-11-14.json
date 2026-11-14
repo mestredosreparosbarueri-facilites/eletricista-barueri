@@ -1,0 +1,4366 @@
+{
+ "resumo": {
+  "data": "2026-11-14",
+  "sitemap_urls": 104,
+  "sitemaps": {
+   "/sitemap.xml": {
+    "status": 200,
+    "content_type": "application/atom+xml; charset=UTF-8",
+    "urls": 39
+   },
+   "/sitemap-pages.xml": {
+    "status": 200,
+    "content_type": "application/atom+xml; charset=UTF-8",
+    "urls": 65
+   }
+  },
+  "rastreadas": 114,
+  "status_200_sitemap": 104,
+  "tempo_s": {
+   "desktop_mediana": 0.11,
+   "desktop_max": 0.59,
+   "mobile_mediana": 0.11,
+   "mobile_max": 0.64,
+   "acima_2s": 0
+  },
+  "robots_txt_bloqueia": [],
+  "variantes": [
+   [
+    "http://mestredosreparos.app.br/p/eletricista-em-barueri.html",
+    [
+     [
+      301,
+      "http://mestredosreparos.app.br/p/eletricista-em-barueri.html"
+     ],
+     [
+      200,
+      "/p/eletricista-em-barueri.html"
+     ]
+    ]
+   ],
+   [
+    "https://mestredosreparos.app.br/p/eletricista-em-barueri.html",
+    [
+     [
+      301,
+      "https://mestredosreparos.app.br/p/eletricista-em-barueri.html"
+     ],
+     [
+      200,
+      "/p/eletricista-em-barueri.html"
+     ]
+    ]
+   ],
+   [
+    "http://www.mestredosreparos.app.br/",
+    [
+     [
+      301,
+      "http://www.mestredosreparos.app.br/"
+     ],
+     [
+      200,
+      "/"
+     ]
+    ]
+   ],
+   [
+    "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html?m=1",
+    [
+     [
+      301,
+      "/p/eletricista-em-barueri.html?m=1"
+     ],
+     [
+      200,
+      "/p/eletricista-em-barueri.html"
+     ]
+    ]
+   ],
+   [
+    "https://www.mestredosreparos.app.br/?m=1",
+    [
+     [
+      301,
+      "/?m=1"
+     ],
+     [
+      200,
+      "/"
+     ]
+    ]
+   ],
+   [
+    "https://www.mestredosreparos.app.br/index.html",
+    [
+     [
+      200,
+      "/index.html"
+     ]
+    ]
+   ],
+   [
+    "https://www.mestredosreparos.app.br/p/nao-existe-xyz.html",
+    [
+     [
+      404,
+      "/p/nao-existe-xyz.html"
+     ]
+    ]
+   ],
+   [
+    "https://www.mestredosreparos.app.br/2026/05/nao-existe.html",
+    [
+     [
+      404,
+      "/2026/05/nao-existe.html"
+     ]
+    ]
+   ],
+   [
+    "https://www.mestredosreparos.app.br/p/temos-de-uso.html",
+    [
+     [
+      301,
+      "/p/temos-de-uso.html"
+     ],
+     [
+      200,
+      "/p/termos-de-uso.html"
+     ]
+    ]
+   ],
+   [
+    "https://www.mestredosreparos.app.br/2026/05/eletrica-130-%20perguntas-e-respostas.html",
+    [
+     [
+      301,
+      "/2026/05/eletrica-130-%20perguntas-e-respostas.html"
+     ],
+     [
+      200,
+      "/2026/11/duvidas-de-eletrica.html"
+     ]
+    ]
+   ],
+   [
+    "https://www.mestredosreparos.app.br/2026/05/eletrica-130- perguntas-e-respostas.html",
+    [
+     [
+      301,
+      "/2026/05/eletrica-130- perguntas-e-respostas.html"
+     ],
+     [
+      200,
+      "/2026/11/duvidas-de-eletrica.html"
+     ]
+    ]
+   ]
+  ]
+ },
+ "problemas": [
+  {
+   "gravidade": "média",
+   "tipo": "página órfã (no sitemap, 0 links internos)",
+   "url": "/2026/05/instalacao-de-ventiladores-e-ar.html",
+   "evidencia": "200, x-robots-tag: all, canonical próprio, 1.280 palavras no HTML; nenhuma das 114 páginas rastreadas linka para ela (inclui home, hubs e arquivos /2026/05/)"
+  },
+  {
+   "gravidade": "média",
+   "tipo": "link interno para URL redirecionada",
+   "url": "/2026/05/eletrica-130-%20perguntas-e-respostas.html",
+   "evidencia": "home: <a href=\"/2026/05/eletrica-130-%20perguntas-e-respostas.html\">130 perguntas e respostas sobre elétrica →</a>; responde 301 → /2026/11/duvidas-de-eletrica.html (200). Trocar href na home (nova/home.html + NOVA_SHA)."
+  },
+  {
+   "gravidade": "baixa",
+   "tipo": "páginas com só 1 link interno de entrada",
+   "url": [
+    [
+     "/2026/05/blog-post_5.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/2026/05/disjuntorgeraleletricistaembarueri.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/2026/05/drdesarmandoeletrecistaembarueri.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/2026/05/estilo-profissional-root-primary0b2a4a.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/2026/05/root-primary0b2a4a-accentff6a00_7.html",
+     [
+      "/p/eletricista-em-barueri.html"
+     ]
+    ],
+    [
+     "/2026/05/trocadedisjuntoreseletrecistaembarueri.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/2026/05/trocadetomadaeletrecistabarueri.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/2026/06/instalacao-de-chuveiros-passo-passo.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/2026/10/eletricista-predial-em-barueri-mestre.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/2026/10/manutencao-eletrica-em-barueri-mestre.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/p/hidrailica-mestre-dos-reparos.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/p/llms.html",
+     [
+      "/"
+     ]
+    ],
+    [
+     "/p/quem-somos-mestre-dos-reparos.html",
+     [
+      "/"
+     ]
+    ]
+   ],
+   "evidencia": "contagem de <a href> no HTML do servidor das 114 páginas"
+  },
+  {
+   "gravidade": "baixa",
+   "tipo": "canonical duplicado (2 tags idênticas)",
+   "url": "39 posts /2026/*",
+   "evidencia": "<link href='<própria URL>' rel='canonical'/> 2x no <head>. Mesmo valor, não conflita; limpeza opcional."
+  },
+  {
+   "gravidade": "baixa",
+   "tipo": "title curto/longo",
+   "url": [
+    "/p/termos-de-uso.html (13c: \"Termos de Uso\")",
+    "/p/contrato-de-manutencao-para-empresas.html (68c)"
+   ],
+   "evidencia": "<title>"
+  },
+  {
+   "gravidade": "baixa",
+   "tipo": "slugs sem palavra-chave",
+   "url": [
+    "/2026/05/blog-post_5.html",
+    "/2026/05/estilo-profissional-root-primary0b2a4a.html",
+    "/2026/05/root-primary0b2a4a-accentff6a00.html",
+    "/2026/05/root-primary0b2a4a-accentff6a00_7.html",
+    "/p/blog-page_{2,3,8,29,43,83,87}.html"
+   ],
+   "evidencia": "H1 ok, URL sem termo. Só mudar com 301; registrar no backlog."
+  },
+  {
+   "gravidade": "info",
+   "tipo": "/index.html responde 200",
+   "url": "/index.html",
+   "evidencia": "200 com canonical https://www.mestredosreparos.app.br/ - ok"
+  },
+  {
+   "gravidade": "info",
+   "tipo": "noindex de propósito (fora do sitemap)",
+   "url": [
+    "/2026/05/",
+    "/2026/06/",
+    "/2026/07/",
+    "/2026/10/",
+    "/p/diarista-em-itapevi.html",
+    "/p/diarista-em-jandira.html",
+    "/p/diarista-em-santana-de-parnaiba.html",
+    "/p/lgpd-lei-geral-de-protecao-de-dados.html",
+    "/p/politica-de-privacidade.html"
+   ],
+   "evidencia": "header x-robots-tag: noindex; nenhuma no sitemap"
+  },
+  {
+   "gravidade": "info",
+   "tipo": "redirects de propósito ok",
+   "url": "27 /p/reforma-*",
+   "evidencia": "27/27: 301 -> /2026/10/reformas-em-barueri-para-residencias.html (200), 1 salto; 0 links internos para elas"
+  }
+ ],
+ "reforma_redirects": [
+  [
+   "/p/reforma-em-alphaville-pintura-pisos-e.html",
+   [
+    [
+     301,
+     "/p/reforma-em-alphaville-pintura-pisos-e.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-em-carapicuiba-obra-completa.html",
+   [
+    [
+     301,
+     "/p/reforma-em-carapicuiba-obra-completa.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#cidades"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-em-cotia-obra-completa-com.html",
+   [
+    [
+     301,
+     "/p/reforma-em-cotia-obra-completa-com.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#cidades"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-em-itapevi-obra-completa-com.html",
+   [
+    [
+     301,
+     "/p/reforma-em-itapevi-obra-completa-com.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#cidades"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-em-jandira-pintura-pisos-e.html",
+   [
+    [
+     301,
+     "/p/reforma-em-jandira-pintura-pisos-e.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#cidades"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-em-osasco-pintura-pisos-e.html",
+   [
+    [
+     301,
+     "/p/reforma-em-osasco-pintura-pisos-e.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#cidades"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-em-santana-de-parnaiba-pintura.html",
+   [
+    [
+     301,
+     "/p/reforma-em-santana-de-parnaiba-pintura.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#cidades"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-na-aldeia-da-serra-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-na-aldeia-da-serra-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#cidades"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-na-aldeia-de-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-na-aldeia-de-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-na-cruz-preta-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-na-cruz-preta-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-na-regina-alice-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-na-regina-alice-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-na-vila-boa-vista-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-na-vila-boa-vista-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-na-vila-sao-francisco-barueri.html",
+   [
+    [
+     301,
+     "/p/reforma-na-vila-sao-francisco-barueri.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-nas-chacaras-marco-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-nas-chacaras-marco-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-bethaville-barueri-pintura-e.html",
+   [
+    [
+     301,
+     "/p/reforma-no-bethaville-barueri-pintura-e.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-centro-de-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-no-centro-de-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-engenho-novo-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-no-engenho-novo-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-jardim-belval-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-no-jardim-belval-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-jardim-california-barueri.html",
+   [
+    [
+     301,
+     "/p/reforma-no-jardim-california-barueri.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-jardim-dos-camargos-barueri.html",
+   [
+    [
+     301,
+     "/p/reforma-no-jardim-dos-camargos-barueri.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-jardim-maria-helena-barueri.html",
+   [
+    [
+     301,
+     "/p/reforma-no-jardim-maria-helena-barueri.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-jardim-mutinga-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-no-jardim-mutinga-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-jardim-paraiso-barueri.html",
+   [
+    [
+     301,
+     "/p/reforma-no-jardim-paraiso-barueri.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-jardim-silveira-barueri.html",
+   [
+    [
+     301,
+     "/p/reforma-no-jardim-silveira-barueri.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-jardim-tupanci-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-no-jardim-tupanci-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-parque-imperial-barueri-obra.html",
+   [
+    [
+     301,
+     "/p/reforma-no-parque-imperial-barueri-obra.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ],
+  [
+   "/p/reforma-no-tambore-barueri-obra-completa.html",
+   [
+    [
+     301,
+     "/p/reforma-no-tambore-barueri-obra-completa.html"
+    ],
+    [
+     200,
+     "/2026/10/reformas-em-barueri-para-residencias.html#bairros"
+    ]
+   ]
+  ]
+ ],
+ "paginas": {
+  "/": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.13,
+   "t_m": 0.45,
+   "cf": "HIT",
+   "title": "Reformas e Manutenção em Barueri | Mestre dos Reparos",
+   "desc": "Elétrica, hidráulica, reformas, pintura, pisos, reparos e limpeza em Barueri, com material na nossa loja. Engenheiro (CREA), NF e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/"
+   ],
+   "robots_meta": "index,follow,max-image-preview:large",
+   "x_robots": null,
+   "h1": [
+    "Qualquer problema no imóvel.Um só time resolve."
+   ],
+   "words": 2463,
+   "main_words": null,
+   "words_m": 2463,
+   "inlinks": 113
+  },
+  "/2026/05/7sinais-para-chamar-eletricista-em-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.54,
+   "t_m": 0.39,
+   "cf": "HIT",
+   "title": "7 Sinais de que Você Precisa de Eletricista em Barueri Agora",
+   "desc": "7 sinais de que você precisa de eletricista em Barueri agora: cheiro de queimado, tomada quente, choque, luz piscando e disjuntor que não arma.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/7sinais-para-chamar-eletricista-em-barueri.html",
+    "https://www.mestredosreparos.app.br/2026/05/7sinais-para-chamar-eletricista-em-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "7 Sinais de que Você Precisa de Eletricista em Barueri Agora"
+   ],
+   "words": 1585,
+   "main_words": 1516,
+   "words_m": 1585,
+   "inlinks": 2
+  },
+  "/2026/05/blog-post_5.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.47,
+   "t_m": 0.64,
+   "cf": "HIT",
+   "title": "Curto Circuito o que fazer? E o que não fazer?",
+   "desc": "Sinais de que um curto-circuito está para acontecer, o que fazer quando o disjuntor desarma com cheiro de queimado e quando chamar o eletricista.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/blog-post_5.html",
+    "https://www.mestredosreparos.app.br/2026/05/blog-post_5.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Curto-circuito em casa: eletricista em Barueri Mestre dos Reparos"
+   ],
+   "words": 529,
+   "main_words": 461,
+   "words_m": 529,
+   "inlinks": 1
+  },
+  "/2026/05/como-funciona-o-atendimento-de.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.59,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Eletricista Emergencial em Barueri: Como Funciona",
+   "desc": "Como funciona o atendimento de eletricista emergencial em Barueri: o que fazer enquanto espera, orçamento, execução, nota fiscal e garantia.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/como-funciona-o-atendimento-de.html",
+    "https://www.mestredosreparos.app.br/2026/05/como-funciona-o-atendimento-de.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Como Funciona o Atendimento de Eletricista Emergencial em Barueri"
+   ],
+   "words": 1285,
+   "main_words": 1221,
+   "words_m": 1285,
+   "inlinks": 2
+  },
+  "/2026/05/disjuntor-desarmando-causas-riscos-e.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.49,
+   "t_m": 0.55,
+   "cf": "HIT",
+   "title": "Disjuntor Desarmando Sozinho? Veja o Que Fazer em Barueri",
+   "desc": "Disjuntor desarmando sozinho? Veja se é sobrecarga, curto-circuito ou disjuntor com defeito, o que fazer na hora e quando chamar o eletricista.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/disjuntor-desarmando-causas-riscos-e.html",
+    "https://www.mestredosreparos.app.br/2026/05/disjuntor-desarmando-causas-riscos-e.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Disjuntor Desarmando: causas, riscos e como resolver com segurança"
+   ],
+   "words": 892,
+   "main_words": 825,
+   "words_m": 892,
+   "inlinks": 4
+  },
+  "/2026/05/disjuntorgeraleletricistaembarueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.41,
+   "t_m": 0.55,
+   "cf": "HIT",
+   "title": "Disjuntor Geral Caindo Toda Hora? Causas e Solução",
+   "desc": "Disjuntor geral caindo toda hora? Veja as causas, os riscos e como resolver com eletricista em Barueri 24h, com nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/disjuntorgeraleletricistaembarueri.html",
+    "https://www.mestredosreparos.app.br/2026/05/disjuntorgeraleletricistaembarueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Disjuntor geral caindo toda hora: eletricista em Barueri Mestre dos Reparos"
+   ],
+   "words": 1073,
+   "main_words": 1007,
+   "words_m": 1073,
+   "inlinks": 1
+  },
+  "/2026/05/drdesarmandoeletrecistaembarueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.51,
+   "cf": "HIT",
+   "title": "DR Desarmando? Causas e Como Resolver com Segurança",
+   "desc": "DR desarmando? Veja as causas mais comuns, como achar o circuito com fuga de corrente e por que nunca se deve tirar o DR do quadro.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/drdesarmandoeletrecistaembarueri.html",
+    "https://www.mestredosreparos.app.br/2026/05/drdesarmandoeletrecistaembarueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "DR desarmando sozinho ou não arma: eletricista em Barueri Mestre dos Reparos"
+   ],
+   "words": 1474,
+   "main_words": 1408,
+   "words_m": 1474,
+   "inlinks": 1
+  },
+  "/2026/05/eletricista-em-barueri-quando-chamar.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.13,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Quando Chamar um Eletricista e o que Esperar",
+   "desc": "Quando chamar um eletricista e o que esperar do atendimento: sinais de risco, como é a visita, orçamento, nota fiscal e garantia.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-quando-chamar.html",
+    "https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-quando-chamar.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Guia Completo: Eletricista 24 Horas em Barueri &#8212; Quando Chamar e o que Esperar"
+   ],
+   "words": 2194,
+   "main_words": 2128,
+   "words_m": 2194,
+   "inlinks": 2
+  },
+  "/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.14,
+   "t_m": 0.12,
+   "cf": "HIT",
+   "title": "Responsabilidade Técnica: Certificações e Registros",
+   "desc": "Responsabilidade técnica do Mestre dos Reparos: registros, certificações, ART e as normas seguidas nos serviços elétricos em Barueri.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html",
+    "https://www.mestredosreparos.app.br/2026/05/eletricista-em-barueri-responsabilidade-tecnica.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Responsabilidade Técnica e Segurança: Nossas Certificações e Registros Profissionais"
+   ],
+   "words": 884,
+   "main_words": 821,
+   "words_m": 884,
+   "inlinks": 113
+  },
+  "/2026/05/estilo-profissional-root-primary0b2a4a.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.14,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Chuveiro Queimando Resistência Sem Parar: Causa e Solução",
+   "desc": "Chuveiro queimando resistência sem parar: veja as causas, como falta de água, fio fino e mau contato, e como resolver de vez.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/estilo-profissional-root-primary0b2a4a.html",
+    "https://www.mestredosreparos.app.br/2026/05/estilo-profissional-root-primary0b2a4a.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Chuveiro queimando resistência: eletricista em Barueri Mestre dos Reparos corrige"
+   ],
+   "words": 729,
+   "main_words": 663,
+   "words_m": 729,
+   "inlinks": 1
+  },
+  "/2026/05/instalacao-de-lustres-em-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Instalação de Lustres em Barueri",
+   "desc": "Instalação de lustres em Barueri, inclusive em pé-direito alto: fixação segura para o peso, ligação correta e teste na hora. Nota fiscal e garantia.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/instalacao-de-lustres-em-barueri.html",
+    "https://www.mestredosreparos.app.br/2026/05/instalacao-de-lustres-em-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Instalação de Lustres em Barueri"
+   ],
+   "words": 434,
+   "main_words": 371,
+   "words_m": 434,
+   "inlinks": 2
+  },
+  "/2026/05/instalacao-de-ventiladores-e-ar.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.13,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Instalação de Ventilador e Ar-Condicionado em Barueri",
+   "desc": "Instalação de ventilador de teto e ponto elétrico para ar-condicionado em Barueri e região, com circuito dedicado, disjuntor certo e garantia.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/instalacao-de-ventiladores-e-ar.html",
+    "https://www.mestredosreparos.app.br/2026/05/instalacao-de-ventiladores-e-ar.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Instalação de ventiladores de teto e ar condicionado em Barueri"
+   ],
+   "words": 1280,
+   "main_words": 1215,
+   "words_m": 1280,
+   "inlinks": 0
+  },
+  "/2026/05/por-que-o-disjuntor-do-chuveiro-desarma.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.16,
+   "cf": "HIT",
+   "title": "Por que o disjuntor do chuveiro desarma em Barueri?",
+   "desc": "Por que o disjuntor do chuveiro desarma: potência acima do circuito, fio fino, resistência em curto ou disjuntor errado. Veja como resolver.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/por-que-o-disjuntor-do-chuveiro-desarma.html",
+    "https://www.mestredosreparos.app.br/2026/05/por-que-o-disjuntor-do-chuveiro-desarma.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Por que o disjuntor do chuveiro desarma em Barueri?"
+   ],
+   "words": 494,
+   "main_words": 427,
+   "words_m": 494,
+   "inlinks": 3
+  },
+  "/2026/05/root-primary0b2a4a-accentff6a00.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Luz Piscando em Casa: Causas e Solução em Barueri",
+   "desc": "Luz piscando ou oscilando em casa: mau contato, neutro solto, sobrecarga ou problema na rede. Veja como identificar e quando chamar o eletricista.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00.html",
+    "https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Luz piscando ou oscilando: solução com eletricista em Barueri Mestre dos Reparos"
+   ],
+   "words": 1062,
+   "main_words": 995,
+   "words_m": 1062,
+   "inlinks": 2
+  },
+  "/2026/05/root-primary0b2a4a-accentff6a00_7.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.14,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Chuveiro Desligando a Energia da Casa: Como Resolver",
+   "desc": "Chuveiro desligando a energia da casa: veja as causas, do disjuntor subdimensionado à resistência em curto, e como resolver com segurança.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00_7.html",
+    "https://www.mestredosreparos.app.br/2026/05/root-primary0b2a4a-accentff6a00_7.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Chuveiro desligando a energia da casa: eletricista em Barueri Mestre dos Reparos"
+   ],
+   "words": 1148,
+   "main_words": 1082,
+   "words_m": 1148,
+   "inlinks": 1
+  },
+  "/2026/05/tomada-ou-cabos-aquecendo-causas-riscos.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.08,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Tomada ou Cabos Aquecendo: Riscos e Como Resolver em Barueri",
+   "desc": "Tomada ou fio aquecendo é risco de incêndio. Veja as causas e como resolver com troca de tomada, fiação ou circuito em Barueri.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/tomada-ou-cabos-aquecendo-causas-riscos.html",
+    "https://www.mestredosreparos.app.br/2026/05/tomada-ou-cabos-aquecendo-causas-riscos.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Tomada ou cabos aquecendo: causas, riscos e como resolver com segurança"
+   ],
+   "words": 845,
+   "main_words": 777,
+   "words_m": 845,
+   "inlinks": 4
+  },
+  "/2026/05/trocadedisjuntoreseletrecistaembarueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Troca de Disjuntores em Barueri",
+   "desc": "Troca de disjuntores em Barueri com dimensionamento correto para cada circuito, teste de atuação e garantia de 90 dias. Veja um atendimento real.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/trocadedisjuntoreseletrecistaembarueri.html",
+    "https://www.mestredosreparos.app.br/2026/05/trocadedisjuntoreseletrecistaembarueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Troca de Disjuntores em Barueri"
+   ],
+   "words": 995,
+   "main_words": 932,
+   "words_m": 995,
+   "inlinks": 1
+  },
+  "/2026/05/trocadetomadaeletrecistabarueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Troca de Tomada em Barueri: Aquecendo ou Queimada",
+   "desc": "Troca de tomada em Barueri: tomada aquecendo, queimada ou sem funcionar. Veja o que causa o problema e como fazemos a troca com segurança.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/trocadetomadaeletrecistabarueri.html",
+    "https://www.mestredosreparos.app.br/2026/05/trocadetomadaeletrecistabarueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Troca e conserto de tomadas: eletricista em Barueri Mestre dos Reparos"
+   ],
+   "words": 1031,
+   "main_words": 965,
+   "words_m": 1031,
+   "inlinks": 1
+  },
+  "/2026/05/trocadetomadaseinteruptores.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.16,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Troca de Tomadas e Interruptores em Barueri",
+   "desc": "Troca, conserto e instalação de tomadas e interruptores em Barueri: tomada queimada, frouxa ou aquecendo, padrão novo e tomada USB.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/trocadetomadaseinteruptores.html",
+    "https://www.mestredosreparos.app.br/2026/05/trocadetomadaseinteruptores.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Troca, conserto e instalação de interruptores e tomadas em Barueri"
+   ],
+   "words": 1210,
+   "main_words": 1145,
+   "words_m": 1210,
+   "inlinks": 3
+  },
+  "/2026/06/7-sinais-para-trocar-quadro-eletrico.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "7 Sinais que e hora de trocar o quadro elétrico",
+   "desc": "7 sinais de que é hora de trocar o quadro elétrico: disjuntor caindo, aquecimento, cheiro de queimado, fusíveis antigos e falta de DR e DPS.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/7-sinais-para-trocar-quadro-eletrico.html",
+    "https://www.mestredosreparos.app.br/2026/06/7-sinais-para-trocar-quadro-eletrico.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "7 Sinais de que Seu Quadro Elétrico Está com Problema"
+   ],
+   "words": 2533,
+   "main_words": 2465,
+   "words_m": 2533,
+   "inlinks": 7
+  },
+  "/2026/06/circuitos-eletricos-dedicados-cozinha.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Circuitos Elétricos dedicados a Cozinha",
+   "desc": "Por que forno, cooktop, micro-ondas e lava-louças precisam de circuito elétrico dedicado na cozinha, e como evitar disjuntor caindo e fio aquecendo.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/circuitos-eletricos-dedicados-cozinha.html",
+    "https://www.mestredosreparos.app.br/2026/06/circuitos-eletricos-dedicados-cozinha.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Circuitos Dedicados na Cozinha: Quantos, Bitolas e NBR 5410"
+   ],
+   "words": 2558,
+   "main_words": 2495,
+   "words_m": 2558,
+   "inlinks": 5
+  },
+  "/2026/06/como-encontrar-eletricista-de-confianca-em-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.15,
+   "t_m": 0.16,
+   "cf": "HIT",
+   "title": "Como Encontrar um Eletricista de Confiança",
+   "desc": "Como escolher um eletricista de confiança em Barueri: o que conferir antes de contratar, sinais de alerta e por que exigir nota fiscal e garantia.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/como-encontrar-eletricista-de-confianca-em-barueri.html",
+    "https://www.mestredosreparos.app.br/2026/06/como-encontrar-eletricista-de-confianca-em-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Como Escolher Eletricista de Confiança em Barueri"
+   ],
+   "words": 2306,
+   "main_words": 2242,
+   "words_m": 2306,
+   "inlinks": 2
+  },
+  "/2026/06/como-saber-se-o-orcamento-do-eletricista-e-justo.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.14,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Será que o orçamento do eletricista está Justo?",
+   "desc": "Como saber se o orçamento do eletricista é justo: o que precisa estar escrito, como comparar preços e quais cobranças são sinal de alerta.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/como-saber-se-o-orcamento-do-eletricista-e-justo.html",
+    "https://www.mestredosreparos.app.br/2026/06/como-saber-se-o-orcamento-do-eletricista-e-justo.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Como Saber Se o Orçamento do Eletricista É Justo"
+   ],
+   "words": 2660,
+   "main_words": 2594,
+   "words_m": 2660,
+   "inlinks": 8
+  },
+  "/2026/06/curto-circuito-o-que-fazer.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.14,
+   "cf": "HIT",
+   "title": "Curto-circuito em casa: o que fazer na hora e como evitar",
+   "desc": "Curto-circuito em casa: o que fazer na hora, o que nunca fazer e quando chamar um eletricista. Guia rápido de segurança para não correr riscos.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/curto-circuito-o-que-fazer.html",
+    "https://www.mestredosreparos.app.br/2026/06/curto-circuito-o-que-fazer.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Como Localizar e Corrigir um Curto-Circuito em Barueri &#8212; Guia Passo a Passo"
+   ],
+   "words": 2350,
+   "main_words": 2281,
+   "words_m": 2350,
+   "inlinks": 4
+  },
+  "/2026/06/instalacao-de-chuveiros-passo-passo.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.22,
+   "cf": "HIT",
+   "title": "Instalação de Chuveiros Passo a passo",
+   "desc": "Instalação de chuveiro elétrico passo a passo: bitola do fio, disjuntor certo, aterramento e os erros que fazem a resistência queimar.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/instalacao-de-chuveiros-passo-passo.html",
+    "https://www.mestredosreparos.app.br/2026/06/instalacao-de-chuveiros-passo-passo.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Troca e Instalação de Chuveiro em Barueri &#8212; Guia Seguro e Atendimento Profissional"
+   ],
+   "words": 2653,
+   "main_words": 2589,
+   "words_m": 2653,
+   "inlinks": 1
+  },
+  "/2026/06/o-que-e-e-como-funciona-um-disjuntor.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.19,
+   "cf": "HIT",
+   "title": "O que é, e como funciona um disjuntor",
+   "desc": "O que é um disjuntor, como ele protege a instalação elétrica e por que desarma. Entenda amperagem, curva e quando é hora de trocar.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/o-que-e-e-como-funciona-um-disjuntor.html",
+    "https://www.mestredosreparos.app.br/2026/06/o-que-e-e-como-funciona-um-disjuntor.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "O Que É um Disjuntor Elétrico e Como Funciona?"
+   ],
+   "words": 2764,
+   "main_words": 2698,
+   "words_m": 2764,
+   "inlinks": 4
+  },
+  "/2026/06/o-que-e-nbr-5410.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.21,
+   "cf": "HIT",
+   "title": "O que é a NBR 5410 e como ela protege sua casa",
+   "desc": "O que é a NBR 5410, a norma das instalações elétricas de baixa tensão, e o que ela exige na sua casa: aterramento, DR, DPS e bitola dos fios.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/o-que-e-nbr-5410.html",
+    "https://www.mestredosreparos.app.br/2026/06/o-que-e-nbr-5410.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "NBR 5410: O Que É e Para Que Serve"
+   ],
+   "words": 2526,
+   "main_words": 2456,
+   "words_m": 2526,
+   "inlinks": 6
+  },
+  "/2026/07/manutencao-predial-para-sua-empresa.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.12,
+   "cf": "HIT",
+   "title": "Manutenção Predial para sua Empresa",
+   "desc": "Manutenção predial para empresas e condomínios em Barueri com equipe própria, contrato preventivo, atendimento corretivo e relatório técnico.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/07/manutencao-predial-para-sua-empresa.html",
+    "https://www.mestredosreparos.app.br/2026/07/manutencao-predial-para-sua-empresa.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Manutenção Predial e Elétrica para Empresas e Condomínios"
+   ],
+   "words": 1095,
+   "main_words": 1032,
+   "words_m": 1095,
+   "inlinks": 3
+  },
+  "/2026/10/bairros-com-atendimento-de-eletricistas.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.19,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Bairros com atendimento de Eletricistas",
+   "desc": "Veja os bairros de Barueri atendidos pelo nosso eletricista, de Alphaville ao Jardim Belval, com plantão 24h, nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/bairros-com-atendimento-de-eletricistas.html",
+    "https://www.mestredosreparos.app.br/2026/10/bairros-com-atendimento-de-eletricistas.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista em Barueri: bairros atendidos"
+   ],
+   "words": 1340,
+   "main_words": 1277,
+   "words_m": 1340,
+   "inlinks": 2
+  },
+  "/2026/10/eletricista-predial-em-barueri-mestre.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.2,
+   "t_m": 0.22,
+   "cf": "HIT",
+   "title": "Eletricista Predial em Barueri | Mestre dos Reparos",
+   "desc": "Eletricista predial em Barueri: quadros, iluminação de áreas comuns, bombas, portões e interfone. Manutenção preventiva com relatório para o síndico.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/eletricista-predial-em-barueri-mestre.html",
+    "https://www.mestredosreparos.app.br/2026/10/eletricista-predial-em-barueri-mestre.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista Predial em Barueri: guia de manutenção elétrica para condomínios"
+   ],
+   "words": 1861,
+   "main_words": 1795,
+   "words_m": 1861,
+   "inlinks": 1
+  },
+  "/2026/10/eletricista-residencial-em-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.17,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista Residencial em Barueri | Mestre dos Reparos",
+   "desc": "Eletricista residencial em Barueri para casas e apartamentos: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Plantão 24h e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/eletricista-residencial-em-barueri.html",
+    "https://www.mestredosreparos.app.br/2026/10/eletricista-residencial-em-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista Residencial em Barueri"
+   ],
+   "words": 2319,
+   "main_words": 2275,
+   "words_m": 2319,
+   "inlinks": 2
+  },
+  "/2026/10/manutencao-eletrica-em-barueri-mestre.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Manutenção Elétrica em Barueri | Mestre dos Reparos",
+   "desc": "Manutenção elétrica em Barueri para evitar queda de energia, curto-circuito e aparelho queimado: revisão de quadro, fiação e aterramento.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/manutencao-eletrica-em-barueri-mestre.html",
+    "https://www.mestredosreparos.app.br/2026/10/manutencao-eletrica-em-barueri-mestre.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Manutenção Elétrica em Barueri"
+   ],
+   "words": 2192,
+   "main_words": 2148,
+   "words_m": 2192,
+   "inlinks": 1
+  },
+  "/2026/10/manutencao-para-empresas.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.17,
+   "cf": "HIT",
+   "title": "Manutenção Predial para Empresas",
+   "desc": "Guia de manutenção predial para empresas em Barueri: preventiva x corretiva, checklist por tipo de prédio, NR-10 e o que exigir antes de contratar.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html",
+    "https://www.mestredosreparos.app.br/2026/10/manutencao-para-empresas.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Manutenção Predial para Empresas e Prédios Corporativos em Barueri"
+   ],
+   "words": 3171,
+   "main_words": 2935,
+   "words_m": 3171,
+   "inlinks": 3
+  },
+  "/2026/10/reforma-de-apartamento-em-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Reforma de Apartamento em Barueri | Mestre dos Reparos",
+   "desc": "Reforma de apartamento em Barueri e Alphaville: pintura, pisos, gesso, elétrica e hidráulica com uma só equipe, respeitando as regras do condomínio.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/reforma-de-apartamento-em-barueri.html",
+    "https://www.mestredosreparos.app.br/2026/10/reforma-de-apartamento-em-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Reforma de Apartamento em Barueri"
+   ],
+   "words": 559,
+   "main_words": 492,
+   "words_m": 559,
+   "inlinks": 2
+  },
+  "/2026/10/reforma-de-banheiro-em-barueri-mestre.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.14,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Reforma de Banheiro em Barueri | Mestre dos Reparos",
+   "desc": "Reforma de banheiro em Barueri: fim das infiltrações, troca de tubulação, revestimentos, louças e metais com uma só equipe e orçamento fechado.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/reforma-de-banheiro-em-barueri-mestre.html",
+    "https://www.mestredosreparos.app.br/2026/10/reforma-de-banheiro-em-barueri-mestre.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Reforma de Banheiro em Barueri"
+   ],
+   "words": 554,
+   "main_words": 487,
+   "words_m": 554,
+   "inlinks": 2
+  },
+  "/2026/10/reforma-de-cozinha-em-barueri-mestre.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.07,
+   "cf": "HIT",
+   "title": "Reforma de Cozinha em Barueri | Mestre dos Reparos",
+   "desc": "Reforma de cozinha em Barueri: elétrica, hidráulica, revestimentos, bancadas e iluminação com uma só equipe. Orçamento fechado antes da obra e nota fiscal.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/reforma-de-cozinha-em-barueri-mestre.html",
+    "https://www.mestredosreparos.app.br/2026/10/reforma-de-cozinha-em-barueri-mestre.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Reforma de Cozinha em Barueri"
+   ],
+   "words": 560,
+   "main_words": 493,
+   "words_m": 560,
+   "inlinks": 2
+  },
+  "/2026/10/reforma-predial-em-barueri-mestre-dos.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.08,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Reforma Predial em Barueri | Mestre dos Reparos",
+   "desc": "Reforma predial em Barueri para condomínios e empresas: fachada, áreas comuns, elétrica e hidráulica, com cronograma e relatório para o síndico.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/reforma-predial-em-barueri-mestre-dos.html",
+    "https://www.mestredosreparos.app.br/2026/10/reforma-predial-em-barueri-mestre-dos.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Reforma Predial em Barueri"
+   ],
+   "words": 542,
+   "main_words": 476,
+   "words_m": 542,
+   "inlinks": 2
+  },
+  "/2026/10/reformas-em-barueri-para-residencias.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.13,
+   "cf": "HIT",
+   "title": "Reformas em Barueri: Bairros Atendidos",
+   "desc": "Reformas em todos os bairros de Barueri e cidades vizinhas para residências, empresas e condomínios, com uma única equipe para a obra completa e nota fiscal.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/reformas-em-barueri-para-residencias.html",
+    "https://www.mestredosreparos.app.br/2026/10/reformas-em-barueri-para-residencias.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Reformas em Barueri para residências, empresas e comércios: bairros atendidos"
+   ],
+   "words": 1753,
+   "main_words": 1690,
+   "words_m": 1753,
+   "inlinks": 3
+  },
+  "/2026/10/reformas-em-geral.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Reformas em Geral em Barueri: do básico ao acabamento",
+   "desc": "Reforma de casas, apartamentos e comércios em Barueri e região: alvenaria, hidráulica, drywall e elétrica com equipe própria, do diagnóstico à entrega.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/reformas-em-geral.html",
+    "https://www.mestredosreparos.app.br/2026/10/reformas-em-geral.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Reformas em Barueri: Civil, Hidráulica, Drywall e Elétrica"
+   ],
+   "words": 1149,
+   "main_words": 1104,
+   "words_m": 1149,
+   "inlinks": 2
+  },
+  "/2026/11/duvidas-de-eletrica.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.18,
+   "t_m": 0.16,
+   "cf": "HIT",
+   "title": "Problemas Elétricos Residenciais: Dúvidas em Barueri",
+   "desc": "Disjuntor caindo, tomada esquentando, choque ou luz piscando? Respostas diretas de engenheiro com CREA e preço de mão de obra para casas em Barueri.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/11/duvidas-de-eletrica.html",
+    "https://www.mestredosreparos.app.br/2026/11/duvidas-de-eletrica.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Perguntas e Respostas sobre Elétrica em Barueri"
+   ],
+   "words": 4348,
+   "main_words": 4110,
+   "words_m": 4348,
+   "inlinks": 3
+  },
+  "/p/blog-page_2.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.12,
+   "cf": "HIT",
+   "title": "Eletricista no Centro de Barueri | 24 Horas",
+   "desc": "Eletricista no centro de Barueri, atendimento imediato, para empresas, lojas, escritórios e residências, Chame o Mestre dos Reparos.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/blog-page_2.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Centro de Barueri, em Barueri"
+   ],
+   "words": 1419,
+   "main_words": 1340,
+   "words_m": 1419,
+   "inlinks": 7
+  },
+  "/p/blog-page_29.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Silveira, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Silveira, com as melhores avaliações de Barueri, Chame o Mestre dos Reparos, atendimento agora!",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/blog-page_29.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Silveira, em Barueri"
+   ],
+   "words": 1429,
+   "main_words": 1350,
+   "words_m": 1429,
+   "inlinks": 10
+  },
+  "/p/blog-page_3.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Eletricista na Aldeia de Barueri | 24 Horas",
+   "desc": "Eletricista na Aldeia de Barueri, Atendimento imediato! Chame o Mestre dos Reparos e resolva com segurança e eficiência.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/blog-page_3.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista na Aldeia de Barueri, em Barueri"
+   ],
+   "words": 1480,
+   "main_words": 1401,
+   "words_m": 1480,
+   "inlinks": 6
+  },
+  "/p/blog-page_43.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.17,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Tupanci, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Tupanci, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/blog-page_43.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Tupanci, em Barueri"
+   ],
+   "words": 1412,
+   "main_words": 1333,
+   "words_m": 1412,
+   "inlinks": 10
+  },
+  "/p/blog-page_8.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.13,
+   "cf": "HIT",
+   "title": "Eletricista no Parque Viana, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no Parque Viana, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/blog-page_8.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Parque Viana, em Barueri"
+   ],
+   "words": 1381,
+   "main_words": 1301,
+   "words_m": 1381,
+   "inlinks": 10
+  },
+  "/p/blog-page_83.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.14,
+   "t_m": 0.13,
+   "cf": "HIT",
+   "title": "Eletricista no Bethaville, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no Bethaville, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/blog-page_83.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Bethaville, em Barueri"
+   ],
+   "words": 1417,
+   "main_words": 1338,
+   "words_m": 1417,
+   "inlinks": 12
+  },
+  "/p/blog-page_87.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.13,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Tamboré, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no Tamboré, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/blog-page_87.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Tamboré, em Barueri"
+   ],
+   "words": 1314,
+   "main_words": 1235,
+   "words_m": 1314,
+   "inlinks": 9
+  },
+  "/p/contrato-de-limpeza-para-empresas.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.13,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Contrato de Limpeza para Empresas, Condomínios e Galpões",
+   "desc": "Contrato de limpeza para empresas, condomínios e galpões em Barueri e região, com equipe recorrente, cronograma definido e nota fiscal.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/contrato-de-limpeza-para-empresas.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Contrato de Limpeza para Empresas, Condomínios, Galpões e CDs"
+   ],
+   "words": 2524,
+   "main_words": 2467,
+   "words_m": 2524,
+   "inlinks": 5
+  },
+  "/p/contrato-de-manutencao-para-empresas.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.15,
+   "cf": "HIT",
+   "title": "Manutenção Predial em Barueri | Contrato para Empresas e Condomínios",
+   "desc": "Contrato de manutenção predial em Barueri para empresas, condomínios e galpões: elétrica, civil, pintura e reparos, com engenheiro CREA. Peça a proposta.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/contrato-de-manutencao-para-empresas.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Manutenção predial em Barueri: contrato para empresas, condomínios, galpões e CDs"
+   ],
+   "words": 3254,
+   "main_words": 2999,
+   "words_m": 3254,
+   "inlinks": 10
+  },
+  "/p/contratos-corporativos-b2b.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.08,
+   "cf": "HIT",
+   "title": "Limpeza e Manutenção Predial para Empresas | Barueri",
+   "desc": "Manutenção predial e limpeza em Barueri. Contratos corporativos B2B para empresas e condomínios com o Mestre dos Reparos Facilities.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/contratos-corporativos-b2b.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Limpeza e Manutenção Predial para Empresas | Barueri"
+   ],
+   "words": 935,
+   "main_words": 856,
+   "words_m": 935,
+   "inlinks": 3
+  },
+  "/p/diarista-com-agendamento-em-barueri-e.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.12,
+   "cf": "HIT",
+   "title": "Diarista com Agendamento em Barueri | Mestre dos Reparos",
+   "desc": "Diarista em Barueri e região com agendamento online: faxina residencial, limpeza pesada e limpeza pós-obra com profissionais de confiança.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/diarista-com-agendamento-em-barueri-e.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Diarista com Agendamento em Barueri e Região"
+   ],
+   "words": 2276,
+   "main_words": 2218,
+   "words_m": 2276,
+   "inlinks": 8
+  },
+  "/p/diarista-em-aldeia-da-serra.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.08,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Diarista na Aldeia da Serra | Limpeza Residencial",
+   "desc": "Diarista em Aldeia da Serra: Limpeza residencial de alto padrão, organização e faxina detalhada. Atendimento exclusivo e confiança com Mestre dos Repa",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/diarista-em-aldeia-da-serra.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "nofollow",
+   "h1": [
+    "Diarista na Aldeia da Serra | Limpeza Residencial"
+   ],
+   "words": 817,
+   "main_words": 738,
+   "words_m": 817,
+   "inlinks": 5
+  },
+  "/p/eletrecista-em-barueri-18-do-forte.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista no 18 do Forte, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no 18 do Forte, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-18-do-forte.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no 18 do Forte, em Barueri"
+   ],
+   "words": 1390,
+   "main_words": 1309,
+   "words_m": 1390,
+   "inlinks": 9
+  },
+  "/p/eletrecista-em-barueri-boa-vista.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista na Vila Boa Vista, Barueri | 24 Horas",
+   "desc": "Eletricista na Vila Boa Vista, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-boa-vista.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista na Vila Boa Vista, em Barueri"
+   ],
+   "words": 1527,
+   "main_words": 1447,
+   "words_m": 1527,
+   "inlinks": 9
+  },
+  "/p/eletrecista-em-barueri-cruz-preta.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista na Cruz Preta, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista na Cruz Preta, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-cruz-preta.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista na Cruz Preta, em Barueri"
+   ],
+   "words": 1397,
+   "main_words": 1317,
+   "words_m": 1397,
+   "inlinks": 9
+  },
+  "/p/eletrecista-em-barueri-engenho-novo.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.2,
+   "cf": "HIT",
+   "title": "Eletricista no Engenho Novo, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no Engenho Novo, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-engenho-novo.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Engenho Novo, em Barueri"
+   ],
+   "words": 1363,
+   "main_words": 1283,
+   "words_m": 1363,
+   "inlinks": 9
+  },
+  "/p/eletrecista-em-barueri-jardim-paulista.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.08,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Paulista, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Paulista, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletrecista-em-barueri-jardim-paulista.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Paulista, em Barueri"
+   ],
+   "words": 1462,
+   "main_words": 1383,
+   "words_m": 1462,
+   "inlinks": 9
+  },
+  "/p/eletricista-condominios-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.2,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista para Condomínios em Barueri | Lista por Bairro",
+   "desc": "Eletricista para condomínios em Barueri: áreas comuns, quadros, bombas, portões e reparos nos apartamentos. Veja a lista de condomínios por bairro.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-condominios-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista para Condomínios em Barueri"
+   ],
+   "words": 1456,
+   "main_words": 1376,
+   "words_m": 1456,
+   "inlinks": 8
+  },
+  "/p/eletricista-em-aldeia-da-serra.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista na Aldeia da Serra | Atendimento 24 Horas",
+   "desc": "Eletricista em Aldeia da Serra: Manutenção elétrica urgente, reparos, iluminação e quadros de força. Profissionais NR10 com atendimento imediato no lo",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-em-aldeia-da-serra.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista na Aldeia da Serra"
+   ],
+   "words": 1485,
+   "main_words": 1405,
+   "words_m": 1485,
+   "inlinks": 8
+  },
+  "/p/eletricista-em-alphaville-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Eletricista em Alphaville, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista em Alphaville, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-em-alphaville-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista em Alphaville, em Barueri"
+   ],
+   "words": 1437,
+   "main_words": 1358,
+   "words_m": 1437,
+   "inlinks": 19
+  },
+  "/p/eletricista-em-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.28,
+   "cf": "HIT",
+   "title": "Eletricista em Barueri | Atendimento 24 Horas",
+   "desc": "Disjuntor caindo, tomada quente ou quadro sem DPS? Mande a foto no WhatsApp e receba o preço. Engenheiro com CREA e 90 dias de garantia por escrito.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-em-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista em Barueri SP"
+   ],
+   "words": 3791,
+   "main_words": 3539,
+   "words_m": 3772,
+   "inlinks": 109
+  },
+  "/p/eletricista-em-carapicuiba-atendimento.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.15,
+   "cf": "HIT",
+   "title": "Eletricista em Carapicuíba | Atendimento 24 Horas",
+   "desc": "Eletricista em Carapicuíba com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Equipe de Barueri, nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-em-carapicuiba-atendimento.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista em Carapicuíba"
+   ],
+   "words": 4057,
+   "main_words": 4001,
+   "words_m": 4057,
+   "inlinks": 13
+  },
+  "/p/eletricista-em-itapevi.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.26,
+   "t_m": 0.12,
+   "cf": "HIT",
+   "title": "Eletricista em Itapevi | Atendimento 24 Horas",
+   "desc": "Eletricista em Itapevi 24h: Urgências, manutenção de quadros, fiação e instalações elétricas. Profissionais treinados com prontidão para socorro imedi",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-em-itapevi.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista em Itapevi"
+   ],
+   "words": 4061,
+   "main_words": 4005,
+   "words_m": 4061,
+   "inlinks": 12
+  },
+  "/p/eletricista-em-jandira.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.16,
+   "cf": "HIT",
+   "title": "Eletricista em Jandira | Atendimento 24 Horas",
+   "desc": "Eletricista em Jandira 24h: Emergências elétricas, curto-circuito, troca de fiação e quadros de força. Prontidão total para socorro residencial e come",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-em-jandira.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista em Jandira"
+   ],
+   "words": 4073,
+   "main_words": 4017,
+   "words_m": 4073,
+   "inlinks": 11
+  },
+  "/p/eletricista-em-santana-de-parnaiba.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.13,
+   "t_m": 0.15,
+   "cf": "HIT",
+   "title": "Eletricista em Santana de Parnaíba | Atendimento 24 Horas",
+   "desc": "Eletricista em Santana de Parnaíba: Instalações e manutenção elétrica com segurança NR10. Atendimento rápido em condomínios e residências da região.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-em-santana-de-parnaiba.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista em Santana de Parnaíba"
+   ],
+   "words": 4179,
+   "main_words": 4121,
+   "words_m": 4157,
+   "inlinks": 13
+  },
+  "/p/eletricista-na-fazenda-militar-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.15,
+   "cf": "HIT",
+   "title": "Eletricista na Fazenda Militar, Barueri | 24 Horas",
+   "desc": "Eletricista na Fazenda Militar, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-na-fazenda-militar-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista na Fazenda Militar, em Barueri"
+   ],
+   "words": 2274,
+   "main_words": 2195,
+   "words_m": 2274,
+   "inlinks": 8
+  },
+  "/p/eletricista-na-nossa-senhora-da-escada.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista na Nossa Senhora da Escada, Barueri | 24 Horas",
+   "desc": "Eletricista na Nossa Senhora da Escada, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-na-nossa-senhora-da-escada.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista na Nossa Senhora da Escada, em Barueri"
+   ],
+   "words": 1518,
+   "main_words": 1437,
+   "words_m": 1518,
+   "inlinks": 8
+  },
+  "/p/eletricista-na-vila-sao-francisco.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista na Vila São Francisco, Barueri | 24 Horas",
+   "desc": "Eletricista na Vila São Francisco, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-na-vila-sao-francisco.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista na Vila São Francisco, em Barueri"
+   ],
+   "words": 1390,
+   "main_words": 1310,
+   "words_m": 1390,
+   "inlinks": 10
+  },
+  "/p/eletricista-na-votupoca-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.21,
+   "cf": "HIT",
+   "title": "Eletricista na Votupoca, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista na Votupoca, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-na-votupoca-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista na Votupoca, em Barueri"
+   ],
+   "words": 1364,
+   "main_words": 1285,
+   "words_m": 1364,
+   "inlinks": 8
+  },
+  "/p/eletricista-nas-chacaras-marco-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.08,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista nas Chácaras Marco, Barueri | 24 Horas",
+   "desc": "Eletricista nas Chácaras Marco, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-nas-chacaras-marco-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista nas Chácaras Marco, em Barueri"
+   ],
+   "words": 1344,
+   "main_words": 1265,
+   "words_m": 1344,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-audir-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Audir, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no Jardim Audir, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-audir-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Audir, em Barueri"
+   ],
+   "words": 1374,
+   "main_words": 1294,
+   "words_m": 1374,
+   "inlinks": 8
+  },
+  "/p/eletricista-no-jardim-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.16,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Barueri, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Barueri, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Barueri, em Barueri"
+   ],
+   "words": 1523,
+   "main_words": 1444,
+   "words_m": 1523,
+   "inlinks": 8
+  },
+  "/p/eletricista-no-jardim-belval.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Belval, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no Jardim Belval, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-belval.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Belval, em Barueri"
+   ],
+   "words": 1407,
+   "main_words": 1327,
+   "words_m": 1407,
+   "inlinks": 12
+  },
+  "/p/eletricista-no-jardim-california.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.13,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Califórnia, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Califórnia, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-california.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Califórnia, em Barueri"
+   ],
+   "words": 1343,
+   "main_words": 1264,
+   "words_m": 1343,
+   "inlinks": 10
+  },
+  "/p/eletricista-no-jardim-dos-altos-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim dos Altos, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim dos Altos, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-altos-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim dos Altos, em Barueri"
+   ],
+   "words": 1440,
+   "main_words": 1360,
+   "words_m": 1440,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-dos-camargos.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim dos Camargos, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim dos Camargos, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-dos-camargos.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim dos Camargos, em Barueri"
+   ],
+   "words": 1373,
+   "main_words": 1293,
+   "words_m": 1373,
+   "inlinks": 10
+  },
+  "/p/eletricista-no-jardim-esperanca-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.14,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Esperança, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Esperança, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-esperanca-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Esperança, em Barueri"
+   ],
+   "words": 1384,
+   "main_words": 1305,
+   "words_m": 1384,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-graziela-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Graziela, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Graziela, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-graziela-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Graziela, em Barueri"
+   ],
+   "words": 1385,
+   "main_words": 1306,
+   "words_m": 1385,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-iracema-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Iracema, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Iracema, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-iracema-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Iracema, em Barueri"
+   ],
+   "words": 1392,
+   "main_words": 1313,
+   "words_m": 1392,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-itaquiti-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Itaquiti, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Itaquiti, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-itaquiti-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Itaquiti, em Barueri"
+   ],
+   "words": 1464,
+   "main_words": 1385,
+   "words_m": 1464,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-julio-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.13,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Júlio, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no Jardim Júlio, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-julio-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Júlio, em Barueri"
+   ],
+   "words": 1440,
+   "main_words": 1360,
+   "words_m": 1440,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-libano-barueri-24.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.16,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Líbano, Barueri | Atendimento 24 Horas",
+   "desc": "Eletricista no Jardim Líbano, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-libano-barueri-24.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Líbano, em Barueri"
+   ],
+   "words": 1432,
+   "main_words": 1352,
+   "words_m": 1432,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-maria-cristina.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Maria Cristina, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Maria Cristina, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-cristina.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Maria Cristina, em Barueri"
+   ],
+   "words": 1454,
+   "main_words": 1374,
+   "words_m": 1454,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-maria-helena.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Maria Helena, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Maria Helena, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-maria-helena.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Maria Helena, em Barueri"
+   ],
+   "words": 1410,
+   "main_words": 1330,
+   "words_m": 1410,
+   "inlinks": 10
+  },
+  "/p/eletricista-no-jardim-mutinga-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.2,
+   "t_m": 0.18,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Mutinga, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Mutinga, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-mutinga-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Mutinga, em Barueri"
+   ],
+   "words": 1468,
+   "main_words": 1389,
+   "words_m": 1468,
+   "inlinks": 11
+  },
+  "/p/eletricista-no-jardim-paraiso-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Paraíso, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Paraíso, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-paraiso-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Paraíso, em Barueri"
+   ],
+   "words": 1422,
+   "main_words": 1343,
+   "words_m": 1422,
+   "inlinks": 10
+  },
+  "/p/eletricista-no-jardim-reginalice.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.08,
+   "t_m": 0.14,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim Reginalice, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim Reginalice, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-reginalice.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim Reginalice, em Barueri"
+   ],
+   "words": 1409,
+   "main_words": 1330,
+   "words_m": 1409,
+   "inlinks": 17
+  },
+  "/p/eletricista-no-jardim-sao-pedro-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim São Pedro, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim São Pedro, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-pedro-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim São Pedro, em Barueri"
+   ],
+   "words": 1400,
+   "main_words": 1320,
+   "words_m": 1400,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-jardim-sao-silvestre.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Eletricista no Jardim São Silvestre, Barueri | 24 Horas",
+   "desc": "Eletricista no Jardim São Silvestre, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-jardim-sao-silvestre.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Jardim São Silvestre, em Barueri"
+   ],
+   "words": 1384,
+   "main_words": 1304,
+   "words_m": 1384,
+   "inlinks": 9
+  },
+  "/p/eletricista-no-parque-imperial-barueri.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.19,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Eletricista no Parque Imperial, Barueri | 24 Horas",
+   "desc": "Eletricista no Parque Imperial, em Barueri, com plantão 24h: disjuntor caindo, chuveiro, tomadas, fiação e quadro. Nota fiscal e garantia de 90 dias.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/eletricista-no-parque-imperial-barueri.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Eletricista no Parque Imperial, em Barueri"
+   ],
+   "words": 1362,
+   "main_words": 1283,
+   "words_m": 1362,
+   "inlinks": 10
+  },
+  "/p/hidrailica-mestre-dos-reparos.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.18,
+   "cf": "HIT",
+   "title": "Encanador em Barueri | Vazamentos e Instalações 24h",
+   "desc": "Hidráulica Urgente: Vazamentos e reparos em Barueri, Jandira e Itapevi. Manutenção técnica com prontidão em toda a região oeste e cidades vizinhas.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/hidrailica-mestre-dos-reparos.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Encanador em Barueri"
+   ],
+   "words": 2253,
+   "main_words": 2196,
+   "words_m": 2231,
+   "inlinks": 1
+  },
+  "/p/limpeza-pos-mudanca-em-barueri-e-regiao.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Limpeza Pós Mudança em Barueri e Região | Mestre dos Reparos",
+   "desc": "Limpeza pós-mudança em Barueri e região: imóvel pronto para morar ou entregar, com limpeza de armários, banheiros, cozinha, vidros e pisos.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/limpeza-pos-mudanca-em-barueri-e-regiao.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Limpeza Pós Mudança em Barueri e Região"
+   ],
+   "words": 2356,
+   "main_words": 2296,
+   "words_m": 2356,
+   "inlinks": 4
+  },
+  "/p/limpeza-pos-obra-em-barueri-e-regiao.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Limpeza Pós Obra em Barueri e Região | Mestre dos Reparos",
+   "desc": "Limpeza pós-obra em Barueri e região: remoção de pó, resto de massa, tinta e cimento de pisos, vidros e azulejos, com o imóvel pronto para morar.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/limpeza-pos-obra-em-barueri-e-regiao.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Limpeza Pós Obra em Barueri e Região"
+   ],
+   "words": 2415,
+   "main_words": 2355,
+   "words_m": 2415,
+   "inlinks": 11
+  },
+  "/p/llms.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.07,
+   "t_m": 0.07,
+   "cf": "HIT",
+   "title": "llms.txt | Mestre dos Reparos Manutenção & Limpeza",
+   "desc": "Informações oficiais da Mestre dos Reparos para assistentes de IA: serviços, áreas atendidas em Barueri e região, contatos e páginas principais.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/llms.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "llms.txt &#8212; Mestre dos Reparos Manutenção &amp; Limpeza"
+   ],
+   "words": 475,
+   "main_words": 396,
+   "words_m": 475,
+   "inlinks": 1
+  },
+  "/p/marido-de-aluguel-em-aldeia-da-serra.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Marido de Aluguel na Aldeia da Serra | Reparos Rápidos",
+   "desc": "Marido de Aluguel em Aldeia da Serra: Manutenção residencial de alto padrão, instalações e montagens. Serviço discreto, pontual e com garantia técnica",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/marido-de-aluguel-em-aldeia-da-serra.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Marido de Aluguel na Aldeia da Serra | Reparos Rápidos"
+   ],
+   "words": 788,
+   "main_words": 707,
+   "words_m": 788,
+   "inlinks": 5
+  },
+  "/p/marido-de-aluguel-em-itapevi.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.24,
+   "cf": "HIT",
+   "title": "Marido de Aluguel em Itapevi | Reparos no Mesmo Dia",
+   "desc": "Marido de aluguel em Itapevi:Reparos elétricos, hidráulicos e instalações rápidas. Atendimento profissional em Barueri e região com Mestre dos Reparo",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/marido-de-aluguel-em-itapevi.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Marido de Aluguel em Itapevi | Reparos no Mesmo Dia"
+   ],
+   "words": 773,
+   "main_words": 692,
+   "words_m": 773,
+   "inlinks": 5
+  },
+  "/p/marido-de-aluguel-em-jandira.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Marido de Aluguel em Jandira | Pequenos Reparos",
+   "desc": "Marido de Aluguel em Jandira: Pequenos reparos, montagem de móveis e manutenção doméstica. Atendimento ágil, limpo e com garantia para sua residência.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/marido-de-aluguel-em-jandira.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Marido de Aluguel em Jandira | Pequenos Reparos"
+   ],
+   "words": 784,
+   "main_words": 705,
+   "words_m": 784,
+   "inlinks": 5
+  },
+  "/p/marido-de-aluguel-em-santana-de-parnaiba.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.08,
+   "t_m": 0.13,
+   "cf": "HIT",
+   "title": "Marido de Aluguel em Santana de Parnaíba | Reparos",
+   "desc": "Marido de Aluguel em Santana de Parnaíba: Instalações, montagem de móveis e manutenção preventiva. Soluções completas para sua casa com garantia técni",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/marido-de-aluguel-em-santana-de-parnaiba.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Marido de Aluguel em Santana de Parnaíba | Reparos"
+   ],
+   "words": 810,
+   "main_words": 730,
+   "words_m": 810,
+   "inlinks": 5
+  },
+  "/p/marido-de-aluguel.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.13,
+   "cf": "HIT",
+   "title": "Marido de Aluguel em Barueri | Reparos e Montagem",
+   "desc": "Marido de aluguel em Barueri para manutenção residencial, reparos e instalações. Atendimento em Jandira, Itapevi e Santana de Parnaíba.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/marido-de-aluguel.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Marido de Aluguel em Barueri | Reparos e Montagem"
+   ],
+   "words": 1747,
+   "main_words": 1667,
+   "words_m": 1747,
+   "inlinks": 5
+  },
+  "/p/pintura-forro-e-paredes-de-drywall-em.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.14,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Pintura, Forro e Drywall em Barueri | Mestre dos Reparos",
+   "desc": "Pintura, forro de gesso e paredes de drywall em Barueri e região: sanca, nicho, divisória e acabamento, com uma só equipe e orçamento fechado.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/pintura-forro-e-paredes-de-drywall-em.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Pintura, Forro e Paredes de Drywall em Barueri e Região"
+   ],
+   "words": 2522,
+   "main_words": 2463,
+   "words_m": 2522,
+   "inlinks": 5
+  },
+  "/p/pisos-porcelanato-ceramica-ardosia.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.27,
+   "t_m": 0.13,
+   "cf": "HIT",
+   "title": "Porcelanato, Cerâmica e Piso Laminado em Barueri",
+   "desc": "Assentamento de porcelanato, cerâmica, ardósia, piso laminado e vinílico em Barueri e região, com contrapiso nivelado e acabamento caprichado.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/pisos-porcelanato-ceramica-ardosia.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Pisos, Porcelanato, Cerâmica, Ardósia, Laminado e Vinílico em Barueri e Região"
+   ],
+   "words": 1871,
+   "main_words": 1815,
+   "words_m": 1871,
+   "inlinks": 4
+  },
+  "/p/quem-somos-mestre-dos-reparos.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.08,
+   "cf": "HIT",
+   "title": "Quem Somos | Mestre dos Reparos Manutenção & Limpeza",
+   "desc": "Conheça o Mestre dos Reparos Manutenção & Limpeza: empresa de Barueri com equipe própria para elétrica, reformas, manutenção predial e limpeza.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/quem-somos-mestre-dos-reparos.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Quem Somos: o Mestre dos Reparos Manutenção &amp; Limpeza"
+   ],
+   "words": 739,
+   "main_words": 681,
+   "words_m": 739,
+   "inlinks": 1
+  },
+  "/p/reformas-residenciais-e-comerciais-em.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.12,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "Empresa de Reforma em Barueri | Obras Residenciais e Comerciais",
+   "desc": "Reforma de casa, apartamento, loja e escritório em Barueri, equipe própria e engenheiro com CREA. Mande fotos no WhatsApp e receba o orçamento por etapa.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/reformas-residenciais-e-comerciais-em.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Empresa de reforma em Barueri: obras residenciais e comerciais"
+   ],
+   "words": 3326,
+   "main_words": 3071,
+   "words_m": 3326,
+   "inlinks": 14
+  },
+  "/p/termos-de-uso.html": {
+   "sitemap": true,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.07,
+   "cf": "HIT",
+   "title": "Termos de Uso",
+   "desc": "Termos de uso do site Mestre dos Reparos Manutenção & Limpeza, de Barueri/SP.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/termos-de-uso.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Termos de Uso"
+   ],
+   "words": 279,
+   "main_words": 205,
+   "words_m": 279,
+   "inlinks": 21
+  },
+  "/2026/05/": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.08,
+   "cf": "HIT",
+   "title": "Mestre dos reparos Manutenção & Limpeza",
+   "desc": "Sem energia? Eletricista em Barueri 24h com chegada rápida e solução imediata. Atendimento em Jandira, Itapevi e região.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/05/"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "Mestre dos Reparos Manutenção & Limpeza"
+   ],
+   "words": 725,
+   "main_words": 648,
+   "words_m": 725,
+   "inlinks": 1
+  },
+  "/2026/05/eletrica-130-%20perguntas-e-respostas.html": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     301,
+     "https://www.mestredosreparos.app.br/2026/11/duvidas-de-eletrica.html"
+    ],
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     301,
+     "https://www.mestredosreparos.app.br/2026/11/duvidas-de-eletrica.html"
+    ],
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.16,
+   "t_m": 0.18,
+   "cf": "HIT",
+   "title": "Problemas Elétricos Residenciais: Dúvidas em Barueri",
+   "desc": "Disjuntor caindo, tomada esquentando, choque ou luz piscando? Respostas diretas de engenheiro com CREA e preço de mão de obra para casas em Barueri.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/11/duvidas-de-eletrica.html",
+    "https://www.mestredosreparos.app.br/2026/11/duvidas-de-eletrica.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "all",
+   "h1": [
+    "Perguntas e Respostas sobre Elétrica em Barueri"
+   ],
+   "words": 4348,
+   "main_words": 4110,
+   "words_m": 4348,
+   "inlinks": 1
+  },
+  "/2026/06/": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.08,
+   "cf": "HIT",
+   "title": "Mestre dos reparos Manutenção & Limpeza",
+   "desc": "Sem energia? Eletricista em Barueri 24h com chegada rápida e solução imediata. Atendimento em Jandira, Itapevi e região.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/06/"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "Mestre dos Reparos Manutenção & Limpeza"
+   ],
+   "words": 574,
+   "main_words": 497,
+   "words_m": 574,
+   "inlinks": 1
+  },
+  "/2026/07/": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Mestre dos reparos Manutenção & Limpeza",
+   "desc": "Sem energia? Eletricista em Barueri 24h com chegada rápida e solução imediata. Atendimento em Jandira, Itapevi e região.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/07/"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "Mestre dos Reparos Manutenção & Limpeza"
+   ],
+   "words": 214,
+   "main_words": 137,
+   "words_m": 214,
+   "inlinks": 1
+  },
+  "/2026/10/": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.08,
+   "cf": "HIT",
+   "title": "Mestre dos reparos Manutenção & Limpeza",
+   "desc": "Sem energia? Eletricista em Barueri 24h com chegada rápida e solução imediata. Atendimento em Jandira, Itapevi e região.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/2026/10/"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "Mestre dos Reparos Manutenção & Limpeza"
+   ],
+   "words": 541,
+   "main_words": 464,
+   "words_m": 541,
+   "inlinks": 1
+  },
+  "/p/diarista-em-itapevi.html": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.09,
+   "cf": "HIT",
+   "title": "Diarista em Itapevi | Faxina e Limpeza Residencial",
+   "desc": "Diarista em Itapevi SP: Limpeza residencial detalhada, faxina pós-obra e organização. Atendimento profissional com garantia e agilidade no serviço.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/diarista-em-itapevi.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "Diarista em Itapevi | Faxina e Limpeza Residencial"
+   ],
+   "words": 830,
+   "main_words": 751,
+   "words_m": 830,
+   "inlinks": 5
+  },
+  "/p/diarista-em-jandira.html": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.11,
+   "t_m": 0.08,
+   "cf": "HIT",
+   "title": "Diarista em Jandira | Faxina Completa e Pós-Obra",
+   "desc": "Diarista em Jandira SP: Limpeza residencial completa, faxina pós-obra e organização profissional. Atendimento rápido e orçamento imediato agora mesmo.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/diarista-em-jandira.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "Diarista em Jandira | Faxina Completa e Pós-Obra"
+   ],
+   "words": 819,
+   "main_words": 740,
+   "words_m": 819,
+   "inlinks": 5
+  },
+  "/p/diarista-em-santana-de-parnaiba.html": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.1,
+   "t_m": 0.08,
+   "cf": "HIT",
+   "title": "Diarista em Santana de Parnaíba | Limpeza Residencial",
+   "desc": "Diarista em Santana de Parnaíba: Faxina profissional, limpeza pós-obra e periódica. Qualidade e eficiência para sua residência ou comércio. Peça orçam",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/diarista-em-santana-de-parnaiba.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "Diarista em Santana de Parnaíba | Limpeza Residencial"
+   ],
+   "words": 860,
+   "main_words": 781,
+   "words_m": 860,
+   "inlinks": 5
+  },
+  "/p/lgpd-lei-geral-de-protecao-de-dados.html": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.09,
+   "t_m": 0.11,
+   "cf": "HIT",
+   "title": "LGPD | Como Tratamos Seus Dados | Mestre dos Reparos",
+   "desc": "Como o Mestre dos Reparos trata seus dados pessoais conforme a LGPD: que dados coletamos, para que usamos e como pedir acesso ou exclusão.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/lgpd-lei-geral-de-protecao-de-dados.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "LGPD | Como Tratamos Seus Dados"
+   ],
+   "words": 281,
+   "main_words": 200,
+   "words_m": 281,
+   "inlinks": 13
+  },
+  "/p/politica-de-privacidade.html": {
+   "sitemap": false,
+   "hops_d": [
+    [
+     200,
+     null
+    ]
+   ],
+   "hops_m": [
+    [
+     200,
+     null
+    ]
+   ],
+   "t_d": 0.08,
+   "t_m": 0.1,
+   "cf": "HIT",
+   "title": "Política de Privacidade | Mestre dos Reparos",
+   "desc": "Política de privacidade do Mestre dos Reparos: como coletamos, usamos e protegemos as informações de quem visita o site e pede orçamento.",
+   "canon": [
+    "https://www.mestredosreparos.app.br/p/politica-de-privacidade.html"
+   ],
+   "robots_meta": "",
+   "x_robots": "noindex",
+   "h1": [
+    "Política de Privacidade"
+   ],
+   "words": 264,
+   "main_words": 186,
+   "words_m": 264,
+   "inlinks": 22
+  }
+ }
+}
