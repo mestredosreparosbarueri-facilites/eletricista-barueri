@@ -125,7 +125,8 @@ Levantado em 14/11/2026. Cada fato tem a fonte. Abreviações das fontes:
 ## Medições pendentes registradas
 - Posição de "eletricista em barueri" (1º no celular em 07/11, OpenSEO) e das páginas do lote 2: medir em 21/11 e 05/12. [EST 07/11]
 
-## REGRA DO DONO — canibalização (14/11/2026, Paulo)
-- NÃO apontar "canibalização" nem propor juntar/redirecionar páginas. Páginas de serviços e assuntos diferentes (elétrica, reforma, limpeza, manutenção predial, marido de aluguel, B2B, posts de elétrica) são diversificação.
-- Isto substitui, para este site, a frase da skill (Monthly, passo 1): "Two pages chasing one query is a bug: merge them and redirect".
-- "eletricista em barueri" já resolvido: posts antigos fazem 301 para /p/eletricista-em-barueri.html (conferido no ar em 14/11). Dados do Search Console de antes disso mostram URLs antigas — não são problema atual.
+## REGRA DO DONO — canibalização (14/11/2026, Paulo; versão final)
+- APONTAR canibalização quando houver, sempre com prova (Search Console: query, páginas, impressões, posição, período).
+- Páginas de assuntos diferentes NÃO podem disputar força entre si; se o Google fizer isso, é erro do Google a ser corrigido com sinais (links internos, títulos), não juntando serviços diferentes.
+- Juntar/redirecionar páginas: SÓ se fizer sentido para SEO, com prova, e com ok do Paulo. Nunca redirecionar a home.
+- Nunca dizer "resolvido" sem prova atual (dados das últimas 4 semanas + conferência no ar).
