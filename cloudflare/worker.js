@@ -30,7 +30,7 @@ class LinkFix {
 const MOBILE = /Mobi|Android|iPhone|iPad|iPod/i;
 const NOVA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/ccr-33db381a-6kweq8/nova/';
 // home lida do commit fixo (muda a cada publicação): o cache da borda não segura versão velha
-const NOVA_SHA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/67977a9a8282ac990d3aab8338388cf20eb210c8/nova/';
+const NOVA_SHA = 'https://raw.githubusercontent.com/mestredosreparosbarueri-facilites/eletricista-barueri/0753f0156b604edffd0eb20fd21814c26454558c/nova/';
 const RAIZ = '/p/mestre-dos-reparos-manutencao-reparos.html';
 // links internos antigos que redirecionam → destino final (evita link para redirecionamento)
 const LINK_FINAL = { '/p/temos-de-uso.html': '/p/termos-de-uso.html', '/2026/02/mestre-dos-reparos-facilites_0115649963.html': '/p/eletricista-em-barueri.html' };
@@ -43,7 +43,7 @@ const HUB_REFORMA = '/2026/10/reformas-em-barueri-para-residencias.html';
 const hubDe = p => HUB_REFORMA + (/^\/p\/reforma-em-(?!alphaville)|aldeia-da-serra/.test(p) ? '#cidades' : '#bairros');
 const NOINDEX = new Set(["/p/reforma-na-aldeia-da-serra-obra.html", "/p/reforma-em-cotia-obra-completa-com.html", "/p/reforma-em-osasco-pintura-pisos-e.html", "/p/reforma-em-itapevi-obra-completa-com.html", "/p/reforma-em-jandira-pintura-pisos-e.html", "/p/reforma-em-carapicuiba-obra-completa.html", "/p/reforma-em-santana-de-parnaiba-pintura.html", "/p/reforma-na-regina-alice-barueri-obra.html", "/p/reforma-na-cruz-preta-barueri-obra.html", "/p/reforma-na-vila-sao-francisco-barueri.html", "/p/reforma-no-jardim-mutinga-barueri-obra.html", "/p/reforma-no-jardim-paraiso-barueri.html", "/p/reforma-no-jardim-california-barueri.html", "/p/reforma-nas-chacaras-marco-barueri-obra.html", "/p/reforma-no-jardim-dos-camargos-barueri.html", "/p/reforma-na-vila-boa-vista-barueri-obra.html", "/p/reforma-no-jardim-tupanci-barueri-obra.html", "/p/reforma-no-jardim-maria-helena-barueri.html", "/p/reforma-no-parque-imperial-barueri-obra.html", "/p/reforma-no-engenho-novo-barueri-obra.html", "/p/reforma-no-jardim-silveira-barueri.html", "/p/reforma-no-jardim-belval-barueri-obra.html", "/p/reforma-na-aldeia-de-barueri-obra.html", "/p/reforma-no-bethaville-barueri-pintura-e.html", "/p/reforma-no-tambore-barueri-obra-completa.html", "/p/reforma-em-alphaville-pintura-pisos-e.html", "/p/reforma-no-centro-de-barueri-obra.html"]);
 for (const p of NOINDEX) LINK_FINAL[p] = hubDe(p);
-const HOME_MOD = '2026-11-14T20:40:00Z';   // última atualização da home nova (sitemap)
+const HOME_MOD = '2026-11-14T21:00:00Z';   // última atualização da home nova (sitemap)
 
 // Imagens do Blogger: entrega webp (-rw) e no máximo 800px no src (srcset continua para telas maiores)
 const IMG = /(https:\/\/blogger\.googleusercontent\.com\/img\/[^\s"',]+?=)([swh]\d+[^\s"',]*)/g;
