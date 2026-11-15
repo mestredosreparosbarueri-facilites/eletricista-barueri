@@ -6,4 +6,5 @@
 - **NUNCA fazer ou mexer em NADA sem: (1) aprovação de uma skill, plugin, conector ou repositório — EXECUTADA de verdade (Skill tool), não "critérios de cabeça" — E (2) aprovação final do Paulo.** Mostrar o resultado de cada skill antes. Evitar mexer toda hora (oscilação no Google).
 - Dizer exatamente quais skills foram executadas e com qual texto. Nunca escrever "aprovado pelas skills" se a skill não rodou com aquele texto.
 - Título da home definido em 15/11/2026 (passou pelas 3 skills + aprovação do Paulo): `Em Barueri | Reformas, Eletricista e Limpeza: um time só`. Não mexer antes da medição de 21/11/2026.
+- **Decisão do Paulo (15/11/2026): a home é multisserviço ("um time só") e DEVE aparecer em todas as disciplinas** (elétrica, hidráulica, marido de aluguel, manutenção, limpeza), independentemente das páginas de cada assunto. Não tratar home x páginas de serviço como "canibalização/briga": as duas aparecerem juntas no Google é desejado. Medir pelo Search Console (página por busca).
 - Estado completo e demais regras: `ESTADO.md` do pacote essencial (scratchpad).
